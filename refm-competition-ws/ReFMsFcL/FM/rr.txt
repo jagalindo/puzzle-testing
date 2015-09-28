@@ -1,0 +1,71 @@
+digraph G { 
+	rankdir=BT;
+15643654 [shape=record,style=filled,label="{Concept_0||P1\n}"];
+23921594 [shape=record,style=filled,label="{Concept_1||P2\n}"];
+32394686 [shape=record,style=filled,label="{Concept_2|Weak\n|P3\n}"];
+3281576 [shape=record,style=filled,label="{Concept_3||P4\n}"];
+10851553 [shape=record,style=filled,label="{Concept_4||P5\n}"];
+25412513 [shape=record,style=filled,label="{Concept_5||P6\n}"];
+27306986 [shape=record,style=filled,label="{Concept_6||P7\n}"];
+5793473 [shape=record,style=filled,label="{Concept_7||P8\n}"];
+29499826 [shape=record,style=filled,label="{Concept_8||P9\n}"];
+3304600 [shape=record,style=filled,label="{Concept_9||P10\n}"];
+7828053 [shape=record,style=filled,label="{Concept_10||P11\n}"];
+32724947 [shape=record,style=filled,label="{Concept_11||P12\n}"];
+17490623 [shape=record,style=filled,label="{Concept_12||P13\n}"];
+28085769 [shape=record,style=filled,label="{Concept_13||P14\n}"];
+27328272 [shape=record,style=filled,label="{Concept_14||P15\n}"];
+13214581 [shape=record,style=filled,label="{Concept_15||P16\n}"];
+8005532 [shape=record,style=filled,fillcolor=lightblue,label="{Concept_16|Cell_Phone\nAccu_Cell\nGames\nDisplay\n|}"];
+23526060 [shape=record,style=filled,fillcolor=lightblue,label="{Concept_17|Wireless\n|}"];
+24548764 [shape=record,style=filled,fillcolor=lightblue,label="{Concept_18|Infrared\n|}"];
+30632266 [shape=record,style=filled,fillcolor=lightblue,label="{Concept_19|Bluetooth\n|}"];
+29266376 [shape=record,style=filled,fillcolor=lightblue,label="{Concept_20|Strong\n|}"];
+1032098 [shape=record,style=filled,fillcolor=lightblue,label="{Concept_21|Medium\n|}"];
+13723152 [shape=record,style=filled,fillcolor=lightblue,label="{Concept_22|Multi_Player\n|}"];
+5578467 [shape=record,style=filled,fillcolor=lightblue,label="{Concept_23|Artificial_Opponent\nSingle_Player\n|}"];
+	15643654 -> 29266376
+	15643654 -> 5578467
+	23921594 -> 1032098
+	23921594 -> 5578467
+	32394686 -> 5578467
+	3281576 -> 15643654
+	3281576 -> 30632266
+	10851553 -> 30632266
+	10851553 -> 13723152
+	25412513 -> 3281576
+	25412513 -> 10851553
+	27306986 -> 15643654
+	27306986 -> 24548764
+	5793473 -> 24548764
+	5793473 -> 29266376
+	5793473 -> 13723152
+	29499826 -> 27306986
+	29499826 -> 5793473
+	3304600 -> 23921594
+	3304600 -> 24548764
+	7828053 -> 24548764
+	7828053 -> 1032098
+	7828053 -> 13723152
+	32724947 -> 3304600
+	32724947 -> 7828053
+	32724947 -> 13723152
+	17490623 -> 32394686
+	17490623 -> 24548764
+	28085769 -> 3281576
+	28085769 -> 27306986
+	27328272 -> 10851553
+	27328272 -> 5793473
+	13214581 -> 25412513
+	13214581 -> 29499826
+	13214581 -> 28085769
+	13214581 -> 27328272
+	23526060 -> 8005532
+	24548764 -> 23526060
+	30632266 -> 23526060
+	30632266 -> 29266376
+	29266376 -> 8005532
+	1032098 -> 8005532
+	13723152 -> 23526060
+	5578467 -> 8005532
+}

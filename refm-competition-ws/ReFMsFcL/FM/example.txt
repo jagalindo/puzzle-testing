@@ -1,0 +1,71 @@
+digraph G { 
+	rankdir=BT;
+27148830 [shape=record,style=filled,label="{Concept_0||S1\n}"];
+17224938 [shape=record,style=filled,label="{Concept_1||S2\n}"];
+25903771 [shape=record,style=filled,label="{Concept_2||S3\n}"];
+12560137 [shape=record,style=filled,label="{Concept_3||S4\n}"];
+21902869 [shape=record,style=filled,label="{Concept_4||S5\n}"];
+29413544 [shape=record,style=filled,label="{Concept_5||S6\n}"];
+29556720 [shape=record,style=filled,label="{Concept_6||S7\n}"];
+19987195 [shape=record,style=filled,label="{Concept_7||S8\n}"];
+11376172 [shape=record,style=filled,label="{Concept_8||S9\n}"];
+23251066 [shape=record,style=filled,fillcolor=lightblue,label="{Concept_9|B\nE\nD\nC\nF\nA.\n|}"];
+5763977 [shape=record,style=filled,fillcolor=lightblue,label="{Concept_10|G\nH\n|}"];
+3519976 [shape=record,style=filled,fillcolor=lightblue,label="{Concept_11|I\n|}"];
+25459266 [shape=record,style=filled,fillcolor=lightblue,label="{Concept_12|J\n|}"];
+29494388 [shape=record,style=filled,fillcolor=lightblue,label="{Concept_13|K\n|}"];
+7773562 [shape=record,style=filled,fillcolor=lightblue,label="{Concept_14|N\nM\nL\n|}"];
+22860959 [shape=record,style=filled,fillcolor=lightblue,label="{Concept_15|O\n|}"];
+3783810 [shape=record,style=filled,fillcolor=lightblue,label="{Concept_16|P\n|}"];
+8854988 [shape=record,style=filled,fillcolor=lightblue,label="{Concept_17|Q\n|}"];
+11882980 [shape=record,style=filled,fillcolor=lightblue,label="{Concept_18|R\n|}"];
+1267264 [shape=record,style=filled,fillcolor=lightblue,label="{Concept_19|S\n|}"];
+7304338 [shape=record,style=filled,fillcolor=lightblue,label="{Concept_20|T\n|}"];
+25407199 [shape=record,style=filled,fillcolor=lightblue,label="{Concept_21|V\n|}"];
+	27148830 -> 3519976
+	27148830 -> 8854988
+	27148830 -> 11882980
+	27148830 -> 1267264
+	17224938 -> 25459266
+	17224938 -> 7773562
+	17224938 -> 22860959
+	25903771 -> 5763977
+	25903771 -> 29494388
+	25903771 -> 22860959
+	25903771 -> 1267264
+	12560137 -> 3519976
+	12560137 -> 3783810
+	12560137 -> 7304338
+	21902869 -> 29494388
+	21902869 -> 8854988
+	21902869 -> 11882980
+	29413544 -> 25459266
+	29413544 -> 3783810
+	29556720 -> 29494388
+	29556720 -> 22860959
+	29556720 -> 11882980
+	29556720 -> 7304338
+	29556720 -> 25407199
+	19987195 -> 5763977
+	19987195 -> 25459266
+	19987195 -> 22860959
+	11376172 -> 3519976
+	11376172 -> 7773562
+	11376172 -> 22860959
+	11376172 -> 11882980
+	11376172 -> 1267264
+	5763977 -> 23251066
+	3519976 -> 23251066
+	25459266 -> 23251066
+	29494388 -> 23251066
+	7773562 -> 23251066
+	22860959 -> 23251066
+	3783810 -> 23251066
+	8854988 -> 5763977
+	8854988 -> 3783810
+	8854988 -> 11882980
+	11882980 -> 23251066
+	1267264 -> 25407199
+	7304338 -> 7773562
+	25407199 -> 23251066
+}

@@ -1,0 +1,11 @@
+FormalContext Products_Configurations
+||MobileMedia.|CreateAlbum|DeleteAlbum|CreateMedia|DeleteMedia|ViewPhoto|ExceptionHandling|EditMediaLabel|Sorting|SetFavourites|ViewFavourites|CopyMedia|ReceivePhoto|SendPhoto|PlayMusic/Song|CapturePhoto|PlayVideo|CaptureVideo|
+|P1|x|x|x|x|x|x|||||||||||||
+|P2|x|x|x|x|x|x|x||||||||||||
+|P3|x|x|x|x|x|x|x|x|x||||||||||
+|P4|x|x|x|x|x|x|x|x|x|x|x||||||||
+|P5|x|x|x|x|x|x|x|x|x|x|x|x|||||||
+|P6|x|x|x|x|x|x|x|x|x|x|x|x|x|x|||||
+|P7|x|x|x|x|x|x|x|x|x|x|x|x|x|x|||||
+|P8|x|x|x|x|x|x|x|x|x|x|x|x|x|x|x|x|x|x|
+

@@ -1,0 +1,59 @@
+digraph G { 
+	rankdir=BT;
+2205802 [shape=record,style=filled,label="{Concept_0||P1\n}"];
+27701288 [shape=record,style=filled,label="{Concept_1||P2\n}"];
+7807046 [shape=record,style=filled,label="{Concept_2||P3\n}"];
+15205143 [shape=record,style=filled,label="{Concept_3|Aerial\n|P4\n}"];
+28834171 [shape=record,style=filled,label="{Concept_4||P5\n}"];
+22807116 [shape=record,style=filled,label="{Concept_5||P6\n}"];
+26937548 [shape=record,style=filled,label="{Concept_6||P7\n}"];
+22980255 [shape=record,style=filled,label="{Concept_7||P8\n}"];
+17648350 [shape=record,style=filled,label="{Concept_8||P9\n}"];
+28210421 [shape=record,style=filled,label="{Concept_9||P10\n}"];
+8436776 [shape=record,style=filled,label="{Concept_10||P11\n}"];
+29427764 [shape=record,style=filled,label="{Concept_11|Cable\n|P12\n}"];
+104199 [shape=record,style=filled,label="{Concept_12||P13\n}"];
+6445281 [shape=record,style=filled,label="{Concept_13||P14\n}"];
+12133422 [shape=record,style=filled,label="{Concept_14||P15\n}"];
+16145637 [shape=record,style=filled,label="{Concept_15|Mobile\nSmart\n|P16\n}"];
+2286508 [shape=record,style=filled,fillcolor=lightblue,label="{Concept_16|Kernel\nDisplay\nVideo.\nPlay\nOS\n|}"];
+9530040 [shape=record,style=filled,fillcolor=lightblue,label="{Concept_17|Record\n|}"];
+16078681 [shape=record,style=filled,fillcolor=lightblue,label="{Concept_18|TV\n|}"];
+20553948 [shape=record,style=filled,fillcolor=lightblue,label="{Concept_19|Advanced\n|}"];
+	2205802 -> 27701288
+	2205802 -> 7807046
+	27701288 -> 15205143
+	27701288 -> 9530040
+	7807046 -> 15205143
+	7807046 -> 20553948
+	15205143 -> 16078681
+	28834171 -> 2205802
+	28834171 -> 22807116
+	28834171 -> 26937548
+	28834171 -> 17648350
+	22807116 -> 22980255
+	22807116 -> 28210421
+	26937548 -> 27701288
+	26937548 -> 22980255
+	26937548 -> 8436776
+	22980255 -> 29427764
+	22980255 -> 9530040
+	17648350 -> 7807046
+	17648350 -> 28210421
+	17648350 -> 8436776
+	28210421 -> 29427764
+	28210421 -> 20553948
+	8436776 -> 15205143
+	8436776 -> 29427764
+	29427764 -> 16078681
+	104199 -> 6445281
+	104199 -> 12133422
+	6445281 -> 16145637
+	6445281 -> 9530040
+	12133422 -> 16145637
+	12133422 -> 20553948
+	16145637 -> 2286508
+	9530040 -> 2286508
+	16078681 -> 2286508
+	20553948 -> 2286508
+}

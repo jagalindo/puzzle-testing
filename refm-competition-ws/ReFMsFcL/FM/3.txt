@@ -1,0 +1,18 @@
+digraph G {  17979968  4131696  17979968  4131696
+	rankdir=BT;
+31709196 [shape=record,style=filled,label="{Concept_0|24hr\n|p_1\n}"];
+24973910 [shape=record,style=filled,label="{Concept_1||p_2\n}"];
+17305400 [shape=record,style=filled,label="{Concept_2|Analog\nHands\n|p_3\n}"];
+2053176 [shape=record,style=filled,label="{Concept_3||p_4\n}"];
+22391321 [shape=record,style=filled,fillcolor=lightblue,label="{Concept_4|Clock.\n|}"];
+4131696 [shape=record,style=filled,fillcolor=lightblue,label="{Concept_5|Alarm\n|}"];
+17979968 [shape=record,style=filled,fillcolor=lightblue,label="{Concept_6|Digital\n|}"];
+	31709196 -> 17979968
+	24973910 -> 4131696
+	24973910 -> 17979968
+	17305400 -> 22391321
+	2053176 -> 17305400
+	2053176 -> 4131696
+	4131696 -> 22391321
+	17979968 -> 22391321
+}
