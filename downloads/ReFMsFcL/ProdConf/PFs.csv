@@ -1,0 +1,11 @@
+,Berkeley_DB.,Logging_Base,Logging_Finer,Logging_Config,Logging_Severe,Logging_Evictor,Logging_Cleaner,Logging_Recovery,Logging_DbLogHandler,Logging_ConsoleHandler,Logging_Info,Logging_FileHandler,Logging_Fine,Logging_Finest,Latches,Transactions,CheckLeaks,FSync,Checksum,SynchronizedIO,IO,ChunkedNIO,NIO,DirectNIO,Environment_Locking,DiskFullErro,FileHandleCache,CP_Bytes,CP_Time,Checkpointer_Daemon,CleanerDaemon,Cleaner,LookAHEADCache,Statistics,INCompressor,Verifier,Critical_Eviction,EvictorDaemon,Evictor,Memory_Budget,DeleteOp,RenameOp,TruncateOp
+Product_1,x,X,X,,,X,,,,,X,X,,X,X,X,X,X,,X,X,,,,X,,X,X,X,,,X,,,,,,,X,X,,X,
+Product_2,x,X,,X,X,,X,X,,X,X,,,X,,X,X,,X,,,,X,,,,,,,X,,X,,X,X,X,,,,,,X,
+Product_3,x,X,X,X,X,,,X,,,,,X,,X,X,,X,,,,X,,X,,X,X,,X,X,X,X,,X,X,,X,,X,X,X,,
+Product_4,x,X,X,,,X,X,,,X,X,,X,X,X,,X,,X,,X,,,,X,X,,X,X,X,,X,X,X,X,X,,X,X,X,X,,X
+Product_5,x,X,,,,,X,X,X,X,,X,,,X,X,,,X,,,,X,X,,X,,,,X,X,X,X,X,,,,X,X,X,,X,
+Product_6,X,,,,,,,,,,,,,,X,X,X,X,X,,X,,,,X,,,X,X,,,X,,X,X,X,,,X,X,X,,
+Product_7,X,,,,,,,,,,,,,,X,,X,,,X,X,,,,,X,X,X,X,,X,X,X,,X,,,X,X,X,X,X,X
+Product_8,X,X,,,,,,,,,,,,,X,,,,,X,X,,,,,,,,X,,,X,,,X,,X,,X,X,X,,
+Product_9,X,X,,,,,,,,,,,,,X,,,,,,,X,,,,X,,,X,,,X,,X,X,,,,X,X,X,,
+Product_10,X,X,X,X,X,X,X,X,,X,X,X,X,X,X,X,X,X,X,,X,,,,X,X,X,X,X,X,,X,X,,X,X,,,X,X,X,X,X

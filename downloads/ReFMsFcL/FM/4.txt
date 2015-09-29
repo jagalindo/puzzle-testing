@@ -1,0 +1,107 @@
+digraph G { 
+	rankdir=BT;
+104199 [shape=record,style=filled,label="{Concept_0||P1\n}"];
+2286508 [shape=record,style=filled,label="{Concept_1|ArgoUML.\nClass\n|P2\n}"];
+6445281 [shape=record,style=filled,label="{Concept_2||P3\n}"];
+5031964 [shape=record,style=filled,label="{Concept_3||P4\n}"];
+23162326 [shape=record,style=filled,label="{Concept_4||P5\n}"];
+24256034 [shape=record,style=filled,label="{Concept_5||P6\n}"];
+18382127 [shape=record,style=filled,label="{Concept_6||P7\n}"];
+12764763 [shape=record,style=filled,label="{Concept_7||P8\n}"];
+29943821 [shape=record,style=filled,label="{Concept_8||P9\n}"];
+9530040 [shape=record,style=filled,fillcolor=orange,label="{Concept_9||P10\nP12\n}"];
+16078681 [shape=record,style=filled,label="{Concept_10||P11\n}"];
+20553948 [shape=record,style=filled,label="{Concept_11||P13\n}"];
+7329120 [shape=record,style=filled,label="{Concept_12|Diagrams\n|P14\n}"];
+2205802 [shape=record,style=filled,label="{Concept_13|Logging\n|P15\n}"];
+12133422 [shape=record,style=filled,label="{Concept_14||P16\n}"];
+28834171 [shape=record,style=filled,label="{Concept_15||P17\n}"];
+23899357 [shape=record,style=filled,label="{Concept_16||P18\n}"];
+15064528 [shape=record,style=filled,label="{Concept_17||P19\n}"];
+21337500 [shape=record,style=filled,label="{Concept_18||P20\n}"];
+22807116 [shape=record,style=filled,fillcolor=lightblue,label="{Concept_19|Use Case\n|}"];
+26937548 [shape=record,style=filled,fillcolor=lightblue,label="{Concept_20|Collaboration\n|}"];
+22980255 [shape=record,style=filled,fillcolor=lightblue,label="{Concept_21|Cognitive Support\n|}"];
+16145637 [shape=record,style=filled,fillcolor=lightblue,label="{Concept_22|Activity\n|}"];
+17648350 [shape=record,style=filled,fillcolor=lightblue,label="{Concept_23|Deployment\n|}"];
+28210421 [shape=record,style=filled,fillcolor=lightblue,label="{Concept_24|Sequence\n|}"];
+8436776 [shape=record,style=filled,fillcolor=lightblue,label="{Concept_25|State\n|}"];
+	104199 -> 9530040
+	104199 -> 16078681
+	104199 -> 20553948
+	104199 -> 28834171
+	104199 -> 22807116
+	104199 -> 26937548
+	6445281 -> 16078681
+	6445281 -> 20553948
+	6445281 -> 12133422
+	6445281 -> 28834171
+	6445281 -> 22807116
+	6445281 -> 26937548
+	5031964 -> 9530040
+	5031964 -> 20553948
+	5031964 -> 15064528
+	5031964 -> 26937548
+	23162326 -> 20553948
+	23162326 -> 12133422
+	23162326 -> 15064528
+	23162326 -> 26937548
+	24256034 -> 9530040
+	24256034 -> 16078681
+	24256034 -> 20553948
+	24256034 -> 26937548
+	24256034 -> 22980255
+	24256034 -> 16145637
+	18382127 -> 16078681
+	18382127 -> 2205802
+	18382127 -> 21337500
+	18382127 -> 22807116
+	18382127 -> 26937548
+	18382127 -> 22980255
+	12764763 -> 9530040
+	12764763 -> 20553948
+	12764763 -> 7329120
+	12764763 -> 23899357
+	12764763 -> 21337500
+	29943821 -> 28834171
+	29943821 -> 15064528
+	29943821 -> 21337500
+	29943821 -> 26937548
+	29943821 -> 28210421
+	9530040 -> 16078681
+	9530040 -> 20553948
+	9530040 -> 2205802
+	16078681 -> 28210421
+	16078681 -> 8436776
+	20553948 -> 17648350
+	20553948 -> 8436776
+	7329120 -> 2286508
+	2205802 -> 2286508
+	12133422 -> 20553948
+	12133422 -> 22807116
+	12133422 -> 22980255
+	12133422 -> 16145637
+	28834171 -> 22807116
+	28834171 -> 22980255
+	28834171 -> 17648350
+	28834171 -> 28210421
+	23899357 -> 9530040
+	23899357 -> 20553948
+	23899357 -> 12133422
+	23899357 -> 28834171
+	23899357 -> 15064528
+	15064528 -> 2205802
+	15064528 -> 21337500
+	15064528 -> 22807116
+	15064528 -> 17648350
+	21337500 -> 2205802
+	21337500 -> 22807116
+	21337500 -> 16145637
+	22807116 -> 2286508
+	26937548 -> 7329120
+	22980255 -> 2286508
+	16145637 -> 2286508
+	17648350 -> 2286508
+	28210421 -> 2286508
+	8436776 -> 2286508
+}

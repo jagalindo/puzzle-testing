@@ -1,0 +1,1226 @@
+
+Generation: 0
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [0.6575342416763306 0.1875 0.7301294250677156]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (argouml (Optional (logging (Optional
+     statediagram) (Optional cognitive) (Mandatory
+     class) (Mandatory (activitydiagram (Optional
+     usecasediagram) (Or sequencediagram diagrams)))
+     (Or collaborationdiagram deploymentdiagram)))))
+Tree 1:
+ ConstraintSet
+
+Generation: 1
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [0.6575342416763306 0.1875 0.7301294250677156]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (argouml (Optional (logging (Optional
+     statediagram) (Optional cognitive) (Mandatory
+     class) (Mandatory (activitydiagram (Optional
+     usecasediagram) (Or sequencediagram diagrams)))
+     (Or collaborationdiagram deploymentdiagram)))))
+Tree 1:
+ ConstraintSet
+
+Generation: 2
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [0.6575342416763306 0.1875 0.7301294250677156]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (argouml (Optional (logging (Optional
+     statediagram) (Optional cognitive) (Mandatory
+     class) (Mandatory (activitydiagram (Optional
+     usecasediagram) (Or sequencediagram diagrams)))
+     (Or collaborationdiagram deploymentdiagram)))))
+Tree 1:
+ ConstraintSet
+
+Generation: 3
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [0.6575342416763306 0.1875 0.7301294250677156]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (argouml (Optional (logging (Optional
+     statediagram) (Optional cognitive) (Mandatory
+     class) (Mandatory (activitydiagram (Optional
+     usecasediagram) (Or sequencediagram diagrams)))
+     (Or collaborationdiagram deploymentdiagram)))))
+Tree 1:
+ ConstraintSet
+
+Generation: 4
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [0.6575342416763306 0.1875 0.7301294250677156]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (argouml (Optional (logging (Optional
+     statediagram) (Optional cognitive) (Mandatory
+     class) (Mandatory (activitydiagram (Optional
+     usecasediagram) (Or sequencediagram diagrams)))
+     (Or collaborationdiagram deploymentdiagram)))))
+Tree 1:
+ ConstraintSet
+
+Generation: 5
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [0.6575342416763306 0.1875 0.7301294250677156]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (argouml (Optional (logging (Optional
+     statediagram) (Optional cognitive) (Mandatory
+     class) (Mandatory (activitydiagram (Optional
+     usecasediagram) (Or sequencediagram diagrams)))
+     (Or collaborationdiagram deploymentdiagram)))))
+Tree 1:
+ ConstraintSet
+
+Generation: 6
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [0.6575342416763306 0.1875 0.7302321142684689]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (argouml (Optional (logging (Optional
+     statediagram) (Optional cognitive) (Mandatory
+     class) (Alternative (activitydiagram (Optional
+     usecasediagram) (Or collaborationdiagram
+     diagrams))) (Or sequencediagram deploymentdiagram)))))
+Tree 1:
+ ConstraintSet
+
+Generation: 7
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [0.6575342416763306 0.1875 0.7302321142684689]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (argouml (Optional (logging (Optional
+     statediagram) (Optional cognitive) (Mandatory
+     class) (Alternative (activitydiagram (Optional
+     usecasediagram) (Or collaborationdiagram
+     diagrams))) (Or sequencediagram deploymentdiagram)))))
+Tree 1:
+ ConstraintSet
+
+Generation: 8
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.234375 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (argouml (Optional (activitydiagram
+     (Optional cognitive) (Optional usecasediagram)))
+     (Mandatory (collaborationdiagram (Optional
+         deploymentdiagram) (Mandatory (diagrams (Alternative
+         class) (Optional logging))))) (Optional (sequencediagram
+     (Optional statediagram)))))
+Tree 1:
+ ConstraintSet
+
+Generation: 9
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.3125 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (argouml (Optional (activitydiagram
+     (Optional cognitive) (Optional usecasediagram)))
+     (Mandatory (collaborationdiagram (Optional
+         deploymentdiagram) (Mandatory (diagrams (Alternative
+         (class (Optional statediagram))) (Optional
+         logging))))) (Optional sequencediagram)))
+Tree 1:
+ ConstraintSet
+
+Generation: 10
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.375 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (argouml (Optional (activitydiagram
+     (Optional usecasediagram))) (Mandatory (collaborationdiagram
+     (Optional deploymentdiagram) (Mandatory (diagrams
+     (Alternative (class (Optional statediagram)
+         (Optional cognitive))) (Optional logging)))))
+     (Optional sequencediagram)))
+Tree 1:
+ ConstraintSet
+
+Generation: 11
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.375 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (argouml (Optional (activitydiagram
+     (Optional usecasediagram))) (Mandatory (collaborationdiagram
+     (Optional deploymentdiagram) (Mandatory (diagrams
+     (Alternative (class (Optional statediagram)
+         (Optional cognitive))) (Optional logging)))))
+     (Optional sequencediagram)))
+Tree 1:
+ ConstraintSet
+
+Generation: 12
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.375 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (argouml (Optional (activitydiagram
+     (Optional usecasediagram))) (Mandatory (collaborationdiagram
+     (Optional deploymentdiagram) (Mandatory (diagrams
+     (Alternative (class (Optional statediagram)
+         (Optional cognitive))) (Optional logging)))))
+     (Optional sequencediagram)))
+Tree 1:
+ ConstraintSet
+
+Generation: 13
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.375 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (argouml (Optional (activitydiagram
+     (Optional usecasediagram))) (Mandatory (collaborationdiagram
+     (Optional deploymentdiagram) (Mandatory (diagrams
+     (Alternative (class (Optional statediagram)
+         (Optional cognitive))) (Optional logging)))))
+     (Optional sequencediagram)))
+Tree 1:
+ ConstraintSet
+
+Generation: 14
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.375 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (argouml (Optional (activitydiagram
+     (Optional usecasediagram))) (Mandatory (collaborationdiagram
+     (Optional deploymentdiagram) (Mandatory (diagrams
+     (Optional logging) (Alternative (class (Optional
+     statediagram) (Optional cognitive)))))))
+     (Optional sequencediagram)))
+Tree 1:
+ (ConstraintSet (Constraint (Or (Not (Atom
+     class)) (Atom diagrams))))
+
+Generation: 15
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.375 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (argouml (Optional (activitydiagram
+     (Optional usecasediagram))) (Mandatory (collaborationdiagram
+     (Optional deploymentdiagram) (Mandatory (diagrams
+     (Alternative (class (Optional statediagram)
+         (Optional cognitive))) (Optional logging)))))
+     (Optional sequencediagram)))
+Tree 1:
+ (ConstraintSet (Constraint (Or (Not (Atom
+     sequencediagram)) (Atom collaborationdiagram))))
+
+Generation: 16
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.5 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (argouml (Optional activitydiagram)
+     (Mandatory (collaborationdiagram (Optional
+         deploymentdiagram) (Mandatory (diagrams (Or
+         (class (Optional statediagram) (Optional
+             cognitive))) (Optional logging))))) (Optional
+     sequencediagram) (Optional usecasediagram)))
+Tree 1:
+ ConstraintSet
+
+Generation: 17
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.5 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (argouml (Optional activitydiagram)
+     (Mandatory (collaborationdiagram (Optional
+         deploymentdiagram) (Mandatory (diagrams (Or
+         (class (Optional statediagram) (Optional
+             cognitive))) (Optional logging))))) (Optional
+     sequencediagram) (Optional usecasediagram)))
+Tree 1:
+ ConstraintSet
+
+Generation: 18
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.5 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (argouml (Optional activitydiagram)
+     (Mandatory (collaborationdiagram (Optional
+         deploymentdiagram) (Mandatory (diagrams (Or
+         (class (Optional statediagram) (Optional
+             cognitive))) (Optional logging))))) (Optional
+     sequencediagram) (Optional usecasediagram)))
+Tree 1:
+ ConstraintSet
+
+Generation: 19
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.5 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (argouml (Mandatory (collaborationdiagram
+     (Optional deploymentdiagram) (Mandatory (diagrams
+     (Or (class (Optional statediagram) (Optional
+         cognitive))) (Optional logging))) (Optional
+     usecasediagram))) (Optional activitydiagram)
+     (Optional sequencediagram)))
+Tree 1:
+ ConstraintSet
+
+Generation: 20
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.5 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (argouml (Mandatory (collaborationdiagram
+     (Optional deploymentdiagram) (Mandatory (diagrams
+     (Or (class (Optional statediagram) (Optional
+         cognitive))) (Optional logging))))) (Optional
+     activitydiagram) (Optional sequencediagram)
+     (Optional usecasediagram)))
+Tree 1:
+ ConstraintSet
+
+Generation: 21
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.5 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (argouml (Mandatory (collaborationdiagram
+     (Optional deploymentdiagram) (Mandatory (diagrams
+     (Alternative (class (Optional statediagram)
+         (Optional cognitive))) (Optional logging)))))
+     (Optional activitydiagram) (Optional sequencediagram)
+     (Optional usecasediagram)))
+Tree 1:
+ ConstraintSet
+
+Generation: 22
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.5 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (argouml (Mandatory (collaborationdiagram
+     (Optional deploymentdiagram) (Mandatory (diagrams
+     (Or (class (Optional statediagram) (Optional
+         cognitive))) (Optional logging))) (Optional
+     usecasediagram))) (Optional activitydiagram)
+     (Optional sequencediagram)))
+Tree 1:
+ ConstraintSet
+
+Generation: 23
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.5 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (argouml (Mandatory (collaborationdiagram
+     (Optional deploymentdiagram) (Mandatory (diagrams
+     (Alternative (class (Optional statediagram)
+         (Optional cognitive))) (Optional logging)))))
+     (Optional sequencediagram) (Optional activitydiagram)
+     (Optional usecasediagram)))
+Tree 1:
+ (ConstraintSet (Constraint (Or (Not (Atom
+     logging)) (Atom collaborationdiagram))))
+
+Generation: 24
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.5 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (argouml (Mandatory (collaborationdiagram
+     (Optional deploymentdiagram) (Mandatory (diagrams
+     (Or (class (Optional statediagram) (Optional
+         cognitive) (Optional sequencediagram))) (Optional
+     logging))) (Optional usecasediagram))) (Optional
+     activitydiagram)))
+Tree 1:
+ ConstraintSet
+
+Generation: 25
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.5 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (argouml (Mandatory (collaborationdiagram
+     (Optional deploymentdiagram) (Mandatory (diagrams
+     (Alternative (class (Optional statediagram)
+         (Optional cognitive))) (Optional logging)))
+     (Optional sequencediagram) (Optional usecasediagram)))
+     (Optional activitydiagram)))
+Tree 1:
+ (ConstraintSet (Constraint (Or (Not (Atom
+     collaborationdiagram)) (Atom diagrams))))
+
+Generation: 26
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.5 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (class (Mandatory (argouml (Optional
+     cognitive) (Optional usecasediagram))) (Optional
+     activitydiagram) (Mandatory (collaborationdiagram
+     (Optional deploymentdiagram) (Mandatory (diagrams
+     (Optional logging))))) (Optional statediagram)
+     (Optional sequencediagram)))
+Tree 1:
+ ConstraintSet
+
+Generation: 27
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.5 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (argouml (Mandatory (collaborationdiagram
+     (Optional deploymentdiagram) (Mandatory (diagrams
+     (Alternative (class (Optional cognitive)))
+     (Optional logging))) (Optional usecasediagram)))
+     (Optional activitydiagram) (Optional sequencediagram)
+     (Optional statediagram)))
+Tree 1:
+ ConstraintSet
+
+Generation: 28
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.5 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (argouml (Mandatory (collaborationdiagram
+     (Optional deploymentdiagram) (Mandatory (diagrams
+     (Or (class (Optional statediagram) (Optional
+         cognitive))) (Optional logging))) (Optional
+     usecasediagram))) (Optional activitydiagram)
+     (Optional sequencediagram)))
+Tree 1:
+ ConstraintSet
+
+Generation: 29
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.5 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (argouml (Mandatory (class (Optional
+     statediagram) (Optional cognitive) (Mandatory
+     (diagrams (Optional logging))))) (Optional
+     activitydiagram) (Mandatory (collaborationdiagram
+     (Optional deploymentdiagram) (Optional usecasediagram)))
+     (Optional sequencediagram)))
+Tree 1:
+ ConstraintSet
+
+Generation: 30
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.5 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (argouml (Mandatory (collaborationdiagram
+     (Optional deploymentdiagram) (Mandatory (diagrams
+     (Optional logging))) (Optional activitydiagram)
+     (Optional usecasediagram) (Optional sequencediagram)))
+     (Mandatory (class (Optional statediagram)
+         (Optional cognitive)))))
+Tree 1:
+ ConstraintSet
+
+Generation: 31
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.5 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (collaborationdiagram (Mandatory (argouml
+     (Optional deploymentdiagram) (Mandatory (diagrams
+     (Optional logging))) (Optional activitydiagram)
+     (Optional sequencediagram) (Optional usecasediagram)))
+     (Mandatory (class (Optional statediagram)
+         (Optional cognitive)))))
+Tree 1:
+ ConstraintSet
+
+Generation: 32
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.5 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (collaborationdiagram (Mandatory (argouml
+     (Optional deploymentdiagram) (Mandatory (diagrams
+     (Optional logging))))) (Mandatory (class
+     (Optional statediagram) (Optional cognitive)
+     (Optional sequencediagram))) (Optional activitydiagram)
+     (Optional usecasediagram)))
+Tree 1:
+ ConstraintSet
+
+Generation: 33
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.5 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (class (Mandatory (collaborationdiagram
+     (Mandatory (diagrams (Optional statediagram)
+         (Or argouml) (Optional logging))) (Optional
+     deploymentdiagram) (Optional sequencediagram)
+     (Optional cognitive))) (Optional activitydiagram)
+     (Optional usecasediagram)))
+Tree 1:
+ ConstraintSet
+
+Generation: 34
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.5 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (diagrams (Mandatory (collaborationdiagram
+     (Mandatory (class (Optional statediagram)))))
+     (Mandatory (argouml (Optional cognitive)
+         (Optional usecasediagram) (Optional deploymentdiagram)
+         (Optional activitydiagram) (Optional sequencediagram)))
+     (Optional logging)))
+Tree 1:
+ ConstraintSet
+
+Generation: 35
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.5 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (class (Mandatory (argouml (Optional
+     deploymentdiagram))) (Mandatory (collaborationdiagram
+     (Mandatory (diagrams (Optional logging)))
+     (Optional activitydiagram) (Optional sequencediagram)
+     (Optional usecasediagram))) (Optional statediagram)
+     (Optional cognitive)))
+Tree 1:
+ ConstraintSet
+
+Generation: 36
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.5 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (argouml (Mandatory class) (Mandatory
+     (collaborationdiagram (Mandatory (diagrams
+         (Optional logging))) (Optional sequencediagram)
+         (Optional deploymentdiagram) (Optional usecasediagram)))
+     (Optional statediagram) (Optional cognitive)
+     (Optional activitydiagram)))
+Tree 1:
+ ConstraintSet
+
+Generation: 37
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.5 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (class (Mandatory (diagrams (Optional
+     logging) (Optional statediagram))) (Mandatory
+     (argouml (Optional cognitive) (Optional usecasediagram)))
+     (Optional activitydiagram) (Mandatory (collaborationdiagram
+     (Optional deploymentdiagram) (Optional sequencediagram)))))
+Tree 1:
+ ConstraintSet
+
+Generation: 38
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 1.0 0.9999629741445067]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (argouml (Mandatory (diagrams (Optional
+     logging) (Optional deploymentdiagram))) (Mandatory
+     (class (Optional cognitive) (Optional statediagram)
+         (Optional sequencediagram))) (Optional activitydiagram)
+     (Optional collaborationdiagram) (Optional
+     usecasediagram)))
+Tree 1:
+ ConstraintSet
+
+Generation: 39
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 1.0 0.9999629741445067]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (argouml (Mandatory (diagrams (Optional
+     logging) (Optional deploymentdiagram))) (Mandatory
+     (class (Optional cognitive) (Optional statediagram)
+         (Optional sequencediagram))) (Optional activitydiagram)
+     (Optional collaborationdiagram) (Optional
+     usecasediagram)))
+Tree 1:
+ ConstraintSet
+
+Generation: 40
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 1.0 0.9999629741445067]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (argouml (Mandatory (class (Optional
+     cognitive) (Optional statediagram) (Mandatory
+     (diagrams (Optional logging) (Optional deploymentdiagram)))
+     (Optional sequencediagram))) (Optional activitydiagram)
+     (Optional collaborationdiagram) (Optional
+     usecasediagram)))
+Tree 1:
+ ConstraintSet
+
+Generation: 41
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 1.0 0.9999629741445067]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (argouml (Mandatory (class (Optional
+     cognitive) (Optional statediagram) (Mandatory
+     (diagrams (Optional logging) (Optional deploymentdiagram)))
+     (Optional sequencediagram) (Optional activitydiagram)))
+     (Optional collaborationdiagram) (Optional
+     usecasediagram)))
+Tree 1:
+ ConstraintSet
+
+Generation: 42
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 1.0 0.9999629741445067]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (argouml (Mandatory (diagrams (Optional
+     logging) (Optional deploymentdiagram))) (Mandatory
+     (class (Optional cognitive) (Optional statediagram)
+         (Optional sequencediagram))) (Optional activitydiagram)
+     (Optional collaborationdiagram) (Optional
+     usecasediagram)))
+Tree 1:
+ (ConstraintSet (Constraint (Or (Not (Atom
+     cognitive)) (Atom argouml))))
+
+Generation: 43
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.75 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (argouml (Mandatory (class (Optional
+     cognitive) (Optional statediagram) (Mandatory
+     diagrams) (Optional deploymentdiagram)))
+     (Optional activitydiagram) (Optional (collaborationdiagram
+     (Optional sequencediagram))) (Optional usecasediagram)
+     (Optional logging)))
+Tree 1:
+ ConstraintSet
+
+Generation: 44
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.75 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (argouml (Mandatory (class (Optional
+     cognitive) (Optional statediagram) (Mandatory
+     (diagrams (Optional logging))) (Optional
+     deploymentdiagram))) (Optional activitydiagram)
+     (Optional (collaborationdiagram (Optional
+         sequencediagram))) (Optional usecasediagram)))
+Tree 1:
+ (ConstraintSet (Constraint (Or (Not (Atom
+     deploymentdiagram)) (Atom class))))
+
+Generation: 45
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 1.0 0.9999629741445067]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (argouml (Mandatory (class (Optional
+     cognitive) (Optional statediagram) (Mandatory
+     (diagrams (Optional logging) (Optional deploymentdiagram)))
+     (Optional sequencediagram))) (Optional activitydiagram)
+     (Optional collaborationdiagram) (Optional
+     usecasediagram)))
+Tree 1:
+ ConstraintSet
+
+Generation: 46
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.75 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (argouml (Mandatory (class (Optional
+     cognitive) (Optional statediagram) (Mandatory
+     (diagrams (Optional logging) (Optional deploymentdiagram)))))
+     (Optional activitydiagram) (Optional (collaborationdiagram
+     (Optional sequencediagram))) (Optional usecasediagram)))
+Tree 1:
+ ConstraintSet
+
+Generation: 47
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.75 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (argouml (Mandatory (class (Optional
+     cognitive) (Mandatory (diagrams (Optional
+     logging) (Optional deploymentdiagram) (Optional
+     statediagram))))) (Optional activitydiagram)
+     (Optional (collaborationdiagram (Optional
+         sequencediagram))) (Optional usecasediagram)))
+Tree 1:
+ (ConstraintSet (Constraint (Or (Not (Atom
+     deploymentdiagram)) (Atom class))))
+
+Generation: 48
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 1.0 0.9999629741445067]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (argouml (Optional activitydiagram)
+     (Optional collaborationdiagram) (Optional
+     usecasediagram) (Mandatory (class (Optional
+     cognitive) (Optional statediagram) (Mandatory
+     (diagrams (Optional deploymentdiagram)))
+     (Optional logging) (Optional sequencediagram)))))
+Tree 1:
+ (ConstraintSet (Constraint (Or (Not (Atom
+     usecasediagram)) (Atom argouml))))
+
+Generation: 49
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.75 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (argouml (Mandatory (class (Optional
+     cognitive) (Optional statediagram) (Mandatory
+     (diagrams (Optional logging) (Optional deploymentdiagram)))))
+     (Optional activitydiagram) (Optional (collaborationdiagram
+     (Optional sequencediagram))) (Optional usecasediagram)))
+Tree 1:
+ ConstraintSet
+
+Generation: 50
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 1.0 0.9999629741445067]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (argouml (Mandatory (diagrams (Optional
+     logging) (Optional deploymentdiagram))) (Mandatory
+     (class (Optional cognitive) (Optional statediagram)
+         (Optional sequencediagram))) (Optional activitydiagram)
+     (Optional collaborationdiagram) (Optional
+     usecasediagram)))
+Tree 1:
+ ConstraintSet
+
+Generation: 51
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.75 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (argouml (Alternative (diagrams (Optional
+     logging))) (Mandatory (class (Optional cognitive)
+     (Optional statediagram) (Optional deploymentdiagram)))
+     (Optional activitydiagram) (Optional (collaborationdiagram
+     (Optional sequencediagram))) (Optional usecasediagram)))
+Tree 1:
+ ConstraintSet
+
+Generation: 52
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 1.0 0.9999629741445067]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (argouml (Mandatory (diagrams (Optional
+     logging) (Optional deploymentdiagram))) (Mandatory
+     (class (Optional cognitive) (Optional activitydiagram)
+         (Optional statediagram) (Optional sequencediagram)))
+     (Optional collaborationdiagram) (Optional
+     usecasediagram)))
+Tree 1:
+ ConstraintSet
+
+Generation: 53
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.75 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (argouml (Mandatory (class (Optional
+     cognitive) (Optional statediagram) (Mandatory
+     (diagrams (Optional logging))) (Optional
+     deploymentdiagram))) (Optional activitydiagram)
+     (Optional (collaborationdiagram (Optional
+         sequencediagram))) (Optional usecasediagram)))
+Tree 1:
+ (ConstraintSet (Constraint (Or (Not (Atom
+     deploymentdiagram)) (Atom class))))
+
+Generation: 54
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 1.0 0.9999629741445067]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (argouml (Mandatory (diagrams (Optional
+     logging) (Optional deploymentdiagram))) (Optional
+     activitydiagram) (Optional collaborationdiagram)
+     (Optional usecasediagram) (Mandatory (class
+     (Optional cognitive) (Optional statediagram)
+     (Optional sequencediagram)))))
+Tree 1:
+ ConstraintSet
+
+Generation: 55
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 1.0 0.9999629741445067]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (argouml (Mandatory (diagrams (Optional
+     logging) (Optional deploymentdiagram))) (Mandatory
+     (class (Optional cognitive) (Optional activitydiagram)
+         (Optional statediagram) (Optional sequencediagram)))
+     (Optional collaborationdiagram) (Optional
+     usecasediagram)))
+Tree 1:
+ ConstraintSet
+
+Generation: 56
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 1.0 0.9999629741445067]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (argouml (Mandatory (class (Optional
+     cognitive) (Optional statediagram) (Optional
+     sequencediagram) (Optional collaborationdiagram)))
+     (Mandatory (diagrams (Optional logging) (Optional
+         deploymentdiagram))) (Optional activitydiagram)
+     (Optional usecasediagram)))
+Tree 1:
+ ConstraintSet
+
+Generation: 57
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.75 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (argouml (Optional activitydiagram)
+     (Optional (collaborationdiagram (Optional
+         sequencediagram))) (Mandatory (diagrams (Optional
+     deploymentdiagram))) (Mandatory (class (Optional
+     cognitive) (Optional statediagram))) (Optional
+     usecasediagram) (Optional logging)))
+Tree 1:
+ ConstraintSet
+
+Generation: 58
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 1.0 0.9999629741445067]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (argouml (Optional (diagrams (Optional
+     logging) (Optional deploymentdiagram))) (Mandatory
+     (class (Optional statediagram) (Optional
+         cognitive) (Optional activitydiagram) (Optional
+         sequencediagram))) (Optional collaborationdiagram)
+     (Optional usecasediagram)))
+Tree 1:
+ (ConstraintSet (Constraint (Or (Not (Atom
+     deploymentdiagram)) (Atom class))) (Constraint
+     (Or (Not (Atom argouml)) (Atom diagrams))))
+
+Generation: 59
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 1.0 0.9999629741445067]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (argouml (Mandatory (diagrams (Optional
+     logging) (Optional deploymentdiagram))) (Mandatory
+     (class (Optional statediagram) (Optional
+         cognitive) (Optional activitydiagram) (Optional
+         sequencediagram))) (Optional collaborationdiagram)
+     (Optional usecasediagram)))
+Tree 1:
+ (ConstraintSet (Constraint (Or (Not (Atom
+     deploymentdiagram)) (Atom class))) (Constraint
+     (Or (Not (Atom argouml)) (Atom diagrams))))
+
+Generation: 60
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.75 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (argouml (Mandatory (class (Optional
+     cognitive) (Optional statediagram) (Optional
+     deploymentdiagram))) (Alternative (diagrams
+     (Optional logging))) (Optional activitydiagram)
+     (Optional (collaborationdiagram (Optional
+         sequencediagram))) (Optional usecasediagram)))
+Tree 1:
+ ConstraintSet
+
+Generation: 61
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.75 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (argouml (Mandatory (class (Optional
+     cognitive) (Optional statediagram) (Mandatory
+     (diagrams (Optional logging))) (Optional
+     deploymentdiagram))) (Optional activitydiagram)
+     (Optional (collaborationdiagram (Optional
+         sequencediagram))) (Optional usecasediagram)))
+Tree 1:
+ ConstraintSet
+
+Generation: 62
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.75 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (argouml (Mandatory (class (Optional
+     cognitive) (Optional statediagram) (Mandatory
+     (diagrams (Optional deploymentdiagram)))
+     (Optional logging) (Optional activitydiagram)
+     (Optional usecasediagram))) (Optional (collaborationdiagram
+     (Optional sequencediagram)))))
+Tree 1:
+ ConstraintSet
+
+Generation: 63
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.75 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (argouml (Mandatory (class (Optional
+     cognitive) (Optional statediagram) (Mandatory
+     (diagrams (Optional deploymentdiagram)))
+     (Optional logging) (Optional activitydiagram)
+     (Optional usecasediagram))) (Optional (collaborationdiagram
+     (Optional sequencediagram)))))
+Tree 1:
+ ConstraintSet
+
+Generation: 64
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.75 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (argouml (Mandatory (class (Optional
+     cognitive) (Optional statediagram) (Optional
+     usecasediagram))) (Mandatory (diagrams (Optional
+     logging) (Optional deploymentdiagram) (Optional
+     (collaborationdiagram (Optional sequencediagram)))))
+     (Optional activitydiagram)))
+Tree 1:
+ ConstraintSet
+
+Generation: 65
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.75 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (argouml (Mandatory (diagrams (Optional
+     cognitive) (Optional logging) (Optional deploymentdiagram)))
+     (Mandatory (class (Optional activitydiagram)
+         (Optional statediagram) (Optional usecasediagram)))
+     (Optional (collaborationdiagram (Optional
+         sequencediagram)))))
+Tree 1:
+ ConstraintSet
+
+Generation: 66
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.75 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (class (Mandatory (argouml (Optional
+     cognitive) (Optional statediagram) (Optional
+     deploymentdiagram) (Mandatory (diagrams (Optional
+     logging))) (Optional usecasediagram))) (Optional
+     activitydiagram) (Optional (collaborationdiagram
+     (Optional sequencediagram)))))
+Tree 1:
+ ConstraintSet
+
+Generation: 67
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.75 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (class (Mandatory (argouml (Optional
+     cognitive) (Optional statediagram) (Optional
+     deploymentdiagram) (Mandatory (diagrams (Optional
+     logging))) (Optional usecasediagram))) (Optional
+     activitydiagram) (Optional (collaborationdiagram
+     (Optional sequencediagram)))))
+Tree 1:
+ ConstraintSet
+
+Generation: 68
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.75 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (argouml (Mandatory (class (Optional
+     activitydiagram) (Optional cognitive) (Optional
+     statediagram))) (Mandatory (diagrams (Optional
+     logging) (Optional deploymentdiagram))) (Optional
+     (collaborationdiagram (Optional sequencediagram)))
+     (Optional usecasediagram)))
+Tree 1:
+ ConstraintSet
+
+Generation: 69
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 1.0 0.9999629741445067]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (argouml (Mandatory (class (Optional
+     statediagram) (Optional cognitive) (Optional
+     activitydiagram) (Optional sequencediagram)))
+     (Mandatory (diagrams (Optional logging) (Optional
+         deploymentdiagram))) (Optional collaborationdiagram)
+     (Optional usecasediagram)))
+Tree 1:
+ (ConstraintSet (Constraint (Or (Not (Atom
+     argouml)) (Atom diagrams))))
+
+Generation: 70
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 1.0 0.9999629741445067]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (argouml (Mandatory (class (Optional
+     cognitive) (Optional statediagram) (Mandatory
+     (diagrams (Optional deploymentdiagram)))
+     (Optional logging) (Optional activitydiagram)
+     (Optional usecasediagram) (Optional sequencediagram)))
+     (Optional collaborationdiagram)))
+Tree 1:
+ ConstraintSet
+
+Generation: 71
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 1.0 0.9999629741445067]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (argouml (Mandatory (class (Optional
+     cognitive) (Optional statediagram) (Mandatory
+     (diagrams (Optional deploymentdiagram)))
+     (Optional logging) (Optional activitydiagram)
+     (Optional usecasediagram) (Optional sequencediagram)
+     (Optional collaborationdiagram)))))
+Tree 1:
+ ConstraintSet

@@ -1,0 +1,329 @@
+0.6065573692321777 0.5692307949066162 1.0
+Feature Model: Root(Mandatory(guibase) modelbase Optional(abstractgenerator(Or(formgenerator(Optional(Or(randomgenerator) generatorselection Optional(randomdefaultgenerator)), Optional(undoredoguibase(Alternative(Mandatory(undoredo) undoredogenerator Optional(test(Or(undoredotest)))))), Optional(io))), Optional(formdefaultgenerator), Optional(popupmenu))))
+CTCs: ConstraintSet(Constraint(Not(Atom(formgenerator)) Or Atom(abstractgenerator)), Constraint(Not(Atom(formdefaultgenerator)) Or Not(Atom(randomdefaultgenerator))), Constraint(Not(Atom(randomgenerator)) Or Atom(generatorselection)))
+Number Of Products: 61
+Number of Contained Products: 37
+Broken Dependencies: 
+
+0.6065573692321777 0.5692307949066162 1.0
+Feature Model: Root(Mandatory(guibase) modelbase Optional(abstractgenerator(Or(formgenerator(Optional(Or(randomgenerator) generatorselection Optional(randomdefaultgenerator)), Optional(undoredoguibase(Alternative(Mandatory(undoredo) undoredogenerator Optional(test(Alternative(undoredotest)))))), Optional(io))), Optional(formdefaultgenerator), Optional(popupmenu))))
+CTCs: Constraint(Not(Atom(formdefaultgenerator)) Or Not(Atom(randomdefaultgenerator))) ConstraintSet Constraint(Not(Atom(undoredo)) Or Atom(undoredogenerator))
+Number Of Products: 61
+Number of Contained Products: 37
+Broken Dependencies: 
+
+0.6734693646430969 0.5076923370361328 1.0
+Feature Model: Root(Mandatory(guibase) modelbase Optional(abstractgenerator(Or(formgenerator(Optional(Optional(randomdefaultgenerator) generatorselection Or(randomgenerator)), Optional(undoredoguibase(Alternative(Mandatory(undoredo) undoredogenerator Optional(test(Alternative(undoredotest)))))), Optional(io))), Optional(formdefaultgenerator), Optional(popupmenu))))
+CTCs: ConstraintSet(Constraint(Not(Atom(undoredotest)) Or Atom(formdefaultgenerator)), Constraint(Not(Atom(formgenerator)) Or Atom(abstractgenerator)), Constraint(Not(Atom(formdefaultgenerator)) Or Not(Atom(randomdefaultgenerator))), Constraint(Not(Atom(randomgenerator)) Or Atom(generatorselection)))
+Number Of Products: 49
+Number of Contained Products: 33
+Broken Dependencies: 
+
+0.7209302186965942 0.4769230782985687 1.0
+Feature Model: Root(Mandatory(guibase) modelbase Optional(Or(formgenerator(Optional(Or(randomgenerator) generatorselection Optional(randomdefaultgenerator)), Optional(undoredoguibase(Alternative(Mandatory(undoredo) undoredogenerator Optional(test(Or(undoredotest)))))), Optional(io))) abstractgenerator Optional(formdefaultgenerator(Optional(popupmenu)))))
+CTCs: Constraint(Not(Atom(formdefaultgenerator)) Or Not(Atom(randomdefaultgenerator))) ConstraintSet Constraint(Not(Atom(randomgenerator)) Or Atom(generatorselection))
+Number Of Products: 43
+Number of Contained Products: 31
+Broken Dependencies: 
+
+0.7837837934494019 0.446153849363327 1.0
+Feature Model: Root(Mandatory(guibase) modelbase Optional(Or(formgenerator(Optional(Or(randomgenerator) generatorselection Optional(randomdefaultgenerator)), Optional(undoredoguibase(Alternative(Mandatory(undoredo) undoredogenerator Optional(test(Alternative(undoredotest)))))), Optional(io))) abstractgenerator Optional(formdefaultgenerator(Optional(popupmenu)))))
+CTCs: Constraint(Not(Atom(undoredotest)) Or Atom(formdefaultgenerator)) ConstraintSet Constraint(Not(Atom(formdefaultgenerator)) Or Not(Atom(randomdefaultgenerator)))
+Number Of Products: 37
+Number of Contained Products: 29
+Broken Dependencies: 
+
+0.7837837934494019 0.446153849363327 1.0
+Feature Model: Root(Alternative(guibase) modelbase Optional(abstractgenerator(Or(Optional(Alternative(generatorselection) randomgenerator Optional(randomdefaultgenerator)) formgenerator Optional(io)), Optional(formdefaultgenerator(Optional(popupmenu))), Optional(undoredoguibase(Alternative(Mandatory(undoredo) undoredogenerator Optional(test(Or(undoredotest)))))))))
+CTCs: Constraint(Not(Atom(undoredotest)) Or Atom(formdefaultgenerator)) ConstraintSet Constraint(Not(Atom(formdefaultgenerator)) Or Not(Atom(randomdefaultgenerator)))
+Number Of Products: 37
+Number of Contained Products: 29
+Broken Dependencies: 
+
+0.8235294222831726 0.4307692348957062 1.0
+Feature Model: Root(Optional(Alternative(Optional(Or(randomgenerator) generatorselection Optional(randomdefaultgenerator)) formgenerator Optional(undoredoguibase(Alternative(Mandatory(undoredo) undoredogenerator Optional(test(Alternative(undoredotest))))))) abstractgenerator Optional(Optional(popupmenu) formdefaultgenerator Optional(io))) modelbase Alternative(guibase))
+CTCs: Constraint(Not(Atom(abstractgenerator)) Or Atom(formgenerator)) ConstraintSet Constraint(Not(Atom(formdefaultgenerator)) Or Not(Atom(randomdefaultgenerator)))
+Number Of Products: 34
+Number of Contained Products: 28
+Broken Dependencies: 
+
+0.8235294222831726 0.4307692348957062 1.0
+Feature Model: Root(Mandatory(guibase) modelbase Optional(Or(Optional(Or(randomgenerator) generatorselection Optional(randomdefaultgenerator)) formgenerator Optional(undoredoguibase(Alternative(Mandatory(undoredo) undoredogenerator Optional(test(Alternative(undoredotest))))))) abstractgenerator Optional(Optional(popupmenu) formdefaultgenerator Optional(io))))
+CTCs: ConstraintSet(Constraint(Not(Atom(formdefaultgenerator)) Or Not(Atom(randomdefaultgenerator))))
+Number Of Products: 34
+Number of Contained Products: 28
+Broken Dependencies: 
+
+0.8235294222831726 0.4307692348957062 1.0
+Feature Model: Root(Alternative(guibase) modelbase Optional(Alternative(Optional(randomgenerator(Alternative(generatorselection(Optional(randomdefaultgenerator))))) formgenerator Optional(undoredoguibase(Alternative(Mandatory(undoredo) undoredogenerator Optional(test(Or(undoredotest))))))) abstractgenerator Optional(Optional(popupmenu) formdefaultgenerator Optional(io))))
+CTCs: Constraint(Not(Atom(formgenerator)) Or Atom(abstractgenerator)) ConstraintSet Constraint(Not(Atom(formdefaultgenerator)) Or Not(Atom(randomdefaultgenerator)))
+Number Of Products: 34
+Number of Contained Products: 28
+Broken Dependencies: 
+
+0.8235294222831726 0.4307692348957062 1.0
+Feature Model: Root(Mandatory(guibase) modelbase Optional(abstractgenerator(Alternative(Optional(Alternative(generatorselection) randomgenerator Optional(randomdefaultgenerator)) formgenerator Optional(undoredoguibase(Alternative(Mandatory(undoredo) undoredogenerator Optional(test(Or(undoredotest))))))), Optional(formdefaultgenerator(Optional(io))), Optional(popupmenu))))
+CTCs: ConstraintSet(Constraint(Not(Atom(formgenerator)) Or Atom(abstractgenerator)), Constraint(Not(Atom(formdefaultgenerator)) Or Not(Atom(randomdefaultgenerator))), Constraint(Not(Atom(randomgenerator)) Or Atom(generatorselection)), Constraint(Not(Atom(popupmenu)) Or Atom(formdefaultgenerator)))
+Number Of Products: 34
+Number of Contained Products: 28
+Broken Dependencies: 
+
+0.8235294222831726 0.4307692348957062 1.0
+Feature Model: Root(Mandatory(guibase) modelbase Optional(Alternative(Optional(Alternative(randomgenerator) generatorselection Optional(randomdefaultgenerator)) formgenerator Optional(undoredoguibase(Alternative(Mandatory(undoredo) undoredogenerator Optional(test(Alternative(undoredotest))))))) abstractgenerator Optional(Optional(popupmenu) formdefaultgenerator Optional(io))))
+CTCs: ConstraintSet(Constraint(Not(Atom(formdefaultgenerator)) Or Not(Atom(randomdefaultgenerator))))
+Number Of Products: 34
+Number of Contained Products: 28
+Broken Dependencies: 
+
+0.8709677457809448 0.4153846204280853 1.0
+Feature Model: Root(Mandatory(guibase) modelbase Optional(Alternative(Optional(Or(randomgenerator) generatorselection Optional(randomdefaultgenerator)) formgenerator Optional(undoredoguibase(Alternative(Mandatory(undoredo) undoredogenerator Optional(test(Alternative(undoredotest))))))) abstractgenerator Optional(Optional(popupmenu) formdefaultgenerator Optional(io))))
+CTCs: ConstraintSet(Constraint(Not(Atom(undoredotest)) Or Atom(formdefaultgenerator)), Constraint(Not(Atom(formdefaultgenerator)) Or Not(Atom(randomdefaultgenerator))), Constraint(Not(Atom(test)) Or Atom(undoredogenerator)), Constraint(Not(Atom(test)) Or Atom(formgenerator)))
+Number Of Products: 31
+Number of Contained Products: 27
+Broken Dependencies: 
+
+0.8709677457809448 0.4153846204280853 1.0
+Feature Model: Root(Mandatory(guibase) modelbase Optional(Or(Optional(Or(randomgenerator) generatorselection Optional(randomdefaultgenerator)) formgenerator Optional(undoredoguibase(Alternative(Mandatory(undoredo) undoredogenerator Optional(test(Or(undoredotest))))))) abstractgenerator Optional(Optional(io) formdefaultgenerator Optional(popupmenu))))
+CTCs: ConstraintSet(Constraint(Not(Atom(undoredotest)) Or Atom(formdefaultgenerator)), Constraint(Not(Atom(formdefaultgenerator)) Or Not(Atom(randomdefaultgenerator))), Constraint(Not(Atom(test)) Or Atom(formgenerator)), Constraint(Not(Atom(randomgenerator)) Or Atom(generatorselection)), Constraint(Not(Atom(popupmenu)) Or Atom(formdefaultgenerator)))
+Number Of Products: 31
+Number of Contained Products: 27
+Broken Dependencies: 
+
+0.8709677457809448 0.4153846204280853 1.0
+Feature Model: Root(Mandatory(guibase) modelbase Optional(Alternative(Optional(Or(randomgenerator) generatorselection Optional(randomdefaultgenerator)) formgenerator Optional(undoredoguibase(Alternative(Mandatory(undoredo) undoredogenerator Optional(test(Or(undoredotest))))))) abstractgenerator Optional(Optional(io) formdefaultgenerator Optional(popupmenu))))
+CTCs: Constraint(Not(Atom(undoredotest)) Or Atom(formdefaultgenerator)) ConstraintSet Constraint(Not(Atom(formdefaultgenerator)) Or Not(Atom(randomdefaultgenerator)))
+Number Of Products: 31
+Number of Contained Products: 27
+Broken Dependencies: 
+
+0.8709677457809448 0.4153846204280853 1.0
+Feature Model: Root(Mandatory(guibase) modelbase Optional(Or(Optional(Or(randomgenerator) generatorselection Optional(randomdefaultgenerator)) formgenerator Optional(undoredoguibase(Alternative(Mandatory(undoredo) undoredogenerator Optional(test(Or(undoredotest))))))) abstractgenerator Optional(Optional(popupmenu) formdefaultgenerator Optional(io))))
+CTCs: Constraint(Not(Atom(undoredotest)) Or Atom(formdefaultgenerator)) ConstraintSet Constraint(Not(Atom(formdefaultgenerator)) Or Not(Atom(randomdefaultgenerator)))
+Number Of Products: 31
+Number of Contained Products: 27
+Broken Dependencies: 
+
+0.9285714030265808 0.4000000059604645 1.0
+Feature Model: Root(Optional(Or(formgenerator(Optional(Or(randomgenerator) generatorselection Optional(randomdefaultgenerator)))) abstractgenerator Optional(formdefaultgenerator(Optional(io), Optional(popupmenu), Optional(Mandatory(undoredo(Alternative(undoredoguibase))) undoredogenerator Optional(test(Or(undoredotest))))))) modelbase Mandatory(guibase))
+CTCs: ConstraintSet(Constraint(Not(Atom(undoredotest)) Or Atom(formdefaultgenerator)), Constraint(Not(Atom(formgenerator)) Or Atom(abstractgenerator)), Constraint(Not(Atom(formdefaultgenerator)) Or Not(Atom(randomdefaultgenerator))), Constraint(Not(Atom(undoredotest)) Or Atom(test)), Constraint(Not(Atom(test)) Or Atom(formgenerator)))
+Number Of Products: 28
+Number of Contained Products: 26
+Broken Dependencies: 
+
+0.9285714030265808 0.4000000059604645 1.0
+Feature Model: Root(Mandatory(guibase) modelbase Optional(Or(formgenerator(Optional(Alternative(generatorselection) randomgenerator Optional(randomdefaultgenerator)))) abstractgenerator Optional(formdefaultgenerator(Optional(popupmenu), Optional(io), Optional(Mandatory(undoredo(Alternative(undoredoguibase))) undoredogenerator Optional(test(Alternative(undoredotest))))))))
+CTCs: ConstraintSet(Constraint(Not(Atom(formgenerator)) Or Atom(abstractgenerator)), Constraint(Not(Atom(formdefaultgenerator)) Or Not(Atom(randomdefaultgenerator))), Constraint(Not(Atom(test)) Or Atom(formgenerator)), Constraint(Not(Atom(undoredo)) Or Atom(abstractgenerator)))
+Number Of Products: 28
+Number of Contained Products: 26
+Broken Dependencies: 
+
+0.9285714030265808 0.4000000059604645 1.0
+Feature Model: Root(Mandatory(guibase) modelbase Optional(Alternative(formgenerator(Optional(Alternative(randomgenerator) generatorselection Optional(randomdefaultgenerator)))) abstractgenerator Optional(formdefaultgenerator(Optional(io), Optional(popupmenu), Optional(Mandatory(undoredo(Alternative(undoredoguibase))) undoredogenerator Optional(test(Or(undoredotest))))))))
+CTCs: ConstraintSet(Constraint(Not(Atom(undoredotest)) Or Atom(formdefaultgenerator)), Constraint(Not(Atom(formdefaultgenerator)) Or Not(Atom(randomdefaultgenerator))), Constraint(Not(Atom(test)) Or Atom(formgenerator)), Constraint(Not(Atom(generatorselection)) Or Atom(modelbase)))
+Number Of Products: 28
+Number of Contained Products: 26
+Broken Dependencies: 
+
+0.9285714030265808 0.4000000059604645 1.0
+Feature Model: Root(Alternative(guibase) modelbase Optional(Or(formgenerator(Optional(Or(randomgenerator) generatorselection Optional(randomdefaultgenerator)))) abstractgenerator Optional(formdefaultgenerator(Optional(popupmenu), Optional(io), Optional(Mandatory(undoredo(Alternative(undoredoguibase))) undoredogenerator Optional(test(Alternative(undoredotest))))))))
+CTCs: ConstraintSet(Constraint(Not(Atom(formdefaultgenerator)) Or Not(Atom(randomdefaultgenerator))))
+Number Of Products: 28
+Number of Contained Products: 26
+Broken Dependencies: 
+
+0.9285714030265808 0.4000000059604645 1.0
+Feature Model: Root(Mandatory(guibase) modelbase Optional(Or(formgenerator(Optional(Or(randomgenerator) generatorselection Optional(randomdefaultgenerator)))) abstractgenerator Optional(formdefaultgenerator(Optional(io), Optional(popupmenu), Optional(Mandatory(undoredo(Alternative(undoredoguibase))) undoredogenerator Optional(test(Or(undoredotest))))))))
+CTCs: ConstraintSet(Constraint(Not(Atom(undoredotest)) Or Atom(formdefaultgenerator)), Constraint(Not(Atom(formdefaultgenerator)) Or Not(Atom(randomdefaultgenerator))), Constraint(Not(Atom(undoredogenerator)) Or Atom(guibase)))
+Number Of Products: 28
+Number of Contained Products: 26
+Broken Dependencies: 
+
+0.9285714030265808 0.4000000059604645 1.0
+Feature Model: Root(Optional(Or(formgenerator(Optional(Or(randomgenerator) generatorselection Optional(randomdefaultgenerator)))) abstractgenerator Optional(formdefaultgenerator(Optional(popupmenu), Optional(io), Optional(Mandatory(undoredo(Or(undoredoguibase))) undoredogenerator Optional(test(Or(undoredotest))))))) modelbase Alternative(guibase))
+CTCs: ConstraintSet(Constraint(Not(Atom(formdefaultgenerator)) Or Not(Atom(randomdefaultgenerator))))
+Number Of Products: 28
+Number of Contained Products: 26
+Broken Dependencies: 
+
+0.9285714030265808 0.4000000059604645 1.0
+Feature Model: Root(Mandatory(guibase) modelbase Optional(Alternative(formgenerator(Optional(Or(randomgenerator) generatorselection Optional(randomdefaultgenerator)))) abstractgenerator Optional(formdefaultgenerator(Optional(io), Optional(popupmenu), Optional(Mandatory(undoredo(Alternative(undoredoguibase))) undoredogenerator Optional(test(Alternative(undoredotest))))))))
+CTCs: Constraint(Not(Atom(formdefaultgenerator)) Or Not(Atom(randomdefaultgenerator))) ConstraintSet Constraint(Not(Atom(undoredotest)) Or Atom(modelbase))
+Number Of Products: 28
+Number of Contained Products: 26
+Broken Dependencies: 
+
+0.9285714030265808 0.4000000059604645 1.0
+Feature Model: Root(Optional(Or(formgenerator(Optional(Or(randomgenerator) generatorselection Optional(randomdefaultgenerator)))) abstractgenerator Optional(formdefaultgenerator(Optional(popupmenu), Optional(io), Optional(Mandatory(undoredo(Alternative(undoredogenerator))) undoredoguibase Optional(test(Or(undoredotest))))))) modelbase Alternative(guibase))
+CTCs: ConstraintSet(Constraint(Not(Atom(formdefaultgenerator)) Or Not(Atom(randomdefaultgenerator))))
+Number Of Products: 28
+Number of Contained Products: 26
+Broken Dependencies: 
+
+0.9285714030265808 0.4000000059604645 1.0
+Feature Model: Root(Mandatory(guibase) modelbase Optional(Alternative(formgenerator(Optional(Or(randomgenerator) generatorselection Optional(randomdefaultgenerator)))) abstractgenerator Optional(formdefaultgenerator(Optional(io), Optional(popupmenu), Optional(Mandatory(undoredo(Or(undoredoguibase))) undoredogenerator Optional(test(Or(undoredotest))))))))
+CTCs: ConstraintSet(Constraint(Not(Atom(formgenerator)) Or Atom(abstractgenerator)), Constraint(Not(Atom(undoredogenerator)) Or Atom(abstractgenerator)), Constraint(Not(Atom(formdefaultgenerator)) Or Not(Atom(randomdefaultgenerator))), Constraint(Not(Atom(test)) Or Atom(formgenerator)), Constraint(Not(Atom(undoredoguibase)) Or Atom(formgenerator)))
+Number Of Products: 28
+Number of Contained Products: 26
+Broken Dependencies: 
+
+0.9285714030265808 0.4000000059604645 1.0
+Feature Model: Root(Optional(Or(formgenerator(Optional(Or(randomgenerator) generatorselection Optional(randomdefaultgenerator)))) abstractgenerator Optional(formdefaultgenerator(Optional(popupmenu), Optional(io), Optional(Mandatory(undoredo(Alternative(undoredoguibase))) undoredogenerator Optional(test(Alternative(undoredotest))))))) modelbase Alternative(guibase))
+CTCs: Constraint(Not(Atom(formgenerator)) Or Atom(abstractgenerator)) ConstraintSet Constraint(Not(Atom(formdefaultgenerator)) Or Not(Atom(randomdefaultgenerator)))
+Number Of Products: 28
+Number of Contained Products: 26
+Broken Dependencies: 
+
+0.9285714030265808 0.4000000059604645 1.0
+Feature Model: Root(Alternative(guibase) modelbase Optional(Alternative(formgenerator(Optional(Or(randomgenerator) generatorselection Optional(randomdefaultgenerator)))) abstractgenerator Optional(formdefaultgenerator(Optional(popupmenu), Optional(io), Optional(Mandatory(undoredo(Alternative(undoredoguibase))) undoredogenerator Optional(test(Alternative(undoredotest))))))))
+CTCs: ConstraintSet(Constraint(Not(Atom(formdefaultgenerator)) Or Not(Atom(randomdefaultgenerator))))
+Number Of Products: 28
+Number of Contained Products: 26
+Broken Dependencies: 
+
+0.9285714030265808 0.4000000059604645 1.0
+Feature Model: Root(Mandatory(guibase) modelbase Optional(Or(formgenerator(Optional(Or(randomgenerator) generatorselection Optional(randomdefaultgenerator)))) abstractgenerator Optional(formdefaultgenerator(Optional(popupmenu), Optional(io), Optional(undoredogenerator(Mandatory(Or(undoredoguibase) undoredo Optional(test(Or(undoredotest))))))))))
+CTCs: ConstraintSet(Constraint(Not(Atom(undoredotest)) Or Atom(formdefaultgenerator)), Constraint(Not(Atom(undoredogenerator)) Or Atom(abstractgenerator)), Constraint(Not(Atom(formdefaultgenerator)) Or Not(Atom(randomdefaultgenerator))), Constraint(Not(Atom(io)) Or Atom(formdefaultgenerator)))
+Number Of Products: 28
+Number of Contained Products: 26
+Broken Dependencies: 
+
+0.9285714030265808 0.4000000059604645 1.0
+Feature Model: Root(Mandatory(guibase) modelbase Optional(Or(formgenerator(Optional(Alternative(randomgenerator) generatorselection Optional(randomdefaultgenerator)))) abstractgenerator Optional(formdefaultgenerator(Optional(popupmenu), Optional(io), Optional(undoredogenerator(Or(undoredoguibase), Mandatory(undoredo), Optional(test(Or(undoredotest)))))))))
+CTCs: Constraint(Not(Atom(formdefaultgenerator)) Or Not(Atom(randomdefaultgenerator))) ConstraintSet Constraint(Not(Atom(undoredogenerator)) Or Atom(modelbase))
+Number Of Products: 28
+Number of Contained Products: 26
+Broken Dependencies: 
+
+0.9285714030265808 0.4000000059604645 1.0
+Feature Model: Root(Mandatory(guibase) modelbase Optional(Alternative(formgenerator(Optional(Alternative(generatorselection) randomgenerator Optional(randomdefaultgenerator)))) abstractgenerator Optional(formdefaultgenerator(Optional(popupmenu), Optional(io), Optional(Mandatory(undoredo(Alternative(undoredoguibase))) undoredogenerator Optional(test(Or(undoredotest))))))))
+CTCs: Constraint(Not(Atom(formgenerator)) Or Atom(abstractgenerator)) ConstraintSet Constraint(Not(Atom(formdefaultgenerator)) Or Not(Atom(randomdefaultgenerator)))
+Number Of Products: 28
+Number of Contained Products: 26
+Broken Dependencies: 
+
+0.9285714030265808 0.4000000059604645 1.0
+Feature Model: Root(Optional(Alternative(formgenerator(Optional(Alternative(randomgenerator) generatorselection Optional(randomdefaultgenerator)))) abstractgenerator Optional(formdefaultgenerator(Optional(popupmenu), Optional(io), Optional(Mandatory(undoredo(Or(undoredoguibase))) undoredogenerator Optional(test(Or(undoredotest))))))) modelbase Alternative(guibase))
+CTCs: Constraint(Not(Atom(undoredotest)) Or Atom(formdefaultgenerator)) ConstraintSet Constraint(Not(Atom(formdefaultgenerator)) Or Not(Atom(randomdefaultgenerator)))
+Number Of Products: 28
+Number of Contained Products: 26
+Broken Dependencies: 
+
+0.9285714030265808 0.4000000059604645 1.0
+Feature Model: Root(Alternative(guibase) modelbase Optional(Alternative(abstractgenerator(Optional(formdefaultgenerator(Optional(popupmenu), Optional(io), Optional(Mandatory(undoredo(Alternative(undoredoguibase))) undoredogenerator Optional(test(Alternative(undoredotest)))))))) formgenerator Optional(Alternative(generatorselection) randomgenerator Optional(randomdefaultgenerator))))
+CTCs: Constraint(Not(Atom(formgenerator)) Or Atom(abstractgenerator)) ConstraintSet Constraint(Not(Atom(formdefaultgenerator)) Or Not(Atom(randomdefaultgenerator)))
+Number Of Products: 28
+Number of Contained Products: 26
+Broken Dependencies: 
+
+0.9285714030265808 0.4000000059604645 1.0
+Feature Model: Root(Alternative(guibase) modelbase Optional(Or(formgenerator(Optional(Or(randomgenerator) generatorselection Optional(randomdefaultgenerator)))) abstractgenerator Optional(formdefaultgenerator(Optional(io), Optional(popupmenu), Optional(Mandatory(undoredo(Alternative(undoredoguibase))) undoredogenerator Optional(test(Alternative(undoredotest))))))))
+CTCs: ConstraintSet(Constraint(Not(Atom(formgenerator)) Or Atom(abstractgenerator)), Constraint(Not(Atom(formdefaultgenerator)) Or Not(Atom(randomdefaultgenerator))), Constraint(Not(Atom(randomdefaultgenerator)) Or Atom(guibase)))
+Number Of Products: 28
+Number of Contained Products: 26
+Broken Dependencies: 
+
+0.9285714030265808 0.4000000059604645 1.0
+Feature Model: Root(Mandatory(guibase) modelbase Optional(Alternative(formgenerator(Optional(Alternative(randomgenerator) generatorselection Optional(randomdefaultgenerator)))) abstractgenerator Optional(formdefaultgenerator(Optional(popupmenu), Optional(io), Optional(undoredogenerator(Or(undoredoguibase), Mandatory(undoredo), Optional(test(Or(undoredotest)))))))))
+CTCs: ConstraintSet(Constraint(Not(Atom(formdefaultgenerator)) Or Not(Atom(randomdefaultgenerator))))
+Number Of Products: 28
+Number of Contained Products: 26
+Broken Dependencies: 
+
+0.9285714030265808 0.4000000059604645 1.0
+Feature Model: Root(Alternative(guibase) modelbase Optional(Alternative(formgenerator(Optional(randomgenerator(Alternative(generatorselection(Optional(randomdefaultgenerator))))))) abstractgenerator Optional(formdefaultgenerator(Optional(io), Optional(popupmenu), Optional(Mandatory(undoredo(Alternative(undoredoguibase))) undoredogenerator Optional(test(Alternative(undoredotest))))))))
+CTCs: Constraint(Not(Atom(formgenerator)) Or Atom(abstractgenerator)) ConstraintSet Constraint(Not(Atom(formdefaultgenerator)) Or Not(Atom(randomdefaultgenerator)))
+Number Of Products: 28
+Number of Contained Products: 26
+Broken Dependencies: 
+
+0.9285714030265808 0.4000000059604645 1.0
+Feature Model: Root(Optional(Alternative(formgenerator(Optional(Alternative(generatorselection) randomgenerator Optional(randomdefaultgenerator)))) abstractgenerator Optional(formdefaultgenerator(Optional(popupmenu), Optional(io), Optional(Mandatory(undoredo(Alternative(undoredoguibase))) undoredogenerator Optional(test(Alternative(undoredotest))))))) modelbase Mandatory(guibase))
+CTCs: ConstraintSet(Constraint(Not(Atom(formgenerator)) Or Atom(abstractgenerator)), Constraint(Not(Atom(formdefaultgenerator)) Or Not(Atom(randomdefaultgenerator))), Constraint(Not(Atom(test)) Or Atom(formgenerator)))
+Number Of Products: 28
+Number of Contained Products: 26
+Broken Dependencies: 
+
+0.9285714030265808 0.4000000059604645 1.0
+Feature Model: Root(Optional(Or(formgenerator(Optional(Or(randomgenerator) generatorselection Optional(randomdefaultgenerator)))) abstractgenerator Optional(formdefaultgenerator(Optional(io), Optional(popupmenu), Optional(Mandatory(undoredo(Alternative(undoredoguibase))) undoredogenerator Optional(test(Alternative(undoredotest))))))) modelbase Mandatory(guibase))
+CTCs: ConstraintSet(Constraint(Not(Atom(formgenerator)) Or Atom(abstractgenerator)), Constraint(Not(Atom(formdefaultgenerator)) Or Not(Atom(randomdefaultgenerator))), Constraint(Not(Atom(formdefaultgenerator)) Or Atom(formgenerator)), Constraint(Not(Atom(undoredotest)) Or Atom(guibase)))
+Number Of Products: 28
+Number of Contained Products: 26
+Broken Dependencies: 
+
+0.9285714030265808 0.4000000059604645 1.0
+Feature Model: Root(Optional(Alternative(formgenerator(Optional(Alternative(generatorselection) randomgenerator Optional(randomdefaultgenerator)))) abstractgenerator Optional(formdefaultgenerator(Optional(popupmenu), Optional(io), Optional(Mandatory(undoredo(Alternative(undoredoguibase))) undoredogenerator Optional(test(Or(undoredotest))))))) modelbase Mandatory(guibase))
+CTCs: ConstraintSet(Constraint(Not(Atom(formdefaultgenerator)) Or Not(Atom(randomdefaultgenerator))))
+Number Of Products: 28
+Number of Contained Products: 26
+Broken Dependencies: 
+
+0.9285714030265808 0.4000000059604645 1.0
+Feature Model: Root(Optional(Or(formgenerator(Optional(Or(randomgenerator) generatorselection Optional(randomdefaultgenerator)))) abstractgenerator Optional(formdefaultgenerator(Optional(popupmenu), Optional(io), Optional(Mandatory(undoredo(Alternative(undoredoguibase))) undoredogenerator Optional(test(Or(undoredotest))))))) modelbase Alternative(guibase))
+CTCs: ConstraintSet(Constraint(Not(Atom(formdefaultgenerator)) Or Not(Atom(randomdefaultgenerator))))
+Number Of Products: 28
+Number of Contained Products: 26
+Broken Dependencies: 
+
+0.9285714030265808 0.4000000059604645 1.0
+Feature Model: Root(Mandatory(guibase) modelbase Optional(Alternative(formgenerator(Optional(Or(randomgenerator) generatorselection Optional(randomdefaultgenerator)))) abstractgenerator Optional(formdefaultgenerator(Optional(io), Optional(popupmenu), Optional(Mandatory(undoredo(Alternative(undoredoguibase))) undoredogenerator Optional(test(Or(undoredotest))))))))
+CTCs: ConstraintSet(Constraint(Not(Atom(undoredotest)) Or Atom(formdefaultgenerator)), Constraint(Not(Atom(formdefaultgenerator)) Or Not(Atom(randomdefaultgenerator))), Constraint(Not(Atom(test)) Or Atom(formgenerator)))
+Number Of Products: 28
+Number of Contained Products: 26
+Broken Dependencies: 
+
+1.0 0.38461539149284363 1.0
+Feature Model: Root(Mandatory(guibase) modelbase Optional(Or(formgenerator(Optional(Or(randomgenerator) generatorselection Optional(randomdefaultgenerator)), Optional(undoredoguibase(Alternative(Mandatory(undoredo) undoredogenerator Optional(test(Or(undoredotest)))))), Optional(io))) abstractgenerator Alternative(formdefaultgenerator(Optional(popupmenu)))))
+CTCs: ConstraintSet(Constraint(Not(Atom(formdefaultgenerator)) Or Not(Atom(randomdefaultgenerator))))
+Number Of Products: 25
+Number of Contained Products: 25
+Broken Dependencies: 
+
+1.0 0.38461539149284363 1.0
+Feature Model: Root(Mandatory(guibase) modelbase Optional(abstractgenerator(Or(formgenerator(Optional(Or(randomgenerator) generatorselection Optional(randomdefaultgenerator)), Optional(undoredoguibase(Alternative(Mandatory(undoredo) undoredogenerator Optional(test(Alternative(undoredotest)))))), Optional(io))), Mandatory(formdefaultgenerator), Optional(popupmenu))))
+CTCs: ConstraintSet(Constraint(Not(Atom(formgenerator)) Or Atom(abstractgenerator)), Constraint(Not(Atom(randomdefaultgenerator)) Or Atom(abstractgenerator)), Constraint(Not(Atom(formdefaultgenerator)) Or Not(Atom(randomdefaultgenerator))))
+Number Of Products: 25
+Number of Contained Products: 25
+Broken Dependencies: 
+
+1.0 0.38461539149284363 1.0
+Feature Model: Root(Optional(Alternative(formgenerator(Optional(Alternative(randomgenerator) generatorselection Optional(randomdefaultgenerator)), Optional(undoredoguibase(Alternative(Mandatory(undoredo) undoredogenerator Optional(test(Alternative(undoredotest)))))), Optional(io))) abstractgenerator Alternative(formdefaultgenerator(Optional(popupmenu)))) modelbase Alternative(guibase))
+CTCs: ConstraintSet(Constraint(Not(Atom(formgenerator)) Or Atom(abstractgenerator)), Constraint(Not(Atom(abstractgenerator)) Or Atom(formgenerator)), Constraint(Not(Atom(formdefaultgenerator)) Or Not(Atom(randomdefaultgenerator))))
+Number Of Products: 25
+Number of Contained Products: 25
+Broken Dependencies: 
+
+1.0 0.38461539149284363 1.0
+Feature Model: Root(Mandatory(guibase) modelbase Optional(abstractgenerator(Or(formgenerator(Optional(Or(randomgenerator) generatorselection Optional(randomdefaultgenerator)), Optional(undoredoguibase(Alternative(Mandatory(undoredo) undoredogenerator Optional(test(Alternative(undoredotest)))))), Optional(io))), Alternative(formdefaultgenerator), Optional(popupmenu))))
+CTCs: ConstraintSet(Constraint(Not(Atom(formgenerator)) Or Atom(abstractgenerator)), Constraint(Not(Atom(formdefaultgenerator)) Or Not(Atom(randomdefaultgenerator))), Constraint(Not(Atom(randomgenerator)) Or Atom(generatorselection)))
+Number Of Products: 25
+Number of Contained Products: 25
+Broken Dependencies: 
+
+1.0 0.38461539149284363 1.0
+Feature Model: Root(Mandatory(guibase) modelbase Optional(abstractgenerator(Or(formgenerator(Optional(Or(randomgenerator) generatorselection Optional(randomdefaultgenerator)), Optional(undoredoguibase(Alternative(Mandatory(undoredo) undoredogenerator Optional(test(Or(undoredotest)))))), Optional(io))), Mandatory(formdefaultgenerator), Optional(popupmenu))))
+CTCs: ConstraintSet(Constraint(Not(Atom(formgenerator)) Or Atom(abstractgenerator)), Constraint(Not(Atom(formdefaultgenerator)) Or Not(Atom(randomdefaultgenerator))), Constraint(Not(Atom(randomgenerator)) Or Atom(generatorselection)))
+Number Of Products: 25
+Number of Contained Products: 25
+Broken Dependencies: 
+
+1.0 0.38461539149284363 1.0
+Feature Model: Root(Alternative(guibase) modelbase Optional(Or(formgenerator(Optional(randomgenerator(Alternative(generatorselection(Optional(randomdefaultgenerator))))), Optional(undoredoguibase(Alternative(Mandatory(undoredo) undoredogenerator Optional(test(Alternative(undoredotest)))))), Optional(io))) abstractgenerator Alternative(formdefaultgenerator(Optional(popupmenu)))))
+CTCs: Constraint(Not(Atom(formgenerator)) Or Atom(abstractgenerator)) ConstraintSet Constraint(Not(Atom(formdefaultgenerator)) Or Not(Atom(randomdefaultgenerator)))
+Number Of Products: 25
+Number of Contained Products: 25
+Broken Dependencies: 
+
+1.0 0.38461539149284363 1.0
+Feature Model: Root(Mandatory(guibase) modelbase Optional(Or(formgenerator(Optional(Or(randomgenerator) generatorselection Optional(randomdefaultgenerator)), Optional(undoredoguibase(Alternative(Mandatory(undoredo) undoredogenerator Optional(test(Alternative(undoredotest)))))), Optional(io))) abstractgenerator Mandatory(formdefaultgenerator(Optional(popupmenu)))))
+CTCs: Constraint(Not(Atom(formdefaultgenerator)) Or Not(Atom(randomdefaultgenerator))) ConstraintSet Constraint(Not(Atom(randomdefaultgenerator)) Or Atom(abstractgenerator))
+Number Of Products: 25
+Number of Contained Products: 25
+Broken Dependencies: 
+
+1.0 0.38461539149284363 1.0
+Feature Model: Root(Mandatory(guibase) modelbase Optional(Or(formgenerator(Optional(Or(randomgenerator) generatorselection Optional(randomdefaultgenerator)), Optional(undoredoguibase(Alternative(Mandatory(undoredo) undoredogenerator Optional(test(Or(undoredotest)))))), Optional(io))) abstractgenerator Mandatory(formdefaultgenerator(Optional(popupmenu)))))
+CTCs: Constraint(Not(Atom(formdefaultgenerator)) Or Not(Atom(randomdefaultgenerator))) ConstraintSet Constraint(Not(Atom(randomdefaultgenerator)) Or Atom(abstractgenerator))
+Number Of Products: 25
+Number of Contained Products: 25
+Broken Dependencies: 
+

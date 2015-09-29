@@ -1,0 +1,83 @@
+
+Generation: 0
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [0.35555556416511536 1.0 0.39256497591211575]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (vod (Optional quitplayer) (Mandatory
+     playimm) (Mandatory startplayer) (Optional
+     (vrcinterface (Optional detail))) (Mandatory
+     selectmovie) (Or pause changeserver stopmovie
+     startmovie)))
+Tree 1:
+ ConstraintSet
+
+Generation: 1
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [0.35555556416511536 1.0 0.39256497591211575]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (vod (Optional quitplayer) (Mandatory
+     playimm) (Mandatory startplayer) (Optional
+     (vrcinterface (Optional detail))) (Mandatory
+     selectmovie) (Or pause changeserver stopmovie
+     startmovie)))
+Tree 1:
+ ConstraintSet
+
+Generation: 2
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [0.380952388048172 1.0 0.4164573497630644]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (vod (Optional quitplayer) (Mandatory
+     playimm) (Mandatory startplayer) (Optional
+     (vrcinterface (Optional detail))) (Mandatory
+     selectmovie) (Or pause changeserver startmovie)
+     (Optional stopmovie)))
+Tree 1:
+ ConstraintSet
+
+Generation: 3
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 1.0 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (playimm (Mandatory (startmovie (Mandatory
+     selectmovie) (Optional stopmovie) (Optional
+     quitplayer))) (Mandatory (vrcinterface (Optional
+     pause))) (Mandatory startplayer) (Mandatory
+     vod) (Optional changeserver) (Optional detail)))
+Tree 1:
+ ConstraintSet
+
+
+
+ PARETO FRONTS
+
+
+Pareto Front of Subpopulation 0
+Evaluated: true
+Fitness: [1.0 1.0 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (playimm (Mandatory (startmovie (Mandatory
+     selectmovie) (Optional stopmovie) (Optional
+     quitplayer))) (Mandatory (vrcinterface (Optional
+     pause))) (Mandatory startplayer) (Mandatory
+     vod) (Optional changeserver) (Optional detail)))
+Tree 1:
+ ConstraintSet

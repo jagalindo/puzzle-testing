@@ -1,0 +1,640 @@
+1.0 0.75 1.0
+Feature Model: Root(Mandatory(class(Optional(logging), Optional(collaborationdiagram(Optional(sequencediagram))), Optional(statediagram), Optional(cognitive), Optional(activitydiagram), Optional(deploymentdiagram))) argouml Mandatory(diagrams(Optional(usecasediagram))))
+CTCs: ConstraintSet
+Number Of Products: 192
+Number of Contained Products: 192
+Broken Dependencies: 
+
+1.0 0.75 1.0
+Feature Model: Root(Mandatory(diagrams(Optional(usecasediagram))) argouml Mandatory(class(Optional(statediagram), Optional(cognitive), Optional(activitydiagram), Optional(logging), Optional(collaborationdiagram(Optional(sequencediagram))), Optional(deploymentdiagram))))
+CTCs: ConstraintSet
+Number Of Products: 192
+Number of Contained Products: 192
+Broken Dependencies: 
+
+1.0 0.75 1.0
+Feature Model: Root(argouml(Mandatory(class(Optional(statediagram), Optional(cognitive), Optional(collaborationdiagram(Optional(sequencediagram))))), Mandatory(diagrams(Optional(activitydiagram))), Optional(deploymentdiagram), Optional(usecasediagram), Optional(logging)))
+CTCs: ConstraintSet
+Number Of Products: 192
+Number of Contained Products: 192
+Broken Dependencies: 
+
+1.0 0.75 1.0
+Feature Model: Root(argouml(Mandatory(class(Optional(cognitive), Optional(statediagram), Optional(logging), Optional(collaborationdiagram(Optional(sequencediagram))))), Mandatory(Optional(activitydiagram) diagrams Optional(deploymentdiagram)), Optional(usecasediagram)))
+CTCs: ConstraintSet
+Number Of Products: 192
+Number of Contained Products: 192
+Broken Dependencies: 
+
+1.0 0.75 1.0
+Feature Model: Root(argouml(Mandatory(class(Optional(cognitive), Optional(collaborationdiagram(Optional(sequencediagram))), Optional(statediagram), Optional(logging))), Mandatory(Optional(activitydiagram) diagrams Optional(deploymentdiagram)), Optional(usecasediagram)))
+CTCs: ConstraintSet
+Number Of Products: 192
+Number of Contained Products: 192
+Broken Dependencies: 
+
+1.0 0.75 1.0
+Feature Model: Root(diagrams(Mandatory(Optional(deploymentdiagram) argouml Optional(logging)), Mandatory(class(Optional(cognitive), Optional(collaborationdiagram(Optional(sequencediagram))), Optional(statediagram), Optional(usecasediagram))), Optional(activitydiagram)))
+CTCs: ConstraintSet
+Number Of Products: 192
+Number of Contained Products: 192
+Broken Dependencies: 
+
+1.0 0.75 1.0
+Feature Model: Root(Mandatory(Optional(activitydiagram) argouml Optional(deploymentdiagram)) diagrams Mandatory(class(Optional(statediagram), Optional(cognitive), Optional(logging), Optional(collaborationdiagram(Optional(sequencediagram))), Optional(usecasediagram))))
+CTCs: ConstraintSet
+Number Of Products: 192
+Number of Contained Products: 192
+Broken Dependencies: 
+
+1.0 0.75 1.0
+Feature Model: Root(argouml(Mandatory(class(Optional(cognitive), Optional(statediagram), Optional(logging), Optional(collaborationdiagram(Optional(sequencediagram))), Optional(usecasediagram))), Mandatory(diagrams(Optional(activitydiagram))), Optional(deploymentdiagram)))
+CTCs: ConstraintSet
+Number Of Products: 192
+Number of Contained Products: 192
+Broken Dependencies: 
+
+1.0 0.75 1.0
+Feature Model: Root(Mandatory(class(Optional(cognitive), Optional(statediagram), Optional(logging), Optional(collaborationdiagram(Optional(sequencediagram))), Optional(usecasediagram))) argouml Mandatory(Optional(activitydiagram) diagrams Optional(deploymentdiagram)))
+CTCs: ConstraintSet(Constraint(Not(Atom(logging)) Or Atom(class)))
+Number Of Products: 192
+Number of Contained Products: 192
+Broken Dependencies: 
+
+1.0 0.75 1.0
+Feature Model: Root(argouml(Mandatory(diagrams(Optional(deploymentdiagram), Mandatory(class(Optional(statediagram), Optional(cognitive), Optional(collaborationdiagram(Optional(sequencediagram))), Optional(logging), Optional(usecasediagram))), Optional(activitydiagram)))))
+CTCs: ConstraintSet
+Number Of Products: 192
+Number of Contained Products: 192
+Broken Dependencies: 
+
+1.0 0.75 1.0
+Feature Model: Root(argouml(Mandatory(class(Optional(statediagram), Optional(cognitive), Optional(logging))), Mandatory(diagrams(Optional(activitydiagram), Optional(deploymentdiagram), Optional(usecasediagram))), Optional(collaborationdiagram(Optional(sequencediagram)))))
+CTCs: ConstraintSet
+Number Of Products: 192
+Number of Contained Products: 192
+Broken Dependencies: 
+
+1.0 0.75 1.0
+Feature Model: Root(class(Mandatory(argouml(Optional(deploymentdiagram), Optional(collaborationdiagram(Optional(sequencediagram))), Optional(activitydiagram))), Mandatory(Optional(usecasediagram) diagrams Optional(statediagram)), Optional(cognitive), Optional(logging)))
+CTCs: ConstraintSet
+Number Of Products: 192
+Number of Contained Products: 192
+Broken Dependencies: 
+
+1.0 0.75 1.0
+Feature Model: Root(Mandatory(class(Optional(statediagram), Optional(cognitive), Optional(collaborationdiagram(Optional(sequencediagram))), Optional(logging), Optional(usecasediagram), Optional(deploymentdiagram))) argouml Mandatory(diagrams(Optional(activitydiagram))))
+CTCs: ConstraintSet
+Number Of Products: 192
+Number of Contained Products: 192
+Broken Dependencies: 
+
+1.0 0.75 1.0
+Feature Model: Root(class(Mandatory(argouml(Optional(deploymentdiagram), Optional(collaborationdiagram(Optional(sequencediagram))), Optional(activitydiagram))), Mandatory(diagrams(Optional(usecasediagram))), Optional(statediagram), Optional(cognitive), Optional(logging)))
+CTCs: ConstraintSet
+Number Of Products: 192
+Number of Contained Products: 192
+Broken Dependencies: 
+
+1.0 0.75 1.0
+Feature Model: Root(argouml(Mandatory(class(Optional(cognitive), Optional(statediagram), Optional(logging), Optional(collaborationdiagram(Optional(sequencediagram))))), Mandatory(Optional(activitydiagram) diagrams Optional(usecasediagram)), Optional(deploymentdiagram)))
+CTCs: ConstraintSet
+Number Of Products: 192
+Number of Contained Products: 192
+Broken Dependencies: 
+
+1.0 0.75 1.0
+Feature Model: Root(Mandatory(class(Optional(cognitive), Optional(statediagram), Optional(logging), Optional(collaborationdiagram(Optional(sequencediagram))), Optional(usecasediagram), Optional(deploymentdiagram))) diagrams Mandatory(argouml(Optional(activitydiagram))))
+CTCs: ConstraintSet
+Number Of Products: 192
+Number of Contained Products: 192
+Broken Dependencies: 
+
+1.0 0.75 1.0
+Feature Model: Root(argouml(Mandatory(diagrams), Alternative(class(Optional(cognitive), Optional(statediagram), Optional(logging), Optional(collaborationdiagram(Optional(sequencediagram))), Optional(usecasediagram))), Optional(activitydiagram), Optional(deploymentdiagram)))
+CTCs: ConstraintSet
+Number Of Products: 192
+Number of Contained Products: 192
+Broken Dependencies: 
+
+1.0 0.75 1.0
+Feature Model: Root(class(Mandatory(argouml(Optional(deploymentdiagram), Optional(collaborationdiagram(Optional(sequencediagram))), Optional(activitydiagram), Optional(logging))), Mandatory(Optional(statediagram) diagrams Optional(usecasediagram)), Optional(cognitive)))
+CTCs: ConstraintSet
+Number Of Products: 192
+Number of Contained Products: 192
+Broken Dependencies: 
+
+1.0 0.75 1.0
+Feature Model: Root(class(Mandatory(argouml(Optional(deploymentdiagram))), Mandatory(diagrams(Optional(usecasediagram), Optional(statediagram), Optional(activitydiagram))), Optional(cognitive), Optional(collaborationdiagram(Optional(sequencediagram))), Optional(logging)))
+CTCs: ConstraintSet
+Number Of Products: 192
+Number of Contained Products: 192
+Broken Dependencies: 
+
+1.0 0.75 1.0
+Feature Model: Root(argouml(Mandatory(class(Optional(statediagram), Optional(cognitive), Optional(logging))), Mandatory(diagrams(Optional(activitydiagram), Optional(usecasediagram), Optional(deploymentdiagram))), Optional(collaborationdiagram(Optional(sequencediagram)))))
+CTCs: ConstraintSet(Constraint(Not(Atom(logging)) Or Atom(class)))
+Number Of Products: 192
+Number of Contained Products: 192
+Broken Dependencies: 
+
+1.0 0.75 1.0
+Feature Model: Root(Mandatory(class(Optional(statediagram), Optional(cognitive), Optional(logging), Optional(activitydiagram), Optional(collaborationdiagram(Optional(sequencediagram))))) argouml Mandatory(Optional(deploymentdiagram) diagrams Optional(usecasediagram)))
+CTCs: ConstraintSet(Constraint(Not(Atom(activitydiagram)) Or Atom(diagrams)))
+Number Of Products: 192
+Number of Contained Products: 192
+Broken Dependencies: 
+
+1.0 0.75 1.0
+Feature Model: Root(argouml(Mandatory(class(Optional(statediagram), Optional(cognitive), Optional(collaborationdiagram(Optional(sequencediagram))), Optional(logging), Optional(usecasediagram))), Mandatory(diagrams(Optional(deploymentdiagram))), Optional(activitydiagram)))
+CTCs: ConstraintSet
+Number Of Products: 192
+Number of Contained Products: 192
+Broken Dependencies: 
+
+1.0 0.75 1.0
+Feature Model: Root(Mandatory(class(Optional(statediagram), Optional(cognitive), Optional(logging), Optional(collaborationdiagram(Optional(sequencediagram))), Optional(usecasediagram), Optional(deploymentdiagram))) argouml Mandatory(diagrams(Optional(activitydiagram))))
+CTCs: ConstraintSet
+Number Of Products: 192
+Number of Contained Products: 192
+Broken Dependencies: 
+
+1.0 0.75 1.0
+Feature Model: Root(argouml(Mandatory(diagrams(Optional(usecasediagram))), Mandatory(class(Optional(statediagram), Optional(cognitive), Optional(activitydiagram), Optional(collaborationdiagram(Optional(sequencediagram))))), Optional(logging), Optional(deploymentdiagram)))
+CTCs: ConstraintSet
+Number Of Products: 192
+Number of Contained Products: 192
+Broken Dependencies: 
+
+1.0 0.75 1.0
+Feature Model: Root(class(Mandatory(argouml(Optional(deploymentdiagram), Optional(collaborationdiagram(Optional(sequencediagram))), Optional(activitydiagram), Optional(cognitive))), Mandatory(diagrams), Optional(logging), Optional(usecasediagram), Optional(statediagram)))
+CTCs: ConstraintSet
+Number Of Products: 192
+Number of Contained Products: 192
+Broken Dependencies: 
+
+1.0 0.75 1.0
+Feature Model: Root(argouml(Mandatory(class(Optional(cognitive), Optional(statediagram), Optional(logging), Optional(collaborationdiagram(Optional(sequencediagram))), Optional(usecasediagram), Optional(deploymentdiagram))), Mandatory(diagrams), Optional(activitydiagram)))
+CTCs: ConstraintSet(Constraint(Not(Atom(diagrams)) Or Atom(class)))
+Number Of Products: 192
+Number of Contained Products: 192
+Broken Dependencies: 
+
+1.0 0.75 1.0
+Feature Model: Root(argouml(Mandatory(class(Optional(statediagram), Optional(cognitive), Optional(collaborationdiagram(Optional(sequencediagram))), Optional(logging))), Mandatory(Optional(deploymentdiagram) diagrams Optional(usecasediagram)), Optional(activitydiagram)))
+CTCs: ConstraintSet
+Number Of Products: 192
+Number of Contained Products: 192
+Broken Dependencies: 
+
+1.0 0.75 1.0
+Feature Model: Root(argouml(Mandatory(class(Optional(logging), Optional(statediagram), Optional(cognitive), Optional(collaborationdiagram(Optional(sequencediagram))), Optional(deploymentdiagram))), Mandatory(diagrams(Optional(activitydiagram))), Optional(usecasediagram)))
+CTCs: ConstraintSet
+Number Of Products: 192
+Number of Contained Products: 192
+Broken Dependencies: 
+
+1.0 0.75 1.0
+Feature Model: Root(class(Mandatory(argouml(Optional(deploymentdiagram), Optional(collaborationdiagram(Optional(sequencediagram))), Optional(activitydiagram), Optional(usecasediagram))), Mandatory(diagrams), Optional(statediagram), Optional(cognitive), Optional(logging)))
+CTCs: ConstraintSet
+Number Of Products: 192
+Number of Contained Products: 192
+Broken Dependencies: 
+
+1.0 0.75 1.0
+Feature Model: Root(Mandatory(class(Optional(statediagram), Optional(cognitive), Optional(collaborationdiagram(Optional(sequencediagram))), Optional(usecasediagram), Optional(logging))) argouml Mandatory(Optional(activitydiagram) diagrams Optional(deploymentdiagram)))
+CTCs: ConstraintSet(Constraint(Not(Atom(usecasediagram)) Or Atom(class)))
+Number Of Products: 192
+Number of Contained Products: 192
+Broken Dependencies: 
+
+1.0 0.75 1.0
+Feature Model: Root(Mandatory(diagrams(Optional(deploymentdiagram), Mandatory(class(Optional(statediagram), Optional(cognitive), Optional(collaborationdiagram(Optional(sequencediagram))), Optional(logging))), Optional(activitydiagram))) argouml Optional(usecasediagram))
+CTCs: ConstraintSet(Constraint(Not(Atom(logging)) Or Atom(class)))
+Number Of Products: 192
+Number of Contained Products: 192
+Broken Dependencies: 
+
+1.0 0.75 1.0
+Feature Model: Root(Mandatory(class(Optional(statediagram), Optional(cognitive), Optional(collaborationdiagram(Optional(sequencediagram))), Optional(logging), Optional(deploymentdiagram))) argouml Mandatory(Optional(activitydiagram) diagrams Optional(usecasediagram)))
+CTCs: ConstraintSet(Constraint(Not(Atom(logging)) Or Atom(class)))
+Number Of Products: 192
+Number of Contained Products: 192
+Broken Dependencies: 
+
+1.0 0.75 1.0
+Feature Model: Root(Mandatory(class(Optional(cognitive), Optional(statediagram), Optional(logging), Optional(activitydiagram), Optional(collaborationdiagram(Optional(sequencediagram))), Optional(deploymentdiagram))) argouml Mandatory(diagrams(Optional(usecasediagram))))
+CTCs: ConstraintSet
+Number Of Products: 192
+Number of Contained Products: 192
+Broken Dependencies: 
+
+1.0 0.75 1.0
+Feature Model: Root(diagrams(Mandatory(argouml), Mandatory(class(Optional(logging), Optional(statediagram), Optional(cognitive), Optional(activitydiagram), Optional(collaborationdiagram(Optional(sequencediagram))), Optional(deploymentdiagram))), Optional(usecasediagram)))
+CTCs: ConstraintSet
+Number Of Products: 192
+Number of Contained Products: 192
+Broken Dependencies: 
+
+1.0 0.75 1.0
+Feature Model: Root(Mandatory(class(Optional(cognitive), Optional(statediagram), Optional(logging), Optional(collaborationdiagram(Optional(sequencediagram))))) argouml Mandatory(diagrams(Optional(activitydiagram), Optional(deploymentdiagram), Optional(usecasediagram))))
+CTCs: ConstraintSet
+Number Of Products: 192
+Number of Contained Products: 192
+Broken Dependencies: 
+
+1.0 0.75 1.0
+Feature Model: Root(Mandatory(class(Optional(cognitive), Optional(logging), Optional(collaborationdiagram(Optional(sequencediagram))), Optional(statediagram))) argouml Mandatory(diagrams(Optional(activitydiagram), Optional(deploymentdiagram), Optional(usecasediagram))))
+CTCs: ConstraintSet
+Number Of Products: 192
+Number of Contained Products: 192
+Broken Dependencies: 
+
+1.0 0.75 1.0
+Feature Model: Root(class(Mandatory(argouml(Optional(deploymentdiagram), Optional(collaborationdiagram(Optional(sequencediagram))), Optional(activitydiagram), Optional(usecasediagram))), Mandatory(diagrams), Optional(statediagram), Optional(logging), Optional(cognitive)))
+CTCs: ConstraintSet
+Number Of Products: 192
+Number of Contained Products: 192
+Broken Dependencies: 
+
+1.0 0.75 1.0
+Feature Model: Root(argouml(Mandatory(class(Optional(cognitive), Optional(collaborationdiagram(Optional(sequencediagram))), Optional(statediagram), Optional(logging))), Mandatory(Optional(activitydiagram) diagrams Optional(usecasediagram)), Optional(deploymentdiagram)))
+CTCs: ConstraintSet
+Number Of Products: 192
+Number of Contained Products: 192
+Broken Dependencies: 
+
+1.0 0.75 1.0
+Feature Model: Root(Mandatory(class(Optional(statediagram), Optional(cognitive), Optional(logging), Optional(collaborationdiagram(Optional(sequencediagram))))) argouml Mandatory(diagrams(Optional(activitydiagram), Optional(deploymentdiagram), Optional(usecasediagram))))
+CTCs: ConstraintSet
+Number Of Products: 192
+Number of Contained Products: 192
+Broken Dependencies: 
+
+1.0 0.75 1.0
+Feature Model: Root(argouml(Mandatory(class(Optional(statediagram), Optional(cognitive), Optional(logging), Optional(collaborationdiagram(Optional(sequencediagram))))), Mandatory(Optional(activitydiagram) diagrams Optional(usecasediagram)), Optional(deploymentdiagram)))
+CTCs: ConstraintSet
+Number Of Products: 192
+Number of Contained Products: 192
+Broken Dependencies: 
+
+1.0 0.75 1.0
+Feature Model: Root(Alternative(class(Optional(cognitive), Optional(statediagram), Optional(logging), Optional(collaborationdiagram(Optional(sequencediagram))), Optional(usecasediagram), Optional(deploymentdiagram))) argouml Mandatory(diagrams(Optional(activitydiagram))))
+CTCs: ConstraintSet
+Number Of Products: 192
+Number of Contained Products: 192
+Broken Dependencies: 
+
+1.0 1.0 0.9999629741445067
+Feature Model: Root(argouml(Mandatory(class(Optional(statediagram), Optional(cognitive), Optional(collaborationdiagram), Optional(logging))), Mandatory(diagrams(Optional(activitydiagram), Optional(deploymentdiagram), Optional(usecasediagram))), Optional(sequencediagram)))
+CTCs: ConstraintSet(Constraint(Not(Atom(logging)) Or Atom(class)))
+Number Of Products: 256
+Number of Contained Products: 256
+Broken Dependencies: 
+[from=(sequencediagram AND logging), to=(collaborationdiagram), weight=5.696285452256583E-6] -> [sequencediagram, class, diagrams, cognitive, logging, argouml, statediagram]
+[from=(sequencediagram), to=(collaborationdiagram), weight=1.4525527903254287E-4] -> [sequencediagram, class, diagrams, cognitive, logging, argouml, statediagram]
+[from=(sequencediagram AND logging), to=(collaborationdiagram), weight=5.696285452256583E-6] -> [sequencediagram, class, diagrams, usecasediagram, logging, argouml, statediagram]
+[from=(sequencediagram), to=(collaborationdiagram), weight=1.4525527903254287E-4] -> [sequencediagram, class, diagrams, usecasediagram, logging, argouml, statediagram]
+[from=(sequencediagram AND logging), to=(collaborationdiagram), weight=5.696285452256583E-6] -> [logging, sequencediagram, class, diagrams, argouml, statediagram]
+[from=(sequencediagram), to=(collaborationdiagram), weight=1.4525527903254287E-4] -> [logging, sequencediagram, class, diagrams, argouml, statediagram]
+[from=(sequencediagram AND logging), to=(collaborationdiagram), weight=5.696285452256583E-6] -> [sequencediagram, class, diagrams, cognitive, deploymentdiagram, usecasediagram, logging, argouml, statediagram]
+[from=(sequencediagram), to=(collaborationdiagram), weight=1.4525527903254287E-4] -> [sequencediagram, class, diagrams, cognitive, deploymentdiagram, usecasediagram, logging, argouml, statediagram]
+[from=(sequencediagram AND logging), to=(collaborationdiagram), weight=5.696285452256583E-6] -> [sequencediagram, class, diagrams, cognitive, usecasediagram, logging, argouml, statediagram]
+[from=(sequencediagram), to=(collaborationdiagram), weight=1.4525527903254287E-4] -> [sequencediagram, class, diagrams, cognitive, usecasediagram, logging, argouml, statediagram]
+[from=(sequencediagram AND logging), to=(collaborationdiagram), weight=5.696285452256583E-6] -> [sequencediagram, class, diagrams, cognitive, deploymentdiagram, logging, argouml, statediagram]
+[from=(sequencediagram), to=(collaborationdiagram), weight=1.4525527903254287E-4] -> [sequencediagram, class, diagrams, cognitive, deploymentdiagram, logging, argouml, statediagram]
+[from=(sequencediagram AND logging), to=(collaborationdiagram), weight=5.696285452256583E-6] -> [sequencediagram, class, activitydiagram, diagrams, deploymentdiagram, usecasediagram, logging, argouml, statediagram]
+[from=(sequencediagram), to=(collaborationdiagram), weight=1.4525527903254287E-4] -> [sequencediagram, class, activitydiagram, diagrams, deploymentdiagram, usecasediagram, logging, argouml, statediagram]
+[from=(sequencediagram AND logging), to=(collaborationdiagram), weight=5.696285452256583E-6] -> [sequencediagram, class, diagrams, deploymentdiagram, logging, argouml, statediagram]
+[from=(sequencediagram), to=(collaborationdiagram), weight=1.4525527903254287E-4] -> [sequencediagram, class, diagrams, deploymentdiagram, logging, argouml, statediagram]
+[from=(sequencediagram AND logging), to=(collaborationdiagram), weight=5.696285452256583E-6] -> [sequencediagram, class, activitydiagram, diagrams, cognitive, logging, argouml, statediagram]
+[from=(sequencediagram), to=(collaborationdiagram), weight=1.4525527903254287E-4] -> [sequencediagram, class, activitydiagram, diagrams, cognitive, logging, argouml, statediagram]
+[from=(sequencediagram AND logging), to=(collaborationdiagram), weight=5.696285452256583E-6] -> [sequencediagram, class, activitydiagram, diagrams, usecasediagram, logging, argouml, statediagram]
+[from=(sequencediagram), to=(collaborationdiagram), weight=1.4525527903254287E-4] -> [sequencediagram, class, activitydiagram, diagrams, usecasediagram, logging, argouml, statediagram]
+[from=(sequencediagram AND logging), to=(collaborationdiagram), weight=5.696285452256583E-6] -> [sequencediagram, class, activitydiagram, diagrams, cognitive, deploymentdiagram, usecasediagram, logging, argouml, statediagram]
+[from=(sequencediagram), to=(collaborationdiagram), weight=1.4525527903254287E-4] -> [sequencediagram, class, activitydiagram, diagrams, cognitive, deploymentdiagram, usecasediagram, logging, argouml, statediagram]
+[from=(sequencediagram AND logging), to=(collaborationdiagram), weight=5.696285452256583E-6] -> [sequencediagram, class, activitydiagram, diagrams, cognitive, usecasediagram, logging, argouml, statediagram]
+[from=(sequencediagram), to=(collaborationdiagram), weight=1.4525527903254287E-4] -> [sequencediagram, class, activitydiagram, diagrams, cognitive, usecasediagram, logging, argouml, statediagram]
+[from=(sequencediagram), to=(collaborationdiagram), weight=1.4525527903254287E-4] -> [sequencediagram, class, activitydiagram, diagrams, argouml, usecasediagram]
+[from=(sequencediagram), to=(collaborationdiagram), weight=1.4525527903254287E-4] -> [sequencediagram, class, activitydiagram, diagrams, cognitive, usecasediagram, argouml]
+[from=(sequencediagram AND logging), to=(collaborationdiagram), weight=5.696285452256583E-6] -> [logging, sequencediagram, class, diagrams, argouml, usecasediagram]
+[from=(sequencediagram), to=(collaborationdiagram), weight=1.4525527903254287E-4] -> [logging, sequencediagram, class, diagrams, argouml, usecasediagram]
+[from=(sequencediagram), to=(collaborationdiagram), weight=1.4525527903254287E-4] -> [sequencediagram, class, activitydiagram, diagrams, cognitive, deploymentdiagram, argouml]
+[from=(sequencediagram AND logging), to=(collaborationdiagram), weight=5.696285452256583E-6] -> [sequencediagram, class, diagrams, cognitive, deploymentdiagram, usecasediagram, logging, argouml]
+[from=(sequencediagram), to=(collaborationdiagram), weight=1.4525527903254287E-4] -> [sequencediagram, class, diagrams, cognitive, deploymentdiagram, usecasediagram, logging, argouml]
+[from=(sequencediagram AND logging), to=(collaborationdiagram), weight=5.696285452256583E-6] -> [sequencediagram, class, diagrams, cognitive, deploymentdiagram, logging, argouml]
+[from=(sequencediagram), to=(collaborationdiagram), weight=1.4525527903254287E-4] -> [sequencediagram, class, diagrams, cognitive, deploymentdiagram, logging, argouml]
+[from=(sequencediagram), to=(collaborationdiagram), weight=1.4525527903254287E-4] -> [sequencediagram, class, diagrams, argouml]
+[from=(sequencediagram), to=(collaborationdiagram), weight=1.4525527903254287E-4] -> [sequencediagram, class, activitydiagram, diagrams, cognitive, deploymentdiagram, usecasediagram, argouml]
+[from=(sequencediagram), to=(collaborationdiagram), weight=1.4525527903254287E-4] -> [sequencediagram, class, diagrams, argouml, usecasediagram]
+[from=(sequencediagram AND logging), to=(collaborationdiagram), weight=5.696285452256583E-6] -> [logging, sequencediagram, class, activitydiagram, diagrams, argouml]
+[from=(sequencediagram), to=(collaborationdiagram), weight=1.4525527903254287E-4] -> [logging, sequencediagram, class, activitydiagram, diagrams, argouml]
+[from=(sequencediagram AND logging), to=(collaborationdiagram), weight=5.696285452256583E-6] -> [sequencediagram, class, activitydiagram, diagrams, cognitive, deploymentdiagram, logging, argouml]
+[from=(sequencediagram), to=(collaborationdiagram), weight=1.4525527903254287E-4] -> [sequencediagram, class, activitydiagram, diagrams, cognitive, deploymentdiagram, logging, argouml]
+[from=(sequencediagram), to=(collaborationdiagram), weight=1.4525527903254287E-4] -> [sequencediagram, class, diagrams, argouml, statediagram, cognitive]
+[from=(sequencediagram AND logging), to=(collaborationdiagram), weight=5.696285452256583E-6] -> [sequencediagram, class, activitydiagram, diagrams, deploymentdiagram, logging, argouml, statediagram]
+[from=(sequencediagram), to=(collaborationdiagram), weight=1.4525527903254287E-4] -> [sequencediagram, class, activitydiagram, diagrams, deploymentdiagram, logging, argouml, statediagram]
+[from=(sequencediagram AND logging), to=(collaborationdiagram), weight=5.696285452256583E-6] -> [sequencediagram, class, diagrams, deploymentdiagram, usecasediagram, logging, argouml, statediagram]
+[from=(sequencediagram), to=(collaborationdiagram), weight=1.4525527903254287E-4] -> [sequencediagram, class, diagrams, deploymentdiagram, usecasediagram, logging, argouml, statediagram]
+[from=(sequencediagram), to=(collaborationdiagram), weight=1.4525527903254287E-4] -> [sequencediagram, class, activitydiagram, diagrams, argouml]
+[from=(sequencediagram), to=(collaborationdiagram), weight=1.4525527903254287E-4] -> [sequencediagram, class, diagrams, cognitive, deploymentdiagram, usecasediagram, argouml]
+[from=(sequencediagram AND logging), to=(collaborationdiagram), weight=5.696285452256583E-6] -> [logging, sequencediagram, class, diagrams, argouml]
+[from=(sequencediagram), to=(collaborationdiagram), weight=1.4525527903254287E-4] -> [logging, sequencediagram, class, diagrams, argouml]
+[from=(sequencediagram), to=(collaborationdiagram), weight=1.4525527903254287E-4] -> [sequencediagram, class, diagrams, deploymentdiagram, usecasediagram, argouml, statediagram]
+[from=(sequencediagram), to=(collaborationdiagram), weight=1.4525527903254287E-4] -> [sequencediagram, class, activitydiagram, diagrams, deploymentdiagram, argouml, statediagram]
+[from=(sequencediagram), to=(collaborationdiagram), weight=1.4525527903254287E-4] -> [sequencediagram, class, activitydiagram, diagrams, cognitive, deploymentdiagram, argouml, statediagram]
+[from=(sequencediagram), to=(collaborationdiagram), weight=1.4525527903254287E-4] -> [sequencediagram, class, diagrams, argouml, statediagram]
+[from=(sequencediagram), to=(collaborationdiagram), weight=1.4525527903254287E-4] -> [sequencediagram, class, activitydiagram, diagrams, cognitive, deploymentdiagram, usecasediagram, argouml, statediagram]
+[from=(sequencediagram), to=(collaborationdiagram), weight=1.4525527903254287E-4] -> [sequencediagram, class, activitydiagram, diagrams, cognitive, argouml, statediagram]
+[from=(sequencediagram), to=(collaborationdiagram), weight=1.4525527903254287E-4] -> [sequencediagram, class, diagrams, argouml, statediagram, usecasediagram]
+[from=(sequencediagram), to=(collaborationdiagram), weight=1.4525527903254287E-4] -> [sequencediagram, class, activitydiagram, diagrams, deploymentdiagram, usecasediagram, argouml, statediagram]
+[from=(sequencediagram), to=(collaborationdiagram), weight=1.4525527903254287E-4] -> [sequencediagram, class, diagrams, cognitive, deploymentdiagram, argouml, statediagram]
+[from=(sequencediagram), to=(collaborationdiagram), weight=1.4525527903254287E-4] -> [sequencediagram, class, diagrams, cognitive, usecasediagram, argouml, statediagram]
+[from=(sequencediagram AND logging), to=(collaborationdiagram), weight=5.696285452256583E-6] -> [sequencediagram, class, activitydiagram, diagrams, cognitive, logging, argouml]
+[from=(sequencediagram), to=(collaborationdiagram), weight=1.4525527903254287E-4] -> [sequencediagram, class, activitydiagram, diagrams, cognitive, logging, argouml]
+[from=(sequencediagram AND logging), to=(collaborationdiagram), weight=5.696285452256583E-6] -> [sequencediagram, class, activitydiagram, diagrams, usecasediagram, logging, argouml]
+[from=(sequencediagram), to=(collaborationdiagram), weight=1.4525527903254287E-4] -> [sequencediagram, class, activitydiagram, diagrams, usecasediagram, logging, argouml]
+[from=(sequencediagram), to=(collaborationdiagram), weight=1.4525527903254287E-4] -> [sequencediagram, class, diagrams, argouml, cognitive, deploymentdiagram]
+[from=(sequencediagram), to=(collaborationdiagram), weight=1.4525527903254287E-4] -> [sequencediagram, class, activitydiagram, diagrams, usecasediagram, argouml, statediagram]
+[from=(sequencediagram AND logging), to=(collaborationdiagram), weight=5.696285452256583E-6] -> [sequencediagram, class, activitydiagram, diagrams, cognitive, deploymentdiagram, usecasediagram, logging, argouml]
+[from=(sequencediagram), to=(collaborationdiagram), weight=1.4525527903254287E-4] -> [sequencediagram, class, activitydiagram, diagrams, cognitive, deploymentdiagram, usecasediagram, logging, argouml]
+[from=(sequencediagram), to=(collaborationdiagram), weight=1.4525527903254287E-4] -> [sequencediagram, class, diagrams, argouml, deploymentdiagram]
+[from=(sequencediagram AND logging), to=(collaborationdiagram), weight=5.696285452256583E-6] -> [sequencediagram, class, activitydiagram, diagrams, cognitive, usecasediagram, logging, argouml]
+[from=(sequencediagram), to=(collaborationdiagram), weight=1.4525527903254287E-4] -> [sequencediagram, class, activitydiagram, diagrams, cognitive, usecasediagram, logging, argouml]
+[from=(sequencediagram), to=(collaborationdiagram), weight=1.4525527903254287E-4] -> [sequencediagram, class, diagrams, argouml, statediagram, deploymentdiagram]
+[from=(sequencediagram), to=(collaborationdiagram), weight=1.4525527903254287E-4] -> [sequencediagram, class, activitydiagram, diagrams, cognitive, usecasediagram, argouml, statediagram]
+[from=(sequencediagram), to=(collaborationdiagram), weight=1.4525527903254287E-4] -> [sequencediagram, class, activitydiagram, diagrams, argouml, deploymentdiagram]
+[from=(sequencediagram AND logging), to=(collaborationdiagram), weight=5.696285452256583E-6] -> [logging, sequencediagram, class, diagrams, argouml, cognitive]
+[from=(sequencediagram), to=(collaborationdiagram), weight=1.4525527903254287E-4] -> [logging, sequencediagram, class, diagrams, argouml, cognitive]
+[from=(sequencediagram AND logging), to=(collaborationdiagram), weight=5.696285452256583E-6] -> [sequencediagram, class, diagrams, cognitive, usecasediagram, logging, argouml]
+[from=(sequencediagram), to=(collaborationdiagram), weight=1.4525527903254287E-4] -> [sequencediagram, class, diagrams, cognitive, usecasediagram, logging, argouml]
+[from=(sequencediagram), to=(collaborationdiagram), weight=1.4525527903254287E-4] -> [sequencediagram, class, activitydiagram, diagrams, argouml, cognitive]
+[from=(sequencediagram AND logging), to=(collaborationdiagram), weight=5.696285452256583E-6] -> [sequencediagram, class, activitydiagram, diagrams, deploymentdiagram, usecasediagram, logging, argouml]
+[from=(sequencediagram), to=(collaborationdiagram), weight=1.4525527903254287E-4] -> [sequencediagram, class, activitydiagram, diagrams, deploymentdiagram, usecasediagram, logging, argouml]
+[from=(sequencediagram), to=(collaborationdiagram), weight=1.4525527903254287E-4] -> [sequencediagram, class, activitydiagram, diagrams, deploymentdiagram, usecasediagram, argouml]
+[from=(sequencediagram AND logging), to=(collaborationdiagram), weight=5.696285452256583E-6] -> [logging, sequencediagram, class, diagrams, argouml, deploymentdiagram]
+[from=(sequencediagram), to=(collaborationdiagram), weight=1.4525527903254287E-4] -> [logging, sequencediagram, class, diagrams, argouml, deploymentdiagram]
+[from=(sequencediagram), to=(collaborationdiagram), weight=1.4525527903254287E-4] -> [sequencediagram, class, diagrams, argouml, cognitive, usecasediagram]
+[from=(sequencediagram AND logging), to=(collaborationdiagram), weight=5.696285452256583E-6] -> [sequencediagram, class, activitydiagram, diagrams, logging, argouml, statediagram]
+[from=(sequencediagram), to=(collaborationdiagram), weight=1.4525527903254287E-4] -> [sequencediagram, class, activitydiagram, diagrams, logging, argouml, statediagram]
+[from=(sequencediagram), to=(collaborationdiagram), weight=1.4525527903254287E-4] -> [sequencediagram, class, activitydiagram, diagrams, argouml, statediagram]
+[from=(sequencediagram AND logging), to=(collaborationdiagram), weight=5.696285452256583E-6] -> [sequencediagram, class, diagrams, deploymentdiagram, usecasediagram, logging, argouml]
+[from=(sequencediagram), to=(collaborationdiagram), weight=1.4525527903254287E-4] -> [sequencediagram, class, diagrams, deploymentdiagram, usecasediagram, logging, argouml]
+[from=(sequencediagram), to=(collaborationdiagram), weight=1.4525527903254287E-4] -> [sequencediagram, class, diagrams, cognitive, deploymentdiagram, usecasediagram, argouml, statediagram]
+[from=(sequencediagram AND logging), to=(collaborationdiagram), weight=5.696285452256583E-6] -> [sequencediagram, class, activitydiagram, diagrams, cognitive, deploymentdiagram, logging, argouml, statediagram]
+[from=(sequencediagram), to=(collaborationdiagram), weight=1.4525527903254287E-4] -> [sequencediagram, class, activitydiagram, diagrams, cognitive, deploymentdiagram, logging, argouml, statediagram]
+[from=(sequencediagram), to=(collaborationdiagram), weight=1.4525527903254287E-4] -> [sequencediagram, class, diagrams, argouml, cognitive]
+[from=(sequencediagram AND logging), to=(collaborationdiagram), weight=5.696285452256583E-6] -> [sequencediagram, class, activitydiagram, diagrams, deploymentdiagram, logging, argouml]
+[from=(sequencediagram), to=(collaborationdiagram), weight=1.4525527903254287E-4] -> [sequencediagram, class, activitydiagram, diagrams, deploymentdiagram, logging, argouml]
+[from=(sequencediagram), to=(collaborationdiagram), weight=1.4525527903254287E-4] -> [sequencediagram, class, diagrams, argouml, deploymentdiagram, usecasediagram]
+
+1.0 0.75 1.0
+Feature Model: Root(Mandatory(class(Optional(logging), Optional(collaborationdiagram(Optional(sequencediagram))), Optional(cognitive), Optional(statediagram))) argouml Mandatory(diagrams(Optional(activitydiagram), Optional(deploymentdiagram), Optional(usecasediagram))))
+CTCs: ConstraintSet
+Number Of Products: 192
+Number of Contained Products: 192
+Broken Dependencies: 
+
+1.0 0.75 1.0
+Feature Model: Root(argouml(Mandatory(class(Optional(statediagram), Optional(cognitive), Optional(collaborationdiagram(Optional(sequencediagram))), Optional(logging))), Mandatory(Optional(activitydiagram) diagrams Optional(usecasediagram)), Optional(deploymentdiagram)))
+CTCs: ConstraintSet
+Number Of Products: 192
+Number of Contained Products: 192
+Broken Dependencies: 
+
+1.0 0.75 1.0
+Feature Model: Root(class(Mandatory(argouml(Optional(deploymentdiagram), Optional(logging), Optional(cognitive))), Mandatory(diagrams(Optional(statediagram), Optional(usecasediagram), Optional(activitydiagram))), Optional(collaborationdiagram(Optional(sequencediagram)))))
+CTCs: ConstraintSet
+Number Of Products: 192
+Number of Contained Products: 192
+Broken Dependencies: 
+
+1.0 0.75 1.0
+Feature Model: Root(argouml(Mandatory(class(Optional(statediagram), Optional(cognitive), Optional(logging), Optional(collaborationdiagram(Optional(sequencediagram))))), Mandatory(Optional(activitydiagram) diagrams Optional(deploymentdiagram)), Optional(usecasediagram)))
+CTCs: ConstraintSet
+Number Of Products: 192
+Number of Contained Products: 192
+Broken Dependencies: 
+
+1.0 1.0 0.9999629741445067
+Feature Model: Root(argouml(Mandatory(class(Optional(statediagram), Optional(cognitive), Optional(logging))), Mandatory(diagrams(Optional(activitydiagram), Optional(deploymentdiagram), Optional(usecasediagram))), Optional(collaborationdiagram), Optional(sequencediagram)))
+CTCs: ConstraintSet(Constraint(Not(Atom(logging)) Or Atom(class)))
+Number Of Products: 256
+Number of Contained Products: 256
+Broken Dependencies: 
+[from=(sequencediagram AND logging), to=(collaborationdiagram), weight=5.696285452256583E-6] -> [sequencediagram, class, diagrams, cognitive, logging, argouml, statediagram]
+[from=(sequencediagram), to=(collaborationdiagram), weight=1.4525527903254287E-4] -> [sequencediagram, class, diagrams, cognitive, logging, argouml, statediagram]
+[from=(sequencediagram AND logging), to=(collaborationdiagram), weight=5.696285452256583E-6] -> [sequencediagram, class, diagrams, usecasediagram, logging, argouml, statediagram]
+[from=(sequencediagram), to=(collaborationdiagram), weight=1.4525527903254287E-4] -> [sequencediagram, class, diagrams, usecasediagram, logging, argouml, statediagram]
+[from=(sequencediagram AND logging), to=(collaborationdiagram), weight=5.696285452256583E-6] -> [logging, sequencediagram, class, diagrams, argouml, statediagram]
+[from=(sequencediagram), to=(collaborationdiagram), weight=1.4525527903254287E-4] -> [logging, sequencediagram, class, diagrams, argouml, statediagram]
+[from=(sequencediagram AND logging), to=(collaborationdiagram), weight=5.696285452256583E-6] -> [sequencediagram, class, diagrams, cognitive, deploymentdiagram, usecasediagram, logging, argouml, statediagram]
+[from=(sequencediagram), to=(collaborationdiagram), weight=1.4525527903254287E-4] -> [sequencediagram, class, diagrams, cognitive, deploymentdiagram, usecasediagram, logging, argouml, statediagram]
+[from=(sequencediagram AND logging), to=(collaborationdiagram), weight=5.696285452256583E-6] -> [sequencediagram, class, diagrams, cognitive, usecasediagram, logging, argouml, statediagram]
+[from=(sequencediagram), to=(collaborationdiagram), weight=1.4525527903254287E-4] -> [sequencediagram, class, diagrams, cognitive, usecasediagram, logging, argouml, statediagram]
+[from=(sequencediagram AND logging), to=(collaborationdiagram), weight=5.696285452256583E-6] -> [sequencediagram, class, diagrams, cognitive, deploymentdiagram, logging, argouml, statediagram]
+[from=(sequencediagram), to=(collaborationdiagram), weight=1.4525527903254287E-4] -> [sequencediagram, class, diagrams, cognitive, deploymentdiagram, logging, argouml, statediagram]
+[from=(sequencediagram AND logging), to=(collaborationdiagram), weight=5.696285452256583E-6] -> [sequencediagram, class, activitydiagram, diagrams, deploymentdiagram, usecasediagram, logging, argouml, statediagram]
+[from=(sequencediagram), to=(collaborationdiagram), weight=1.4525527903254287E-4] -> [sequencediagram, class, activitydiagram, diagrams, deploymentdiagram, usecasediagram, logging, argouml, statediagram]
+[from=(sequencediagram AND logging), to=(collaborationdiagram), weight=5.696285452256583E-6] -> [sequencediagram, class, diagrams, deploymentdiagram, logging, argouml, statediagram]
+[from=(sequencediagram), to=(collaborationdiagram), weight=1.4525527903254287E-4] -> [sequencediagram, class, diagrams, deploymentdiagram, logging, argouml, statediagram]
+[from=(sequencediagram AND logging), to=(collaborationdiagram), weight=5.696285452256583E-6] -> [sequencediagram, class, activitydiagram, diagrams, cognitive, logging, argouml, statediagram]
+[from=(sequencediagram), to=(collaborationdiagram), weight=1.4525527903254287E-4] -> [sequencediagram, class, activitydiagram, diagrams, cognitive, logging, argouml, statediagram]
+[from=(sequencediagram AND logging), to=(collaborationdiagram), weight=5.696285452256583E-6] -> [sequencediagram, class, activitydiagram, diagrams, usecasediagram, logging, argouml, statediagram]
+[from=(sequencediagram), to=(collaborationdiagram), weight=1.4525527903254287E-4] -> [sequencediagram, class, activitydiagram, diagrams, usecasediagram, logging, argouml, statediagram]
+[from=(sequencediagram AND logging), to=(collaborationdiagram), weight=5.696285452256583E-6] -> [sequencediagram, class, activitydiagram, diagrams, cognitive, deploymentdiagram, usecasediagram, logging, argouml, statediagram]
+[from=(sequencediagram), to=(collaborationdiagram), weight=1.4525527903254287E-4] -> [sequencediagram, class, activitydiagram, diagrams, cognitive, deploymentdiagram, usecasediagram, logging, argouml, statediagram]
+[from=(sequencediagram AND logging), to=(collaborationdiagram), weight=5.696285452256583E-6] -> [sequencediagram, class, activitydiagram, diagrams, cognitive, usecasediagram, logging, argouml, statediagram]
+[from=(sequencediagram), to=(collaborationdiagram), weight=1.4525527903254287E-4] -> [sequencediagram, class, activitydiagram, diagrams, cognitive, usecasediagram, logging, argouml, statediagram]
+[from=(sequencediagram), to=(collaborationdiagram), weight=1.4525527903254287E-4] -> [sequencediagram, class, activitydiagram, diagrams, argouml, usecasediagram]
+[from=(sequencediagram), to=(collaborationdiagram), weight=1.4525527903254287E-4] -> [sequencediagram, class, activitydiagram, diagrams, cognitive, usecasediagram, argouml]
+[from=(sequencediagram AND logging), to=(collaborationdiagram), weight=5.696285452256583E-6] -> [logging, sequencediagram, class, diagrams, argouml, usecasediagram]
+[from=(sequencediagram), to=(collaborationdiagram), weight=1.4525527903254287E-4] -> [logging, sequencediagram, class, diagrams, argouml, usecasediagram]
+[from=(sequencediagram), to=(collaborationdiagram), weight=1.4525527903254287E-4] -> [sequencediagram, class, activitydiagram, diagrams, cognitive, deploymentdiagram, argouml]
+[from=(sequencediagram AND logging), to=(collaborationdiagram), weight=5.696285452256583E-6] -> [sequencediagram, class, diagrams, cognitive, deploymentdiagram, usecasediagram, logging, argouml]
+[from=(sequencediagram), to=(collaborationdiagram), weight=1.4525527903254287E-4] -> [sequencediagram, class, diagrams, cognitive, deploymentdiagram, usecasediagram, logging, argouml]
+[from=(sequencediagram AND logging), to=(collaborationdiagram), weight=5.696285452256583E-6] -> [sequencediagram, class, diagrams, cognitive, deploymentdiagram, logging, argouml]
+[from=(sequencediagram), to=(collaborationdiagram), weight=1.4525527903254287E-4] -> [sequencediagram, class, diagrams, cognitive, deploymentdiagram, logging, argouml]
+[from=(sequencediagram), to=(collaborationdiagram), weight=1.4525527903254287E-4] -> [sequencediagram, class, diagrams, argouml]
+[from=(sequencediagram), to=(collaborationdiagram), weight=1.4525527903254287E-4] -> [sequencediagram, class, activitydiagram, diagrams, cognitive, deploymentdiagram, usecasediagram, argouml]
+[from=(sequencediagram), to=(collaborationdiagram), weight=1.4525527903254287E-4] -> [sequencediagram, class, diagrams, argouml, usecasediagram]
+[from=(sequencediagram AND logging), to=(collaborationdiagram), weight=5.696285452256583E-6] -> [logging, sequencediagram, class, activitydiagram, diagrams, argouml]
+[from=(sequencediagram), to=(collaborationdiagram), weight=1.4525527903254287E-4] -> [logging, sequencediagram, class, activitydiagram, diagrams, argouml]
+[from=(sequencediagram AND logging), to=(collaborationdiagram), weight=5.696285452256583E-6] -> [sequencediagram, class, activitydiagram, diagrams, cognitive, deploymentdiagram, logging, argouml]
+[from=(sequencediagram), to=(collaborationdiagram), weight=1.4525527903254287E-4] -> [sequencediagram, class, activitydiagram, diagrams, cognitive, deploymentdiagram, logging, argouml]
+[from=(sequencediagram), to=(collaborationdiagram), weight=1.4525527903254287E-4] -> [sequencediagram, class, diagrams, argouml, statediagram, cognitive]
+[from=(sequencediagram AND logging), to=(collaborationdiagram), weight=5.696285452256583E-6] -> [sequencediagram, class, activitydiagram, diagrams, deploymentdiagram, logging, argouml, statediagram]
+[from=(sequencediagram), to=(collaborationdiagram), weight=1.4525527903254287E-4] -> [sequencediagram, class, activitydiagram, diagrams, deploymentdiagram, logging, argouml, statediagram]
+[from=(sequencediagram AND logging), to=(collaborationdiagram), weight=5.696285452256583E-6] -> [sequencediagram, class, diagrams, deploymentdiagram, usecasediagram, logging, argouml, statediagram]
+[from=(sequencediagram), to=(collaborationdiagram), weight=1.4525527903254287E-4] -> [sequencediagram, class, diagrams, deploymentdiagram, usecasediagram, logging, argouml, statediagram]
+[from=(sequencediagram), to=(collaborationdiagram), weight=1.4525527903254287E-4] -> [sequencediagram, class, activitydiagram, diagrams, argouml]
+[from=(sequencediagram), to=(collaborationdiagram), weight=1.4525527903254287E-4] -> [sequencediagram, class, diagrams, cognitive, deploymentdiagram, usecasediagram, argouml]
+[from=(sequencediagram AND logging), to=(collaborationdiagram), weight=5.696285452256583E-6] -> [logging, sequencediagram, class, diagrams, argouml]
+[from=(sequencediagram), to=(collaborationdiagram), weight=1.4525527903254287E-4] -> [logging, sequencediagram, class, diagrams, argouml]
+[from=(sequencediagram), to=(collaborationdiagram), weight=1.4525527903254287E-4] -> [sequencediagram, class, diagrams, deploymentdiagram, usecasediagram, argouml, statediagram]
+[from=(sequencediagram), to=(collaborationdiagram), weight=1.4525527903254287E-4] -> [sequencediagram, class, activitydiagram, diagrams, deploymentdiagram, argouml, statediagram]
+[from=(sequencediagram), to=(collaborationdiagram), weight=1.4525527903254287E-4] -> [sequencediagram, class, activitydiagram, diagrams, cognitive, deploymentdiagram, argouml, statediagram]
+[from=(sequencediagram), to=(collaborationdiagram), weight=1.4525527903254287E-4] -> [sequencediagram, class, diagrams, argouml, statediagram]
+[from=(sequencediagram), to=(collaborationdiagram), weight=1.4525527903254287E-4] -> [sequencediagram, class, activitydiagram, diagrams, cognitive, deploymentdiagram, usecasediagram, argouml, statediagram]
+[from=(sequencediagram), to=(collaborationdiagram), weight=1.4525527903254287E-4] -> [sequencediagram, class, activitydiagram, diagrams, cognitive, argouml, statediagram]
+[from=(sequencediagram), to=(collaborationdiagram), weight=1.4525527903254287E-4] -> [sequencediagram, class, diagrams, argouml, statediagram, usecasediagram]
+[from=(sequencediagram), to=(collaborationdiagram), weight=1.4525527903254287E-4] -> [sequencediagram, class, activitydiagram, diagrams, deploymentdiagram, usecasediagram, argouml, statediagram]
+[from=(sequencediagram), to=(collaborationdiagram), weight=1.4525527903254287E-4] -> [sequencediagram, class, diagrams, cognitive, deploymentdiagram, argouml, statediagram]
+[from=(sequencediagram), to=(collaborationdiagram), weight=1.4525527903254287E-4] -> [sequencediagram, class, diagrams, cognitive, usecasediagram, argouml, statediagram]
+[from=(sequencediagram AND logging), to=(collaborationdiagram), weight=5.696285452256583E-6] -> [sequencediagram, class, activitydiagram, diagrams, cognitive, logging, argouml]
+[from=(sequencediagram), to=(collaborationdiagram), weight=1.4525527903254287E-4] -> [sequencediagram, class, activitydiagram, diagrams, cognitive, logging, argouml]
+[from=(sequencediagram AND logging), to=(collaborationdiagram), weight=5.696285452256583E-6] -> [sequencediagram, class, activitydiagram, diagrams, usecasediagram, logging, argouml]
+[from=(sequencediagram), to=(collaborationdiagram), weight=1.4525527903254287E-4] -> [sequencediagram, class, activitydiagram, diagrams, usecasediagram, logging, argouml]
+[from=(sequencediagram), to=(collaborationdiagram), weight=1.4525527903254287E-4] -> [sequencediagram, class, diagrams, argouml, cognitive, deploymentdiagram]
+[from=(sequencediagram), to=(collaborationdiagram), weight=1.4525527903254287E-4] -> [sequencediagram, class, activitydiagram, diagrams, usecasediagram, argouml, statediagram]
+[from=(sequencediagram AND logging), to=(collaborationdiagram), weight=5.696285452256583E-6] -> [sequencediagram, class, activitydiagram, diagrams, cognitive, deploymentdiagram, usecasediagram, logging, argouml]
+[from=(sequencediagram), to=(collaborationdiagram), weight=1.4525527903254287E-4] -> [sequencediagram, class, activitydiagram, diagrams, cognitive, deploymentdiagram, usecasediagram, logging, argouml]
+[from=(sequencediagram), to=(collaborationdiagram), weight=1.4525527903254287E-4] -> [sequencediagram, class, diagrams, argouml, deploymentdiagram]
+[from=(sequencediagram AND logging), to=(collaborationdiagram), weight=5.696285452256583E-6] -> [sequencediagram, class, activitydiagram, diagrams, cognitive, usecasediagram, logging, argouml]
+[from=(sequencediagram), to=(collaborationdiagram), weight=1.4525527903254287E-4] -> [sequencediagram, class, activitydiagram, diagrams, cognitive, usecasediagram, logging, argouml]
+[from=(sequencediagram), to=(collaborationdiagram), weight=1.4525527903254287E-4] -> [sequencediagram, class, diagrams, argouml, statediagram, deploymentdiagram]
+[from=(sequencediagram), to=(collaborationdiagram), weight=1.4525527903254287E-4] -> [sequencediagram, class, activitydiagram, diagrams, cognitive, usecasediagram, argouml, statediagram]
+[from=(sequencediagram), to=(collaborationdiagram), weight=1.4525527903254287E-4] -> [sequencediagram, class, activitydiagram, diagrams, argouml, deploymentdiagram]
+[from=(sequencediagram AND logging), to=(collaborationdiagram), weight=5.696285452256583E-6] -> [logging, sequencediagram, class, diagrams, argouml, cognitive]
+[from=(sequencediagram), to=(collaborationdiagram), weight=1.4525527903254287E-4] -> [logging, sequencediagram, class, diagrams, argouml, cognitive]
+[from=(sequencediagram AND logging), to=(collaborationdiagram), weight=5.696285452256583E-6] -> [sequencediagram, class, diagrams, cognitive, usecasediagram, logging, argouml]
+[from=(sequencediagram), to=(collaborationdiagram), weight=1.4525527903254287E-4] -> [sequencediagram, class, diagrams, cognitive, usecasediagram, logging, argouml]
+[from=(sequencediagram), to=(collaborationdiagram), weight=1.4525527903254287E-4] -> [sequencediagram, class, activitydiagram, diagrams, argouml, cognitive]
+[from=(sequencediagram AND logging), to=(collaborationdiagram), weight=5.696285452256583E-6] -> [sequencediagram, class, activitydiagram, diagrams, deploymentdiagram, usecasediagram, logging, argouml]
+[from=(sequencediagram), to=(collaborationdiagram), weight=1.4525527903254287E-4] -> [sequencediagram, class, activitydiagram, diagrams, deploymentdiagram, usecasediagram, logging, argouml]
+[from=(sequencediagram), to=(collaborationdiagram), weight=1.4525527903254287E-4] -> [sequencediagram, class, activitydiagram, diagrams, deploymentdiagram, usecasediagram, argouml]
+[from=(sequencediagram AND logging), to=(collaborationdiagram), weight=5.696285452256583E-6] -> [logging, sequencediagram, class, diagrams, argouml, deploymentdiagram]
+[from=(sequencediagram), to=(collaborationdiagram), weight=1.4525527903254287E-4] -> [logging, sequencediagram, class, diagrams, argouml, deploymentdiagram]
+[from=(sequencediagram), to=(collaborationdiagram), weight=1.4525527903254287E-4] -> [sequencediagram, class, diagrams, argouml, cognitive, usecasediagram]
+[from=(sequencediagram AND logging), to=(collaborationdiagram), weight=5.696285452256583E-6] -> [sequencediagram, class, activitydiagram, diagrams, logging, argouml, statediagram]
+[from=(sequencediagram), to=(collaborationdiagram), weight=1.4525527903254287E-4] -> [sequencediagram, class, activitydiagram, diagrams, logging, argouml, statediagram]
+[from=(sequencediagram), to=(collaborationdiagram), weight=1.4525527903254287E-4] -> [sequencediagram, class, activitydiagram, diagrams, argouml, statediagram]
+[from=(sequencediagram AND logging), to=(collaborationdiagram), weight=5.696285452256583E-6] -> [sequencediagram, class, diagrams, deploymentdiagram, usecasediagram, logging, argouml]
+[from=(sequencediagram), to=(collaborationdiagram), weight=1.4525527903254287E-4] -> [sequencediagram, class, diagrams, deploymentdiagram, usecasediagram, logging, argouml]
+[from=(sequencediagram), to=(collaborationdiagram), weight=1.4525527903254287E-4] -> [sequencediagram, class, diagrams, cognitive, deploymentdiagram, usecasediagram, argouml, statediagram]
+[from=(sequencediagram AND logging), to=(collaborationdiagram), weight=5.696285452256583E-6] -> [sequencediagram, class, activitydiagram, diagrams, cognitive, deploymentdiagram, logging, argouml, statediagram]
+[from=(sequencediagram), to=(collaborationdiagram), weight=1.4525527903254287E-4] -> [sequencediagram, class, activitydiagram, diagrams, cognitive, deploymentdiagram, logging, argouml, statediagram]
+[from=(sequencediagram), to=(collaborationdiagram), weight=1.4525527903254287E-4] -> [sequencediagram, class, diagrams, argouml, cognitive]
+[from=(sequencediagram AND logging), to=(collaborationdiagram), weight=5.696285452256583E-6] -> [sequencediagram, class, activitydiagram, diagrams, deploymentdiagram, logging, argouml]
+[from=(sequencediagram), to=(collaborationdiagram), weight=1.4525527903254287E-4] -> [sequencediagram, class, activitydiagram, diagrams, deploymentdiagram, logging, argouml]
+[from=(sequencediagram), to=(collaborationdiagram), weight=1.4525527903254287E-4] -> [sequencediagram, class, diagrams, argouml, deploymentdiagram, usecasediagram]
+
+1.0 0.75 1.0
+Feature Model: Root(class(Mandatory(Optional(deploymentdiagram) argouml Optional(collaborationdiagram(Optional(sequencediagram)))), Mandatory(diagrams(Optional(statediagram), Optional(usecasediagram), Optional(activitydiagram))), Optional(logging), Optional(cognitive)))
+CTCs: ConstraintSet
+Number Of Products: 192
+Number of Contained Products: 192
+Broken Dependencies: 
+
+1.0 0.75 1.0
+Feature Model: Root(Alternative(class(Optional(cognitive), Optional(statediagram), Optional(logging), Optional(collaborationdiagram(Optional(sequencediagram))))) argouml Mandatory(diagrams(Optional(activitydiagram), Optional(deploymentdiagram), Optional(usecasediagram))))
+CTCs: ConstraintSet
+Number Of Products: 192
+Number of Contained Products: 192
+Broken Dependencies: 
+
+1.0 0.75 1.0
+Feature Model: Root(argouml(Mandatory(class(Optional(statediagram), Optional(logging), Optional(cognitive), Optional(collaborationdiagram(Optional(sequencediagram))))), Mandatory(Optional(activitydiagram) diagrams Optional(deploymentdiagram)), Optional(usecasediagram)))
+CTCs: ConstraintSet(Constraint(Not(Atom(logging)) Or Atom(class)))
+Number Of Products: 192
+Number of Contained Products: 192
+Broken Dependencies: 
+
+1.0 0.75 1.0
+Feature Model: Root(argouml(Mandatory(class(Optional(cognitive), Optional(collaborationdiagram(Optional(sequencediagram))), Optional(statediagram), Optional(logging))), Mandatory(Optional(usecasediagram) diagrams Optional(activitydiagram)), Optional(deploymentdiagram)))
+CTCs: ConstraintSet(Constraint(Not(Atom(sequencediagram)) Or Atom(argouml)))
+Number Of Products: 192
+Number of Contained Products: 192
+Broken Dependencies: 
+
+1.0 0.75 1.0
+Feature Model: Root(class(Mandatory(argouml(Optional(deploymentdiagram), Optional(collaborationdiagram(Optional(sequencediagram))), Optional(activitydiagram))), Mandatory(diagrams(Optional(usecasediagram), Optional(statediagram), Optional(cognitive))), Optional(logging)))
+CTCs: ConstraintSet
+Number Of Products: 192
+Number of Contained Products: 192
+Broken Dependencies: 
+
+1.0 0.75 1.0
+Feature Model: Root(class(Mandatory(argouml(Optional(deploymentdiagram))), Mandatory(diagrams(Optional(statediagram), Optional(cognitive), Optional(activitydiagram))), Optional(collaborationdiagram(Optional(sequencediagram))), Optional(logging), Optional(usecasediagram)))
+CTCs: ConstraintSet
+Number Of Products: 192
+Number of Contained Products: 192
+Broken Dependencies: 
+
+1.0 0.75 1.0
+Feature Model: Root(argouml(Mandatory(class(Optional(logging), Optional(statediagram), Optional(collaborationdiagram(Optional(sequencediagram))))), Mandatory(Optional(activitydiagram) diagrams Optional(deploymentdiagram)), Optional(cognitive), Optional(usecasediagram)))
+CTCs: ConstraintSet
+Number Of Products: 192
+Number of Contained Products: 192
+Broken Dependencies: 
+
+1.0 0.75 1.0
+Feature Model: Root(Mandatory(argouml(Optional(activitydiagram), Optional(deploymentdiagram), Optional(usecasediagram))) diagrams Mandatory(class(Optional(statediagram), Optional(cognitive), Optional(logging), Optional(collaborationdiagram(Optional(sequencediagram))))))
+CTCs: ConstraintSet
+Number Of Products: 192
+Number of Contained Products: 192
+Broken Dependencies: 
+
+1.0 0.75 1.0
+Feature Model: Root(argouml(Mandatory(class(Optional(statediagram), Optional(cognitive), Optional(collaborationdiagram(Optional(sequencediagram))), Optional(logging))), Mandatory(Optional(activitydiagram) diagrams Optional(deploymentdiagram)), Optional(usecasediagram)))
+CTCs: ConstraintSet
+Number Of Products: 192
+Number of Contained Products: 192
+Broken Dependencies: 
+
+1.0 0.75 1.0
+Feature Model: Root(Mandatory(diagrams(Optional(usecasediagram))) argouml Mandatory(class(Optional(statediagram), Optional(cognitive), Optional(logging), Optional(collaborationdiagram(Optional(sequencediagram))), Optional(activitydiagram), Optional(deploymentdiagram))))
+CTCs: ConstraintSet
+Number Of Products: 192
+Number of Contained Products: 192
+Broken Dependencies: 
+
+1.0 0.75 1.0
+Feature Model: Root(argouml(Mandatory(class(Optional(usecasediagram), Optional(cognitive), Optional(logging))), Mandatory(diagrams(Optional(activitydiagram), Optional(deploymentdiagram), Optional(statediagram))), Optional(collaborationdiagram(Optional(sequencediagram)))))
+CTCs: ConstraintSet
+Number Of Products: 192
+Number of Contained Products: 192
+Broken Dependencies: 
+
+1.0 0.75 1.0
+Feature Model: Root(argouml(Alternative(class(Optional(cognitive), Optional(statediagram), Optional(logging), Optional(collaborationdiagram(Optional(sequencediagram))))), Mandatory(Optional(activitydiagram) diagrams Optional(deploymentdiagram)), Optional(usecasediagram)))
+CTCs: ConstraintSet
+Number Of Products: 192
+Number of Contained Products: 192
+Broken Dependencies: 
+
+1.0 0.75 1.0
+Feature Model: Root(Mandatory(class(Optional(statediagram), Optional(cognitive), Optional(logging), Optional(collaborationdiagram(Optional(sequencediagram))), Optional(usecasediagram))) argouml Mandatory(Optional(activitydiagram) diagrams Optional(deploymentdiagram)))
+CTCs: ConstraintSet
+Number Of Products: 192
+Number of Contained Products: 192
+Broken Dependencies: 
+
+1.0 0.75 1.0
+Feature Model: Root(argouml(Mandatory(diagrams(Optional(activitydiagram))), Mandatory(class(Optional(statediagram), Optional(cognitive), Optional(logging))), Optional(collaborationdiagram(Optional(sequencediagram))), Optional(deploymentdiagram), Optional(usecasediagram)))
+CTCs: ConstraintSet
+Number Of Products: 192
+Number of Contained Products: 192
+Broken Dependencies: 
+
+1.0 0.75 1.0
+Feature Model: Root(diagrams(Mandatory(Optional(deploymentdiagram) argouml Optional(usecasediagram)), Mandatory(class(Optional(cognitive), Optional(collaborationdiagram(Optional(sequencediagram))), Optional(statediagram), Optional(logging))), Optional(activitydiagram)))
+CTCs: ConstraintSet
+Number Of Products: 192
+Number of Contained Products: 192
+Broken Dependencies: 
+
+1.0 0.75 1.0
+Feature Model: Root(Mandatory(diagrams(Optional(usecasediagram), Optional(activitydiagram), Optional(deploymentdiagram))) argouml Mandatory(class(Optional(statediagram), Optional(cognitive), Optional(logging), Optional(collaborationdiagram(Optional(sequencediagram))))))
+CTCs: ConstraintSet
+Number Of Products: 192
+Number of Contained Products: 192
+Broken Dependencies: 
+
+1.0 0.75 1.0
+Feature Model: Root(Mandatory(class(Optional(cognitive), Optional(collaborationdiagram(Optional(sequencediagram))), Optional(logging), Optional(usecasediagram))) argouml Mandatory(diagrams(Optional(deploymentdiagram), Optional(activitydiagram), Optional(statediagram))))
+CTCs: ConstraintSet
+Number Of Products: 192
+Number of Contained Products: 192
+Broken Dependencies: 
+

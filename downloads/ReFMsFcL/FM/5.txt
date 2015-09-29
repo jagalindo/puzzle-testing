@@ -1,0 +1,28 @@
+digraph G { 
+	rankdir=BT;
+10458977 [shape=record,style=filled,label="{Concept_0||P1\n}"];
+25915643 [shape=record,style=filled,label="{Concept_1|C\nD\nE\n|P2\n}"];
+27701288 [shape=record,style=filled,label="{Concept_2||P3\n}"];
+8402701 [shape=record,style=filled,fillcolor=orange,label="{Concept_3|F.\nK\n|P7\nP6\nP4\n}"];
+27147229 [shape=record,style=filled,label="{Concept_4|I\nJ\n|P5\n}"];
+15205143 [shape=record,style=filled,label="{Concept_5||P8\n}"];
+2286508 [shape=record,style=filled,label="{Concept_6|G\nH\n|P9\n}"];
+9530040 [shape=record,style=filled,label="{Concept_7||P10\n}"];
+7807046 [shape=record,style=filled,fillcolor=lightblue,label="{Concept_8|A\nB\n|}"];
+23879504 [shape=record,style=filled,fillcolor=lightblue,label="{Concept_9|L\nM\n|}"];
+	10458977 -> 27147229
+	10458977 -> 23879504
+	25915643 -> 8402701
+	27701288 -> 7807046
+	27701288 -> 23879504
+	27147229 -> 8402701
+	15205143 -> 25915643
+	15205143 -> 2286508
+	15205143 -> 23879504
+	2286508 -> 8402701
+	9530040 -> 27147229
+	9530040 -> 2286508
+	9530040 -> 7807046
+	7807046 -> 8402701
+	23879504 -> 8402701
+}

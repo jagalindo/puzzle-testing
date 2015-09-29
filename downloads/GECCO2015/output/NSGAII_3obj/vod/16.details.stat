@@ -1,0 +1,85 @@
+
+Generation: 0
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [0.20512820780277252 0.5 0.2499309582988122]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (startplayer (Optional (vrcinterface
+     (Optional stopmovie) (Mandatory startmovie)
+     (Or pause selectmovie (playimm (Optional
+         vod) (Optional quitplayer))))) (Mandatory
+     detail) (Optional changeserver)))
+Tree 1:
+ ConstraintSet
+
+Generation: 1
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [0.41025641560554504 1.0 0.4441470340393269]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (startplayer (Optional (vrcinterface
+     (Optional stopmovie) (Mandatory startmovie)
+     (Or pause detail (playimm (Optional vod)
+         (Optional quitplayer))))) (Mandatory selectmovie)
+     (Optional changeserver)))
+Tree 1:
+ ConstraintSet
+
+Generation: 2
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [0.41025641560554504 1.0 0.4441470340393269]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (startplayer (Optional (vrcinterface
+     (Optional stopmovie) (Mandatory startmovie)
+     (Or pause detail (playimm (Optional vod)
+         (Optional quitplayer))))) (Mandatory selectmovie)
+     (Optional changeserver)))
+Tree 1:
+ ConstraintSet
+
+Generation: 3
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 1.0 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (startplayer (Mandatory (vrcinterface
+     (Optional stopmovie) (Mandatory (vod (Optional
+     detail))) (Optional pause) (Alternative startmovie)
+     (Or playimm))) (Mandatory (selectmovie (Optional
+     quitplayer))) (Optional changeserver)))
+Tree 1:
+ (ConstraintSet (Constraint (Or (Not (Atom
+     playimm)) (Atom selectmovie))))
+
+
+
+ PARETO FRONTS
+
+
+Pareto Front of Subpopulation 0
+Evaluated: true
+Fitness: [1.0 1.0 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (startplayer (Mandatory (vrcinterface
+     (Optional stopmovie) (Mandatory (vod (Optional
+     detail))) (Optional pause) (Alternative startmovie)
+     (Or playimm))) (Mandatory (selectmovie (Optional
+     quitplayer))) (Optional changeserver)))
+Tree 1:
+ (ConstraintSet (Constraint (Or (Not (Atom
+     playimm)) (Atom selectmovie))))

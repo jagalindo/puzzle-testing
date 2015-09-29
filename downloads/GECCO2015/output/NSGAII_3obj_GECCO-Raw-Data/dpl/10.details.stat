@@ -1,0 +1,677 @@
+
+Generation: 0
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.625 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (color (Optional wipe) (Mandatory dpl)
+     (Or (rect (Optional fill)) line)))
+Tree 1:
+ ConstraintSet
+
+Generation: 1
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.625 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (color (Optional wipe) (Mandatory dpl)
+     (Or (rect (Optional fill)) line)))
+Tree 1:
+ ConstraintSet
+
+Generation: 2
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.625 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (color (Optional wipe) (Mandatory dpl)
+     (Or (rect (Optional fill)) line)))
+Tree 1:
+ ConstraintSet
+
+Generation: 3
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.625 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (color (Optional wipe) (Mandatory dpl)
+     (Or (rect (Optional fill)) line)))
+Tree 1:
+ ConstraintSet
+
+Generation: 4
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.625 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (color (Optional wipe) (Mandatory dpl)
+     (Or (rect (Optional fill)) line)))
+Tree 1:
+ ConstraintSet
+
+Generation: 5
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.625 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (color (Optional wipe) (Mandatory dpl)
+     (Or (rect (Optional fill)) line)))
+Tree 1:
+ ConstraintSet
+
+Generation: 6
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.625 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (color (Optional wipe) (Mandatory dpl)
+     (Or (rect (Optional fill)) line)))
+Tree 1:
+ ConstraintSet
+
+Generation: 7
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.625 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (color (Optional wipe) (Mandatory dpl)
+     (Or (rect (Optional fill)) line)))
+Tree 1:
+ ConstraintSet
+
+Generation: 8
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.625 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (color (Optional wipe) (Mandatory dpl)
+     (Or (rect (Optional fill)) line)))
+Tree 1:
+ ConstraintSet
+
+Generation: 9
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.625 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (color (Optional wipe) (Mandatory dpl)
+     (Or (rect (Optional fill)) line)))
+Tree 1:
+ ConstraintSet
+
+Generation: 10
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.625 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (color (Optional wipe) (Mandatory dpl)
+     (Or (rect (Optional fill)) line)))
+Tree 1:
+ ConstraintSet
+
+Generation: 11
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.625 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (color (Optional wipe) (Mandatory dpl)
+     (Or (rect (Optional fill)) line)))
+Tree 1:
+ ConstraintSet
+
+Generation: 12
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.625 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (color (Optional wipe) (Or (rect (Optional
+     fill)) line) (Mandatory dpl)))
+Tree 1:
+ ConstraintSet
+
+Generation: 13
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.625 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (color (Optional wipe) (Mandatory dpl)
+     (Or (rect (Optional fill)) line)))
+Tree 1:
+ ConstraintSet
+
+Generation: 14
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.625 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (color (Optional wipe) (Mandatory dpl)
+     (Or (rect (Optional fill)) line)))
+Tree 1:
+ (ConstraintSet (Constraint (Or (Not (Atom
+     fill)) (Atom dpl))))
+
+Generation: 15
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.625 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (color (Optional wipe) (Alternative
+     dpl) (Or (rect (Optional fill)) line)))
+Tree 1:
+ ConstraintSet
+
+Generation: 16
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.625 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (color (Optional wipe) (Mandatory dpl)
+     (Or (rect (Optional fill)) line)))
+Tree 1:
+ ConstraintSet
+
+Generation: 17
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.625 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (color (Optional wipe) (Mandatory dpl)
+     (Or (rect (Optional fill)) line)))
+Tree 1:
+ ConstraintSet
+
+Generation: 18
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.625 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (color (Optional wipe) (Mandatory dpl)
+     (Or (rect (Optional fill)) line)))
+Tree 1:
+ ConstraintSet
+
+Generation: 19
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.625 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (color (Optional wipe) (Mandatory dpl)
+     (Or (rect (Optional fill)) line)))
+Tree 1:
+ ConstraintSet
+
+Generation: 20
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.625 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (color (Optional wipe) (Mandatory dpl)
+     (Or (rect (Optional fill)) line)))
+Tree 1:
+ ConstraintSet
+
+Generation: 21
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.625 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (color (Optional wipe) (Or (rect (Optional
+     fill)) line) (Mandatory dpl)))
+Tree 1:
+ ConstraintSet
+
+Generation: 22
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.625 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (color (Optional wipe) (Mandatory dpl)
+     (Or (rect (Optional fill)) line)))
+Tree 1:
+ (ConstraintSet (Constraint (Or (Not (Atom
+     fill)) (Atom dpl))))
+
+Generation: 23
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.625 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (color (Optional wipe) (Mandatory dpl)
+     (Or (rect (Optional fill)) line)))
+Tree 1:
+ ConstraintSet
+
+Generation: 24
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.625 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (color (Optional wipe) (Mandatory dpl)
+     (Or (rect (Optional fill)) line)))
+Tree 1:
+ ConstraintSet
+
+Generation: 25
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.625 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (color (Optional wipe) (Mandatory dpl)
+     (Or (rect (Optional fill)) line)))
+Tree 1:
+ ConstraintSet
+
+Generation: 26
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.625 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (color (Optional wipe) (Alternative
+     dpl) (Or (rect (Optional fill)) line)))
+Tree 1:
+ ConstraintSet
+
+Generation: 27
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.625 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (color (Optional wipe) (Mandatory dpl)
+     (Or (rect (Optional fill)) line)))
+Tree 1:
+ ConstraintSet
+
+Generation: 28
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.625 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (color (Optional wipe) (Mandatory dpl)
+     (Or (rect (Optional fill)) line)))
+Tree 1:
+ ConstraintSet
+
+Generation: 29
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.625 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (color (Optional wipe) (Mandatory dpl)
+     (Or (rect (Optional fill)) line)))
+Tree 1:
+ ConstraintSet
+
+Generation: 30
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.625 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (color (Optional wipe) (Mandatory dpl)
+     (Or (rect (Optional fill)) line)))
+Tree 1:
+ (ConstraintSet (Constraint (Or (Not (Atom
+     color)) (Atom dpl))))
+
+Generation: 31
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.625 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (color (Optional wipe) (Mandatory dpl)
+     (Or (rect (Optional fill)) line)))
+Tree 1:
+ ConstraintSet
+
+Generation: 32
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.625 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (color (Optional wipe) (Mandatory dpl)
+     (Or (rect (Optional fill)) line)))
+Tree 1:
+ ConstraintSet
+
+Generation: 33
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.625 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (dpl (Optional wipe) (Mandatory color)
+     (Or (rect (Optional fill)) line)))
+Tree 1:
+ ConstraintSet
+
+Generation: 34
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [0.8888888955116272 1.0 0.9968664316490412]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (dpl (Optional wipe) (Optional (color
+     (Optional fill))) (Or rect line)))
+Tree 1:
+ ConstraintSet
+
+Generation: 35
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [0.8888888955116272 1.0 0.9968664316490412]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (dpl (Optional wipe) (Optional (color
+     (Optional fill))) (Or rect line)))
+Tree 1:
+ ConstraintSet
+
+Generation: 36
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [0.8888888955116272 1.0 0.9968664316490412]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (dpl (Optional wipe) (Optional (color
+     (Optional fill))) (Or rect line)))
+Tree 1:
+ ConstraintSet
+
+Generation: 37
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [0.8888888955116272 1.0 0.9968664316490412]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (dpl (Optional wipe) (Optional (color
+     (Optional fill))) (Or rect line)))
+Tree 1:
+ ConstraintSet
+
+Generation: 38
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [0.8888888955116272 1.0 0.9968664316490412]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (dpl (Optional wipe) (Optional (color
+     (Optional fill))) (Or rect line)))
+Tree 1:
+ ConstraintSet
+
+Generation: 39
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [0.8888888955116272 1.0 0.9968664316490412]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (dpl (Optional wipe) (Optional (color
+     (Optional fill))) (Or rect line)))
+Tree 1:
+ ConstraintSet
+
+Generation: 40
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [0.8888888955116272 1.0 0.9968664316490412]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (dpl (Optional wipe) (Optional (color
+     (Optional fill))) (Or rect line)))
+Tree 1:
+ ConstraintSet
+
+Generation: 41
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [0.800000011920929 1.0 0.9990599294947131]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (dpl (Optional wipe) (Optional color)
+     (Or (rect (Optional fill)) line)))
+Tree 1:
+ ConstraintSet
+
+Generation: 42
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [0.800000011920929 1.0 0.9990599294947131]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (dpl (Optional wipe) (Optional color)
+     (Or (rect (Optional fill)) line)))
+Tree 1:
+ ConstraintSet
+
+Generation: 43
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.875 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (dpl (Optional wipe) (Optional (color
+     (Optional fill))) (Or rect line)))
+Tree 1:
+ (ConstraintSet (Constraint (Or (Not (Atom
+     color)) (Atom rect))))
+
+Generation: 44
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.875 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (dpl (Optional wipe) (Optional (color
+     (Optional fill))) (Or rect line)))
+Tree 1:
+ (ConstraintSet (Constraint (Or (Not (Atom
+     color)) (Atom rect))))
+
+Generation: 45
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.875 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (dpl (Optional wipe) (Optional (color
+     (Optional fill))) (Or rect line)))
+Tree 1:
+ (ConstraintSet (Constraint (Or (Not (Atom
+     color)) (Atom rect))))
+
+Generation: 46
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.875 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (dpl (Optional wipe) (Optional (color
+     (Optional fill))) (Or rect line)))
+Tree 1:
+ (ConstraintSet (Constraint (Or (Not (Atom
+     color)) (Atom rect))))
+
+Generation: 47
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.875 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (dpl (Optional wipe) (Optional (color
+     (Optional fill))) (Or rect line)))
+Tree 1:
+ (ConstraintSet (Constraint (Or (Not (Atom
+     color)) (Atom rect))))
+
+Generation: 48
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.875 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (dpl (Optional wipe) (Optional (color
+     (Optional fill))) (Or rect line)))
+Tree 1:
+ (ConstraintSet (Constraint (Or (Not (Atom
+     line)) (Not (Atom fill)))))
+
+Generation: 49
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 1.0 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (dpl (Optional wipe) (Optional (color
+     (Optional fill))) (Or rect line)))
+Tree 1:
+ (ConstraintSet (Constraint (Or (Not (Atom
+     fill)) (Atom rect))))
+
+
+
+ PARETO FRONTS
+
+
+Pareto Front of Subpopulation 0
+Evaluated: true
+Fitness: [1.0 1.0 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (dpl (Optional wipe) (Optional (color
+     (Optional fill))) (Or rect line)))
+Tree 1:
+ (ConstraintSet (Constraint (Or (Not (Atom
+     fill)) (Atom rect))))

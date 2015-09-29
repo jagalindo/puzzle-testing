@@ -1,0 +1,4668 @@
+Feature Model: new_models/vod
+[FME] FeatureModelExtractionProblem.clone()
+
+Generation: 0
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [0.761904776096344 0.5 0.7754500861377419]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (startplayer (Optional (quitplayer
+     (Mandatory startmovie) (Mandatory (vod (Optional
+     changeserver) (Mandatory playimm) (Or detail
+     (selectmovie (Optional pause))))) (Mandatory
+     vrcinterface) (Optional stopmovie)))))
+Tree 1:
+ ConstraintSet
+[FME] FeatureModelExtractionProblem.clone()
+
+Generation: 1
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [0.761904776096344 0.5 0.7754500861377419]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (startplayer (Optional (quitplayer
+     (Mandatory startmovie) (Mandatory (vod (Optional
+     changeserver) (Mandatory playimm) (Or detail
+     (selectmovie (Optional pause))))) (Mandatory
+     vrcinterface) (Optional stopmovie)))))
+Tree 1:
+ ConstraintSet
+[FME] FeatureModelExtractionProblem.clone()
+
+Generation: 2
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.5 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (vrcinterface (Mandatory (selectmovie
+     (Mandatory (startplayer (Or playimm)))))
+     (Mandatory (vod (Optional pause) (Optional
+         changeserver) (Optional detail) (Optional
+         quitplayer) (Alternative stopmovie))) (Mandatory
+     startmovie)))
+Tree 1:
+ ConstraintSet
+[FME] FeatureModelExtractionProblem.clone()
+
+Generation: 3
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.5 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (vrcinterface (Mandatory (selectmovie
+     (Mandatory (startplayer (Or playimm)))))
+     (Mandatory (vod (Optional pause) (Optional
+         changeserver) (Optional detail) (Optional
+         quitplayer) (Alternative stopmovie))) (Mandatory
+     startmovie)))
+Tree 1:
+ ConstraintSet
+[FME] FeatureModelExtractionProblem.clone()
+
+Generation: 4
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 1.0 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (vrcinterface (Mandatory (startmovie
+     (Mandatory (startplayer (Optional quitplayer)
+         (Mandatory (vod (Optional pause) (Optional
+             changeserver) (Optional detail))) (Mandatory
+         playimm))))) (Mandatory (selectmovie (Optional
+     stopmovie)))))
+Tree 1:
+ ConstraintSet
+
+
+
+ PARETO FRONTS
+
+
+Pareto Front of Subpopulation 0
+------------Variables------------
+Total Population: 4
+Total Non-dominated/Non-repeated: 4
+Evaluated: true
+Fitness: [1.0 1.0 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (startmovie (Mandatory vrcinterface)
+     (Mandatory (startplayer (Mandatory playimm)
+         (Mandatory (selectmovie (Optional stopmovie)))))
+     (Mandatory (vod (Optional pause) (Optional
+         changeserver) (Optional detail) (Optional
+         quitplayer)))))
+Tree 1:
+ ConstraintSet
+Evaluated: true
+Fitness: [1.0 1.0 1.0]
+Rank: 0
+Sparsity: 0.0
+Tree 0:
+ (Root (startmovie (Mandatory (vrcinterface
+     (Mandatory (selectmovie (Optional stopmovie)))
+     (Mandatory (vod (Optional pause) (Optional
+         changeserver))) (Optional detail))) (Mandatory
+     (startplayer (Or playimm) (Optional quitplayer)))))
+Tree 1:
+ ConstraintSet
+Evaluated: true
+Fitness: [1.0 1.0 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (vrcinterface (Mandatory (startmovie
+     (Mandatory (startplayer (Optional quitplayer)
+         (Mandatory (vod (Optional pause) (Optional
+             changeserver) (Optional detail))) (Mandatory
+         playimm))))) (Mandatory (selectmovie (Optional
+     stopmovie)))))
+Tree 1:
+ ConstraintSet
+Evaluated: true
+Fitness: [1.0 1.0 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (startmovie (Mandatory (vrcinterface
+     (Mandatory (selectmovie (Optional stopmovie)))))
+     (Mandatory (startplayer (Optional quitplayer)
+         (Mandatory (vod (Optional pause) (Optional
+             changeserver) (Optional detail))) (Mandatory
+         playimm)))))
+Tree 1:
+ ConstraintSet
+------------Measures------------
+Total Population: 4
+Total Non-dominated/Non-repeated: 4
+[FME] FeatureModelExtractionProblem.clone()
+
+Generation: 0
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [0.6486486196517944 0.75 0.6685227066337243]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (vod (Mandatory playimm) (Optional
+     (selectmovie (Mandatory startmovie) (Optional
+         (changeserver (Optional stopmovie))) (Mandatory
+         (startplayer (Optional pause))) (Optional
+         quitplayer) (Or vrcinterface detail)))))
+Tree 1:
+ ConstraintSet
+[FME] FeatureModelExtractionProblem.clone()
+
+Generation: 1
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [0.6486486196517944 0.75 0.6685227066337243]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (vod (Mandatory playimm) (Optional
+     (selectmovie (Mandatory startmovie) (Optional
+         (changeserver (Optional stopmovie))) (Mandatory
+         (startplayer (Optional pause))) (Optional
+         quitplayer) (Or vrcinterface detail)))))
+Tree 1:
+ ConstraintSet
+[FME] FeatureModelExtractionProblem.clone()
+
+Generation: 2
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.75 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (selectmovie (Mandatory vod) (Mandatory
+     (playimm (Optional detail) (Or startmovie)
+         (Or (startplayer (Optional pause))))) (Optional
+     (changeserver (Optional stopmovie))) (Optional
+     quitplayer) (Or vrcinterface)))
+Tree 1:
+ ConstraintSet
+[FME] FeatureModelExtractionProblem.clone()
+
+Generation: 3
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.75 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (selectmovie (Mandatory vod) (Mandatory
+     (playimm (Optional detail) (Or startmovie)
+         (Or (startplayer (Optional pause))))) (Optional
+     (changeserver (Optional stopmovie))) (Optional
+     quitplayer) (Or vrcinterface)))
+Tree 1:
+ ConstraintSet
+[FME] FeatureModelExtractionProblem.clone()
+
+Generation: 4
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 1.0 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (selectmovie (Mandatory vod) (Mandatory
+     (playimm (Optional detail) (Alternative startmovie)
+         (Or (startplayer (Optional pause))))) (Mandatory
+     vrcinterface) (Optional stopmovie) (Optional
+     changeserver) (Optional quitplayer)))
+Tree 1:
+ ConstraintSet
+
+
+
+ PARETO FRONTS
+
+
+Pareto Front of Subpopulation 0
+------------Variables------------
+Total Population: 1
+Total Non-dominated/Non-repeated: 1
+Evaluated: true
+Fitness: [1.0 1.0 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (selectmovie (Mandatory vod) (Mandatory
+     (playimm (Optional detail) (Alternative startmovie)
+         (Or (startplayer (Optional pause))))) (Mandatory
+     vrcinterface) (Optional stopmovie) (Optional
+     changeserver) (Optional quitplayer)))
+Tree 1:
+ ConstraintSet
+------------Measures------------
+Total Population: 1
+Total Non-dominated/Non-repeated: 1
+[FME] FeatureModelExtractionProblem.clone()
+
+Generation: 0
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [0.1818181872367859 1.0 0.2286702986785821]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (vod (Optional (startplayer (Optional
+     (vrcinterface (Optional pause))))) (Optional
+     quitplayer) (Optional stopmovie) (Or changeserver
+     (startmovie (Mandatory playimm) (Optional
+         selectmovie)) detail)))
+Tree 1:
+ ConstraintSet
+[FME] FeatureModelExtractionProblem.clone()
+
+Generation: 1
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [0.1818181872367859 1.0 0.2286702986785821]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (vod (Optional (startplayer (Optional
+     (vrcinterface (Optional pause))))) (Optional
+     quitplayer) (Optional stopmovie) (Or changeserver
+     (startmovie (Mandatory playimm) (Optional
+         selectmovie)) detail)))
+Tree 1:
+ ConstraintSet
+[FME] FeatureModelExtractionProblem.clone()
+
+Generation: 2
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [0.1818181872367859 1.0 0.2286702986785821]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (vod (Optional (startplayer (Optional
+     (vrcinterface (Optional pause))))) (Optional
+     quitplayer) (Optional stopmovie) (Or changeserver
+     (startmovie (Mandatory playimm) (Optional
+         selectmovie)) detail)))
+Tree 1:
+ ConstraintSet
+[FME] FeatureModelExtractionProblem.clone()
+
+Generation: 3
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [0.21052631735801697 1.0 0.25586369956927496]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (vod (Optional startplayer) (Optional
+     quitplayer) (Optional stopmovie) (Or changeserver
+     (startmovie (Mandatory playimm) (Optional
+         (selectmovie (Optional (vrcinterface (Optional
+             pause)))))) detail)))
+Tree 1:
+ ConstraintSet
+[FME] FeatureModelExtractionProblem.clone()
+
+Generation: 4
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [0.21052631735801697 1.0 0.25586369956927496]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (vod (Optional startplayer) (Optional
+     quitplayer) (Optional stopmovie) (Or changeserver
+     (startmovie (Mandatory playimm) (Optional
+         (selectmovie (Optional (vrcinterface (Optional
+             pause)))))) detail)))
+Tree 1:
+ ConstraintSet
+[FME] FeatureModelExtractionProblem.clone()
+
+Generation: 5
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [0.21052631735801697 1.0 0.25586369956927496]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (vod (Optional startplayer) (Optional
+     quitplayer) (Optional stopmovie) (Or changeserver
+     (startmovie (Mandatory playimm) (Optional
+         (selectmovie (Optional (vrcinterface (Optional
+             pause)))))) detail)))
+Tree 1:
+ ConstraintSet
+[FME] FeatureModelExtractionProblem.clone()
+
+Generation: 6
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [0.21052631735801697 1.0 0.25586369956927496]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (vod (Optional startplayer) (Optional
+     quitplayer) (Optional stopmovie) (Or changeserver
+     (startmovie (Mandatory playimm) (Optional
+         (selectmovie (Optional (vrcinterface (Optional
+             pause)))))) detail)))
+Tree 1:
+ ConstraintSet
+[FME] FeatureModelExtractionProblem.clone()
+
+Generation: 7
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.5 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (stopmovie (Mandatory startmovie) (Mandatory
+     (startplayer (Optional quitplayer) (Optional
+         pause))) (Mandatory (playimm (Optional changeserver)
+     (Optional detail) (Mandatory selectmovie)))
+     (Alternative vod) (Alternative vrcinterface)))
+Tree 1:
+ (ConstraintSet (Constraint (Or (Not (Atom
+     playimm)) (Atom vod))) (Constraint (Or (Not
+     (Atom detail)) (Atom playimm))))
+[FME] FeatureModelExtractionProblem.clone()
+
+Generation: 8
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.5 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (stopmovie (Mandatory (startmovie (Mandatory
+     vod) (Mandatory selectmovie) (Alternative
+     vrcinterface) (Optional detail))) (Mandatory
+     (startplayer (Optional quitplayer) (Optional
+         pause))) (Mandatory (playimm (Optional changeserver)))))
+Tree 1:
+ (ConstraintSet (Constraint (Or (Not (Atom
+     playimm)) (Atom vod))) (Constraint (Or (Not
+     (Atom playimm)) (Atom selectmovie))))
+[FME] FeatureModelExtractionProblem.clone()
+
+Generation: 9
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.5 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (stopmovie (Mandatory (startmovie (Mandatory
+     vod))) (Mandatory (playimm (Optional changeserver)
+     (Optional detail) (Mandatory selectmovie)
+     (Mandatory (startplayer (Optional quitplayer)
+         (Optional pause) (Mandatory vrcinterface)))))))
+Tree 1:
+ (ConstraintSet (Constraint (Or (Not (Atom
+     detail)) (Atom playimm))))
+[FME] FeatureModelExtractionProblem.clone()
+
+Generation: 10
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.5 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (stopmovie (Mandatory (startmovie (Mandatory
+     vod))) (Mandatory (playimm (Optional changeserver)
+     (Optional detail) (Mandatory selectmovie)
+     (Mandatory (startplayer (Optional quitplayer)
+         (Optional pause) (Mandatory vrcinterface)))))))
+Tree 1:
+ (ConstraintSet (Constraint (Or (Not (Atom
+     detail)) (Atom playimm))))
+[FME] FeatureModelExtractionProblem.clone()
+
+Generation: 11
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.5 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (stopmovie (Mandatory startmovie) (Mandatory
+     (playimm (Optional changeserver) (Optional
+         detail) (Mandatory selectmovie))) (Mandatory
+     (startplayer (Optional pause) (Mandatory
+         (vrcinterface (Mandatory vod) (Optional quitplayer)))))))
+Tree 1:
+ ConstraintSet
+[FME] FeatureModelExtractionProblem.clone()
+
+Generation: 12
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.5 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (stopmovie (Mandatory (startmovie (Mandatory
+     (vod (Mandatory selectmovie))) (Alternative
+     (vrcinterface (Optional detail) (Optional
+         quitplayer))))) (Mandatory (playimm (Optional
+     changeserver))) (Mandatory (startplayer (Optional
+     pause)))))
+Tree 1:
+ ConstraintSet
+[FME] FeatureModelExtractionProblem.clone()
+
+Generation: 13
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.5 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (stopmovie (Mandatory (startmovie (Mandatory
+     vod) (Mandatory selectmovie) (Alternative
+     (vrcinterface (Optional detail))))) (Mandatory
+     (startplayer (Optional quitplayer) (Optional
+         pause))) (Mandatory (playimm (Optional changeserver)))))
+Tree 1:
+ ConstraintSet
+[FME] FeatureModelExtractionProblem.clone()
+
+Generation: 14
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.5 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (stopmovie (Mandatory (startmovie (Mandatory
+     (vod (Mandatory selectmovie))) (Or (vrcinterface
+     (Optional detail) (Optional quitplayer)))))
+     (Mandatory (playimm (Optional changeserver)))
+     (Mandatory (startplayer (Optional pause)))))
+Tree 1:
+ ConstraintSet
+[FME] FeatureModelExtractionProblem.clone()
+
+Generation: 15
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.5 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (stopmovie (Mandatory (startplayer
+     (Optional quitplayer) (Optional pause) (Mandatory
+     selectmovie))) (Mandatory (playimm (Mandatory
+     vod) (Optional detail))) (Mandatory (startmovie
+     (Optional changeserver))) (Alternative vrcinterface)))
+Tree 1:
+ (ConstraintSet (Constraint (Or (Not (Atom
+     startplayer)) (Atom vod))) (Constraint (Or
+     (Not (Atom selectmovie)) (Atom vrcinterface)))
+     (Constraint (Or (Not (Atom startmovie)) (Atom
+         selectmovie))))
+[FME] FeatureModelExtractionProblem.clone()
+
+Generation: 16
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.5 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (stopmovie (Alternative (selectmovie
+     (Mandatory vod) (Mandatory (startmovie (Or
+     vrcinterface))))) (Mandatory (playimm (Optional
+     changeserver) (Optional detail))) (Mandatory
+     (startplayer (Optional quitplayer) (Optional
+         pause)))))
+Tree 1:
+ (ConstraintSet (Constraint (Or (Not (Atom
+     playimm)) (Atom selectmovie))))
+[FME] FeatureModelExtractionProblem.clone()
+
+Generation: 17
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.5 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (stopmovie (Mandatory (startmovie (Mandatory
+     (vod (Mandatory selectmovie))) (Or (vrcinterface
+     (Optional detail))))) (Mandatory (startplayer
+     (Optional quitplayer) (Optional pause)))
+     (Mandatory (playimm (Optional changeserver)))))
+Tree 1:
+ ConstraintSet
+[FME] FeatureModelExtractionProblem.clone()
+
+Generation: 18
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 1.0 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (startplayer (Mandatory (vrcinterface
+     (Mandatory (startmovie (Mandatory selectmovie)))))
+     (Mandatory (vod (Optional quitplayer) (Optional
+         stopmovie))) (Mandatory (playimm (Optional
+     changeserver) (Optional detail))) (Optional
+     pause)))
+Tree 1:
+ ConstraintSet
+
+
+
+ PARETO FRONTS
+
+
+Pareto Front of Subpopulation 0
+------------Variables------------
+Total Population: 3
+Total Non-dominated/Non-repeated: 3
+Evaluated: true
+Fitness: [1.0 1.0 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (startplayer (Mandatory (vrcinterface
+     (Optional pause) (Mandatory startmovie)))
+     (Mandatory (vod (Optional quitplayer) (Optional
+         stopmovie))) (Mandatory (playimm (Optional
+     changeserver) (Optional detail) (Mandatory
+     selectmovie)))))
+Tree 1:
+ (ConstraintSet (Constraint (Or (Not (Atom
+     detail)) (Atom vrcinterface))))
+Evaluated: true
+Fitness: [1.0 1.0 1.0]
+Rank: 0
+Sparsity: 0.0
+Tree 0:
+ (Root (vrcinterface (Mandatory (startplayer
+     (Mandatory (vod (Optional quitplayer))) (Optional
+     pause))) (Mandatory (startmovie (Mandatory
+     (selectmovie (Optional stopmovie))) (Mandatory
+     (playimm (Optional changeserver) (Optional
+         detail)))))))
+Tree 1:
+ ConstraintSet
+Evaluated: true
+Fitness: [1.0 1.0 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (startplayer (Mandatory (vrcinterface
+     (Mandatory (startmovie (Mandatory selectmovie)))))
+     (Mandatory (vod (Optional quitplayer) (Optional
+         stopmovie))) (Mandatory (playimm (Optional
+     changeserver) (Optional detail))) (Optional
+     pause)))
+Tree 1:
+ ConstraintSet
+------------Measures------------
+Total Population: 3
+Total Non-dominated/Non-repeated: 3
+[FME] FeatureModelExtractionProblem.clone()
+
+Generation: 0
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [0.043478261679410934 0.5 0.09768099932359017]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (playimm (Optional quitplayer) (Optional
+     (vod (Mandatory vrcinterface))) (Optional
+     selectmovie) (Optional pause) (Or changeserver
+     detail (stopmovie (Optional startmovie))
+     startplayer)))
+Tree 1:
+ ConstraintSet
+[FME] FeatureModelExtractionProblem.clone()
+
+Generation: 1
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [0.043478261679410934 0.5 0.09768099932359017]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (playimm (Optional quitplayer) (Optional
+     (vod (Mandatory vrcinterface))) (Optional
+     selectmovie) (Optional pause) (Or changeserver
+     detail (stopmovie (Optional startmovie))
+     startplayer)))
+Tree 1:
+ ConstraintSet
+[FME] FeatureModelExtractionProblem.clone()
+
+Generation: 2
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [0.12903225421905518 0.5 0.17742677867754658]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (quitplayer (Mandatory (startmovie
+     (Optional (selectmovie (Optional pause) (Or
+         (vrcinterface (Optional vod)) detail) (Or
+         changeserver startplayer))))) (Optional playimm)
+     (Optional stopmovie)))
+Tree 1:
+ ConstraintSet
+[FME] FeatureModelExtractionProblem.clone()
+
+Generation: 3
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [0.12903225421905518 0.5 0.17742677867754658]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (quitplayer (Mandatory (startmovie
+     (Optional (selectmovie (Optional pause) (Or
+         (vrcinterface (Optional vod)) detail) (Or
+         changeserver startplayer))))) (Optional playimm)
+     (Optional stopmovie)))
+Tree 1:
+ ConstraintSet
+[FME] FeatureModelExtractionProblem.clone()
+
+Generation: 4
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [0.6666666865348816 0.75 0.6860290281996977]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (selectmovie (Mandatory (vod (Optional
+     (stopmovie (Optional pause))) (Optional detail)
+     (Alternative startplayer) (Optional quitplayer)))
+     (Optional (startmovie (Optional changeserver)))
+     (Mandatory vrcinterface) (Mandatory playimm)))
+Tree 1:
+ ConstraintSet
+[FME] FeatureModelExtractionProblem.clone()
+
+Generation: 5
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [0.6666666865348816 0.75 0.6860290281996977]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (selectmovie (Mandatory (vod (Optional
+     (stopmovie (Optional pause))) (Optional detail)
+     (Alternative startplayer) (Optional quitplayer)))
+     (Optional (startmovie (Optional changeserver)))
+     (Mandatory vrcinterface) (Mandatory playimm)))
+Tree 1:
+ ConstraintSet
+[FME] FeatureModelExtractionProblem.clone()
+
+Generation: 6
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.75 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (vod (Mandatory (selectmovie (Mandatory
+     vrcinterface))) (Mandatory (startmovie (Optional
+     changeserver) (Mandatory playimm))) (Optional
+     (stopmovie (Optional pause))) (Optional detail)
+     (Alternative startplayer) (Optional quitplayer)))
+Tree 1:
+ (ConstraintSet (Constraint (Or (Not (Atom
+     detail)) (Atom vod))) (Constraint (Or (Not
+     (Atom quitplayer)) (Atom startplayer))))
+[FME] FeatureModelExtractionProblem.clone()
+
+Generation: 7
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.75 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (vod (Mandatory (selectmovie (Mandatory
+     vrcinterface) (Mandatory playimm))) (Mandatory
+     startmovie) (Optional (stopmovie (Optional
+     pause))) (Optional detail) (Alternative startplayer)
+     (Optional quitplayer) (Optional changeserver)))
+Tree 1:
+ ConstraintSet
+[FME] FeatureModelExtractionProblem.clone()
+
+Generation: 8
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 1.0 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (vod (Mandatory (selectmovie (Mandatory
+     vrcinterface) (Mandatory playimm))) (Mandatory
+     startmovie) (Optional pause) (Optional stopmovie)
+     (Optional detail) (Alternative startplayer)
+     (Optional quitplayer) (Optional changeserver)))
+Tree 1:
+ (ConstraintSet (Constraint (Or (Not (Atom
+     vod)) (Atom startmovie))) (Constraint (Or
+     (Not (Atom quitplayer)) (Atom startplayer))))
+
+
+
+ PARETO FRONTS
+
+
+Pareto Front of Subpopulation 0
+------------Variables------------
+Total Population: 1
+Total Non-dominated/Non-repeated: 1
+Evaluated: true
+Fitness: [1.0 1.0 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (vod (Mandatory (selectmovie (Mandatory
+     vrcinterface) (Mandatory playimm))) (Mandatory
+     startmovie) (Optional pause) (Optional stopmovie)
+     (Optional detail) (Alternative startplayer)
+     (Optional quitplayer) (Optional changeserver)))
+Tree 1:
+ (ConstraintSet (Constraint (Or (Not (Atom
+     vod)) (Atom startmovie))) (Constraint (Or
+     (Not (Atom quitplayer)) (Atom startplayer))))
+------------Measures------------
+Total Population: 1
+Total Non-dominated/Non-repeated: 1
+[FME] FeatureModelExtractionProblem.clone()
+
+Generation: 0
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [0.2857142984867096 0.5 0.32623847661130184]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (startmovie (Mandatory (playimm (Optional
+     quitplayer) (Mandatory selectmovie) (Or detail
+     vrcinterface stopmovie) (Alternative pause
+     changeserver))) (Mandatory startplayer) (Optional
+     vod)))
+Tree 1:
+ ConstraintSet
+[FME] FeatureModelExtractionProblem.clone()
+
+Generation: 1
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [0.2777777910232544 0.625 0.31983440220115056]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (vrcinterface (Mandatory (startplayer
+     (Optional changeserver) (Optional pause)
+     (Optional (startmovie (Optional quitplayer)))))
+     (Optional (vod (Mandatory selectmovie) (Optional
+         (stopmovie (Optional detail))))) (Optional
+     playimm)))
+Tree 1:
+ (ConstraintSet (Constraint (Or (Not (Atom
+     changeserver)) (Atom stopmovie))))
+[FME] FeatureModelExtractionProblem.clone()
+
+Generation: 2
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [0.3333333432674408 1.0 0.37179723219491073]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (vrcinterface (Mandatory (vod (Mandatory
+     selectmovie) (Optional stopmovie))) (Mandatory
+     (startplayer (Optional changeserver) (Optional
+         pause) (Optional (startmovie (Optional quitplayer)))
+         (Optional detail))) (Optional playimm)))
+Tree 1:
+ ConstraintSet
+[FME] FeatureModelExtractionProblem.clone()
+
+Generation: 3
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [0.3333333432674408 1.0 0.37179723219491073]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (vrcinterface (Mandatory (vod (Mandatory
+     selectmovie) (Optional stopmovie))) (Mandatory
+     (startplayer (Optional changeserver) (Optional
+         pause) (Optional (startmovie (Optional quitplayer)))
+         (Optional detail))) (Optional playimm)))
+Tree 1:
+ ConstraintSet
+[FME] FeatureModelExtractionProblem.clone()
+
+Generation: 4
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [0.5 1.0 0.5285832642916302]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (startmovie (Mandatory (vrcinterface
+     (Mandatory (vod (Optional stopmovie))) (Optional
+     playimm))) (Mandatory (startplayer (Optional
+     changeserver) (Mandatory selectmovie) (Optional
+     pause) (Optional detail))) (Optional quitplayer)))
+Tree 1:
+ ConstraintSet
+[FME] FeatureModelExtractionProblem.clone()
+
+Generation: 5
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 1.0 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (vrcinterface (Mandatory (startmovie
+     (Optional quitplayer))) (Mandatory (vod (Mandatory
+     selectmovie) (Optional stopmovie))) (Mandatory
+     (startplayer (Optional changeserver) (Optional
+         pause) (Optional detail))) (Optional playimm)))
+Tree 1:
+ (ConstraintSet (Constraint (Or (Not (Atom
+     startmovie)) (Atom playimm))))
+
+
+
+ PARETO FRONTS
+
+
+Pareto Front of Subpopulation 0
+------------Variables------------
+Total Population: 5
+Total Non-dominated/Non-repeated: 5
+Evaluated: true
+Fitness: [1.0 1.0 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (startmovie (Mandatory vrcinterface)
+     (Mandatory (playimm (Mandatory selectmovie)))
+     (Mandatory (vod (Optional pause) (Or (startplayer
+         (Optional changeserver) (Optional detail)))
+         (Optional stopmovie))) (Optional quitplayer)))
+Tree 1:
+ ConstraintSet
+Evaluated: true
+Fitness: [1.0 1.0 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (selectmovie (Mandatory (vod (Mandatory
+     vrcinterface) (Optional stopmovie))) (Mandatory
+     (startmovie (Optional quitplayer))) (Mandatory
+     (startplayer (Optional changeserver) (Optional
+         pause) (Optional detail))) (Mandatory playimm)))
+Tree 1:
+ ConstraintSet
+Evaluated: true
+Fitness: [1.0 1.0 1.0]
+Rank: 0
+Sparsity: 0.0
+Tree 0:
+ (Root (vrcinterface (Mandatory (startmovie
+     (Optional quitplayer))) (Mandatory (vod (Mandatory
+     selectmovie) (Optional stopmovie))) (Mandatory
+     (startplayer (Optional changeserver) (Optional
+         pause) (Optional detail) (Mandatory playimm)))))
+Tree 1:
+ ConstraintSet
+Evaluated: true
+Fitness: [1.0 1.0 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (vrcinterface (Mandatory (startmovie
+     (Optional quitplayer))) (Mandatory (vod (Mandatory
+     selectmovie) (Optional stopmovie))) (Mandatory
+     (startplayer (Optional changeserver) (Optional
+         pause) (Optional detail))) (Optional playimm)))
+Tree 1:
+ (ConstraintSet (Constraint (Or (Not (Atom
+     startmovie)) (Atom playimm))))
+Evaluated: true
+Fitness: [1.0 1.0 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (vrcinterface (Mandatory (startmovie
+     (Optional quitplayer))) (Mandatory (vod (Mandatory
+     selectmovie) (Optional changeserver))) (Mandatory
+     (startplayer (Optional stopmovie) (Optional
+         pause) (Optional detail))) (Optional playimm)))
+Tree 1:
+ (ConstraintSet (Constraint (Or (Not (Atom
+     startplayer)) (Atom playimm))))
+------------Measures------------
+Total Population: 5
+Total Non-dominated/Non-repeated: 5
+[FME] FeatureModelExtractionProblem.clone()
+
+Generation: 0
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [0.3265306055545807 0.5 0.36401227157529653]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (playimm (Mandatory vrcinterface) (Mandatory
+     (selectmovie (Mandatory quitplayer))) (Or
+     (startplayer (Optional stopmovie) (Optional
+         startmovie) (Optional detail) (Or vod changeserver))
+     pause)))
+Tree 1:
+ ConstraintSet
+[FME] FeatureModelExtractionProblem.clone()
+
+Generation: 1
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [0.3265306055545807 0.5 0.36401227157529653]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (playimm (Mandatory vrcinterface) (Mandatory
+     (selectmovie (Mandatory quitplayer))) (Or
+     (startplayer (Optional stopmovie) (Optional
+         startmovie) (Optional detail) (Or vod changeserver))
+     pause)))
+Tree 1:
+ ConstraintSet
+[FME] FeatureModelExtractionProblem.clone()
+
+Generation: 2
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [0.3265306055545807 0.5 0.36401227157529653]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (playimm (Mandatory vrcinterface) (Mandatory
+     (selectmovie (Mandatory quitplayer))) (Or
+     (startplayer (Optional stopmovie) (Optional
+         startmovie) (Optional detail) (Or vod changeserver))
+     pause)))
+Tree 1:
+ ConstraintSet
+[FME] FeatureModelExtractionProblem.clone()
+
+Generation: 3
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.5 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (playimm (Mandatory vod) (Optional
+     detail) (Mandatory startmovie) (Mandatory
+     selectmovie) (Or (startplayer (Mandatory
+     (vrcinterface (Optional changeserver))) (Optional
+     quitplayer) (Mandatory stopmovie) (Optional
+     pause)))))
+Tree 1:
+ ConstraintSet
+[FME] FeatureModelExtractionProblem.clone()
+
+Generation: 4
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.5 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (playimm (Mandatory startmovie) (Mandatory
+     (startplayer (Optional changeserver))) (Mandatory
+     (selectmovie (Mandatory quitplayer))) (Or
+     (vrcinterface (Optional stopmovie) (Optional
+         detail) (Or vod) (Optional pause)))))
+Tree 1:
+ (ConstraintSet (Constraint (Or (Not (Atom
+     stopmovie)) (Atom vrcinterface))))
+[FME] FeatureModelExtractionProblem.clone()
+
+Generation: 5
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 1.0 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (playimm (Mandatory startmovie) (Mandatory
+     vod) (Optional detail) (Mandatory selectmovie)
+     (Or (startplayer (Mandatory (vrcinterface
+         (Optional changeserver))) (Optional quitplayer)
+         (Optional stopmovie) (Optional pause)))))
+Tree 1:
+ ConstraintSet
+
+
+
+ PARETO FRONTS
+
+
+Pareto Front of Subpopulation 0
+------------Variables------------
+Total Population: 1
+Total Non-dominated/Non-repeated: 1
+Evaluated: true
+Fitness: [1.0 1.0 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (playimm (Mandatory startmovie) (Mandatory
+     vod) (Optional detail) (Mandatory selectmovie)
+     (Or (startplayer (Mandatory (vrcinterface
+         (Optional changeserver))) (Optional quitplayer)
+         (Optional stopmovie) (Optional pause)))))
+Tree 1:
+ ConstraintSet
+------------Measures------------
+Total Population: 1
+Total Non-dominated/Non-repeated: 1
+[FME] FeatureModelExtractionProblem.clone()
+
+Generation: 0
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [0.25 0.375 0.2921959863757713]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (playimm (Optional (selectmovie (Mandatory
+     startplayer) (Mandatory vrcinterface) (Or
+     stopmovie quitplayer startmovie vod))) (Or
+     (changeserver (Mandatory pause)) detail)))
+Tree 1:
+ ConstraintSet
+[FME] FeatureModelExtractionProblem.clone()
+
+Generation: 1
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [0.25 0.375 0.2921959863757713]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (playimm (Optional (selectmovie (Mandatory
+     startplayer) (Mandatory vrcinterface) (Or
+     stopmovie quitplayer startmovie vod))) (Or
+     (changeserver (Mandatory pause)) detail)))
+Tree 1:
+ ConstraintSet
+[FME] FeatureModelExtractionProblem.clone()
+
+Generation: 2
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.5 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (vod (Mandatory (startmovie (Optional
+     detail))) (Optional quitplayer) (Alternative
+     changeserver) (Mandatory playimm) (Optional
+     pause) (Or selectmovie) (Alternative (vrcinterface
+     (Mandatory startplayer) (Optional stopmovie)))))
+Tree 1:
+ (ConstraintSet (Constraint (Or (Not (Atom
+     playimm)) (Atom selectmovie))))
+[FME] FeatureModelExtractionProblem.clone()
+
+Generation: 3
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 1.0 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (startmovie (Mandatory playimm) (Mandatory
+     (vod (Mandatory (selectmovie (Mandatory (vrcinterface
+         (Mandatory startplayer) (Optional stopmovie)
+         (Optional detail))))) (Optional quitplayer)
+         (Optional pause))) (Optional changeserver)))
+Tree 1:
+ ConstraintSet
+
+
+
+ PARETO FRONTS
+
+
+Pareto Front of Subpopulation 0
+------------Variables------------
+Total Population: 1
+Total Non-dominated/Non-repeated: 1
+Evaluated: true
+Fitness: [1.0 1.0 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (startmovie (Mandatory playimm) (Mandatory
+     (vod (Mandatory (selectmovie (Mandatory (vrcinterface
+         (Mandatory startplayer) (Optional stopmovie)
+         (Optional detail))))) (Optional quitplayer)
+         (Optional pause))) (Optional changeserver)))
+Tree 1:
+ ConstraintSet
+------------Measures------------
+Total Population: 1
+Total Non-dominated/Non-repeated: 1
+[FME] FeatureModelExtractionProblem.clone()
+
+Generation: 0
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [0.4444444477558136 0.75 0.47650706952925326]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (vrcinterface (Mandatory startmovie)
+     (Optional startplayer) (Or (vod (Mandatory
+     selectmovie) (Optional quitplayer) (Mandatory
+     playimm) (Optional (detail (Optional stopmovie))))
+     pause changeserver)))
+Tree 1:
+ ConstraintSet
+[FME] FeatureModelExtractionProblem.clone()
+
+Generation: 1
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [0.4444444477558136 0.75 0.47650706952925326]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (vrcinterface (Mandatory startmovie)
+     (Optional startplayer) (Or (vod (Mandatory
+     selectmovie) (Optional quitplayer) (Mandatory
+     playimm) (Optional (detail (Optional stopmovie))))
+     pause changeserver)))
+Tree 1:
+ ConstraintSet
+[FME] FeatureModelExtractionProblem.clone()
+
+Generation: 2
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [0.6000000238418579 0.75 0.6234971923041501]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (vrcinterface (Mandatory startmovie)
+     (Optional startplayer) (Or (vod (Mandatory
+     selectmovie) (Optional quitplayer) (Or playimm)
+     (Optional (detail (Optional stopmovie))))
+     pause changeserver)))
+Tree 1:
+ (ConstraintSet (Constraint (Or (Not (Atom
+     changeserver)) (Atom startplayer))))
+[FME] FeatureModelExtractionProblem.clone()
+
+Generation: 3
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [0.6000000238418579 0.75 0.6234971923041501]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (vrcinterface (Mandatory startmovie)
+     (Optional startplayer) (Or (vod (Mandatory
+     selectmovie) (Optional quitplayer) (Or playimm)
+     (Optional (detail (Optional stopmovie))))
+     pause changeserver)))
+Tree 1:
+ (ConstraintSet (Constraint (Or (Not (Atom
+     changeserver)) (Atom startplayer))))
+[FME] FeatureModelExtractionProblem.clone()
+
+Generation: 4
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [0.6000000238418579 0.75 0.6234971923041501]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (vrcinterface (Mandatory startmovie)
+     (Optional startplayer) (Or (vod (Mandatory
+     selectmovie) (Optional quitplayer) (Or playimm)
+     (Optional (detail (Optional stopmovie))))
+     pause changeserver)))
+Tree 1:
+ (ConstraintSet (Constraint (Or (Not (Atom
+     changeserver)) (Atom startplayer))))
+[FME] FeatureModelExtractionProblem.clone()
+
+Generation: 5
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.5 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (vrcinterface (Mandatory (startplayer
+     (Optional pause))) (Mandatory (startmovie
+     (Or changeserver))) (Or (vod (Mandatory selectmovie)
+     (Optional quitplayer) (Alternative playimm)
+     (Optional detail) (Optional stopmovie)))))
+Tree 1:
+ ConstraintSet
+[FME] FeatureModelExtractionProblem.clone()
+
+Generation: 6
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [0.6000000238418579 0.75 0.6234971923041501]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (vrcinterface (Mandatory startmovie)
+     (Optional startplayer) (Or (vod (Mandatory
+     selectmovie) (Optional quitplayer) (Or playimm)
+     (Optional (detail (Optional stopmovie))))
+     pause changeserver)))
+Tree 1:
+ (ConstraintSet (Constraint (Or (Not (Atom
+     changeserver)) (Atom startplayer))))
+[FME] FeatureModelExtractionProblem.clone()
+
+Generation: 7
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.5 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (vrcinterface (Mandatory (startplayer
+     (Optional pause))) (Mandatory (startmovie
+     (Or changeserver) (Mandatory selectmovie)))
+     (Or (vod (Optional quitplayer) (Or playimm)
+         (Optional detail) (Optional stopmovie)))))
+Tree 1:
+ (ConstraintSet (Constraint (Or (Not (Atom
+     playimm)) (Atom vrcinterface))))
+[FME] FeatureModelExtractionProblem.clone()
+
+Generation: 8
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.5 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (startmovie (Mandatory playimm) (Mandatory
+     (startplayer (Optional pause))) (Mandatory
+     (vrcinterface (Alternative changeserver)
+         (Or (vod (Optional detail))))) (Mandatory
+     (selectmovie (Optional stopmovie))) (Optional
+     quitplayer)))
+Tree 1:
+ (ConstraintSet (Constraint (Or (Not (Atom
+     vrcinterface)) (Atom changeserver))))
+[FME] FeatureModelExtractionProblem.clone()
+
+Generation: 9
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.5 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (vrcinterface (Mandatory (startplayer
+     (Optional pause))) (Mandatory (startmovie
+     (Or playimm) (Mandatory (selectmovie (Optional
+     stopmovie))))) (Or (vod (Optional quitplayer)
+     (Mandatory changeserver) (Optional detail)))))
+Tree 1:
+ (ConstraintSet (Constraint (Or (Not (Atom
+     playimm)) (Atom vrcinterface))))
+[FME] FeatureModelExtractionProblem.clone()
+
+Generation: 10
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.5 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (vrcinterface (Mandatory (startmovie
+     (Or changeserver))) (Optional (startplayer
+     (Optional pause))) (Or (vod (Mandatory (selectmovie
+     (Optional stopmovie) (Optional detail)))
+     (Alternative playimm))) (Optional quitplayer)))
+Tree 1:
+ (ConstraintSet (Constraint (Or (Not (Atom
+     changeserver)) (Atom startplayer))))
+[FME] FeatureModelExtractionProblem.clone()
+
+Generation: 11
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 1.0 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (vrcinterface (Mandatory (startplayer
+     (Optional pause) (Optional changeserver)))
+     (Mandatory (startmovie (Mandatory (selectmovie
+         (Optional stopmovie))))) (Or (vod (Optional
+     quitplayer) (Or playimm) (Optional detail)))))
+Tree 1:
+ (ConstraintSet (Constraint (Or (Not (Atom
+     playimm)) (Atom vrcinterface))) (Constraint
+     (Or (Not (Atom startmovie)) (Atom vod))))
+
+
+
+ PARETO FRONTS
+
+
+Pareto Front of Subpopulation 0
+------------Variables------------
+Total Population: 1
+Total Non-dominated/Non-repeated: 1
+Evaluated: true
+Fitness: [1.0 1.0 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (vrcinterface (Mandatory (startplayer
+     (Optional pause) (Optional changeserver)))
+     (Mandatory (startmovie (Mandatory (selectmovie
+         (Optional stopmovie))))) (Or (vod (Optional
+     quitplayer) (Or playimm) (Optional detail)))))
+Tree 1:
+ (ConstraintSet (Constraint (Or (Not (Atom
+     playimm)) (Atom vrcinterface))) (Constraint
+     (Or (Not (Atom startmovie)) (Atom vod))))
+------------Measures------------
+Total Population: 1
+Total Non-dominated/Non-repeated: 1
+[FME] FeatureModelExtractionProblem.clone()
+
+Generation: 0
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [0.1428571492433548 0.5 0.190831262082297]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (selectmovie (Mandatory (startmovie
+     (Mandatory playimm) (Optional stopmovie)
+     (Optional startplayer) (Mandatory (changeserver
+     (Optional detail))) (Optional quitplayer)
+     (Or pause vrcinterface vod)))))
+Tree 1:
+ ConstraintSet
+[FME] FeatureModelExtractionProblem.clone()
+
+Generation: 1
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [0.1428571492433548 0.5 0.190831262082297]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (selectmovie (Mandatory (startmovie
+     (Mandatory playimm) (Optional stopmovie)
+     (Optional startplayer) (Mandatory (changeserver
+     (Optional detail))) (Optional quitplayer)
+     (Or pause vrcinterface vod)))))
+Tree 1:
+ ConstraintSet
+[FME] FeatureModelExtractionProblem.clone()
+
+Generation: 2
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [0.25 0.5 0.2928748964374481]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (vrcinterface (Mandatory (startmovie
+     (Optional quitplayer) (Optional startplayer)
+     (Optional (selectmovie (Mandatory vod)))
+     (Optional changeserver) (Optional stopmovie)
+     (Optional playimm) (Alternative detail pause)))))
+Tree 1:
+ (ConstraintSet (Constraint (Or (Not (Atom
+     startplayer)) (Atom startmovie))) (Constraint
+     (Or (Not (Atom vrcinterface)) (Atom startplayer))))
+[FME] FeatureModelExtractionProblem.clone()
+
+Generation: 3
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.5 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (selectmovie (Mandatory (startmovie
+     (Mandatory playimm) (Optional pause) (Mandatory
+     (changeserver (Optional detail))) (Optional
+     quitplayer) (Optional stopmovie) (Or startplayer)
+     (Or vrcinterface) (Or vod)))))
+Tree 1:
+ ConstraintSet
+[FME] FeatureModelExtractionProblem.clone()
+
+Generation: 4
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.75 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (vrcinterface (Mandatory selectmovie)
+     (Mandatory (vod (Mandatory (startmovie (Mandatory
+         playimm) (Optional pause) (Optional quitplayer)
+         (Or startplayer))) (Optional stopmovie)))
+     (Optional (changeserver (Optional detail)))))
+Tree 1:
+ ConstraintSet
+[FME] FeatureModelExtractionProblem.clone()
+
+Generation: 5
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.75 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (vod (Mandatory (playimm (Mandatory
+     (startmovie (Mandatory selectmovie) (Optional
+         pause) (Optional quitplayer))))) (Mandatory
+     (vrcinterface (Optional (changeserver (Optional
+         detail))) (Or startplayer))) (Optional stopmovie)))
+Tree 1:
+ ConstraintSet
+[FME] FeatureModelExtractionProblem.clone()
+
+Generation: 6
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.75 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (vrcinterface (Mandatory (vod (Mandatory
+     (startmovie (Mandatory playimm) (Optional
+         pause) (Optional stopmovie) (Optional quitplayer)
+         (Alternative startplayer))))) (Mandatory
+     selectmovie) (Optional (changeserver (Optional
+     detail)))))
+Tree 1:
+ ConstraintSet
+[FME] FeatureModelExtractionProblem.clone()
+
+Generation: 7
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 1.0 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (vrcinterface (Mandatory (selectmovie
+     (Optional detail))) (Mandatory (vod (Mandatory
+     (startmovie (Mandatory playimm) (Optional
+         pause) (Optional quitplayer) (Alternative
+         startplayer))) (Optional stopmovie))) (Optional
+     changeserver)))
+Tree 1:
+ ConstraintSet
+
+
+
+ PARETO FRONTS
+
+
+Pareto Front of Subpopulation 0
+------------Variables------------
+Total Population: 1
+Total Non-dominated/Non-repeated: 1
+Evaluated: true
+Fitness: [1.0 1.0 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (vrcinterface (Mandatory (selectmovie
+     (Optional detail))) (Mandatory (vod (Mandatory
+     (startmovie (Mandatory playimm) (Optional
+         pause) (Optional quitplayer) (Alternative
+         startplayer))) (Optional stopmovie))) (Optional
+     changeserver)))
+Tree 1:
+ ConstraintSet
+------------Measures------------
+Total Population: 1
+Total Non-dominated/Non-repeated: 1
+[FME] FeatureModelExtractionProblem.clone()
+
+Generation: 0
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [0.190476194024086 0.5 0.23593412325806642]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (playimm (Mandatory startplayer) (Optional
+     pause) (Mandatory (detail (Optional (selectmovie
+     (Optional quitplayer))) (Mandatory vrcinterface)
+     (Optional startmovie) (Or changeserver vod
+     stopmovie)))))
+Tree 1:
+ ConstraintSet
+[FME] FeatureModelExtractionProblem.clone()
+
+Generation: 1
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [0.4444444477558136 0.5 0.4761269139893828]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (startmovie (Mandatory (vod (Optional
+     (vrcinterface (Optional pause))) (Or (stopmovie
+     (Optional changeserver) (Mandatory (selectmovie
+     (Optional (startplayer (Mandatory playimm)
+         (Optional quitplayer))))))))) (Optional detail)))
+Tree 1:
+ ConstraintSet
+[FME] FeatureModelExtractionProblem.clone()
+
+Generation: 2
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.5 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (playimm (Mandatory (selectmovie (Optional
+     stopmovie) (Optional quitplayer) (Optional
+     changeserver))) (Mandatory startplayer) (Optional
+     pause) (Mandatory (detail (Mandatory (vrcinterface
+     (Mandatory startmovie))) (Or vod)))))
+Tree 1:
+ ConstraintSet
+[FME] FeatureModelExtractionProblem.clone()
+
+Generation: 3
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.5 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (playimm (Mandatory (selectmovie (Optional
+     stopmovie) (Optional quitplayer) (Optional
+     changeserver))) (Mandatory startplayer) (Optional
+     pause) (Mandatory (detail (Mandatory (vrcinterface
+     (Mandatory startmovie))) (Or vod)))))
+Tree 1:
+ (ConstraintSet (Constraint (Or (Not (Atom
+     startmovie)) (Atom vrcinterface))))
+[FME] FeatureModelExtractionProblem.clone()
+
+Generation: 4
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 1.0 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (startplayer (Mandatory (playimm (Mandatory
+     (selectmovie (Optional stopmovie) (Optional
+         quitplayer) (Optional changeserver))) (Optional
+     pause))) (Mandatory (startmovie (Mandatory
+     vod))) (Mandatory vrcinterface) (Optional
+     detail)))
+Tree 1:
+ (ConstraintSet (Constraint (Or (Not (Atom
+     startmovie)) (Atom vrcinterface))))
+
+
+
+ PARETO FRONTS
+
+
+Pareto Front of Subpopulation 0
+------------Variables------------
+Total Population: 3
+Total Non-dominated/Non-repeated: 3
+Evaluated: true
+Fitness: [1.0 1.0 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (playimm (Mandatory (startplayer (Mandatory
+     vod) (Mandatory startmovie) (Mandatory vrcinterface)
+     (Optional detail))) (Mandatory (selectmovie
+     (Optional stopmovie) (Optional quitplayer)
+     (Optional changeserver))) (Optional pause)))
+Tree 1:
+ (ConstraintSet (Constraint (Or (Not (Atom
+     detail)) (Atom playimm))))
+Evaluated: true
+Fitness: [1.0 1.0 1.0]
+Rank: 0
+Sparsity: 0.0
+Tree 0:
+ (Root (playimm (Mandatory (vrcinterface (Mandatory
+     vod) (Optional detail) (Optional quitplayer)))
+     (Mandatory (selectmovie (Optional stopmovie)
+         (Optional changeserver))) (Mandatory startplayer)
+     (Mandatory (startmovie (Optional pause)))))
+Tree 1:
+ (ConstraintSet (Constraint (Or (Not (Atom
+     stopmovie)) (Atom vod))))
+Evaluated: true
+Fitness: [1.0 1.0 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (startplayer (Mandatory (playimm (Mandatory
+     (selectmovie (Optional stopmovie) (Optional
+         quitplayer) (Optional changeserver))) (Optional
+     pause))) (Mandatory (startmovie (Mandatory
+     vod))) (Mandatory vrcinterface) (Optional
+     detail)))
+Tree 1:
+ (ConstraintSet (Constraint (Or (Not (Atom
+     startmovie)) (Atom vrcinterface))))
+------------Measures------------
+Total Population: 3
+Total Non-dominated/Non-repeated: 3
+[FME] FeatureModelExtractionProblem.clone()
+
+Generation: 0
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [0.10526315867900848 0.5 0.156152947959514]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (vrcinterface (Optional (selectmovie
+     (Or playimm quitplayer))) (Optional vod)
+     (Or detail changeserver (pause (Mandatory
+         startplayer) (Optional stopmovie) (Optional
+         startmovie)))))
+Tree 1:
+ ConstraintSet
+[FME] FeatureModelExtractionProblem.clone()
+
+Generation: 1
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [0.6666666865348816 0.625 0.6861088097210708]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (vrcinterface (Mandatory (vod (Or startmovie)))
+     (Optional changeserver) (Optional (pause
+     (Optional stopmovie) (Optional detail)))
+     (Mandatory (startplayer (Optional (selectmovie
+         (Optional quitplayer) (Or playimm)))))))
+Tree 1:
+ ConstraintSet
+[FME] FeatureModelExtractionProblem.clone()
+
+Generation: 2
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.75 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (vrcinterface (Mandatory (startmovie
+     (Optional stopmovie) (Mandatory selectmovie)))
+     (Optional changeserver) (Optional (pause
+     (Optional detail))) (Mandatory (startplayer
+     (Mandatory playimm) (Optional quitplayer)))
+     (Mandatory vod)))
+Tree 1:
+ ConstraintSet
+[FME] FeatureModelExtractionProblem.clone()
+
+Generation: 3
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.75 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (vrcinterface (Mandatory (startmovie
+     (Optional stopmovie) (Mandatory selectmovie)))
+     (Optional changeserver) (Optional (pause
+     (Optional detail))) (Mandatory (startplayer
+     (Mandatory playimm) (Optional quitplayer)))
+     (Mandatory vod)))
+Tree 1:
+ ConstraintSet
+[FME] FeatureModelExtractionProblem.clone()
+
+Generation: 4
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.75 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (vrcinterface (Mandatory (startmovie
+     (Mandatory selectmovie))) (Optional changeserver)
+     (Optional (pause (Optional detail))) (Mandatory
+     (startplayer (Mandatory playimm) (Optional
+         quitplayer) (Optional stopmovie))) (Mandatory
+     vod)))
+Tree 1:
+ ConstraintSet
+[FME] FeatureModelExtractionProblem.clone()
+
+Generation: 5
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 1.0 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (vrcinterface (Mandatory (startmovie
+     (Mandatory selectmovie))) (Optional changeserver)
+     (Optional pause) (Mandatory (startplayer
+     (Mandatory (playimm (Optional detail))) (Optional
+     quitplayer) (Optional stopmovie))) (Mandatory
+     vod)))
+Tree 1:
+ (ConstraintSet (Constraint (Or (Not (Atom
+     pause)) (Atom playimm))))
+
+
+
+ PARETO FRONTS
+
+
+Pareto Front of Subpopulation 0
+------------Variables------------
+Total Population: 2
+Total Non-dominated/Non-repeated: 2
+Evaluated: true
+Fitness: [1.0 1.0 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (vrcinterface (Mandatory (startmovie
+     (Mandatory selectmovie))) (Optional changeserver)
+     (Optional pause) (Mandatory (startplayer
+     (Mandatory (playimm (Optional detail))) (Optional
+     quitplayer) (Optional stopmovie))) (Mandatory
+     vod)))
+Tree 1:
+ (ConstraintSet (Constraint (Or (Not (Atom
+     pause)) (Atom playimm))))
+Evaluated: true
+Fitness: [1.0 1.0 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (vrcinterface (Mandatory (vod (Or (startmovie
+     (Optional stopmovie) (Mandatory (selectmovie
+     (Optional quitplayer))) (Mandatory (startplayer
+     (Mandatory playimm))) (Optional detail)))))
+     (Optional changeserver) (Optional pause)))
+Tree 1:
+ ConstraintSet
+------------Measures------------
+Total Population: 2
+Total Non-dominated/Non-repeated: 2
+[FME] FeatureModelExtractionProblem.clone()
+
+Generation: 0
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [0.52173912525177 0.75 0.5488254905963189]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (selectmovie (Mandatory (startplayer
+     (Mandatory playimm))) (Mandatory startmovie)
+     (Optional detail) (Mandatory vrcinterface)
+     (Or stopmovie changeserver pause vod quitplayer)))
+Tree 1:
+ (ConstraintSet (Constraint (Or (Not (Atom
+     pause)) (Atom quitplayer))))
+[FME] FeatureModelExtractionProblem.clone()
+
+Generation: 1
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [0.52173912525177 0.75 0.5488254905963189]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (selectmovie (Mandatory (startplayer
+     (Mandatory playimm))) (Mandatory startmovie)
+     (Optional detail) (Mandatory vrcinterface)
+     (Or stopmovie changeserver pause vod quitplayer)))
+Tree 1:
+ (ConstraintSet (Constraint (Or (Not (Atom
+     pause)) (Atom quitplayer))))
+[FME] FeatureModelExtractionProblem.clone()
+
+Generation: 2
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [0.52173912525177 0.75 0.5488254905963189]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (selectmovie (Mandatory (startplayer
+     (Mandatory playimm))) (Mandatory startmovie)
+     (Optional detail) (Mandatory vrcinterface)
+     (Or stopmovie changeserver pause vod quitplayer)))
+Tree 1:
+ (ConstraintSet (Constraint (Or (Not (Atom
+     pause)) (Atom quitplayer))))
+[FME] FeatureModelExtractionProblem.clone()
+
+Generation: 3
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [0.5161290168762207 1.0 0.5436670200413932]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (selectmovie (Mandatory (startplayer
+     (Mandatory playimm))) (Mandatory startmovie)
+     (Optional detail) (Mandatory vrcinterface)
+     (Or stopmovie changeserver pause vod quitplayer)))
+Tree 1:
+ ConstraintSet
+[FME] FeatureModelExtractionProblem.clone()
+
+Generation: 4
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [0.5161290168762207 1.0 0.5436670200413932]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (selectmovie (Mandatory startplayer)
+     (Mandatory startmovie) (Optional detail)
+     (Mandatory vrcinterface) (Or stopmovie changeserver
+     pause (vod (Mandatory playimm)) quitplayer)))
+Tree 1:
+ ConstraintSet
+[FME] FeatureModelExtractionProblem.clone()
+
+Generation: 5
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [0.5161290168762207 1.0 0.5436670200413932]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (selectmovie (Mandatory (startplayer
+     (Mandatory playimm))) (Mandatory startmovie)
+     (Optional detail) (Mandatory vrcinterface)
+     (Or stopmovie changeserver pause vod quitplayer)))
+Tree 1:
+ ConstraintSet
+[FME] FeatureModelExtractionProblem.clone()
+
+Generation: 6
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 1.0 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (selectmovie (Mandatory (startplayer
+     (Mandatory playimm))) (Mandatory startmovie)
+     (Optional detail) (Alternative vrcinterface)
+     (Or stopmovie changeserver pause vod quitplayer)))
+Tree 1:
+ (ConstraintSet (Constraint (Or (Not (Atom
+     vrcinterface)) (Atom vod))))
+
+
+
+ PARETO FRONTS
+
+
+Pareto Front of Subpopulation 0
+------------Variables------------
+Total Population: 1
+Total Non-dominated/Non-repeated: 1
+Evaluated: true
+Fitness: [1.0 1.0 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (selectmovie (Mandatory (startplayer
+     (Mandatory playimm))) (Mandatory startmovie)
+     (Optional detail) (Alternative vrcinterface)
+     (Or stopmovie changeserver pause vod quitplayer)))
+Tree 1:
+ (ConstraintSet (Constraint (Or (Not (Atom
+     vrcinterface)) (Atom vod))))
+------------Measures------------
+Total Population: 1
+Total Non-dominated/Non-repeated: 1
+[FME] FeatureModelExtractionProblem.clone()
+
+Generation: 0
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [0.13636364042758942 0.5625 0.18571171533060413]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (startplayer (Mandatory playimm) (Optional
+     selectmovie) (Mandatory (vod (Optional quitplayer)))
+     (Optional (pause (Optional stopmovie))) (Or
+     startmovie vrcinterface (detail (Optional
+     changeserver)))))
+Tree 1:
+ ConstraintSet
+[FME] FeatureModelExtractionProblem.clone()
+
+Generation: 1
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [0.13636364042758942 0.5625 0.18571171533060413]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (startplayer (Mandatory playimm) (Optional
+     selectmovie) (Mandatory (vod (Optional quitplayer)))
+     (Optional (pause (Optional stopmovie))) (Or
+     startmovie vrcinterface (detail (Optional
+     changeserver)))))
+Tree 1:
+ ConstraintSet
+[FME] FeatureModelExtractionProblem.clone()
+
+Generation: 2
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [0.6666666865348816 0.5625 0.6861415406016346]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (startmovie (Mandatory (startplayer
+     (Optional (pause (Optional stopmovie))) (Or
+     vrcinterface))) (Mandatory playimm) (Mandatory
+     (selectmovie (Optional (detail (Optional
+         changeserver))) (Optional (vod (Optional
+         quitplayer)))))))
+Tree 1:
+ ConstraintSet
+[FME] FeatureModelExtractionProblem.clone()
+
+Generation: 3
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.75 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (startplayer (Mandatory (selectmovie
+     (Mandatory (startmovie (Alternative vrcinterface)))
+     (Optional changeserver))) (Mandatory playimm)
+     (Mandatory (vod (Optional quitplayer) (Optional
+         detail))) (Optional (pause (Optional stopmovie)))))
+Tree 1:
+ (ConstraintSet (Constraint (Or (Not (Atom
+     selectmovie)) (Atom startplayer))))
+[FME] FeatureModelExtractionProblem.clone()
+
+Generation: 4
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.75 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (startplayer (Mandatory (selectmovie
+     (Mandatory (startmovie (Alternative vrcinterface)))
+     (Optional changeserver))) (Mandatory playimm)
+     (Mandatory (vod (Optional quitplayer) (Optional
+         detail))) (Optional (pause (Optional stopmovie)))))
+Tree 1:
+ (ConstraintSet (Constraint (Or (Not (Atom
+     selectmovie)) (Atom startplayer))))
+[FME] FeatureModelExtractionProblem.clone()
+
+Generation: 5
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 1.0 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (startmovie (Mandatory (selectmovie
+     (Mandatory (startplayer (Mandatory playimm)
+         (Optional pause))) (Optional changeserver)))
+     (Mandatory (vod (Optional quitplayer) (Optional
+         detail))) (Alternative vrcinterface) (Optional
+     stopmovie)))
+Tree 1:
+ ConstraintSet
+
+
+
+ PARETO FRONTS
+
+
+Pareto Front of Subpopulation 0
+------------Variables------------
+Total Population: 2
+Total Non-dominated/Non-repeated: 2
+Evaluated: true
+Fitness: [1.0 1.0 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (startmovie (Mandatory (selectmovie
+     (Mandatory (startplayer (Mandatory playimm)
+         (Optional pause))) (Optional changeserver)))
+     (Mandatory (vod (Optional quitplayer) (Optional
+         detail))) (Alternative vrcinterface) (Optional
+     stopmovie)))
+Tree 1:
+ ConstraintSet
+Evaluated: true
+Fitness: [1.0 1.0 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (startplayer (Mandatory (startmovie
+     (Alternative vrcinterface))) (Mandatory (selectmovie
+     (Optional changeserver) (Optional detail)
+     (Optional stopmovie))) (Mandatory playimm)
+     (Mandatory (vod (Optional quitplayer))) (Optional
+     pause)))
+Tree 1:
+ ConstraintSet
+------------Measures------------
+Total Population: 2
+Total Non-dominated/Non-repeated: 2
+[FME] FeatureModelExtractionProblem.clone()
+
+Generation: 0
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [0.0476190485060215 0.625 0.10137075174357543]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (vod (Optional quitplayer) (Optional
+     selectmovie) (Or stopmovie playimm) (Or (pause
+     (Optional detail)) changeserver) (Or vrcinterface
+     startplayer startmovie)))
+Tree 1:
+ ConstraintSet
+[FME] FeatureModelExtractionProblem.clone()
+
+Generation: 1
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [0.0476190485060215 0.625 0.10137075174357543]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (vod (Optional quitplayer) (Optional
+     selectmovie) (Or stopmovie playimm) (Or (pause
+     (Optional detail)) changeserver) (Or vrcinterface
+     startplayer startmovie)))
+Tree 1:
+ ConstraintSet
+[FME] FeatureModelExtractionProblem.clone()
+
+Generation: 2
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [0.06060606241226196 0.75 0.11386673510396088]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (vod (Optional quitplayer) (Optional
+     selectmovie) (Or stopmovie playimm) (Or (pause
+     (Optional detail)) changeserver vrcinterface)
+     (Or startplayer startmovie)))
+Tree 1:
+ ConstraintSet
+[FME] FeatureModelExtractionProblem.clone()
+
+Generation: 3
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 1.0 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (vod (Mandatory (startplayer (Mandatory
+     playimm) (Optional detail))) (Or selectmovie)
+     (Optional changeserver) (Mandatory (vrcinterface
+     (Optional stopmovie))) (Optional pause) (Mandatory
+     startmovie) (Optional quitplayer)))
+Tree 1:
+ (ConstraintSet (Constraint (Or (Not (Atom
+     playimm)) (Atom selectmovie))))
+
+
+
+ PARETO FRONTS
+
+
+Pareto Front of Subpopulation 0
+------------Variables------------
+Total Population: 1
+Total Non-dominated/Non-repeated: 1
+Evaluated: true
+Fitness: [1.0 1.0 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (vod (Mandatory (startplayer (Mandatory
+     playimm) (Optional detail))) (Or selectmovie)
+     (Optional changeserver) (Mandatory (vrcinterface
+     (Optional stopmovie))) (Optional pause) (Mandatory
+     startmovie) (Optional quitplayer)))
+Tree 1:
+ (ConstraintSet (Constraint (Or (Not (Atom
+     playimm)) (Atom selectmovie))))
+------------Measures------------
+Total Population: 1
+Total Non-dominated/Non-repeated: 1
+[FME] FeatureModelExtractionProblem.clone()
+
+Generation: 0
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [0.1666666716337204 0.5 0.21305501856454598]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (detail (Mandatory playimm) (Optional
+     pause) (Mandatory startplayer) (Optional
+     stopmovie) (Optional startmovie) (Mandatory
+     vrcinterface) (Optional vod) (Optional quitplayer)
+     (Or selectmovie changeserver)))
+Tree 1:
+ ConstraintSet
+[FME] FeatureModelExtractionProblem.clone()
+
+Generation: 1
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [0.8888888955116272 0.5 0.8954862070023633]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (startmovie (Mandatory (quitplayer
+     (Optional (playimm (Mandatory (vod (Mandatory
+         selectmovie) (Optional stopmovie) (Optional
+         detail) (Or vrcinterface) (Optional changeserver)))))))
+     (Mandatory startplayer) (Optional pause)))
+Tree 1:
+ ConstraintSet
+[FME] FeatureModelExtractionProblem.clone()
+
+Generation: 2
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [0.8888888955116272 0.5 0.8954862070023633]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (startmovie (Mandatory (quitplayer
+     (Optional (playimm (Mandatory (vod (Mandatory
+         selectmovie) (Optional stopmovie) (Optional
+         detail) (Or vrcinterface) (Optional changeserver)))))))
+     (Mandatory startplayer) (Optional pause)))
+Tree 1:
+ ConstraintSet
+[FME] FeatureModelExtractionProblem.clone()
+
+Generation: 3
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.5 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (vod (Mandatory startmovie) (Mandatory
+     (detail (Mandatory playimm) (Optional pause)
+         (Mandatory startplayer) (Optional stopmovie)
+         (Mandatory vrcinterface) (Optional quitplayer)
+         (Alternative selectmovie))) (Optional changeserver)))
+Tree 1:
+ ConstraintSet
+[FME] FeatureModelExtractionProblem.clone()
+
+Generation: 4
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.5 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (vod (Mandatory (startmovie (Or selectmovie)
+     (Mandatory (vrcinterface (Optional quitplayer)))
+     (Optional changeserver))) (Mandatory playimm)
+     (Mandatory (detail (Optional pause) (Mandatory
+         startplayer) (Optional stopmovie)))))
+Tree 1:
+ (ConstraintSet (Constraint (Or (Not (Atom
+     vod)) (Atom vrcinterface))) (Constraint (Or
+     (Not (Atom startplayer)) (Atom vrcinterface))))
+[FME] FeatureModelExtractionProblem.clone()
+
+Generation: 5
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.5 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (vod (Mandatory startmovie) (Mandatory
+     (detail (Mandatory playimm) (Optional pause)
+         (Mandatory startplayer) (Optional stopmovie)
+         (Mandatory vrcinterface) (Optional quitplayer)
+         (Alternative selectmovie))) (Optional changeserver)))
+Tree 1:
+ ConstraintSet
+[FME] FeatureModelExtractionProblem.clone()
+
+Generation: 6
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.5 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (vod (Mandatory startmovie) (Mandatory
+     (detail (Mandatory selectmovie) (Optional
+         pause) (Mandatory startplayer) (Optional
+         stopmovie) (Mandatory vrcinterface) (Optional
+         quitplayer) (Alternative playimm))) (Optional
+     changeserver)))
+Tree 1:
+ ConstraintSet
+[FME] FeatureModelExtractionProblem.clone()
+
+Generation: 7
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.5 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (vod (Mandatory (startmovie (Or selectmovie)
+     (Mandatory (vrcinterface (Optional quitplayer)))
+     (Optional changeserver))) (Mandatory (detail
+     (Mandatory playimm) (Optional pause) (Mandatory
+     startplayer) (Optional stopmovie)))))
+Tree 1:
+ (ConstraintSet (Constraint (Or (Not (Atom
+     vod)) (Atom vrcinterface))) (Constraint (Or
+     (Not (Atom startplayer)) (Atom vrcinterface))))
+[FME] FeatureModelExtractionProblem.clone()
+
+Generation: 8
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.5 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (vod (Mandatory startmovie) (Mandatory
+     (detail (Optional pause) (Mandatory startplayer)
+         (Mandatory playimm) (Optional stopmovie)
+         (Mandatory vrcinterface) (Optional quitplayer)
+         (Or selectmovie))) (Optional changeserver)))
+Tree 1:
+ (ConstraintSet (Constraint (Or (Not (Atom
+     vod)) (Atom vrcinterface))))
+[FME] FeatureModelExtractionProblem.clone()
+
+Generation: 9
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.5 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (vod (Mandatory startmovie) (Mandatory
+     (detail (Mandatory playimm) (Optional pause)
+         (Mandatory startplayer) (Optional stopmovie)
+         (Mandatory vrcinterface) (Optional quitplayer)
+         (Alternative selectmovie))) (Optional changeserver)))
+Tree 1:
+ ConstraintSet
+[FME] FeatureModelExtractionProblem.clone()
+
+Generation: 10
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.5 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (startplayer (Mandatory (startmovie
+     (Or selectmovie) (Mandatory (vrcinterface
+     (Optional quitplayer))) (Optional changeserver)))
+     (Mandatory (detail (Mandatory playimm) (Optional
+         pause) (Mandatory vod) (Optional stopmovie)))))
+Tree 1:
+ (ConstraintSet (Constraint (Or (Not (Atom
+     selectmovie)) (Atom detail))))
+[FME] FeatureModelExtractionProblem.clone()
+
+Generation: 11
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.5 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (vod (Mandatory (playimm (Optional
+     changeserver) (Mandatory (startmovie (Mandatory
+     (vrcinterface (Optional quitplayer)))))))
+     (Mandatory (selectmovie (Mandatory (detail
+         (Optional pause) (Alternative startplayer)))))
+     (Optional stopmovie)))
+Tree 1:
+ ConstraintSet
+[FME] FeatureModelExtractionProblem.clone()
+
+Generation: 12
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.625 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (vod (Mandatory (startmovie (Or startplayer)
+     (Or selectmovie) (Mandatory (vrcinterface
+     (Optional quitplayer))) (Optional changeserver)))
+     (Optional (detail (Optional pause) (Optional
+         stopmovie))) (Mandatory playimm)))
+Tree 1:
+ ConstraintSet
+[FME] FeatureModelExtractionProblem.clone()
+
+Generation: 13
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.625 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (vod (Mandatory (startmovie (Or startplayer)
+     (Or selectmovie) (Mandatory (vrcinterface
+     (Optional quitplayer))) (Optional changeserver)))
+     (Optional (detail (Optional pause) (Optional
+         stopmovie))) (Mandatory playimm)))
+Tree 1:
+ ConstraintSet
+[FME] FeatureModelExtractionProblem.clone()
+
+Generation: 14
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.75 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (vod (Mandatory (startmovie (Or startplayer)
+     (Or selectmovie) (Mandatory (vrcinterface
+     (Optional quitplayer))) (Optional changeserver)))
+     (Optional (detail (Optional pause))) (Mandatory
+     playimm) (Optional stopmovie)))
+Tree 1:
+ ConstraintSet
+[FME] FeatureModelExtractionProblem.clone()
+
+Generation: 15
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.75 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (vod (Mandatory (startmovie (Or startplayer)
+     (Or selectmovie) (Mandatory (vrcinterface
+     (Optional quitplayer))) (Optional changeserver)
+     (Optional pause))) (Optional (detail (Optional
+     stopmovie))) (Mandatory playimm)))
+Tree 1:
+ ConstraintSet
+[FME] FeatureModelExtractionProblem.clone()
+
+Generation: 16
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 1.0 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (vod (Mandatory (startmovie (Or startplayer)
+     (Or selectmovie) (Mandatory (vrcinterface
+     (Optional quitplayer))) (Optional changeserver)
+     (Optional pause))) (Optional detail) (Mandatory
+     playimm) (Optional stopmovie)))
+Tree 1:
+ ConstraintSet
+
+
+
+ PARETO FRONTS
+
+
+Pareto Front of Subpopulation 0
+------------Variables------------
+Total Population: 1
+Total Non-dominated/Non-repeated: 1
+Evaluated: true
+Fitness: [1.0 1.0 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (vod (Mandatory (startmovie (Or startplayer)
+     (Or selectmovie) (Mandatory (vrcinterface
+     (Optional quitplayer))) (Optional changeserver)
+     (Optional pause))) (Optional detail) (Mandatory
+     playimm) (Optional stopmovie)))
+Tree 1:
+ ConstraintSet
+------------Measures------------
+Total Population: 1
+Total Non-dominated/Non-repeated: 1
+[FME] FeatureModelExtractionProblem.clone()
+
+Generation: 0
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [0.14814814925193787 0.5 0.19612957337342807]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (startplayer (Optional playimm) (Mandatory
+     vrcinterface) (Mandatory selectmovie) (Optional
+     changeserver) (Or startmovie stopmovie) (Or
+     detail vod (pause (Optional quitplayer)))))
+Tree 1:
+ (ConstraintSet (Constraint (Or (Not (Atom
+     vod)) (Atom pause))))
+[FME] FeatureModelExtractionProblem.clone()
+
+Generation: 1
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [0.5 0.5 0.5280309306821322]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (selectmovie (Mandatory (playimm (Optional
+     pause))) (Mandatory vrcinterface) (Optional
+     quitplayer) (Optional startplayer) (Optional
+     changeserver) (Mandatory startmovie) (Alternative
+     vod) (Optional detail) (Or stopmovie)))
+Tree 1:
+ ConstraintSet
+[FME] FeatureModelExtractionProblem.clone()
+
+Generation: 2
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [0.800000011920929 1.0 0.8117647058823501]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (startplayer (Mandatory (selectmovie
+     (Optional quitplayer) (Optional stopmovie)))
+     (Mandatory (vod (Mandatory (vrcinterface
+         (Mandatory (playimm (Optional detail) (Optional
+             (startmovie (Optional pause) (Optional changeserver)))))))))))
+Tree 1:
+ ConstraintSet
+[FME] FeatureModelExtractionProblem.clone()
+
+Generation: 3
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 1.0 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (startplayer (Mandatory (vrcinterface
+     (Optional quitplayer) (Optional changeserver)
+     (Mandatory playimm) (Optional pause) (Mandatory
+     (vod (Mandatory selectmovie))) (Optional
+     stopmovie) (Alternative startmovie))) (Optional
+     detail)))
+Tree 1:
+ ConstraintSet
+
+
+
+ PARETO FRONTS
+
+
+Pareto Front of Subpopulation 0
+------------Variables------------
+Total Population: 2
+Total Non-dominated/Non-repeated: 2
+Evaluated: true
+Fitness: [1.0 1.0 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (startplayer (Mandatory (vrcinterface
+     (Optional quitplayer) (Optional changeserver)
+     (Mandatory playimm) (Optional pause) (Mandatory
+     (vod (Mandatory selectmovie))) (Optional
+     stopmovie) (Alternative startmovie))) (Optional
+     detail)))
+Tree 1:
+ ConstraintSet
+Evaluated: true
+Fitness: [1.0 1.0 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (vrcinterface (Mandatory (startplayer
+     (Mandatory vod))) (Mandatory (selectmovie
+     (Optional stopmovie))) (Optional quitplayer)
+     (Optional changeserver) (Mandatory startmovie)
+     (Mandatory (playimm (Optional pause) (Optional
+         detail)))))
+Tree 1:
+ ConstraintSet
+------------Measures------------
+Total Population: 2
+Total Non-dominated/Non-repeated: 2
+[FME] FeatureModelExtractionProblem.clone()
+
+Generation: 0
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [0.20512820780277252 0.5 0.2499309582988122]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (startplayer (Optional (vrcinterface
+     (Optional stopmovie) (Mandatory startmovie)
+     (Or pause selectmovie (playimm (Optional
+         vod) (Optional quitplayer))))) (Mandatory
+     detail) (Optional changeserver)))
+Tree 1:
+ ConstraintSet
+[FME] FeatureModelExtractionProblem.clone()
+
+Generation: 1
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [0.41025641560554504 1.0 0.4441470340393269]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (startplayer (Optional (vrcinterface
+     (Optional stopmovie) (Mandatory startmovie)
+     (Or pause detail (playimm (Optional vod)
+         (Optional quitplayer))))) (Mandatory selectmovie)
+     (Optional changeserver)))
+Tree 1:
+ ConstraintSet
+[FME] FeatureModelExtractionProblem.clone()
+
+Generation: 2
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [0.41025641560554504 1.0 0.4441470340393269]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (startplayer (Optional (vrcinterface
+     (Optional stopmovie) (Mandatory startmovie)
+     (Or pause detail (playimm (Optional vod)
+         (Optional quitplayer))))) (Mandatory selectmovie)
+     (Optional changeserver)))
+Tree 1:
+ ConstraintSet
+[FME] FeatureModelExtractionProblem.clone()
+
+Generation: 3
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 1.0 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (startplayer (Mandatory (vrcinterface
+     (Optional stopmovie) (Mandatory (vod (Optional
+     detail))) (Optional pause) (Alternative startmovie)
+     (Or playimm))) (Mandatory (selectmovie (Optional
+     quitplayer))) (Optional changeserver)))
+Tree 1:
+ (ConstraintSet (Constraint (Or (Not (Atom
+     playimm)) (Atom selectmovie))))
+
+
+
+ PARETO FRONTS
+
+
+Pareto Front of Subpopulation 0
+------------Variables------------
+Total Population: 1
+Total Non-dominated/Non-repeated: 1
+Evaluated: true
+Fitness: [1.0 1.0 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (startplayer (Mandatory (vrcinterface
+     (Optional stopmovie) (Mandatory (vod (Optional
+     detail))) (Optional pause) (Alternative startmovie)
+     (Or playimm))) (Mandatory (selectmovie (Optional
+     quitplayer))) (Optional changeserver)))
+Tree 1:
+ (ConstraintSet (Constraint (Or (Not (Atom
+     playimm)) (Atom selectmovie))))
+------------Measures------------
+Total Population: 1
+Total Non-dominated/Non-repeated: 1
+[FME] FeatureModelExtractionProblem.clone()
+
+Generation: 0
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [0.4444444477558136 0.5 0.47548252477829944]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (selectmovie (Optional pause) (Mandatory
+     startmovie) (Mandatory vod) (Mandatory playimm)
+     (Or vrcinterface stopmovie) (Or detail startplayer)
+     (Alternative changeserver quitplayer)))
+Tree 1:
+ ConstraintSet
+[FME] FeatureModelExtractionProblem.clone()
+
+Generation: 1
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [0.4444444477558136 0.5 0.47548252477829944]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (selectmovie (Optional pause) (Mandatory
+     startmovie) (Mandatory vod) (Mandatory playimm)
+     (Or vrcinterface stopmovie) (Or detail startplayer)
+     (Alternative changeserver quitplayer)))
+Tree 1:
+ ConstraintSet
+[FME] FeatureModelExtractionProblem.clone()
+
+Generation: 2
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [0.4444444477558136 0.5 0.47548252477829944]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (selectmovie (Optional pause) (Mandatory
+     startmovie) (Mandatory vod) (Mandatory playimm)
+     (Or vrcinterface stopmovie) (Or detail startplayer)
+     (Alternative changeserver quitplayer)))
+Tree 1:
+ ConstraintSet
+[FME] FeatureModelExtractionProblem.clone()
+
+Generation: 3
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [0.4444444477558136 0.75 0.4750819124380741]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (selectmovie (Optional pause) (Mandatory
+     startmovie) (Mandatory vod) (Mandatory playimm)
+     (Or vrcinterface stopmovie) (Or detail startplayer)
+     (Or changeserver quitplayer)))
+Tree 1:
+ ConstraintSet
+[FME] FeatureModelExtractionProblem.clone()
+
+Generation: 4
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.75 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (selectmovie (Mandatory (startmovie
+     (Optional detail) (Optional (changeserver
+     (Optional stopmovie))))) (Optional pause)
+     (Mandatory (vod (Mandatory (startplayer (Mandatory
+         vrcinterface) (Optional quitplayer))))) (Mandatory
+     playimm)))
+Tree 1:
+ ConstraintSet
+[FME] FeatureModelExtractionProblem.clone()
+
+Generation: 5
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.75 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (selectmovie (Mandatory (startmovie
+     (Optional detail) (Optional (changeserver
+     (Optional stopmovie))))) (Optional pause)
+     (Mandatory (vod (Mandatory (startplayer (Mandatory
+         vrcinterface) (Optional quitplayer))))) (Mandatory
+     playimm)))
+Tree 1:
+ ConstraintSet
+[FME] FeatureModelExtractionProblem.clone()
+
+Generation: 6
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 1.0 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (selectmovie (Mandatory (startmovie
+     (Optional detail) (Optional changeserver)))
+     (Optional pause) (Mandatory (vod (Mandatory
+     (startplayer (Mandatory (vrcinterface (Optional
+         quitplayer))) (Mandatory playimm) (Optional
+         stopmovie)))))))
+Tree 1:
+ (ConstraintSet (Constraint (Or (Not (Atom
+     selectmovie)) (Atom startmovie))))
+
+
+
+ PARETO FRONTS
+
+
+Pareto Front of Subpopulation 0
+------------Variables------------
+Total Population: 1
+Total Non-dominated/Non-repeated: 1
+Evaluated: true
+Fitness: [1.0 1.0 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (selectmovie (Mandatory (startmovie
+     (Optional detail) (Optional changeserver)))
+     (Optional pause) (Mandatory (vod (Mandatory
+     (startplayer (Mandatory (vrcinterface (Optional
+         quitplayer))) (Mandatory playimm) (Optional
+         stopmovie)))))))
+Tree 1:
+ (ConstraintSet (Constraint (Or (Not (Atom
+     selectmovie)) (Atom startmovie))))
+------------Measures------------
+Total Population: 1
+Total Non-dominated/Non-repeated: 1
+[FME] FeatureModelExtractionProblem.clone()
+
+Generation: 0
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [0.1666666716337204 0.375 0.21370452197571801]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (vod (Optional startmovie) (Optional
+     changeserver) (Mandatory vrcinterface) (Mandatory
+     startplayer) (Or stopmovie quitplayer) (Or
+     playimm selectmovie) (Alternative detail
+     pause)))
+Tree 1:
+ ConstraintSet
+[FME] FeatureModelExtractionProblem.clone()
+
+Generation: 1
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [0.1666666716337204 0.4375 0.21346159747153948]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (vod (Optional startmovie) (Optional
+     changeserver) (Mandatory vrcinterface) (Mandatory
+     startplayer) (Or stopmovie quitplayer detail)
+     (Or playimm selectmovie) (Alternative pause)))
+Tree 1:
+ ConstraintSet
+[FME] FeatureModelExtractionProblem.clone()
+
+Generation: 2
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [0.1666666716337204 0.4375 0.21346159747153948]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (vod (Optional startmovie) (Optional
+     changeserver) (Mandatory vrcinterface) (Mandatory
+     startplayer) (Or stopmovie quitplayer detail)
+     (Or playimm selectmovie) (Alternative pause)))
+Tree 1:
+ ConstraintSet
+[FME] FeatureModelExtractionProblem.clone()
+
+Generation: 3
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [0.3333333432674408 0.4375 0.37076927797723197]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (vod (Mandatory startmovie) (Optional
+     changeserver) (Mandatory vrcinterface) (Mandatory
+     startplayer) (Or stopmovie quitplayer detail)
+     (Or playimm selectmovie) (Alternative pause)))
+Tree 1:
+ ConstraintSet
+[FME] FeatureModelExtractionProblem.clone()
+
+Generation: 4
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [0.3333333432674408 0.4375 0.37076927797723197]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (vod (Mandatory startmovie) (Optional
+     changeserver) (Mandatory vrcinterface) (Mandatory
+     startplayer) (Or stopmovie quitplayer detail)
+     (Or playimm selectmovie) (Alternative pause)))
+Tree 1:
+ ConstraintSet
+[FME] FeatureModelExtractionProblem.clone()
+
+Generation: 5
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [0.3333333432674408 0.4375 0.37076927797723197]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (vod (Mandatory startmovie) (Optional
+     changeserver) (Mandatory vrcinterface) (Mandatory
+     startplayer) (Or stopmovie quitplayer detail)
+     (Or playimm selectmovie) (Alternative pause)))
+Tree 1:
+ ConstraintSet
+[FME] FeatureModelExtractionProblem.clone()
+
+Generation: 6
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.5 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (selectmovie (Mandatory (changeserver
+     (Mandatory (startmovie (Or playimm))) (Optional
+     quitplayer) (Mandatory startplayer) (Mandatory
+     vrcinterface) (Optional stopmovie))) (Optional
+     detail) (Or (vod (Optional pause)))))
+Tree 1:
+ ConstraintSet
+[FME] FeatureModelExtractionProblem.clone()
+
+Generation: 7
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.5 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (selectmovie (Mandatory (changeserver
+     (Mandatory (startmovie (Or playimm))) (Optional
+     quitplayer) (Mandatory startplayer) (Mandatory
+     vrcinterface) (Optional stopmovie))) (Optional
+     detail) (Or (vod (Optional pause)))))
+Tree 1:
+ ConstraintSet
+[FME] FeatureModelExtractionProblem.clone()
+
+Generation: 8
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.5 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (selectmovie (Mandatory (changeserver
+     (Mandatory (startmovie (Or playimm) (Mandatory
+         (vod (Optional pause))))) (Optional quitplayer)
+     (Mandatory startplayer) (Mandatory vrcinterface)
+     (Optional stopmovie))) (Optional detail)))
+Tree 1:
+ ConstraintSet
+[FME] FeatureModelExtractionProblem.clone()
+
+Generation: 9
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.625 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (vod (Mandatory (selectmovie (Optional
+     detail))) (Mandatory (startmovie (Or playimm)))
+     (Optional (changeserver (Optional quitplayer)
+         (Optional stopmovie))) (Mandatory vrcinterface)
+     (Mandatory startplayer) (Optional pause)))
+Tree 1:
+ ConstraintSet
+[FME] FeatureModelExtractionProblem.clone()
+
+Generation: 10
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.625 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (vod (Mandatory (selectmovie (Optional
+     detail))) (Mandatory (startmovie (Or playimm)))
+     (Optional (changeserver (Optional quitplayer)
+         (Optional stopmovie))) (Mandatory vrcinterface)
+     (Mandatory startplayer) (Optional pause)))
+Tree 1:
+ ConstraintSet
+[FME] FeatureModelExtractionProblem.clone()
+
+Generation: 11
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.625 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (vod (Mandatory (selectmovie (Optional
+     detail))) (Mandatory (startmovie (Or playimm)))
+     (Optional (changeserver (Optional quitplayer)
+         (Optional stopmovie))) (Mandatory vrcinterface)
+     (Mandatory startplayer) (Optional pause)))
+Tree 1:
+ ConstraintSet
+[FME] FeatureModelExtractionProblem.clone()
+
+Generation: 12
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.75 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (vod (Mandatory (selectmovie (Optional
+     detail))) (Mandatory (startmovie (Or playimm)))
+     (Optional (changeserver (Optional stopmovie)))
+     (Mandatory vrcinterface) (Mandatory startplayer)
+     (Optional pause) (Optional quitplayer)))
+Tree 1:
+ ConstraintSet
+[FME] FeatureModelExtractionProblem.clone()
+
+Generation: 13
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.75 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (vod (Mandatory (selectmovie (Optional
+     detail))) (Mandatory (startmovie (Or playimm)))
+     (Optional (changeserver (Optional stopmovie)))
+     (Mandatory vrcinterface) (Mandatory startplayer)
+     (Optional pause) (Optional quitplayer)))
+Tree 1:
+ ConstraintSet
+[FME] FeatureModelExtractionProblem.clone()
+
+Generation: 14
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.75 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (vod (Mandatory (selectmovie (Optional
+     detail))) (Mandatory (startmovie (Or playimm)))
+     (Optional (changeserver (Optional stopmovie)))
+     (Mandatory vrcinterface) (Mandatory startplayer)
+     (Optional pause) (Optional quitplayer)))
+Tree 1:
+ ConstraintSet
+[FME] FeatureModelExtractionProblem.clone()
+
+Generation: 15
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.75 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (vod (Mandatory (selectmovie (Optional
+     detail) (Optional stopmovie))) (Mandatory
+     startmovie) (Mandatory (vrcinterface (Or
+     playimm))) (Optional (changeserver (Optional
+     quitplayer))) (Mandatory startplayer) (Optional
+     pause)))
+Tree 1:
+ ConstraintSet
+[FME] FeatureModelExtractionProblem.clone()
+
+Generation: 16
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 1.0 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (vod (Mandatory (selectmovie (Optional
+     detail))) (Mandatory (startmovie (Or playimm)))
+     (Optional changeserver) (Mandatory vrcinterface)
+     (Mandatory startplayer) (Optional pause)
+     (Optional stopmovie) (Optional quitplayer)))
+Tree 1:
+ ConstraintSet
+
+
+
+ PARETO FRONTS
+
+
+Pareto Front of Subpopulation 0
+------------Variables------------
+Total Population: 4
+Total Non-dominated/Non-repeated: 4
+Evaluated: true
+Fitness: [1.0 1.0 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (vod (Mandatory (selectmovie (Optional
+     detail) (Optional stopmovie))) (Mandatory
+     (startmovie (Alternative playimm))) (Optional
+     changeserver) (Mandatory vrcinterface) (Or
+     startplayer) (Optional pause) (Optional quitplayer)))
+Tree 1:
+ ConstraintSet
+Evaluated: true
+Fitness: [1.0 1.0 1.0]
+Rank: 0
+Sparsity: 0.0
+Tree 0:
+ (Root (vod (Mandatory (selectmovie (Optional
+     detail) (Optional stopmovie))) (Mandatory
+     vrcinterface) (Mandatory (startmovie (Or
+     playimm))) (Optional changeserver) (Or startplayer)
+     (Optional pause) (Optional quitplayer)))
+Tree 1:
+ ConstraintSet
+Evaluated: true
+Fitness: [1.0 1.0 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (vod (Mandatory (selectmovie (Optional
+     detail))) (Mandatory (startmovie (Or playimm)))
+     (Optional changeserver) (Mandatory vrcinterface)
+     (Mandatory startplayer) (Optional pause)
+     (Optional stopmovie) (Optional quitplayer)))
+Tree 1:
+ ConstraintSet
+Evaluated: true
+Fitness: [1.0 1.0 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (vod (Mandatory (selectmovie (Optional
+     detail) (Optional stopmovie) (Or startplayer)))
+     (Mandatory (startmovie (Or playimm))) (Optional
+     changeserver) (Mandatory vrcinterface) (Optional
+     pause) (Optional quitplayer)))
+Tree 1:
+ ConstraintSet
+------------Measures------------
+Total Population: 4
+Total Non-dominated/Non-repeated: 4
+[FME] FeatureModelExtractionProblem.clone()
+
+Generation: 0
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [0.1111111119389534 1.0 0.1619411457853864]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (startplayer (Mandatory playimm) (Optional
+     selectmovie) (Optional changeserver) (Optional
+     pause) (Optional vrcinterface) (Optional
+     (vod (Optional stopmovie))) (Optional detail)
+     (Or quitplayer startmovie)))
+Tree 1:
+ (ConstraintSet (Constraint (Or (Not (Atom
+     startmovie)) (Atom playimm))))
+[FME] FeatureModelExtractionProblem.clone()
+
+Generation: 1
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [0.1666666716337204 1.0 0.2146736628923852]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (startplayer (Mandatory (startmovie
+     (Optional quitplayer))) (Mandatory playimm)
+     (Optional selectmovie) (Optional changeserver)
+     (Optional pause) (Optional vrcinterface)
+     (Optional (vod (Optional stopmovie))) (Optional
+     detail)))
+Tree 1:
+ (ConstraintSet (Constraint (Or (Not (Atom
+     startmovie)) (Atom startplayer))))
+[FME] FeatureModelExtractionProblem.clone()
+
+Generation: 2
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [0.25 1.0 0.2928748964374463]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (startplayer (Mandatory (vod (Optional
+     stopmovie))) (Mandatory playimm) (Optional
+     selectmovie) (Optional changeserver) (Optional
+     pause) (Optional vrcinterface) (Mandatory
+     (startmovie (Optional quitplayer))) (Optional
+     detail)))
+Tree 1:
+ (ConstraintSet (Constraint (Or (Not (Atom
+     startmovie)) (Atom startplayer))))
+[FME] FeatureModelExtractionProblem.clone()
+
+Generation: 3
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 1.0 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (playimm (Mandatory (startplayer (Optional
+     stopmovie) (Mandatory (startmovie (Optional
+     quitplayer))) (Optional changeserver) (Optional
+     pause))) (Mandatory (vrcinterface (Mandatory
+     selectmovie) (Optional detail) (Mandatory
+     vod)))))
+Tree 1:
+ (ConstraintSet (Constraint (Or (Not (Atom
+     startmovie)) (Atom startplayer))))
+
+
+
+ PARETO FRONTS
+
+
+Pareto Front of Subpopulation 0
+------------Variables------------
+Total Population: 1
+Total Non-dominated/Non-repeated: 1
+Evaluated: true
+Fitness: [1.0 1.0 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (playimm (Mandatory (startplayer (Optional
+     stopmovie) (Mandatory (startmovie (Optional
+     quitplayer))) (Optional changeserver) (Optional
+     pause))) (Mandatory (vrcinterface (Mandatory
+     selectmovie) (Optional detail) (Mandatory
+     vod)))))
+Tree 1:
+ (ConstraintSet (Constraint (Or (Not (Atom
+     startmovie)) (Atom startplayer))))
+------------Measures------------
+Total Population: 1
+Total Non-dominated/Non-repeated: 1
+[FME] FeatureModelExtractionProblem.clone()
+
+Generation: 0
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [0.25 0.75 0.2923340697781444]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (vrcinterface (Optional quitplayer)
+     (Optional changeserver) (Mandatory selectmovie)
+     (Or detail stopmovie) (Or (playimm (Optional
+     pause) (Optional vod) (Mandatory startmovie))
+     startplayer)))
+Tree 1:
+ (ConstraintSet (Constraint (Or (Not (Atom
+     startplayer)) (Atom startmovie))))
+[FME] FeatureModelExtractionProblem.clone()
+
+Generation: 1
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [0.25 0.75 0.2923340697781444]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (vrcinterface (Optional quitplayer)
+     (Optional changeserver) (Mandatory selectmovie)
+     (Or detail stopmovie) (Or (playimm (Optional
+     pause) (Optional vod) (Mandatory startmovie))
+     startplayer)))
+Tree 1:
+ (ConstraintSet (Constraint (Or (Not (Atom
+     startplayer)) (Atom startmovie))))
+[FME] FeatureModelExtractionProblem.clone()
+
+Generation: 2
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [0.25 0.75 0.2923340697781444]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (vrcinterface (Optional quitplayer)
+     (Optional changeserver) (Mandatory selectmovie)
+     (Or detail stopmovie) (Or (playimm (Optional
+     pause) (Optional vod) (Mandatory startmovie))
+     startplayer)))
+Tree 1:
+ (ConstraintSet (Constraint (Or (Not (Atom
+     startplayer)) (Atom startmovie))))
+[FME] FeatureModelExtractionProblem.clone()
+
+Generation: 3
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [0.25 0.75 0.29233406977814486]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (vrcinterface (Optional quitplayer)
+     (Optional changeserver) (Mandatory selectmovie)
+     (Or detail stopmovie) (Or (playimm (Optional
+     pause) (Optional vod) (Mandatory startmovie)))
+     (Optional startplayer)))
+Tree 1:
+ ConstraintSet
+[FME] FeatureModelExtractionProblem.clone()
+
+Generation: 4
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 1.0 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (vrcinterface (Optional quitplayer)
+     (Optional changeserver) (Mandatory selectmovie)
+     (Mandatory (playimm (Mandatory startplayer)
+         (Optional pause))) (Mandatory vod) (Mandatory
+     (startmovie (Optional stopmovie))) (Optional
+     detail)))
+Tree 1:
+ (ConstraintSet (Constraint (Or (Not (Atom
+     startplayer)) (Atom startmovie))))
+
+
+
+ PARETO FRONTS
+
+
+Pareto Front of Subpopulation 0
+------------Variables------------
+Total Population: 1
+Total Non-dominated/Non-repeated: 1
+Evaluated: true
+Fitness: [1.0 1.0 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (vrcinterface (Optional quitplayer)
+     (Optional changeserver) (Mandatory selectmovie)
+     (Mandatory (playimm (Mandatory startplayer)
+         (Optional pause))) (Mandatory vod) (Mandatory
+     (startmovie (Optional stopmovie))) (Optional
+     detail)))
+Tree 1:
+ (ConstraintSet (Constraint (Or (Not (Atom
+     startplayer)) (Atom startmovie))))
+------------Measures------------
+Total Population: 1
+Total Non-dominated/Non-repeated: 1
+[FME] FeatureModelExtractionProblem.clone()
+
+Generation: 0
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [0.19512194395065308 1.0 0.24095778240300886]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (playimm (Mandatory vod) (Optional
+     detail) (Optional vrcinterface) (Or (startplayer
+     (Optional quitplayer) (Optional pause) (Or
+     (selectmovie (Optional startmovie)) changeserver))
+     stopmovie)))
+Tree 1:
+ (ConstraintSet (Constraint (Or (Not (Atom
+     detail)) (Atom playimm))))
+[FME] FeatureModelExtractionProblem.clone()
+
+Generation: 1
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [0.19512194395065308 1.0 0.24095778240300886]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (playimm (Mandatory vod) (Optional
+     detail) (Optional vrcinterface) (Or (startplayer
+     (Optional quitplayer) (Optional pause) (Or
+     (selectmovie (Optional startmovie)) changeserver))
+     stopmovie)))
+Tree 1:
+ (ConstraintSet (Constraint (Or (Not (Atom
+     detail)) (Atom playimm))))
+[FME] FeatureModelExtractionProblem.clone()
+
+Generation: 2
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [0.19512194395065308 1.0 0.24095778240300886]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (playimm (Mandatory vod) (Optional
+     detail) (Optional vrcinterface) (Or (startplayer
+     (Optional quitplayer) (Optional pause) (Or
+     (selectmovie (Optional startmovie)) changeserver))
+     stopmovie)))
+Tree 1:
+ (ConstraintSet (Constraint (Or (Not (Atom
+     detail)) (Atom playimm))))
+[FME] FeatureModelExtractionProblem.clone()
+
+Generation: 3
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [0.19512194395065308 1.0 0.24095778240300886]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (playimm (Mandatory vod) (Optional
+     detail) (Optional vrcinterface) (Or (startplayer
+     (Optional quitplayer) (Optional pause) (Or
+     (selectmovie (Optional startmovie)) changeserver))
+     stopmovie)))
+Tree 1:
+ (ConstraintSet (Constraint (Or (Not (Atom
+     detail)) (Atom playimm))))
+[FME] FeatureModelExtractionProblem.clone()
+
+Generation: 4
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [0.3199999928474426 1.0 0.35858418484764604]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (playimm (Mandatory vod) (Optional
+     detail) (Optional vrcinterface) (Or (startplayer
+     (Optional quitplayer) (Optional pause) (Or
+     (selectmovie (Mandatory startmovie)) changeserver))
+     stopmovie)))
+Tree 1:
+ ConstraintSet
+[FME] FeatureModelExtractionProblem.clone()
+
+Generation: 5
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 1.0 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (playimm (Mandatory (vrcinterface (Optional
+     detail) (Optional quitplayer) (Mandatory
+     selectmovie) (Optional pause) (Mandatory
+     startmovie))) (Mandatory (vod (Optional changeserver)
+     (Optional stopmovie) (Or startplayer)))))
+Tree 1:
+ (ConstraintSet (Constraint (Or (Not (Atom
+     detail)) (Atom playimm))))
+
+
+
+ PARETO FRONTS
+
+
+Pareto Front of Subpopulation 0
+------------Variables------------
+Total Population: 3
+Total Non-dominated/Non-repeated: 3
+Evaluated: true
+Fitness: [1.0 1.0 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (playimm (Mandatory (vrcinterface (Optional
+     stopmovie) (Mandatory (selectmovie (Mandatory
+     startmovie))) (Optional pause))) (Mandatory
+     (vod (Optional changeserver))) (Optional
+     detail) (Mandatory (startplayer (Optional
+     quitplayer)))))
+Tree 1:
+ ConstraintSet
+Evaluated: true
+Fitness: [1.0 1.0 1.0]
+Rank: 0
+Sparsity: 0.0
+Tree 0:
+ (Root (playimm (Mandatory (vrcinterface (Optional
+     stopmovie) (Optional quitplayer) (Mandatory
+     selectmovie) (Optional pause))) (Mandatory
+     (startplayer (Mandatory vod))) (Optional
+     changeserver) (Optional detail) (Alternative
+     startmovie)))
+Tree 1:
+ (ConstraintSet (Constraint (Or (Not (Atom
+     pause)) (Atom vrcinterface))))
+Evaluated: true
+Fitness: [1.0 1.0 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (playimm (Mandatory (vrcinterface (Optional
+     detail) (Optional quitplayer) (Mandatory
+     selectmovie) (Optional pause) (Mandatory
+     startmovie))) (Mandatory (vod (Optional changeserver)
+     (Optional stopmovie) (Or startplayer)))))
+Tree 1:
+ (ConstraintSet (Constraint (Or (Not (Atom
+     detail)) (Atom playimm))))
+------------Measures------------
+Total Population: 3
+Total Non-dominated/Non-repeated: 3
+[FME] FeatureModelExtractionProblem.clone()
+
+Generation: 0
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [0.29629629850387573 0.5 0.33684849352712726]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (playimm (Optional pause) (Mandatory
+     vod) (Optional (selectmovie (Optional (detail
+     (Mandatory (startmovie (Mandatory vrcinterface)))))
+     (Optional changeserver) (Optional stopmovie)))
+     (Or quitplayer startplayer)))
+Tree 1:
+ ConstraintSet
+[FME] FeatureModelExtractionProblem.clone()
+
+Generation: 1
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.5 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (startmovie (Mandatory vod) (Optional
+     (selectmovie (Mandatory stopmovie) (Mandatory
+         (playimm (Mandatory startplayer) (Optional
+             detail) (Or (vrcinterface (Optional pause)))))
+         (Optional quitplayer))) (Optional changeserver)))
+Tree 1:
+ (ConstraintSet (Constraint (Or (Not (Atom
+     vod)) (Atom vrcinterface))))
+[FME] FeatureModelExtractionProblem.clone()
+
+Generation: 2
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [0.9411764740943909 1.0 0.9447937142269193]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (playimm (Mandatory (startmovie (Mandatory
+     vrcinterface))) (Optional pause) (Mandatory
+     vod) (Optional (selectmovie (Optional detail)
+     (Optional changeserver) (Optional stopmovie)
+     (Optional quitplayer))) (Mandatory startplayer)))
+Tree 1:
+ ConstraintSet
+[FME] FeatureModelExtractionProblem.clone()
+
+Generation: 3
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 1.0 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (vrcinterface (Mandatory (startmovie
+     (Optional changeserver))) (Mandatory (playimm
+     (Optional quitplayer) (Optional stopmovie)
+     (Mandatory vod) (Or selectmovie) (Mandatory
+     startplayer) (Optional detail))) (Optional
+     pause)))
+Tree 1:
+ ConstraintSet
+
+
+
+ PARETO FRONTS
+
+
+Pareto Front of Subpopulation 0
+------------Variables------------
+Total Population: 1
+Total Non-dominated/Non-repeated: 1
+Evaluated: true
+Fitness: [1.0 1.0 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (vrcinterface (Mandatory (startmovie
+     (Optional changeserver))) (Mandatory (playimm
+     (Optional quitplayer) (Optional stopmovie)
+     (Mandatory vod) (Or selectmovie) (Mandatory
+     startplayer) (Optional detail))) (Optional
+     pause)))
+Tree 1:
+ ConstraintSet
+------------Measures------------
+Total Population: 1
+Total Non-dominated/Non-repeated: 1
+[FME] FeatureModelExtractionProblem.clone()
+
+Generation: 0
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [0.13793103396892548 0.5 0.1861284905738232]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (playimm (Mandatory quitplayer) (Optional
+     (selectmovie (Optional vod) (Optional startplayer)
+         (Or pause vrcinterface stopmovie))) (Mandatory
+     (startmovie (Optional changeserver))) (Optional
+     detail)))
+Tree 1:
+ ConstraintSet
+[FME] FeatureModelExtractionProblem.clone()
+
+Generation: 1
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [0.5 0.5 0.5280539445825283]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (startmovie (Mandatory (vrcinterface
+     (Optional startplayer) (Mandatory (quitplayer
+     (Optional detail) (Optional stopmovie)))))
+     (Mandatory (selectmovie (Mandatory vod)))
+     (Optional pause) (Optional changeserver)
+     (Or playimm)))
+Tree 1:
+ ConstraintSet
+[FME] FeatureModelExtractionProblem.clone()
+
+Generation: 2
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.5 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (startmovie (Mandatory (startplayer
+     (Mandatory (vod (Mandatory vrcinterface)))))
+     (Mandatory (selectmovie (Optional stopmovie)))
+     (Optional pause) (Optional changeserver)
+     (Or (playimm (Optional (detail (Alternative
+         quitplayer)))))))
+Tree 1:
+ (ConstraintSet (Constraint (Or (Not (Atom
+     stopmovie)) (Atom startmovie))))
+[FME] FeatureModelExtractionProblem.clone()
+
+Generation: 3
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [0.2777777910232544 0.625 0.31948919369521317]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (startmovie (Mandatory (vod (Optional
+     (vrcinterface (Optional startplayer))) (Optional
+     (playimm (Optional (quitplayer (Optional
+         detail) (Optional stopmovie))))))) (Mandatory
+     selectmovie) (Optional pause) (Optional changeserver)))
+Tree 1:
+ ConstraintSet
+[FME] FeatureModelExtractionProblem.clone()
+
+Generation: 4
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 1.0 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (startplayer (Mandatory (startmovie
+     (Mandatory (vod (Mandatory vrcinterface)))))
+     (Mandatory (selectmovie (Optional stopmovie)))
+     (Optional pause) (Optional changeserver)
+     (Or (playimm (Optional detail) (Optional
+         quitplayer)))))
+Tree 1:
+ ConstraintSet
+
+
+
+ PARETO FRONTS
+
+
+Pareto Front of Subpopulation 0
+------------Variables------------
+Total Population: 3
+Total Non-dominated/Non-repeated: 3
+Evaluated: true
+Fitness: [1.0 1.0 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (startmovie (Mandatory (selectmovie
+     (Mandatory vod) (Optional stopmovie))) (Optional
+     pause) (Optional changeserver) (Or vrcinterface)
+     (Mandatory startplayer) (Or (playimm (Optional
+     detail) (Optional quitplayer)))))
+Tree 1:
+ ConstraintSet
+Evaluated: true
+Fitness: [1.0 1.0 1.0]
+Rank: 0
+Sparsity: 0.0
+Tree 0:
+ (Root (startmovie (Mandatory (playimm (Mandatory
+     (vod (Mandatory vrcinterface))))) (Mandatory
+     (selectmovie (Optional stopmovie))) (Optional
+     pause) (Optional changeserver) (Or (startplayer
+     (Optional detail) (Optional quitplayer)))))
+Tree 1:
+ ConstraintSet
+Evaluated: true
+Fitness: [1.0 1.0 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (startplayer (Mandatory (startmovie
+     (Mandatory (vod (Mandatory vrcinterface)))))
+     (Mandatory (selectmovie (Optional stopmovie)))
+     (Optional pause) (Optional changeserver)
+     (Or (playimm (Optional detail) (Optional
+         quitplayer)))))
+Tree 1:
+ ConstraintSet
+------------Measures------------
+Total Population: 3
+Total Non-dominated/Non-repeated: 3
+[FME] FeatureModelExtractionProblem.clone()
+
+Generation: 0
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [0.4285714328289032 0.75 0.46077773832537566]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (playimm (Optional pause) (Mandatory
+     (vrcinterface (Mandatory startplayer) (Mandatory
+         startmovie) (Or vod changeserver) (Or detail
+         quitplayer))) (Optional stopmovie) (Optional
+     selectmovie)))
+Tree 1:
+ (ConstraintSet (Constraint (Or (Not (Atom
+     detail)) (Atom vod))))
+[FME] FeatureModelExtractionProblem.clone()
+
+Generation: 1
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [0.4285714328289032 0.75 0.46077773832537566]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (playimm (Optional pause) (Mandatory
+     (vrcinterface (Mandatory startplayer) (Mandatory
+         startmovie) (Or vod changeserver) (Or detail
+         quitplayer))) (Optional stopmovie) (Optional
+     selectmovie)))
+Tree 1:
+ (ConstraintSet (Constraint (Or (Not (Atom
+     detail)) (Atom vod))))
+[FME] FeatureModelExtractionProblem.clone()
+
+Generation: 2
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [0.4285714328289032 0.75 0.46077773832537566]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (playimm (Optional pause) (Mandatory
+     (vrcinterface (Mandatory startplayer) (Mandatory
+         startmovie) (Or vod changeserver) (Or detail
+         quitplayer))) (Optional stopmovie) (Optional
+     selectmovie)))
+Tree 1:
+ (ConstraintSet (Constraint (Or (Not (Atom
+     detail)) (Atom vod))))
+[FME] FeatureModelExtractionProblem.clone()
+
+Generation: 3
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [0.6666666865348816 0.75 0.6860699418004013]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (playimm (Mandatory (vrcinterface (Mandatory
+     startplayer) (Mandatory startmovie) (Or (selectmovie
+     (Optional detail))))) (Optional pause) (Optional
+     stopmovie) (Optional vod) (Optional (changeserver
+     (Optional quitplayer)))))
+Tree 1:
+ (ConstraintSet (Constraint (Or (Not (Atom
+     detail)) (Atom vod))) (Constraint (Or (Not
+     (Atom pause)) (Atom selectmovie))))
+[FME] FeatureModelExtractionProblem.clone()
+
+Generation: 4
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [0.8888888955116272 0.75 0.8955407584699657]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (playimm (Mandatory (vrcinterface (Mandatory
+     startplayer) (Mandatory startmovie))) (Optional
+     stopmovie) (Optional (vod (Optional detail)
+     (Optional pause))) (Optional (changeserver
+     (Optional quitplayer))) (Or selectmovie)))
+Tree 1:
+ (ConstraintSet (Constraint (Or (Not (Atom
+     pause)) (Atom selectmovie))) (Constraint
+     (Or (Not (Atom stopmovie)) (Atom vod))))
+[FME] FeatureModelExtractionProblem.clone()
+
+Generation: 5
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.75 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (playimm (Mandatory (vrcinterface (Mandatory
+     startplayer) (Mandatory startmovie) (Or (selectmovie
+     (Optional detail))))) (Optional pause) (Optional
+     stopmovie) (Optional vod) (Optional (changeserver
+     (Optional quitplayer)))))
+Tree 1:
+ (ConstraintSet (Constraint (Or (Not (Atom
+     vrcinterface)) (Atom vod))))
+[FME] FeatureModelExtractionProblem.clone()
+
+Generation: 6
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 1.0 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (playimm (Mandatory (startplayer (Mandatory
+     (vod (Optional quitplayer) (Optional detail)))))
+     (Mandatory (vrcinterface (Mandatory startmovie)))
+     (Optional pause) (Optional stopmovie) (Optional
+     changeserver) (Or selectmovie)))
+Tree 1:
+ (ConstraintSet (Constraint (Or (Not (Atom
+     playimm)) (Atom startplayer))))
+
+
+
+ PARETO FRONTS
+
+
+Pareto Front of Subpopulation 0
+------------Variables------------
+Total Population: 1
+Total Non-dominated/Non-repeated: 1
+Evaluated: true
+Fitness: [1.0 1.0 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (playimm (Mandatory (startplayer (Mandatory
+     (vod (Optional quitplayer) (Optional detail)))))
+     (Mandatory (vrcinterface (Mandatory startmovie)))
+     (Optional pause) (Optional stopmovie) (Optional
+     changeserver) (Or selectmovie)))
+Tree 1:
+ (ConstraintSet (Constraint (Or (Not (Atom
+     playimm)) (Atom startplayer))))
+------------Measures------------
+Total Population: 1
+Total Non-dominated/Non-repeated: 1
+[FME] FeatureModelExtractionProblem.clone()
+
+Generation: 0
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [0.35555556416511536 1.0 0.39256497591211575]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (vod (Optional quitplayer) (Mandatory
+     playimm) (Mandatory startplayer) (Optional
+     (vrcinterface (Optional detail))) (Mandatory
+     selectmovie) (Or pause changeserver stopmovie
+     startmovie)))
+Tree 1:
+ ConstraintSet
+[FME] FeatureModelExtractionProblem.clone()
+
+Generation: 1
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [0.35555556416511536 1.0 0.39256497591211575]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (vod (Optional quitplayer) (Mandatory
+     playimm) (Mandatory startplayer) (Optional
+     (vrcinterface (Optional detail))) (Mandatory
+     selectmovie) (Or pause changeserver stopmovie
+     startmovie)))
+Tree 1:
+ ConstraintSet
+[FME] FeatureModelExtractionProblem.clone()
+
+Generation: 2
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [0.380952388048172 1.0 0.4164573497630644]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (vod (Optional quitplayer) (Mandatory
+     playimm) (Mandatory startplayer) (Optional
+     (vrcinterface (Optional detail))) (Mandatory
+     selectmovie) (Or pause changeserver startmovie)
+     (Optional stopmovie)))
+Tree 1:
+ ConstraintSet
+[FME] FeatureModelExtractionProblem.clone()
+
+Generation: 3
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 1.0 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (playimm (Mandatory (startmovie (Mandatory
+     selectmovie) (Optional stopmovie) (Optional
+     quitplayer))) (Mandatory (vrcinterface (Optional
+     pause))) (Mandatory startplayer) (Mandatory
+     vod) (Optional changeserver) (Optional detail)))
+Tree 1:
+ ConstraintSet
+
+
+
+ PARETO FRONTS
+
+
+Pareto Front of Subpopulation 0
+------------Variables------------
+Total Population: 1
+Total Non-dominated/Non-repeated: 1
+Evaluated: true
+Fitness: [1.0 1.0 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (playimm (Mandatory (startmovie (Mandatory
+     selectmovie) (Optional stopmovie) (Optional
+     quitplayer))) (Mandatory (vrcinterface (Optional
+     pause))) (Mandatory startplayer) (Mandatory
+     vod) (Optional changeserver) (Optional detail)))
+Tree 1:
+ ConstraintSet
+------------Measures------------
+Total Population: 1
+Total Non-dominated/Non-repeated: 1
+[FME] FeatureModelExtractionProblem.clone()
+
+Generation: 0
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [0.08695652335882187 0.75 0.13897327319033875]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (startplayer (Optional vod) (Optional
+     stopmovie) (Optional (selectmovie (Optional
+     vrcinterface))) (Optional startmovie) (Or
+     detail pause (changeserver (Optional quitplayer))
+     playimm)))
+Tree 1:
+ (ConstraintSet (Constraint (Or (Not (Atom
+     startplayer)) (Atom startmovie))))
+[FME] FeatureModelExtractionProblem.clone()
+
+Generation: 1
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [0.08695652335882187 0.75 0.13897327319033875]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (startplayer (Optional vod) (Optional
+     startmovie) (Optional (selectmovie (Optional
+     vrcinterface))) (Optional stopmovie) (Or
+     detail pause (changeserver (Optional quitplayer))
+     playimm)))
+Tree 1:
+ (ConstraintSet (Constraint (Or (Not (Atom
+     startplayer)) (Atom startmovie))))
+[FME] FeatureModelExtractionProblem.clone()
+
+Generation: 2
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [0.08695652335882187 0.75 0.138973273190339]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (startplayer (Optional vod) (Optional
+     stopmovie) (Optional (selectmovie (Optional
+     vrcinterface))) (Mandatory startmovie) (Or
+     detail pause (changeserver (Optional quitplayer))
+     playimm)))
+Tree 1:
+ ConstraintSet
+[FME] FeatureModelExtractionProblem.clone()
+
+Generation: 3
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 1.0 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (selectmovie (Mandatory (playimm (Optional
+     detail) (Mandatory startmovie) (Mandatory
+     (vrcinterface (Optional quitplayer) (Mandatory
+         startplayer) (Mandatory vod))))) (Optional
+     changeserver) (Optional stopmovie) (Optional
+     pause)))
+Tree 1:
+ ConstraintSet
+
+
+
+ PARETO FRONTS
+
+
+Pareto Front of Subpopulation 0
+------------Variables------------
+Total Population: 1
+Total Non-dominated/Non-repeated: 1
+Evaluated: true
+Fitness: [1.0 1.0 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (selectmovie (Mandatory (playimm (Optional
+     detail) (Mandatory startmovie) (Mandatory
+     (vrcinterface (Optional quitplayer) (Mandatory
+         startplayer) (Mandatory vod))))) (Optional
+     changeserver) (Optional stopmovie) (Optional
+     pause)))
+Tree 1:
+ ConstraintSet
+------------Measures------------
+Total Population: 1
+Total Non-dominated/Non-repeated: 1
+[FME] FeatureModelExtractionProblem.clone()
+
+Generation: 0
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [0.15238095819950104 0.5 0.19938103566935345]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (vrcinterface (Optional (selectmovie
+     (Optional startplayer) (Optional pause)))
+     (Mandatory detail) (Mandatory startmovie)
+     (Or vod quitplayer) (Or changeserver stopmovie
+     playimm)))
+Tree 1:
+ (ConstraintSet (Constraint (Or (Not (Atom
+     vod)) (Atom vrcinterface))))
+[FME] FeatureModelExtractionProblem.clone()
+
+Generation: 1
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [0.15238095819950104 0.5 0.19938103566935345]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (vrcinterface (Optional (selectmovie
+     (Optional startplayer) (Optional pause)))
+     (Mandatory detail) (Mandatory startmovie)
+     (Or vod quitplayer) (Or changeserver stopmovie
+     playimm)))
+Tree 1:
+ (ConstraintSet (Constraint (Or (Not (Atom
+     vod)) (Atom vrcinterface))))
+[FME] FeatureModelExtractionProblem.clone()
+
+Generation: 2
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.5 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (playimm (Mandatory startplayer) (Mandatory
+     (vrcinterface (Mandatory vod) (Mandatory
+         startmovie) (Optional changeserver) (Alternative
+         (selectmovie (Optional pause))) (Or stopmovie)))
+     (Optional quitplayer) (Optional detail)))
+Tree 1:
+ ConstraintSet
+[FME] FeatureModelExtractionProblem.clone()
+
+Generation: 3
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.75 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (startplayer (Mandatory (vod (Optional
+     stopmovie))) (Mandatory (vrcinterface (Mandatory
+     (startmovie (Mandatory (selectmovie (Optional
+         pause))))) (Optional (changeserver (Optional
+     quitplayer))) (Mandatory (playimm (Optional
+     detail)))))))
+Tree 1:
+ ConstraintSet
+[FME] FeatureModelExtractionProblem.clone()
+
+Generation: 4
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 1.0 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (vrcinterface (Mandatory (startplayer
+     (Mandatory (vod (Optional stopmovie)))))
+     (Mandatory (selectmovie (Optional pause)
+         (Optional quitplayer))) (Optional detail)
+     (Mandatory startmovie) (Optional changeserver)
+     (Mandatory playimm)))
+Tree 1:
+ ConstraintSet
+
+
+
+ PARETO FRONTS
+
+
+Pareto Front of Subpopulation 0
+------------Variables------------
+Total Population: 1
+Total Non-dominated/Non-repeated: 1
+Evaluated: true
+Fitness: [1.0 1.0 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (vrcinterface (Mandatory (startplayer
+     (Mandatory (vod (Optional stopmovie)))))
+     (Mandatory (selectmovie (Optional pause)
+         (Optional quitplayer))) (Optional detail)
+     (Mandatory startmovie) (Optional changeserver)
+     (Mandatory playimm)))
+Tree 1:
+ ConstraintSet
+------------Measures------------
+Total Population: 1
+Total Non-dominated/Non-repeated: 1
+[FME] FeatureModelExtractionProblem.clone()
+
+Generation: 0
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [0.13223139941692352 0.5 0.18163254903482276]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (startplayer (Optional (selectmovie
+     (Optional changeserver) (Optional stopmovie)
+     (Or pause detail (vod (Optional (startmovie
+         (Optional playimm))))) (Alternative vrcinterface
+     quitplayer)))))
+Tree 1:
+ ConstraintSet
+[FME] FeatureModelExtractionProblem.clone()
+
+Generation: 1
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [0.13333334028720856 0.5 0.18284083586486138]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (vod (Optional quitplayer) (Optional
+     selectmovie) (Mandatory startplayer) (Optional
+     detail) (Mandatory vrcinterface) (Or playimm
+     changeserver (stopmovie (Mandatory startmovie))
+     pause)))
+Tree 1:
+ ConstraintSet
+[FME] FeatureModelExtractionProblem.clone()
+
+Generation: 2
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [0.1767955869436264 1.0 0.223424539582127]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (startplayer (Optional (selectmovie
+     (Optional changeserver) (Optional stopmovie)
+     (Or pause detail (vod (Optional (startmovie
+         (Optional playimm))))) (Or vrcinterface quitplayer)))))
+Tree 1:
+ ConstraintSet
+[FME] FeatureModelExtractionProblem.clone()
+
+Generation: 3
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [0.24060150980949402 1.0 0.2835547858876669]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (startplayer (Optional (selectmovie
+     (Optional changeserver) (Optional stopmovie)
+     (Or pause detail (vod (Optional (startmovie
+         (Or playimm))))) (Or vrcinterface quitplayer)))))
+Tree 1:
+ ConstraintSet
+[FME] FeatureModelExtractionProblem.clone()
+
+Generation: 4
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [0.800000011920929 1.0 0.8118751726042499]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (startplayer (Mandatory (vod (Optional
+     quitplayer) (Optional detail) (Mandatory
+     vrcinterface) (Or (playimm (Optional pause)))))
+     (Optional (selectmovie (Optional changeserver)
+         (Optional stopmovie) (Mandatory startmovie)))))
+Tree 1:
+ ConstraintSet
+[FME] FeatureModelExtractionProblem.clone()
+
+Generation: 5
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 1.0 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (startplayer (Mandatory (vod (Optional
+     quitplayer) (Optional detail) (Mandatory
+     vrcinterface) (Or (playimm (Optional pause)))))
+     (Mandatory (selectmovie (Optional changeserver)
+         (Optional stopmovie) (Mandatory startmovie)))))
+Tree 1:
+ ConstraintSet
+
+
+
+ PARETO FRONTS
+
+
+Pareto Front of Subpopulation 0
+------------Variables------------
+Total Population: 2
+Total Non-dominated/Non-repeated: 2
+Evaluated: true
+Fitness: [1.0 1.0 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (startplayer (Mandatory (vod (Optional
+     quitplayer) (Optional detail) (Mandatory
+     vrcinterface) (Or (playimm (Optional pause)))))
+     (Mandatory (selectmovie (Optional changeserver)
+         (Optional stopmovie) (Mandatory startmovie)))))
+Tree 1:
+ ConstraintSet
+Evaluated: true
+Fitness: [1.0 1.0 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (startplayer (Mandatory (vod (Optional
+     quitplayer) (Mandatory (selectmovie (Mandatory
+     startmovie) (Optional changeserver))) (Optional
+     stopmovie) (Optional detail) (Mandatory vrcinterface)))
+     (Mandatory (playimm (Optional pause)))))
+Tree 1:
+ ConstraintSet
+------------Measures------------
+Total Population: 2
+Total Non-dominated/Non-repeated: 2
+[FME] FeatureModelExtractionProblem.clone()
+
+Generation: 0
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [0.25 0.5 0.2928748964374481]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (vod (Optional quitplayer) (Optional
+     stopmovie) (Mandatory selectmovie) (Optional
+     pause) (Mandatory vrcinterface) (Or startplayer
+     startmovie playimm) (Alternative detail changeserver)))
+Tree 1:
+ (ConstraintSet (Constraint (Or (Not (Atom
+     vod)) (Atom startmovie))))
+[FME] FeatureModelExtractionProblem.clone()
+
+Generation: 1
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [0.5 0.5 0.5285832642916323]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (vod (Mandatory (startplayer (Optional
+     (startmovie (Mandatory (playimm (Mandatory
+         vrcinterface))))))) (Optional quitplayer)
+     (Optional (stopmovie (Mandatory detail)))
+     (Mandatory (selectmovie (Optional changeserver)))
+     (Optional pause)))
+Tree 1:
+ ConstraintSet
+[FME] FeatureModelExtractionProblem.clone()
+
+Generation: 2
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [0.25 0.75 0.2923340697781445]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (vod (Optional quitplayer) (Optional
+     stopmovie) (Mandatory selectmovie) (Optional
+     pause) (Mandatory vrcinterface) (Or startplayer
+     startmovie playimm) (Or detail changeserver)))
+Tree 1:
+ (ConstraintSet (Constraint (Or (Not (Atom
+     vod)) (Atom startmovie))))
+[FME] FeatureModelExtractionProblem.clone()
+
+Generation: 3
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [0.25 0.75 0.2923340697781445]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (vod (Optional quitplayer) (Optional
+     stopmovie) (Mandatory selectmovie) (Optional
+     pause) (Mandatory vrcinterface) (Or startplayer
+     startmovie playimm) (Or detail changeserver)))
+Tree 1:
+ (ConstraintSet (Constraint (Or (Not (Atom
+     vod)) (Atom startmovie))))
+[FME] FeatureModelExtractionProblem.clone()
+
+Generation: 4
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [0.25 0.75 0.2923340697781445]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (vod (Optional quitplayer) (Optional
+     stopmovie) (Mandatory selectmovie) (Optional
+     pause) (Mandatory vrcinterface) (Or startplayer
+     startmovie playimm) (Or detail changeserver)))
+Tree 1:
+ (ConstraintSet (Constraint (Or (Not (Atom
+     vod)) (Atom startmovie))))
+[FME] FeatureModelExtractionProblem.clone()
+
+Generation: 5
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 1.0 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (vrcinterface (Mandatory (vod (Optional
+     quitplayer) (Optional stopmovie) (Mandatory
+     (selectmovie (Optional changeserver))) (Optional
+     pause) (Mandatory startplayer) (Optional
+     detail) (Mandatory startmovie))) (Mandatory
+     playimm)))
+Tree 1:
+ ConstraintSet
+
+
+
+ PARETO FRONTS
+
+
+Pareto Front of Subpopulation 0
+------------Variables------------
+Total Population: 1
+Total Non-dominated/Non-repeated: 1
+Evaluated: true
+Fitness: [1.0 1.0 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (vrcinterface (Mandatory (vod (Optional
+     quitplayer) (Optional stopmovie) (Mandatory
+     (selectmovie (Optional changeserver))) (Optional
+     pause) (Mandatory startplayer) (Optional
+     detail) (Mandatory startmovie))) (Mandatory
+     playimm)))
+Tree 1:
+ ConstraintSet
+------------Measures------------
+Total Population: 1
+Total Non-dominated/Non-repeated: 1

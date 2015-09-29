@@ -1,0 +1,92 @@
+
+Generation: 0
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [0.1111111119389534 1.0 0.1619411457853864]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (startplayer (Mandatory playimm) (Optional
+     selectmovie) (Optional changeserver) (Optional
+     pause) (Optional vrcinterface) (Optional
+     (vod (Optional stopmovie))) (Optional detail)
+     (Or quitplayer startmovie)))
+Tree 1:
+ (ConstraintSet (Constraint (Or (Not (Atom
+     startmovie)) (Atom playimm))))
+
+Generation: 1
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [0.1666666716337204 1.0 0.2146736628923852]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (startplayer (Mandatory (startmovie
+     (Optional quitplayer))) (Mandatory playimm)
+     (Optional selectmovie) (Optional changeserver)
+     (Optional pause) (Optional vrcinterface)
+     (Optional (vod (Optional stopmovie))) (Optional
+     detail)))
+Tree 1:
+ (ConstraintSet (Constraint (Or (Not (Atom
+     startmovie)) (Atom startplayer))))
+
+Generation: 2
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [0.25 1.0 0.2928748964374463]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (startplayer (Mandatory (vod (Optional
+     stopmovie))) (Mandatory playimm) (Optional
+     selectmovie) (Optional changeserver) (Optional
+     pause) (Optional vrcinterface) (Mandatory
+     (startmovie (Optional quitplayer))) (Optional
+     detail)))
+Tree 1:
+ (ConstraintSet (Constraint (Or (Not (Atom
+     startmovie)) (Atom startplayer))))
+
+Generation: 3
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 1.0 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (playimm (Mandatory (startplayer (Optional
+     stopmovie) (Mandatory (startmovie (Optional
+     quitplayer))) (Optional changeserver) (Optional
+     pause))) (Mandatory (vrcinterface (Mandatory
+     selectmovie) (Optional detail) (Mandatory
+     vod)))))
+Tree 1:
+ (ConstraintSet (Constraint (Or (Not (Atom
+     startmovie)) (Atom startplayer))))
+
+
+
+ PARETO FRONTS
+
+
+Pareto Front of Subpopulation 0
+Evaluated: true
+Fitness: [1.0 1.0 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (playimm (Mandatory (startplayer (Optional
+     stopmovie) (Mandatory (startmovie (Optional
+     quitplayer))) (Optional changeserver) (Optional
+     pause))) (Mandatory (vrcinterface (Mandatory
+     selectmovie) (Optional detail) (Mandatory
+     vod)))))
+Tree 1:
+ (ConstraintSet (Constraint (Or (Not (Atom
+     startmovie)) (Atom startplayer))))

@@ -1,0 +1,118 @@
+
+Generation: 0
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [0.25 0.5 0.2928748964374481]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (vod (Optional quitplayer) (Optional
+     stopmovie) (Mandatory selectmovie) (Optional
+     pause) (Mandatory vrcinterface) (Or startplayer
+     startmovie playimm) (Alternative detail changeserver)))
+Tree 1:
+ (ConstraintSet (Constraint (Or (Not (Atom
+     vod)) (Atom startmovie))))
+
+Generation: 1
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [0.5 0.5 0.5285832642916323]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (vod (Mandatory (startplayer (Optional
+     (startmovie (Mandatory (playimm (Mandatory
+         vrcinterface))))))) (Optional quitplayer)
+     (Optional (stopmovie (Mandatory detail)))
+     (Mandatory (selectmovie (Optional changeserver)))
+     (Optional pause)))
+Tree 1:
+ ConstraintSet
+
+Generation: 2
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [0.25 0.75 0.2923340697781445]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (vod (Optional quitplayer) (Optional
+     stopmovie) (Mandatory selectmovie) (Optional
+     pause) (Mandatory vrcinterface) (Or startplayer
+     startmovie playimm) (Or detail changeserver)))
+Tree 1:
+ (ConstraintSet (Constraint (Or (Not (Atom
+     vod)) (Atom startmovie))))
+
+Generation: 3
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [0.25 0.75 0.2923340697781445]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (vod (Optional quitplayer) (Optional
+     stopmovie) (Mandatory selectmovie) (Optional
+     pause) (Mandatory vrcinterface) (Or startplayer
+     startmovie playimm) (Or detail changeserver)))
+Tree 1:
+ (ConstraintSet (Constraint (Or (Not (Atom
+     vod)) (Atom startmovie))))
+
+Generation: 4
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [0.25 0.75 0.2923340697781445]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (vod (Optional quitplayer) (Optional
+     stopmovie) (Mandatory selectmovie) (Optional
+     pause) (Mandatory vrcinterface) (Or startplayer
+     startmovie playimm) (Or detail changeserver)))
+Tree 1:
+ (ConstraintSet (Constraint (Or (Not (Atom
+     vod)) (Atom startmovie))))
+
+Generation: 5
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 1.0 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (vrcinterface (Mandatory (vod (Optional
+     quitplayer) (Optional stopmovie) (Mandatory
+     (selectmovie (Optional changeserver))) (Optional
+     pause) (Mandatory startplayer) (Optional
+     detail) (Mandatory startmovie))) (Mandatory
+     playimm)))
+Tree 1:
+ ConstraintSet
+
+
+
+ PARETO FRONTS
+
+
+Pareto Front of Subpopulation 0
+Evaluated: true
+Fitness: [1.0 1.0 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (vrcinterface (Mandatory (vod (Optional
+     quitplayer) (Optional stopmovie) (Mandatory
+     (selectmovie (Optional changeserver))) (Optional
+     pause) (Mandatory startplayer) (Optional
+     detail) (Mandatory startmovie))) (Mandatory
+     playimm)))
+Tree 1:
+ ConstraintSet

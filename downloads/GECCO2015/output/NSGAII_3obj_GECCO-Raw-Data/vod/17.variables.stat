@@ -1,0 +1,7 @@
+1.0 1.0 1.0
+Feature Model: Root(playimm(Mandatory(vrcinterface(Mandatory(startplayer(Optional(detail))))), Mandatory(Optional(changeserver) selectmovie Mandatory(vod)), Optional(stopmovie), Optional(pause), Mandatory(startmovie), Optional(quitplayer)))
+CTCs: ConstraintSet
+Number Of Products: 32
+Number of Contained Products: 32
+Broken Dependencies: 
+

@@ -1,0 +1,209 @@
+parent.0 = simple.params
+
+#-------------------------------------------------------------------------------------
+# #########################################################
+# ####################### PARAMETERS ######################
+# #########################################################
+
+init = at.jku.isse.fm.FeatureModelExtractionInitializer
+
+multi.fitness.num-objectives 	= 3
+multi.fitness.max				= 1
+multi.fitness.min 				= 0
+#multi.fitness.max.0			= 1000
+
+pop.subpop.0.size 	= 100
+generations 		= 250
+breed.elite.0 		= 10
+seed.0 				= time
+
+eval.problem = br.ufpr.gres.fm.FMExtractionProblem_3obj
+eval.problem.data = at.jku.isse.fm.data.ProductSet
+eval =	ec.multiobjective.nsga2.NSGA2Evaluator
+breed =	ec.multiobjective.nsga2.NSGA2Breeder
+
+#-------------------------------------------------------------------------------------
+
+at.jku.isse.fm.mutate.ctcpercentage = 0.5
+at.jku.isse.fm.mutate.treeprob 		= 0.5
+at.jku.isse.fm.mutate.ctcprob 		= 0.5
+
+#-------------------------------------------------------------------------------------
+
+pop.default-subpop 					= 0
+
+pop.subpop.0.species 		= ec.gp.GPSpecies
+pop.subpop.0.species.ind 	= ec.gp.GPIndividual
+
+pop.subpop.0.species.ind.numtrees 	= 2
+pop.subpop.0.species.ind.tree.0 	= ec.gp.GPTree
+pop.subpop.0.species.ind.tree.0.tc 	= tc0
+pop.subpop.0.species.ind.tree.1 	= ec.gp.GPTree
+pop.subpop.0.species.ind.tree.1.tc	= tc1
+
+pop.subpop.0.duplicate-retries 		= 0
+
+pop.subpop.0.species.fitness 				= br.ufpr.gres.fm.FMFitness
+pop.subpop.0.species.fitness.num-objectives = 3
+#pop.subpop.0.species.fitness.maximize 		= false
+
+
+#-------------------------------------------------------------------------------------
+# #########################################################
+# ###################### PIPELINE #########################
+# #########################################################
+
+pop.subpop.0.species.pipe = at.jku.isse.fm.operator.FeatureModelMutationPipeline
+
+pop.subpop.0.species.pipe.source.0 = ec.breed.MultiBreedingPipeline
+pop.subpop.0.species.pipe.source.0.generate-max = false
+pop.subpop.0.species.pipe.source.0.num-sources = 2
+
+pop.subpop.0.species.pipe.source.0.source.0 = at.jku.isse.fm.operator.FeatureModelCrossoverPipeline
+pop.subpop.0.species.pipe.source.0.source.0.prob = 0.7
+pop.subpop.0.species.pipe.source.0.source.1 = ec.breed.ReproductionPipeline
+pop.subpop.0.species.pipe.source.0.source.1.prob = 0.3
+
+
+breed.reproduce.source.0 = ec.select.TournamentSelection
+at.jku.isse.fm.xover.source.0 = ec.select.TournamentSelection
+at.jku.isse.fm.xover.source.1 = same
+select.tournament.size = 6
+
+gp.problem.stack = ec.gp.ADFStack
+gp.adf-stack.context = ec.gp.ADFContext
+
+#-------------------------------------------------------------------------------------
+# #########################################################
+# ####################### STATISTICS ######################
+# #########################################################
+
+#stat = ec.simple.SimpleStatistics
+#stat = ec.simple.SimpleShortStatistics
+#stat = ec.multiobjective.MultiObjectiveStatistics
+stat = br.ufpr.gres.fm.MeasuresStatistics
+stat.do-size = true
+stat.do-time = true
+#stat.file = $ObjectivesStatistics.stat
+
+
+stat.num-children = 1
+
+stat.child.0 = br.ufpr.gres.fm.VariablesStatistics
+#stat.child.0.file = $MeasuresStatistics.stat
+
+#stat.child.1 = br.ufpr.gres.fm.MeasuresStatistics
+#stat.child.1.file = $VariablesStatistics.stat
+
+#stat.child.2 = at.jku.isse.fm.FeatureModelStatistics
+#stat.child.2 = ec.simple.SimpleShortStatistics
+#stat.child.2.file = $FeatureModelStatistics.stat
+
+#-------------------------------------------------------------------------------------
+# #########################################################
+# ################### NODE CONSTRAINTS ####################
+# #########################################################
+
+# We define a single atomic type, "nil", which everyone will use. There are no set types defined.
+gp.type.a.size = 1
+gp.type.a.0.name = nil
+gp.type.s.size = 0
+
+# We have 4 node constraints.
+gp.nc.size = 4
+
+gp.nc.0 = ec.gp.GPNodeConstraints
+gp.nc.0.name = nc0
+gp.nc.0.returns = nil
+gp.nc.0.size = 0
+
+# Root node constraint: one child, types nil.
+gp.nc.1 = ec.gp.GPNodeConstraints
+gp.nc.1.name = Root
+gp.nc.1.returns = nil
+gp.nc.1.size = 1
+gp.nc.1.child.0 = nil
+
+# Mandatory node constraint: one child, types nil.
+gp.nc.2 = ec.gp.GPNodeConstraints
+gp.nc.2.name = Mandatory
+gp.nc.2.returns = nil
+gp.nc.2.size = 1
+gp.nc.2.child.0 = nil
+
+# ConstraintSet node constraint: one child (really has more!), types nil.
+gp.nc.3 = ec.gp.GPNodeConstraints
+gp.nc.3.name = ConstraintSet
+gp.nc.3.returns = nil
+gp.nc.3.size = 1
+gp.nc.3.child.0 = nil
+
+# #########################################################
+# #################### FUNCTION SETS ######################
+# #########################################################
+
+# try one universal node constraint
+gp.node.nc = nc0
+
+# We have two function sets.
+gp.fs.size = 2
+
+# First function set.
+gp.fs.0 = ec.gp.GPFunctionSet
+gp.fs.0.name = f0
+gp.fs.0.size = 6
+
+#gp.fs.0.func.0 = at.jku.isse.fm.node.FeatureNode
+gp.fs.0.func.0 = at.jku.isse.fm.data.Feature
+#gp.fs.0.func.0.nc = Feature
+gp.fs.0.func.1 = at.jku.isse.fm.node.relation.Mandatory
+gp.fs.0.func.1.nc = Mandatory
+gp.fs.0.func.2 = at.jku.isse.fm.node.relation.Optional
+#gp.fs.0.func.2.nc = Optional
+gp.fs.0.func.3 = at.jku.isse.fm.node.relation.Alternative
+#gp.fs.0.func.3.nc = Alternative
+gp.fs.0.func.4 = at.jku.isse.fm.node.relation.Or
+#gp.fs.0.func.4.nc = Or
+gp.fs.0.func.5 = at.jku.isse.fm.node.relation.Root
+gp.fs.0.func.5.nc = Root
+
+# The second function set.
+gp.fs.1 = ec.gp.GPFunctionSet
+gp.fs.1.name = f1
+gp.fs.1.size = 6
+
+gp.fs.1.func.0 = at.jku.isse.fm.ctc.ConstraintSetNode
+gp.fs.1.func.0.nc = ConstraintSet
+gp.fs.1.func.1 = at.jku.isse.fm.ctc.ConstraintNode
+gp.fs.1.func.2 = at.jku.isse.fm.ctc.OrNode
+gp.fs.1.func.3 = at.jku.isse.fm.ctc.NotNode
+gp.fs.1.func.4 = at.jku.isse.fm.ctc.AtomNode
+gp.fs.1.func.5 = at.jku.isse.fm.data.Feature
+
+# #########################################################
+# ################### TREE CONSTRAINTS ####################
+# #########################################################
+
+# We have two tree constraints, one for each tree.
+gp.tc.size = 2
+
+# tc0 is the feature tree tc; f0 is the feature tree fs;
+gp.tc.0 = ec.gp.GPTreeConstraints
+gp.tc.0.name = tc0
+gp.tc.0.fset = f0
+gp.tc.0.returns = nil
+
+# The tree uses an at.jku.isse.fm.FeatureModelBuilder to create itself initially.
+gp.tc.0.init = at.jku.isse.fm.operator.FeatureModelBuilder
+
+# tc1 is the ctc tc; f1 is the ctc fs;
+gp.tc.1 = ec.gp.GPTreeConstraints
+gp.tc.1.name = tc1
+gp.tc.1.fset = f1
+gp.tc.1.returns = nil
+
+# The tree uses an at.jku.isse.fm.CTCBuilder to create itself initially.
+gp.tc.1.init = at.jku.isse.fm.operator.CTCBuilder
+
+# We set initial feature model properties: max 50% of the number of features as CTCs.
+at.jku.isse.fm.builder.ctcpercentage = 0.5

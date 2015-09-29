@@ -1,0 +1,147 @@
+0.8421052694320679 1.0 1.0
+Feature Model: Root(dpl(Or(fill, rect, wipe, color, line)))
+CTCs: ConstraintSet(Constraint(Not(Atom(fill)) Or Atom(rect)), Constraint(Not(Atom(fill)) Or Atom(color)), Constraint(Not(Atom(color)) Or Atom(dpl)))
+Number Of Products: 19
+Number of Contained Products: 16
+Broken Dependencies: 
+
+0.9333333373069763 0.875 1.0
+Feature Model: Root(dpl(Or(rect, fill, line, color, wipe)))
+CTCs: Constraint(Not(Atom(fill)) Or Atom(color)) ConstraintSet Constraint(Not(Atom(color)) Or Atom(rect))
+Number Of Products: 15
+Number of Contained Products: 14
+Broken Dependencies: 
+
+0.9333333373069763 0.875 1.0
+Feature Model: Root(dpl(Or(line, wipe, color, rect, fill)))
+CTCs: Constraint(Not(Atom(fill)) Or Atom(color)) ConstraintSet Constraint(Not(Atom(color)) Or Atom(rect))
+Number Of Products: 15
+Number of Contained Products: 14
+Broken Dependencies: 
+
+0.9333333373069763 0.875 1.0
+Feature Model: Root(dpl(Or(line, color, rect, wipe, fill)))
+CTCs: Constraint(Not(Atom(fill)) Or Atom(color)) ConstraintSet Constraint(Not(Atom(color)) Or Atom(rect))
+Number Of Products: 15
+Number of Contained Products: 14
+Broken Dependencies: 
+
+1.0 0.8125 1.0
+Feature Model: Root(dpl(Or(line, fill, rect, color, wipe)))
+CTCs: ConstraintSet(Constraint(Not(Atom(fill)) Or Atom(color)), Constraint(Not(Atom(color)) Or Atom(rect)), Constraint(Not(Atom(wipe)) Or Atom(rect)))
+Number Of Products: 13
+Number of Contained Products: 13
+Broken Dependencies: 
+
+1.0 0.8125 1.0
+Feature Model: Root(dpl(Or(line, rect, wipe, fill, color)))
+CTCs: ConstraintSet(Constraint(Not(Atom(fill)) Or Atom(color)), Constraint(Not(Atom(color)) Or Atom(rect)), Constraint(Not(Atom(wipe)) Or Atom(rect)))
+Number Of Products: 13
+Number of Contained Products: 13
+Broken Dependencies: 
+
+1.0 0.8125 1.0
+Feature Model: Root(dpl(Or(line, fill, color, rect, wipe)))
+CTCs: ConstraintSet(Constraint(Not(Atom(fill)) Or Atom(color)), Constraint(Not(Atom(color)) Or Atom(rect)), Constraint(Not(Atom(wipe)) Or Atom(rect)))
+Number Of Products: 13
+Number of Contained Products: 13
+Broken Dependencies: 
+
+1.0 0.8125 1.0
+Feature Model: Root(dpl(Or(line, fill, wipe, rect, color)))
+CTCs: ConstraintSet(Constraint(Not(Atom(fill)) Or Atom(color)), Constraint(Not(Atom(color)) Or Atom(rect)), Constraint(Not(Atom(wipe)) Or Atom(rect)))
+Number Of Products: 13
+Number of Contained Products: 13
+Broken Dependencies: 
+
+1.0 0.8125 1.0
+Feature Model: Root(dpl(Or(color, rect, wipe, fill, line)))
+CTCs: ConstraintSet(Constraint(Not(Atom(fill)) Or Atom(color)), Constraint(Not(Atom(color)) Or Atom(rect)), Constraint(Not(Atom(wipe)) Or Atom(rect)))
+Number Of Products: 13
+Number of Contained Products: 13
+Broken Dependencies: 
+
+1.0 0.8125 1.0
+Feature Model: Root(dpl(Or(line, rect, color, wipe, fill)))
+CTCs: ConstraintSet(Constraint(Not(Atom(fill)) Or Atom(color)), Constraint(Not(Atom(color)) Or Atom(rect)), Constraint(Not(Atom(wipe)) Or Atom(rect)))
+Number Of Products: 13
+Number of Contained Products: 13
+Broken Dependencies: 
+
+1.0 0.8125 1.0
+Feature Model: Root(dpl(Or(color, line, rect, fill, wipe)))
+CTCs: ConstraintSet(Constraint(Not(Atom(fill)) Or Atom(color)), Constraint(Not(Atom(color)) Or Atom(rect)), Constraint(Not(Atom(wipe)) Or Atom(rect)))
+Number Of Products: 13
+Number of Contained Products: 13
+Broken Dependencies: 
+
+1.0 0.8125 1.0
+Feature Model: Root(dpl(Or(fill, rect, color, line, wipe)))
+CTCs: ConstraintSet(Constraint(Not(Atom(fill)) Or Atom(color)), Constraint(Not(Atom(color)) Or Atom(rect)), Constraint(Not(Atom(wipe)) Or Atom(rect)))
+Number Of Products: 13
+Number of Contained Products: 13
+Broken Dependencies: 
+
+1.0 0.8125 1.0
+Feature Model: Root(dpl(Or(wipe, line, color, fill, rect)))
+CTCs: ConstraintSet(Constraint(Not(Atom(fill)) Or Atom(color)), Constraint(Not(Atom(color)) Or Atom(rect)), Constraint(Not(Atom(wipe)) Or Atom(rect)))
+Number Of Products: 13
+Number of Contained Products: 13
+Broken Dependencies: 
+
+1.0 0.8125 1.0
+Feature Model: Root(dpl(Or(line, rect, wipe, color, fill)))
+CTCs: ConstraintSet(Constraint(Not(Atom(fill)) Or Atom(color)), Constraint(Not(Atom(color)) Or Atom(rect)), Constraint(Not(Atom(wipe)) Or Atom(rect)))
+Number Of Products: 13
+Number of Contained Products: 13
+Broken Dependencies: 
+
+1.0 0.8125 1.0
+Feature Model: Root(dpl(Or(color, line, rect, wipe, fill)))
+CTCs: ConstraintSet(Constraint(Not(Atom(fill)) Or Atom(color)), Constraint(Not(Atom(color)) Or Atom(rect)), Constraint(Not(Atom(wipe)) Or Atom(rect)))
+Number Of Products: 13
+Number of Contained Products: 13
+Broken Dependencies: 
+
+1.0 0.8125 1.0
+Feature Model: Root(dpl(Or(rect, fill, line, wipe, color)))
+CTCs: ConstraintSet(Constraint(Not(Atom(fill)) Or Atom(color)), Constraint(Not(Atom(color)) Or Atom(rect)), Constraint(Not(Atom(wipe)) Or Atom(rect)))
+Number Of Products: 13
+Number of Contained Products: 13
+Broken Dependencies: 
+
+1.0 0.8125 1.0
+Feature Model: Root(dpl(Or(line, color, rect, fill, wipe)))
+CTCs: ConstraintSet(Constraint(Not(Atom(fill)) Or Atom(color)), Constraint(Not(Atom(color)) Or Atom(rect)), Constraint(Not(Atom(wipe)) Or Atom(rect)))
+Number Of Products: 13
+Number of Contained Products: 13
+Broken Dependencies: 
+
+1.0 0.8125 1.0
+Feature Model: Root(dpl(Or(rect, wipe, line, color, fill)))
+CTCs: ConstraintSet(Constraint(Not(Atom(fill)) Or Atom(color)), Constraint(Not(Atom(color)) Or Atom(rect)), Constraint(Not(Atom(wipe)) Or Atom(rect)))
+Number Of Products: 13
+Number of Contained Products: 13
+Broken Dependencies: 
+
+1.0 0.8125 1.0
+Feature Model: Root(dpl(Or(color, fill, line, rect, wipe)))
+CTCs: ConstraintSet(Constraint(Not(Atom(fill)) Or Atom(color)), Constraint(Not(Atom(color)) Or Atom(rect)), Constraint(Not(Atom(wipe)) Or Atom(rect)))
+Number Of Products: 13
+Number of Contained Products: 13
+Broken Dependencies: 
+
+1.0 0.8125 1.0
+Feature Model: Root(dpl(Or(wipe, rect, line, color, fill)))
+CTCs: ConstraintSet(Constraint(Not(Atom(fill)) Or Atom(color)), Constraint(Not(Atom(color)) Or Atom(rect)), Constraint(Not(Atom(wipe)) Or Atom(rect)))
+Number Of Products: 13
+Number of Contained Products: 13
+Broken Dependencies: 
+
+1.0 0.8125 1.0
+Feature Model: Root(dpl(Or(line, wipe, rect, color, fill)))
+CTCs: ConstraintSet(Constraint(Not(Atom(fill)) Or Atom(color)), Constraint(Not(Atom(color)) Or Atom(rect)), Constraint(Not(Atom(wipe)) Or Atom(rect)))
+Number Of Products: 13
+Number of Contained Products: 13
+Broken Dependencies: 
+

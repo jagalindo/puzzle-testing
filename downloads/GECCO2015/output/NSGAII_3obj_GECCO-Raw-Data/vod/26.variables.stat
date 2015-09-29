@@ -1,0 +1,35 @@
+1.0 1.0 1.0
+Feature Model: Root(vod(Mandatory(startplayer(Or(vrcinterface))), Mandatory(startmovie(Optional(detail))), Mandatory(Optional(stopmovie) playimm Optional(pause)), Mandatory(selectmovie), Optional(changeserver), Optional(quitplayer)))
+CTCs: ConstraintSet(Constraint(Not(Atom(stopmovie)) Or Atom(vrcinterface)))
+Number Of Products: 32
+Number of Contained Products: 32
+Broken Dependencies: 
+
+1.0 1.0 1.0
+Feature Model: Root(startplayer(Mandatory(Mandatory(playimm) startmovie Optional(quitplayer)), Mandatory(vod(Optional(detail), Alternative(selectmovie), Optional(changeserver), Or(vrcinterface), Optional(pause))), Optional(stopmovie)))
+CTCs: ConstraintSet
+Number Of Products: 32
+Number of Contained Products: 32
+Broken Dependencies: 
+
+1.0 1.0 1.0
+Feature Model: Root(vod(Mandatory(startplayer(Or(vrcinterface))), Mandatory(startmovie(Optional(detail))), Mandatory(Optional(stopmovie) playimm Optional(pause)), Optional(selectmovie), Optional(changeserver), Optional(quitplayer)))
+CTCs: ConstraintSet(Constraint(Not(Atom(playimm)) Or Atom(selectmovie)))
+Number Of Products: 32
+Number of Contained Products: 32
+Broken Dependencies: 
+
+1.0 1.0 1.0
+Feature Model: Root(vod(Mandatory(Optional(quitplayer) startplayer Or(vrcinterface)), Mandatory(startmovie(Optional(detail))), Mandatory(Optional(stopmovie) playimm Optional(pause)), Alternative(selectmovie), Optional(changeserver)))
+CTCs: ConstraintSet
+Number Of Products: 32
+Number of Contained Products: 32
+Broken Dependencies: 
+
+1.0 1.0 1.0
+Feature Model: Root(startplayer(Mandatory(vod(Optional(detail), Alternative(selectmovie), Optional(changeserver), Optional(quitplayer))), Mandatory(startmovie(Mandatory(Optional(stopmovie) playimm Optional(pause)))), Alternative(vrcinterface)))
+CTCs: ConstraintSet
+Number Of Products: 32
+Number of Contained Products: 32
+Broken Dependencies: 
+

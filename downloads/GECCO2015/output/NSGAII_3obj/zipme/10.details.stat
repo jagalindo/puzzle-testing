@@ -1,0 +1,4053 @@
+
+Generation: 0
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [0.6666666865348816 0.5 0.9941941801902684]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Optional crc) (Optional gzip)
+     (Or adler32checksum compress) (Alternative
+     extract archivecheck)))
+Tree 1:
+ ConstraintSet
+
+Generation: 1
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.5 0.9999300503637345]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Mandatory compress) (Optional
+     archivecheck) (Optional adler32checksum)
+     (Or (gzip (Optional extract)) crc)))
+Tree 1:
+ (ConstraintSet (Constraint (Or (Not (Atom
+     extract)) (Not (Atom archivecheck)))))
+
+Generation: 2
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 1.0 0.9999533669091694]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Mandatory (compress (Optional
+     adler32checksum) (Optional archivecheck)))
+     (Optional crc) (Optional gzip) (Optional
+     extract)))
+Tree 1:
+ (ConstraintSet (Constraint (Or (Not (Atom
+     compress)) (Atom base))))
+
+Generation: 3
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 1.0 0.9999533669091694]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Mandatory (compress (Optional
+     adler32checksum) (Optional archivecheck)))
+     (Optional crc) (Optional gzip) (Optional
+     extract)))
+Tree 1:
+ ConstraintSet
+
+Generation: 4
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 1.0 0.9999533669091694]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Mandatory (compress (Optional
+     adler32checksum) (Optional archivecheck)))
+     (Optional crc) (Optional gzip) (Optional
+     extract)))
+Tree 1:
+ ConstraintSet
+
+Generation: 5
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 1.0 0.9999533669091694]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Mandatory (compress (Optional
+     adler32checksum) (Optional archivecheck)))
+     (Optional crc) (Optional gzip) (Optional
+     extract)))
+Tree 1:
+ ConstraintSet
+
+Generation: 6
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 1.0 0.9999533669091694]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Mandatory (compress (Optional
+     adler32checksum) (Optional archivecheck)))
+     (Optional crc) (Optional gzip) (Optional
+     extract)))
+Tree 1:
+ ConstraintSet
+
+Generation: 7
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 1.0 0.9999533669091694]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Mandatory (compress (Optional
+     adler32checksum) (Optional archivecheck)))
+     (Optional crc) (Optional gzip) (Optional
+     extract)))
+Tree 1:
+ ConstraintSet
+
+Generation: 8
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 1.0 0.9999533669091694]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Mandatory (compress (Optional
+     adler32checksum) (Optional archivecheck)))
+     (Optional crc) (Optional gzip) (Optional
+     extract)))
+Tree 1:
+ ConstraintSet
+
+Generation: 9
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.75 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Mandatory (compress (Optional
+     adler32checksum) (Optional archivecheck)))
+     (Optional crc) (Optional gzip) (Optional
+     extract)))
+Tree 1:
+ (ConstraintSet (Constraint (Or (Not (Atom
+     gzip)) (Atom crc))))
+
+Generation: 10
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.75 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Mandatory (compress (Optional
+     adler32checksum) (Optional archivecheck)
+     (Optional extract))) (Optional crc) (Optional
+     gzip)))
+Tree 1:
+ (ConstraintSet (Constraint (Or (Not (Atom
+     gzip)) (Atom crc))))
+
+Generation: 11
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 1.0 0.9999533669091694]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Mandatory (compress (Optional
+     adler32checksum) (Optional archivecheck)))
+     (Optional crc) (Optional gzip) (Optional
+     extract)))
+Tree 1:
+ ConstraintSet
+
+Generation: 12
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.75 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Mandatory (compress (Optional
+     adler32checksum) (Optional archivecheck)))
+     (Optional crc) (Optional gzip) (Optional
+     extract)))
+Tree 1:
+ (ConstraintSet (Constraint (Or (Not (Atom
+     gzip)) (Atom crc))))
+
+Generation: 13
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.75 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Mandatory (compress (Optional
+     adler32checksum) (Optional archivecheck)
+     (Optional extract))) (Optional crc) (Optional
+     gzip)))
+Tree 1:
+ (ConstraintSet (Constraint (Or (Not (Atom
+     compress)) (Atom base))) (Constraint (Or
+     (Not (Atom gzip)) (Atom crc))))
+
+Generation: 14
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.75 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Mandatory (compress (Optional
+     adler32checksum) (Optional archivecheck)
+     (Optional extract))) (Optional crc) (Optional
+     gzip)))
+Tree 1:
+ (ConstraintSet (Constraint (Or (Not (Atom
+     gzip)) (Atom crc))))
+
+Generation: 15
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.75 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Mandatory (compress (Optional
+     adler32checksum) (Optional archivecheck)))
+     (Optional (crc (Optional gzip))) (Optional
+     extract)))
+Tree 1:
+ (ConstraintSet (Constraint (Or (Not (Atom
+     gzip)) (Atom crc))))
+
+Generation: 16
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.75 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Mandatory (compress (Optional
+     adler32checksum) (Optional archivecheck)
+     (Optional extract))) (Optional crc) (Optional
+     gzip)))
+Tree 1:
+ (ConstraintSet (Constraint (Or (Not (Atom
+     gzip)) (Atom crc))) (Constraint (Or (Not
+     (Atom crc)) (Atom base))))
+
+Generation: 17
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.75 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Mandatory (compress (Optional
+     adler32checksum) (Optional archivecheck)
+     (Optional crc) (Optional extract))) (Optional
+     gzip)))
+Tree 1:
+ (ConstraintSet (Constraint (Or (Not (Atom
+     gzip)) (Atom base))) (Constraint (Or (Not
+     (Atom gzip)) (Atom crc))))
+
+Generation: 18
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.75 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Mandatory (compress (Optional
+     adler32checksum) (Optional archivecheck)
+     (Optional extract))) (Optional crc) (Optional
+     gzip)))
+Tree 1:
+ (ConstraintSet (Constraint (Or (Not (Atom
+     gzip)) (Atom crc))))
+
+Generation: 19
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 1.0 0.9999533669091694]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Mandatory (compress (Optional
+     adler32checksum) (Optional archivecheck)
+     (Optional extract) (Optional crc))) (Optional
+     gzip)))
+Tree 1:
+ ConstraintSet
+
+Generation: 20
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.75 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Mandatory (compress (Optional
+     adler32checksum) (Optional archivecheck)
+     (Optional extract))) (Optional crc) (Optional
+     gzip)))
+Tree 1:
+ (ConstraintSet (Constraint (Or (Not (Atom
+     gzip)) (Atom crc))))
+
+Generation: 21
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 1.0 0.9999533669091694]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Mandatory (compress (Optional
+     adler32checksum) (Optional archivecheck)
+     (Optional extract))) (Optional crc) (Optional
+     gzip)))
+Tree 1:
+ ConstraintSet
+
+Generation: 22
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 1.0 0.9999533669091694]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Mandatory (compress (Optional
+     adler32checksum))) (Optional crc) (Optional
+     gzip) (Optional archivecheck) (Optional extract)))
+Tree 1:
+ ConstraintSet
+
+Generation: 23
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.75 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Optional crc) (Optional gzip)
+     (Mandatory (compress (Optional adler32checksum)
+         (Optional archivecheck) (Optional extract)))))
+Tree 1:
+ (ConstraintSet (Constraint (Or (Not (Atom
+     gzip)) (Atom crc))))
+
+Generation: 24
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 1.0 0.9999533669091694]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Mandatory (compress (Optional
+     adler32checksum) (Optional archivecheck)
+     (Optional extract))) (Optional crc) (Optional
+     gzip)))
+Tree 1:
+ ConstraintSet
+
+Generation: 25
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.75 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Mandatory (compress (Optional
+     adler32checksum) (Optional extract) (Optional
+     archivecheck))) (Optional (crc (Optional
+     gzip)))))
+Tree 1:
+ ConstraintSet
+
+Generation: 26
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 1.0 0.9999533669091694]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Mandatory (compress (Optional
+     archivecheck) (Optional adler32checksum)
+     (Optional extract))) (Optional crc) (Optional
+     gzip)))
+Tree 1:
+ ConstraintSet
+
+Generation: 27
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.75 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Mandatory (compress (Optional
+     adler32checksum) (Optional archivecheck)
+     (Optional (crc (Optional gzip))) (Optional
+     extract)))))
+Tree 1:
+ (ConstraintSet (Constraint (Or (Not (Atom
+     gzip)) (Atom base))))
+
+Generation: 28
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.75 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Mandatory (compress (Optional
+     adler32checksum) (Optional archivecheck)
+     (Optional extract))) (Optional crc) (Optional
+     gzip)))
+Tree 1:
+ (ConstraintSet (Constraint (Or (Not (Atom
+     crc)) (Atom base))) (Constraint (Or (Not
+     (Atom gzip)) (Atom crc))))
+
+Generation: 29
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 1.0 0.9999533669091694]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Mandatory (compress (Optional
+     adler32checksum) (Optional archivecheck)
+     (Optional extract))) (Optional gzip) (Optional
+     crc)))
+Tree 1:
+ ConstraintSet
+
+Generation: 30
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.75 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Mandatory (compress (Optional
+     archivecheck) (Optional adler32checksum)))
+     (Optional crc) (Optional gzip) (Optional
+     extract)))
+Tree 1:
+ (ConstraintSet (Constraint (Or (Not (Atom
+     gzip)) (Atom crc))))
+
+Generation: 31
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.75 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Mandatory (compress (Optional
+     archivecheck) (Optional adler32checksum)))
+     (Optional crc) (Optional gzip) (Optional
+     extract)))
+Tree 1:
+ (ConstraintSet (Constraint (Or (Not (Atom
+     gzip)) (Atom crc))))
+
+Generation: 32
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 1.0 0.9999533669091694]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Mandatory (compress (Optional
+     adler32checksum) (Optional extract) (Optional
+     archivecheck))) (Optional gzip) (Optional
+     crc)))
+Tree 1:
+ (ConstraintSet (Constraint (Or (Not (Atom
+     gzip)) (Atom base))))
+
+Generation: 33
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.75 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Mandatory (compress (Optional
+     adler32checksum) (Optional archivecheck)
+     (Optional extract))) (Optional (crc (Optional
+     gzip)))))
+Tree 1:
+ ConstraintSet
+
+Generation: 34
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 1.0 0.9999533669091694]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Mandatory (compress (Optional
+     adler32checksum) (Optional archivecheck)
+     (Optional extract))) (Optional crc) (Optional
+     gzip)))
+Tree 1:
+ ConstraintSet
+
+Generation: 35
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.75 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Mandatory (compress (Optional
+     adler32checksum) (Optional archivecheck)
+     (Optional extract))) (Optional (crc (Optional
+     gzip)))))
+Tree 1:
+ (ConstraintSet (Constraint (Or (Not (Atom
+     archivecheck)) (Atom compress))) (Constraint
+     (Or (Not (Atom gzip)) (Atom base))))
+
+Generation: 36
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.75 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (compress (Mandatory (base (Optional
+     adler32checksum) (Optional archivecheck)))
+     (Optional (crc (Optional gzip))) (Optional
+     extract)))
+Tree 1:
+ (ConstraintSet (Constraint (Or (Not (Atom
+     adler32checksum)) (Atom base))))
+
+Generation: 37
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.75 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Mandatory (compress (Optional
+     adler32checksum) (Optional archivecheck)
+     (Optional (crc (Optional gzip))) (Optional
+     extract)))))
+Tree 1:
+ (ConstraintSet (Constraint (Or (Not (Atom
+     gzip)) (Atom crc))))
+
+Generation: 38
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.75 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Optional crc) (Optional gzip)
+     (Mandatory (compress (Optional adler32checksum)
+         (Optional extract))) (Optional archivecheck)))
+Tree 1:
+ (ConstraintSet (Constraint (Or (Not (Atom
+     gzip)) (Atom crc))))
+
+Generation: 39
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 1.0 0.9999533669091694]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Mandatory (compress (Optional
+     adler32checksum) (Optional archivecheck)))
+     (Optional crc) (Optional gzip) (Optional
+     extract)))
+Tree 1:
+ (ConstraintSet (Constraint (Or (Not (Atom
+     base)) (Atom compress))))
+
+Generation: 40
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.75 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Mandatory (compress (Optional
+     adler32checksum) (Optional archivecheck)
+     (Optional extract))) (Optional (crc (Optional
+     gzip)))))
+Tree 1:
+ ConstraintSet
+
+Generation: 41
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.75 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Mandatory (compress (Optional
+     extract) (Optional archivecheck) (Optional
+     adler32checksum))) (Optional (crc (Optional
+     gzip)))))
+Tree 1:
+ (ConstraintSet (Constraint (Or (Not (Atom
+     gzip)) (Atom crc))))
+
+Generation: 42
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.75 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Mandatory (compress (Optional
+     adler32checksum) (Optional archivecheck)
+     (Optional extract))) (Optional (crc (Optional
+     gzip)))))
+Tree 1:
+ (ConstraintSet (Constraint (Or (Not (Atom
+     extract)) (Atom compress))) (Constraint (Or
+     (Not (Atom archivecheck)) (Atom compress))))
+
+Generation: 43
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 1.0 0.9999533669091694]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Alternative (compress (Optional
+     adler32checksum) (Optional archivecheck)
+     (Optional extract))) (Optional crc) (Optional
+     gzip)))
+Tree 1:
+ ConstraintSet
+
+Generation: 44
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 1.0 0.9999533669091694]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Alternative (compress (Optional
+     adler32checksum) (Optional archivecheck)
+     (Optional extract))) (Optional gzip) (Optional
+     crc)))
+Tree 1:
+ ConstraintSet
+
+Generation: 45
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.75 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Mandatory (compress (Optional
+     archivecheck) (Optional adler32checksum)
+     (Optional extract))) (Optional (crc (Optional
+     gzip)))))
+Tree 1:
+ ConstraintSet
+
+Generation: 46
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 1.0 0.9999533669091694]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (compress (Mandatory (base (Optional
+     archivecheck) (Optional extract) (Optional
+     gzip))) (Optional crc) (Optional adler32checksum)))
+Tree 1:
+ (ConstraintSet (Constraint (Or (Not (Atom
+     adler32checksum)) (Atom base))))
+
+Generation: 47
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 1.0 0.9999533669091694]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Mandatory (compress (Optional
+     adler32checksum) (Optional archivecheck)
+     (Optional extract) (Optional gzip))) (Optional
+     crc)))
+Tree 1:
+ ConstraintSet
+
+Generation: 48
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.75 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Mandatory (compress (Optional
+     adler32checksum) (Optional archivecheck)
+     (Optional (crc (Optional gzip))))) (Optional
+     extract)))
+Tree 1:
+ ConstraintSet
+
+Generation: 49
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.75 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (compress (Mandatory (base (Optional
+     archivecheck))) (Optional (crc (Optional
+     gzip))) (Optional adler32checksum) (Optional
+     extract)))
+Tree 1:
+ ConstraintSet
+
+Generation: 50
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 1.0 0.9999533669091694]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Alternative (compress (Optional
+     adler32checksum) (Optional archivecheck)
+     (Optional extract) (Optional gzip))) (Optional
+     crc)))
+Tree 1:
+ ConstraintSet
+
+Generation: 51
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 1.0 0.9999533669091694]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Alternative (compress (Optional
+     adler32checksum) (Optional archivecheck)
+     (Optional extract) (Optional gzip))) (Optional
+     crc)))
+Tree 1:
+ ConstraintSet
+
+Generation: 52
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 1.0 0.9999533669091694]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Alternative (compress (Optional
+     adler32checksum) (Optional archivecheck)
+     (Optional extract) (Optional gzip))) (Optional
+     crc)))
+Tree 1:
+ ConstraintSet
+
+Generation: 53
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.75 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Mandatory (compress (Optional
+     adler32checksum) (Optional archivecheck)
+     (Optional (crc (Optional gzip))) (Optional
+     extract)))))
+Tree 1:
+ ConstraintSet
+
+Generation: 54
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 1.0 0.9999533669091694]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Alternative (compress (Optional
+     adler32checksum) (Optional extract) (Optional
+     archivecheck) (Optional gzip))) (Optional
+     crc)))
+Tree 1:
+ ConstraintSet
+
+Generation: 55
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 1.0 0.9999533669091694]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Mandatory (compress (Optional
+     adler32checksum) (Optional extract) (Optional
+     archivecheck) (Optional gzip))) (Optional
+     crc)))
+Tree 1:
+ ConstraintSet
+
+Generation: 56
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.75 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Alternative (compress (Optional
+     adler32checksum) (Optional archivecheck)
+     (Optional extract))) (Optional (crc (Optional
+     gzip)))))
+Tree 1:
+ ConstraintSet
+
+Generation: 57
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.75 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Mandatory (compress (Optional
+     adler32checksum) (Optional archivecheck)
+     (Optional extract))) (Optional (crc (Optional
+     gzip)))))
+Tree 1:
+ (ConstraintSet (Constraint (Or (Not (Atom
+     gzip)) (Atom crc))))
+
+Generation: 58
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.75 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Mandatory (compress (Optional
+     adler32checksum) (Optional archivecheck)
+     (Optional extract))) (Optional (crc (Optional
+     gzip)))))
+Tree 1:
+ (ConstraintSet (Constraint (Or (Not (Atom
+     gzip)) (Atom crc))))
+
+Generation: 59
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.75 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Mandatory (compress (Optional
+     adler32checksum) (Optional archivecheck)
+     (Optional extract) (Optional gzip))) (Optional
+     crc)))
+Tree 1:
+ (ConstraintSet (Constraint (Or (Not (Atom
+     gzip)) (Atom crc))))
+
+Generation: 60
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.75 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Mandatory (compress (Optional
+     adler32checksum) (Optional archivecheck)
+     (Optional extract) (Optional gzip))) (Optional
+     crc)))
+Tree 1:
+ (ConstraintSet (Constraint (Or (Not (Atom
+     gzip)) (Atom crc))))
+
+Generation: 61
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.75 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Mandatory (compress (Optional
+     adler32checksum) (Optional archivecheck)
+     (Optional extract))) (Optional (crc (Optional
+     gzip)))))
+Tree 1:
+ ConstraintSet
+
+Generation: 62
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 1.0 0.9999533669091694]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Mandatory (compress (Optional
+     archivecheck) (Optional adler32checksum)
+     (Optional extract) (Optional gzip))) (Optional
+     crc)))
+Tree 1:
+ ConstraintSet
+
+Generation: 63
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.75 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (compress (Mandatory (base (Optional
+     adler32checksum) (Optional archivecheck)))
+     (Optional (crc (Optional gzip))) (Optional
+     extract)))
+Tree 1:
+ ConstraintSet
+
+Generation: 64
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.75 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Mandatory (compress (Optional
+     extract) (Optional adler32checksum) (Optional
+     archivecheck) (Optional (crc (Optional gzip)))))))
+Tree 1:
+ ConstraintSet
+
+Generation: 65
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 1.0 0.9999533669091694]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Mandatory (compress (Optional
+     adler32checksum) (Optional archivecheck)
+     (Optional extract) (Optional gzip))) (Optional
+     crc)))
+Tree 1:
+ ConstraintSet
+
+Generation: 66
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.75 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Mandatory (compress (Optional
+     adler32checksum) (Optional archivecheck)
+     (Optional extract))) (Optional (crc (Optional
+     gzip)))))
+Tree 1:
+ ConstraintSet
+
+Generation: 67
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 1.0 0.9999533669091694]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Mandatory (compress (Optional
+     adler32checksum) (Optional archivecheck)
+     (Optional extract) (Optional gzip))) (Optional
+     crc)))
+Tree 1:
+ ConstraintSet
+
+Generation: 68
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.75 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Optional extract) (Mandatory
+     (compress (Optional adler32checksum) (Optional
+         archivecheck))) (Optional (crc (Optional
+     gzip)))))
+Tree 1:
+ ConstraintSet
+
+Generation: 69
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.75 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Mandatory (compress (Optional
+     archivecheck) (Optional extract) (Optional
+     adler32checksum))) (Optional (crc (Optional
+     gzip)))))
+Tree 1:
+ ConstraintSet
+
+Generation: 70
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 1.0 0.9999533669091694]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Mandatory (compress (Optional
+     archivecheck) (Optional extract) (Optional
+     gzip) (Optional adler32checksum) (Optional
+     crc)))))
+Tree 1:
+ ConstraintSet
+
+Generation: 71
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 1.0 0.9999533669091694]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Or (compress (Optional archivecheck)
+     (Optional adler32checksum) (Optional extract)))
+     (Optional crc) (Optional gzip)))
+Tree 1:
+ (ConstraintSet (Constraint (Or (Not (Atom
+     crc)) (Atom base))))
+
+Generation: 72
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.75 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (compress (Mandatory (base (Optional
+     archivecheck) (Optional adler32checksum)))
+     (Optional (crc (Optional gzip))) (Optional
+     extract)))
+Tree 1:
+ ConstraintSet
+
+Generation: 73
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 1.0 0.9999533669091694]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Mandatory (compress (Optional
+     adler32checksum) (Optional archivecheck)
+     (Optional extract) (Optional gzip))) (Optional
+     crc)))
+Tree 1:
+ ConstraintSet
+
+Generation: 74
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.75 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Mandatory (compress (Optional
+     adler32checksum) (Optional archivecheck)
+     (Optional (crc (Optional gzip))) (Optional
+     extract)))))
+Tree 1:
+ ConstraintSet
+
+Generation: 75
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [0.9696969985961914 1.0 0.9999547800331339]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Optional (compress (Optional
+     archivecheck) (Optional extract) (Optional
+     gzip) (Optional adler32checksum) (Optional
+     crc)))))
+Tree 1:
+ ConstraintSet
+
+Generation: 76
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 1.0 0.9999533669091694]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Mandatory (compress (Optional
+     adler32checksum) (Optional archivecheck)
+     (Optional extract) (Optional gzip))) (Optional
+     crc)))
+Tree 1:
+ ConstraintSet
+
+Generation: 77
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 1.0 0.9999533669091694]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Mandatory (compress (Optional
+     extract) (Optional archivecheck) (Optional
+     gzip) (Optional adler32checksum) (Optional
+     crc)))))
+Tree 1:
+ ConstraintSet
+
+Generation: 78
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.75 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Mandatory (compress (Optional
+     extract) (Optional adler32checksum) (Optional
+     archivecheck) (Optional (crc (Optional gzip)))))))
+Tree 1:
+ ConstraintSet
+
+Generation: 79
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 1.0 0.9999533669091694]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Mandatory (compress (Optional
+     extract) (Optional archivecheck) (Optional
+     gzip) (Optional adler32checksum) (Optional
+     crc)))))
+Tree 1:
+ ConstraintSet
+
+Generation: 80
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 1.0 0.9999533669091694]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Mandatory (compress (Optional
+     extract) (Optional archivecheck) (Optional
+     gzip) (Optional adler32checksum))) (Optional
+     crc)))
+Tree 1:
+ ConstraintSet
+
+Generation: 81
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.75 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Mandatory (compress (Optional
+     adler32checksum) (Optional archivecheck)
+     (Optional (crc (Optional gzip))) (Optional
+     extract)))))
+Tree 1:
+ ConstraintSet
+
+Generation: 82
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.75 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Mandatory (compress (Optional
+     adler32checksum) (Optional archivecheck)
+     (Optional extract) (Optional (crc (Optional
+     gzip)))))))
+Tree 1:
+ ConstraintSet
+
+Generation: 83
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 1.0 0.9999533669091694]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Mandatory (compress (Optional
+     extract) (Optional adler32checksum) (Optional
+     crc) (Optional archivecheck) (Optional gzip)))))
+Tree 1:
+ (ConstraintSet (Constraint (Or (Not (Atom
+     archivecheck)) (Atom compress))))
+
+Generation: 84
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.75 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Mandatory (compress (Optional
+     adler32checksum) (Optional extract) (Optional
+     archivecheck))) (Optional (crc (Optional
+     gzip)))))
+Tree 1:
+ (ConstraintSet (Constraint (Or (Not (Atom
+     extract)) (Atom base))))
+
+Generation: 85
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [0.9696969985961914 1.0 0.9999547800331339]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Optional (compress (Optional
+     adler32checksum) (Optional extract) (Optional
+     archivecheck) (Optional gzip) (Optional crc)))))
+Tree 1:
+ ConstraintSet
+
+Generation: 86
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.75 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Alternative (compress (Optional
+     adler32checksum) (Optional archivecheck)
+     (Optional extract) (Optional (crc (Optional
+     gzip)))))))
+Tree 1:
+ ConstraintSet
+
+Generation: 87
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.75 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Mandatory (compress (Optional
+     adler32checksum) (Optional archivecheck)
+     (Optional extract) (Optional (crc (Optional
+     gzip)))))))
+Tree 1:
+ ConstraintSet
+
+Generation: 88
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.75 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Mandatory (compress (Optional
+     adler32checksum) (Optional extract) (Optional
+     archivecheck) (Optional (crc (Optional gzip)))))))
+Tree 1:
+ ConstraintSet
+
+Generation: 89
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.75 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Mandatory (compress (Optional
+     adler32checksum) (Optional extract) (Optional
+     (crc (Optional gzip))))) (Optional archivecheck)))
+Tree 1:
+ ConstraintSet
+
+Generation: 90
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 1.0 0.9999533669091694]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Mandatory (compress (Optional
+     adler32checksum) (Optional archivecheck)
+     (Optional extract) (Optional gzip) (Optional
+     crc)))))
+Tree 1:
+ ConstraintSet
+
+Generation: 91
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [0.9696969985961914 1.0 0.9999547800331339]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Optional (compress (Optional
+     archivecheck) (Optional extract) (Optional
+     adler32checksum) (Optional gzip) (Optional
+     crc)))))
+Tree 1:
+ ConstraintSet
+
+Generation: 92
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.75 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Mandatory (compress (Optional
+     adler32checksum) (Optional (crc (Optional
+     gzip))) (Optional extract) (Optional archivecheck)))))
+Tree 1:
+ ConstraintSet
+
+Generation: 93
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.75 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Mandatory (compress (Optional
+     adler32checksum) (Optional archivecheck)
+     (Optional (crc (Optional gzip))))) (Optional
+     extract)))
+Tree 1:
+ ConstraintSet
+
+Generation: 94
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.75 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Mandatory (compress (Optional
+     (crc (Optional gzip))) (Optional extract)
+     (Optional archivecheck))) (Optional adler32checksum)))
+Tree 1:
+ ConstraintSet
+
+Generation: 95
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.75 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Mandatory (compress (Optional
+     adler32checksum) (Optional extract) (Optional
+     (crc (Optional gzip))) (Optional archivecheck)))))
+Tree 1:
+ ConstraintSet
+
+Generation: 96
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.75 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Mandatory (compress (Optional
+     adler32checksum) (Optional extract) (Optional
+     (crc (Optional gzip))) (Optional archivecheck)))))
+Tree 1:
+ ConstraintSet
+
+Generation: 97
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.75 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Mandatory (compress (Optional
+     adler32checksum) (Optional archivecheck)
+     (Optional extract) (Optional (crc (Optional
+     gzip)))))))
+Tree 1:
+ ConstraintSet
+
+Generation: 98
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [0.9696969985961914 1.0 0.9999547800331339]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Optional (compress (Optional
+     archivecheck) (Optional extract) (Optional
+     crc) (Optional adler32checksum) (Optional
+     gzip)))))
+Tree 1:
+ ConstraintSet
+
+Generation: 99
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.75 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Mandatory (compress (Optional
+     extract) (Optional adler32checksum) (Optional
+     archivecheck) (Optional (crc (Optional gzip)))))))
+Tree 1:
+ ConstraintSet
+
+Generation: 100
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [0.9696969985961914 1.0 0.9999547800331339]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Optional (compress (Optional
+     archivecheck) (Optional extract) (Optional
+     crc) (Optional adler32checksum) (Optional
+     gzip)))))
+Tree 1:
+ ConstraintSet
+
+Generation: 101
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [0.9696969985961914 1.0 0.9999547800331339]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Optional (compress (Optional
+     archivecheck) (Optional extract) (Optional
+     crc) (Optional adler32checksum) (Optional
+     gzip)))))
+Tree 1:
+ ConstraintSet
+
+Generation: 102
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.75 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Mandatory (compress (Optional
+     (crc (Optional gzip))) (Optional adler32checksum)
+     (Optional archivecheck) (Optional extract)))))
+Tree 1:
+ ConstraintSet
+
+Generation: 103
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.75 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Mandatory (compress (Optional
+     (crc (Optional gzip))) (Optional archivecheck)
+     (Optional adler32checksum))) (Optional extract)))
+Tree 1:
+ ConstraintSet
+
+Generation: 104
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [0.9696969985961914 1.0 0.9999547800331339]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Optional (compress (Optional
+     crc) (Optional extract) (Optional adler32checksum)
+     (Optional archivecheck) (Optional gzip)))))
+Tree 1:
+ ConstraintSet
+
+Generation: 105
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 1.0 0.9999533669091694]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Mandatory (compress (Optional
+     adler32checksum) (Optional extract) (Optional
+     crc) (Optional archivecheck) (Optional gzip)))))
+Tree 1:
+ ConstraintSet
+
+Generation: 106
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 1.0 0.9999533669091694]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Mandatory (compress (Optional
+     archivecheck) (Optional extract) (Optional
+     crc) (Optional adler32checksum) (Optional
+     gzip)))))
+Tree 1:
+ ConstraintSet
+
+Generation: 107
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 1.0 0.9999533669091694]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Mandatory (compress (Optional
+     crc) (Optional archivecheck) (Optional extract)
+     (Optional gzip))) (Optional adler32checksum)))
+Tree 1:
+ ConstraintSet
+
+Generation: 108
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [0.9696969985961914 1.0 0.9999547800331339]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Optional (compress (Optional
+     archivecheck) (Optional crc) (Optional adler32checksum)
+     (Optional gzip) (Optional extract)))))
+Tree 1:
+ (ConstraintSet (Constraint (Or (Not (Atom
+     adler32checksum)) (Atom base))))
+
+Generation: 109
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [0.9696969985961914 1.0 0.9999547800331339]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Optional (compress (Optional
+     archivecheck) (Optional crc) (Optional adler32checksum)
+     (Optional gzip) (Optional extract)))))
+Tree 1:
+ ConstraintSet
+
+Generation: 110
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.75 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Mandatory (compress (Optional
+     adler32checksum) (Optional extract) (Optional
+     (crc (Optional gzip))) (Optional archivecheck)))))
+Tree 1:
+ ConstraintSet
+
+Generation: 111
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.75 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Mandatory (compress (Optional
+     (crc (Optional gzip))) (Optional archivecheck)
+     (Optional extract) (Optional adler32checksum)))))
+Tree 1:
+ ConstraintSet
+
+Generation: 112
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [0.9696969985961914 1.0 0.9999547800331339]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Optional (compress (Optional
+     archivecheck) (Optional extract) (Optional
+     crc) (Optional adler32checksum) (Optional
+     gzip)))))
+Tree 1:
+ (ConstraintSet (Constraint (Or (Not (Atom
+     gzip)) (Atom compress))))
+
+Generation: 113
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.75 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Mandatory (compress (Optional
+     adler32checksum) (Optional extract) (Optional
+     (crc (Optional gzip))) (Optional archivecheck)))))
+Tree 1:
+ ConstraintSet
+
+Generation: 114
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [0.9696969985961914 1.0 0.9999547800331339]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Optional (compress (Optional
+     archivecheck) (Optional extract) (Optional
+     adler32checksum) (Optional crc) (Optional
+     gzip)))))
+Tree 1:
+ ConstraintSet
+
+Generation: 115
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.75 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Mandatory (compress (Optional
+     adler32checksum) (Optional archivecheck)
+     (Optional (crc (Optional gzip))) (Optional
+     extract)))))
+Tree 1:
+ ConstraintSet
+
+Generation: 116
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.75 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Mandatory (compress (Optional
+     adler32checksum) (Optional archivecheck)
+     (Optional (crc (Optional gzip))) (Optional
+     extract)))))
+Tree 1:
+ ConstraintSet
+
+Generation: 117
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.75 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Mandatory (compress (Optional
+     archivecheck) (Optional adler32checksum)
+     (Optional (crc (Optional gzip))) (Optional
+     extract)))))
+Tree 1:
+ (ConstraintSet (Constraint (Or (Not (Atom
+     archivecheck)) (Atom compress))))
+
+Generation: 118
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [0.9696969985961914 1.0 0.9999547800331339]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Optional (compress (Optional
+     archivecheck) (Optional crc) (Optional adler32checksum)
+     (Optional gzip) (Optional extract)))))
+Tree 1:
+ ConstraintSet
+
+Generation: 119
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [0.9696969985961914 1.0 0.9999547800331339]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Optional (compress (Optional
+     archivecheck) (Optional extract) (Optional
+     adler32checksum) (Optional crc) (Optional
+     gzip)))))
+Tree 1:
+ ConstraintSet
+
+Generation: 120
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [0.9696969985961914 1.0 0.9999547800331339]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Optional (compress (Optional
+     archivecheck) (Optional extract) (Optional
+     adler32checksum) (Optional crc) (Optional
+     gzip)))))
+Tree 1:
+ ConstraintSet
+
+Generation: 121
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.75 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Mandatory (compress (Optional
+     adler32checksum) (Optional (crc (Optional
+     gzip))) (Optional extract) (Optional archivecheck)))))
+Tree 1:
+ ConstraintSet
+
+Generation: 122
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [0.9696969985961914 1.0 0.9999547800331339]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Optional (compress (Optional
+     archivecheck) (Optional extract) (Optional
+     adler32checksum) (Optional crc) (Optional
+     gzip)))))
+Tree 1:
+ ConstraintSet
+
+Generation: 123
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.75 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Mandatory (compress (Optional
+     adler32checksum) (Optional (crc (Optional
+     gzip))) (Optional extract) (Optional archivecheck)))))
+Tree 1:
+ ConstraintSet
+
+Generation: 124
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [0.9696969985961914 1.0 0.9999547800331339]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Optional (compress (Optional
+     archivecheck) (Optional extract) (Optional
+     adler32checksum) (Optional crc) (Optional
+     gzip)))))
+Tree 1:
+ ConstraintSet
+
+Generation: 125
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [0.9696969985961914 1.0 0.9999547800331339]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Optional (compress (Optional
+     extract) (Optional crc) (Optional adler32checksum)
+     (Optional archivecheck) (Optional gzip)))))
+Tree 1:
+ ConstraintSet
+
+Generation: 126
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.75 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Mandatory (compress (Optional
+     archivecheck) (Optional adler32checksum)
+     (Optional (crc (Optional gzip))) (Optional
+     extract)))))
+Tree 1:
+ ConstraintSet
+
+Generation: 127
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [0.9696969985961914 1.0 0.9999547800331339]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Optional (compress (Optional
+     archivecheck) (Optional extract) (Optional
+     adler32checksum) (Optional crc) (Optional
+     gzip)))))
+Tree 1:
+ ConstraintSet
+
+Generation: 128
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.75 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Mandatory (compress (Optional
+     archivecheck) (Optional adler32checksum)
+     (Optional (crc (Optional gzip))) (Optional
+     extract)))))
+Tree 1:
+ ConstraintSet
+
+Generation: 129
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.75 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Mandatory (compress (Optional
+     archivecheck) (Optional adler32checksum)
+     (Optional (crc (Optional gzip))))) (Optional
+     extract)))
+Tree 1:
+ (ConstraintSet (Constraint (Or (Not (Atom
+     extract)) (Atom compress))))
+
+Generation: 130
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.75 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Mandatory (compress (Optional
+     archivecheck) (Optional adler32checksum)
+     (Optional (crc (Optional gzip))) (Optional
+     extract)))))
+Tree 1:
+ ConstraintSet
+
+Generation: 131
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 1.0 0.9999533669091694]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Mandatory (compress (Optional
+     archivecheck) (Optional extract) (Optional
+     adler32checksum) (Optional crc))) (Optional
+     gzip)))
+Tree 1:
+ ConstraintSet
+
+Generation: 132
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [0.9696969985961914 1.0 0.9999547800331339]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Optional (compress (Optional
+     adler32checksum) (Optional archivecheck)
+     (Optional extract) (Optional crc) (Optional
+     gzip)))))
+Tree 1:
+ ConstraintSet
+
+Generation: 133
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 1.0 0.9999533669091694]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Mandatory (compress (Optional
+     adler32checksum) (Optional extract) (Optional
+     archivecheck) (Optional crc) (Optional gzip)))))
+Tree 1:
+ ConstraintSet
+
+Generation: 134
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.75 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Mandatory (compress (Optional
+     adler32checksum) (Optional (crc (Optional
+     gzip))) (Optional extract) (Optional archivecheck)))))
+Tree 1:
+ (ConstraintSet (Constraint (Or (Not (Atom
+     extract)) (Atom compress))))
+
+Generation: 135
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.75 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Optional (compress (Optional
+     adler32checksum) (Optional archivecheck)
+     (Optional (crc (Optional gzip))) (Optional
+     extract)))))
+Tree 1:
+ (ConstraintSet (Constraint (Or (Not (Atom
+     base)) (Atom compress))))
+
+Generation: 136
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.75 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Mandatory (compress (Optional
+     adler32checksum) (Optional archivecheck)
+     (Optional extract) (Optional (crc (Optional
+     gzip)))))))
+Tree 1:
+ ConstraintSet
+
+Generation: 137
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.75 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Mandatory (compress (Optional
+     archivecheck) (Optional extract) (Optional
+     adler32checksum) (Optional (crc (Optional
+     gzip)))))))
+Tree 1:
+ ConstraintSet
+
+Generation: 138
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [0.9696969985961914 1.0 0.9999547800331339]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Optional (compress (Optional
+     adler32checksum) (Optional extract) (Optional
+     archivecheck) (Optional crc) (Optional gzip)))))
+Tree 1:
+ ConstraintSet
+
+Generation: 139
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [0.9696969985961914 1.0 0.9999547800331339]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Optional (compress (Optional
+     adler32checksum) (Optional extract) (Optional
+     archivecheck) (Optional crc) (Optional gzip)))))
+Tree 1:
+ ConstraintSet
+
+Generation: 140
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.75 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Mandatory (compress (Optional
+     adler32checksum) (Optional extract) (Optional
+     archivecheck) (Optional (crc (Optional gzip)))))))
+Tree 1:
+ ConstraintSet
+
+Generation: 141
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.75 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Mandatory (compress (Optional
+     archivecheck) (Optional (crc (Optional gzip)))
+     (Optional adler32checksum) (Optional extract)))))
+Tree 1:
+ ConstraintSet
+
+Generation: 142
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.75 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (compress (Mandatory (base (Optional
+     adler32checksum) (Optional archivecheck)
+     (Optional extract) (Optional (crc (Optional
+     gzip)))))))
+Tree 1:
+ ConstraintSet
+
+Generation: 143
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [0.9696969985961914 1.0 0.9999547800331339]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Optional (compress (Optional
+     adler32checksum) (Optional extract) (Optional
+     archivecheck) (Optional crc) (Optional gzip)))))
+Tree 1:
+ ConstraintSet
+
+Generation: 144
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.75 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Mandatory (compress (Optional
+     adler32checksum) (Optional extract) (Optional
+     archivecheck) (Optional (crc (Optional gzip)))))))
+Tree 1:
+ ConstraintSet
+
+Generation: 145
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.75 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Mandatory (compress (Optional
+     archivecheck) (Optional (crc (Optional gzip)))
+     (Optional adler32checksum) (Optional extract)))))
+Tree 1:
+ ConstraintSet
+
+Generation: 146
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.75 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (compress (Mandatory (base (Optional
+     adler32checksum) (Optional (crc (Optional
+     gzip))))) (Optional archivecheck) (Optional
+     extract)))
+Tree 1:
+ ConstraintSet
+
+Generation: 147
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.75 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (compress (Alternative (base (Optional
+     adler32checksum) (Optional (crc (Optional
+     gzip))))) (Optional archivecheck) (Optional
+     extract)))
+Tree 1:
+ ConstraintSet
+
+Generation: 148
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [0.9696969985961914 1.0 0.9999547800331339]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Optional (compress (Optional
+     adler32checksum) (Optional extract) (Optional
+     archivecheck) (Optional crc) (Optional gzip)))))
+Tree 1:
+ (ConstraintSet (Constraint (Or (Not (Atom
+     extract)) (Atom compress))))
+
+Generation: 149
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [0.9696969985961914 1.0 0.9999547800331339]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Optional (compress (Optional
+     adler32checksum) (Optional extract) (Optional
+     archivecheck) (Optional crc) (Optional gzip)))))
+Tree 1:
+ ConstraintSet
+
+Generation: 150
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.75 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Mandatory (compress (Optional
+     adler32checksum) (Optional extract) (Optional
+     archivecheck) (Optional (crc (Optional gzip)))))))
+Tree 1:
+ (ConstraintSet (Constraint (Or (Not (Atom
+     adler32checksum)) (Atom base))))
+
+Generation: 151
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [0.9696969985961914 1.0 0.9999547800331339]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Optional (compress (Optional
+     adler32checksum) (Optional extract) (Optional
+     archivecheck) (Optional crc) (Optional gzip)))))
+Tree 1:
+ ConstraintSet
+
+Generation: 152
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [0.9696969985961914 1.0 0.9999547800331339]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Optional (compress (Optional
+     adler32checksum) (Optional extract) (Optional
+     archivecheck) (Optional crc) (Optional gzip)))))
+Tree 1:
+ ConstraintSet
+
+Generation: 153
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [0.9696969985961914 1.0 0.9999547800331339]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Optional (compress (Optional
+     adler32checksum) (Optional extract) (Optional
+     archivecheck) (Optional crc) (Optional gzip)))))
+Tree 1:
+ ConstraintSet
+
+Generation: 154
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.75 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (compress (Mandatory (base (Optional
+     adler32checksum) (Optional (crc (Optional
+     gzip))))) (Optional archivecheck) (Optional
+     extract)))
+Tree 1:
+ (ConstraintSet (Constraint (Or (Not (Atom
+     archivecheck)) (Atom compress))))
+
+Generation: 155
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.75 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Mandatory (compress (Optional
+     adler32checksum) (Optional (crc (Optional
+     gzip))) (Optional archivecheck))) (Optional
+     extract)))
+Tree 1:
+ (ConstraintSet (Constraint (Or (Not (Atom
+     extract)) (Atom compress))))
+
+Generation: 156
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [0.9696969985961914 1.0 0.9999547800331339]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Optional (compress (Optional
+     extract) (Optional archivecheck) (Optional
+     adler32checksum) (Optional crc) (Optional
+     gzip)))))
+Tree 1:
+ ConstraintSet
+
+Generation: 157
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.75 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Mandatory (compress (Optional
+     adler32checksum) (Optional (crc (Optional
+     gzip))) (Optional extract) (Optional archivecheck)))))
+Tree 1:
+ ConstraintSet
+
+Generation: 158
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.75 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Mandatory (compress (Optional
+     adler32checksum) (Optional (crc (Optional
+     gzip))) (Optional extract) (Optional archivecheck)))))
+Tree 1:
+ (ConstraintSet (Constraint (Or (Not (Atom
+     gzip)) (Atom crc))))
+
+Generation: 159
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.75 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Mandatory (compress (Optional
+     adler32checksum) (Optional (crc (Optional
+     gzip))) (Optional archivecheck))) (Optional
+     extract)))
+Tree 1:
+ ConstraintSet
+
+Generation: 160
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.75 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Mandatory (compress (Optional
+     adler32checksum) (Optional archivecheck)
+     (Optional (crc (Optional gzip))))) (Optional
+     extract)))
+Tree 1:
+ (ConstraintSet (Constraint (Or (Not (Atom
+     extract)) (Atom compress))))
+
+Generation: 161
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.75 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Optional archivecheck) (Mandatory
+     (compress (Optional extract) (Optional adler32checksum)
+         (Optional (crc (Optional gzip)))))))
+Tree 1:
+ ConstraintSet
+
+Generation: 162
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [0.9696969985961914 1.0 0.9999547800331339]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Optional (compress (Optional
+     extract) (Optional archivecheck) (Optional
+     adler32checksum) (Optional crc) (Optional
+     gzip)))))
+Tree 1:
+ ConstraintSet
+
+Generation: 163
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.75 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Mandatory (compress (Optional
+     adler32checksum) (Optional (crc (Optional
+     gzip))) (Optional archivecheck))) (Optional
+     extract)))
+Tree 1:
+ ConstraintSet
+
+Generation: 164
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [0.9696969985961914 1.0 0.9999547800331339]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Optional (compress (Optional
+     adler32checksum) (Optional archivecheck)
+     (Optional extract) (Optional crc) (Optional
+     gzip)))))
+Tree 1:
+ (ConstraintSet (Constraint (Or (Not (Atom
+     extract)) (Atom compress))))
+
+Generation: 165
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [0.9696969985961914 1.0 0.9999547800331339]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Optional (compress (Optional
+     adler32checksum) (Optional crc) (Optional
+     extract) (Optional archivecheck) (Optional
+     gzip)))))
+Tree 1:
+ ConstraintSet
+
+Generation: 166
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [0.9696969985961914 1.0 0.9999547800331339]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Optional (compress (Optional
+     adler32checksum) (Optional crc) (Optional
+     extract) (Optional archivecheck) (Optional
+     gzip)))))
+Tree 1:
+ ConstraintSet
+
+Generation: 167
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [0.9696969985961914 1.0 0.9999547800331339]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Optional (compress (Optional
+     adler32checksum) (Optional crc) (Optional
+     extract) (Optional archivecheck) (Optional
+     gzip)))))
+Tree 1:
+ ConstraintSet
+
+Generation: 168
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [0.9696969985961914 1.0 0.9999547800331339]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Optional (compress (Optional
+     adler32checksum) (Optional extract) (Optional
+     archivecheck) (Optional crc) (Optional gzip)))))
+Tree 1:
+ ConstraintSet
+
+Generation: 169
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [0.9696969985961914 1.0 0.9999547800331339]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Optional (compress (Optional
+     adler32checksum) (Optional crc) (Optional
+     archivecheck) (Optional extract) (Optional
+     gzip)))))
+Tree 1:
+ ConstraintSet
+
+Generation: 170
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [0.9696969985961914 1.0 0.9999547800331339]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Optional (compress (Optional
+     adler32checksum) (Optional crc) (Optional
+     archivecheck) (Optional extract) (Optional
+     gzip)))))
+Tree 1:
+ ConstraintSet
+
+Generation: 171
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [0.9696969985961914 1.0 0.9999547800331339]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Optional (compress (Optional
+     adler32checksum) (Optional extract) (Optional
+     archivecheck) (Optional crc) (Optional gzip)))))
+Tree 1:
+ ConstraintSet
+
+Generation: 172
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [0.9696969985961914 1.0 0.9999547800331339]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Optional (compress (Optional
+     extract) (Optional archivecheck) (Optional
+     adler32checksum) (Optional crc) (Optional
+     gzip)))))
+Tree 1:
+ ConstraintSet
+
+Generation: 173
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.75 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (compress (Mandatory (base (Optional
+     adler32checksum) (Optional (crc (Optional
+     gzip))) (Optional extract))) (Optional archivecheck)))
+Tree 1:
+ ConstraintSet
+
+Generation: 174
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.75 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Mandatory (compress (Optional
+     archivecheck) (Optional extract) (Optional
+     adler32checksum) (Optional (crc (Optional
+     gzip)))))))
+Tree 1:
+ ConstraintSet
+
+Generation: 175
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [0.9696969985961914 1.0 0.9999547800331339]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Optional (compress (Optional
+     adler32checksum) (Optional extract) (Optional
+     archivecheck) (Optional crc) (Optional gzip)))))
+Tree 1:
+ ConstraintSet
+
+Generation: 176
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.75 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Mandatory (compress (Optional
+     extract) (Optional archivecheck) (Optional
+     adler32checksum) (Optional (crc (Optional
+     gzip)))))))
+Tree 1:
+ ConstraintSet
+
+Generation: 177
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 1.0 0.9999533669091694]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Mandatory (compress (Optional
+     extract) (Optional archivecheck) (Optional
+     adler32checksum) (Optional crc) (Optional
+     gzip)))))
+Tree 1:
+ ConstraintSet
+
+Generation: 178
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.75 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Mandatory (compress (Optional
+     adler32checksum) (Optional extract) (Optional
+     (crc (Optional gzip))))) (Optional archivecheck)))
+Tree 1:
+ ConstraintSet
+
+Generation: 179
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.75 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (compress (Mandatory (base (Optional
+     adler32checksum) (Optional (crc (Optional
+     gzip))) (Optional extract))) (Optional archivecheck)))
+Tree 1:
+ ConstraintSet
+
+Generation: 180
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.75 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Mandatory (compress (Optional
+     adler32checksum) (Optional (crc (Optional
+     gzip))) (Optional extract) (Optional archivecheck)))))
+Tree 1:
+ ConstraintSet
+
+Generation: 181
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [0.9696969985961914 1.0 0.9999547800331339]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Optional (compress (Optional
+     adler32checksum) (Optional extract) (Optional
+     crc) (Optional archivecheck) (Optional gzip)))))
+Tree 1:
+ (ConstraintSet (Constraint (Or (Not (Atom
+     extract)) (Atom base))))
+
+Generation: 182
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [0.9696969985961914 1.0 0.9999547800331339]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Optional (compress (Optional
+     extract) (Optional crc) (Optional archivecheck)
+     (Optional adler32checksum) (Optional gzip)))))
+Tree 1:
+ ConstraintSet
+
+Generation: 183
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.75 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Mandatory (compress (Optional
+     adler32checksum) (Optional (crc (Optional
+     gzip))) (Optional extract) (Optional archivecheck)))))
+Tree 1:
+ (ConstraintSet (Constraint (Or (Not (Atom
+     archivecheck)) (Atom base))))
+
+Generation: 184
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [0.9696969985961914 1.0 0.9999547800331339]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Optional (compress (Optional
+     adler32checksum) (Optional extract) (Optional
+     archivecheck) (Optional crc) (Optional gzip)))))
+Tree 1:
+ ConstraintSet
+
+Generation: 185
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.75 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Mandatory (compress (Optional
+     adler32checksum) (Optional extract) (Optional
+     (crc (Optional gzip))) (Optional archivecheck)))))
+Tree 1:
+ ConstraintSet
+
+Generation: 186
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [0.9696969985961914 1.0 0.9999547800331339]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Optional (compress (Optional
+     adler32checksum) (Optional crc) (Optional
+     archivecheck) (Optional extract) (Optional
+     gzip)))))
+Tree 1:
+ ConstraintSet
+
+Generation: 187
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [0.9696969985961914 1.0 0.9999547800331339]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Optional (compress (Optional
+     adler32checksum) (Optional extract) (Optional
+     crc) (Optional archivecheck) (Optional gzip)))))
+Tree 1:
+ (ConstraintSet (Constraint (Or (Not (Atom
+     extract)) (Atom base))) (Constraint (Or (Not
+     (Atom compress)) (Atom base))))
+
+Generation: 188
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.75 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Mandatory (compress (Optional
+     adler32checksum) (Optional (crc (Optional
+     gzip))))) (Optional archivecheck) (Optional
+     extract)))
+Tree 1:
+ ConstraintSet
+
+Generation: 189
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 1.0 0.9999533669091694]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Mandatory (compress (Optional
+     adler32checksum) (Optional extract) (Optional
+     crc) (Optional archivecheck) (Optional gzip)))))
+Tree 1:
+ (ConstraintSet (Constraint (Or (Not (Atom
+     extract)) (Atom base))))
+
+Generation: 190
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.75 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Mandatory (compress (Optional
+     adler32checksum) (Optional (crc (Optional
+     gzip))) (Optional extract) (Optional archivecheck)))))
+Tree 1:
+ ConstraintSet
+
+Generation: 191
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [0.9696969985961914 1.0 0.9999547800331339]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Optional (compress (Optional
+     extract) (Optional crc) (Optional archivecheck)
+     (Optional adler32checksum) (Optional gzip)))))
+Tree 1:
+ ConstraintSet
+
+Generation: 192
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [0.9696969985961914 1.0 0.9999547800331339]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Optional (compress (Optional
+     extract) (Optional adler32checksum) (Optional
+     archivecheck) (Optional crc) (Optional gzip)))))
+Tree 1:
+ ConstraintSet
+
+Generation: 193
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [0.9696969985961914 1.0 0.9999547800331339]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Optional (compress (Optional
+     extract) (Optional crc) (Optional archivecheck)
+     (Optional adler32checksum) (Optional gzip)))))
+Tree 1:
+ (ConstraintSet (Constraint (Or (Not (Atom
+     compress)) (Atom base))))
+
+Generation: 194
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.75 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Mandatory (compress (Optional
+     adler32checksum) (Optional extract) (Optional
+     crc) (Optional archivecheck) (Optional gzip)))))
+Tree 1:
+ (ConstraintSet (Constraint (Or (Not (Atom
+     extract)) (Atom base))) (Constraint (Or (Not
+     (Atom gzip)) (Atom crc))))
+
+Generation: 195
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.75 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Mandatory (compress (Optional
+     archivecheck) (Optional (crc (Optional gzip)))
+     (Optional adler32checksum) (Optional extract)))))
+Tree 1:
+ ConstraintSet
+
+Generation: 196
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.75 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Mandatory (compress (Optional
+     extract) (Optional adler32checksum) (Optional
+     (crc (Optional gzip))) (Optional archivecheck)))))
+Tree 1:
+ ConstraintSet
+
+Generation: 197
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.75 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Mandatory (compress (Optional
+     adler32checksum) (Optional extract) (Optional
+     archivecheck))) (Optional (crc (Optional
+     gzip)))))
+Tree 1:
+ ConstraintSet
+
+Generation: 198
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 1.0 0.9999533669091694]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Mandatory (compress (Optional
+     adler32checksum) (Optional extract) (Optional
+     crc) (Optional archivecheck) (Optional gzip)))))
+Tree 1:
+ ConstraintSet
+
+Generation: 199
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.75 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Mandatory (compress (Optional
+     archivecheck) (Optional extract) (Optional
+     adler32checksum) (Optional (crc (Optional
+     gzip)))))))
+Tree 1:
+ (ConstraintSet (Constraint (Or (Not (Atom
+     gzip)) (Atom crc))) (Constraint (Or (Not
+     (Atom archivecheck)) (Atom base))))
+
+Generation: 200
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [0.9696969985961914 1.0 0.9999547800331339]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Optional (compress (Optional
+     extract) (Optional crc) (Optional archivecheck)
+     (Optional adler32checksum) (Optional gzip)))))
+Tree 1:
+ (ConstraintSet (Constraint (Or (Not (Atom
+     crc)) (Atom base))))
+
+Generation: 201
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [0.9696969985961914 1.0 0.9999547800331339]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Optional (compress (Optional
+     extract) (Optional crc) (Optional archivecheck)
+     (Optional adler32checksum) (Optional gzip)))))
+Tree 1:
+ ConstraintSet
+
+Generation: 202
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.75 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Mandatory (compress (Optional
+     extract) (Optional (crc (Optional gzip)))
+     (Optional archivecheck) (Optional adler32checksum)))))
+Tree 1:
+ ConstraintSet
+
+Generation: 203
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [0.9696969985961914 1.0 0.9999547800331339]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Optional (compress (Optional
+     extract) (Optional crc) (Optional archivecheck)
+     (Optional adler32checksum) (Optional gzip)))))
+Tree 1:
+ ConstraintSet
+
+Generation: 204
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 1.0 0.9999533669091694]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Mandatory (compress (Optional
+     archivecheck) (Optional adler32checksum)
+     (Optional extract) (Optional crc) (Optional
+     gzip)))))
+Tree 1:
+ (ConstraintSet (Constraint (Or (Not (Atom
+     archivecheck)) (Atom base))))
+
+Generation: 205
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 1.0 0.9999533669091694]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Mandatory (compress (Optional
+     archivecheck) (Optional extract) (Optional
+     adler32checksum) (Optional crc) (Optional
+     gzip)))))
+Tree 1:
+ ConstraintSet
+
+Generation: 206
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 1.0 0.9999533669091694]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Mandatory (compress (Optional
+     extract) (Optional adler32checksum))) (Optional
+     archivecheck) (Optional crc) (Optional gzip)))
+Tree 1:
+ ConstraintSet
+
+Generation: 207
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 1.0 0.9999533669091694]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Mandatory (compress (Optional
+     archivecheck) (Optional extract) (Optional
+     adler32checksum) (Optional crc) (Optional
+     gzip)))))
+Tree 1:
+ ConstraintSet
+
+Generation: 208
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [0.9696969985961914 1.0 0.9999547800331339]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Optional (compress (Optional
+     extract) (Optional crc) (Optional archivecheck)
+     (Optional adler32checksum) (Optional gzip)))))
+Tree 1:
+ ConstraintSet
+
+Generation: 209
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [0.9696969985961914 1.0 0.9999547800331339]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Optional (compress (Optional
+     extract) (Optional adler32checksum) (Optional
+     crc) (Optional archivecheck) (Optional gzip)))))
+Tree 1:
+ ConstraintSet
+
+Generation: 210
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [0.9696969985961914 1.0 0.9999547800331339]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Optional (compress (Optional
+     extract) (Optional crc) (Optional archivecheck)
+     (Optional adler32checksum) (Optional gzip)))))
+Tree 1:
+ ConstraintSet
+
+Generation: 211
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.75 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Alternative (compress (Optional
+     extract) (Optional adler32checksum) (Optional
+     (crc (Optional gzip))) (Optional archivecheck)))))
+Tree 1:
+ ConstraintSet
+
+Generation: 212
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.75 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Mandatory (compress (Optional
+     extract) (Optional adler32checksum) (Optional
+     (crc (Optional gzip))) (Optional archivecheck)))))
+Tree 1:
+ ConstraintSet
+
+Generation: 213
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [0.9696969985961914 1.0 0.9999547800331339]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Optional (compress (Optional
+     extract) (Optional crc) (Optional archivecheck)
+     (Optional adler32checksum) (Optional gzip)))))
+Tree 1:
+ ConstraintSet
+
+Generation: 214
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [0.9696969985961914 1.0 0.9999547800331339]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Optional (compress (Optional
+     extract) (Optional adler32checksum) (Optional
+     archivecheck) (Optional crc) (Optional gzip)))))
+Tree 1:
+ ConstraintSet
+
+Generation: 215
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [0.9696969985961914 1.0 0.9999547800331339]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Optional (compress (Optional
+     extract) (Optional crc) (Optional archivecheck)
+     (Optional adler32checksum) (Optional gzip)))))
+Tree 1:
+ ConstraintSet
+
+Generation: 216
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 1.0 0.9999533669091694]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Mandatory (compress (Optional
+     extract) (Optional crc) (Optional archivecheck)
+     (Optional adler32checksum) (Optional gzip)))))
+Tree 1:
+ ConstraintSet
+
+Generation: 217
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.75 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Mandatory (compress (Optional
+     archivecheck) (Optional extract) (Optional
+     adler32checksum) (Optional (crc (Optional
+     gzip)))))))
+Tree 1:
+ ConstraintSet
+
+Generation: 218
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.75 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Mandatory (compress (Optional
+     extract) (Optional archivecheck) (Optional
+     adler32checksum) (Optional (crc (Optional
+     gzip)))))))
+Tree 1:
+ ConstraintSet
+
+Generation: 219
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.75 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Mandatory (compress (Optional
+     extract))) (Optional (crc (Optional gzip)))
+     (Optional archivecheck) (Optional adler32checksum)))
+Tree 1:
+ ConstraintSet
+
+Generation: 220
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.75 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Mandatory (compress (Optional
+     extract) (Optional archivecheck) (Optional
+     adler32checksum) (Optional (crc (Optional
+     gzip)))))))
+Tree 1:
+ (ConstraintSet (Constraint (Or (Not (Atom
+     gzip)) (Atom crc))))
+
+Generation: 221
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.75 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Mandatory (compress (Optional
+     archivecheck) (Optional extract) (Optional
+     crc) (Optional adler32checksum) (Optional
+     gzip)))))
+Tree 1:
+ (ConstraintSet (Constraint (Or (Not (Atom
+     gzip)) (Atom crc))))
+
+Generation: 222
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 1.0 0.9999533669091694]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Mandatory (compress (Optional
+     archivecheck) (Optional extract) (Optional
+     gzip))) (Optional crc) (Optional adler32checksum)))
+Tree 1:
+ (ConstraintSet (Constraint (Or (Not (Atom
+     adler32checksum)) (Atom base))))
+
+Generation: 223
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [0.9696969985961914 1.0 0.9999547800331339]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Optional (compress (Optional
+     extract) (Optional crc) (Optional archivecheck)
+     (Optional adler32checksum) (Optional gzip)))))
+Tree 1:
+ ConstraintSet
+
+Generation: 224
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [0.9696969985961914 1.0 0.9999547800331339]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Optional (compress (Optional
+     extract) (Optional crc) (Optional archivecheck)
+     (Optional adler32checksum) (Optional gzip)))))
+Tree 1:
+ ConstraintSet
+
+Generation: 225
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [0.9696969985961914 1.0 0.9999547800331339]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Optional (compress (Optional
+     extract) (Optional archivecheck) (Optional
+     adler32checksum) (Optional crc) (Optional
+     gzip)))))
+Tree 1:
+ ConstraintSet
+
+Generation: 226
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.75 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Mandatory (compress (Optional
+     extract) (Optional (crc (Optional gzip)))
+     (Optional archivecheck) (Optional adler32checksum)))))
+Tree 1:
+ ConstraintSet
+
+Generation: 227
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 1.0 0.9999533669091694]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (compress (Mandatory (base (Optional
+     archivecheck) (Optional extract) (Optional
+     adler32checksum))) (Optional gzip) (Optional
+     crc)))
+Tree 1:
+ ConstraintSet
+
+Generation: 228
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [0.9696969985961914 1.0 0.9999547800331339]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Optional (compress (Optional
+     extract) (Optional crc) (Optional archivecheck)
+     (Optional adler32checksum) (Optional gzip)))))
+Tree 1:
+ ConstraintSet
+
+Generation: 229
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.75 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Mandatory (compress (Optional
+     extract) (Optional adler32checksum))) (Optional
+     (crc (Optional gzip))) (Optional archivecheck)))
+Tree 1:
+ ConstraintSet
+
+Generation: 230
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [0.9696969985961914 1.0 0.9999547800331339]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Optional (compress (Optional
+     extract) (Optional archivecheck) (Optional
+     adler32checksum) (Optional crc) (Optional
+     gzip)))))
+Tree 1:
+ ConstraintSet
+
+Generation: 231
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [0.9696969985961914 1.0 0.9999547800331339]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Optional (compress (Optional
+     extract) (Optional archivecheck) (Optional
+     adler32checksum) (Optional crc) (Optional
+     gzip)))))
+Tree 1:
+ ConstraintSet
+
+Generation: 232
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.75 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (compress (Mandatory (base (Optional
+     extract) (Optional (crc (Optional gzip)))))
+     (Optional adler32checksum) (Optional archivecheck)))
+Tree 1:
+ ConstraintSet
+
+Generation: 233
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.75 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (compress (Mandatory (base (Optional
+     extract) (Optional (crc (Optional gzip)))))
+     (Optional adler32checksum) (Optional archivecheck)))
+Tree 1:
+ ConstraintSet
+
+Generation: 234
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.75 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (compress (Mandatory (base (Optional
+     extract) (Optional adler32checksum))) (Optional
+     (crc (Optional gzip))) (Optional archivecheck)))
+Tree 1:
+ ConstraintSet
+
+Generation: 235
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.75 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (compress (Mandatory (base (Optional
+     extract) (Optional archivecheck) (Optional
+     adler32checksum))) (Optional (crc (Optional
+     gzip)))))
+Tree 1:
+ ConstraintSet
+
+Generation: 236
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.75 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (compress (Mandatory (base (Optional
+     adler32checksum) (Optional (crc (Optional
+     gzip))) (Optional extract))) (Optional archivecheck)))
+Tree 1:
+ ConstraintSet
+
+Generation: 237
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 1.0 0.9999533669091694]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Mandatory (compress (Optional
+     archivecheck) (Optional crc) (Optional extract)
+     (Optional adler32checksum) (Optional gzip)))))
+Tree 1:
+ ConstraintSet
+
+Generation: 238
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [0.9696969985961914 1.0 0.9999547800331339]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Optional (compress (Optional
+     extract) (Optional archivecheck) (Optional
+     crc) (Optional adler32checksum) (Optional
+     gzip)))))
+Tree 1:
+ ConstraintSet
+
+Generation: 239
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.75 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Mandatory (compress (Optional
+     archivecheck) (Optional extract))) (Optional
+     adler32checksum) (Optional (crc (Optional
+     gzip)))))
+Tree 1:
+ ConstraintSet
+
+Generation: 240
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 1.0 0.9999533669091694]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Mandatory (compress (Optional
+     archivecheck))) (Optional crc) (Optional
+     adler32checksum) (Optional extract) (Optional
+     gzip)))
+Tree 1:
+ ConstraintSet
+
+Generation: 241
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 1.0 0.9999533669091694]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Mandatory (compress (Optional
+     archivecheck))) (Optional crc) (Optional
+     adler32checksum) (Optional extract) (Optional
+     gzip)))
+Tree 1:
+ ConstraintSet
+
+Generation: 242
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [0.9696969985961914 1.0 0.9999547800331339]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Optional (compress (Optional
+     archivecheck) (Optional extract) (Optional
+     crc) (Optional adler32checksum) (Optional
+     gzip)))))
+Tree 1:
+ ConstraintSet
+
+Generation: 243
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [0.9696969985961914 1.0 0.9999547800331339]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Optional (compress (Optional
+     extract) (Optional archivecheck) (Optional
+     crc) (Optional adler32checksum) (Optional
+     gzip)))))
+Tree 1:
+ ConstraintSet
+
+Generation: 244
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.75 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Mandatory (compress (Optional
+     archivecheck) (Optional extract) (Optional
+     (crc (Optional gzip))) (Optional adler32checksum)))))
+Tree 1:
+ ConstraintSet
+
+Generation: 245
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.75 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Mandatory (compress (Optional
+     archivecheck) (Optional extract))) (Optional
+     adler32checksum) (Optional (crc (Optional
+     gzip)))))
+Tree 1:
+ ConstraintSet
+
+Generation: 246
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.75 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Mandatory (compress (Optional
+     archivecheck) (Optional extract) (Optional
+     (crc (Optional gzip))))) (Optional adler32checksum)))
+Tree 1:
+ ConstraintSet
+
+Generation: 247
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [0.9696969985961914 1.0 0.9999547800331339]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Optional (compress (Optional
+     archivecheck) (Optional extract) (Optional
+     crc) (Optional adler32checksum) (Optional
+     gzip)))))
+Tree 1:
+ ConstraintSet
+
+Generation: 248
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.75 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Mandatory (compress (Optional
+     archivecheck) (Optional extract) (Optional
+     (crc (Optional gzip))))) (Optional adler32checksum)))
+Tree 1:
+ (ConstraintSet (Constraint (Or (Not (Atom
+     gzip)) (Atom compress))))
+
+Generation: 249
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.75 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (compress (Mandatory (base (Optional
+     adler32checksum) (Optional (crc (Optional
+     gzip))) (Optional extract))) (Optional archivecheck)))
+Tree 1:
+ ConstraintSet
+
+Generation: 250
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.75 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (compress (Optional archivecheck) (Optional
+     extract) (Mandatory (base (Optional adler32checksum)
+     (Optional (crc (Optional gzip)))))))
+Tree 1:
+ ConstraintSet
+
+Generation: 251
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.75 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Optional adler32checksum) (Mandatory
+     (compress (Optional archivecheck) (Optional
+         extract) (Optional (crc (Optional gzip)))))))
+Tree 1:
+ ConstraintSet
+
+Generation: 252
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.75 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (compress (Mandatory (base (Optional
+     adler32checksum) (Optional (crc (Optional
+     gzip))))) (Optional archivecheck) (Optional
+     extract)))
+Tree 1:
+ (ConstraintSet (Constraint (Or (Not (Atom
+     extract)) (Atom base))))
+
+Generation: 253
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.75 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (compress (Mandatory (base (Optional
+     adler32checksum) (Optional (crc (Optional
+     gzip))))) (Optional archivecheck) (Optional
+     extract)))
+Tree 1:
+ ConstraintSet
+
+Generation: 254
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 1.0 0.9999533669091694]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Mandatory (compress (Optional
+     extract) (Optional archivecheck) (Optional
+     crc) (Optional adler32checksum) (Optional
+     gzip)))))
+Tree 1:
+ ConstraintSet
+
+Generation: 255
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.75 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Mandatory (compress (Optional
+     archivecheck) (Optional extract) (Optional
+     (crc (Optional gzip))))) (Optional adler32checksum)))
+Tree 1:
+ ConstraintSet
+
+Generation: 256
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.75 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (compress (Mandatory (base (Optional
+     adler32checksum) (Optional (crc (Optional
+     gzip))))) (Optional archivecheck) (Optional
+     extract)))
+Tree 1:
+ ConstraintSet
+
+Generation: 257
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.75 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Mandatory (compress (Optional
+     extract) (Optional archivecheck) (Optional
+     crc) (Optional adler32checksum) (Optional
+     gzip)))))
+Tree 1:
+ (ConstraintSet (Constraint (Or (Not (Atom
+     gzip)) (Atom crc))))
+
+Generation: 258
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 1.0 0.9999533669091694]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (compress (Mandatory (base (Optional
+     adler32checksum) (Optional extract) (Optional
+     archivecheck) (Optional crc))) (Optional
+     gzip)))
+Tree 1:
+ ConstraintSet
+
+Generation: 259
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 1.0 0.9999533669091694]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (compress (Mandatory (base (Optional
+     adler32checksum))) (Optional gzip) (Optional
+     archivecheck) (Optional extract) (Optional
+     crc)))
+Tree 1:
+ ConstraintSet
+
+Generation: 260
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.75 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (compress (Mandatory (base (Optional
+     adler32checksum) (Optional (crc (Optional
+     gzip))))) (Optional archivecheck) (Optional
+     extract)))
+Tree 1:
+ ConstraintSet
+
+Generation: 261
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [0.9696969985961914 1.0 0.9999547800331339]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Optional (compress (Optional
+     extract) (Optional archivecheck) (Optional
+     crc) (Optional adler32checksum) (Optional
+     gzip)))))
+Tree 1:
+ ConstraintSet
+
+Generation: 262
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.75 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Mandatory (compress (Optional
+     archivecheck) (Optional extract) (Optional
+     (crc (Optional gzip))) (Optional adler32checksum)))))
+Tree 1:
+ ConstraintSet
+
+Generation: 263
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 1.0 0.9999533669091694]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (compress (Mandatory (base (Optional
+     adler32checksum))) (Optional gzip) (Optional
+     archivecheck) (Optional extract) (Optional
+     crc)))
+Tree 1:
+ ConstraintSet
+
+Generation: 264
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.75 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Mandatory (compress (Optional
+     adler32checksum) (Optional (crc (Optional
+     gzip))) (Optional extract))) (Optional archivecheck)))
+Tree 1:
+ ConstraintSet
+
+Generation: 265
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.75 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (compress (Mandatory (base (Optional
+     adler32checksum))) (Optional archivecheck)
+     (Optional extract) (Optional (crc (Optional
+     gzip)))))
+Tree 1:
+ ConstraintSet
+
+Generation: 266
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.75 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Mandatory (compress (Optional
+     archivecheck) (Optional extract) (Optional
+     (crc (Optional gzip))) (Optional adler32checksum)))))
+Tree 1:
+ ConstraintSet
+
+Generation: 267
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.75 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (compress (Mandatory (base (Optional
+     extract) (Optional adler32checksum))) (Optional
+     archivecheck) (Optional (crc (Optional gzip)))))
+Tree 1:
+ ConstraintSet
+
+Generation: 268
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 1.0 0.9999533669091694]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Mandatory (compress (Optional
+     extract) (Optional adler32checksum) (Optional
+     archivecheck) (Optional crc) (Optional gzip)))))
+Tree 1:
+ ConstraintSet
+
+Generation: 269
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 1.0 0.9999533669091694]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (compress (Mandatory (base (Optional
+     extract) (Optional archivecheck) (Optional
+     crc) (Optional adler32checksum) (Optional
+     gzip)))))
+Tree 1:
+ (ConstraintSet (Constraint (Or (Not (Atom
+     extract)) (Atom base))))
+
+Generation: 270
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.75 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Mandatory (compress (Optional
+     archivecheck) (Optional (crc (Optional gzip)))))
+     (Optional adler32checksum) (Optional extract)))
+Tree 1:
+ ConstraintSet
+
+Generation: 271
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.75 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (compress (Mandatory (base (Optional
+     archivecheck) (Optional extract) (Optional
+     (crc (Optional gzip))) (Optional adler32checksum)))))
+Tree 1:
+ ConstraintSet
+
+Generation: 272
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.75 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (base (Mandatory (compress (Optional
+     extract) (Optional archivecheck) (Optional
+     (crc (Optional gzip))))) (Optional adler32checksum)))
+Tree 1:
+ ConstraintSet

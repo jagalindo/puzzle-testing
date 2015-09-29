@@ -1,0 +1,160 @@
+digraph G  { 
+graph [bgcolor=gray97];
+subgraph cluster_1{
+node [shape=box, width=0.7, height=0.3,style=filled, color=blue, fillcolor=yellow1];
+subgraph cluster_2{
+node [shape=box, width=0.7, height=0.3,style=filled, color=red, fillcolor=yellow1];
+"Matrix";
+node [shape=box, width=0.7, height=0.3,style=filled, color=red, fillcolor=yellow1];
+"Matrix"->"Base":n[arrowhead="dot"];node [shape=box, width=0.7, height=0.3,style=filled, color=blue, fillcolor=yellow1];
+"Base"->"A":n[arrowhead="box"];"Base"->"B":n[arrowhead="box"];node [shape=box, width=0.7, height=0.3,style=filled, color=blue, fillcolor=yellow1];
+node [shape=box, width=0.7, height=0.3,style=filled, color=red, fillcolor=yellow1];
+"Matrix"->"AND_1":n[arrowhead="odot"];
+node [shape=box, width=0.7, height=0.3,style=filled, color=blue, fillcolor=yellow1];
+"AND_1"->"K":n[arrowhead="box"];
+node [shape=box, width=0.7, height=0.3,style=filled, color=blue, fillcolor=yellow1];
+"AND_1"->"X":n[arrowhead="box"];
+node [shape=box, width=0.7, height=0.3,style=filled, color=red, fillcolor=yellow1];
+"Matrix"->"AND_2":n[arrowhead="odot"];
+node [shape=box, width=0.7, height=0.3,style=filled, color=blue, fillcolor=yellow1];
+"AND_2"->"L":n[arrowhead="box"];
+node [shape=box, width=0.7, height=0.3,style=filled, color=blue, fillcolor=yellow1];
+"AND_2"->"X":n[arrowhead="box"];
+node [shape=box, width=0.7, height=0.3,style=filled, color=red, fillcolor=yellow1];
+"Matrix"->"XOR":n[arrowhead="dot"];
+node [shape=box, width=0.7, height=0.3,style=filled, color=blue, fillcolor=yellow1];
+"XOR"->"":n[arrowhead="invodot"];
+"XOR"->"G":n[arrowhead="invodot"];
+"XOR"->"O":n[arrowhead="invodot"];
+"XOR"->"J":n[arrowhead="invodot"];
+"XOR"->"V":n[arrowhead="invodot"];
+"XOR"->"X":n[arrowhead="invodot"];
+node [shape=box, width=0.7, height=0.3,style=filled, color=red, fillcolor=yellow1];
+"Matrix"->"OR":n[arrowhead="odot"];
+node [shape=box, width=0.7, height=0.3,style=filled, color=blue, fillcolor=yellow1];
+"OR"->"D":n[arrowhead="odiamond"];
+"OR"->"C":n[arrowhead="odiamond"];
+"OR"->"Y":n[arrowhead="odiamond"];
+"OR"->"Z":n[arrowhead="odiamond"];
+"OR"->"U":n[arrowhead="odiamond"];
+"OR"->"M":n[arrowhead="odiamond"];
+"OR"->"I":n[arrowhead="odiamond"];
+"OR"->"N":n[arrowhead="odiamond"];
+"OR"->"P":n[arrowhead="odiamond"];
+"OR"->"Q":n[arrowhead="odiamond"];
+"OR"->"F":n[arrowhead="odiamond"];
+"OR"->"T":n[arrowhead="odiamond"];
+"OR"->"S":n[arrowhead="odiamond"];
+"OR"->"H":n[arrowhead="odiamond"];
+"OR"->"E":n[arrowhead="odiamond"];
+"OR"->"R":n[arrowhead="odiamond"];
+"G"->"D":n[color="red",label="Requires"];
+"G"->"Y":n[color="red",label="Requires"];
+"O"->"C":n[color="red",label="Requires"];
+"O"->"I":n[color="red",label="Requires"];
+"O"->"R":n[color="red",label="Requires"];
+"X"->"R":n[color="red",label="Requires"];
+"X"->"":n[color="red",label="Requires"];
+"X"->"Z":n[color="red",label="Requires"];
+"F"->"Y":n[color="red",label="Requires"];
+"H"->"P":n[color="red",label="Requires"];
+"T"->"M":n[color="red",label="Requires"];
+"T"->"P":n[color="red",label="Requires"];
+"C"->"G":n[style="dashed", color="blue",label=" Excludes", dir="both"];
+"Z"->"G":n[style="dashed", color="blue",label=" Excludes", dir="both"];
+"U"->"G":n[style="dashed", color="blue",label=" Excludes", dir="both"];
+"M"->"G":n[style="dashed", color="blue",label=" Excludes", dir="both"];
+"I"->"G":n[style="dashed", color="blue",label=" Excludes", dir="both"];
+"N"->"G":n[style="dashed", color="blue",label=" Excludes", dir="both"];
+"P"->"G":n[style="dashed", color="blue",label=" Excludes", dir="both"];
+"Q"->"G":n[style="dashed", color="blue",label=" Excludes", dir="both"];
+"F"->"G":n[style="dashed", color="blue",label=" Excludes", dir="both"];
+"T"->"G":n[style="dashed", color="blue",label=" Excludes", dir="both"];
+"S"->"G":n[style="dashed", color="blue",label=" Excludes", dir="both"];
+"H"->"G":n[style="dashed", color="blue",label=" Excludes", dir="both"];
+"E"->"G":n[style="dashed", color="blue",label=" Excludes", dir="both"];
+"R"->"G":n[style="dashed", color="blue",label=" Excludes", dir="both"];
+"D"->"O":n[style="dashed", color="blue",label=" Excludes", dir="both"];
+"Y"->"O":n[style="dashed", color="blue",label=" Excludes", dir="both"];
+"Z"->"O":n[style="dashed", color="blue",label=" Excludes", dir="both"];
+"U"->"O":n[style="dashed", color="blue",label=" Excludes", dir="both"];
+"M"->"O":n[style="dashed", color="blue",label=" Excludes", dir="both"];
+"N"->"O":n[style="dashed", color="blue",label=" Excludes", dir="both"];
+"P"->"O":n[style="dashed", color="blue",label=" Excludes", dir="both"];
+"Q"->"O":n[style="dashed", color="blue",label=" Excludes", dir="both"];
+"F"->"O":n[style="dashed", color="blue",label=" Excludes", dir="both"];
+"T"->"O":n[style="dashed", color="blue",label=" Excludes", dir="both"];
+"S"->"O":n[style="dashed", color="blue",label=" Excludes", dir="both"];
+"H"->"O":n[style="dashed", color="blue",label=" Excludes", dir="both"];
+"E"->"O":n[style="dashed", color="blue",label=" Excludes", dir="both"];
+"C"->"J":n[style="dashed", color="blue",label=" Excludes", dir="both"];
+"Y"->"J":n[style="dashed", color="blue",label=" Excludes", dir="both"];
+"U"->"J":n[style="dashed", color="blue",label=" Excludes", dir="both"];
+"M"->"J":n[style="dashed", color="blue",label=" Excludes", dir="both"];
+"I"->"J":n[style="dashed", color="blue",label=" Excludes", dir="both"];
+"P"->"J":n[style="dashed", color="blue",label=" Excludes", dir="both"];
+"F"->"J":n[style="dashed", color="blue",label=" Excludes", dir="both"];
+"T"->"J":n[style="dashed", color="blue",label=" Excludes", dir="both"];
+"S"->"J":n[style="dashed", color="blue",label=" Excludes", dir="both"];
+"H"->"J":n[style="dashed", color="blue",label=" Excludes", dir="both"];
+"E"->"J":n[style="dashed", color="blue",label=" Excludes", dir="both"];
+"R"->"J":n[style="dashed", color="blue",label=" Excludes", dir="both"];
+"C"->"V":n[style="dashed", color="blue",label=" Excludes", dir="both"];
+"Y"->"V":n[style="dashed", color="blue",label=" Excludes", dir="both"];
+"Z"->"V":n[style="dashed", color="blue",label=" Excludes", dir="both"];
+"U"->"V":n[style="dashed", color="blue",label=" Excludes", dir="both"];
+"M"->"V":n[style="dashed", color="blue",label=" Excludes", dir="both"];
+"I"->"V":n[style="dashed", color="blue",label=" Excludes", dir="both"];
+"N"->"V":n[style="dashed", color="blue",label=" Excludes", dir="both"];
+"P"->"V":n[style="dashed", color="blue",label=" Excludes", dir="both"];
+"Q"->"V":n[style="dashed", color="blue",label=" Excludes", dir="both"];
+"F"->"V":n[style="dashed", color="blue",label=" Excludes", dir="both"];
+"T"->"V":n[style="dashed", color="blue",label=" Excludes", dir="both"];
+"S"->"V":n[style="dashed", color="blue",label=" Excludes", dir="both"];
+"H"->"V":n[style="dashed", color="blue",label=" Excludes", dir="both"];
+"E"->"V":n[style="dashed", color="blue",label=" Excludes", dir="both"];
+"R"->"V":n[style="dashed", color="blue",label=" Excludes", dir="both"];
+"D"->"X":n[style="dashed", color="blue",label=" Excludes", dir="both"];
+"C"->"X":n[style="dashed", color="blue",label=" Excludes", dir="both"];
+"Y"->"X":n[style="dashed", color="blue",label=" Excludes", dir="both"];
+"U"->"X":n[style="dashed", color="blue",label=" Excludes", dir="both"];
+"M"->"X":n[style="dashed", color="blue",label=" Excludes", dir="both"];
+"I"->"X":n[style="dashed", color="blue",label=" Excludes", dir="both"];
+"N"->"X":n[style="dashed", color="blue",label=" Excludes", dir="both"];
+"P"->"X":n[style="dashed", color="blue",label=" Excludes", dir="both"];
+"Q"->"X":n[style="dashed", color="blue",label=" Excludes", dir="both"];
+"F"->"X":n[style="dashed", color="blue",label=" Excludes", dir="both"];
+"T"->"X":n[style="dashed", color="blue",label=" Excludes", dir="both"];
+"S"->"X":n[style="dashed", color="blue",label=" Excludes", dir="both"];
+"H"->"X":n[style="dashed", color="blue",label=" Excludes", dir="both"];
+"E"->"X":n[style="dashed", color="blue",label=" Excludes", dir="both"];
+	label = "Feature Model";
+	color=green3;	}
+subgraph cluster_3{
+
+	subgraph cluster_4{
+	"Abstract":n[fillcolor="yellow1", color="red"];
+	"Concrete":n[fillcolor="yellow1", color="blue"];
+	"                "->"Mandatory":n[arrowhead="dot"];
+	"             "->"Optional":n[arrowhead="odot"];
+	label = "Features:";
+	color=blue;
+	}
+	subgraph cluster_5{
+	edge [dir=none]"F1 "->"F2 "[style="dashed", color="blue",label=" Excludes", dir="both"];
+	 edge [dir=forward]"F1"->"F2"[color="red",label=" Requires"];
+	label = "Cross-tree Constraints:";	color=blue;	}	subgraph cluster_6{
+	"Or" ->"   ":n[arrowhead="odiamond"];
+	"Or" ->"     ":n[arrowhead="odiamond"];
+	"Xor"->"      ":n[arrowhead="invodot"];
+	"Xor"->"       ":n[arrowhead="invodot"];
+	"And"->"        ":n[arrowhead="box"];
+	"And"->"         ":n[arrowhead="box"];
+	label = "Group of Features:";
+	color=blue;
+	}
+	label = "Legend:";
+	color=red
+}
+}
+}

@@ -1,0 +1,217 @@
+0.800000011920929 1.0 1.0
+Feature Model: Root(dpl(Optional(wipe), Optional(rect(Optional(fill))), Optional(line), Optional(color)))
+CTCs: ConstraintSet(Constraint(Not(Atom(fill)) Or Atom(color)))
+Number Of Products: 20
+Number of Contained Products: 16
+Broken Dependencies: 
+
+0.800000011920929 1.0 1.0
+Feature Model: Root(dpl(Optional(wipe), Optional(line), Optional(rect(Optional(fill))), Optional(color)))
+CTCs: ConstraintSet(Constraint(Not(Atom(fill)) Or Atom(color)))
+Number Of Products: 20
+Number of Contained Products: 16
+Broken Dependencies: 
+
+0.875 0.875 1.0
+Feature Model: Root(dpl(Optional(wipe), Optional(line), Optional(rect(Optional(color(Optional(fill)))))))
+CTCs: ConstraintSet
+Number Of Products: 16
+Number of Contained Products: 14
+Broken Dependencies: 
+
+0.9285714030265808 0.8125 1.0
+Feature Model: Root(Optional(line) dpl Optional(Optional(wipe) rect Optional(color(Optional(fill)))))
+CTCs: ConstraintSet
+Number Of Products: 14
+Number of Contained Products: 13
+Broken Dependencies: 
+
+0.9285714030265808 0.8125 1.0
+Feature Model: Root(Optional(line) dpl Optional(Optional(color(Optional(fill))) rect Optional(wipe)))
+CTCs: ConstraintSet
+Number Of Products: 14
+Number of Contained Products: 13
+Broken Dependencies: 
+
+1.0 0.75 1.0
+Feature Model: Root(dpl(Optional(wipe), Mandatory(rect(Optional(color(Optional(fill))))), Optional(line)))
+CTCs: ConstraintSet
+Number Of Products: 12
+Number of Contained Products: 12
+Broken Dependencies: 
+
+1.0 0.75 1.0
+Feature Model: Root(Optional(line) dpl Or(Optional(wipe) rect Optional(color(Optional(fill)))))
+CTCs: ConstraintSet
+Number Of Products: 12
+Number of Contained Products: 12
+Broken Dependencies: 
+
+1.0 0.75 1.0
+Feature Model: Root(Mandatory(Optional(wipe) dpl Optional(color(Optional(fill)))) rect Optional(line))
+CTCs: ConstraintSet
+Number Of Products: 12
+Number of Contained Products: 12
+Broken Dependencies: 
+
+1.0 0.75 1.0
+Feature Model: Root(Mandatory(Optional(color(Optional(fill))) rect Optional(wipe)) dpl Optional(line))
+CTCs: ConstraintSet
+Number Of Products: 12
+Number of Contained Products: 12
+Broken Dependencies: 
+
+1.0 0.75 1.0
+Feature Model: Root(dpl(Optional(line), Alternative(rect(Optional(color))), Optional(wipe), Optional(fill)))
+CTCs: Constraint(Not(Atom(dpl)) Or Atom(rect)) ConstraintSet Constraint(Not(Atom(fill)) Or Atom(color))
+Number Of Products: 12
+Number of Contained Products: 12
+Broken Dependencies: 
+
+1.0 0.75 1.0
+Feature Model: Root(dpl(Mandatory(rect(Optional(color(Optional(fill))))), Optional(wipe), Optional(line)))
+CTCs: ConstraintSet(Constraint(Not(Atom(fill)) Or Atom(color)))
+Number Of Products: 12
+Number of Contained Products: 12
+Broken Dependencies: 
+
+1.0 0.75 1.0
+Feature Model: Root(Optional(line) dpl Mandatory(Optional(color(Optional(fill))) rect Optional(wipe)))
+CTCs: ConstraintSet
+Number Of Products: 12
+Number of Contained Products: 12
+Broken Dependencies: 
+
+1.0 0.75 1.0
+Feature Model: Root(dpl(Optional(line), Or(rect(Optional(color(Optional(fill))))), Optional(wipe)))
+CTCs: ConstraintSet
+Number Of Products: 12
+Number of Contained Products: 12
+Broken Dependencies: 
+
+1.0 0.75 1.0
+Feature Model: Root(dpl(Optional(line), Alternative(rect(Optional(color(Optional(fill))))), Optional(wipe)))
+CTCs: ConstraintSet
+Number Of Products: 12
+Number of Contained Products: 12
+Broken Dependencies: 
+
+1.0 0.75 1.0
+Feature Model: Root(dpl(Optional(line), Mandatory(rect(Optional(fill))), Optional(wipe), Optional(color)))
+CTCs: ConstraintSet(Constraint(Not(Atom(fill)) Or Atom(color)))
+Number Of Products: 12
+Number of Contained Products: 12
+Broken Dependencies: 
+
+1.0 0.75 1.0
+Feature Model: Root(Optional(line) dpl Alternative(Optional(color(Optional(fill))) rect Optional(wipe)))
+CTCs: ConstraintSet
+Number Of Products: 12
+Number of Contained Products: 12
+Broken Dependencies: 
+
+1.0 0.75 1.0
+Feature Model: Root(dpl(Mandatory(rect(Optional(color(Optional(fill))))), Optional(line), Optional(wipe)))
+CTCs: ConstraintSet(Constraint(Not(Atom(fill)) Or Atom(color)))
+Number Of Products: 12
+Number of Contained Products: 12
+Broken Dependencies: 
+
+1.0 0.75 1.0
+Feature Model: Root(dpl(Optional(wipe), Alternative(Optional(fill) rect Optional(color)), Optional(line)))
+CTCs: ConstraintSet(Constraint(Not(Atom(fill)) Or Atom(color)))
+Number Of Products: 12
+Number of Contained Products: 12
+Broken Dependencies: 
+
+1.0 0.75 1.0
+Feature Model: Root(dpl(Optional(line), Mandatory(Optional(color) rect Optional(fill)), Optional(wipe)))
+CTCs: ConstraintSet(Constraint(Not(Atom(fill)) Or Atom(color)))
+Number Of Products: 12
+Number of Contained Products: 12
+Broken Dependencies: 
+
+1.0 0.75 1.0
+Feature Model: Root(Optional(line) dpl Alternative(Optional(wipe) rect Optional(color(Optional(fill)))))
+CTCs: ConstraintSet
+Number Of Products: 12
+Number of Contained Products: 12
+Broken Dependencies: 
+
+1.0 0.75 1.0
+Feature Model: Root(Optional(line) dpl Mandatory(Optional(wipe) rect Optional(color(Optional(fill)))))
+CTCs: ConstraintSet
+Number Of Products: 12
+Number of Contained Products: 12
+Broken Dependencies: 
+
+1.0 0.75 1.0
+Feature Model: Root(dpl(Optional(wipe), Optional(line), Mandatory(rect), Optional(color(Optional(fill)))))
+CTCs: ConstraintSet
+Number Of Products: 12
+Number of Contained Products: 12
+Broken Dependencies: 
+
+1.0 0.75 1.0
+Feature Model: Root(dpl(Optional(wipe), Optional(line), Alternative(rect(Optional(color(Optional(fill)))))))
+CTCs: ConstraintSet
+Number Of Products: 12
+Number of Contained Products: 12
+Broken Dependencies: 
+
+1.0 0.75 1.0
+Feature Model: Root(dpl(Optional(line), Mandatory(rect(Optional(color(Optional(fill))))), Optional(wipe)))
+CTCs: ConstraintSet
+Number Of Products: 12
+Number of Contained Products: 12
+Broken Dependencies: 
+
+1.0 0.75 1.0
+Feature Model: Root(dpl(Optional(wipe), Optional(line), Mandatory(Optional(color) rect Optional(fill))))
+CTCs: ConstraintSet(Constraint(Not(Atom(fill)) Or Atom(color)))
+Number Of Products: 12
+Number of Contained Products: 12
+Broken Dependencies: 
+
+1.0 0.75 1.0
+Feature Model: Root(Optional(line) dpl Or(Optional(color(Optional(fill))) rect Optional(wipe)))
+CTCs: ConstraintSet
+Number Of Products: 12
+Number of Contained Products: 12
+Broken Dependencies: 
+
+1.0 0.75 1.0
+Feature Model: Root(dpl(Optional(line), Mandatory(rect), Optional(wipe), Optional(color(Optional(fill)))))
+CTCs: ConstraintSet
+Number Of Products: 12
+Number of Contained Products: 12
+Broken Dependencies: 
+
+1.0 0.75 1.0
+Feature Model: Root(dpl(Optional(wipe), Alternative(rect(Optional(color(Optional(fill))))), Optional(line)))
+CTCs: ConstraintSet
+Number Of Products: 12
+Number of Contained Products: 12
+Broken Dependencies: 
+
+1.0 0.75 1.0
+Feature Model: Root(Mandatory(Optional(line) rect Optional(color(Optional(fill)))) dpl Optional(wipe))
+CTCs: ConstraintSet(Constraint(Not(Atom(line)) Or Atom(dpl)))
+Number Of Products: 12
+Number of Contained Products: 12
+Broken Dependencies: 
+
+1.0 0.75 1.0
+Feature Model: Root(rect(Mandatory(dpl(Optional(wipe))), Optional(line), Optional(color(Optional(fill)))))
+CTCs: ConstraintSet(Constraint(Not(Atom(fill)) Or Atom(dpl)))
+Number Of Products: 12
+Number of Contained Products: 12
+Broken Dependencies: 
+
+1.0 0.75 1.0
+Feature Model: Root(dpl(Mandatory(rect), Optional(line), Optional(wipe), Optional(color(Optional(fill)))))
+CTCs: ConstraintSet
+Number Of Products: 12
+Number of Contained Products: 12
+Broken Dependencies: 
+

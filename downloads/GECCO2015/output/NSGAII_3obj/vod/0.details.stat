@@ -1,0 +1,141 @@
+
+Generation: 0
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [0.761904776096344 0.5 0.7754500861377419]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (startplayer (Optional (quitplayer
+     (Mandatory startmovie) (Mandatory (vod (Optional
+     changeserver) (Mandatory playimm) (Or detail
+     (selectmovie (Optional pause))))) (Mandatory
+     vrcinterface) (Optional stopmovie)))))
+Tree 1:
+ ConstraintSet
+
+Generation: 1
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [0.761904776096344 0.5 0.7754500861377419]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (startplayer (Optional (quitplayer
+     (Mandatory startmovie) (Mandatory (vod (Optional
+     changeserver) (Mandatory playimm) (Or detail
+     (selectmovie (Optional pause))))) (Mandatory
+     vrcinterface) (Optional stopmovie)))))
+Tree 1:
+ ConstraintSet
+
+Generation: 2
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.5 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (vrcinterface (Mandatory (selectmovie
+     (Mandatory (startplayer (Or playimm)))))
+     (Mandatory (vod (Optional pause) (Optional
+         changeserver) (Optional detail) (Optional
+         quitplayer) (Alternative stopmovie))) (Mandatory
+     startmovie)))
+Tree 1:
+ ConstraintSet
+
+Generation: 3
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.5 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (vrcinterface (Mandatory (selectmovie
+     (Mandatory (startplayer (Or playimm)))))
+     (Mandatory (vod (Optional pause) (Optional
+         changeserver) (Optional detail) (Optional
+         quitplayer) (Alternative stopmovie))) (Mandatory
+     startmovie)))
+Tree 1:
+ ConstraintSet
+
+Generation: 4
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 1.0 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (vrcinterface (Mandatory (startmovie
+     (Mandatory (startplayer (Optional quitplayer)
+         (Mandatory (vod (Optional pause) (Optional
+             changeserver) (Optional detail))) (Mandatory
+         playimm))))) (Mandatory (selectmovie (Optional
+     stopmovie)))))
+Tree 1:
+ ConstraintSet
+
+
+
+ PARETO FRONTS
+
+
+Pareto Front of Subpopulation 0
+Evaluated: true
+Fitness: [1.0 1.0 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (startmovie (Mandatory vrcinterface)
+     (Mandatory (startplayer (Mandatory playimm)
+         (Mandatory (selectmovie (Optional stopmovie)))))
+     (Mandatory (vod (Optional pause) (Optional
+         changeserver) (Optional detail) (Optional
+         quitplayer)))))
+Tree 1:
+ ConstraintSet
+Evaluated: true
+Fitness: [1.0 1.0 1.0]
+Rank: 0
+Sparsity: 0.0
+Tree 0:
+ (Root (startmovie (Mandatory (vrcinterface
+     (Mandatory (selectmovie (Optional stopmovie)))
+     (Mandatory (vod (Optional pause) (Optional
+         changeserver))) (Optional detail))) (Mandatory
+     (startplayer (Or playimm) (Optional quitplayer)))))
+Tree 1:
+ ConstraintSet
+Evaluated: true
+Fitness: [1.0 1.0 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (vrcinterface (Mandatory (startmovie
+     (Mandatory (startplayer (Optional quitplayer)
+         (Mandatory (vod (Optional pause) (Optional
+             changeserver) (Optional detail))) (Mandatory
+         playimm))))) (Mandatory (selectmovie (Optional
+     stopmovie)))))
+Tree 1:
+ ConstraintSet
+Evaluated: true
+Fitness: [1.0 1.0 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (startmovie (Mandatory (vrcinterface
+     (Mandatory (selectmovie (Optional stopmovie)))))
+     (Mandatory (startplayer (Optional quitplayer)
+         (Mandatory (vod (Optional pause) (Optional
+             changeserver) (Optional detail))) (Mandatory
+         playimm)))))
+Tree 1:
+ ConstraintSet

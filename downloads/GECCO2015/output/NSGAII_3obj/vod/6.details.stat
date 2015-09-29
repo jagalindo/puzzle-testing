@@ -1,0 +1,82 @@
+
+Generation: 0
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [0.25 0.375 0.2921959863757713]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (playimm (Optional (selectmovie (Mandatory
+     startplayer) (Mandatory vrcinterface) (Or
+     stopmovie quitplayer startmovie vod))) (Or
+     (changeserver (Mandatory pause)) detail)))
+Tree 1:
+ ConstraintSet
+
+Generation: 1
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [0.25 0.375 0.2921959863757713]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (playimm (Optional (selectmovie (Mandatory
+     startplayer) (Mandatory vrcinterface) (Or
+     stopmovie quitplayer startmovie vod))) (Or
+     (changeserver (Mandatory pause)) detail)))
+Tree 1:
+ ConstraintSet
+
+Generation: 2
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 0.5 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (vod (Mandatory (startmovie (Optional
+     detail))) (Optional quitplayer) (Alternative
+     changeserver) (Mandatory playimm) (Optional
+     pause) (Or selectmovie) (Alternative (vrcinterface
+     (Mandatory startplayer) (Optional stopmovie)))))
+Tree 1:
+ (ConstraintSet (Constraint (Or (Not (Atom
+     playimm)) (Atom selectmovie))))
+
+Generation: 3
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 1.0 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (startmovie (Mandatory playimm) (Mandatory
+     (vod (Mandatory (selectmovie (Mandatory (vrcinterface
+         (Mandatory startplayer) (Optional stopmovie)
+         (Optional detail))))) (Optional quitplayer)
+         (Optional pause))) (Optional changeserver)))
+Tree 1:
+ ConstraintSet
+
+
+
+ PARETO FRONTS
+
+
+Pareto Front of Subpopulation 0
+Evaluated: true
+Fitness: [1.0 1.0 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (startmovie (Mandatory playimm) (Mandatory
+     (vod (Mandatory (selectmovie (Mandatory (vrcinterface
+         (Mandatory startplayer) (Optional stopmovie)
+         (Optional detail))))) (Optional quitplayer)
+         (Optional pause))) (Optional changeserver)))
+Tree 1:
+ ConstraintSet

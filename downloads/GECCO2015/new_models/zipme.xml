@@ -1,0 +1,89 @@
+<!-- This model was created online using SPLOT's Feature Model Editor (http://www.splot-research.org) on Mon, Dec 1, 2014 - 8:39 AM  -->
+<feature_model name="Base">
+<meta>
+<data name="description"/>
+<data name="creator"/>
+<data name="address"/>
+<data name="email"/>
+<data name="phone"/>
+<data name="website"/>
+<data name="organization"/>
+<data name="department"/>
+<data name="date"/>
+<data name="reference"/>
+</meta>
+<feature_tree>
+:r Base(base)
+	:o CRC(crc)
+	:o ArchiveCheck(archivecheck)
+	:o GZIP(gzip)
+	:o Adler32Checksum(adler32checksum)
+	:m Compress(compress)
+	:o Extract(extract)
+</feature_tree>
+<constraints>
+</constraints>
+<dependencies>
+<dependency from="(!adler32checksum AND compress) AND (!adler32checksum AND base)" to="(compress) AND (base)" weight="34" />
+<dependency from="(!gzip AND !adler32checksum AND archivecheck)" to="(compress) AND (base)" weight="20" />
+<dependency from="(!gzip AND !adler32checksum AND archivecheck)" to="(!gzip AND !adler32checksum AND archivecheck)" weight="18" />
+<dependency from="(extract AND !crc)" to="(extract)" weight="107" />
+<dependency from="(extract AND !crc)" to="(compress) AND (base)" weight="8" />
+<dependency from="(extract AND !crc)" to="(extract AND !crc)" weight="79" />
+<dependency from="(!extract AND !adler32checksum AND crc)" to="(compress) AND (base)" weight="9" />
+<dependency from="(!extract AND !adler32checksum AND crc)" to="(!extract AND !adler32checksum AND crc)" weight="15" />
+<dependency from="(gzip AND crc)" to="(gzip)" weight="48" />
+<dependency from="(gzip AND crc)" to="(crc)" weight="4" />
+<dependency from="(gzip AND crc)" to="(gzip AND crc)" weight="24" />
+<dependency from="(!gzip AND adler32checksum AND !crc AND !archivecheck)" to="(compress) AND (base)" weight="39" />
+<dependency from="(!gzip AND adler32checksum AND !crc AND !archivecheck)" to="(!gzip AND adler32checksum AND !crc AND !archivecheck)" weight="39" />
+<dependency from="(adler32checksum)" to="(compress) AND (base)" weight="84" />
+<dependency from="(adler32checksum)" to="(adler32checksum)" weight="170" />
+<dependency from="(extract AND crc)" to="(extract)" weight="14" />
+<dependency from="(extract AND crc)" to="(crc)" weight="2" />
+<dependency from="(extract AND crc)" to="(extract AND crc)" weight="21" />
+<dependency from="(!gzip AND extract AND crc)" to="(extract)" weight="88" />
+<dependency from="(!gzip AND extract AND crc)" to="(compress) AND (base)" weight="9" />
+<dependency from="(!gzip AND extract AND crc)" to="(!gzip AND extract AND crc)" weight="146" />
+<dependency from="(!gzip AND adler32checksum AND crc AND !archivecheck)" to="(!gzip AND adler32checksum AND crc AND !archivecheck)" weight="39" />
+<dependency from="(!gzip AND adler32checksum AND crc AND !archivecheck)" to="(compress) AND (base)" weight="39" />
+<dependency from="(gzip AND adler32checksum)" to="(gzip AND adler32checksum)" weight="39" />
+<dependency from="(gzip AND adler32checksum)" to="(compress) AND (base)" weight="39" />
+<dependency from="(extract)" to="(extract)" weight="408" />
+<dependency from="(extract)" to="(compress) AND (base)" weight="32" />
+<dependency from="(gzip)" to="(gzip)" weight="509" />
+<dependency from="(gzip)" to="(compress) AND (base)" weight="10" />
+<dependency from="(gzip)" to="(crc)" weight="2" />
+<dependency from="(compress) AND (base)" to="(compress) AND (base)" weight="7812" />
+<dependency from="(crc AND archivecheck)" to="(crc AND archivecheck)" weight="4" />
+<dependency from="(crc AND archivecheck)" to="(compress) AND (base)" weight="2" />
+<dependency from="(!crc AND archivecheck)" to="(compress) AND (base)" weight="2" />
+<dependency from="(!crc AND archivecheck)" to="(!crc AND archivecheck)" weight="4" />
+<dependency from="(!extract AND gzip AND crc)" to="(gzip)" weight="18" />
+<dependency from="(!extract AND gzip AND crc)" to="(!extract AND gzip AND crc)" weight="27" />
+<dependency from="(!extract AND adler32checksum)" to="(compress) AND (base)" weight="16" />
+<dependency from="(!extract AND adler32checksum)" to="(!extract AND adler32checksum)" weight="22" />
+<dependency from="(gzip AND extract AND crc)" to="(extract)" weight="88" />
+<dependency from="(gzip AND extract AND crc)" to="(gzip)" weight="18" />
+<dependency from="(gzip AND extract AND crc)" to="(compress) AND (base)" weight="9" />
+<dependency from="(gzip AND extract AND crc)" to="(gzip AND extract AND crc)" weight="173" />
+<dependency from="(!gzip AND !adler32checksum AND crc AND !archivecheck)" to="(compress) AND (base)" weight="20" />
+<dependency from="(!gzip AND !adler32checksum AND crc AND !archivecheck)" to="(!gzip AND !adler32checksum AND crc AND !archivecheck)" weight="18" />
+<dependency from="(extract AND !adler32checksum AND crc)" to="(compress) AND (base)" weight="9" />
+<dependency from="(extract AND !adler32checksum AND crc)" to="(extract AND !adler32checksum AND crc)" weight="15" />
+<dependency from="(gzip AND !adler32checksum)" to="(gzip AND !adler32checksum)" weight="18" />
+<dependency from="(gzip AND !adler32checksum)" to="(compress) AND (base)" weight="20" />
+<dependency from="(!gzip AND !adler32checksum AND !crc AND base AND !archivecheck) AND (!gzip AND !adler32checksum AND !crc AND compress AND !archivecheck)" to="(!gzip AND !adler32checksum AND !crc AND base AND !archivecheck) AND (!gzip AND !adler32checksum AND !crc AND compress AND !archivecheck)" weight="18" />
+<dependency from="(!gzip AND !adler32checksum AND !crc AND base AND !archivecheck) AND (!gzip AND !adler32checksum AND !crc AND compress AND !archivecheck)" to="(compress) AND (base)" weight="20" />
+<dependency from="(extract AND adler32checksum)" to="(extract AND adler32checksum)" weight="22" />
+<dependency from="(extract AND adler32checksum)" to="(compress) AND (base)" weight="16" />
+<dependency from="(crc)" to="(compress) AND (base)" weight="12" />
+<dependency from="(crc)" to="(crc)" weight="108" />
+<dependency from="(!gzip AND adler32checksum AND archivecheck)" to="(compress) AND (base)" weight="39" />
+<dependency from="(!gzip AND adler32checksum AND archivecheck)" to="(!gzip AND adler32checksum AND archivecheck)" weight="39" />
+<dependency from="(adler32checksum AND crc)" to="(compress) AND (base)" weight="9" />
+<dependency from="(adler32checksum AND crc)" to="(adler32checksum AND crc)" weight="15" />
+<dependency from="(archivecheck)" to="(compress) AND (base)" weight="19" />
+<dependency from="(archivecheck)" to="(archivecheck)" weight="15" />
+</dependencies>
+</feature_model>

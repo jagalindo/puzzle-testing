@@ -1,0 +1,85 @@
+<feature_model name="FeatureIDE model">
+<feature_tree>
+:r GameOfLife(GameOfLife)
+	:o Composed(Composed)
+		:g [1,*]
+			: UndoRedoGenerator(UndoRedoGenerator)
+			: UndoRedoTest(UndoRedoTest)
+			: UndoRedoGuiBase(UndoRedoGuiBase)
+	:o Options(Options)
+		:o UndoRedo(UndoRedo)
+		:o Test(Test)
+		:m Generator(Generator)
+			:o GeneratorSelection(GeneratorSelection)
+			:m DefaultGenerator(DefaultGenerator)
+				:g [1,1]
+					: RandomDefaultGenerator(RandomDefaultGenerator)
+					: FormDefaultGenerator(FormDefaultGenerator)
+			:m ConcretGenerator(ConcretGenerator)
+				:g [1,*]
+					: RandomGenerator(RandomGenerator)
+					: FormGenerator(FormGenerator)
+			:m AbstractGenerator(AbstractGenerator)
+		:o IO(IO)
+		:o PopUpMenu(PopUpMenu)
+	:m View(View)
+		:g [1,*]
+			: GuiBase(GuiBase)
+	:m Model(Model)
+		:g [1,*]
+			: ModelBase(ModelBase)
+</feature_tree>
+<constraints>
+C1:~UndoRedo or ~AbstractGenerator or UndoRedoGenerator
+C2:UndoRedo or ~UndoRedoGenerator
+C3:AbstractGenerator or ~UndoRedoGenerator
+
+C4:~UndoRedo or ~Test  or UndoRedoTest
+C5:UndoRedo or ~UndoRedoTest
+C6:Test or ~UndoRedoTest
+
+C7:~UndoRedo or UndoRedoGuiBase
+C8:~UndoRedoGuiBase or UndoRedo
+C9:~UndoRedoGuiBase or GuiBase
+
+C10:~RandomGenerator or ~FormGenerator or GeneratorSelection
+C11:RandomGenerator or ~GeneratorSelection
+C12:FormGenerator or ~GeneratorSelection
+
+
+
+C13:~RandomGenerator or FormGenerator or RandomDefaultGenerator
+C14:~FormGenerator or RandomGenerator or FormDefaultGenerator
+
+
+C15:~FormGenerator or ~RandomGenerator or FormDefaultGenerator or RandomDefaultGenerator
+
+C16:~GeneratorSelection or GuiBase
+</constraints>
+<dependencies>
+<dependency from="(io)" to="(io)" weight="232" />
+<dependency from="(io)" to="(guibase) AND (modelbase)" weight="4" />
+<dependency from="(generatorselection)" to="(generatorselection)" weight="40" />
+<dependency from="(generatorselection)" to="(abstractgenerator)" weight="2" />
+<dependency from="(generatorselection)" to="(guibase) AND (modelbase)" weight="3" />
+<dependency from="(abstractgenerator)" to="(abstractgenerator)" weight="76" />
+<dependency from="(abstractgenerator)" to="(guibase) AND (modelbase)" weight="26" />
+<dependency from="(guibase) OR (modelbase)" to="(guibase) AND (modelbase)" weight="1063" />
+<dependency from="(undoredogenerator) OR (undoredo) OR (undoredoguibase)" to="(guibase) AND (modelbase)" weight="49" />
+<dependency from="(undoredogenerator) OR (undoredo) OR (undoredoguibase)" to="(undoredogenerator) AND (undoredo) AND (undoredoguibase)" weight="70" />
+<dependency from="(randomdefaultgenerator)" to="(abstractgenerator)" weight="2" />
+<dependency from="(randomdefaultgenerator)" to="(guibase) AND (modelbase)" weight="2" />
+<dependency from="(randomdefaultgenerator)" to="(randomdefaultgenerator)" weight="4" />
+<dependency from="(test)" to="(guibase) AND (modelbase)" weight="44" />
+<dependency from="(test)" to="(test)" weight="176" />
+<dependency from="(formgenerator)" to="(guibase) AND (modelbase)" weight="7" />
+<dependency from="(formgenerator)" to="(formgenerator)" weight="47" />
+<dependency from="(formdefaultgenerator)" to="(abstractgenerator)" weight="2" />
+<dependency from="(formdefaultgenerator)" to="(guibase) AND (modelbase)" weight="2" />
+<dependency from="(formdefaultgenerator)" to="(formdefaultgenerator)" weight="4" />
+<dependency from="(randomgenerator)" to="(guibase) AND (modelbase)" weight="3" />
+<dependency from="(randomgenerator)" to="(randomgenerator)" weight="20" />
+<dependency from="(popupmenu)" to="(guibase) AND (modelbase)" weight="2" />
+<dependency from="(popupmenu)" to="(popupmenu)" weight="170" />
+</dependencies>
+</feature_model>

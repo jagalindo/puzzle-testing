@@ -1,0 +1,352 @@
+0.9696969985961914 1.0 0.9999547800331339
+Feature Model: Root(compress(Optional(base(Optional(extract), Optional(gzip), Optional(adler32checksum), Optional(crc), Optional(archivecheck)))))
+CTCs: ConstraintSet
+Number Of Products: 33
+Number of Contained Products: 32
+Broken Dependencies: 
+[from=(gzip), to=(crc), weight=1.8653236336504383E-4] -> [gzip, extract, compress, base, archivecheck]
+[from=(gzip), to=(crc), weight=1.8653236336504383E-4] -> [gzip, extract, adler32checksum, compress, base, archivecheck]
+[from=(gzip), to=(crc), weight=1.8653236336504383E-4] -> [gzip, compress, base]
+[from=(gzip), to=(crc), weight=1.8653236336504383E-4] -> [gzip, extract, adler32checksum, compress, base]
+[from=(gzip), to=(crc), weight=1.8653236336504383E-4] -> [gzip, extract, compress, base]
+[from=(gzip), to=(crc), weight=1.8653236336504383E-4] -> [gzip, adler32checksum, compress, base, archivecheck]
+[from=(gzip), to=(crc), weight=1.8653236336504383E-4] -> [gzip, compress, base, archivecheck]
+[from=(gzip), to=(crc), weight=1.8653236336504383E-4] -> [gzip, adler32checksum, compress, base]
+
+1.0 0.75 1.0
+Feature Model: Root(base(Mandatory(compress(Optional(adler32checksum))), Optional(crc(Optional(gzip))), Optional(archivecheck), Optional(extract)))
+CTCs: ConstraintSet
+Number Of Products: 24
+Number of Contained Products: 24
+Broken Dependencies: 
+
+1.0 0.75 1.0
+Feature Model: Root(base(Mandatory(compress), Optional(crc(Optional(gzip))), Optional(archivecheck), Optional(extract), Optional(adler32checksum)))
+CTCs: ConstraintSet
+Number Of Products: 24
+Number of Contained Products: 24
+Broken Dependencies: 
+
+1.0 0.75 1.0
+Feature Model: Root(compress(Mandatory(base(Optional(archivecheck), Optional(adler32checksum), Optional(extract), Optional(crc(Optional(gzip)))))))
+CTCs: ConstraintSet
+Number Of Products: 24
+Number of Contained Products: 24
+Broken Dependencies: 
+
+1.0 0.75 1.0
+Feature Model: Root(Mandatory(compress(Optional(adler32checksum), Optional(crc(Optional(gzip))), Optional(extract))) base Optional(archivecheck))
+CTCs: ConstraintSet
+Number Of Products: 24
+Number of Contained Products: 24
+Broken Dependencies: 
+
+1.0 0.75 1.0
+Feature Model: Root(compress(Mandatory(base(Optional(extract))), Optional(adler32checksum), Optional(archivecheck), Optional(crc(Optional(gzip)))))
+CTCs: ConstraintSet(Constraint(Not(Atom(extract)) Or Atom(compress)))
+Number Of Products: 24
+Number of Contained Products: 24
+Broken Dependencies: 
+
+1.0 0.75 1.0
+Feature Model: Root(base(Mandatory(Optional(adler32checksum) compress Optional(crc(Optional(gzip)))), Optional(archivecheck), Optional(extract)))
+CTCs: ConstraintSet
+Number Of Products: 24
+Number of Contained Products: 24
+Broken Dependencies: 
+
+1.0 0.75 1.0
+Feature Model: Root(base(Mandatory(compress), Optional(crc(Optional(gzip))), Optional(adler32checksum), Optional(archivecheck), Optional(extract)))
+CTCs: ConstraintSet
+Number Of Products: 24
+Number of Contained Products: 24
+Broken Dependencies: 
+
+1.0 0.75 1.0
+Feature Model: Root(base(Mandatory(compress(Optional(archivecheck))), Optional(adler32checksum), Optional(extract), Optional(crc(Optional(gzip)))))
+CTCs: ConstraintSet(Constraint(Not(Atom(gzip)) Or Atom(compress)))
+Number Of Products: 24
+Number of Contained Products: 24
+Broken Dependencies: 
+
+1.0 0.75 1.0
+Feature Model: Root(compress(Mandatory(base(Optional(extract), Optional(adler32checksum), Optional(archivecheck), Optional(crc(Optional(gzip)))))))
+CTCs: ConstraintSet
+Number Of Products: 24
+Number of Contained Products: 24
+Broken Dependencies: 
+
+1.0 0.75 1.0
+Feature Model: Root(base(Optional(archivecheck), Optional(extract), Mandatory(Optional(adler32checksum) compress Optional(crc(Optional(gzip))))))
+CTCs: ConstraintSet
+Number Of Products: 24
+Number of Contained Products: 24
+Broken Dependencies: 
+
+1.0 1.0 0.9999533669091694
+Feature Model: Root(Mandatory(base(Optional(extract), Optional(gzip), Optional(adler32checksum), Optional(archivecheck))) compress Optional(crc))
+CTCs: ConstraintSet(Constraint(Not(Atom(gzip)) Or Atom(compress)))
+Number Of Products: 32
+Number of Contained Products: 32
+Broken Dependencies: 
+[from=(gzip), to=(crc), weight=1.8653236336504383E-4] -> [gzip, extract, compress, base, archivecheck]
+[from=(gzip), to=(crc), weight=1.8653236336504383E-4] -> [gzip, extract, adler32checksum, compress, base, archivecheck]
+[from=(gzip), to=(crc), weight=1.8653236336504383E-4] -> [gzip, compress, base]
+[from=(gzip), to=(crc), weight=1.8653236336504383E-4] -> [gzip, extract, adler32checksum, compress, base]
+[from=(gzip), to=(crc), weight=1.8653236336504383E-4] -> [gzip, extract, compress, base]
+[from=(gzip), to=(crc), weight=1.8653236336504383E-4] -> [gzip, adler32checksum, compress, base, archivecheck]
+[from=(gzip), to=(crc), weight=1.8653236336504383E-4] -> [gzip, compress, base, archivecheck]
+[from=(gzip), to=(crc), weight=1.8653236336504383E-4] -> [gzip, adler32checksum, compress, base]
+
+1.0 1.0 0.9999533669091694
+Feature Model: Root(compress(Mandatory(base(Optional(extract), Optional(adler32checksum), Optional(archivecheck))), Optional(gzip), Optional(crc)))
+CTCs: ConstraintSet
+Number Of Products: 32
+Number of Contained Products: 32
+Broken Dependencies: 
+[from=(gzip), to=(crc), weight=1.8653236336504383E-4] -> [gzip, extract, compress, base, archivecheck]
+[from=(gzip), to=(crc), weight=1.8653236336504383E-4] -> [gzip, extract, adler32checksum, compress, base, archivecheck]
+[from=(gzip), to=(crc), weight=1.8653236336504383E-4] -> [gzip, compress, base]
+[from=(gzip), to=(crc), weight=1.8653236336504383E-4] -> [gzip, extract, adler32checksum, compress, base]
+[from=(gzip), to=(crc), weight=1.8653236336504383E-4] -> [gzip, extract, compress, base]
+[from=(gzip), to=(crc), weight=1.8653236336504383E-4] -> [gzip, adler32checksum, compress, base, archivecheck]
+[from=(gzip), to=(crc), weight=1.8653236336504383E-4] -> [gzip, compress, base, archivecheck]
+[from=(gzip), to=(crc), weight=1.8653236336504383E-4] -> [gzip, adler32checksum, compress, base]
+
+1.0 1.0 0.9999533669091694
+Feature Model: Root(base(Mandatory(compress(Optional(extract), Optional(gzip), Optional(adler32checksum))), Optional(archivecheck), Optional(crc)))
+CTCs: ConstraintSet
+Number Of Products: 32
+Number of Contained Products: 32
+Broken Dependencies: 
+[from=(gzip), to=(crc), weight=1.8653236336504383E-4] -> [gzip, extract, base, compress, archivecheck]
+[from=(gzip), to=(crc), weight=1.8653236336504383E-4] -> [gzip, extract, adler32checksum, base, compress, archivecheck]
+[from=(gzip), to=(crc), weight=1.8653236336504383E-4] -> [gzip, base, compress]
+[from=(gzip), to=(crc), weight=1.8653236336504383E-4] -> [gzip, extract, adler32checksum, base, compress]
+[from=(gzip), to=(crc), weight=1.8653236336504383E-4] -> [gzip, extract, base, compress]
+[from=(gzip), to=(crc), weight=1.8653236336504383E-4] -> [gzip, adler32checksum, base, compress, archivecheck]
+[from=(gzip), to=(crc), weight=1.8653236336504383E-4] -> [gzip, base, compress, archivecheck]
+[from=(gzip), to=(crc), weight=1.8653236336504383E-4] -> [gzip, adler32checksum, base, compress]
+
+1.0 0.75 1.0
+Feature Model: Root(compress(Alternative(base(Optional(adler32checksum), Optional(archivecheck), Optional(crc(Optional(gzip))), Optional(extract)))))
+CTCs: ConstraintSet
+Number Of Products: 24
+Number of Contained Products: 24
+Broken Dependencies: 
+
+1.0 1.0 0.9999533669091694
+Feature Model: Root(base(Mandatory(Optional(adler32checksum) compress Optional(extract)), Optional(archivecheck), Optional(crc), Optional(gzip)))
+CTCs: ConstraintSet
+Number Of Products: 32
+Number of Contained Products: 32
+Broken Dependencies: 
+[from=(gzip), to=(crc), weight=1.8653236336504383E-4] -> [gzip, extract, base, compress, archivecheck]
+[from=(gzip), to=(crc), weight=1.8653236336504383E-4] -> [gzip, adler32checksum, extract, base, compress, archivecheck]
+[from=(gzip), to=(crc), weight=1.8653236336504383E-4] -> [gzip, base, compress]
+[from=(gzip), to=(crc), weight=1.8653236336504383E-4] -> [gzip, adler32checksum, extract, base, compress]
+[from=(gzip), to=(crc), weight=1.8653236336504383E-4] -> [gzip, extract, base, compress]
+[from=(gzip), to=(crc), weight=1.8653236336504383E-4] -> [gzip, adler32checksum, base, compress, archivecheck]
+[from=(gzip), to=(crc), weight=1.8653236336504383E-4] -> [gzip, base, compress, archivecheck]
+[from=(gzip), to=(crc), weight=1.8653236336504383E-4] -> [gzip, adler32checksum, base, compress]
+
+1.0 0.75 1.0
+Feature Model: Root(Mandatory(base(Optional(archivecheck), Optional(adler32checksum), Optional(crc(Optional(gzip))))) compress Optional(extract))
+CTCs: ConstraintSet
+Number Of Products: 24
+Number of Contained Products: 24
+Broken Dependencies: 
+
+1.0 0.75 1.0
+Feature Model: Root(Mandatory(base(Optional(archivecheck), Optional(crc(Optional(gzip))), Optional(extract))) compress Optional(adler32checksum))
+CTCs: ConstraintSet
+Number Of Products: 24
+Number of Contained Products: 24
+Broken Dependencies: 
+
+1.0 0.75 1.0
+Feature Model: Root(compress(Mandatory(base(Optional(extract))), Optional(archivecheck), Optional(crc(Optional(gzip))), Optional(adler32checksum)))
+CTCs: ConstraintSet(Constraint(Not(Atom(archivecheck)) Or Atom(base)))
+Number Of Products: 24
+Number of Contained Products: 24
+Broken Dependencies: 
+
+1.0 0.75 1.0
+Feature Model: Root(base(Mandatory(Optional(archivecheck) compress Optional(crc(Optional(gzip)))), Optional(adler32checksum), Optional(extract)))
+CTCs: ConstraintSet
+Number Of Products: 24
+Number of Contained Products: 24
+Broken Dependencies: 
+
+1.0 0.75 1.0
+Feature Model: Root(base(Mandatory(Optional(archivecheck) compress Optional(crc(Optional(gzip)))), Optional(extract), Optional(adler32checksum)))
+CTCs: ConstraintSet
+Number Of Products: 24
+Number of Contained Products: 24
+Broken Dependencies: 
+
+1.0 0.75 1.0
+Feature Model: Root(Mandatory(compress(Optional(adler32checksum), Optional(archivecheck), Optional(extract))) base Optional(crc(Optional(gzip))))
+CTCs: ConstraintSet
+Number Of Products: 24
+Number of Contained Products: 24
+Broken Dependencies: 
+
+1.0 1.0 0.9999533669091694
+Feature Model: Root(Mandatory(compress(Optional(extract), Optional(gzip), Optional(adler32checksum), Optional(crc))) base Optional(archivecheck))
+CTCs: ConstraintSet
+Number Of Products: 32
+Number of Contained Products: 32
+Broken Dependencies: 
+[from=(gzip), to=(crc), weight=1.8653236336504383E-4] -> [gzip, extract, base, compress, archivecheck]
+[from=(gzip), to=(crc), weight=1.8653236336504383E-4] -> [gzip, extract, adler32checksum, base, compress, archivecheck]
+[from=(gzip), to=(crc), weight=1.8653236336504383E-4] -> [gzip, base, compress]
+[from=(gzip), to=(crc), weight=1.8653236336504383E-4] -> [gzip, extract, adler32checksum, base, compress]
+[from=(gzip), to=(crc), weight=1.8653236336504383E-4] -> [gzip, extract, base, compress]
+[from=(gzip), to=(crc), weight=1.8653236336504383E-4] -> [gzip, adler32checksum, base, compress, archivecheck]
+[from=(gzip), to=(crc), weight=1.8653236336504383E-4] -> [gzip, base, compress, archivecheck]
+[from=(gzip), to=(crc), weight=1.8653236336504383E-4] -> [gzip, adler32checksum, base, compress]
+
+1.0 0.75 1.0
+Feature Model: Root(base(Mandatory(Optional(adler32checksum) compress Optional(extract)), Optional(archivecheck), Optional(crc(Optional(gzip)))))
+CTCs: ConstraintSet
+Number Of Products: 24
+Number of Contained Products: 24
+Broken Dependencies: 
+
+1.0 1.0 0.9999533669091694
+Feature Model: Root(Mandatory(base(Optional(extract), Optional(adler32checksum), Optional(crc), Optional(archivecheck))) compress Optional(gzip))
+CTCs: ConstraintSet
+Number Of Products: 32
+Number of Contained Products: 32
+Broken Dependencies: 
+[from=(gzip), to=(crc), weight=1.8653236336504383E-4] -> [gzip, extract, compress, base, archivecheck]
+[from=(gzip), to=(crc), weight=1.8653236336504383E-4] -> [gzip, extract, adler32checksum, compress, base, archivecheck]
+[from=(gzip), to=(crc), weight=1.8653236336504383E-4] -> [gzip, compress, base]
+[from=(gzip), to=(crc), weight=1.8653236336504383E-4] -> [gzip, extract, adler32checksum, compress, base]
+[from=(gzip), to=(crc), weight=1.8653236336504383E-4] -> [gzip, extract, compress, base]
+[from=(gzip), to=(crc), weight=1.8653236336504383E-4] -> [gzip, adler32checksum, compress, base, archivecheck]
+[from=(gzip), to=(crc), weight=1.8653236336504383E-4] -> [gzip, compress, base, archivecheck]
+[from=(gzip), to=(crc), weight=1.8653236336504383E-4] -> [gzip, adler32checksum, compress, base]
+
+1.0 0.75 1.0
+Feature Model: Root(base(Mandatory(compress(Optional(archivecheck))), Optional(crc(Optional(gzip))), Optional(adler32checksum), Optional(extract)))
+CTCs: ConstraintSet
+Number Of Products: 24
+Number of Contained Products: 24
+Broken Dependencies: 
+
+1.0 1.0 0.9999533669091694
+Feature Model: Root(compress(Mandatory(base(Optional(extract), Optional(adler32checksum), Optional(crc), Optional(gzip), Optional(archivecheck)))))
+CTCs: ConstraintSet
+Number Of Products: 32
+Number of Contained Products: 32
+Broken Dependencies: 
+[from=(gzip), to=(crc), weight=1.8653236336504383E-4] -> [gzip, extract, compress, base, archivecheck]
+[from=(gzip), to=(crc), weight=1.8653236336504383E-4] -> [gzip, extract, adler32checksum, compress, base, archivecheck]
+[from=(gzip), to=(crc), weight=1.8653236336504383E-4] -> [gzip, compress, base]
+[from=(gzip), to=(crc), weight=1.8653236336504383E-4] -> [gzip, extract, adler32checksum, compress, base]
+[from=(gzip), to=(crc), weight=1.8653236336504383E-4] -> [gzip, extract, compress, base]
+[from=(gzip), to=(crc), weight=1.8653236336504383E-4] -> [gzip, adler32checksum, compress, base, archivecheck]
+[from=(gzip), to=(crc), weight=1.8653236336504383E-4] -> [gzip, compress, base, archivecheck]
+[from=(gzip), to=(crc), weight=1.8653236336504383E-4] -> [gzip, adler32checksum, compress, base]
+
+1.0 0.75 1.0
+Feature Model: Root(base(Mandatory(Optional(extract) compress Optional(crc(Optional(gzip)))), Optional(adler32checksum), Optional(archivecheck)))
+CTCs: ConstraintSet
+Number Of Products: 24
+Number of Contained Products: 24
+Broken Dependencies: 
+
+1.0 0.75 1.0
+Feature Model: Root(base(Mandatory(compress(Optional(adler32checksum))), Optional(archivecheck), Optional(crc(Optional(gzip))), Optional(extract)))
+CTCs: ConstraintSet
+Number Of Products: 24
+Number of Contained Products: 24
+Broken Dependencies: 
+
+1.0 1.0 0.9999533669091694
+Feature Model: Root(compress(Mandatory(base(Optional(extract), Optional(gzip), Optional(adler32checksum), Optional(crc), Optional(archivecheck)))))
+CTCs: ConstraintSet
+Number Of Products: 32
+Number of Contained Products: 32
+Broken Dependencies: 
+[from=(gzip), to=(crc), weight=1.8653236336504383E-4] -> [gzip, extract, compress, base, archivecheck]
+[from=(gzip), to=(crc), weight=1.8653236336504383E-4] -> [gzip, extract, adler32checksum, compress, base, archivecheck]
+[from=(gzip), to=(crc), weight=1.8653236336504383E-4] -> [gzip, compress, base]
+[from=(gzip), to=(crc), weight=1.8653236336504383E-4] -> [gzip, extract, adler32checksum, compress, base]
+[from=(gzip), to=(crc), weight=1.8653236336504383E-4] -> [gzip, extract, compress, base]
+[from=(gzip), to=(crc), weight=1.8653236336504383E-4] -> [gzip, adler32checksum, compress, base, archivecheck]
+[from=(gzip), to=(crc), weight=1.8653236336504383E-4] -> [gzip, compress, base, archivecheck]
+[from=(gzip), to=(crc), weight=1.8653236336504383E-4] -> [gzip, adler32checksum, compress, base]
+
+1.0 0.75 1.0
+Feature Model: Root(Mandatory(base(Optional(adler32checksum), Optional(archivecheck), Optional(crc(Optional(gzip))))) compress Optional(extract))
+CTCs: ConstraintSet
+Number Of Products: 24
+Number of Contained Products: 24
+Broken Dependencies: 
+
+1.0 0.75 1.0
+Feature Model: Root(Mandatory(base(Optional(adler32checksum), Optional(crc(Optional(gzip))), Optional(archivecheck))) compress Optional(extract))
+CTCs: ConstraintSet(Constraint(Not(Atom(extract)) Or Atom(compress)))
+Number Of Products: 24
+Number of Contained Products: 24
+Broken Dependencies: 
+
+1.0 0.75 1.0
+Feature Model: Root(base(Mandatory(compress(Optional(adler32checksum), Optional(archivecheck), Optional(extract), Optional(crc(Optional(gzip)))))))
+CTCs: ConstraintSet
+Number Of Products: 24
+Number of Contained Products: 24
+Broken Dependencies: 
+
+1.0 0.75 1.0
+Feature Model: Root(Mandatory(base(Optional(extract), Optional(adler32checksum), Optional(archivecheck))) compress Optional(crc(Optional(gzip))))
+CTCs: ConstraintSet
+Number Of Products: 24
+Number of Contained Products: 24
+Broken Dependencies: 
+
+1.0 0.75 1.0
+Feature Model: Root(compress(Mandatory(Optional(extract) base Optional(adler32checksum)), Optional(archivecheck), Optional(crc(Optional(gzip)))))
+CTCs: ConstraintSet
+Number Of Products: 24
+Number of Contained Products: 24
+Broken Dependencies: 
+
+1.0 0.75 1.0
+Feature Model: Root(base(Or(compress(Optional(adler32checksum))), Optional(archivecheck), Optional(crc(Optional(gzip))), Optional(extract)))
+CTCs: ConstraintSet
+Number Of Products: 24
+Number of Contained Products: 24
+Broken Dependencies: 
+
+1.0 0.75 1.0
+Feature Model: Root(base(Mandatory(Optional(archivecheck) compress Optional(extract)), Optional(crc(Optional(gzip))), Optional(adler32checksum)))
+CTCs: ConstraintSet
+Number Of Products: 24
+Number of Contained Products: 24
+Broken Dependencies: 
+
+1.0 0.75 1.0
+Feature Model: Root(Mandatory(compress(Optional(adler32checksum), Optional(crc(Optional(gzip))), Optional(archivecheck))) base Optional(extract))
+CTCs: ConstraintSet
+Number Of Products: 24
+Number of Contained Products: 24
+Broken Dependencies: 
+
+1.0 0.75 1.0
+Feature Model: Root(compress(Mandatory(base(Optional(adler32checksum), Optional(archivecheck), Optional(crc(Optional(gzip))), Optional(extract)))))
+CTCs: ConstraintSet
+Number Of Products: 24
+Number of Contained Products: 24
+Broken Dependencies: 
+
+1.0 0.75 1.0
+Feature Model: Root(Mandatory(compress(Optional(adler32checksum), Optional(extract), Optional(crc(Optional(gzip))))) base Optional(archivecheck))
+CTCs: ConstraintSet
+Number Of Products: 24
+Number of Contained Products: 24
+Broken Dependencies: 
+

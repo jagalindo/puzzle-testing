@@ -1,0 +1,82 @@
+
+Generation: 0
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [0.0476190485060215 0.625 0.10137075174357543]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (vod (Optional quitplayer) (Optional
+     selectmovie) (Or stopmovie playimm) (Or (pause
+     (Optional detail)) changeserver) (Or vrcinterface
+     startplayer startmovie)))
+Tree 1:
+ ConstraintSet
+
+Generation: 1
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [0.0476190485060215 0.625 0.10137075174357543]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (vod (Optional quitplayer) (Optional
+     selectmovie) (Or stopmovie playimm) (Or (pause
+     (Optional detail)) changeserver) (Or vrcinterface
+     startplayer startmovie)))
+Tree 1:
+ ConstraintSet
+
+Generation: 2
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [0.06060606241226196 0.75 0.11386673510396088]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (vod (Optional quitplayer) (Optional
+     selectmovie) (Or stopmovie playimm) (Or (pause
+     (Optional detail)) changeserver vrcinterface)
+     (Or startplayer startmovie)))
+Tree 1:
+ ConstraintSet
+
+Generation: 3
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [1.0 1.0 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (vod (Mandatory (startplayer (Mandatory
+     playimm) (Optional detail))) (Or selectmovie)
+     (Optional changeserver) (Mandatory (vrcinterface
+     (Optional stopmovie))) (Optional pause) (Mandatory
+     startmovie) (Optional quitplayer)))
+Tree 1:
+ (ConstraintSet (Constraint (Or (Not (Atom
+     playimm)) (Atom selectmovie))))
+
+
+
+ PARETO FRONTS
+
+
+Pareto Front of Subpopulation 0
+Evaluated: true
+Fitness: [1.0 1.0 1.0]
+Rank: 0
+Sparsity: Infinity
+Tree 0:
+ (Root (vod (Mandatory (startplayer (Mandatory
+     playimm) (Optional detail))) (Or selectmovie)
+     (Optional changeserver) (Mandatory (vrcinterface
+     (Optional stopmovie))) (Optional pause) (Mandatory
+     startmovie) (Optional quitplayer)))
+Tree 1:
+ (ConstraintSet (Constraint (Or (Not (Atom
+     playimm)) (Atom selectmovie))))
