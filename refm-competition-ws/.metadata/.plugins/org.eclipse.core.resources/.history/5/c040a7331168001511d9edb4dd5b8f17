@@ -1,0 +1,11 @@
+package fr.inria.diverse.refm.competition.lopez;
+
+import fm.experiments.utils.FMExtractorFacade;
+
+public class BenchmarkingLopezREFM {
+
+	
+	public void execute(String PCMFile){
+		FMExtractorFacade.generateFM(PCMFile);
+	}
+}

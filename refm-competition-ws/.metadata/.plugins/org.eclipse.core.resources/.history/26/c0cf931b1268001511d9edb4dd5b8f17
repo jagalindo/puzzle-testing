@@ -1,0 +1,21 @@
+package fr.inria.diverse.refm.competition.common;
+
+import java.io.BufferedReader;
+import java.io.File;
+
+public class FileUtils {
+
+	public static String readFileContent(File file) throws IOException{
+		String content = "";
+		BufferedReader br = new BufferedReader(new FileReader(file));
+		
+		String line = br.readLine();
+		while(line != null){
+			content += line + "\n";
+			line = br.readLine();
+		}
+		
+		br.close();
+		return content;
+	}
+}

@@ -1,0 +1,8 @@
+package fr.inria.diverse.refm.competition.lopez;
+
+public class PCMFromatTranslator {
+
+	public String fromPuzzleToLopezFormat(String originalPCM){
+		
+	}
+}
