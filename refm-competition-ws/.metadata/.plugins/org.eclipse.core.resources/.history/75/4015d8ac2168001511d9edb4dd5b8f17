@@ -1,0 +1,7 @@
+source.common.jar = src/
+bin.includes = META-INF/,\
+               lib/FaMaAttributedModel-1.0.2.jar,\
+               lib/FaMaAttributedModel-1.0.4-sources.jar,\
+               lib/FaMaFeatureModel-0.9.1-sources.jar,\
+               lib/FaMaFeatureModel-0.9.1.jar,\
+               common.jar

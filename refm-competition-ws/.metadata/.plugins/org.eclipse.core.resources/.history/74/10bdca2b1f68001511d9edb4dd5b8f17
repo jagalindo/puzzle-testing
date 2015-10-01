@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Mendez
+Bundle-SymbolicName: fr.inria.diverse.refm.competition.mendez
+Bundle-Version: 1.0.0.qualifier
+Export-Package: fr.inria.diverse.refm.competition.mendez
+Require-Bundle: fr.inria.diverse.puzzle.vm.metamodel;bundle-version="1.0.0",
+ fr.inria.diverse.puzzle.vmsynthesis;bundle-version="1.0.0",
+ es.us.isa.fama;bundle-version="1.0.0"

@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Common
+Bundle-SymbolicName: fr.inria.diverse.refm.competition.common
+Bundle-Version: 1.0.0.qualifier
+Bundle-ClassPath: common.jar,
+ lib/FaMaAttributedModel-1.0.2.jar,
+ lib/FaMaAttributedModel-1.0.4-sources.jar,
+ lib/FaMaFeatureModel-0.9.1-sources.jar,
+ lib/FaMaFeatureModel-0.9.1.jar
