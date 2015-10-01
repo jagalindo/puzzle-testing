@@ -12,25 +12,11 @@ import fr.inria.diverse.graph.Vertex;
 import fr.inria.diverse.refm.competition.common.utils.FileUtils;
 import fr.inria.diverse.refm.competition.common.utils.PrintUtils;
 
-/**
- * JUnit class that is able to execute the REFM benchmark on the proposal of Mendez-Acuna et al. 
- * 
- * @author David Mendez-Acuna
- *
- */
 public class BenchmarkingMendezREFM {
 
-	// ---------------------------------------------------
-	// Attributes
-	// ---------------------------------------------------
-	
 	private MendezREFM synthesizer;
 	private int initialInstance;
 	private int finalInstance;
-	
-	// ---------------------------------------------------
-	// Scenarios loading
-	// ---------------------------------------------------
 	
 	@Before
 	public void loadScenarios(){
@@ -38,10 +24,6 @@ public class BenchmarkingMendezREFM {
 		initialInstance = 1;
 		finalInstance = 5;
 	}
-	
-	// ---------------------------------------------------
-	// Execution
-	// ---------------------------------------------------
 	
 	@Test
 	public void executeBenchmark() throws Exception{

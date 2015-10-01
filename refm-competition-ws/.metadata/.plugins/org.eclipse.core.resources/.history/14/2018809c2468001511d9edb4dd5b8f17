@@ -29,13 +29,11 @@ public class BenchmarkingLopezREFM {
 	@Before
 	public void loadScenarios(){
 		synthesizer = new LopezREFM();
-		initialInstance = 1;
-		finalInstance = 5;
 	}
 	
 	@Test
 	public void executeBenchmark() throws Exception{
-		for (int i = initialInstance; i <= finalInstance; i++) {
+		for (int i = 1; i <= 2; i++) {
 			FAMAFeatureModel result = synthesizer.execute("testdata/" + i + "_3_closed_pcm.txt");
 			(new PrintUtils()).printFitness(result);
 		}

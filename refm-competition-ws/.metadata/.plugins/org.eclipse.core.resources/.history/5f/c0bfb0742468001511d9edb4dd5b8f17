@@ -14,8 +14,7 @@ import fr.inria.diverse.refm.competition.common.utils.PrintUtils;
 
 /**
  * JUnit class that is able to execute the REFM benchmark on the proposal of Mendez-Acuna et al. 
- * 
- * @author David Mendez-Acuna
+ * @author dmendeza
  *
  */
 public class BenchmarkingMendezREFM {

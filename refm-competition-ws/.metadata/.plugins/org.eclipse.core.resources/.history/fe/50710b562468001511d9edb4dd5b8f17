@@ -1,24 +1,24 @@
-package fr.inria.diverse.refm.competition.lopez;
+package fr.inria.diverse.refm.competition.mendez;
+
+import java.io.File;
 
 import org.junit.Before;
 import org.junit.Test;
 
 import es.us.isa.FAMA.models.FAMAfeatureModel.FAMAFeatureModel;
+import fr.inria.diverse.graph.Arc;
+import fr.inria.diverse.graph.Graph;
+import fr.inria.diverse.graph.Vertex;
+import fr.inria.diverse.refm.competition.common.utils.FileUtils;
 import fr.inria.diverse.refm.competition.common.utils.PrintUtils;
 
-/**
- * JUnit class that is able to execute the REFM benchmark on the proposal of Lopez-Herrejon et al. 
- * 
- * @author David Mendez-Acuna
- *
- */
-public class BenchmarkingLopezREFM {
+public class BenchmarkingMendezREFM {
 
 	// ---------------------------------------------------
 	// Attributes
 	// ---------------------------------------------------
 	
-	private LopezREFM synthesizer;
+	private MendezREFM synthesizer;
 	private int initialInstance;
 	private int finalInstance;
 	
@@ -28,7 +28,7 @@ public class BenchmarkingLopezREFM {
 	
 	@Before
 	public void loadScenarios(){
-		synthesizer = new LopezREFM();
+		synthesizer = new MendezREFM();
 		initialInstance = 1;
 		finalInstance = 5;
 	}
@@ -36,11 +36,10 @@ public class BenchmarkingLopezREFM {
 	@Test
 	public void executeBenchmark() throws Exception{
 		for (int i = initialInstance; i <= finalInstance; i++) {
-			FAMAFeatureModel result = synthesizer.execute("testdata/" + i + "_3_closed_pcm.txt");
+			String matrix = FileUtils.readFileContent(new File("testdata/" + i + "_1_dependencies_graph.txt"));
+			Graph<Vertex, Arc> graph = new Graph<>(matrix);
+			FAMAFeatureModel result = synthesizer.execute(graph, "testdata/" + i + "_3_closed_pcm.txt");
 			(new PrintUtils()).printFitness(result);
 		}
 	}
-
-	
-	
 }
