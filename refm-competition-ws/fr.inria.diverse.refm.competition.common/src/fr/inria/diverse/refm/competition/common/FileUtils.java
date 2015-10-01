@@ -24,7 +24,12 @@ public class FileUtils {
 	}
 	
 	public static void saveFile(String content, String filePath) throws IOException{
-		FileWriter fw = new FileWriter(new File(filePath));
+		File destination = new File(filePath);
+		
+		if(!destination.exists())
+			destination.createNewFile();
+		
+		FileWriter fw = new FileWriter(destination);
 		BufferedWriter bw = new BufferedWriter(fw);
 		bw.write(content);
 		bw.close();

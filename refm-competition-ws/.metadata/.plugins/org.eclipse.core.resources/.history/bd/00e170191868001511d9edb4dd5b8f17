@@ -1,0 +1,12 @@
+package fr.inria.diverse.refm.competition.lopez;
+
+import org.junit.Test;
+
+public class BenchmarkingLopezREFM {
+
+	@Test
+	public void executeBenchmark(){
+		
+	}
+	
+}
