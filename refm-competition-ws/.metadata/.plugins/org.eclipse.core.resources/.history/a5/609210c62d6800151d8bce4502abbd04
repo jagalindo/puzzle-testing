@@ -1,0 +1,17 @@
+package fr.inria.diverse.refm.competition.assumcao;
+
+import java.io.IOException;
+
+import run.RunNSGAIIFM_3obj;
+import es.us.isa.FAMA.models.FAMAfeatureModel.FAMAFeatureModel;
+
+public class AssumcaoREFM {
+
+	public FAMAFeatureModel execute(String string) throws IOException, InterruptedException {
+		
+		run.RunNSGAIIFM_3obj hola = new RunNSGAIIFM_3obj();
+		hola.main(null);
+		// TODO Auto-generated method stub
+		return null;
+	}
+}

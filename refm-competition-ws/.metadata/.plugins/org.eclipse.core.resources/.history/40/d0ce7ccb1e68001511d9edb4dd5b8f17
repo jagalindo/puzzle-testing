@@ -1,6 +1,0 @@
-Manifest-Version: 1.0
-Bundle-ManifestVersion: 2
-Bundle-Name: Mendez
-Bundle-SymbolicName: fr.inria.diverse.refm.competition.mendez
-Bundle-Version: 1.0.0.qualifier
-Export-Package: fr.inria.diverse.refm.competition.mendez

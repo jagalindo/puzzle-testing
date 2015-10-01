@@ -1,0 +1,11 @@
+package fr.inria.diverse.refm.competition.assumcao;
+
+import es.us.isa.FAMA.models.FAMAfeatureModel.FAMAFeatureModel;
+
+public class AssumcaoREFM {
+
+	public FAMAFeatureModel execute(String string) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+}

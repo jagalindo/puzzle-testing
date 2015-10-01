@@ -1,0 +1,15 @@
+package fr.inria.diverse.refm.competition.assumcao;
+
+import run.RunNSGAIIFM_3obj;
+import es.us.isa.FAMA.models.FAMAfeatureModel.FAMAFeatureModel;
+
+public class AssumcaoREFM {
+
+	public FAMAFeatureModel execute(String string) {
+		
+		run.RunNSGAIIFM_3obj hola = new RunNSGAIIFM_3obj();
+		hola.main(["",""]);
+		// TODO Auto-generated method stub
+		return null;
+	}
+}

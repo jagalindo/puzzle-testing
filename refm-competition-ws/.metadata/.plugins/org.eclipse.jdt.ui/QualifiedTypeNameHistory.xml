@@ -1,2 +1,31 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<qualifiedTypeNameHistroy/>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="fm.experiments.utils.FMExtractorFacade"/>
+<fullyQualifiedTypeName name="java.io.BufferedReader"/>
+<fullyQualifiedTypeName name="java.io.IOException"/>
+<fullyQualifiedTypeName name="java.io.FileReader"/>
+<fullyQualifiedTypeName name="java.io.FileWriter"/>
+<fullyQualifiedTypeName name="java.io.BufferedWriter"/>
+<fullyQualifiedTypeName name="fr.inria.diverse.refm.competition.common.FileUtils"/>
+<fullyQualifiedTypeName name="org.junit.Test"/>
+<fullyQualifiedTypeName name="org.junit.Before"/>
+<fullyQualifiedTypeName name="fr.inria.diverse.refm.competition.lopez.LopezREFM"/>
+<fullyQualifiedTypeName name="fr.inria.diverse.refm.competition.lopez.PCMFromatTranslator"/>
+<fullyQualifiedTypeName name="es.us.isa.FAMA.models.FAMAfeatureModel.FAMAFeatureModel"/>
+<fullyQualifiedTypeName name="antlr.collections.List"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="fr.inria.diverse.refm.competition.common.utils.fitness.Fitness"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="fr.inria.diverse.refm.competition.common.utils.fitness.Precision"/>
+<fullyQualifiedTypeName name="fr.inria.diverse.refm.competition.common.utils.PrintUtils"/>
+<fullyQualifiedTypeName name="vm.PFeatureModel"/>
+<fullyQualifiedTypeName name="fr.inria.diverse.puzzle.vmsynthesis.impl.VmSynthesis"/>
+<fullyQualifiedTypeName name="org.eclipse.emf.ecore.resource.impl.FileURIHandlerImpl"/>
+<fullyQualifiedTypeName name="fr.inria.diverse.puzzle.vmsynthesis.impl.FromPFeatureModelToFAMA"/>
+<fullyQualifiedTypeName name="fr.inria.diverse.refm.competition.mendez.MendezREFM"/>
+<fullyQualifiedTypeName name="fr.inria.diverse.graph.Vertex"/>
+<fullyQualifiedTypeName name="fr.inria.diverse.graph.Arc"/>
+<fullyQualifiedTypeName name="fr.inria.diverse.graph.Graph"/>
+<fullyQualifiedTypeName name="fr.inria.diverse.refm.competition.common.utils.FileUtils"/>
+<fullyQualifiedTypeName name="java.io.File"/>
+</qualifiedTypeNameHistroy>
