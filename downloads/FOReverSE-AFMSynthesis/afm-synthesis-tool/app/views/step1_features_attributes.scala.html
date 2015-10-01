@@ -1,0 +1,84 @@
+@(matrix : List[List[String]])
+
+@header = {
+
+}
+
+@footer = {
+    <script type='text/javascript' src='@routes.Assets.at("javascripts/double-scroll.js")'></script>
+    <script>
+        $('.double-scroll').doubleScroll();
+    </script>
+}
+
+@toIdentifier(name : String) = {@{
+    name.replaceAll("-","")
+            .replaceAll("–","")
+            .replaceAll(" ", "_")
+            .toLowerCase
+}}
+
+@main("step1", "step2", header, footer) {
+
+    <form class="form" action="@routes.Application.step2()" method="post"> <!-- form-inline -->
+        <div class="row center btn-next">
+
+            <button type="submit" class="btn btn-primary">Next</button>
+
+        </div>
+
+
+        <div class="row">
+            <div class="scrollable double-scroll" ng-controller="Step1Controller">
+                <table class="table table-bordered table-condensed" id="configuration_matrix">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            @for((variable, index) <- matrix.head.zipWithIndex) {
+                                <th>
+                                    @variable
+
+
+                                    <select
+                                        class="form-control"
+                                        name="@{variable}.type"
+                                        ng-model="variables[@index].type"
+                                        ng-init="variables[@index].type='Feature'"
+                                    >
+                                        <option>Feature</option>
+                                        <option>Attribute</option>
+                                    </select>
+
+                                    <input
+                                        type="text"
+                                        class="form-control"
+                                        placeholder="Null value"
+                                        name="@{variable}.nullValue"
+                                        ng-model="variables[@index].nullValue"
+                                        ng-disabled="isFeature(@index)"
+                                    >
+
+                                </th>
+
+                            }
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                    @for((product, index) <- matrix.tail.zipWithIndex) {
+                        <tr>
+                            <th scope="row">@index</th>
+                            @for(cell <- product) {
+                                <td>@cell</td>
+                            }
+                        </tr>
+                    }
+
+                    </tbody>
+                </table>
+
+            </div>
+        </div>
+    </form>
+
+}
