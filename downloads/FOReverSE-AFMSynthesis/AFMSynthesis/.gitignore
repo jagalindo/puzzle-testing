@@ -1,0 +1,8 @@
+/bin
+/output
+/.cache
+/.idea
+/projectFilesBackup
+sicstus_reasoner/revfm.sav
+input/
+generated/

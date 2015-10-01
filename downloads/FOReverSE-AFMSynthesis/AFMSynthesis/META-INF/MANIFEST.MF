@@ -1,0 +1,6 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: AFMSynthesis
+Bundle-SymbolicName: AFMSynthesis
+Bundle-Version: 1.0.0.qualifier
+Bundle-ClassPath: lib/scalatest_2.10-2.1.0.jar
