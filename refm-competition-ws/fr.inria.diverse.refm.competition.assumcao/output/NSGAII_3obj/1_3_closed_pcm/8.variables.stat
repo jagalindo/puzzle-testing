@@ -1,0 +1,525 @@
+1.0 0.6000000238418579 1.0
+Feature Model: Root(f6(Mandatory(root;f4(Optional(f7(Alternative(Or(Optional(f5) f8 Or(f3)) f9 Optional(root;f1(Or(root;f10)))))))), Mandatory(f10), Mandatory(f1)))
+CTCs: ConstraintSet(Constraint(Not(Atom(f5)) Or Atom(f9)), Constraint(Not(Atom(root;f4)) Or Atom(f6)), Constraint(Not(Atom(f7)) Or Not(Atom(root;f1))))
+Number Of Products: 3
+Number of Contained Products: 3
+Broken Dependencies: 
+
+1.0 0.6000000238418579 1.0
+Feature Model: Root(f10(Mandatory(f1), Mandatory(f6), Mandatory(root;f4(Optional(f7(Or(f9(Or(f8(Optional(f5), Alternative(f3), Optional(root;f1(Or(root;f10)))))))))))))
+CTCs: ConstraintSet(Constraint(Not(Atom(root;f4)) Or Atom(f6)), Constraint(Not(Atom(root;f1)) Or Atom(f1)), Constraint(Not(Atom(f7)) Or Not(Atom(root;f1))), Constraint(Not(Atom(root;f1)) Or Atom(f8)), Constraint(Not(Atom(root;f1)) Or Atom(f5)), Constraint(Not(Atom(root;f1)) Or Not(Atom(f6))))
+Number Of Products: 3
+Number of Contained Products: 3
+Broken Dependencies: 
+
+1.0 0.6000000238418579 1.0
+Feature Model: Root(f6(Mandatory(f1), Mandatory(root;f4(Optional(Or(f3(Or(f9(Alternative(f8))))) f7 Optional(f5)))), Mandatory(f10(Optional(root;f1(Or(root;f10)))))))
+CTCs: ConstraintSet(Constraint(Not(Atom(f5)) Or Atom(f9)), Constraint(Not(Atom(f7)) Or Not(Atom(root;f10))), Constraint(Not(Atom(root;f1)) Or Atom(f5)))
+Number Of Products: 3
+Number of Contained Products: 3
+Broken Dependencies: 
+
+1.0 0.6000000238418579 1.0
+Feature Model: Root(f6(Mandatory(f1), Mandatory(f10(Optional(f7(Or(f9(Alternative(Optional(f5) f8 Alternative(f3)))))))), Mandatory(root;f4), Optional(root;f1(Alternative(root;f10)))))
+CTCs: ConstraintSet(Constraint(Not(Atom(f7)) Or Not(Atom(root;f10))), Constraint(Not(Atom(f7)) Or Not(Atom(root;f1))), Constraint(Not(Atom(root;f1)) Or Atom(f1)), Constraint(Not(Atom(root;f1)) Or Not(Atom(f6))), Constraint(Not(Atom(root;f10)) Or Atom(root;f4)))
+Number Of Products: 3
+Number of Contained Products: 3
+Broken Dependencies: 
+
+1.0 0.6000000238418579 1.0
+Feature Model: Root(f1(Mandatory(root;f4), Mandatory(f6(Optional(f3(Or(f9(Alternative(f7(Optional(f5))), Or(f8), Optional(root;f1(Or(root;f10))))))))), Mandatory(f10)))
+CTCs: ConstraintSet(Constraint(Not(Atom(f7)) Or Atom(f8)), Constraint(Not(Atom(f9)) Or Not(Atom(root;f10))), Constraint(Not(Atom(f7)) Or Not(Atom(root;f10))), Constraint(Not(Atom(f10)) Or Atom(root;f4)), Constraint(Not(Atom(root;f10)) Or Atom(f8)))
+Number Of Products: 3
+Number of Contained Products: 3
+Broken Dependencies: 
+
+1.0 0.6000000238418579 1.0
+Feature Model: Root(Mandatory(Or(root;f4) f1 Optional(Alternative(f9) f7 Or(f3(Or(f8(Optional(f5))))))) f6 Mandatory(f10(Optional(root;f1(Alternative(root;f10))))))
+CTCs: Constraint(Not(Atom(root;f1)) Or Atom(f8)) ConstraintSet Constraint(Not(Atom(root;f1)) Or Not(Atom(root;f4)))
+Number Of Products: 3
+Number of Contained Products: 3
+Broken Dependencies: 
+
+1.0 0.6000000238418579 1.0
+Feature Model: Root(Mandatory(f10) f6 Mandatory(Optional(f7(Alternative(f9(Alternative(f8(Optional(f5), Or(f3), Optional(root;f1(Alternative(root;f10))))))))) f1 Or(root;f4)))
+CTCs: ConstraintSet(Constraint(Not(Atom(f5)) Or Atom(root;f4)), Constraint(Not(Atom(f7)) Or Not(Atom(root;f1))), Constraint(Not(Atom(root;f1)) Or Atom(f5)))
+Number Of Products: 3
+Number of Contained Products: 3
+Broken Dependencies: 
+
+1.0 0.6000000238418579 1.0
+Feature Model: Root(Mandatory(Mandatory(f6) f10 Optional(root;f1(Or(root;f10)))) f1 Mandatory(root;f4(Optional(f3(Or(Alternative(f7(Optional(f5))) f9 Alternative(f8)))))))
+CTCs: ConstraintSet(Constraint(Not(Atom(f7)) Or Not(Atom(root;f10))), Constraint(Not(Atom(f5)) Or Atom(root;f4)), Constraint(Not(Atom(root;f1)) Or Atom(f5)))
+Number Of Products: 3
+Number of Contained Products: 3
+Broken Dependencies: 
+
+1.0 0.6000000238418579 1.0
+Feature Model: Root(f6(Mandatory(root;f4(Or(f1), Optional(f7(Or(f3(Alternative(Optional(f5) f8 Or(f9)))))), Mandatory(f10(Optional(root;f1(Or(root;f10)))))))))
+CTCs: ConstraintSet(Constraint(Not(Atom(f9)) Or Atom(f10)), Constraint(Not(Atom(root;f10)) Or Atom(f5)), Constraint(Not(Atom(f5)) Or Atom(f9)), Constraint(Not(Atom(f7)) Or Not(Atom(root;f10))), Constraint(Not(Atom(root;f4)) Or Atom(f6)), Constraint(Not(Atom(root;f1)) Or Atom(f5)))
+Number Of Products: 3
+Number of Contained Products: 3
+Broken Dependencies: 
+
+1.0 0.6000000238418579 1.0
+Feature Model: Root(Mandatory(root;f4(Mandatory(f1))) f6 Mandatory(Optional(f7(Or(f9(Or(Optional(f5) f8 Or(f3)))))) f10 Optional(root;f1(Or(root;f10)))))
+CTCs: ConstraintSet(Constraint(Not(Atom(root;f1)) Or Not(Atom(root;f10))), Constraint(Not(Atom(f5)) Or Atom(f9)), Constraint(Not(Atom(root;f1)) Or Not(Atom(f5))), Constraint(Not(Atom(root;f4)) Or Atom(f6)), Constraint(Not(Atom(root;f1)) Or Not(Atom(f9))), Constraint(Not(Atom(f7)) Or Not(Atom(root;f1))), Constraint(Not(Atom(f10)) Or Not(Atom(root;f10))), Constraint(Not(Atom(root;f1)) Or Atom(f5)))
+Number Of Products: 3
+Number of Contained Products: 3
+Broken Dependencies: 
+
+1.0 0.6000000238418579 1.0
+Feature Model: Root(Mandatory(Optional(root;f1(Or(root;f10))) f10 Mandatory(f6(Mandatory(f1)))) root;f4 Optional(f7(Or(f9(Or(Optional(f5) f8 Or(f3)))))))
+CTCs: ConstraintSet(Constraint(Not(Atom(f9)) Or Atom(f8)), Constraint(Not(Atom(root;f4)) Or Not(Atom(root;f10))), Constraint(Not(Atom(f5)) Or Atom(f9)), Constraint(Not(Atom(root;f1)) Or Not(Atom(f9))), Constraint(Not(Atom(f7)) Or Not(Atom(root;f10))), Constraint(Not(Atom(root;f10)) Or Not(Atom(f5))), Constraint(Not(Atom(f6)) Or Atom(root;f4)))
+Number Of Products: 3
+Number of Contained Products: 3
+Broken Dependencies: 
+
+1.0 0.6000000238418579 1.0
+Feature Model: Root(f6(Mandatory(f1), Mandatory(root;f4), Mandatory(f10(Optional(root;f1(Or(root;f10))))), Optional(Or(f9(Optional(f5))) f7 Or(f3(Or(f8))))))
+CTCs: ConstraintSet(Constraint(Not(Atom(f7)) Or Atom(f6)), Constraint(Not(Atom(root;f1)) Or Not(Atom(root;f10))), Constraint(Not(Atom(f7)) Or Not(Atom(root;f10))), Constraint(Not(Atom(root;f1)) Or Not(Atom(f6))))
+Number Of Products: 3
+Number of Contained Products: 3
+Broken Dependencies: 
+
+1.0 0.6000000238418579 1.0
+Feature Model: Root(root;f4(Mandatory(f6(Mandatory(f1))), Mandatory(f10(Optional(root;f1(Or(root;f10))))), Optional(f7(Or(f9(Or(Optional(f5) f8 Or(f3))))))))
+CTCs: ConstraintSet(Constraint(Not(Atom(f7)) Or Not(Atom(root;f10))), Constraint(Not(Atom(f7)) Or Not(Atom(root;f1))), Constraint(Not(Atom(root;f1)) Or Not(Atom(root;f4))))
+Number Of Products: 3
+Number of Contained Products: 3
+Broken Dependencies: 
+
+1.0 0.6000000238418579 1.0
+Feature Model: Root(f1(Mandatory(root;f4(Optional(f3(Alternative(f8(Optional(f5))))))), Mandatory(f6), Mandatory(f10(Optional(f7(Alternative(f9(Optional(root;f1(Or(root;f10)))))))))))
+CTCs: ConstraintSet(Constraint(Not(Atom(f9)) Or Atom(f8)), Constraint(Not(Atom(root;f4)) Or Not(Atom(root;f10))), Constraint(Not(Atom(f3)) Or Atom(f9)), Constraint(Not(Atom(f1)) Or Atom(f6)), Constraint(Not(Atom(root;f4)) Or Atom(f6)), Constraint(Not(Atom(root;f1)) Or Not(Atom(f9))), Constraint(Not(Atom(f10)) Or Not(Atom(root;f10))), Constraint(Not(Atom(root;f1)) Or Atom(f5)))
+Number Of Products: 3
+Number of Contained Products: 3
+Broken Dependencies: 
+
+1.0 0.6000000238418579 1.0
+Feature Model: Root(Or(Optional(f3(Or(Alternative(f7(Optional(f5))) f9 Alternative(f8)))) root;f4 Mandatory(f6)) f1 Mandatory(f10(Optional(root;f1(Or(root;f10))))))
+CTCs: ConstraintSet(Constraint(Not(Atom(f9)) Or Atom(f10)), Constraint(Not(Atom(f7)) Or Not(Atom(root;f1))), Constraint(Not(Atom(root;f1)) Or Atom(f8)))
+Number Of Products: 3
+Number of Contained Products: 3
+Broken Dependencies: 
+
+1.0 0.6000000238418579 1.0
+Feature Model: Root(Mandatory(root;f4(Mandatory(f1))) f6 Mandatory(f10(Optional(f7(Or(Optional(root;f1(Or(root;f10))) f9 Alternative(Optional(f5) f8 Or(f3))))))))
+CTCs: ConstraintSet(Constraint(Not(Atom(root;f1)) Or Not(Atom(root;f10))), Constraint(Not(Atom(f9)) Or Atom(f8)), Constraint(Not(Atom(f7)) Or Atom(f6)), Constraint(Not(Atom(root;f4)) Or Atom(f6)), Constraint(Not(Atom(root;f1)) Or Not(Atom(f9))), Constraint(Not(Atom(f7)) Or Not(Atom(root;f1))), Constraint(Not(Atom(root;f1)) Or Not(Atom(root;f4))))
+Number Of Products: 3
+Number of Contained Products: 3
+Broken Dependencies: 
+
+1.0 0.6000000238418579 1.0
+Feature Model: Root(f6(Mandatory(f10(Optional(root;f1(Or(root;f10))))), Mandatory(f1), Mandatory(root;f4(Optional(f7(Alternative(f9(Alternative(Optional(f5) f8 Or(f3))))))))))
+CTCs: ConstraintSet(Constraint(Not(Atom(f7)) Or Not(Atom(root;f10))), Constraint(Not(Atom(f7)) Or Not(Atom(root;f1))), Constraint(Not(Atom(root;f1)) Or Atom(f8)))
+Number Of Products: 3
+Number of Contained Products: 3
+Broken Dependencies: 
+
+1.0 0.6000000238418579 1.0
+Feature Model: Root(Mandatory(f1(Mandatory(root;f4(Optional(f7(Or(f9(Or(Optional(f5) f8 Or(f3)))))))))) f10 Mandatory(f6(Optional(root;f1(Alternative(root;f10))))))
+CTCs: ConstraintSet(Constraint(Not(Atom(root;f4)) Or Atom(f6)), Constraint(Not(Atom(f7)) Or Not(Atom(root;f1))), Constraint(Not(Atom(root;f1)) Or Atom(f8)))
+Number Of Products: 3
+Number of Contained Products: 3
+Broken Dependencies: 
+
+1.0 0.6000000238418579 1.0
+Feature Model: Root(f1(Mandatory(f6), Or(root;f4(Optional(f3(Alternative(Alternative(f7(Optional(f5))) f9 Alternative(f8)))))), Mandatory(f10(Optional(root;f1(Alternative(root;f10)))))))
+CTCs: ConstraintSet(Constraint(Not(Atom(root;f1)) Or Not(Atom(root;f10))), Constraint(Not(Atom(f5)) Or Atom(root;f4)), Constraint(Not(Atom(f7)) Or Not(Atom(root;f1))), Constraint(Not(Atom(root;f1)) Or Not(Atom(f6))), Constraint(Not(Atom(root;f1)) Or Atom(f8)), Constraint(Not(Atom(f5)) Or Atom(f3)))
+Number Of Products: 3
+Number of Contained Products: 3
+Broken Dependencies: 
+
+1.0 0.6000000238418579 1.0
+Feature Model: Root(f6(Mandatory(root;f4(Mandatory(f1))), Mandatory(f10), Optional(f7(Alternative(Optional(root;f1(Alternative(root;f10))) f9 Alternative(Optional(f5) f8 Or(f3)))))))
+CTCs: ConstraintSet(Constraint(Not(Atom(f9)) Or Atom(f8)), Constraint(Not(Atom(f7)) Or Not(Atom(root;f1))), Constraint(Not(Atom(root;f10)) Or Not(Atom(f5))), Constraint(Not(Atom(f6)) Or Atom(root;f4)))
+Number Of Products: 3
+Number of Contained Products: 3
+Broken Dependencies: 
+
+1.0 0.6000000238418579 1.0
+Feature Model: Root(Mandatory(f6(Mandatory(f10))) f1 Or(root;f4(Optional(f3(Or(f9(Alternative(f7(Optional(f5))), Alternative(f8), Optional(root;f1(Or(root;f10))))))))))
+CTCs: ConstraintSet(Constraint(Not(Atom(f9)) Or Atom(f10)), Constraint(Not(Atom(f5)) Or Atom(f9)), Constraint(Not(Atom(root;f1)) Or Not(Atom(f6))))
+Number Of Products: 3
+Number of Contained Products: 3
+Broken Dependencies: 
+
+1.0 0.6000000238418579 1.0
+Feature Model: Root(f1(Mandatory(f6), Or(root;f4(Optional(Or(Alternative(f7(Optional(f5))) f9 Alternative(f8)) f3 Optional(root;f1(Or(root;f10)))))), Mandatory(f10)))
+CTCs: ConstraintSet(Constraint(Not(Atom(f9)) Or Atom(f10)), Constraint(Not(Atom(f10)) Or Atom(f6)), Constraint(Not(Atom(f7)) Or Not(Atom(root;f1))))
+Number Of Products: 3
+Number of Contained Products: 3
+Broken Dependencies: 
+
+1.0 0.6000000238418579 1.0
+Feature Model: Root(Mandatory(root;f4(Mandatory(Optional(root;f1(Or(root;f10))) f10 Optional(f7(Or(f9(Alternative(Optional(f5) f8 Alternative(f3))))))))) f6 Mandatory(f1))
+CTCs: ConstraintSet(Constraint(Not(Atom(root;f1)) Or Not(Atom(root;f10))), Constraint(Not(Atom(f9)) Or Atom(f8)), Constraint(Not(Atom(f7)) Or Not(Atom(root;f1))), Constraint(Not(Atom(root;f1)) Or Atom(f5)))
+Number Of Products: 3
+Number of Contained Products: 3
+Broken Dependencies: 
+
+1.0 0.6000000238418579 1.0
+Feature Model: Root(Mandatory(Or(f1) root;f4 Optional(f7(Or(f3(Alternative(Optional(f5) f8 Or(f9))))))) f6 Mandatory(f10(Optional(root;f1(Or(root;f10))))))
+CTCs: ConstraintSet(Constraint(Not(Atom(f9)) Or Atom(f8)), Constraint(Not(Atom(f7)) Or Atom(f6)), Constraint(Not(Atom(root;f10)) Or Atom(f5)), Constraint(Not(Atom(f7)) Or Not(Atom(root;f10))), Constraint(Not(Atom(root;f1)) Or Not(Atom(f9))), Constraint(Not(Atom(f7)) Or Not(Atom(root;f1))), Constraint(Not(Atom(root;f1)) Or Not(Atom(root;f4))), Constraint(Not(Atom(f10)) Or Not(Atom(root;f10))), Constraint(Not(Atom(root;f1)) Or Atom(f5)))
+Number Of Products: 3
+Number of Contained Products: 3
+Broken Dependencies: 
+
+1.0 0.6000000238418579 1.0
+Feature Model: Root(root;f4(Mandatory(f6(Mandatory(f1))), Mandatory(f10(Optional(root;f1(Or(root;f10))))), Optional(f7(Or(Alternative(f8(Optional(f5))) f9 Alternative(f3))))))
+CTCs: ConstraintSet(Constraint(Not(Atom(root;f1)) Or Not(Atom(root;f10))), Constraint(Not(Atom(f5)) Or Atom(f9)), Constraint(Not(Atom(root;f1)) Or Not(Atom(f5))), Constraint(Not(Atom(root;f4)) Or Atom(f6)))
+Number Of Products: 3
+Number of Contained Products: 3
+Broken Dependencies: 
+
+1.0 0.6000000238418579 1.0
+Feature Model: Root(f6(Mandatory(f10(Optional(root;f1(Alternative(root;f10))))), Mandatory(f1), Mandatory(root;f4(Optional(f7(Or(f9(Alternative(Optional(f5) f8 Or(f3))))))))))
+CTCs: ConstraintSet(Constraint(Not(Atom(root;f4)) Or Atom(f6)), Constraint(Not(Atom(f7)) Or Not(Atom(root;f1))), Constraint(Not(Atom(f10)) Or Not(Atom(root;f10))), Constraint(Not(Atom(root;f1)) Or Atom(f5)))
+Number Of Products: 3
+Number of Contained Products: 3
+Broken Dependencies: 
+
+1.0 0.6000000238418579 1.0
+Feature Model: Root(f6(Mandatory(f1), Mandatory(root;f4(Optional(f7(Alternative(f9(Or(f8(Optional(f5))), Optional(root;f1(Or(root;f10))), Or(f3))))))), Mandatory(f10)))
+CTCs: ConstraintSet(Constraint(Not(Atom(f10)) Or Atom(f6)), Constraint(Not(Atom(f5)) Or Atom(f9)), Constraint(Not(Atom(f7)) Or Not(Atom(root;f10))), Constraint(Not(Atom(root;f1)) Or Not(Atom(f6))))
+Number Of Products: 3
+Number of Contained Products: 3
+Broken Dependencies: 
+
+1.0 0.6000000238418579 1.0
+Feature Model: Root(Mandatory(f1(Mandatory(f10))) f6 Mandatory(root;f4(Optional(f7(Alternative(Optional(root;f1(Or(root;f10))) f9 Alternative(Optional(f5) f8 Or(f3))))))))
+CTCs: Constraint(Not(Atom(f5)) Or Atom(f9)) ConstraintSet Constraint(Not(Atom(root;f1)) Or Not(Atom(f6)))
+Number Of Products: 3
+Number of Contained Products: 3
+Broken Dependencies: 
+
+1.0 0.6000000238418579 1.0
+Feature Model: Root(Mandatory(Optional(Or(f3) f7 Or(f9(Alternative(f8(Optional(f5)))))) root;f4 Or(f1)) f6 Mandatory(f10(Optional(root;f1(Alternative(root;f10))))))
+CTCs: ConstraintSet(Constraint(Not(Atom(root;f10)) Or Atom(f5)), Constraint(Not(Atom(f5)) Or Atom(f9)), Constraint(Not(Atom(f7)) Or Not(Atom(root;f1))), Constraint(Not(Atom(root;f1)) Or Atom(f5)))
+Number Of Products: 3
+Number of Contained Products: 3
+Broken Dependencies: 
+
+1.0 0.6000000238418579 1.0
+Feature Model: Root(f1(Mandatory(f6), Mandatory(f10(Optional(root;f1(Or(root;f10))))), Mandatory(root;f4(Optional(f3(Or(Alternative(f7(Optional(f5))) f9 Alternative(f8))))))))
+CTCs: ConstraintSet(Constraint(Not(Atom(f9)) Or Atom(f8)), Constraint(Not(Atom(f5)) Or Atom(f9)), Constraint(Not(Atom(root;f10)) Or Atom(f5)), Constraint(Not(Atom(root;f1)) Or Not(Atom(f9))), Constraint(Not(Atom(f7)) Or Not(Atom(root;f1))), Constraint(Not(Atom(root;f1)) Or Not(Atom(f6))), Constraint(Not(Atom(root;f1)) Or Atom(f5)))
+Number Of Products: 3
+Number of Contained Products: 3
+Broken Dependencies: 
+
+1.0 0.6000000238418579 1.0
+Feature Model: Root(root;f4(Mandatory(f6), Mandatory(Optional(root;f1(Or(root;f10))) f10 Mandatory(f1)), Optional(f7(Or(f9(Alternative(Optional(f5) f8 Or(f3))))))))
+CTCs: Constraint(Not(Atom(f7)) Or Not(Atom(root;f10))) ConstraintSet Constraint(Not(Atom(root;f1)) Or Atom(f5))
+Number Of Products: 3
+Number of Contained Products: 3
+Broken Dependencies: 
+
+1.0 0.6000000238418579 1.0
+Feature Model: Root(f6(Mandatory(root;f4(Optional(f7(Or(f9(Or(Optional(f5) f8 Or(f3)))))))), Mandatory(f10(Optional(root;f1(Alternative(root;f10))))), Mandatory(f1)))
+CTCs: ConstraintSet(Constraint(Not(Atom(root;f1)) Or Not(Atom(root;f10))), Constraint(Not(Atom(f9)) Or Atom(f8)), Constraint(Not(Atom(f5)) Or Atom(f9)), Constraint(Not(Atom(root;f4)) Or Atom(f6)), Constraint(Not(Atom(f7)) Or Not(Atom(root;f1))), Constraint(Not(Atom(f10)) Or Not(Atom(root;f10))))
+Number Of Products: 3
+Number of Contained Products: 3
+Broken Dependencies: 
+
+1.0 0.6000000238418579 1.0
+Feature Model: Root(f6(Mandatory(f1), Mandatory(f10(Optional(f7(Or(Alternative(Optional(f5) f8 Alternative(f3)) f9 Optional(root;f1(Or(root;f10)))))))), Mandatory(root;f4)))
+CTCs: ConstraintSet(Constraint(Not(Atom(f7)) Or Not(Atom(root;f1))))
+Number Of Products: 3
+Number of Contained Products: 3
+Broken Dependencies: 
+
+1.0 0.6000000238418579 1.0
+Feature Model: Root(Mandatory(f10(Optional(root;f1(Or(root;f10))))) f1 Or(Optional(f3(Or(Alternative(f7(Optional(f5))) f9 Alternative(f8)))) root;f4 Mandatory(f6)))
+CTCs: Constraint(Not(Atom(f7)) Or Not(Atom(root;f1))) ConstraintSet Constraint(Not(Atom(root;f1)) Or Atom(f8))
+Number Of Products: 3
+Number of Contained Products: 3
+Broken Dependencies: 
+
+1.0 0.6000000238418579 1.0
+Feature Model: Root(f1(Mandatory(f6), Mandatory(f10), Mandatory(root;f4(Optional(Or(Alternative(f7) f9 Or(f8(Optional(f5)))) f3 Optional(root;f1(Alternative(root;f10))))))))
+CTCs: ConstraintSet(Constraint(Not(Atom(root;f1)) Or Not(Atom(f9))), Constraint(Not(Atom(f7)) Or Not(Atom(root;f1))), Constraint(Not(Atom(f10)) Or Not(Atom(root;f10))), Constraint(Not(Atom(f8)) Or Atom(f9)))
+Number Of Products: 3
+Number of Contained Products: 3
+Broken Dependencies: 
+
+1.0 0.6000000238418579 1.0
+Feature Model: Root(f6(Mandatory(f1), Mandatory(root;f4(Optional(f7(Or(f9(Alternative(Optional(f5) f8 Alternative(f3)))))))), Mandatory(f10), Optional(root;f1(Alternative(root;f10)))))
+CTCs: ConstraintSet(Constraint(Not(Atom(root;f1)) Or Atom(f1)), Constraint(Not(Atom(root;f1)) Or Not(Atom(f6))), Constraint(Not(Atom(f3)) Or Atom(f1)))
+Number Of Products: 3
+Number of Contained Products: 3
+Broken Dependencies: 
+
+1.0 0.6000000238418579 1.0
+Feature Model: Root(f10(Mandatory(f1), Mandatory(f6), Mandatory(root;f4(Optional(f7(Or(f9(Or(f8(Optional(f5), Or(f3), Optional(root;f1(Or(root;f10)))))))))))))
+CTCs: ConstraintSet(Constraint(Not(Atom(root;f4)) Or Atom(f6)), Constraint(Not(Atom(root;f1)) Or Atom(f1)), Constraint(Not(Atom(f7)) Or Not(Atom(root;f1))), Constraint(Not(Atom(root;f1)) Or Atom(f8)), Constraint(Not(Atom(root;f1)) Or Atom(f5)))
+Number Of Products: 3
+Number of Contained Products: 3
+Broken Dependencies: 
+
+1.0 0.6000000238418579 1.0
+Feature Model: Root(Mandatory(f10(Mandatory(f6))) f1 Mandatory(root;f4(Optional(Or(Alternative(f7(Optional(f5))) f9 Alternative(f8)) f3 Optional(root;f1(Or(root;f10)))))))
+CTCs: ConstraintSet(Constraint(Not(Atom(f9)) Or Atom(f8)), Constraint(Not(Atom(f5)) Or Atom(f9)), Constraint(Not(Atom(f7)) Or Not(Atom(root;f1))))
+Number Of Products: 3
+Number of Contained Products: 3
+Broken Dependencies: 
+
+1.0 0.6000000238418579 1.0
+Feature Model: Root(Mandatory(root;f4(Mandatory(f1(Optional(root;f1(Or(root;f10))))))) f6 Mandatory(f10(Optional(f7(Or(f9(Or(Optional(f5) f8 Or(f3)))))))))
+CTCs: ConstraintSet(Constraint(Not(Atom(root;f1)) Or Not(Atom(root;f10))), Constraint(Not(Atom(f5)) Or Atom(f9)), Constraint(Not(Atom(root;f1)) Or Not(Atom(f5))), Constraint(Not(Atom(root;f4)) Or Atom(f6)), Constraint(Not(Atom(root;f1)) Or Not(Atom(f9))), Constraint(Not(Atom(f7)) Or Not(Atom(root;f1))), Constraint(Not(Atom(f10)) Or Not(Atom(root;f10))), Constraint(Not(Atom(root;f1)) Or Atom(f5)))
+Number Of Products: 3
+Number of Contained Products: 3
+Broken Dependencies: 
+
+1.0 0.6000000238418579 1.0
+Feature Model: Root(Mandatory(f1) f6 Mandatory(Optional(f7(Alternative(f9(Alternative(Optional(f5) f8 Or(f3)))))) root;f4 Mandatory(f10(Optional(root;f1(Or(root;f10)))))))
+CTCs: ConstraintSet(Constraint(Not(Atom(f5)) Or Atom(f9)), Constraint(Not(Atom(root;f10)) Or Atom(f5)), Constraint(Not(Atom(f5)) Or Atom(root;f4)), Constraint(Not(Atom(root;f1)) Or Not(Atom(f6))))
+Number Of Products: 3
+Number of Contained Products: 3
+Broken Dependencies: 
+
+1.0 0.6000000238418579 1.0
+Feature Model: Root(Mandatory(f1(Mandatory(f10))) f6 Mandatory(root;f4(Optional(f7(Alternative(f9(Or(f8(Optional(f5))), Optional(root;f1(Or(root;f10))), Or(f3))))))))
+CTCs: ConstraintSet(Constraint(Not(Atom(f10)) Or Atom(f6)), Constraint(Not(Atom(f5)) Or Atom(f9)), Constraint(Not(Atom(root;f1)) Or Not(Atom(f9))), Constraint(Not(Atom(f5)) Or Atom(root;f4)), Constraint(Not(Atom(root;f1)) Or Atom(f8)), Constraint(Not(Atom(f8)) Or Atom(root;f4)))
+Number Of Products: 3
+Number of Contained Products: 3
+Broken Dependencies: 
+
+1.0 0.6000000238418579 1.0
+Feature Model: Root(Mandatory(f1(Mandatory(f10))) f6 Mandatory(root;f4(Optional(f7(Alternative(Optional(root;f1(Or(root;f10))) f9 Alternative(Optional(f5) f8 Alternative(f3))))))))
+CTCs: ConstraintSet(Constraint(Not(Atom(f7)) Or Atom(f8)), Constraint(Not(Atom(f7)) Or Not(Atom(root;f10))), Constraint(Not(Atom(root;f1)) Or Not(Atom(f6))), Constraint(Not(Atom(f10)) Or Not(Atom(root;f10))))
+Number Of Products: 3
+Number of Contained Products: 3
+Broken Dependencies: 
+
+1.0 0.6000000238418579 1.0
+Feature Model: Root(f1(Mandatory(f6(Optional(f3(Alternative(f9(Alternative(f7(Optional(f5))), Or(f8), Optional(root;f1(Or(root;f10))))))))), Mandatory(root;f4), Mandatory(f10)))
+CTCs: ConstraintSet(Constraint(Not(Atom(f7)) Or Atom(f8)), Constraint(Not(Atom(f5)) Or Atom(f9)), Constraint(Not(Atom(f9)) Or Not(Atom(root;f10))), Constraint(Not(Atom(root;f1)) Or Atom(f5)))
+Number Of Products: 3
+Number of Contained Products: 3
+Broken Dependencies: 
+
+1.0 0.6000000238418579 1.0
+Feature Model: Root(f1(Mandatory(f6), Mandatory(f10), Mandatory(root;f4(Optional(Or(Or(f7(Optional(f5))) f9 Alternative(f8)) f3 Optional(root;f1(Or(root;f10))))))))
+CTCs: ConstraintSet(Constraint(Not(Atom(f7)) Or Not(Atom(root;f1))))
+Number Of Products: 3
+Number of Contained Products: 3
+Broken Dependencies: 
+
+1.0 0.6000000238418579 1.0
+Feature Model: Root(f6(Mandatory(root;f4(Optional(f7(Alternative(Optional(root;f1(Or(root;f10))) f9 Alternative(Optional(f5) f8 Or(f3))))))), Mandatory(f10), Mandatory(f1)))
+CTCs: ConstraintSet(Constraint(Not(Atom(f9)) Or Atom(f10)), Constraint(Not(Atom(f5)) Or Atom(f9)), Constraint(Not(Atom(f7)) Or Not(Atom(root;f10))), Constraint(Not(Atom(f7)) Or Not(Atom(root;f1))))
+Number Of Products: 3
+Number of Contained Products: 3
+Broken Dependencies: 
+
+1.0 0.6000000238418579 1.0
+Feature Model: Root(Mandatory(Optional(f7(Alternative(f9(Alternative(Optional(f5) f8 Or(f3)))))) root;f4 Mandatory(f10(Optional(root;f1(Or(root;f10)))))) f6 Mandatory(f1))
+CTCs: ConstraintSet(Constraint(Not(Atom(root;f1)) Or Not(Atom(f5))), Constraint(Not(Atom(root;f4)) Or Atom(f6)), Constraint(Not(Atom(f5)) Or Atom(root;f4)), Constraint(Not(Atom(root;f1)) Or Atom(f5)))
+Number Of Products: 3
+Number of Contained Products: 3
+Broken Dependencies: 
+
+1.0 0.6000000238418579 1.0
+Feature Model: Root(Mandatory(f1(Mandatory(f10))) f6 Mandatory(root;f4(Optional(f7(Or(f3(Optional(root;f1(Or(root;f10))))), Or(f9(Or(f8))), Optional(f5))))))
+CTCs: ConstraintSet(Constraint(Not(Atom(root;f10)) Or Atom(f5)), Constraint(Not(Atom(f7)) Or Not(Atom(root;f1))), Constraint(Not(Atom(root;f1)) Or Atom(f5)))
+Number Of Products: 3
+Number of Contained Products: 3
+Broken Dependencies: 
+
+1.0 0.6000000238418579 1.0
+Feature Model: Root(Mandatory(root;f4(Mandatory(f1))) f6 Mandatory(Optional(f7(Alternative(f9(Alternative(Optional(f5) f8 Alternative(f3)))))) f10 Optional(root;f1(Or(root;f10)))))
+CTCs: ConstraintSet(Constraint(Not(Atom(root;f1)) Or Not(Atom(f5))), Constraint(Not(Atom(f7)) Or Not(Atom(root;f10))), Constraint(Not(Atom(f7)) Or Not(Atom(root;f1))), Constraint(Not(Atom(root;f1)) Or Not(Atom(root;f4))), Constraint(Not(Atom(root;f4)) Or Atom(f10)))
+Number Of Products: 3
+Number of Contained Products: 3
+Broken Dependencies: 
+
+1.0 0.6000000238418579 1.0
+Feature Model: Root(root;f4(Mandatory(f1), Mandatory(f6), Alternative(f10(Optional(root;f1(Or(root;f10))))), Optional(f3(Or(Or(f7(Optional(f5))) f9 Alternative(f8))))))
+CTCs: Constraint(Not(Atom(root;f1)) Or Not(Atom(f6))) ConstraintSet Constraint(Not(Atom(f5)) Or Atom(f3))
+Number Of Products: 3
+Number of Contained Products: 3
+Broken Dependencies: 
+
+1.0 0.6000000238418579 1.0
+Feature Model: Root(f6(Mandatory(f10), Mandatory(f1), Mandatory(root;f4(Optional(f7(Or(Optional(root;f1(Or(root;f10))) f9 Alternative(Optional(f5) f8 Or(f3)))))))))
+CTCs: ConstraintSet(Constraint(Not(Atom(f9)) Or Atom(f8)), Constraint(Not(Atom(f7)) Or Atom(f6)), Constraint(Not(Atom(f7)) Or Not(Atom(root;f1))), Constraint(Not(Atom(root;f1)) Or Not(Atom(root;f4))))
+Number Of Products: 3
+Number of Contained Products: 3
+Broken Dependencies: 
+
+1.0 0.6000000238418579 1.0
+Feature Model: Root(f1(Mandatory(f6), Mandatory(f10(Optional(root;f1(Or(root;f10))))), Mandatory(root;f4(Optional(Or(f9(Alternative(f7))) f3 Or(f8(Optional(f5))))))))
+CTCs: ConstraintSet(Constraint(Not(Atom(f5)) Or Atom(f9)), Constraint(Not(Atom(root;f10)) Or Atom(f5)), Constraint(Not(Atom(f7)) Or Not(Atom(root;f10))), Constraint(Not(Atom(f7)) Or Not(Atom(root;f1))), Constraint(Not(Atom(f5)) Or Atom(root;f4)), Constraint(Not(Atom(root;f1)) Or Not(Atom(root;f4))), Constraint(Not(Atom(root;f1)) Or Atom(f5)))
+Number Of Products: 3
+Number of Contained Products: 3
+Broken Dependencies: 
+
+1.0 0.6000000238418579 1.0
+Feature Model: Root(root;f4(Mandatory(f6(Mandatory(f1))), Mandatory(Optional(root;f1(Or(root;f10))) f10 Optional(f7(Or(f9)))), Optional(f3(Alternative(f8(Optional(f5)))))))
+CTCs: ConstraintSet(Constraint(Not(Atom(f7)) Or Atom(f6)), Constraint(Not(Atom(root;f1)) Or Not(Atom(root;f10))), Constraint(Not(Atom(f9)) Or Atom(f8)), Constraint(Not(Atom(root;f4)) Or Not(Atom(root;f10))), Constraint(Not(Atom(f3)) Or Atom(f9)), Constraint(Not(Atom(f1)) Or Atom(f6)), Constraint(Not(Atom(root;f4)) Or Atom(f6)), Constraint(Not(Atom(root;f1)) Or Not(Atom(f9))), Constraint(Not(Atom(root;f10)) Or Not(Atom(f5))), Constraint(Not(Atom(f6)) Or Atom(root;f4)))
+Number Of Products: 3
+Number of Contained Products: 3
+Broken Dependencies: 
+
+1.0 0.6000000238418579 1.0
+Feature Model: Root(f6(Mandatory(f10(Optional(root;f1(Or(root;f10))))), Mandatory(root;f4(Optional(f7(Alternative(f9(Alternative(Optional(f5) f8 Or(f3)))))))), Mandatory(f1)))
+CTCs: ConstraintSet(Constraint(Not(Atom(root;f1)) Or Not(Atom(root;f10))), Constraint(Not(Atom(f9)) Or Atom(f8)), Constraint(Not(Atom(root;f1)) Or Not(Atom(f6))))
+Number Of Products: 3
+Number of Contained Products: 3
+Broken Dependencies: 
+
+1.0 0.6000000238418579 1.0
+Feature Model: Root(root;f4(Mandatory(f1), Mandatory(f6), Mandatory(f10(Optional(root;f1(Or(root;f10))))), Optional(f7(Or(f9(Alternative(Optional(f5) f8 Or(f3))))))))
+CTCs: ConstraintSet(Constraint(Not(Atom(root;f1)) Or Not(Atom(root;f10))), Constraint(Not(Atom(f5)) Or Atom(f9)), Constraint(Not(Atom(root;f1)) Or Not(Atom(f9))), Constraint(Not(Atom(root;f1)) Or Atom(f5)))
+Number Of Products: 3
+Number of Contained Products: 3
+Broken Dependencies: 
+
+1.0 0.6000000238418579 1.0
+Feature Model: Root(Mandatory(f6(Mandatory(f10(Optional(root;f1(Or(root;f10))))))) f1 Alternative(root;f4(Optional(f3(Or(Alternative(f7(Optional(f5))) f9 Alternative(f8)))))))
+CTCs: ConstraintSet(Constraint(Not(Atom(f7)) Or Not(Atom(root;f10))), Constraint(Not(Atom(f7)) Or Not(Atom(root;f1))), Constraint(Not(Atom(root;f1)) Or Atom(f8)), Constraint(Not(Atom(root;f1)) Or Atom(f1)))
+Number Of Products: 3
+Number of Contained Products: 3
+Broken Dependencies: 
+
+1.0 0.6000000238418579 1.0
+Feature Model: Root(f10(Mandatory(f6(Optional(root;f1(Alternative(root;f10))))), Mandatory(f1), Mandatory(root;f4(Optional(f7(Or(f9(Alternative(Optional(f5) f8 Or(f3))))))))))
+CTCs: ConstraintSet(Constraint(Not(Atom(root;f1)) Or Not(Atom(root;f10))), Constraint(Not(Atom(root;f1)) Or Atom(f1)), Constraint(Not(Atom(root;f1)) Or Atom(f5)))
+Number Of Products: 3
+Number of Contained Products: 3
+Broken Dependencies: 
+
+1.0 0.6000000238418579 1.0
+Feature Model: Root(f10(Mandatory(f1), Mandatory(f6(Optional(root;f1(Alternative(root;f10))))), Mandatory(root;f4(Optional(f7(Or(f9(Alternative(Optional(f5) f8 Or(f3))))))))))
+CTCs: ConstraintSet(Constraint(Not(Atom(f5)) Or Atom(f9)), Constraint(Not(Atom(f7)) Or Not(Atom(root;f10))), Constraint(Not(Atom(root;f1)) Or Atom(f1)), Constraint(Not(Atom(root;f1)) Or Not(Atom(root;f4))))
+Number Of Products: 3
+Number of Contained Products: 3
+Broken Dependencies: 
+
+1.0 0.6000000238418579 1.0
+Feature Model: Root(Mandatory(root;f4(Mandatory(f10(Optional(root;f1(Or(root;f10))))))) f6 Mandatory(f1(Optional(f7(Alternative(Or(f8(Optional(f5))) f9 Or(f3)))))))
+CTCs: Constraint(Not(Atom(f5)) Or Atom(root;f4)) ConstraintSet Constraint(Not(Atom(root;f1)) Or Not(Atom(f6)))
+Number Of Products: 3
+Number of Contained Products: 3
+Broken Dependencies: 
+
+1.0 0.6000000238418579 1.0
+Feature Model: Root(f1(Mandatory(f6), Mandatory(Optional(root;f1(Or(root;f10))) f10 Optional(f7(Or(Alternative(f8(Optional(f5))) f3 Or(f9))))), Mandatory(root;f4)))
+CTCs: ConstraintSet(Constraint(Not(Atom(f9)) Or Atom(f10)), Constraint(Not(Atom(f5)) Or Atom(f9)), Constraint(Not(Atom(f7)) Or Not(Atom(root;f10))), Constraint(Not(Atom(f5)) Or Atom(root;f4)), Constraint(Not(Atom(f10)) Or Not(Atom(root;f10))), Constraint(Not(Atom(f10)) Or Atom(root;f4)))
+Number Of Products: 3
+Number of Contained Products: 3
+Broken Dependencies: 
+
+1.0 0.6000000238418579 1.0
+Feature Model: Root(f1(Mandatory(f6), Mandatory(f10(Optional(root;f1(Or(root;f10))))), Mandatory(root;f4(Optional(f3(Alternative(Alternative(f7) f9 Alternative(f8(Optional(f5))))))))))
+CTCs: Constraint(Not(Atom(root;f10)) Or Atom(f5)) ConstraintSet Constraint(Not(Atom(f7)) Or Not(Atom(root;f10)))
+Number Of Products: 3
+Number of Contained Products: 3
+Broken Dependencies: 
+
+1.0 0.6000000238418579 1.0
+Feature Model: Root(f6(Mandatory(f1), Mandatory(root;f4(Optional(f7(Alternative(Optional(root;f1(Or(root;f10))) f9 Alternative(Optional(f5) f8 Or(f3))))))), Mandatory(f10)))
+CTCs: ConstraintSet(Constraint(Not(Atom(f9)) Or Atom(f8)), Constraint(Not(Atom(f7)) Or Not(Atom(root;f10))), Constraint(Not(Atom(f7)) Or Not(Atom(root;f1))), Constraint(Not(Atom(root;f1)) Or Not(Atom(root;f4))))
+Number Of Products: 3
+Number of Contained Products: 3
+Broken Dependencies: 
+
+1.0 0.6000000238418579 1.0
+Feature Model: Root(f6(Mandatory(f10), Mandatory(f1), Mandatory(root;f4(Optional(Alternative(f9(Optional(root;f1(Alternative(root;f10))))) f7 Or(f3(Or(f8(Optional(f5))))))))))
+CTCs: ConstraintSet(Constraint(Not(Atom(f9)) Or Atom(f8)), Constraint(Not(Atom(f5)) Or Atom(root;f4)), Constraint(Not(Atom(root;f1)) Or Atom(f8)), Constraint(Not(Atom(root;f1)) Or Not(Atom(root;f4))))
+Number Of Products: 3
+Number of Contained Products: 3
+Broken Dependencies: 
+
+1.0 0.6000000238418579 1.0
+Feature Model: Root(f1(Mandatory(root;f4(Optional(Or(f9(Alternative(f7(Optional(f5))))) f3 Or(f8)))), Mandatory(f6), Mandatory(f10(Optional(root;f1(Or(root;f10)))))))
+CTCs: ConstraintSet(Constraint(Not(Atom(root;f1)) Or Not(Atom(root;f10))), Constraint(Not(Atom(f5)) Or Atom(f9)), Constraint(Not(Atom(f9)) Or Not(Atom(root;f10))), Constraint(Not(Atom(f7)) Or Not(Atom(root;f1))), Constraint(Not(Atom(f10)) Or Not(Atom(root;f10))), Constraint(Not(Atom(root;f1)) Or Not(Atom(root;f4))), Constraint(Not(Atom(root;f1)) Or Atom(f5)))
+Number Of Products: 3
+Number of Contained Products: 3
+Broken Dependencies: 
+
+1.0 0.6000000238418579 1.0
+Feature Model: Root(f6(Mandatory(Optional(f3(Alternative(f8(Optional(f5))))) root;f4 Optional(f7(Alternative(f9)))), Mandatory(f1), Mandatory(f10(Optional(root;f1(Or(root;f10)))))))
+CTCs: ConstraintSet(Constraint(Not(Atom(f7)) Or Atom(f6)), Constraint(Not(Atom(f9)) Or Atom(f8)), Constraint(Not(Atom(root;f4)) Or Not(Atom(root;f10))), Constraint(Not(Atom(f5)) Or Atom(f9)), Constraint(Not(Atom(f3)) Or Atom(f9)), Constraint(Not(Atom(f5)) Or Atom(root;f4)), Constraint(Not(Atom(root;f1)) Or Not(Atom(f6))))
+Number Of Products: 3
+Number of Contained Products: 3
+Broken Dependencies: 
+
+1.0 0.6000000238418579 1.0
+Feature Model: Root(f6(Mandatory(f1), Mandatory(Optional(f7(Or(f9(Alternative(Optional(f5) f8 Alternative(f3)))))) f10 Optional(root;f1(Alternative(root;f10)))), Mandatory(root;f4)))
+CTCs: ConstraintSet(Constraint(Not(Atom(root;f4)) Or Atom(f6)), Constraint(Not(Atom(f7)) Or Not(Atom(root;f1))), Constraint(Not(Atom(root;f1)) Or Atom(f5)))
+Number Of Products: 3
+Number of Contained Products: 3
+Broken Dependencies: 
+
+1.0 0.6000000238418579 1.0
+Feature Model: Root(root;f4(Mandatory(f6), Mandatory(f1), Optional(f3(Or(Or(f7(Optional(f5))) f9 Alternative(f8)))), Alternative(f10(Optional(root;f1(Or(root;f10)))))))
+CTCs: ConstraintSet(Constraint(Not(Atom(root;f1)) Or Not(Atom(f6))), Constraint(Not(Atom(root;f1)) Or Atom(f5)), Constraint(Not(Atom(f5)) Or Atom(f3)))
+Number Of Products: 3
+Number of Contained Products: 3
+Broken Dependencies: 
+
+1.0 0.6000000238418579 1.0
+Feature Model: Root(f10(Mandatory(f1), Mandatory(f6), Mandatory(Optional(root;f1(Or(root;f10))) root;f4 Optional(f7(Or(f9(Alternative(Optional(f5) f8 Or(f3)))))))))
+CTCs: ConstraintSet(Constraint(Not(Atom(root;f1)) Or Not(Atom(root;f10))), Constraint(Not(Atom(f5)) Or Atom(f9)), Constraint(Not(Atom(root;f1)) Or Not(Atom(f5))), Constraint(Not(Atom(root;f10)) Or Not(Atom(f5))), Constraint(Not(Atom(f6)) Or Atom(root;f4)))
+Number Of Products: 3
+Number of Contained Products: 3
+Broken Dependencies: 
+
+1.0 0.6000000238418579 1.0
+Feature Model: Root(root;f4(Mandatory(f6), Mandatory(f1), Mandatory(f10(Optional(root;f1(Or(root;f10))))), Optional(f3(Or(Or(f7(Optional(f5))) f9 Or(f8))))))
+CTCs: ConstraintSet(Constraint(Not(Atom(f9)) Or Atom(f8)), Constraint(Not(Atom(f5)) Or Atom(f9)), Constraint(Not(Atom(root;f4)) Or Atom(f6)), Constraint(Not(Atom(f10)) Or Not(Atom(root;f10))), Constraint(Not(Atom(f8)) Or Atom(f9)))
+Number Of Products: 3
+Number of Contained Products: 3
+Broken Dependencies: 
+
+1.0 0.6000000238418579 1.0
+Feature Model: Root(f6(Mandatory(f1), Mandatory(root;f4(Optional(f7(Or(f3), Or(f9), Alternative(f8(Optional(f5))))))), Mandatory(f10(Optional(root;f1(Or(root;f10)))))))
+CTCs: ConstraintSet(Constraint(Not(Atom(f5)) Or Atom(f9)), Constraint(Not(Atom(f7)) Or Not(Atom(root;f1))), Constraint(Not(Atom(root;f1)) Or Not(Atom(root;f4))), Constraint(Not(Atom(root;f1)) Or Atom(f5)))
+Number Of Products: 3
+Number of Contained Products: 3
+Broken Dependencies: 
+
+1.0 0.6000000238418579 1.0
+Feature Model: Root(Mandatory(root;f4(Mandatory(f1))) f6 Mandatory(f10(Optional(f7(Or(Or(Optional(f5) f8 Or(f3)) f9 Optional(root;f1(Or(root;f10)))))))))
+CTCs: ConstraintSet(Constraint(Not(Atom(root;f1)) Or Not(Atom(root;f10))), Constraint(Not(Atom(root;f1)) Or Not(Atom(f9))), Constraint(Not(Atom(root;f1)) Or Not(Atom(root;f4))))
+Number Of Products: 3
+Number of Contained Products: 3
+Broken Dependencies: 
+
+1.0 0.6000000238418579 1.0
+Feature Model: Root(Mandatory(f6(Mandatory(root;f4(Optional(f7(Or(f9(Alternative(Optional(f5) f8 Or(f3)))))))))) f1 Mandatory(f10(Optional(root;f1(Alternative(root;f10))))))
+CTCs: ConstraintSet(Constraint(Not(Atom(f5)) Or Atom(f9)), Constraint(Not(Atom(root;f10)) Or Atom(f5)), Constraint(Not(Atom(f7)) Or Not(Atom(root;f10))), Constraint(Not(Atom(f5)) Or Atom(root;f4)), Constraint(Not(Atom(root;f1)) Or Atom(f1)), Constraint(Not(Atom(root;f1)) Or Not(Atom(f6))), Constraint(Not(Atom(root;f1)) Or Not(Atom(root;f4))), Constraint(Not(Atom(root;f1)) Or Atom(f5)), Constraint(Not(Atom(f3)) Or Atom(f1)))
+Number Of Products: 3
+Number of Contained Products: 3
+Broken Dependencies: 
+
+1.0 0.6000000238418579 1.0
+Feature Model: Root(root;f4(Mandatory(f6(Mandatory(f1))), Mandatory(Optional(root;f1(Alternative(root;f10))) f10 Optional(f7(Or(f9)))), Optional(f3(Alternative(f8(Optional(f5)))))))
+CTCs: ConstraintSet(Constraint(Not(Atom(f9)) Or Atom(f8)), Constraint(Not(Atom(root;f4)) Or Not(Atom(root;f10))), Constraint(Not(Atom(f5)) Or Atom(f9)), Constraint(Not(Atom(f3)) Or Atom(f9)), Constraint(Not(Atom(f1)) Or Atom(f6)), Constraint(Not(Atom(root;f1)) Or Not(Atom(f9))), Constraint(Not(Atom(f7)) Or Not(Atom(root;f10))), Constraint(Not(Atom(f6)) Or Atom(root;f4)))
+Number Of Products: 3
+Number of Contained Products: 3
+Broken Dependencies: 
+
+1.0 0.6000000238418579 1.0
+Feature Model: Root(Mandatory(f6(Mandatory(f10))) f1 Or(root;f4(Optional(Or(Alternative(f7(Optional(f5))) f9 Or(f8)) f3 Optional(root;f1(Or(root;f10)))))))
+CTCs: ConstraintSet(Constraint(Not(Atom(f7)) Or Not(Atom(root;f1))))
+Number Of Products: 3
+Number of Contained Products: 3
+Broken Dependencies: 
+
+1.0 0.6000000238418579 1.0
+Feature Model: Root(Mandatory(Mandatory(f1) root;f4 Optional(f7(Or(f9(Alternative(Optional(f5) f8 Alternative(f3))))))) f6 Mandatory(f10(Optional(root;f1(Or(root;f10))))))
+CTCs: ConstraintSet(Constraint(Not(Atom(f9)) Or Atom(f8)), Constraint(Not(Atom(f5)) Or Atom(f9)), Constraint(Not(Atom(root;f1)) Or Not(Atom(f5))), Constraint(Not(Atom(f5)) Or Atom(root;f4)), Constraint(Not(Atom(f10)) Or Not(Atom(root;f10))))
+Number Of Products: 3
+Number of Contained Products: 3
+Broken Dependencies: 
+
+1.0 0.6000000238418579 1.0
+Feature Model: Root(Mandatory(f6(Mandatory(f10))) f1 Or(root;f4(Optional(f7(Alternative(f9(Or(f8(Optional(f5))), Optional(root;f1(Or(root;f10))), Or(f3))))))))
+CTCs: ConstraintSet(Constraint(Not(Atom(f10)) Or Atom(f6)), Constraint(Not(Atom(f5)) Or Atom(f9)), Constraint(Not(Atom(f7)) Or Not(Atom(root;f1))))
+Number Of Products: 3
+Number of Contained Products: 3
+Broken Dependencies: 
+

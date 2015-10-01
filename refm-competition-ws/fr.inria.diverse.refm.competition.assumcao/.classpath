@@ -17,6 +17,7 @@
 	<classpathentry kind="lib" path="lib/pshecj.jar"/>
 	<classpathentry kind="lib" path="lib/Sat4jReasoner-1.0.1.jar"/>
 	<classpathentry kind="lib" path="lib/ecj_fm.jar"/>
+	<classpathentry kind="lib" path="lib/fr.inria.diverse.graph.jar"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/fr.inria.diverse.refm.competition.common"/>
 	<classpathentry kind="output" path="bin"/>

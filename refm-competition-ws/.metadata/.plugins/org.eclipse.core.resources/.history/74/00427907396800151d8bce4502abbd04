@@ -1,0 +1,50 @@
+<feature_model name="Draw Product Line">
+<meta>
+<data name="description">Draw Product Line Feature Model</data>
+<data name="creator">Wesley K. G. Assuncao</data>
+<data name="email">wesleyk@inf.ufpr.br</data>
+<data name="date">09.10.2014</data>
+<data name="organization">JKU Linz</data>
+</meta>
+<feature_tree>
+:r Base (DPL)
+	:g [1,*]
+		: Line (Line)
+		: Rect (Rect)
+	:o Wipe (Wipe)
+	:o Color (Color)
+		:o Fill (Fill)
+</feature_tree>
+<constraints>
+C1:~Fill or Rect 
+</constraints>
+<dependencies>
+<dependency from="(rect)" to="(rect)" weight="238" />
+<dependency from="(rect)" to="(dpl)" weight="20" />
+<dependency from="(color)" to="(color)" weight="60" />
+<dependency from="(color)" to="(dpl)" weight="19" />
+<dependency from="(line)" to="(line)" weight="90" />
+<dependency from="(line)" to="(dpl)" weight="21" />
+<dependency from="(rect AND !color)" to="(rect)" weight="12" />
+<dependency from="(rect AND !color)" to="(rect AND !color)" weight="7" />
+<dependency from="(dpl)" to="(dpl)" weight="180" />
+<dependency from="(!color AND line)" to="(line)" weight="8" />
+<dependency from="(!color AND line)" to="(!color AND line)" weight="4" />
+<dependency from="(wipe)" to="(dpl)" weight="10" />
+<dependency from="(wipe)" to="(wipe)" weight="12" />
+<dependency from="(rect AND color)" to="(rect)" weight="3" />
+<dependency from="(rect AND color)" to="(rect AND color)" weight="3" />
+<dependency from="(rect AND color AND !fill)" to="(rect)" weight="11" />
+<dependency from="(rect AND color AND !fill)" to="(color)" weight="1" />
+<dependency from="(rect AND color AND !fill)" to="(rect AND color)" weight="1" />
+<dependency from="(rect AND color AND !fill)" to="(rect AND color AND !fill)" weight="10" />
+<dependency from="(fill)" to="(rect)" weight="23" />
+<dependency from="(fill)" to="(color)" weight="3" />
+<dependency from="(fill)" to="(dpl)" weight="17" />
+<dependency from="(fill)" to="(rect AND color)" weight="1" />
+<dependency from="(fill)" to="(fill)" weight="75" />
+<dependency from="(color AND line)" to="(color)" weight="1" />
+<dependency from="(color AND line)" to="(line)" weight="10" />
+<dependency from="(color AND line)" to="(color AND line)" weight="11" />
+</dependencies>
+</feature_model>

@@ -1,10 +1,14 @@
 package fr.inria.diverse.refm.competition.assumcao;
 
+import java.io.File;
+
 import org.junit.Before;
 import org.junit.Test;
 
-import es.us.isa.FAMA.models.FAMAfeatureModel.FAMAFeatureModel;
-import fr.inria.diverse.refm.competition.common.utils.PrintUtils;
+import fr.inria.diverse.graph.Arc;
+import fr.inria.diverse.graph.Graph;
+import fr.inria.diverse.graph.Vertex;
+import fr.inria.diverse.refm.competition.common.utils.FileUtils;
 
 /**
  * JUnit class that is able to execute the REFM benchmark on the proposal of Lopez-Herrejon et al. 
@@ -30,14 +34,17 @@ public class BenchmarkingAssumcaoREFM {
 	public void loadScenarios(){
 		synthesizer = new AssumcaoREFM();
 		initialInstance = 1;
-		finalInstance = 5;
+		finalInstance = 1;
 	}
 	
 	@Test
 	public void executeBenchmark() throws Exception{
 		for (int i = initialInstance; i <= finalInstance; i++) {
-			FAMAFeatureModel result = synthesizer.execute("testdata/" + i + "_3_closed_pcm.txt");
-			(new PrintUtils()).printFitness(result);
+			String matrix = FileUtils.readFileContent(new File("testdata/" + i + "_1_dependencies_graph.txt"));
+			Graph<Vertex, Arc> graph = new Graph<>(matrix);
+			synthesizer.execute(graph, "testdata/" + i + "_3_closed_pcm.txt");
+			
+//			(new PrintUtils()).printFitness(result);
 		}
 	}
 }

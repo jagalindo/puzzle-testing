@@ -1,0 +1,26 @@
+package fr.inria.diverse.refm.competition.assumcao;
+
+import java.io.IOException;
+
+import run.RunNSGAIIFM_3obj;
+import run.XMLFeatureModelParser;
+import es.us.isa.FAMA.models.FAMAfeatureModel.FAMAFeatureModel;
+
+public class AssumcaoREFM {
+
+	public FAMAFeatureModel execute(String PCM) throws IOException, InterruptedException {
+		String inputFile = "";
+		String outputFile = "";
+		
+		run.RunNSGAIIFM_3obj hola = new RunNSGAIIFM_3obj();
+		String[] args = new String[2];
+		args[0] = inputFile;
+		args[1] = outputFile;
+		hola.main(args);
+		
+		// load the result from the output file
+		FAMAFeatureModel result = null;
+		
+		return result;
+	}
+}

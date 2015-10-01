@@ -1,0 +1,44 @@
+<feature_model name="">
+<meta>
+<data name="description"></data>
+<data name="creator"></data>
+<data name="email"></data>
+<data name="date"></data>
+<data name="department"></data>
+<data name="organization"></data>
+<data name="address"></data>
+<data name="phone"></data>
+<data name="website"></data>
+<data name="reference"></data>
+</meta><feature_tree>
+r: root (root)
+</feature_tree>
+<constraints>
+F2 implies F4: ~null or null
+F2 implies F8: ~null or null
+F2 implies F10: ~null or null
+F3 implies F4: ~null or null
+F3 implies F6: ~null or null
+F3 implies F8: ~null or null
+F3 implies F10: ~null or null
+F4 implies F10: ~null or null
+F5 implies F1: ~null or null
+F5 implies F3: ~null or null
+F5 implies F4: ~null or null
+F5 implies F9: ~null or null
+F5 implies F10: ~null or null
+F7 implies F3: ~null or null
+F7 implies F4: ~null or null
+F7 implies F6: ~null or null
+F8 implies F1: ~null or null
+F8 implies F6: ~null or null
+F9 implies F1: ~null or null
+F9 implies F3: ~null or null
+F9 implies F4: ~null or null
+F9 implies F7: ~null or null
+F9 implies F8: ~null or null
+F9 implies F10: ~null or null
+F10 implies F1: ~null or null
+F10 implies F6: ~null or null
+</constraints>
+</feature_model>

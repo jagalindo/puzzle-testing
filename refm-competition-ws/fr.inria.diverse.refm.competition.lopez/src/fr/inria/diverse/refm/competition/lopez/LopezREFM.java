@@ -10,7 +10,7 @@ public class LopezREFM {
 
 	public FAMAFeatureModel execute(String PCMFile) throws Exception{
 		String originalPCM = FileUtils.readFileContent(new File(PCMFile));
-		PCMFromatTranslator translator = new PCMFromatTranslator();
+		PCMFormatTranslator translator = new PCMFormatTranslator();
 		translator.loadPCM(originalPCM);
 		String adaptedPCM = translator.fromPuzzleToLopezFormat(originalPCM);
 		String formatedFilePath = "formated-testdata/" + PCMFile.substring(PCMFile.lastIndexOf("/"), PCMFile.length());

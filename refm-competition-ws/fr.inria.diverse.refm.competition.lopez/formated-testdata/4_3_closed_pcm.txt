@@ -1,0 +1,16 @@
+root;F2;
+root;F9;F2;
+root;F3;F9;F2;
+root;F9;F1;F2;
+root;F3;F9;F1;F2;
+root;F9;F1;F2;F10;
+root;F3;F9;F1;F2;F10;
+root;F9;F4;F1;F2;
+root;F3;F9;F4;F1;F2;
+root;F9;F4;F1;F2;F10;
+root;F3;F9;F4;F1;F2;F10;
+root;F3;F9;F5;F4;F1;F2;
+root;F3;F9;F5;F4;F1;F2;F10;
+root;F3;F9;F5;F4;F1;F2;F8;F10;
+root;F3;F9;F5;F4;F1;F6;F2;F8;F10;
+root;F3;F9;F5;F4;F7;F1;F2;F8;F10;

@@ -1,0 +1,41 @@
+package fr.inria.diverse.refm.competition.assumcao;
+
+import org.junit.Before;
+import org.junit.Test;
+
+/**
+ * JUnit class that is able to execute the REFM benchmark on the proposal of Lopez-Herrejon et al. 
+ * 
+ * @author David Mendez-Acuna
+ *
+ */
+public class BenchmarkingAssumcaoREFM {
+
+	// ---------------------------------------------------
+	// Attributes
+	// ---------------------------------------------------
+	
+	private AssumcaoREFM synthesizer;
+	private int initialInstance;
+	private int finalInstance;
+	
+	// ---------------------------------------------------
+	// Scenarios loading
+	// ---------------------------------------------------
+	
+	@Before
+	public void loadScenarios(){
+		synthesizer = new AssumcaoREFM();
+		initialInstance = 1;
+		finalInstance = 1;
+	}
+	
+	@Test
+	public void executeBenchmark() throws Exception{
+		for (int i = initialInstance; i <= finalInstance; i++) {
+			synthesizer.execute("testdata/" + i + "_3_closed_pcm.txt");
+//			FAMAFeatureModel result = synthesizer.execute("testdata/" + i + "_3_closed_pcm.txt");
+//			(new PrintUtils()).printFitness(result);
+		}
+	}
+}

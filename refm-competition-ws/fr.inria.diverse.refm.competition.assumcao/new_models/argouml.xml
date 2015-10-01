@@ -1,0 +1,290 @@
+<!-- This model was created online using SPLOT's Feature Model Editor (http://www.splot-research.org) 
+	on Mon, Dec 1, 2014 - 8:37 AM -->
+<feature_model name="ArgoUML">
+	<meta>
+		<data name="description" />
+		<data name="creator" />
+		<data name="address" />
+		<data name="email" />
+		<data name="phone" />
+		<data name="website" />
+		<data name="organization" />
+		<data name="department" />
+		<data name="date" />
+		<data name="reference" />
+	</meta>
+	<feature_tree>
+		:r ArgoUML(argouml)
+		:m Diagrams(diagrams)
+		:m Class(class)
+		:o State(statediagram)
+		:o
+		Activity(activitydiagram)
+		:o UseCase(usecasediagram)
+		:o
+		Collaboration(collaborationdiagram)
+		:o Deployment(deploymentdiagram)
+		:o
+		Sequence(sequencediagram)
+		:o Cognitive(cognitive)
+		:o Logging(logging)
+	</feature_tree>
+	<constraints>
+	</constraints>
+	<dependencies>
+		<dependency from="(usecasediagram AND logging)" to="(usecasediagram AND logging)"
+			weight="42" />
+		<dependency from="(usecasediagram AND logging)" to="(usecasediagram)"
+			weight="44" />
+		<dependency from="(usecasediagram AND deploymentdiagram)"
+			to="(usecasediagram)" weight="1" />
+		<dependency from="(usecasediagram AND deploymentdiagram)"
+			to="(diagrams) AND (argouml) AND (class)" weight="6" />
+		<dependency from="(usecasediagram AND deploymentdiagram)"
+			to="(deploymentdiagram)" weight="10" />
+		<dependency from="(usecasediagram AND deploymentdiagram)"
+			to="(usecasediagram AND deploymentdiagram)" weight="6" />
+		<dependency from="(collaborationdiagram AND logging)" to="(collaborationdiagram)"
+			weight="31" />
+		<dependency from="(collaborationdiagram AND logging)" to="(collaborationdiagram AND logging)"
+			weight="31" />
+		<dependency from="(sequencediagram AND cognitive)" to="(cognitive)"
+			weight="20" />
+		<dependency from="(sequencediagram AND cognitive)" to="(diagrams) AND (argouml) AND (class)"
+			weight="10" />
+		<dependency from="(sequencediagram AND cognitive)" to="(sequencediagram)"
+			weight="4" />
+		<dependency from="(sequencediagram AND cognitive)" to="(sequencediagram AND cognitive)"
+			weight="142" />
+		<dependency
+			from="(activitydiagram AND logging) OR (statediagram AND logging)"
+			to="(activitydiagram AND logging) OR (statediagram AND logging)"
+			weight="22" />
+		<dependency
+			from="(activitydiagram AND logging) OR (statediagram AND logging)"
+			to="(activitydiagram) OR (statediagram)" weight="26" />
+		<dependency from="(diagrams) OR (argouml) OR (class)" to="(diagrams) AND (argouml) AND (class)"
+			weight="268028" />
+		<dependency from="(usecasediagram)" to="(usecasediagram)"
+			weight="4349" />
+		<dependency from="(usecasediagram)" to="(diagrams) AND (argouml) AND (class)"
+			weight="1240" />
+		<dependency from="(statediagram AND !activitydiagram AND sequencediagram)"
+			to="(diagrams) AND (argouml) AND (class)" weight="9" />
+		<dependency from="(statediagram AND !activitydiagram AND sequencediagram)"
+			to="(statediagram AND !activitydiagram AND sequencediagram)" weight="9" />
+		<dependency from="(collaborationdiagram)" to="(diagrams) AND (argouml) AND (class)"
+			weight="554" />
+		<dependency from="(collaborationdiagram)" to="(collaborationdiagram)"
+			weight="2258" />
+		<dependency from="(collaborationdiagram AND sequencediagram)"
+			to="(collaborationdiagram AND sequencediagram)" weight="188" />
+		<dependency from="(collaborationdiagram AND sequencediagram)"
+			to="(diagrams) AND (argouml) AND (class)" weight="69" />
+		<dependency from="(collaborationdiagram AND sequencediagram)"
+			to="(collaborationdiagram)" weight="7" />
+		<dependency from="(collaborationdiagram AND sequencediagram)"
+			to="(sequencediagram)" weight="55" />
+		<dependency from="(statediagram AND activitydiagram)" to="(activitydiagram) OR (statediagram)"
+			weight="4" />
+		<dependency from="(statediagram AND activitydiagram)" to="(diagrams) AND (argouml) AND (class)"
+			weight="51" />
+		<dependency from="(statediagram AND activitydiagram)" to="(statediagram AND activitydiagram)"
+			weight="131" />
+		<dependency from="(statediagram AND activitydiagram)" to="(statediagram)"
+			weight="23" />
+		<dependency from="(statediagram AND activitydiagram)" to="(activitydiagram)"
+			weight="80" />
+		<dependency from="(statediagram)" to="(activitydiagram) OR (statediagram)"
+			weight="34" />
+		<dependency from="(statediagram)" to="(diagrams) AND (argouml) AND (class)"
+			weight="977" />
+		<dependency from="(statediagram)" to="(statediagram)"
+			weight="6661" />
+		<dependency
+			from="(diagrams AND !activitydiagram) OR (!activitydiagram AND class) OR (argouml AND !activitydiagram)"
+			to="(diagrams) AND (argouml) AND (class)" weight="25" />
+		<dependency
+			from="(diagrams AND !activitydiagram) OR (!activitydiagram AND class) OR (argouml AND !activitydiagram)"
+			to="(diagrams AND !activitydiagram) AND (!activitydiagram AND class) AND (argouml AND !activitydiagram)"
+			weight="17" />
+		<dependency from="(statediagram AND !activitydiagram)" to="(diagrams) AND (argouml) AND (class)"
+			weight="14" />
+		<dependency from="(statediagram AND !activitydiagram)" to="(statediagram)"
+			weight="2" />
+		<dependency from="(statediagram AND !activitydiagram)" to="(statediagram AND !activitydiagram)"
+			weight="3" />
+		<dependency from="(statediagram AND !activitydiagram AND !sequencediagram)"
+			to="(diagrams) AND (argouml) AND (class)" weight="10" />
+		<dependency from="(statediagram AND !activitydiagram AND !sequencediagram)"
+			to="(statediagram AND !activitydiagram AND !sequencediagram)" weight="9" />
+		<dependency from="(statediagram AND activitydiagram AND !sequencediagram)"
+			to="(diagrams) AND (argouml) AND (class)" weight="9" />
+		<dependency from="(statediagram AND activitydiagram AND !sequencediagram)"
+			to="(statediagram AND activitydiagram AND !sequencediagram)" weight="9" />
+		<dependency from="(deploymentdiagram AND logging)" to="(deploymentdiagram)"
+			weight="37" />
+		<dependency from="(deploymentdiagram AND logging)" to="(deploymentdiagram AND logging)"
+			weight="30" />
+		<dependency
+			from="(statediagram AND sequencediagram) OR (activitydiagram AND sequencediagram) OR (collaborationdiagram AND statediagram) OR (collaborationdiagram AND activitydiagram)"
+			to="(diagrams) AND (argouml) AND (class)" weight="1" />
+		<dependency from="(deploymentdiagram AND cognitive)" to="(cognitive)"
+			weight="223" />
+		<dependency from="(deploymentdiagram AND cognitive)" to="(diagrams) AND (argouml) AND (class)"
+			weight="101" />
+		<dependency from="(deploymentdiagram AND cognitive)" to="(deploymentdiagram)"
+			weight="60" />
+		<dependency from="(deploymentdiagram AND cognitive)" to="(deploymentdiagram AND cognitive)"
+			weight="1923" />
+		<dependency
+			from="(argouml AND !sequencediagram) OR (diagrams AND !sequencediagram) OR (!sequencediagram AND class)"
+			to="(diagrams) AND (argouml) AND (class)" weight="10" />
+		<dependency
+			from="(argouml AND !sequencediagram) OR (diagrams AND !sequencediagram) OR (!sequencediagram AND class)"
+			to="(argouml AND !sequencediagram) AND (diagrams AND !sequencediagram) AND (!sequencediagram AND class)"
+			weight="7" />
+		<dependency
+			from="(argouml AND !statediagram AND !activitydiagram AND !sequencediagram) OR (diagrams AND !statediagram AND !activitydiagram AND !sequencediagram) OR (!statediagram AND !activitydiagram AND !sequencediagram AND class)"
+			to="(diagrams) AND (argouml) AND (class)" weight="8" />
+		<dependency
+			from="(argouml AND !statediagram AND !activitydiagram AND !sequencediagram) OR (diagrams AND !statediagram AND !activitydiagram AND !sequencediagram) OR (!statediagram AND !activitydiagram AND !sequencediagram AND class)"
+			to="(argouml AND !statediagram AND !activitydiagram AND !sequencediagram) AND (diagrams AND !statediagram AND !activitydiagram AND !sequencediagram) AND (!statediagram AND !activitydiagram AND !sequencediagram AND class)"
+			weight="6" />
+		<dependency from="(sequencediagram AND logging)" to="(diagrams) AND (argouml) AND (class)"
+			weight="1" />
+		<dependency from="(sequencediagram AND logging)" to="(collaborationdiagram)"
+			weight="2" />
+		<dependency from="(sequencediagram AND logging)" to="(sequencediagram)"
+			weight="83" />
+		<dependency from="(sequencediagram AND logging)" to="(logging)"
+			weight="1" />
+		<dependency from="(sequencediagram AND logging)" to="(sequencediagram AND logging)"
+			weight="99" />
+		<dependency from="(cognitive)" to="(cognitive)" weight="30884" />
+		<dependency from="(cognitive)" to="(diagrams) AND (argouml) AND (class)"
+			weight="3642" />
+		<dependency from="(!statediagram AND activitydiagram)" to="(diagrams) AND (argouml) AND (class)"
+			weight="8" />
+		<dependency from="(!statediagram AND activitydiagram)" to="(!statediagram AND activitydiagram)"
+			weight="6" />
+		<dependency from="(!statediagram AND activitydiagram)" to="(activitydiagram)"
+			weight="5" />
+		<dependency from="(!deploymentdiagram AND cognitive)" to="(cognitive)"
+			weight="1" />
+		<dependency from="(!deploymentdiagram AND cognitive)" to="(!deploymentdiagram AND cognitive)"
+			weight="2" />
+		<dependency from="(deploymentdiagram)" to="(diagrams) AND (argouml) AND (class)"
+			weight="911" />
+		<dependency from="(deploymentdiagram)" to="(deploymentdiagram)"
+			weight="3603" />
+		<dependency
+			from="(!statediagram AND !activitydiagram AND class) OR (diagrams AND !statediagram AND !activitydiagram) OR (argouml AND !statediagram AND !activitydiagram)"
+			to="(diagrams) AND (argouml) AND (class)" weight="12" />
+		<dependency
+			from="(!statediagram AND !activitydiagram AND class) OR (diagrams AND !statediagram AND !activitydiagram) OR (argouml AND !statediagram AND !activitydiagram)"
+			to="(!statediagram AND !activitydiagram AND class) AND (diagrams AND !statediagram AND !activitydiagram) AND (argouml AND !statediagram AND !activitydiagram)"
+			weight="2" />
+		<dependency from="(!collaborationdiagram AND sequencediagram)"
+			to="(diagrams) AND (argouml) AND (class)" weight="9" />
+		<dependency from="(!collaborationdiagram AND sequencediagram)"
+			to="(sequencediagram)" weight="5" />
+		<dependency
+			from="(diagrams AND !logging) OR (class AND !logging) OR (argouml AND !logging)"
+			to="(diagrams) AND (argouml) AND (class)" weight="41" />
+		<dependency
+			from="(diagrams AND !logging) OR (class AND !logging) OR (argouml AND !logging)"
+			to="(diagrams AND !logging) AND (class AND !logging) AND (argouml AND !logging)"
+			weight="17" />
+		<dependency from="(!cognitive AND logging)"
+			to="(class AND !cognitive) AND (argouml AND !cognitive) AND (diagrams AND !cognitive)"
+			weight="2" />
+		<dependency from="(!cognitive AND logging)" to="(logging)"
+			weight="1" />
+		<dependency from="(statediagram AND activitydiagram AND sequencediagram)"
+			to="(diagrams) AND (argouml) AND (class)" weight="9" />
+		<dependency from="(statediagram AND activitydiagram AND sequencediagram)"
+			to="(statediagram AND activitydiagram AND sequencediagram)" weight="9" />
+		<dependency from="(sequencediagram) OR (collaborationdiagram)"
+			to="(diagrams) AND (argouml) AND (class)" weight="354" />
+		<dependency from="(sequencediagram) OR (collaborationdiagram)"
+			to="(sequencediagram) OR (collaborationdiagram)" weight="237" />
+		<dependency from="(!statediagram AND activitydiagram AND !sequencediagram)"
+			to="(diagrams) AND (argouml) AND (class)" weight="8" />
+		<dependency from="(!statediagram AND activitydiagram AND !sequencediagram)"
+			to="(!statediagram AND activitydiagram AND !sequencediagram)" weight="6" />
+		<dependency from="(!statediagram AND !activitydiagram AND sequencediagram)"
+			to="(diagrams) AND (argouml) AND (class)" weight="8" />
+		<dependency from="(!statediagram AND !activitydiagram AND sequencediagram)"
+			to="(!statediagram AND !activitydiagram AND sequencediagram)" weight="6" />
+		<dependency from="(sequencediagram)" to="(diagrams) AND (argouml) AND (class)"
+			weight="885" />
+		<dependency from="(sequencediagram)" to="(collaborationdiagram)"
+			weight="51" />
+		<dependency from="(sequencediagram)" to="(sequencediagram)"
+			weight="9705" />
+		<dependency from="(statediagram AND activitydiagram AND logging)"
+			to="(diagrams) AND (argouml) AND (class)" weight="4" />
+		<dependency from="(statediagram AND activitydiagram AND logging)"
+			to="(logging)" weight="1" />
+		<dependency from="(statediagram AND activitydiagram AND logging)"
+			to="(activitydiagram)" weight="1" />
+		<dependency from="(statediagram AND !activitydiagram AND logging)"
+			to="(diagrams) AND (argouml) AND (class)" weight="5" />
+		<dependency from="(statediagram AND !activitydiagram AND logging)"
+			to="(logging)" weight="1" />
+		<dependency from="(logging)" to="(diagrams) AND (argouml) AND (class)"
+			weight="1875" />
+		<dependency from="(logging)" to="(logging)" weight="1995" />
+		<dependency from="(cognitive AND !logging)" to="(cognitive)"
+			weight="1" />
+		<dependency from="(activitydiagram)" to="(activitydiagram) OR (statediagram)"
+			weight="1" />
+		<dependency from="(activitydiagram)" to="(diagrams) AND (argouml) AND (class)"
+			weight="622" />
+		<dependency from="(activitydiagram)" to="(activitydiagram)"
+			weight="4065" />
+		<dependency from="(activitydiagram) OR (statediagram)" to="(activitydiagram) OR (statediagram)"
+			weight="2497" />
+		<dependency from="(activitydiagram) OR (statediagram)" to="(diagrams) AND (argouml) AND (class)"
+			weight="1132" />
+		<dependency
+			from="(class AND !cognitive) OR (argouml AND !cognitive) OR (diagrams AND !cognitive)"
+			to="(diagrams) AND (argouml) AND (class)" weight="23" />
+		<dependency
+			from="(class AND !cognitive) OR (argouml AND !cognitive) OR (diagrams AND !cognitive)"
+			to="(class AND !cognitive) AND (argouml AND !cognitive) AND (diagrams AND !cognitive)"
+			weight="31" />
+		<dependency from="(activitydiagram AND logging)" to="(diagrams) AND (argouml) AND (class)"
+			weight="4" />
+		<dependency from="(activitydiagram AND logging)" to="(activitydiagram AND logging)"
+			weight="10" />
+		<dependency from="(activitydiagram AND logging)" to="(logging)"
+			weight="1" />
+		<dependency from="(activitydiagram AND logging)" to="(activitydiagram)"
+			weight="12" />
+		<dependency from="(statediagram AND logging)" to="(statediagram)"
+			weight="16" />
+		<dependency from="(statediagram AND logging)" to="(statediagram AND logging)"
+			weight="14" />
+		<dependency from="(collaborationdiagram AND sequencediagram AND logging)"
+			to="(collaborationdiagram AND sequencediagram)" weight="15" />
+		<dependency from="(collaborationdiagram AND sequencediagram AND logging)"
+			to="(sequencediagram AND logging)" weight="7" />
+		<dependency
+			from="(argouml AND !usecasediagram) OR (diagrams AND !usecasediagram) OR (!usecasediagram AND class)"
+			to="(diagrams) AND (argouml) AND (class)" weight="55" />
+		<dependency from="(cognitive AND logging)" to="(cognitive)"
+			weight="231" />
+		<dependency from="(cognitive AND logging)" to="(diagrams) AND (argouml) AND (class)"
+			weight="1" />
+		<dependency from="(cognitive AND logging)" to="(logging)"
+			weight="11" />
+		<dependency from="(cognitive AND logging)" to="(cognitive AND logging)"
+			weight="220" />
+		<dependency from="(!statediagram AND activitydiagram AND sequencediagram)"
+			to="(diagrams) AND (argouml) AND (class)" weight="8" />
+		<dependency from="(!statediagram AND activitydiagram AND sequencediagram)"
+			to="(!statediagram AND activitydiagram AND sequencediagram)" weight="6" />
+	</dependencies>
+</feature_model>

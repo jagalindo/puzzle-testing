@@ -1,0 +1,13 @@
+package fr.inria.diverse.refm.competition.assumcao;
+
+import at.jku.isse.fm.operator.FeatureModelBuilder;
+
+public class test {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		FeatureModelBuilder builder = new FeatureModelBuilder();
+//		builder.
+	}
+
+}
