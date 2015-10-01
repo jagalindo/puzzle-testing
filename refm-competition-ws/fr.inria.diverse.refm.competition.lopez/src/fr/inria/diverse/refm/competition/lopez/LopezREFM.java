@@ -4,7 +4,7 @@ import java.io.File;
 
 import es.us.isa.FAMA.models.FAMAfeatureModel.FAMAFeatureModel;
 import fm.experiments.utils.FMExtractorFacade;
-import fr.inria.diverse.refm.competition.common.FileUtils;
+import fr.inria.diverse.refm.competition.common.utils.FileUtils;
 
 public class LopezREFM {
 

@@ -3,9 +3,13 @@ package fr.inria.diverse.refm.competition.lopez;
 import org.junit.Before;
 import org.junit.Test;
 
+import es.us.isa.FAMA.models.FAMAfeatureModel.FAMAFeatureModel;
+import fr.inria.diverse.refm.competition.common.utils.PrintUtils;
+
 public class BenchmarkingLopezREFM {
 
 	private LopezREFM synthesizer;
+	
 	
 	@Before
 	public void loadScenarios(){
@@ -15,8 +19,11 @@ public class BenchmarkingLopezREFM {
 	@Test
 	public void executeBenchmark() throws Exception{
 		for (int i = 1; i <= 2; i++) {
-			synthesizer.execute("testdata/" + i + "_3_closed_pcm.txt");
+			FAMAFeatureModel result = synthesizer.execute("testdata/" + i + "_3_closed_pcm.txt");
+			(new PrintUtils()).printFitness(result);
 		}
 	}
+
+	
 	
 }

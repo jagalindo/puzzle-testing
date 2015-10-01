@@ -12,10 +12,6 @@
 	<classpathentry kind="lib" path="lib/commons-cli.jar"/>
 	<classpathentry kind="lib" path="lib/commons-logging.jar"/>
 	<classpathentry kind="lib" path="lib/cspparserxml.jar"/>
-	<classpathentry kind="lib" path="lib/FaMaAttributedModel-1.0.2.jar"/>
-	<classpathentry kind="lib" path="lib/FaMaAttributedModel-1.0.4-sources.jar"/>
-	<classpathentry kind="lib" path="lib/FaMaFeatureModel-0.9.1-sources.jar"/>
-	<classpathentry kind="lib" path="lib/FaMaFeatureModel-0.9.1.jar"/>
 	<classpathentry kind="lib" path="lib/FaMaSDK-1.1.1-sources.jar"/>
 	<classpathentry kind="lib" path="lib/FaMaSDK-1.1.1.jar"/>
 	<classpathentry kind="lib" path="lib/FaMaShell-0.1.1-sources.jar"/>
@@ -38,5 +34,9 @@
 	<classpathentry kind="lib" path="lib/Sat4jReasoner-1.0.1.jar"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/fr.inria.diverse.refm.competition.common"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
+	<classpathentry kind="lib" path="/fr.inria.diverse.refm.competition.common/lib/FaMaAttributedModel-1.0.2.jar"/>
+	<classpathentry kind="lib" path="/fr.inria.diverse.refm.competition.common/lib/FaMaAttributedModel-1.0.4-sources.jar"/>
+	<classpathentry kind="lib" path="/fr.inria.diverse.refm.competition.common/lib/FaMaFeatureModel-0.9.1-sources.jar"/>
+	<classpathentry kind="lib" path="/fr.inria.diverse.refm.competition.common/lib/FaMaFeatureModel-0.9.1.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

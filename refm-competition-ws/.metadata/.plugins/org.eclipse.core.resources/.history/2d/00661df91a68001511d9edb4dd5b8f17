@@ -1,0 +1,5 @@
+package fr.inria.diverse.refm.competition.common.utils;
+
+public class PrintUtils {
+
+}
