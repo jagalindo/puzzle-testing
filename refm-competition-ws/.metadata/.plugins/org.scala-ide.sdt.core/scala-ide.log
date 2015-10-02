@@ -18,3 +18,29 @@
 2015-10-02 10:56:41,999  WARN [Worker-1] - ScalaProject - Project MatrixGenerator has platform default sourceLevel.
 2015-10-02 10:56:41,999  WARN [Worker-2] - ScalaProject - Project AFMGenerator runs on platform default installation.
 2015-10-02 10:56:41,999  WARN [Worker-1] - ScalaProject - Project MatrixGenerator runs on platform default installation.
+2015-10-02 13:11:03,652  WARN [Worker-2] - ScalaProject - Project AFMGenerator has platform default sourceLevel.
+2015-10-02 13:11:03,652  WARN [Worker-2] - ScalaProject - Project AFMGenerator runs on platform default installation.
+2015-10-02 13:11:03,670  WARN [Worker-2] - ScalaProject - Project AFMSynthesis has platform default sourceLevel.
+2015-10-02 13:11:03,670  WARN [Worker-2] - ScalaProject - Project AFMSynthesis runs on platform default installation.
+2015-10-02 13:11:04,070  WARN [Worker-2] - ScalaProject - Project MatrixGenerator has platform default sourceLevel.
+2015-10-02 13:11:04,070  WARN [Worker-2] - ScalaProject - Project MatrixGenerator runs on platform default installation.
+2015-10-02 13:11:04,498  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - ScalaProject - Project AFMSynthesis has platform default sourceLevel.
+2015-10-02 13:11:04,498  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - ScalaProject - Project AFMSynthesis runs on platform default installation.
+2015-10-02 13:11:04,884  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - ImplicitHighlightingPresenter - Timeout while waiting for `askLoadedTyped` during semantic highlighting.
+2015-10-02 13:13:32,608  WARN [Worker-4] - ScalaProject - Project AFMGenerator has platform default sourceLevel.
+2015-10-02 13:13:32,608  WARN [Worker-4] - ScalaProject - Project AFMGenerator runs on platform default installation.
+2015-10-02 13:13:32,636  WARN [Worker-4] - ScalaProject - Project AFMSynthesis has platform default sourceLevel.
+2015-10-02 13:13:32,636  WARN [Worker-4] - ScalaProject - Project AFMSynthesis runs on platform default installation.
+2015-10-02 13:13:32,954  WARN [Worker-4] - ScalaProject - Project MatrixGenerator has platform default sourceLevel.
+2015-10-02 13:13:32,954  WARN [Worker-4] - ScalaProject - Project MatrixGenerator runs on platform default installation.
+2015-10-02 13:13:33,004  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - ScalaProject - Project AFMSynthesis has platform default sourceLevel.
+2015-10-02 13:13:33,004  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - ScalaProject - Project AFMSynthesis runs on platform default installation.
+2015-10-02 13:40:31,903  WARN [Worker-3] - ScalaProject - Project AFMGenerator has platform default sourceLevel.
+2015-10-02 13:40:31,903  WARN [Worker-3] - ScalaProject - Project AFMGenerator runs on platform default installation.
+2015-10-02 13:40:31,919  WARN [Worker-3] - ScalaProject - Project AFMSynthesis has platform default sourceLevel.
+2015-10-02 13:40:31,919  WARN [Worker-3] - ScalaProject - Project AFMSynthesis runs on platform default installation.
+2015-10-02 13:40:32,265  WARN [Worker-3] - ScalaProject - Project MatrixGenerator has platform default sourceLevel.
+2015-10-02 13:40:32,265  WARN [Worker-3] - ScalaProject - Project MatrixGenerator runs on platform default installation.
+2015-10-02 13:40:32,269  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - ScalaProject - Project AFMSynthesis has platform default sourceLevel.
+2015-10-02 13:40:32,270  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - ScalaProject - Project AFMSynthesis runs on platform default installation.
+2015-10-02 13:40:32,727  WARN [org.scalaide.ui.internal.reconciliation.ScalaReconciler] - ImplicitHighlightingPresenter - Timeout while waiting for `askLoadedTyped` during semantic highlighting.

@@ -22,7 +22,6 @@
 <fullyQualifiedTypeName name="org.eclipse.emf.ecore.resource.impl.FileURIHandlerImpl"/>
 <fullyQualifiedTypeName name="fr.inria.diverse.puzzle.vmsynthesis.impl.FromPFeatureModelToFAMA"/>
 <fullyQualifiedTypeName name="fr.inria.diverse.refm.competition.mendez.MendezREFM"/>
-<fullyQualifiedTypeName name="fr.inria.diverse.refm.competition.common.utils.FileUtils"/>
 <fullyQualifiedTypeName name="java.io.File"/>
 <fullyQualifiedTypeName name="run.RunNSGAIIFM_3obj"/>
 <fullyQualifiedTypeName name="run.XMLFeatureModelParser"/>
@@ -49,4 +48,7 @@
 <fullyQualifiedTypeName name="javax.xml.transform.Transformer"/>
 <fullyQualifiedTypeName name="javax.xml.transform.stream.StreamResult"/>
 <fullyQualifiedTypeName name="org.w3c.dom.Attr"/>
+<fullyQualifiedTypeName name="fr.inria.diverse.refm.competition.common.utils.FileUtils"/>
+<fullyQualifiedTypeName name="foreverse.afmsynthesis.AFMSynthesis"/>
+<fullyQualifiedTypeName name="fr.inria.diverse.refm.competition.becan.BecanREFM"/>
 </qualifiedTypeNameHistroy>

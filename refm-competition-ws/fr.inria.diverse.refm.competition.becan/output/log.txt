@@ -1,0 +1,21 @@
+Synthesis
+  Domain extraction
+  Feature and attribute extraction
+  Binary implications
+  Implication and Mutex graph
+  Hierarchy
+  Place attributes
+  Mandatory features
+  Feature groups
+    Mutex
+    Or
+    Xor
+    Group processing
+Feature groups
+Mutex group : Feature(F1) <- {Feature(F9),Feature(F5)}
+  Cross tree constraints
+    Binary implies
+    Binary excludes
+    Complex constraints
+  AFM construction
+success

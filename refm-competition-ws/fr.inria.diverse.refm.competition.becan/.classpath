@@ -3,11 +3,21 @@
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="src" path="test"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/fr.inria.diverse.refm.competition.common"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
+	<classpathentry kind="lib" path="lib/AttributedModel.jar"/>
+	<classpathentry kind="lib" path="lib/FAMILIAR-Standalone-1.0.10-jar-with-dependencies.jar"/>
+	<classpathentry kind="lib" path="lib/feature-model-synthesis_2.11-1.0.jar"/>
+	<classpathentry kind="lib" path="lib/graph-core_2.11-1.9.0.jar"/>
+	<classpathentry kind="lib" path="lib/graph-dot_2.11-1.9.0.jar"/>
+	<classpathentry kind="lib" path="lib/KSynthesis-0.0.1-SNAPSHOT-jar-with-dependencies.jar"/>
+	<classpathentry kind="lib" path="lib/org.sat4j.core.jar"/>
+	<classpathentry kind="lib" path="lib/scala-csv_2.11-1.2.1.jar"/>
+	<classpathentry kind="lib" path="lib/scala-library-2.11.1.jar"/>
+	<classpathentry kind="lib" path="lib/afmsynthesis_2.11-0.1.jar"/>
 	<classpathentry kind="lib" path="lib/FaMaAttributedModel-1.0.2.jar"/>
 	<classpathentry kind="lib" path="lib/FaMaAttributedModel-1.0.4-sources.jar"/>
 	<classpathentry kind="lib" path="lib/FaMaFeatureModel-0.9.1-sources.jar"/>
 	<classpathentry kind="lib" path="lib/FaMaFeatureModel-0.9.1.jar"/>
-	<classpathentry combineaccessrules="false" kind="src" path="/fr.inria.diverse.refm.competition.common"/>
-	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
