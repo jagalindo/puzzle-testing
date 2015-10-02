@@ -1,0 +1,20 @@
+2015-10-02 10:56:35,775  WARN [ModalContext] - ScalaProject - Project AFMSynthesis has platform default sourceLevel.
+2015-10-02 10:56:35,776  WARN [ModalContext] - ScalaProject - Project AFMSynthesis runs on platform default installation.
+2015-10-02 10:56:35,778  WARN [ModalContext] - ScalaProject - Project MatrixGenerator has platform default sourceLevel.
+2015-10-02 10:56:35,778  WARN [ModalContext] - ScalaProject - Project MatrixGenerator runs on platform default installation.
+2015-10-02 10:56:35,779  WARN [ModalContext] - ScalaProject - Project AFMGenerator has platform default sourceLevel.
+2015-10-02 10:56:35,779  WARN [ModalContext] - ScalaProject - Project AFMGenerator runs on platform default installation.
+2015-10-02 10:56:36,062  WARN [ModalContext] - ScalaProject - Project AFMGenerator has platform default sourceLevel.
+2015-10-02 10:56:36,062  WARN [ModalContext] - ScalaProject - Project AFMGenerator runs on platform default installation.
+2015-10-02 10:56:36,129  WARN [ModalContext] - ScalaProject - Project AFMSynthesis has platform default sourceLevel.
+2015-10-02 10:56:36,130  WARN [ModalContext] - ScalaProject - Project AFMSynthesis runs on platform default installation.
+2015-10-02 10:56:36,143  WARN [ModalContext] - ScalaProject - Project MatrixGenerator has platform default sourceLevel.
+2015-10-02 10:56:36,143  WARN [ModalContext] - ScalaProject - Project MatrixGenerator runs on platform default installation.
+2015-10-02 10:56:37,407  WARN [Worker-2] - ScalaProject - Project AFMGenerator has platform default sourceLevel.
+2015-10-02 10:56:37,407  WARN [Worker-2] - ScalaProject - Project AFMGenerator runs on platform default installation.
+2015-10-02 10:56:41,999  WARN [Worker-5] - ScalaProject - Project AFMSynthesis has platform default sourceLevel.
+2015-10-02 10:56:41,999  WARN [Worker-2] - ScalaProject - Project AFMGenerator has platform default sourceLevel.
+2015-10-02 10:56:41,999  WARN [Worker-5] - ScalaProject - Project AFMSynthesis runs on platform default installation.
+2015-10-02 10:56:41,999  WARN [Worker-1] - ScalaProject - Project MatrixGenerator has platform default sourceLevel.
+2015-10-02 10:56:41,999  WARN [Worker-2] - ScalaProject - Project AFMGenerator runs on platform default installation.
+2015-10-02 10:56:41,999  WARN [Worker-1] - ScalaProject - Project MatrixGenerator runs on platform default installation.

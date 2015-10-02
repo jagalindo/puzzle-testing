@@ -12,13 +12,10 @@ import javax.xml.transform.stream.StreamResult;
 import org.w3c.dom.Attr;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
-import org.w3c.dom.Node;
 
-import es.us.isa.FAMA.models.FAMAfeatureModel.Dependency;
 import es.us.isa.FAMA.models.FAMAfeatureModel.FAMAFeatureModel;
 import es.us.isa.FAMA.models.FAMAfeatureModel.Feature;
 import es.us.isa.FAMA.models.FAMAfeatureModel.Relation;
-import es.us.isa.FAMA.models.FAMAfeatureModel.RequiresDependency;
 import es.us.isa.FAMA.models.FAMAfeatureModel.fileformats.SPLXWriter;
 import es.us.isa.FAMA.models.featureModel.Cardinality;
 import fr.inria.diverse.graph.Arc;

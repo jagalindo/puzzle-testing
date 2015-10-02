@@ -8,7 +8,7 @@ import fr.inria.diverse.refm.competition.common.utils.FileUtils;
 
 public class LopezREFM {
 
-	public FAMAFeatureModel execute(String PCMFile) throws Exception{
+	public FAMAFeatureModel execute(String PCMFile) throws Exception {
 		String originalPCM = FileUtils.readFileContent(new File(PCMFile));
 		PCMFormatTranslator translator = new PCMFormatTranslator();
 		translator.loadPCM(originalPCM);
