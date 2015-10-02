@@ -7,5 +7,7 @@
 	<classpathentry kind="lib" path="lib/FaMaAttributedModel-1.0.4-sources.jar"/>
 	<classpathentry kind="lib" path="lib/FaMaFeatureModel-0.9.1-sources.jar"/>
 	<classpathentry kind="lib" path="lib/FaMaFeatureModel-0.9.1.jar"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/fr.inria.diverse.refm.competition.common"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
