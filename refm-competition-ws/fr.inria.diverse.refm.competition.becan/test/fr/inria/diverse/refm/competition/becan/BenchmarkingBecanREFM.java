@@ -3,7 +3,7 @@ package fr.inria.diverse.refm.competition.becan;
 import org.junit.Before;
 import org.junit.Test;
 
-import es.us.isa.FAMA.models.FAMAfeatureModel.FAMAFeatureModel;
+import es.us.isa.FAMA.models.variabilityModel.VariabilityModel;
 import fr.inria.diverse.refm.competition.common.utils.PrintUtils;
 
 /**
@@ -36,7 +36,7 @@ public class BenchmarkingBecanREFM {
 	@Test
 	public void executeBenchmark() throws Exception{
 		for (int i = initialInstance; i <= finalInstance; i++) {
-			FAMAFeatureModel result = synthesizer.execute("testdata/" + i + "_3_closed_pcm.txt");
+			VariabilityModel result = synthesizer.execute("testdata/" + i + "_3_closed_pcm.txt");
 			(new PrintUtils()).printFitness(result);
 		}
 	}

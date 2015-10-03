@@ -1,0 +1,44 @@
+package fr.inria.diverse.refm.competition.becan;
+
+import java.io.File;
+
+import es.us.isa.FAMA.models.FAMAAttributedfeatureModel.fileformats.AttributedReader;
+import es.us.isa.FAMA.models.FAMAfeatureModel.FAMAFeatureModel;
+import foreverse.afmsynthesis.AFMSynthesis;
+import fr.familiar.attributedfm.AttributedFeatureModel;
+import fr.inria.diverse.refm.competition.common.utils.FileUtils;
+
+public class BecanREFM {
+
+	public FAMAFeatureModel execute(String PCMFile) throws Exception {
+		String originalPCM = FileUtils.readFileContent(new File(PCMFile));
+		PCMFormatTranslator translator = new PCMFormatTranslator();
+		translator.loadPCM(originalPCM);
+		String adaptedPCM = translator.fromPuzzleToBecanFormat(originalPCM);
+		FileUtils.saveFile(adaptedPCM, "input/input_matrix.cvs");
+		
+		String[] args = new String[7];
+		args[0] = "input/input_matrix.cvs";
+		args[1] = "output";
+		args[2] = "true";
+		args[3] = "1000";
+		args[4] = "true";
+		args[5] = "1000";
+		args[6] = "true";
+		AFMSynthesis.main(args);
+		
+		
+		fr.familiar.attributedfm.AttributedFeatureModel model = (new AttributedReader()).parseFile("output/synthesized_afm.afm");
+		System.out.println(model);
+		return null;
+	}
+	
+	public static void main(String[] args){
+		BecanREFM becan = new BecanREFM();
+		try {
+			becan.execute("testdata/1_3_closed_pcm.txt");
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+}
