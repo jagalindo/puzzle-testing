@@ -1,0 +1,40 @@
+<feature_model name="payee23">
+<feature_tree>
+:r payee23 (payee23)
+	:m insured_object2 (insured_object2)
+	:m conditions17 (conditions17)
+	:m payment13 (payment13)
+	:m exception19 (exception19)
+	:m coverage7 (coverage7)
+	:m acceptance18 (acceptance18)
+	:m insurance_product1 (insurance_product1)
+	:m premium20 (premium20)
+	:o own_risk16 (own_risk16)
+	:g [1, *]
+		: loss (loss)
+		: unemployment10 (unemployment10)
+		: damage (damage)
+		: illness (illness)
+		: life9 (life9)
+	:g [1, *]
+		: payee_corporation (payee_corporation)
+		: person224 (person224)
+	:g [1, 1]
+		: ammount15 (ammount15)
+		: service14 (service14)
+	:g [1, 1]
+		: realty4 (realty4)
+		: corporation (corporation)
+		: movable_property (movable_property)
+		: person (person)
+	:g [1, 1]
+		: periodical22 (periodical22)
+		: direct21 (direct21)
+</feature_tree>
+<constraints>
+constraint_1:~loss or movable_property
+constraint_2:~corporation or payee_corporation
+constraint_3:~person or ~damage
+constraint_4:~illness or ~corporation
+</constraints>
+</feature_model>

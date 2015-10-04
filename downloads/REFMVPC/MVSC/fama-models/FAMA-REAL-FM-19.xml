@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature-model xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.tdg-seville.info/benavides/featuremodelling/feature-model.xsd">
+<feature name="graph">
+	<binaryRelation name="856">
+	<cardinality max="1" min="1"/>
+	<solitaryFeature name="services">
+		<binaryRelation name="857">
+		<cardinality max="1" min="1"/>
+		<solitaryFeature name="graph_manipulation">
+			<binaryRelation name="858">
+			<cardinality max="1" min="1"/>
+			<solitaryFeature name="delete">
+			</solitaryFeature>
+
+			</binaryRelation>
+
+			<binaryRelation name="859">
+			<cardinality max="1" min="1"/>
+			<solitaryFeature name="select">
+				<binaryRelation name="860">
+				<cardinality max="1" min="1"/>
+				<solitaryFeature name="selection_mode">
+					<setRelation name="861">
+					<cardinality max="1" min="1"/>
+					<groupedFeature name="increment_selection">
+					</groupedFeature>
+					<groupedFeature name="non_increment_selection">
+					</groupedFeature>
+					</setRelation>
+
+				</solitaryFeature>
+
+				</binaryRelation>
+
+			</solitaryFeature>
+
+			</binaryRelation>
+
+			<binaryRelation name="862">
+			<cardinality max="1" min="1"/>
+			<solitaryFeature name="add">
+				<binaryRelation name="863">
+				<cardinality max="1" min="1"/>
+				<solitaryFeature name="entity_add">
+				</solitaryFeature>
+
+				</binaryRelation>
+
+				<binaryRelation name="864">
+				<cardinality max="1" min="1"/>
+				<solitaryFeature name="connector_add">
+				</solitaryFeature>
+
+				</binaryRelation>
+
+			</solitaryFeature>
+
+			</binaryRelation>
+
+			<binaryRelation name="865">
+			<cardinality max="1" min="1"/>
+			<solitaryFeature name="move">
+				<binaryRelation name="866">
+				<cardinality max="1" min="1"/>
+				<solitaryFeature name="moving_mode">
+					<setRelation name="867">
+					<cardinality max="1" min="1"/>
+					<groupedFeature name="outline_moving">
+					</groupedFeature>
+					<groupedFeature name="content_moving">
+					</groupedFeature>
+					</setRelation>
+
+				</solitaryFeature>
+
+				</binaryRelation>
+
+				<binaryRelation name="868">
+				<cardinality max="1" min="0"/>
+				<solitaryFeature name="moving_constraint">
+					<setRelation name="869">
+					<cardinality max="1" min="1"/>
+					<groupedFeature name="horizontal_constraint">
+					</groupedFeature>
+					<groupedFeature name="vertical_constraint">
+					</groupedFeature>
+					</setRelation>
+
+				</solitaryFeature>
+
+				</binaryRelation>
+
+			</solitaryFeature>
+
+			</binaryRelation>
+
+			<binaryRelation name="870">
+			<cardinality max="1" min="0"/>
+			<solitaryFeature name="compose">
+			</solitaryFeature>
+
+			</binaryRelation>
+
+			<binaryRelation name="871">
+			<cardinality max="1" min="0"/>
+			<solitaryFeature name="layer_adjust">
+				<binaryRelation name="872">
+				<cardinality max="1" min="1"/>
+				<solitaryFeature name="up_layer">
+				</solitaryFeature>
+
+				</binaryRelation>
+
+				<binaryRelation name="873">
+				<cardinality max="1" min="1"/>
+				<solitaryFeature name="down_layer">
+				</solitaryFeature>
+
+				</binaryRelation>
+
+			</solitaryFeature>
+
+			</binaryRelation>
+
+		</solitaryFeature>
+
+		</binaryRelation>
+
+		<binaryRelation name="874">
+		<cardinality max="1" min="0"/>
+		<solitaryFeature name="do_undo_redo">
+			<binaryRelation name="875">
+			<cardinality max="1" min="1"/>
+			<solitaryFeature name="select_do_undo_redo">
+			</solitaryFeature>
+
+			</binaryRelation>
+
+			<binaryRelation name="876">
+			<cardinality max="1" min="1"/>
+			<solitaryFeature name="add_do_undo_redo">
+			</solitaryFeature>
+
+			</binaryRelation>
+
+			<binaryRelation name="877">
+			<cardinality max="1" min="1"/>
+			<solitaryFeature name="delete__do_undo_redo">
+			</solitaryFeature>
+
+			</binaryRelation>
+
+			<binaryRelation name="878">
+			<cardinality max="1" min="1"/>
+			<solitaryFeature name="move_do_undo_redo">
+			</solitaryFeature>
+
+			</binaryRelation>
+
+			<binaryRelation name="879">
+			<cardinality max="1" min="0"/>
+			<solitaryFeature name="compose_do_undo_redo">
+			</solitaryFeature>
+
+			</binaryRelation>
+
+			<binaryRelation name="880">
+			<cardinality max="1" min="0"/>
+			<solitaryFeature name="layer_adjust_do_undo_redo">
+			</solitaryFeature>
+
+			</binaryRelation>
+
+		</solitaryFeature>
+
+		</binaryRelation>
+
+		<binaryRelation name="881">
+		<cardinality max="1" min="0"/>
+		<solitaryFeature name="zoom_inout">
+		</solitaryFeature>
+
+		</binaryRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+</feature>
+<requires feature="do_undo_redo" name="c1a" requires="graph_manipulation"/>
+<requires feature="zoom_inout" name="c1b" requires="graph_manipulation"/>
+<!-- c2a: (~compose) or (~do_undo_redo) or compose_do_undo_redo -->
+<requires feature="compose_do_undo_redo" name="c2b" requires="compose"/>
+<requires feature="compose_do_undo_redo" name="c2c" requires="do_undo_redo"/>
+<!-- c3a: (~layer_adjust) or (~do_undo_redo) or layer_adjust_do_undo_redo -->
+<requires feature="layer_adjust_do_undo_redo" name="c3b" requires="do_undo_redo"/>
+<requires feature="layer_adjust_do_undo_redo" name="c3c" requires="layer_adjust"/>
+</feature-model>

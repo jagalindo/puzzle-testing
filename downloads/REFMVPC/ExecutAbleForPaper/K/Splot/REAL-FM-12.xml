@@ -1,0 +1,37 @@
+<!-- This model was created online using SPLOT's Feature Model Editor (http://www.splot-research.org) on Fri, Mar 26, 2010 - 7:18 AM  -->
+<feature_model name="Search_Engine_PL">
+<meta>
+<data name="description">Feature model of a simple search engine product line</data>
+<data name="creator">Marcilio Mendonca</data>
+<data name="address">200 University Ave. West, Waterloo, ON, Canada</data>
+<data name="email">marcilio dot mendonca at gmail dot com</data>
+<data name="phone">+1-519-883-7198</data>
+<data name="website">http://hdl.handle.net/10012/4201</data>
+<data name="organization">University of Waterloo</data>
+<data name="department">School of Computer Science</data>
+<data name="date">Jan, 2009</data>
+<data name="reference">Marcilio Mendonca, Efficient Reasoning Techniques for Large Scale Feature Models, PhD Thesis, School of Computer Science, University of Waterloo, Jan/2009</data>
+</meta>
+<feature_tree>
+:r _id_0(_id_0)
+	:o page_translation(page_translation)
+	:m _id_1(_id_1)
+		:m _id_2(_id_2)
+		:o _id_3(_id_3)
+			:g (_id_4) [1,1] 
+				: _id_5(_id_5)
+				: _id_6(_id_6)
+				: svg(svg)
+		:o _id_7(_id_7)
+	:o search_by_language(search_by_language)
+		:g (_id_8) [1,*] 
+			: _id_9(_id_9)
+			: _id_10(_id_10)
+			: _id_11(_id_11)
+	:o page_preview(page_preview)
+</feature_tree>
+<constraints>
+c1:~search_by_language or page_translation
+c2:~page_preview or ~svg
+</constraints>
+</feature_model>

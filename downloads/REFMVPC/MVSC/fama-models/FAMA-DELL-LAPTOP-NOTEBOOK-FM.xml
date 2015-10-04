@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature-model xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.tdg-seville.info/benavides/featuremodelling/feature-model.xsd">
+<feature name="Dell Laptops/Notebooks">
+	<binaryRelation name="66">
+	<cardinality max="1" min="1"/>
+	<solitaryFeature name="productcategory">
+		<setRelation name="67">
+		<cardinality max="1" min="1"/>
+		<groupedFeature name="mininotebooks">
+		</groupedFeature>
+		<groupedFeature name="inspironlaptops">
+		</groupedFeature>
+		<groupedFeature name="studiolaptops">
+		</groupedFeature>
+		<groupedFeature name="xpslaptops">
+		</groupedFeature>
+		<groupedFeature name="adamo">
+		</groupedFeature>
+		<groupedFeature name="studioxpslaptops">
+		</groupedFeature>
+		</setRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="68">
+	<cardinality max="1" min="1"/>
+	<solitaryFeature name="operatingsystem">
+		<setRelation name="69">
+		<cardinality max="1" min="1"/>
+		<groupedFeature name="vistawithdowngradetoxp">
+		</groupedFeature>
+		<groupedFeature name="windowsvista64bit">
+		</groupedFeature>
+		<groupedFeature name="windowsxphome">
+		</groupedFeature>
+		<groupedFeature name="ubuntulinux">
+		</groupedFeature>
+		</setRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="70">
+	<cardinality max="1" min="1"/>
+	<solitaryFeature name="harddrive">
+		<setRelation name="71">
+		<cardinality max="1" min="1"/>
+		<groupedFeature name="hd500gb">
+		</groupedFeature>
+		<groupedFeature name="hd320gb">
+		</groupedFeature>
+		<groupedFeature name="hd250gb">
+		</groupedFeature>
+		<groupedFeature name="hd160gb">
+		</groupedFeature>
+		<groupedFeature name="hd128gbsolidstate">
+		</groupedFeature>
+		<groupedFeature name="hd120gb">
+		</groupedFeature>
+		<groupedFeature name="hd80gb">
+		</groupedFeature>
+		</setRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="72">
+	<cardinality max="1" min="0"/>
+	<solitaryFeature name="opticaldrive">
+		<setRelation name="73">
+		<cardinality max="1" min="1"/>
+		<groupedFeature name="cddvdrw">
+		</groupedFeature>
+		<groupedFeature name="dvdromdriveanddvdrw">
+		</groupedFeature>
+		<groupedFeature name="dvdrwandcdrwcombo">
+		</groupedFeature>
+		<groupedFeature name="bluraydisc">
+		</groupedFeature>
+		</setRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="74">
+	<cardinality max="1" min="1"/>
+	<solitaryFeature name="laptopweight">
+		<setRelation name="75">
+		<cardinality max="1" min="1"/>
+		<groupedFeature name="ultralight">
+		</groupedFeature>
+		<groupedFeature name="light">
+		</groupedFeature>
+		<groupedFeature name="desktopreplacement">
+		</groupedFeature>
+		</setRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="76">
+	<cardinality max="1" min="1"/>
+	<solitaryFeature name="memory">
+		<setRelation name="77">
+		<cardinality max="1" min="1"/>
+		<groupedFeature name="morethan4g">
+		</groupedFeature>
+		<groupedFeature name="mem4gb">
+		</groupedFeature>
+		<groupedFeature name="mem3gb">
+		</groupedFeature>
+		<groupedFeature name="mem2gb">
+		</groupedFeature>
+		<groupedFeature name="mem1gb">
+		</groupedFeature>
+		</setRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="78">
+	<cardinality max="1" min="1"/>
+	<solitaryFeature name="processor">
+		<setRelation name="79">
+		<cardinality max="1" min="1"/>
+		<groupedFeature name="intelcore2duo">
+		</groupedFeature>
+		<groupedFeature name="intelpentiumdualcore">
+		</groupedFeature>
+		<groupedFeature name="intelceleron">
+		</groupedFeature>
+		<groupedFeature name="intelatom">
+		</groupedFeature>
+		</setRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="80">
+	<cardinality max="1" min="1"/>
+	<solitaryFeature name="price">
+		<setRelation name="81">
+		<cardinality max="1" min="1"/>
+		<groupedFeature name="lessthanus400">
+		</groupedFeature>
+		<groupedFeature name="us400us800">
+		</groupedFeature>
+		<groupedFeature name="us800us1200">
+		</groupedFeature>
+		<groupedFeature name="morethanus1200">
+		</groupedFeature>
+		</setRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+</feature>
+<excludes feature="mininotebooks" name="c1" excludes="vistawithdowngradetoxp"/>
+<excludes feature="mininotebooks" name="c2" excludes="windowsvista64bit"/>
+<excludes feature="mininotebooks" name="c3" excludes="hd500gb"/>
+<excludes feature="mininotebooks" name="c4" excludes="hd320gb"/>
+<excludes feature="mininotebooks" name="c5" excludes="hd250gb"/>
+<excludes feature="mininotebooks" name="c6" excludes="hd128gbsolidstate"/>
+<excludes feature="mininotebooks" name="c7" excludes="cddvdrw"/>
+<excludes feature="mininotebooks" name="c8" excludes="dvdromdriveanddvdrw"/>
+<excludes feature="mininotebooks" name="c9" excludes="dvdrwandcdrwcombo"/>
+<excludes feature="mininotebooks" name="c10" excludes="bluraydisc"/>
+<excludes feature="mininotebooks" name="c11" excludes="light"/>
+<excludes feature="mininotebooks" name="c12" excludes="desktopreplacement"/>
+<excludes feature="mininotebooks" name="c13" excludes="morethan4g"/>
+<excludes feature="mininotebooks" name="c14" excludes="mem4gb"/>
+<excludes feature="mininotebooks" name="c15" excludes="mem3gb"/>
+<excludes feature="mininotebooks" name="c16" excludes="intelcore2duo"/>
+<excludes feature="mininotebooks" name="c17" excludes="intelpentiumdualcore"/>
+<excludes feature="mininotebooks" name="c18" excludes="intelceleron"/>
+<excludes feature="mininotebooks" name="c19" excludes="us800us1200"/>
+<excludes feature="mininotebooks" name="c20" excludes="morethanus1200"/>
+<excludes feature="inspironlaptops" name="c21" excludes="windowsvista64bit"/>
+<excludes feature="inspironlaptops" name="c22" excludes="windowsxphome"/>
+<excludes feature="inspironlaptops" name="c23" excludes="ubuntulinux"/>
+<excludes feature="inspironlaptops" name="c24" excludes="hd128gbsolidstate"/>
+<excludes feature="inspironlaptops" name="c25" excludes="hd120gb"/>
+<excludes feature="inspironlaptops" name="c26" excludes="hd80gb"/>
+<excludes feature="inspironlaptops" name="c27" excludes="dvdromdriveanddvdrw"/>
+<excludes feature="inspironlaptops" name="c28" excludes="dvdrwandcdrwcombo"/>
+<excludes feature="inspironlaptops" name="c29" excludes="bluraydisc"/>
+<excludes feature="inspironlaptops" name="c30" excludes="ultralight"/>
+<excludes feature="inspironlaptops" name="c31" excludes="desktopreplacement"/>
+<excludes feature="inspironlaptops" name="c32" excludes="morethan4g"/>
+<excludes feature="inspironlaptops" name="c33" excludes="mem1gb"/>
+<excludes feature="inspironlaptops" name="c34" excludes="intelatom"/>
+<excludes feature="inspironlaptops" name="c35" excludes="morethanus1200"/>
+<excludes feature="studiolaptops" name="c36" excludes="vistawithdowngradetoxp"/>
+<excludes feature="studiolaptops" name="c37" excludes="windowsxphome"/>
+<excludes feature="studiolaptops" name="c38" excludes="ubuntulinux"/>
+<excludes feature="studiolaptops" name="c39" excludes="hd160gb"/>
+<excludes feature="studiolaptops" name="c40" excludes="hd128gbsolidstate"/>
+<excludes feature="studiolaptops" name="c41" excludes="hd120gb"/>
+<excludes feature="studiolaptops" name="c42" excludes="hd80gb"/>
+<excludes feature="studiolaptops" name="c43" excludes="morethan4g"/>
+<excludes feature="studiolaptops" name="c44" excludes="mem2gb"/>
+<excludes feature="studiolaptops" name="c45" excludes="mem1gb"/>
+<excludes feature="studiolaptops" name="c46" excludes="intelceleron"/>
+<excludes feature="studiolaptops" name="c47" excludes="intelatom"/>
+<excludes feature="studiolaptops" name="c48" excludes="lessthanus400"/>
+<excludes feature="studiolaptops" name="c49" excludes="morethanus1200"/>
+<excludes feature="xpslaptops" name="c50" excludes="vistawithdowngradetoxp"/>
+<excludes feature="xpslaptops" name="c51" excludes="windowsxphome"/>
+<excludes feature="xpslaptops" name="c52" excludes="ubuntulinux"/>
+<excludes feature="xpslaptops" name="c53" excludes="hd160gb"/>
+<excludes feature="xpslaptops" name="c54" excludes="hd128gbsolidstate"/>
+<excludes feature="xpslaptops" name="c55" excludes="hd120gb"/>
+<excludes feature="xpslaptops" name="c56" excludes="hd80gb"/>
+<excludes feature="xpslaptops" name="c57" excludes="dvdromdriveanddvdrw"/>
+<excludes feature="xpslaptops" name="c58" excludes="dvdrwandcdrwcombo"/>
+<excludes feature="xpslaptops" name="c59" excludes="mem2gb"/>
+<excludes feature="xpslaptops" name="c60" excludes="mem1gb"/>
+<excludes feature="xpslaptops" name="c61" excludes="intelpentiumdualcore"/>
+<excludes feature="xpslaptops" name="c62" excludes="intelceleron"/>
+<excludes feature="xpslaptops" name="c63" excludes="intelatom"/>
+<excludes feature="xpslaptops" name="c64" excludes="lessthanus400"/>
+<excludes feature="adamo" name="c65" excludes="vistawithdowngradetoxp"/>
+<excludes feature="adamo" name="c66" excludes="windowsxphome"/>
+<excludes feature="adamo" name="c67" excludes="ubuntulinux"/>
+<excludes feature="adamo" name="c68" excludes="hd500gb"/>
+<excludes feature="adamo" name="c69" excludes="hd320gb"/>
+<excludes feature="adamo" name="c70" excludes="hd250gb"/>
+<excludes feature="adamo" name="c71" excludes="hd160gb"/>
+<excludes feature="adamo" name="c72" excludes="hd120gb"/>
+<excludes feature="adamo" name="c73" excludes="hd80gb"/>
+<excludes feature="adamo" name="c74" excludes="cddvdrw"/>
+<excludes feature="adamo" name="c75" excludes="dvdromdriveanddvdrw"/>
+<excludes feature="adamo" name="c76" excludes="dvdrwandcdrwcombo"/>
+<excludes feature="adamo" name="c77" excludes="bluraydisc"/>
+<excludes feature="adamo" name="c78" excludes="light"/>
+<excludes feature="adamo" name="c79" excludes="desktopreplacement"/>
+<excludes feature="adamo" name="c80" excludes="morethan4g"/>
+<excludes feature="adamo" name="c81" excludes="mem3gb"/>
+<excludes feature="adamo" name="c82" excludes="mem1gb"/>
+<excludes feature="adamo" name="c83" excludes="intelpentiumdualcore"/>
+<excludes feature="adamo" name="c84" excludes="intelceleron"/>
+<excludes feature="adamo" name="c85" excludes="intelatom"/>
+<excludes feature="adamo" name="c86" excludes="lessthanus400"/>
+<excludes feature="adamo" name="c87" excludes="us400us800"/>
+<excludes feature="adamo" name="c88" excludes="us800us1200"/>
+<excludes feature="studioxpslaptops" name="c89" excludes="vistawithdowngradetoxp"/>
+<excludes feature="studioxpslaptops" name="c90" excludes="windowsxphome"/>
+<excludes feature="studioxpslaptops" name="c91" excludes="ubuntulinux"/>
+<excludes feature="studioxpslaptops" name="c92" excludes="hd250gb"/>
+<excludes feature="studioxpslaptops" name="c93" excludes="hd160gb"/>
+<excludes feature="studioxpslaptops" name="c94" excludes="hd128gbsolidstate"/>
+<excludes feature="studioxpslaptops" name="c95" excludes="hd120gb"/>
+<excludes feature="studioxpslaptops" name="c96" excludes="hd80gb"/>
+<excludes feature="studioxpslaptops" name="c97" excludes="dvdromdriveanddvdrw"/>
+<excludes feature="studioxpslaptops" name="c98" excludes="dvdrwandcdrwcombo"/>
+<excludes feature="studioxpslaptops" name="c99" excludes="bluraydisc"/>
+<excludes feature="studioxpslaptops" name="c100" excludes="desktopreplacement"/>
+<excludes feature="studioxpslaptops" name="c101" excludes="morethan4g"/>
+<excludes feature="studioxpslaptops" name="c102" excludes="mem3gb"/>
+<excludes feature="studioxpslaptops" name="c103" excludes="mem2gb"/>
+<excludes feature="studioxpslaptops" name="c104" excludes="mem1gb"/>
+<excludes feature="studioxpslaptops" name="c105" excludes="intelpentiumdualcore"/>
+<excludes feature="studioxpslaptops" name="c106" excludes="intelceleron"/>
+<excludes feature="studioxpslaptops" name="c107" excludes="intelatom"/>
+<excludes feature="studioxpslaptops" name="c108" excludes="lessthanus400"/>
+<excludes feature="studioxpslaptops" name="c109" excludes="us400us800"/>
+<excludes feature="studioxpslaptops" name="c110" excludes="morethanus1200"/>
+</feature-model>

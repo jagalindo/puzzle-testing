@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature-model xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.tdg-seville.info/benavides/featuremodelling/feature-model.xsd">
+<feature name="R">
+	<binaryRelation name="26936">
+	<cardinality max="1" min="0"/>
+	<solitaryFeature name="o_1">
+		<binaryRelation name="26937">
+		<cardinality max="1" min="0"/>
+		<solitaryFeature name="o_1_1">
+		</solitaryFeature>
+
+		</binaryRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="26938">
+	<cardinality max="1" min="0"/>
+	<solitaryFeature name="o_2">
+		<setRelation name="26939">
+		<cardinality max="2" min="1"/>
+		<groupedFeature name="g_2_1_1">
+		</groupedFeature>
+		<groupedFeature name="g_2_1_2">
+		</groupedFeature>
+		</setRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="26940">
+	<cardinality max="1" min="0"/>
+	<solitaryFeature name="o_3">
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="26941">
+	<cardinality max="1" min="1"/>
+	<solitaryFeature name="m_4">
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="26942">
+	<cardinality max="1" min="0"/>
+	<solitaryFeature name="o_5">
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="26943">
+	<cardinality max="1" min="0"/>
+	<solitaryFeature name="o_6">
+	</solitaryFeature>
+
+	</binaryRelation>
+
+</feature>
+</feature-model>

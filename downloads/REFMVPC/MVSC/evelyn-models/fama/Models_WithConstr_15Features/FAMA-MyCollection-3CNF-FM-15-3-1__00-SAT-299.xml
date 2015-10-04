@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature-model xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.tdg-seville.info/benavides/featuremodelling/feature-model.xsd">
+<feature name="R">
+	<binaryRelation name="1951">
+	<cardinality max="1" min="1"/>
+	<solitaryFeature name="m_1">
+		<binaryRelation name="1952">
+		<cardinality max="1" min="0"/>
+		<solitaryFeature name="o_1_1">
+		</solitaryFeature>
+
+		</binaryRelation>
+
+		<setRelation name="1953">
+		<cardinality max="1" min="1"/>
+		<groupedFeature name="g_1_2_1">
+		</groupedFeature>
+		<groupedFeature name="g_1_2_2">
+		</groupedFeature>
+		<groupedFeature name="g_1_2_3">
+		</groupedFeature>
+		<groupedFeature name="g_1_2_4">
+		</groupedFeature>
+		<groupedFeature name="g_1_2_5">
+		</groupedFeature>
+		<groupedFeature name="g_1_2_6">
+		</groupedFeature>
+		</setRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="1954">
+	<cardinality max="1" min="1"/>
+	<solitaryFeature name="m_2">
+		<binaryRelation name="1955">
+		<cardinality max="1" min="0"/>
+		<solitaryFeature name="o_2_1">
+		</solitaryFeature>
+
+		</binaryRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="1956">
+	<cardinality max="1" min="1"/>
+	<solitaryFeature name="m_3">
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="1957">
+	<cardinality max="1" min="0"/>
+	<solitaryFeature name="o_4">
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="1958">
+	<cardinality max="1" min="0"/>
+	<solitaryFeature name="o_5">
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="1959">
+	<cardinality max="1" min="0"/>
+	<solitaryFeature name="o_6">
+	</solitaryFeature>
+
+	</binaryRelation>
+
+</feature>
+<!-- Clause3CNF_1: (~g_1_2_6) or o_2_1 or o_4 -->
+<!-- Clause3CNF_2: (~g_1_2_6) or (~o_2_1) or (~o_4) -->
+<!-- Clause3CNF_3: g_1_2_6 or (~o_2_1) or (~o_4) -->
+</feature-model>

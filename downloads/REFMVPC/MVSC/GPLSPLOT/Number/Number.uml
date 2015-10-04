@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Package xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_O2yAzjgrEd-C-Y-nXySsMw" name="Number" visibility="public">
+  <packageImport xmi:id="_O2yAzzgrEd-C-Y-nXySsMw">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Class" xmi:id="_O2yA0DgrEd-C-Y-nXySsMw" name="Graph" visibility="public" isAbstract="false">
+    <ownedBehavior xmi:type="uml:StateMachine" xmi:id="_O2yA0TgrEd-C-Y-nXySsMw" name="StateMachine1" visibility="public" isAbstract="false">
+      <region xmi:id="_O2yA0jgrEd-C-Y-nXySsMw" name="Region1">
+        <subvertex xmi:type="uml:State" xmi:id="_O2yA0zgrEd-C-Y-nXySsMw" name="start"/>
+        <subvertex xmi:type="uml:State" xmi:id="_O2yA1DgrEd-C-Y-nXySsMw" name="running"/>
+        <subvertex xmi:type="uml:State" xmi:id="_O2yA1TgrEd-C-Y-nXySsMw" name="computingVertices"/>
+        <subvertex xmi:type="uml:State" xmi:id="_O2yA1jgrEd-C-Y-nXySsMw" name="searching"/>
+        <transition xmi:id="_O2yA1zgrEd-C-Y-nXySsMw" name="run" target="_O2yA1DgrEd-C-Y-nXySsMw" source="_O2yA0zgrEd-C-Y-nXySsMw"/>
+        <transition xmi:id="_O2yA2DgrEd-C-Y-nXySsMw" name="NumberVertices" target="_O2yA1TgrEd-C-Y-nXySsMw" source="_O2yA1DgrEd-C-Y-nXySsMw"/>
+        <transition xmi:id="_O2yA2TgrEd-C-Y-nXySsMw" name="GraphSearch" target="_O2yA1jgrEd-C-Y-nXySsMw" source="_O2yA1TgrEd-C-Y-nXySsMw"/>
+      </region>
+    </ownedBehavior>
+    <ownedOperation xmi:id="_O2yA2jgrEd-C-Y-nXySsMw" name="run">
+      <ownedParameter xmi:id="_O2yA2zgrEd-C-Y-nXySsMw" name="s" type="_O2yA3TgrEd-C-Y-nXySsMw"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_O2yA3DgrEd-C-Y-nXySsMw" name="numberVertices"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_O2yA3TgrEd-C-Y-nXySsMw" name="Vertex" visibility="public" isAbstract="false">
+    <ownedAttribute xmi:id="_O2yA3jgrEd-C-Y-nXySsMw" name="vertexNumber" visibility="private" isReadOnly="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+    </ownedAttribute>
+    <ownedOperation xmi:id="_O2yA3zgrEd-C-Y-nXySsMw" name="display"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_O2yA4DgrEd-C-Y-nXySsMw" name="NumberWorkSpace" visibility="public" isAbstract="false">
+    <ownedAttribute xmi:id="_O2yA4TgrEd-C-Y-nXySsMw" name="vertexCounter" visibility="private" isReadOnly="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+    </ownedAttribute>
+    <ownedOperation xmi:id="_O2yA4jgrEd-C-Y-nXySsMw" name="NumberWorkSpace"/>
+    <ownedOperation xmi:id="_O2yA4zgrEd-C-Y-nXySsMw" name="preVisitAction">
+      <ownedParameter xmi:id="_O2yA5DgrEd-C-Y-nXySsMw" name="v" type="_O2yA3TgrEd-C-Y-nXySsMw"/>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Collaboration" xmi:id="_O2yA5TgrEd-C-Y-nXySsMw" name="Collaboration1" visibility="public">
+    <ownedBehavior xmi:type="uml:Interaction" xmi:id="_O2yA5jgrEd-C-Y-nXySsMw" name="Interaction1" visibility="public" isAbstract="false">
+      <ownedConnector xmi:id="_O2yA5zgrEd-C-Y-nXySsMw">
+        <end xmi:id="_O2yA6DgrEd-C-Y-nXySsMw" role="_O2yBADgrEd-C-Y-nXySsMw"/>
+        <end xmi:id="_O2yA6TgrEd-C-Y-nXySsMw" role="_O2yBADgrEd-C-Y-nXySsMw"/>
+      </ownedConnector>
+      <lifeline xmi:id="_O2yA6jgrEd-C-Y-nXySsMw" name="graph" represents="_O2yBADgrEd-C-Y-nXySsMw" coveredBy="_O2yA6zgrEd-C-Y-nXySsMw _O2yA7DgrEd-C-Y-nXySsMw _O2yA7TgrEd-C-Y-nXySsMw _O2yA7jgrEd-C-Y-nXySsMw _O2yA7zgrEd-C-Y-nXySsMw _O2yA8DgrEd-C-Y-nXySsMw _O2yA8TgrEd-C-Y-nXySsMw _O2yA8jgrEd-C-Y-nXySsMw _O2yA8zgrEd-C-Y-nXySsMw _O2yA9DgrEd-C-Y-nXySsMw _O2yA9TgrEd-C-Y-nXySsMw _O2yA9jgrEd-C-Y-nXySsMw _O2yA9zgrEd-C-Y-nXySsMw _O2yA-DgrEd-C-Y-nXySsMw _O2yA-TgrEd-C-Y-nXySsMw"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_O2yA6zgrEd-C-Y-nXySsMw" covered="_O2yA6jgrEd-C-Y-nXySsMw" event="_O2yBATgrEd-C-Y-nXySsMw" message="_O2yA-jgrEd-C-Y-nXySsMw"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_O2yA7DgrEd-C-Y-nXySsMw" covered="_O2yA6jgrEd-C-Y-nXySsMw" event="_O2yBAjgrEd-C-Y-nXySsMw" message="_O2yA-jgrEd-C-Y-nXySsMw"/>
+      <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_O2yA7TgrEd-C-Y-nXySsMw" covered="_O2yA6jgrEd-C-Y-nXySsMw" start="_O2yA7DgrEd-C-Y-nXySsMw" finish="_O2yA7jgrEd-C-Y-nXySsMw"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_O2yA7jgrEd-C-Y-nXySsMw" covered="_O2yA6jgrEd-C-Y-nXySsMw" event="_O2yBATgrEd-C-Y-nXySsMw" message="_O2yA-zgrEd-C-Y-nXySsMw"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_O2yA7zgrEd-C-Y-nXySsMw" covered="_O2yA6jgrEd-C-Y-nXySsMw" event="_O2yBAjgrEd-C-Y-nXySsMw" message="_O2yA-zgrEd-C-Y-nXySsMw"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_O2yA8DgrEd-C-Y-nXySsMw" covered="_O2yA6jgrEd-C-Y-nXySsMw" event="_O2yBAzgrEd-C-Y-nXySsMw" message="_O2yA_DgrEd-C-Y-nXySsMw"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_O2yA8TgrEd-C-Y-nXySsMw" covered="_O2yA6jgrEd-C-Y-nXySsMw" event="_O2yBBDgrEd-C-Y-nXySsMw" message="_O2yA_DgrEd-C-Y-nXySsMw"/>
+      <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_O2yA8jgrEd-C-Y-nXySsMw" covered="_O2yA6jgrEd-C-Y-nXySsMw" start="_O2yA8TgrEd-C-Y-nXySsMw" finish="_O2yA8zgrEd-C-Y-nXySsMw"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_O2yA8zgrEd-C-Y-nXySsMw" covered="_O2yA6jgrEd-C-Y-nXySsMw" event="_O2yBAzgrEd-C-Y-nXySsMw" message="_O2yA_TgrEd-C-Y-nXySsMw"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_O2yA9DgrEd-C-Y-nXySsMw" covered="_O2yA6jgrEd-C-Y-nXySsMw" event="_O2yBBDgrEd-C-Y-nXySsMw" message="_O2yA_TgrEd-C-Y-nXySsMw"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_O2yA9TgrEd-C-Y-nXySsMw" covered="_O2yA6jgrEd-C-Y-nXySsMw" event="_O2yBBTgrEd-C-Y-nXySsMw" message="_O2yA_jgrEd-C-Y-nXySsMw"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_O2yA9jgrEd-C-Y-nXySsMw" covered="_O2yA6jgrEd-C-Y-nXySsMw" event="_O2yBBjgrEd-C-Y-nXySsMw" message="_O2yA_jgrEd-C-Y-nXySsMw"/>
+      <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_O2yA9zgrEd-C-Y-nXySsMw" covered="_O2yA6jgrEd-C-Y-nXySsMw" start="_O2yA9jgrEd-C-Y-nXySsMw" finish="_O2yA-DgrEd-C-Y-nXySsMw"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_O2yA-DgrEd-C-Y-nXySsMw" covered="_O2yA6jgrEd-C-Y-nXySsMw" event="_O2yBBTgrEd-C-Y-nXySsMw" message="_O2yA_zgrEd-C-Y-nXySsMw"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_O2yA-TgrEd-C-Y-nXySsMw" covered="_O2yA6jgrEd-C-Y-nXySsMw" event="_O2yBBjgrEd-C-Y-nXySsMw" message="_O2yA_zgrEd-C-Y-nXySsMw"/>
+      <message xmi:id="_O2yA-jgrEd-C-Y-nXySsMw" name="run" receiveEvent="_O2yA7DgrEd-C-Y-nXySsMw" sendEvent="_O2yA6zgrEd-C-Y-nXySsMw" connector="_O2yA5zgrEd-C-Y-nXySsMw"/>
+      <message xmi:id="_O2yA-zgrEd-C-Y-nXySsMw" name="run" messageSort="reply" receiveEvent="_O2yA7zgrEd-C-Y-nXySsMw" sendEvent="_O2yA7jgrEd-C-Y-nXySsMw" connector="_O2yA5zgrEd-C-Y-nXySsMw"/>
+      <message xmi:id="_O2yA_DgrEd-C-Y-nXySsMw" name="numberVertices" receiveEvent="_O2yA8TgrEd-C-Y-nXySsMw" sendEvent="_O2yA8DgrEd-C-Y-nXySsMw" connector="_O2yA5zgrEd-C-Y-nXySsMw"/>
+      <message xmi:id="_O2yA_TgrEd-C-Y-nXySsMw" name="numberVertices" messageSort="reply" receiveEvent="_O2yA9DgrEd-C-Y-nXySsMw" sendEvent="_O2yA8zgrEd-C-Y-nXySsMw" connector="_O2yA5zgrEd-C-Y-nXySsMw"/>
+      <message xmi:id="_O2yA_jgrEd-C-Y-nXySsMw" name="GraphSearch" receiveEvent="_O2yA9jgrEd-C-Y-nXySsMw" sendEvent="_O2yA9TgrEd-C-Y-nXySsMw" connector="_O2yA5zgrEd-C-Y-nXySsMw"/>
+      <message xmi:id="_O2yA_zgrEd-C-Y-nXySsMw" name="GraphSearch" messageSort="reply" receiveEvent="_O2yA-TgrEd-C-Y-nXySsMw" sendEvent="_O2yA-DgrEd-C-Y-nXySsMw" connector="_O2yA5zgrEd-C-Y-nXySsMw"/>
+    </ownedBehavior>
+    <ownedAttribute xmi:id="_O2yBADgrEd-C-Y-nXySsMw" name="graph" type="_O2yA0DgrEd-C-Y-nXySsMw" isReadOnly="false"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_O2yBATgrEd-C-Y-nXySsMw" name="SendOperationEvent1" visibility="public" operation="_O2yA2jgrEd-C-Y-nXySsMw"/>
+  <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_O2yBAjgrEd-C-Y-nXySsMw" name="ReceiveOperationEvent1" visibility="public" operation="_O2yA2jgrEd-C-Y-nXySsMw"/>
+  <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_O2yBAzgrEd-C-Y-nXySsMw" name="SendOperationEvent2" visibility="public" operation="_O2yA3DgrEd-C-Y-nXySsMw"/>
+  <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_O2yBBDgrEd-C-Y-nXySsMw" name="ReceiveOperationEvent2" visibility="public" operation="_O2yA3DgrEd-C-Y-nXySsMw"/>
+  <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_O2yBBTgrEd-C-Y-nXySsMw" name="SendOperationEvent3" visibility="public"/>
+  <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_O2yBBjgrEd-C-Y-nXySsMw" name="ReceiveOperationEvent3" visibility="public"/>
+  <profileApplication xmi:id="_O2yBBzgrEd-C-Y-nXySsMw">
+    <eAnnotations xmi:id="_O2yBCDgrEd-C-Y-nXySsMw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <references xmi:type="ecore:EPackage" href="pathmap://UML_PROFILES/Standard.profile.uml#_yzU58YinEdqtvbnfB2L_5w"/>
+    </eAnnotations>
+    <appliedProfile href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
+  </profileApplication>
+</uml:Package>

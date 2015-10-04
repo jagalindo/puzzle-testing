@@ -1,0 +1,35 @@
+<!-- This model was created online using SPLOT's Feature Model Editor (http://www.splot-research.org) on Sat, May 12, 2012 - 4:35 PM  -->
+<feature_model name="Car">
+<meta>
+<data name="description">Car model</data>
+<data name="creator">De</data>
+<data name="address"></data>
+<data name="email">ilke_bg@yahoo.com</data>
+<data name="phone"></data>
+<data name="website"></data>
+<data name="organization">CO</data>
+<data name="department"></data>
+<data name="date"></data>
+<data name="reference"></data>
+</meta>
+<feature_tree>
+:r _r(_r)
+	:m _r_3(_r_3)
+		:g (_r_3_4) [1,1] 
+			: _r_3_4_5(_r_3_4_5)
+			: _r_3_4_6(_r_3_4_6)
+	:m  _r_7(_r_7)
+		:g (_r_7_9) [1,*] 
+			: _r_7_9_10(_r_7_9_10)
+			: _r_7_9_12(_r_7_9_12)
+		:m _r_7_13(_r_7_13)
+	:g (_r_14) [1,*] 
+		: _r_14_15(_r_14_15)
+		: _r_14_16(_r_14_16)
+		: _r_14_17(_r_14_17)
+	:m _r_19(_r_19)
+	:m _r_20(_r_20)
+</feature_tree>
+<constraints>
+</constraints>
+</feature_model>

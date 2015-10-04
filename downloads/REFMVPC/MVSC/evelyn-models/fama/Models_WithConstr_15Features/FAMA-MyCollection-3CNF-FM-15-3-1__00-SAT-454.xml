@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature-model xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.tdg-seville.info/benavides/featuremodelling/feature-model.xsd">
+<feature name="R">
+	<binaryRelation name="3487">
+	<cardinality max="1" min="0"/>
+	<solitaryFeature name="o_1">
+		<binaryRelation name="3488">
+		<cardinality max="1" min="0"/>
+		<solitaryFeature name="o_1_1">
+		</solitaryFeature>
+
+		</binaryRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="3489">
+	<cardinality max="1" min="0"/>
+	<solitaryFeature name="o_2">
+		<binaryRelation name="3490">
+		<cardinality max="1" min="1"/>
+		<solitaryFeature name="m_2_1">
+		</solitaryFeature>
+
+		</binaryRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="3491">
+	<cardinality max="1" min="1"/>
+	<solitaryFeature name="m_3">
+		<binaryRelation name="3492">
+		<cardinality max="1" min="1"/>
+		<solitaryFeature name="m_3_1">
+		</solitaryFeature>
+
+		</binaryRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="3493">
+	<cardinality max="1" min="0"/>
+	<solitaryFeature name="o_4">
+		<binaryRelation name="3494">
+		<cardinality max="1" min="0"/>
+		<solitaryFeature name="o_4_1">
+		</solitaryFeature>
+
+		</binaryRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<setRelation name="3495">
+	<cardinality max="5" min="1"/>
+	<groupedFeature name="g_5_1">
+	</groupedFeature>
+	<groupedFeature name="g_5_2">
+	</groupedFeature>
+	<groupedFeature name="g_5_3">
+	</groupedFeature>
+	<groupedFeature name="g_5_4">
+	</groupedFeature>
+	<groupedFeature name="g_5_5">
+	</groupedFeature>
+	</setRelation>
+
+	<binaryRelation name="3496">
+	<cardinality max="1" min="0"/>
+	<solitaryFeature name="o_6">
+	</solitaryFeature>
+
+	</binaryRelation>
+
+</feature>
+<!-- Clause3CNF_1: (~g_5_2) or g_5_5 or m_3 -->
+<!-- Clause3CNF_2: (~g_5_2) or (~g_5_5) or (~m_3) -->
+<!-- Clause3CNF_3: (~g_5_2) or (~g_5_5) or m_3 -->
+</feature-model>

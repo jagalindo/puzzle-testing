@@ -1,0 +1,14 @@
+#Fat Jar Configuration File
+#Mon Oct 08 17:08:04 CEST 2012
+onejar.license.required=true
+manifest.classpath=
+manifest.removesigners=true
+onejar.checkbox=false
+jarname=ExecutAbleForPaper_fat.jar
+manifest.mergeall=true
+manifest.mainclass=fma.test.TestApplication
+manifest.file=<createnew>
+jarname.isextern=false
+onejar.expand=
+excludes=
+includes=

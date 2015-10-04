@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature-model xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.tdg-seville.info/benavides/featuremodelling/feature-model.xsd">
+<feature name="R">
+	<binaryRelation name="262">
+	<cardinality max="1" min="1"/>
+	<solitaryFeature name="m_1">
+		<binaryRelation name="263">
+		<cardinality max="1" min="0"/>
+		<solitaryFeature name="o_1_1">
+		</solitaryFeature>
+
+		</binaryRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="264">
+	<cardinality max="1" min="0"/>
+	<solitaryFeature name="o_2">
+		<binaryRelation name="265">
+		<cardinality max="1" min="0"/>
+		<solitaryFeature name="o_2_1">
+		</solitaryFeature>
+
+		</binaryRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="266">
+	<cardinality max="1" min="1"/>
+	<solitaryFeature name="m_3">
+		<setRelation name="267">
+		<cardinality max="3" min="1"/>
+		<groupedFeature name="g_3_1_1">
+		</groupedFeature>
+		<groupedFeature name="g_3_1_2">
+		</groupedFeature>
+		<groupedFeature name="g_3_1_3">
+		</groupedFeature>
+		</setRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="268">
+	<cardinality max="1" min="1"/>
+	<solitaryFeature name="m_4">
+		<binaryRelation name="269">
+		<cardinality max="1" min="1"/>
+		<solitaryFeature name="m_4_1">
+		</solitaryFeature>
+
+		</binaryRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="270">
+	<cardinality max="1" min="0"/>
+	<solitaryFeature name="o_5">
+		<binaryRelation name="271">
+		<cardinality max="1" min="1"/>
+		<solitaryFeature name="m_5_1">
+		</solitaryFeature>
+
+		</binaryRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="272">
+	<cardinality max="1" min="0"/>
+	<solitaryFeature name="o_6">
+		<binaryRelation name="273">
+		<cardinality max="1" min="1"/>
+		<solitaryFeature name="m_6_1">
+		</solitaryFeature>
+
+		</binaryRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+</feature>
+<!-- Clause3CNF_1: (~g_3_1_2) or g_3_1_3 or (~m_1) -->
+<!-- Clause3CNF_2: g_3_1_2 or (~g_3_1_3) or m_1 -->
+<!-- Clause3CNF_3: (~g_3_1_2) or (~g_3_1_3) or (~m_1) -->
+</feature-model>

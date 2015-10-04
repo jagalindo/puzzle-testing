@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature-model xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.tdg-seville.info/benavides/featuremodelling/feature-model.xsd">
+<feature name="R">
+	<setRelation name="31494">
+	<cardinality max="2" min="1"/>
+	<groupedFeature name="g_1_1">
+			<setRelation name="31495">
+			<cardinality max="1" min="1"/>
+			<groupedFeature name="g_1_1_1_1">
+			</groupedFeature>
+			<groupedFeature name="g_1_1_1_2">
+			</groupedFeature>
+			</setRelation>
+
+	</groupedFeature>
+	<groupedFeature name="g_1_2">
+			<binaryRelation name="31496">
+			<cardinality max="1" min="0"/>
+			<solitaryFeature name="o_1_2_1">
+			</solitaryFeature>
+
+			</binaryRelation>
+
+	</groupedFeature>
+	</setRelation>
+
+	<binaryRelation name="31497">
+	<cardinality max="1" min="1"/>
+	<solitaryFeature name="m_2">
+		<binaryRelation name="31498">
+		<cardinality max="1" min="0"/>
+		<solitaryFeature name="o_2_1">
+		</solitaryFeature>
+
+		</binaryRelation>
+
+		<binaryRelation name="31499">
+		<cardinality max="1" min="1"/>
+		<solitaryFeature name="m_2_2">
+		</solitaryFeature>
+
+		</binaryRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<setRelation name="31500">
+	<cardinality max="1" min="1"/>
+	<groupedFeature name="g_3_1">
+	</groupedFeature>
+	<groupedFeature name="g_3_2">
+	</groupedFeature>
+	<groupedFeature name="g_3_3">
+	</groupedFeature>
+	<groupedFeature name="g_3_4">
+	</groupedFeature>
+	</setRelation>
+
+	<binaryRelation name="31501">
+	<cardinality max="1" min="0"/>
+	<solitaryFeature name="o_4">
+		<binaryRelation name="31502">
+		<cardinality max="1" min="1"/>
+		<solitaryFeature name="m_4_1">
+		</solitaryFeature>
+
+		</binaryRelation>
+
+		<binaryRelation name="31503">
+		<cardinality max="1" min="1"/>
+		<solitaryFeature name="m_4_2">
+		</solitaryFeature>
+
+		</binaryRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="31504">
+	<cardinality max="1" min="1"/>
+	<solitaryFeature name="m_5">
+		<binaryRelation name="31505">
+		<cardinality max="1" min="0"/>
+		<solitaryFeature name="o_5_1">
+		</solitaryFeature>
+
+		</binaryRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="31506">
+	<cardinality max="1" min="1"/>
+	<solitaryFeature name="m_6">
+		<binaryRelation name="31507">
+		<cardinality max="1" min="1"/>
+		<solitaryFeature name="m_6_1">
+		</solitaryFeature>
+
+		</binaryRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+</feature>
+</feature-model>

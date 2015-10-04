@@ -1,0 +1,65 @@
+<feature_model name="Trim">
+<feature_tree>
+:r Trim (Trim)
+	:m InteriorColor (InteriorColor)
+	:m Engine (Engine)
+	:m Derived (Derived)
+	:m ExteriorColor (ExteriorColor)
+	:m Drive (Drive)
+	:m Antenna (Antenna)
+	:m Grade (Grade)
+	:m Sienna (Sienna)
+	:m PsgrCount (PsgrCount)
+	:m Color (Color)
+	:m ModelCode (ModelCode)
+	:o Accessories (Accessories)
+		:o Floor_Mats (Floor_Mats)
+		:o Mud_Flaps (Mud_Flaps)
+	:g [1, 1]
+		: Five328 (Five328)
+		: Five312 (Five312)
+	:g [1, 1]
+		: Silver_Sky_Metallic (Silver_Sky_Metallic)
+		: Super_White (Super_White)
+		: Blizzard_Pearl (Blizzard_Pearl)
+	:g [1, 1]
+		: In_Glass (In_Glass)
+		: Pole (Pole)
+	:g [1, 1]
+		: LE (LE)
+		: XLE (XLE)
+			:o XLE_Premium_Package (XLE_Premium_Package)
+			:o XLE_Navigation_Package (XLE_Navigation_Package)
+		: LTD (LTD)
+		: SE (SE)
+		: Base (Base)
+	:g [1, 1]
+		: Gray (Gray)
+		: Charcoal (Charcoal)
+		: Bisc (Bisc)
+	:g [1, 1]
+		: AWD (AWD)
+		: TwoWd (TwoWd)
+	:g [1, 1]
+		: SevenPSGR (SevenPSGR)
+		: EightPSGR (EightPSGR)
+	:g [1, 1]
+		: V6 (V6)
+		: L4 (L4)
+</feature_tree>
+<constraints>
+constraint_1:~In_Glass or Five328
+constraint_2:~SE or Five328
+constraint_3:~SE or Pole
+constraint_4:~XLE_Navigation_Package or In_Glass
+constraint_5:~Base or Pole
+constraint_6:~Five312 or Base
+constraint_7:~Charcoal or SE
+constraint_8:~LTD or In_Glass
+constraint_9:~LE or Five328
+constraint_10:~LE or Pole
+constraint_11:~XLE or Five328
+constraint_12:~XLE_Premium_Package or In_Glass
+constraint_13:~In_Glass or ~Charcoal
+</constraints>
+</feature_model>

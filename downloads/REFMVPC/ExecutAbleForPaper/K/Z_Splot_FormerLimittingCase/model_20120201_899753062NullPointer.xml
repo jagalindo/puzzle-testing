@@ -1,0 +1,71 @@
+<!-- This model was created online using SPLOT's Feature Model Editor (http://www.splot-research.org) on Wed, Feb 1, 2012 - 12:08 PM  -->
+<feature_model name="HDD Seagate">
+<meta>
+<data name="description">Practica II - ISA</data>
+<data name="creator">RAM</data>
+<data name="address"></data>
+<data name="email">a@a.es</data>
+<data name="phone"></data>
+<data name="website"></data>
+<data name="organization">MASTER ING INF - ISA</data>
+<data name="department"></data>
+<data name="date"></data>
+<data name="reference"></data>
+</meta>
+<feature_tree>
+:r UnidadAlmacenamientoHDD(UnidadAlmacenamientoHDD)
+	:m VelocidaddeGiro(VelocidaddeGiro)
+		:g (_r_1_2) [1,1] 
+			: a5400rpm(a5400rpm)
+			: a7200rpm(a7200rpm)
+			: a10000rpm(a10000rpm)
+			: a15000rpm(a15000rpm)
+	:m Interfaz(Interfaz)
+		:g (_r_7_8) [1,1] 
+			: a3GBsSATA(a3GBsSATA)
+			: a6GBsSATA(a6GBsSATA)
+			: a6GBsSAS(a6GBsSAS)
+	:m Capacidad(Capacidad)
+		:g (_r_14_15) [1,1] 
+			: a250GB(a250GB)
+			: a600GB(a600GB)
+			: a1TB(a1TB)
+			: a2TB(a2TB)
+			: a3TB(a3TB)
+	:m Cache(Cache)
+		:g (_r_23_24) [1,1] 
+			: a8MB(a8MB)
+			: a16MB(a16MB)
+			: a32MB(a32MB)
+			: a64MB(a64MB)
+	:m SizeUnidad(SizeUnidad)
+		:g (_r_29_30) [1,1] 
+			: a2_5(a2_5)
+			: a3_5(a3_5)
+	:o Cifrado(Cifrado)
+		:g (_r_33_34) [1,*] 
+			: Estandar(Estandar)
+			: FIPS(FIPS)
+</feature_tree>
+<constraints>
+constraint_8:~a600GB or ~a32MB
+constraint_9:~a600GB or ~a64MB
+constraint_10:~a1TB or ~a8MB
+constraint_6:~a250GB or ~a32MB
+constraint_11:~a1TB or ~a16MB
+constraint_7:~a250GB or ~a64MB
+constraint_12:~a2TB or ~a8MB
+constraint_13:~a2TB or ~a16MB
+constraint_14:~a3TB or ~a8MB
+constraint_15:~a3TB or ~a16MB
+<!-- The following constraints model a circular requires CTC!
+constraint_17:a5400rpm or ~a3GBsSATA
+constraint_2:~a5400rpm or a3GBsSATA 
+constraint_18:~a5400rpm or ~a6GBsSATA
+constraint_19:~a5400rpm or ~a6GBsSAS
+constraint_4:~a10000rpm or ~a3GBsSATA
+constraint_5:~a15000rpm or ~a3GBsSATA
+constraint_3:~a7200rpm or ~a3GBsSATA
+-->
+</constraints>
+</feature_model>

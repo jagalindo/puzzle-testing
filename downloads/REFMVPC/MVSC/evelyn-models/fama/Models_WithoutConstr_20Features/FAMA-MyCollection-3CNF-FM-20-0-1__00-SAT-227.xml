@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature-model xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.tdg-seville.info/benavides/featuremodelling/feature-model.xsd">
+<feature name="R">
+	<setRelation name="29320">
+	<cardinality max="1" min="1"/>
+	<groupedFeature name="g_1_1">
+	</groupedFeature>
+	<groupedFeature name="g_1_2">
+	</groupedFeature>
+	<groupedFeature name="g_1_3">
+	</groupedFeature>
+	<groupedFeature name="g_1_4">
+	</groupedFeature>
+	</setRelation>
+
+	<binaryRelation name="29321">
+	<cardinality max="1" min="1"/>
+	<solitaryFeature name="m_2">
+		<binaryRelation name="29322">
+		<cardinality max="1" min="1"/>
+		<solitaryFeature name="m_2_1">
+		</solitaryFeature>
+
+		</binaryRelation>
+
+		<setRelation name="29323">
+		<cardinality max="1" min="1"/>
+		<groupedFeature name="g_2_2_1">
+		</groupedFeature>
+		<groupedFeature name="g_2_2_2">
+		</groupedFeature>
+		<groupedFeature name="g_2_2_3">
+		</groupedFeature>
+		<groupedFeature name="g_2_2_4">
+		</groupedFeature>
+		</setRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="29324">
+	<cardinality max="1" min="1"/>
+	<solitaryFeature name="m_3">
+		<binaryRelation name="29325">
+		<cardinality max="1" min="1"/>
+		<solitaryFeature name="m_3_1">
+		</solitaryFeature>
+
+		</binaryRelation>
+
+		<setRelation name="29326">
+		<cardinality max="3" min="1"/>
+		<groupedFeature name="g_3_2_1">
+		</groupedFeature>
+		<groupedFeature name="g_3_2_2">
+		</groupedFeature>
+		<groupedFeature name="g_3_2_3">
+		</groupedFeature>
+		</setRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="29327">
+	<cardinality max="1" min="0"/>
+	<solitaryFeature name="o_4">
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<setRelation name="29328">
+	<cardinality max="1" min="1"/>
+	<groupedFeature name="g_5_1">
+	</groupedFeature>
+	<groupedFeature name="g_5_2">
+	</groupedFeature>
+	</setRelation>
+
+	<binaryRelation name="29329">
+	<cardinality max="1" min="1"/>
+	<solitaryFeature name="m_6">
+	</solitaryFeature>
+
+	</binaryRelation>
+
+</feature>
+</feature-model>

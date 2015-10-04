@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature-model xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.tdg-seville.info/benavides/featuremodelling/feature-model.xsd">
+<feature name="monitor_engine_system">
+	<binaryRelation name="1179">
+	<cardinality max="1" min="1"/>
+	<solitaryFeature name="engine_performance">
+		<binaryRelation name="1180">
+		<cardinality max="1" min="1"/>
+		<solitaryFeature name="temperatures">
+			<binaryRelation name="1181">
+			<cardinality max="1" min="0"/>
+			<solitaryFeature name="colant">
+			</solitaryFeature>
+
+			</binaryRelation>
+
+			<binaryRelation name="1182">
+			<cardinality max="1" min="1"/>
+			<solitaryFeature name="oil">
+			</solitaryFeature>
+
+			</binaryRelation>
+
+			<binaryRelation name="1183">
+			<cardinality max="1" min="1"/>
+			<solitaryFeature name="engine">
+			</solitaryFeature>
+
+			</binaryRelation>
+
+			<binaryRelation name="1184">
+			<cardinality max="1" min="1"/>
+			<solitaryFeature name="transmission">
+			</solitaryFeature>
+
+			</binaryRelation>
+
+		</solitaryFeature>
+
+		</binaryRelation>
+
+		<binaryRelation name="1185">
+		<cardinality max="1" min="1"/>
+		<solitaryFeature name="rpm">
+		</solitaryFeature>
+
+		</binaryRelation>
+
+		<binaryRelation name="1186">
+		<cardinality max="1" min="1"/>
+		<solitaryFeature name="exhaust_level_temp">
+		</solitaryFeature>
+
+		</binaryRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="1187">
+	<cardinality max="1" min="1"/>
+	<solitaryFeature name="fuel_consumption">
+		<binaryRelation name="1188">
+		<cardinality max="1" min="1"/>
+		<solitaryFeature name="measures">
+			<setRelation name="1189">
+			<cardinality max="1" min="1"/>
+			<groupedFeature name="l_km">
+			</groupedFeature>
+			<groupedFeature name="gallon_mile">
+			</groupedFeature>
+			</setRelation>
+
+		</solitaryFeature>
+
+		</binaryRelation>
+
+		<binaryRelation name="1190">
+		<cardinality max="1" min="1"/>
+		<solitaryFeature name="methods">
+			<setRelation name="1191">
+			<cardinality max="3" min="1"/>
+			<groupedFeature name="distance">
+			</groupedFeature>
+			<groupedFeature name="type_of_driving">
+			</groupedFeature>
+			<groupedFeature name="drive">
+			</groupedFeature>
+			</setRelation>
+
+		</solitaryFeature>
+
+		</binaryRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+</feature>
+<requires feature="drive" name="c1" requires="rpm"/>
+</feature-model>

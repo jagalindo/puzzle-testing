@@ -1,0 +1,37 @@
+<feature_model name="CFDP Library">
+<meta>
+<data name="description">Feature model of the CFDP library</data>
+<data name="creator">Arnaud Hubaux et. al</data>
+<data name="email"></data>
+<data name="date">Aug 2009</data>
+<data name="department"></data>
+<data name="organization">PReCISE Research Centre, Faculty of Computer Science, University of Namur</data>
+<data name="address">5000 Namur, Belgium</data>
+<data name="phone"></data>
+<data name="website"></data>
+<data name="reference">Arnaud Hubaux, Andreas Classen and Patrick Heymans, Formal Modelling of Feature Configuration Workflows, SPLC 2009, San Francisco, USA.</data>
+</meta>
+<feature_tree>
+:r CFDP_Library
+	:g [1,*]
+		: send (send)
+			:o Send_Acknowledged_Mode 
+			:o send_fs_operations (send_fs_operations)
+		: Receive (Receive)
+			:o Receive_Acknowledged_Mode
+			:o receive_fs_operations (receive_fs_operations)
+		: Pus (Pus)
+			:o pus_rename (pus_rename)
+			:o pus_copy (pus_copy)
+		: Reboot
+			:o Reboot_Entity
+			:o reboot_pus (reboot_pus)
+</feature_tree>
+<constraints>
+c1a: ~pus_copy or send
+c1b: ~pus_copy or Receive
+c2a: ~pus_rename or send_fs_operations
+c2b: ~pus_rename or receive_fs_operations
+c3: ~reboot_pus or Pus
+</constraints>
+</feature_model>

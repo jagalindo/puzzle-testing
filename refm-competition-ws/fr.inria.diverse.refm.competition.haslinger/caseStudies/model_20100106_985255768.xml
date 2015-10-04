@@ -1,0 +1,46 @@
+<!-- This model was created online using SPLOT's Feature Model Editor (http://www.splot-research.org) on Wed, Jan 6, 2010 - 2:02 AM  -->
+<feature_model name="EC2">
+<meta>
+<data name="description">pricing model</data>
+<data name="creator">Adeel Talib</data>
+<data name="address"></data>
+<data name="email">mtalib@swin.edu.au</data>
+<data name="phone"></data>
+<data name="website"></data>
+<data name="organization">Swinburne University</data>
+<data name="department"></data>
+<data name="date"></data>
+<data name="reference"></data>
+</meta>
+<feature_tree>
+:r EC2(EC2)
+	:m OS(OS)
+		:g (_r_1_14) [1,1] 
+			: Linux(Linux)
+			: Windows(Windows)
+	:m Country(Country)
+		:g (_r_2_7) [1,1] 
+			: US(US)
+			: EU(EU)
+	:m Instance_Category(Instance_Category)
+		:g (_r_3_4) [1,1] 
+			: On_demand(On_demand)
+				:g (_r_3_4_5_17) [1,1] 
+					: Standard(Standard)
+						:g (_r_3_4_5_17_18_21) [1,1] 
+							: S(S)
+							: L1(L1)
+							: XL(XL)
+					: High_Memory(High_Memory)
+						:g (_r_3_4_5_17_19_26) [1,1] 
+							: Duo(Duo)
+							: Qua(Qua)
+					: High_CPU(High_CPU)
+						:g (_r_3_4_5_17_20_29) [1,1] 
+							: M(M)
+							: L2(L2)
+			: Reserve(Reserve)
+</feature_tree>
+<constraints>
+</constraints>
+</feature_model>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature-model xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.tdg-seville.info/benavides/featuremodelling/feature-model.xsd">
+<feature name="GPL">
+	<binaryRelation name="502">
+	<cardinality max="1" min="1"/>
+	<solitaryFeature name="_r_1">
+		<setRelation name="503">
+		<cardinality max="1" min="1"/>
+		<groupedFeature name="_r_1_2_3">
+		</groupedFeature>
+		<groupedFeature name="_r_1_2_19">
+		</groupedFeature>
+		</setRelation>
+
+		<setRelation name="504">
+		<cardinality max="1" min="1"/>
+		<groupedFeature name="_r_1_5_6">
+		</groupedFeature>
+		<groupedFeature name="_r_1_5_18">
+		</groupedFeature>
+		</setRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="505">
+	<cardinality max="1" min="0"/>
+	<solitaryFeature name="_r_8">
+		<setRelation name="506">
+		<cardinality max="1" min="1"/>
+		<groupedFeature name="_r_8_9_10">
+		</groupedFeature>
+		<groupedFeature name="_r_8_9_20">
+		</groupedFeature>
+		</setRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="507">
+	<cardinality max="1" min="1"/>
+	<solitaryFeature name="_r_12">
+		<setRelation name="508">
+		<cardinality max="5" min="1"/>
+		<groupedFeature name="_r_12_13_14">
+		</groupedFeature>
+		<groupedFeature name="_r_12_13_16">
+				<setRelation name="509">
+				<cardinality max="2" min="1"/>
+				<groupedFeature name="_r_12_13_16_20_21">
+				</groupedFeature>
+				<groupedFeature name="_r_12_13_16_20_22">
+				</groupedFeature>
+				</setRelation>
+
+		</groupedFeature>
+		<groupedFeature name="_r_12_13_17">
+		</groupedFeature>
+		<groupedFeature name="_r_12_13_18">
+		</groupedFeature>
+		<groupedFeature name="_r_12_13_19">
+		</groupedFeature>
+		</setRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+</feature>
+<requires feature="_r_1_2_3" name="constraint_6" requires="_r_12_13_19"/>
+<requires feature="_r_8_9_10" name="constraint_4" requires="_r_12_13_17"/>
+<requires feature="_r_8_9_10" name="constraint_5" requires="_r_12_13_19"/>
+</feature-model>

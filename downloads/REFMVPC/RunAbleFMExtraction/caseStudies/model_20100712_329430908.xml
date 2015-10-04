@@ -1,0 +1,39 @@
+<!-- This model was created online using SPLOT's Feature Model Editor (http://www.splot-research.org) on Mon, Jul 12, 2010 - 11:08 PM  -->
+<feature_model name="Card Product">
+<meta>
+<data name="description">Features of Credit Cards</data>
+<data name="creator">Wayne Jenkins</data>
+<data name="address"></data>
+<data name="email">wayne.jenkins@marlo.com.au</data>
+<data name="phone"></data>
+<data name="website"></data>
+<data name="organization">The Marlo Group</data>
+<data name="department"></data>
+<data name="date"></data>
+<data name="reference"></data>
+</meta>
+<feature_tree>
+:r card_product(card_product)
+	:m Fees_and_Charges(Fees_and_Charges)
+	:m Interest_Rates(Interest_Rates)
+		:o Balance_Transfer_Rate(Balance_Transfer_Rate)
+		:o Interest_Free_Days(Interest_Free_Days)
+		:o Cash_Advance_Rate(Cash_Advance_Rate)
+		:m Interest_Rate(Interest_Rate)
+		:m Variable_Interest_Rate(Variable_Interest_Rate)
+	:m Payments(Payments)
+		:o Deferred(Deferred)
+	:m Rewards(Rewards)
+		:o Fly_by_Points(Fly_by_Points)
+		:o Fuel_Savings(Fuel_Savings)
+		:o GO_Business_Rewards(GO_Business_Rewards)
+	:m Credit(Credit)
+		:m Minimum_Credit_Limit(Minimum_Credit_Limit)
+		:m Maximum_Credit_Limit(Maximum_Credit_Limit)
+	:o Card(Card)
+		:o Multiple_Cards(Multiple_Cards)
+		:o Name_on_Card(Name_on_Card)
+</feature_tree>
+<constraints>
+</constraints>
+</feature_model>

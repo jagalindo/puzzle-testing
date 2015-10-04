@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature-model xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.tdg-seville.info/benavides/featuremodelling/feature-model.xsd">
+<feature name="R">
+	<setRelation name="8637">
+	<cardinality max="2" min="1"/>
+	<groupedFeature name="g_1_1">
+			<binaryRelation name="8638">
+			<cardinality max="1" min="0"/>
+			<solitaryFeature name="o_1_1_1">
+			</solitaryFeature>
+
+			</binaryRelation>
+
+	</groupedFeature>
+	<groupedFeature name="g_1_2">
+			<setRelation name="8639">
+			<cardinality max="1" min="1"/>
+			<groupedFeature name="g_1_2_1_1">
+			</groupedFeature>
+			<groupedFeature name="g_1_2_1_2">
+			</groupedFeature>
+			</setRelation>
+
+	</groupedFeature>
+	</setRelation>
+
+	<binaryRelation name="8640">
+	<cardinality max="1" min="1"/>
+	<solitaryFeature name="m_2">
+		<binaryRelation name="8641">
+		<cardinality max="1" min="0"/>
+		<solitaryFeature name="o_2_1">
+		</solitaryFeature>
+
+		</binaryRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="8642">
+	<cardinality max="1" min="0"/>
+	<solitaryFeature name="o_3">
+		<binaryRelation name="8643">
+		<cardinality max="1" min="0"/>
+		<solitaryFeature name="o_3_1">
+		</solitaryFeature>
+
+		</binaryRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="8644">
+	<cardinality max="1" min="1"/>
+	<solitaryFeature name="m_4">
+		<setRelation name="8645">
+		<cardinality max="1" min="1"/>
+		<groupedFeature name="g_4_1_1">
+		</groupedFeature>
+		<groupedFeature name="g_4_1_2">
+		</groupedFeature>
+		</setRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="8646">
+	<cardinality max="1" min="1"/>
+	<solitaryFeature name="m_5">
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="8647">
+	<cardinality max="1" min="1"/>
+	<solitaryFeature name="m_6">
+	</solitaryFeature>
+
+	</binaryRelation>
+
+</feature>
+<!-- Clause3CNF_1: (~g_4_1_1) or o_2_1 or o_3_1 -->
+<!-- Clause3CNF_2: (~g_4_1_1) or (~o_2_1) or o_3_1 -->
+<!-- Clause3CNF_3: g_4_1_1 or o_2_1 or o_3_1 -->
+</feature-model>

@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature-model xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.tdg-seville.info/benavides/featuremodelling/feature-model.xsd">
+<feature name="CDODConsistency">
+	<binaryRelation name="177">
+	<cardinality max="1" min="1"/>
+	<solitaryFeature name="ODSemantics">
+		<binaryRelation name="178">
+		<cardinality max="1" min="1"/>
+		<solitaryFeature name="EmptyOMOD">
+			<setRelation name="179">
+			<cardinality max="1" min="1"/>
+			<groupedFeature name="EmptyOMValidInstanceOD">
+			</groupedFeature>
+			<groupedFeature name="EmptyOMInvalidOD">
+			</groupedFeature>
+			</setRelation>
+
+		</solitaryFeature>
+
+		</binaryRelation>
+
+		<binaryRelation name="180">
+		<cardinality max="1" min="1"/>
+		<solitaryFeature name="CompletenessOD">
+			<binaryRelation name="181">
+			<cardinality max="1" min="1"/>
+			<solitaryFeature name="ObjectsOD">
+				<setRelation name="182">
+				<cardinality max="1" min="1"/>
+				<groupedFeature name="AllObjectsShownOD">
+				</groupedFeature>
+				<groupedFeature name="AllowObjectsOmittedOD">
+				</groupedFeature>
+				</setRelation>
+
+			</solitaryFeature>
+
+			</binaryRelation>
+
+			<binaryRelation name="183">
+			<cardinality max="1" min="1"/>
+			<solitaryFeature name="LinksOD">
+				<setRelation name="184">
+				<cardinality max="1" min="1"/>
+				<groupedFeature name="AllLinksShownOD">
+				</groupedFeature>
+				<groupedFeature name="AllowLinksOmittedOD">
+				</groupedFeature>
+				</setRelation>
+
+			</solitaryFeature>
+
+			</binaryRelation>
+
+			<binaryRelation name="185">
+			<cardinality max="1" min="1"/>
+			<solitaryFeature name="AttributesOD">
+				<setRelation name="186">
+				<cardinality max="1" min="1"/>
+				<groupedFeature name="AllAttributesShownOD">
+				</groupedFeature>
+				<groupedFeature name="AllowAttributesOmittedOD">
+				</groupedFeature>
+				</setRelation>
+
+			</solitaryFeature>
+
+			</binaryRelation>
+
+			<binaryRelation name="187">
+			<cardinality max="1" min="1"/>
+			<solitaryFeature name="TypesOD">
+				<setRelation name="188">
+				<cardinality max="1" min="1"/>
+				<groupedFeature name="AllTypesShownOD">
+				</groupedFeature>
+				<groupedFeature name="AllowTypesOmittedOD">
+				</groupedFeature>
+				</setRelation>
+
+			</solitaryFeature>
+
+			</binaryRelation>
+
+		</solitaryFeature>
+
+		</binaryRelation>
+
+		<binaryRelation name="189">
+		<cardinality max="1" min="1"/>
+		<solitaryFeature name="ObjectTypingOD">
+			<setRelation name="190">
+			<cardinality max="1" min="1"/>
+			<groupedFeature name="StrictOD">
+			</groupedFeature>
+			<groupedFeature name="NonStrictOD">
+			</groupedFeature>
+			</setRelation>
+
+		</solitaryFeature>
+
+		</binaryRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="191">
+	<cardinality max="1" min="1"/>
+	<solitaryFeature name="CDSemantics">
+		<binaryRelation name="192">
+		<cardinality max="1" min="1"/>
+		<solitaryFeature name="EmptyOMCD">
+			<setRelation name="193">
+			<cardinality max="1" min="1"/>
+			<groupedFeature name="EmptyOMValidInstanceCD">
+			</groupedFeature>
+			<groupedFeature name="EmptyOMInvalidCD">
+			</groupedFeature>
+			</setRelation>
+
+		</solitaryFeature>
+
+		</binaryRelation>
+
+		<binaryRelation name="194">
+		<cardinality max="1" min="1"/>
+		<solitaryFeature name="CompletenessCD">
+			<binaryRelation name="195">
+			<cardinality max="1" min="1"/>
+			<solitaryFeature name="AttributesCD">
+				<setRelation name="196">
+				<cardinality max="1" min="1"/>
+				<groupedFeature name="AllAttributesShownCD">
+				</groupedFeature>
+				<groupedFeature name="AllowAttributesOmittedCD">
+				</groupedFeature>
+				</setRelation>
+
+			</solitaryFeature>
+
+			</binaryRelation>
+
+			<binaryRelation name="197">
+			<cardinality max="1" min="1"/>
+			<solitaryFeature name="ClassesCD">
+				<setRelation name="198">
+				<cardinality max="1" min="1"/>
+				<groupedFeature name="AllClassesShownCD">
+				</groupedFeature>
+				<groupedFeature name="AllowClassesOmittedCD">
+				</groupedFeature>
+				</setRelation>
+
+			</solitaryFeature>
+
+			</binaryRelation>
+
+		</solitaryFeature>
+
+		</binaryRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+</feature>
+<requires feature="AllowObjectsOmittedOD" name="C4" requires="AllowLinksOmittedOD"/>
+<excludes feature="AllowClassesOmittedCD" name="C3" excludes="AllowTypesOmittedOD"/>
+<requires feature="EmptyOMValidInstanceCD" name="C1" requires="EmptyOMValidInstanceOD"/>
+<requires feature="EmptyOMValidInstanceOD" name="C2" requires="EmptyOMValidInstanceCD"/>
+</feature-model>

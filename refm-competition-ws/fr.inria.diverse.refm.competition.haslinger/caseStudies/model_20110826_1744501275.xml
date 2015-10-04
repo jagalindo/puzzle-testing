@@ -1,0 +1,43 @@
+<!-- This model was created online using SPLOT's Feature Model Editor (http://www.splot-research.org) on Fri, Aug 26, 2011 - 2:09 PM  -->
+<feature_model name="Linea de Experimentos">
+<meta>
+<data name="description">Generear linea de productos en experimentación</data>
+<data name="creator">Edison Espinosa</data>
+<data name="address"></data>
+<data name="email">edison_eg@yahoo.com</data>
+<data name="phone"></data>
+<data name="website"></data>
+<data name="organization">ESPE</data>
+<data name="department"></data>
+<data name="date"></data>
+<data name="reference"></data>
+</meta>
+<feature_tree>
+:r _r(_r)
+	:m _r_1(_r_1)
+		:m _r_1_3(_r_1_3)
+			:m _r_1_3_4(_r_1_3_4)
+				:m _r_1_3_4_5(_r_1_3_4_5)
+					:m _r_1_3_4_5_7(_r_1_3_4_5_7)
+						:m _r_1_3_4_5_7_14(_r_1_3_4_5_7_14)
+				:m _r_1_3_4_6(_r_1_3_4_6)
+					:m _r_1_3_4_6_8(_r_1_3_4_6_8)
+						:m _r_1_3_4_6_8_9(_r_1_3_4_6_8_9)
+						:m _r_1_3_4_6_8_10(_r_1_3_4_6_8_10)
+				:m _r_1_3_4_11(_r_1_3_4_11)
+					:m _r_1_3_4_11_12(_r_1_3_4_11_12)
+					:m _r_1_3_4_11_13(_r_1_3_4_11_13)
+			:m _r_1_3_15(_r_1_3_15)
+				:m _r_1_3_15_16(_r_1_3_15_16)
+				:m _r_1_3_15_17(_r_1_3_15_17)
+				:m _r_1_3_15_18(_r_1_3_15_18)
+				:o _r_1_3_15_19(_r_1_3_15_19)
+			:m _r_1_3_20(_r_1_3_20)
+				:o _r_1_3_20_21(_r_1_3_20_21)
+				:o _r_1_3_20_22(_r_1_3_20_22)
+				:o _r_1_3_20_23(_r_1_3_20_23)
+	:m _r_2(_r_2)
+</feature_tree>
+<constraints>
+</constraints>
+</feature_model>

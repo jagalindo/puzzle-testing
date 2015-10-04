@@ -1,0 +1,47 @@
+<!-- This model was created online using SPLOT's Feature Model Editor (http://www.splot-research.org) on Wed, Mar 28, 2012 - 9:49 AM  -->
+<feature_model name="Modelo de Características de um Carro">
+<meta>
+<data name="description">Exercicio aula de Reuso de Software</data>
+<data name="creator">Elizabeth Luíza Maynarte de Oliveira</data>
+<data name="address"></data>
+<data name="email">elizabethmaynarte@gmail.com</data>
+<data name="phone"></data>
+<data name="website"></data>
+<data name="organization">UFMG</data>
+<data name="department"></data>
+<data name="date"></data>
+<data name="reference"></data>
+</meta>
+<feature_tree>
+:r _r(_r)
+	:m _r_2(_r_2)
+	:m _r_3(_r_3)
+		:g (_r_3_8) [1,1] 
+			: _r_3_8_9(_r_3_8_9)
+			: _r_3_8_10(_r_3_8_10)
+	:m _r_11(_r_11)
+		:g (_r_11_12) [1,1] 
+			: _r_11_12_13(_r_11_12_13)
+			: _r_11_12_16(_r_11_12_16)
+	:o _r_17(_r_17)
+	:o _r_18(_r_18)
+		:g (_r_18_19) [1,*] 
+			: _r_18_19_20(_r_18_19_20)
+			: _r_18_19_21(_r_18_19_21)
+			: _r_18_19_22(_r_18_19_22)
+	:m _r_23(_r_23)
+		:g (_r_23_24) [1,*] 
+			: _r_23_24_25(_r_23_24_25)
+			: _r_23_24_26(_r_23_24_26)
+				:g (_r_23_24_26_27) [1,1] 
+					: _r_23_24_26_27_28(_r_23_24_26_27_28)
+					: _r_23_24_26_27_29(_r_23_24_26_27_29)
+	:o _r_30(_r_30)
+	:o _r_31(_r_31)
+	:o _r_32(_r_32)
+</feature_tree>
+<constraints>
+constraint_10:_r_30 or ~_r_32
+constraint_9:_r_31 or ~_r_32
+</constraints>
+</feature_model>

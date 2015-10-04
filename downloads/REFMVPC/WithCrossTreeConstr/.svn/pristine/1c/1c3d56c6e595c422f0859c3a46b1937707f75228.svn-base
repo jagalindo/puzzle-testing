@@ -1,0 +1,107 @@
+package fma;
+
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Set;
+
+import fma.ImplicationGraph.ImplicationNode;
+
+public class ImplicationGraph {
+	ImplicationNode root;
+	
+	private HashMap<Feature, Set<Feature>> crossTreeImplies;
+	private HashSet<Feature> alreadyIn;
+
+	public ImplicationGraph(){
+		crossTreeImplies = new HashMap<Feature, Set<Feature>>();
+		alreadyIn = new HashSet<Feature>();
+		root = new ImplicationNode();
+	}
+	
+	
+	
+	public void buildGraph(Set<Product> products, Set<Feature> features, RNode root){
+		crossTreeImplies = new HashMap<Feature, Set<Feature>>();
+		alreadyIn = new HashSet<Feature>();
+		this.root = new ImplicationNode();
+		
+		this.root.f = root.getFeature();
+		buildGraph_int(products, features, this.root);
+	}
+	
+	private void buildGraph_int(Set<Product> products, Set<Feature> features, ImplicationNode node){		
+		ImplicationNode child;
+		Set<Feature> descendants;
+		Set<Product> rProds;
+		Set<Feature> topFeatures = Product.getTopFeatures(products, features);
+		
+		for(Feature f : topFeatures){
+			if(alreadyIn.contains(f)){
+				if(crossTreeImplies.containsKey(f)){
+					crossTreeImplies.get(f).add(node.f);
+				}else{
+					crossTreeImplies.put(f, new HashSet<Feature>());
+					crossTreeImplies.get(f).add(node.f);
+				}
+			}else{
+				alreadyIn.add(f);
+				child = new ImplicationNode();
+				child.parent = node;
+				child.f = f;
+				node.impliedBy.add(child);
+				
+				descendants = Product.getDescendants(products, features, f);
+				if (descendants.size() > 0) {
+					rProds = Product.filterProductPatterns(products, f, descendants);
+					buildGraph_int(rProds, descendants, child);
+				}
+			}
+		}
+	}
+	
+	public ImplicationNode getRoot(){
+		return root;
+	}
+	
+	public class ImplicationNode{
+		//Only to be able to traverse also up the tree, will probably not be necessary. 
+		private ImplicationNode parent;
+		//Feature of the Node
+		private Feature f;
+		//All features in the nodes impliedBy, imply feature f of this node
+		private Set<ImplicationNode> impliedBy;
+		
+		public ImplicationNode() {
+			impliedBy = new HashSet<ImplicationNode>();
+		}
+
+		public ImplicationNode getParent() {
+			return parent;
+		}
+		public Feature getF() {
+			return f;
+		}
+		public Set<ImplicationNode> getImpliedBy() {
+			return impliedBy;
+		}
+		
+		public Set<Feature> getImpliedFeatures(){
+			HashSet<Feature> features = new HashSet<Feature>();
+			for(ImplicationNode n : impliedBy){
+				features.add(n.f);
+			}
+			return features;
+		}
+
+		public ImplicationNode getChild(Feature feature) {
+			ImplicationNode ret = null;
+			for(ImplicationNode i : impliedBy){
+				if(i.f.equals(feature)){
+					ret = i;
+					break;
+				}
+			}
+			return ret;
+		}
+	}
+}

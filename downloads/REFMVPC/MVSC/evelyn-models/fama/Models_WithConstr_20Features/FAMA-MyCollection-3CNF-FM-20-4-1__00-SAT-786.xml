@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature-model xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.tdg-seville.info/benavides/featuremodelling/feature-model.xsd">
+<feature name="R">
+	<setRelation name="18174">
+	<cardinality max="1" min="1"/>
+	<groupedFeature name="g_1_1">
+	</groupedFeature>
+	<groupedFeature name="g_1_2">
+	</groupedFeature>
+	<groupedFeature name="g_1_3">
+	</groupedFeature>
+	<groupedFeature name="g_1_4">
+	</groupedFeature>
+	</setRelation>
+
+	<binaryRelation name="18175">
+	<cardinality max="1" min="0"/>
+	<solitaryFeature name="o_2">
+		<binaryRelation name="18176">
+		<cardinality max="1" min="0"/>
+		<solitaryFeature name="o_2_1">
+		</solitaryFeature>
+
+		</binaryRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="18177">
+	<cardinality max="1" min="0"/>
+	<solitaryFeature name="o_3">
+		<binaryRelation name="18178">
+		<cardinality max="1" min="0"/>
+		<solitaryFeature name="o_3_1">
+		</solitaryFeature>
+
+		</binaryRelation>
+
+		<setRelation name="18179">
+		<cardinality max="1" min="1"/>
+		<groupedFeature name="g_3_2_1">
+		</groupedFeature>
+		<groupedFeature name="g_3_2_2">
+		</groupedFeature>
+		<groupedFeature name="g_3_2_3">
+		</groupedFeature>
+		<groupedFeature name="g_3_2_4">
+		</groupedFeature>
+		</setRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="18180">
+	<cardinality max="1" min="1"/>
+	<solitaryFeature name="m_4">
+		<binaryRelation name="18181">
+		<cardinality max="1" min="0"/>
+		<solitaryFeature name="o_4_1">
+		</solitaryFeature>
+
+		</binaryRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="18182">
+	<cardinality max="1" min="1"/>
+	<solitaryFeature name="m_5">
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<setRelation name="18183">
+	<cardinality max="1" min="1"/>
+	<groupedFeature name="g_6_1">
+	</groupedFeature>
+	<groupedFeature name="g_6_2">
+	</groupedFeature>
+	<groupedFeature name="g_6_3">
+	</groupedFeature>
+	<groupedFeature name="g_6_4">
+	</groupedFeature>
+	</setRelation>
+
+</feature>
+<!-- Clause3CNF_1: (~g_6_1) or (~g_6_2) or (~g_6_4) -->
+<!-- Clause3CNF_2: (~g_6_2) or g_6_4 or (~o_2_1) -->
+<!-- Clause3CNF_3: (~g_6_1) or g_6_2 or g_6_4 -->
+<!-- Clause3CNF_4: (~g_6_1) or g_6_2 or o_2_1 -->
+</feature-model>

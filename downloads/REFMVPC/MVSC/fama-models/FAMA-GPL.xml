@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature-model xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.tdg-seville.info/benavides/featuremodelling/feature-model.xsd">
+<feature name="GPL">
+	<binaryRelation name="0">
+	<cardinality max="1" min="1"/>
+	<solitaryFeature name="TestProg">
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="1">
+	<cardinality max="1" min="1"/>
+	<solitaryFeature name="GraphType">
+		<setRelation name="2">
+		<cardinality max="1" min="1"/>
+		<groupedFeature name="DirectedWithEdges">
+		</groupedFeature>
+		<groupedFeature name="UndirectedWithEdges">
+		</groupedFeature>
+		</setRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="3">
+	<cardinality max="1" min="0"/>
+	<solitaryFeature name="Weighted">
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="4">
+	<cardinality max="1" min="0"/>
+	<solitaryFeature name="Search">
+		<setRelation name="5">
+		<cardinality max="1" min="1"/>
+		<groupedFeature name="DFS">
+		</groupedFeature>
+		<groupedFeature name="BFS">
+		</groupedFeature>
+		</setRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="6">
+	<cardinality max="1" min="1"/>
+	<solitaryFeature name="Algorithms">
+		<setRelation name="7">
+		<cardinality max="6" min="1"/>
+		<groupedFeature name="Number">
+		</groupedFeature>
+		<groupedFeature name="Cycle">
+		</groupedFeature>
+		<groupedFeature name="Connected">
+		</groupedFeature>
+		<groupedFeature name="StronglyConnected">
+				<binaryRelation name="8">
+				<cardinality max="1" min="1"/>
+				<solitaryFeature name="Transpose">
+				</solitaryFeature>
+
+				</binaryRelation>
+
+		</groupedFeature>
+		<groupedFeature name="MSTPrim">
+		</groupedFeature>
+		<groupedFeature name="MSTKruskal">
+		</groupedFeature>
+		</setRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="9">
+	<cardinality max="1" min="1"/>
+	<solitaryFeature name="Base">
+	</solitaryFeature>
+
+	</binaryRelation>
+
+</feature>
+<requires feature="Cycle" name="constraint_17" requires="DFS"/>
+<requires feature="MSTPrim" name="constraint_18" requires="Weighted"/>
+<requires feature="MSTPrim" name="constraint_19" requires="UndirectedWithEdges"/>
+<excludes feature="MSTPrim" name="constraint_22" excludes="MSTKruskal"/>
+<requires feature="MSTKruskal" name="constraint_20" requires="Weighted"/>
+<requires feature="MSTKruskal" name="constraint_21" requires="UndirectedWithEdges"/>
+<requires feature="Number" name="constraint_12" requires="Search"/>
+<requires feature="Connected" name="constraint_13" requires="Search"/>
+<requires feature="Connected" name="constraint_14" requires="UndirectedWithEdges"/>
+<requires feature="StronglyConnected" name="constraint_15" requires="DirectedWithEdges"/>
+<requires feature="StronglyConnected" name="constraint_16" requires="DFS"/>
+</feature-model>

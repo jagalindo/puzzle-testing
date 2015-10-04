@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Package xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_Js3DBDpeEd-8T_ltW0W8ew" name="Transpose" visibility="public">
+  <packageImport xmi:id="_Js3DBTpeEd-8T_ltW0W8ew">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Class" xmi:id="_Js3DBjpeEd-8T_ltW0W8ew" name="Graph" visibility="public" isAbstract="false">
+    <ownedBehavior xmi:type="uml:StateMachine" xmi:id="_Js3DBzpeEd-8T_ltW0W8ew" name="StateMachine1" visibility="public" isAbstract="false">
+      <region xmi:id="_Js3DCDpeEd-8T_ltW0W8ew" name="Region1">
+        <subvertex xmi:type="uml:State" xmi:id="_Js3DCTpeEd-8T_ltW0W8ew" name="addingVertices"/>
+        <subvertex xmi:type="uml:State" xmi:id="_Js3DCjpeEd-8T_ltW0W8ew" name="addingEdges"/>
+        <subvertex xmi:type="uml:State" xmi:id="_Js3DCzpeEd-8T_ltW0W8ew" name="initializing"/>
+        <transition xmi:id="_Js3DDDpeEd-8T_ltW0W8ew" name="addEdge" target="_Js3DCjpeEd-8T_ltW0W8ew" source="_Js3DCTpeEd-8T_ltW0W8ew"/>
+        <transition xmi:id="_Js3DDTpeEd-8T_ltW0W8ew" name="addEdge" guard="_Js3DDjpeEd-8T_ltW0W8ew" target="_Js3DCjpeEd-8T_ltW0W8ew" source="_Js3DCjpeEd-8T_ltW0W8ew">
+          <ownedRule xmi:id="_Js3DDjpeEd-8T_ltW0W8ew" visibility="public" constrainedElement="_Js3DDTpeEd-8T_ltW0W8ew">
+            <specification xmi:type="uml:OpaqueExpression" xmi:id="_Js3DDzpeEd-8T_ltW0W8ew" visibility="public">
+              <language>hasNext</language>
+              <body>hasNextEdge</body>
+            </specification>
+          </ownedRule>
+        </transition>
+        <transition xmi:id="_Js3DEDpeEd-8T_ltW0W8ew" name="addVertex" target="_Js3DCTpeEd-8T_ltW0W8ew" source="_Js3DCzpeEd-8T_ltW0W8ew"/>
+        <transition xmi:id="_Js3DETpeEd-8T_ltW0W8ew" name="addVertex" guard="_Js3DEjpeEd-8T_ltW0W8ew" target="_Js3DCTpeEd-8T_ltW0W8ew" source="_Js3DCTpeEd-8T_ltW0W8ew">
+          <ownedRule xmi:id="_Js3DEjpeEd-8T_ltW0W8ew" visibility="public" constrainedElement="_Js3DETpeEd-8T_ltW0W8ew">
+            <specification xmi:type="uml:OpaqueExpression" xmi:id="_Js3DEzpeEd-8T_ltW0W8ew" visibility="public">
+              <language>hasNext</language>
+              <body>hasNextVertex</body>
+            </specification>
+          </ownedRule>
+        </transition>
+      </region>
+    </ownedBehavior>
+    <ownedOperation xmi:id="_Js3DFDpeEd-8T_ltW0W8ew" name="ComputeTranspose">
+      <ownedParameter xmi:id="_Js3DFTpeEd-8T_ltW0W8ew" name="the_graph" type="_Js3DBjpeEd-8T_ltW0W8ew"/>
+      <ownedParameter xmi:id="_Js3DFjpeEd-8T_ltW0W8ew" name="Parameter1" type="_Js3DBjpeEd-8T_ltW0W8ew" direction="return"/>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Collaboration" xmi:id="_Js3DFzpeEd-8T_ltW0W8ew" name="Collaboration1" visibility="public">
+    <ownedBehavior xmi:type="uml:Interaction" xmi:id="_Js3DGDpeEd-8T_ltW0W8ew" name="Interaction" visibility="public" isAbstract="false">
+      <ownedConnector xmi:id="_Js3DGTpeEd-8T_ltW0W8ew">
+        <end xmi:id="_Js3DGjpeEd-8T_ltW0W8ew" role="_Js3DQTpeEd-8T_ltW0W8ew"/>
+        <end xmi:id="_Js3DGzpeEd-8T_ltW0W8ew" role="_Js3DQjpeEd-8T_ltW0W8ew"/>
+      </ownedConnector>
+      <lifeline xmi:id="_Js3DHDpeEd-8T_ltW0W8ew" name="graph" represents="_Js3DQTpeEd-8T_ltW0W8ew" coveredBy="_Js3DHjpeEd-8T_ltW0W8ew _Js3DIDpeEd-8T_ltW0W8ew _Js3DJjpeEd-8T_ltW0W8ew _Js3DKjpeEd-8T_ltW0W8ew _Js3DKzpeEd-8T_ltW0W8ew _Js3DMTpeEd-8T_ltW0W8ew _Js3DNzpeEd-8T_ltW0W8ew _Js3DOzpeEd-8T_ltW0W8ew"/>
+      <lifeline xmi:id="_Js3DHTpeEd-8T_ltW0W8ew" name="newGraph" represents="_Js3DQjpeEd-8T_ltW0W8ew" coveredBy="_Js3DHzpeEd-8T_ltW0W8ew _Js3DIDpeEd-8T_ltW0W8ew _Js3DJzpeEd-8T_ltW0W8ew _Js3DKDpeEd-8T_ltW0W8ew _Js3DKTpeEd-8T_ltW0W8ew _Js3DKzpeEd-8T_ltW0W8ew _Js3DMTpeEd-8T_ltW0W8ew _Js3DODpeEd-8T_ltW0W8ew _Js3DOTpeEd-8T_ltW0W8ew _Js3DOjpeEd-8T_ltW0W8ew"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Js3DHjpeEd-8T_ltW0W8ew" covered="_Js3DHDpeEd-8T_ltW0W8ew" event="_Js3DQzpeEd-8T_ltW0W8ew" message="_Js3DPDpeEd-8T_ltW0W8ew"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Js3DHzpeEd-8T_ltW0W8ew" covered="_Js3DHTpeEd-8T_ltW0W8ew" event="_Js3DRDpeEd-8T_ltW0W8ew" message="_Js3DPDpeEd-8T_ltW0W8ew"/>
+      <fragment xmi:type="uml:CombinedFragment" xmi:id="_Js3DIDpeEd-8T_ltW0W8ew" covered="_Js3DHDpeEd-8T_ltW0W8ew _Js3DHTpeEd-8T_ltW0W8ew" interactionOperator="loop">
+        <operand xmi:id="_Js3DITpeEd-8T_ltW0W8ew">
+          <guard xmi:id="_Js3DIjpeEd-8T_ltW0W8ew" visibility="public">
+            <specification xmi:type="uml:OpaqueExpression" xmi:id="_Js3DIzpeEd-8T_ltW0W8ew" visibility="public">
+              <language></language>
+              <body></body>
+            </specification>
+            <minint xmi:type="uml:LiteralInteger" xmi:id="_Js3DJDpeEd-8T_ltW0W8ew" visibility="public"/>
+            <maxint xmi:type="uml:LiteralString" xmi:id="_Js3DJTpeEd-8T_ltW0W8ew" visibility="public" value="numVertices"/>
+          </guard>
+          <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Js3DJjpeEd-8T_ltW0W8ew" covered="_Js3DHDpeEd-8T_ltW0W8ew" event="_Js3DQzpeEd-8T_ltW0W8ew" message="_Js3DPTpeEd-8T_ltW0W8ew"/>
+          <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Js3DJzpeEd-8T_ltW0W8ew" covered="_Js3DHTpeEd-8T_ltW0W8ew" event="_Js3DRTpeEd-8T_ltW0W8ew" message="_Js3DPTpeEd-8T_ltW0W8ew"/>
+          <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_Js3DKDpeEd-8T_ltW0W8ew" covered="_Js3DHTpeEd-8T_ltW0W8ew" start="_Js3DJzpeEd-8T_ltW0W8ew" finish="_Js3DKTpeEd-8T_ltW0W8ew"/>
+          <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Js3DKTpeEd-8T_ltW0W8ew" covered="_Js3DHTpeEd-8T_ltW0W8ew" event="_Js3DQzpeEd-8T_ltW0W8ew" message="_Js3DPjpeEd-8T_ltW0W8ew"/>
+          <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Js3DKjpeEd-8T_ltW0W8ew" covered="_Js3DHDpeEd-8T_ltW0W8ew" event="_Js3DRTpeEd-8T_ltW0W8ew" message="_Js3DPjpeEd-8T_ltW0W8ew"/>
+        </operand>
+      </fragment>
+      <fragment xmi:type="uml:CombinedFragment" xmi:id="_Js3DKzpeEd-8T_ltW0W8ew" covered="_Js3DHDpeEd-8T_ltW0W8ew _Js3DHTpeEd-8T_ltW0W8ew" interactionOperator="loop">
+        <operand xmi:id="_Js3DLDpeEd-8T_ltW0W8ew">
+          <guard xmi:id="_Js3DLTpeEd-8T_ltW0W8ew" visibility="public">
+            <specification xmi:type="uml:OpaqueExpression" xmi:id="_Js3DLjpeEd-8T_ltW0W8ew" visibility="public">
+              <language></language>
+              <body></body>
+            </specification>
+            <minint xmi:type="uml:LiteralInteger" xmi:id="_Js3DLzpeEd-8T_ltW0W8ew" visibility="public"/>
+            <maxint xmi:type="uml:LiteralString" xmi:id="_Js3DMDpeEd-8T_ltW0W8ew" visibility="public" value="numVertices"/>
+          </guard>
+          <fragment xmi:type="uml:CombinedFragment" xmi:id="_Js3DMTpeEd-8T_ltW0W8ew" covered="_Js3DHDpeEd-8T_ltW0W8ew _Js3DHTpeEd-8T_ltW0W8ew" interactionOperator="loop">
+            <operand xmi:id="_Js3DMjpeEd-8T_ltW0W8ew">
+              <guard xmi:id="_Js3DMzpeEd-8T_ltW0W8ew" visibility="public">
+                <specification xmi:type="uml:OpaqueExpression" xmi:id="_Js3DNDpeEd-8T_ltW0W8ew" visibility="public">
+                  <language></language>
+                  <body></body>
+                </specification>
+                <minint xmi:type="uml:LiteralInteger" xmi:id="_Js3DNTpeEd-8T_ltW0W8ew" visibility="public"/>
+                <maxint xmi:type="uml:LiteralString" xmi:id="_Js3DNjpeEd-8T_ltW0W8ew" visibility="public" value="numNeighbors"/>
+              </guard>
+              <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Js3DNzpeEd-8T_ltW0W8ew" covered="_Js3DHDpeEd-8T_ltW0W8ew" event="_Js3DQzpeEd-8T_ltW0W8ew" message="_Js3DPzpeEd-8T_ltW0W8ew"/>
+              <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Js3DODpeEd-8T_ltW0W8ew" covered="_Js3DHTpeEd-8T_ltW0W8ew" event="_Js3DRTpeEd-8T_ltW0W8ew" message="_Js3DPzpeEd-8T_ltW0W8ew"/>
+              <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_Js3DOTpeEd-8T_ltW0W8ew" covered="_Js3DHTpeEd-8T_ltW0W8ew" start="_Js3DODpeEd-8T_ltW0W8ew" finish="_Js3DOjpeEd-8T_ltW0W8ew"/>
+              <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Js3DOjpeEd-8T_ltW0W8ew" covered="_Js3DHTpeEd-8T_ltW0W8ew" event="_Js3DQzpeEd-8T_ltW0W8ew" message="_Js3DQDpeEd-8T_ltW0W8ew"/>
+              <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Js3DOzpeEd-8T_ltW0W8ew" covered="_Js3DHDpeEd-8T_ltW0W8ew" event="_Js3DRTpeEd-8T_ltW0W8ew" message="_Js3DQDpeEd-8T_ltW0W8ew"/>
+            </operand>
+          </fragment>
+        </operand>
+      </fragment>
+      <message xmi:id="_Js3DPDpeEd-8T_ltW0W8ew" name="Graph" messageSort="createMessage" receiveEvent="_Js3DHzpeEd-8T_ltW0W8ew" sendEvent="_Js3DHjpeEd-8T_ltW0W8ew" connector="_Js3DGTpeEd-8T_ltW0W8ew"/>
+      <message xmi:id="_Js3DPTpeEd-8T_ltW0W8ew" name="addVertex" receiveEvent="_Js3DJzpeEd-8T_ltW0W8ew" sendEvent="_Js3DJjpeEd-8T_ltW0W8ew" connector="_Js3DGTpeEd-8T_ltW0W8ew"/>
+      <message xmi:id="_Js3DPjpeEd-8T_ltW0W8ew" name="addVertex" messageSort="reply" receiveEvent="_Js3DKjpeEd-8T_ltW0W8ew" sendEvent="_Js3DKTpeEd-8T_ltW0W8ew" connector="_Js3DGTpeEd-8T_ltW0W8ew"/>
+      <message xmi:id="_Js3DPzpeEd-8T_ltW0W8ew" name="addEdge" receiveEvent="_Js3DODpeEd-8T_ltW0W8ew" sendEvent="_Js3DNzpeEd-8T_ltW0W8ew" connector="_Js3DGTpeEd-8T_ltW0W8ew"/>
+      <message xmi:id="_Js3DQDpeEd-8T_ltW0W8ew" name="Edge" messageSort="reply" receiveEvent="_Js3DOzpeEd-8T_ltW0W8ew" sendEvent="_Js3DOjpeEd-8T_ltW0W8ew" connector="_Js3DGTpeEd-8T_ltW0W8ew"/>
+    </ownedBehavior>
+    <ownedAttribute xmi:id="_Js3DQTpeEd-8T_ltW0W8ew" name="graph" type="_Js3DBjpeEd-8T_ltW0W8ew" isReadOnly="false"/>
+    <ownedAttribute xmi:id="_Js3DQjpeEd-8T_ltW0W8ew" name="newGraph" type="_Js3DBjpeEd-8T_ltW0W8ew" isReadOnly="false"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_Js3DQzpeEd-8T_ltW0W8ew" name="SendOperationEvent1" visibility="public"/>
+  <packagedElement xmi:type="uml:CreationEvent" xmi:id="_Js3DRDpeEd-8T_ltW0W8ew" name="CreationEvent1" visibility="public"/>
+  <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_Js3DRTpeEd-8T_ltW0W8ew" name="ReceiveOperationEvent1" visibility="public"/>
+  <profileApplication xmi:id="_Js3DRjpeEd-8T_ltW0W8ew">
+    <eAnnotations xmi:id="_Js3DRzpeEd-8T_ltW0W8ew" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <references xmi:type="ecore:EPackage" href="pathmap://UML_PROFILES/Standard.profile.uml#_yzU58YinEdqtvbnfB2L_5w"/>
+    </eAnnotations>
+    <appliedProfile href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
+  </profileApplication>
+</uml:Package>

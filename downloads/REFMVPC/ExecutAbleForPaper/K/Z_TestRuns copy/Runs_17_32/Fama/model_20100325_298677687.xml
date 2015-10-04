@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature-model xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.tdg-seville.info/benavides/featuremodelling/feature-model.xsd">
+<feature name="VODPlayer">
+	<binaryRelation name="36">
+	<cardinality max="1" min="1"/>
+	<solitaryFeature name="StartPlayer">
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="37">
+	<cardinality max="1" min="0"/>
+	<solitaryFeature name="Pause1">
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<setRelation name="38">
+	<cardinality max="1" min="1"/>
+	<groupedFeature name="PlayImm">
+	</groupedFeature>
+	<groupedFeature name="StartMovie">
+			<binaryRelation name="39">
+			<cardinality max="1" min="0"/>
+			<solitaryFeature name="Pause2">
+			</solitaryFeature>
+
+			</binaryRelation>
+
+	</groupedFeature>
+	</setRelation>
+
+	<binaryRelation name="40">
+	<cardinality max="1" min="1"/>
+	<solitaryFeature name="VCRInterf">
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="41">
+	<cardinality max="1" min="0"/>
+	<solitaryFeature name="Quit">
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="42">
+	<cardinality max="1" min="1"/>
+	<solitaryFeature name="SelectMovie">
+		<binaryRelation name="43">
+		<cardinality max="1" min="0"/>
+		<solitaryFeature name="ChangeServer">
+		</solitaryFeature>
+
+		</binaryRelation>
+
+		<binaryRelation name="44">
+		<cardinality max="1" min="0"/>
+		<solitaryFeature name="Detail">
+		</solitaryFeature>
+
+		</binaryRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+</feature>
+</feature-model>

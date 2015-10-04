@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature-model xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.tdg-seville.info/benavides/featuremodelling/feature-model.xsd">
+<feature name="GreenHouse">
+	<binaryRelation name="144">
+	<cardinality max="1" min="1"/>
+	<solitaryFeature name="Control">
+		<binaryRelation name="145">
+		<cardinality max="1" min="1"/>
+		<solitaryFeature name="Mode">
+			<binaryRelation name="146">
+			<cardinality max="1" min="0"/>
+			<solitaryFeature name="Day">
+			</solitaryFeature>
+
+			</binaryRelation>
+
+			<binaryRelation name="147">
+			<cardinality max="1" min="0"/>
+			<solitaryFeature name="Night">
+			</solitaryFeature>
+
+			</binaryRelation>
+
+		</solitaryFeature>
+
+		</binaryRelation>
+
+		<binaryRelation name="148">
+		<cardinality max="1" min="1"/>
+		<solitaryFeature name="Temperature">
+		</solitaryFeature>
+
+		</binaryRelation>
+
+		<binaryRelation name="149">
+		<cardinality max="1" min="1"/>
+		<solitaryFeature name="On_Off_Water">
+		</solitaryFeature>
+
+		</binaryRelation>
+
+		<binaryRelation name="150">
+		<cardinality max="1" min="1"/>
+		<solitaryFeature name="On_Off_Light">
+		</solitaryFeature>
+
+		</binaryRelation>
+
+		<binaryRelation name="151">
+		<cardinality max="1" min="1"/>
+		<solitaryFeature name="Alarms">
+			<binaryRelation name="152">
+			<cardinality max="1" min="1"/>
+			<solitaryFeature name="Alarm_No_water">
+			</solitaryFeature>
+
+			</binaryRelation>
+
+			<binaryRelation name="153">
+			<cardinality max="1" min="1"/>
+			<solitaryFeature name="Alarm_No_lights">
+			</solitaryFeature>
+
+			</binaryRelation>
+
+			<binaryRelation name="154">
+			<cardinality max="1" min="0"/>
+			<solitaryFeature name="Others_Alarms">
+			</solitaryFeature>
+
+			</binaryRelation>
+
+		</solitaryFeature>
+
+		</binaryRelation>
+
+		<binaryRelation name="155">
+		<cardinality max="1" min="1"/>
+		<solitaryFeature name="Platform">
+			<binaryRelation name="156">
+			<cardinality max="1" min="0"/>
+			<solitaryFeature name="PC">
+			</solitaryFeature>
+
+			</binaryRelation>
+
+			<binaryRelation name="157">
+			<cardinality max="1" min="0"/>
+			<solitaryFeature name="Web">
+			</solitaryFeature>
+
+			</binaryRelation>
+
+			<binaryRelation name="158">
+			<cardinality max="1" min="0"/>
+			<solitaryFeature name="Mobile">
+			</solitaryFeature>
+
+			</binaryRelation>
+
+		</solitaryFeature>
+
+		</binaryRelation>
+
+		<binaryRelation name="159">
+		<cardinality max="1" min="1"/>
+		<solitaryFeature name="UI">
+			<binaryRelation name="160">
+			<cardinality max="1" min="0"/>
+			<solitaryFeature name="Console">
+			</solitaryFeature>
+
+			</binaryRelation>
+
+			<binaryRelation name="161">
+			<cardinality max="1" min="0"/>
+			<solitaryFeature name="Graphic">
+				<binaryRelation name="162">
+				<cardinality max="1" min="0"/>
+				<solitaryFeature name="PC_Interface">
+				</solitaryFeature>
+
+				</binaryRelation>
+
+				<binaryRelation name="163">
+				<cardinality max="1" min="0"/>
+				<solitaryFeature name="Web_Interface">
+				</solitaryFeature>
+
+				</binaryRelation>
+
+				<binaryRelation name="164">
+				<cardinality max="1" min="0"/>
+				<solitaryFeature name="Mobile_Interface">
+				</solitaryFeature>
+
+				</binaryRelation>
+
+			</solitaryFeature>
+
+			</binaryRelation>
+
+		</solitaryFeature>
+
+		</binaryRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="165">
+	<cardinality max="1" min="1"/>
+	<solitaryFeature name="Monitoring">
+		<binaryRelation name="166">
+		<cardinality max="1" min="1"/>
+		<solitaryFeature name="Log">
+		</solitaryFeature>
+
+		</binaryRelation>
+
+		<binaryRelation name="167">
+		<cardinality max="1" min="1"/>
+		<solitaryFeature name="Notification">
+			<binaryRelation name="168">
+			<cardinality max="1" min="0"/>
+			<solitaryFeature name="e_mail">
+			</solitaryFeature>
+
+			</binaryRelation>
+
+			<binaryRelation name="169">
+			<cardinality max="1" min="0"/>
+			<solitaryFeature name="SMS">
+			</solitaryFeature>
+
+			</binaryRelation>
+
+			<binaryRelation name="170">
+			<cardinality max="1" min="0"/>
+			<solitaryFeature name="Call_phone">
+			</solitaryFeature>
+
+			</binaryRelation>
+
+		</solitaryFeature>
+
+		</binaryRelation>
+
+		<binaryRelation name="171">
+		<cardinality max="1" min="1"/>
+		<solitaryFeature name="Generate_Reports">
+			<binaryRelation name="172">
+			<cardinality max="1" min="1"/>
+			<solitaryFeature name="Consumer_Report">
+			</solitaryFeature>
+
+			</binaryRelation>
+
+			<binaryRelation name="173">
+			<cardinality max="1" min="0"/>
+			<solitaryFeature name="Production_Report">
+			</solitaryFeature>
+
+			</binaryRelation>
+
+		</solitaryFeature>
+
+		</binaryRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+</feature>
+<requires feature="Web" name="constraint_4" requires="Web_Interface"/>
+<requires feature="Mobile" name="constraint_5" requires="Mobile_Interface"/>
+<excludes feature="Console" name="constraint_2" excludes="Graphic"/>
+<requires feature="PC" name="constraint_3" requires="PC_Interface"/>
+</feature-model>

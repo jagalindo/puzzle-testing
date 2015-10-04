@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature-model xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.tdg-seville.info/benavides/featuremodelling/feature-model.xsd">
+<feature name="doc_gen">
+	<binaryRelation name="837">
+	<cardinality max="1" min="1"/>
+	<solitaryFeature name="analysis">
+		<binaryRelation name="838">
+		<cardinality max="1" min="1"/>
+		<solitaryFeature name="language_analysis">
+			<setRelation name="839">
+			<cardinality max="5" min="1"/>
+			<groupedFeature name="cobol">
+					<setRelation name="840">
+					<cardinality max="1" min="1"/>
+					<groupedFeature name="ibm_cobol">
+					</groupedFeature>
+					<groupedFeature name="microfocus_cobol">
+					</groupedFeature>
+					</setRelation>
+
+			</groupedFeature>
+			<groupedFeature name="jcl">
+			</groupedFeature>
+			<groupedFeature name="sql">
+			</groupedFeature>
+			<groupedFeature name="delphi">
+			</groupedFeature>
+			<groupedFeature name="progress">
+			</groupedFeature>
+			</setRelation>
+
+		</solitaryFeature>
+
+		</binaryRelation>
+
+		<binaryRelation name="841">
+		<cardinality max="1" min="0"/>
+		<solitaryFeature name="version_mngt">
+		</solitaryFeature>
+
+		</binaryRelation>
+
+		<binaryRelation name="842">
+		<cardinality max="1" min="0"/>
+		<solitaryFeature name="subsystems">
+		</solitaryFeature>
+
+		</binaryRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="843">
+	<cardinality max="1" min="1"/>
+	<solitaryFeature name="presentation">
+		<binaryRelation name="844">
+		<cardinality max="1" min="1"/>
+		<solitaryFeature name="localization">
+			<setRelation name="845">
+			<cardinality max="2" min="1"/>
+			<groupedFeature name="english">
+			</groupedFeature>
+			<groupedFeature name="dutch">
+			</groupedFeature>
+			</setRelation>
+
+		</solitaryFeature>
+
+		</binaryRelation>
+
+		<binaryRelation name="846">
+		<cardinality max="1" min="1"/>
+		<solitaryFeature name="interaction">
+			<setRelation name="847">
+			<cardinality max="1" min="1"/>
+			<groupedFeature name="static">
+			</groupedFeature>
+			<groupedFeature name="dynamic">
+			</groupedFeature>
+			</setRelation>
+
+		</solitaryFeature>
+
+		</binaryRelation>
+
+		<binaryRelation name="848">
+		<cardinality max="1" min="1"/>
+		<solitaryFeature name="main_pages">
+			<setRelation name="849">
+			<cardinality max="8" min="1"/>
+			<groupedFeature name="program_page">
+					<setRelation name="850">
+					<cardinality max="4" min="1"/>
+					<groupedFeature name="annotation_section">
+					</groupedFeature>
+					<groupedFeature name="activation_section">
+					</groupedFeature>
+					<groupedFeature name="entities_section">
+					</groupedFeature>
+					<groupedFeature name="parameters_section">
+					</groupedFeature>
+					</setRelation>
+
+			</groupedFeature>
+			<groupedFeature name="copybook_page">
+			</groupedFeature>
+			<groupedFeature name="statistics_page">
+					<setRelation name="851">
+					<cardinality max="1" min="1"/>
+					<groupedFeature name="with_history">
+					</groupedFeature>
+					<groupedFeature name="without_history">
+					</groupedFeature>
+					</setRelation>
+
+			</groupedFeature>
+			<groupedFeature name="indexes">
+			</groupedFeature>
+			<groupedFeature name="search_page">
+			</groupedFeature>
+			<groupedFeature name="subsystem_page">
+			</groupedFeature>
+			<groupedFeature name="source_page">
+			</groupedFeature>
+			<groupedFeature name="source_difference">
+			</groupedFeature>
+			</setRelation>
+
+		</solitaryFeature>
+
+		</binaryRelation>
+
+		<binaryRelation name="852">
+		<cardinality max="1" min="0"/>
+		<solitaryFeature name="visualizations">
+			<setRelation name="853">
+			<cardinality max="5" min="1"/>
+			<groupedFeature name="perform_graph">
+			</groupedFeature>
+			<groupedFeature name="conditional_perform_graph">
+			</groupedFeature>
+			<groupedFeature name="jcl_graph">
+			</groupedFeature>
+			<groupedFeature name="subsystem_graph">
+			</groupedFeature>
+			<groupedFeature name="overview_graph">
+			</groupedFeature>
+			</setRelation>
+
+		</solitaryFeature>
+
+		</binaryRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="854">
+	<cardinality max="1" min="1"/>
+	<solitaryFeature name="database">
+		<setRelation name="855">
+		<cardinality max="1" min="1"/>
+		<groupedFeature name="db2">
+		</groupedFeature>
+		<groupedFeature name="oracle">
+		</groupedFeature>
+		<groupedFeature name="mysql">
+		</groupedFeature>
+		</setRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+</feature>
+<requires feature="subsystem_page" name="c1" requires="subsystems"/>
+<requires feature="subsystem_graph" name="c2" requires="subsystems"/>
+<requires feature="source_difference" name="c3" requires="version_mngt"/>
+<requires feature="perform_graph" name="c4" requires="cobol"/>
+<requires feature="conditional_perform_graph" name="c5" requires="cobol"/>
+<requires feature="jcl_graph" name="c6" requires="jcl"/>
+<excludes feature="static" name="c7" excludes="annotation_section"/>
+<excludes feature="static" name="c8" excludes="search_page"/>
+</feature-model>

@@ -1,0 +1,22 @@
+<feature_model name="interface">
+<feature_tree>
+:r interface (interface)
+	:m jplug (jplug)
+	:o compiler (compiler)
+		:g [1, *]
+			: mvc (mvc)
+			: javac (javac)
+	:o diagram_builder (diagram_builder)
+		:m uml (uml)
+		:o petri_net (petri_net)
+		:o model_code_synch (model_code_synch)
+	:g [1, 1]
+		: sdi (sdi)
+		: mdi (mdi)
+			:o gui_builder (gui_builder)
+				:m java (java)
+				:o qt (qt)
+</feature_tree>
+<constraints>
+</constraints>
+</feature_model>

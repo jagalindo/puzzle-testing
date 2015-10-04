@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature-model xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.tdg-seville.info/benavides/featuremodelling/feature-model.xsd">
+<feature name="FAME-DBMS">
+	<binaryRelation name="82">
+	<cardinality max="1" min="1"/>
+	<solitaryFeature name="OS">
+		<setRelation name="83">
+		<cardinality max="1" min="1"/>
+		<groupedFeature name="Nut/OS">
+		</groupedFeature>
+		<groupedFeature name="Win">
+		</groupedFeature>
+		</setRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="84">
+	<cardinality max="1" min="1"/>
+	<solitaryFeature name="Buffer_Manager">
+		<setRelation name="85">
+		<cardinality max="1" min="1"/>
+		<groupedFeature name="Persistent">
+				<binaryRelation name="86">
+				<cardinality max="1" min="1"/>
+				<solitaryFeature name="Memory_Allocation">
+					<setRelation name="87">
+					<cardinality max="1" min="1"/>
+					<groupedFeature name="Static">
+					</groupedFeature>
+					<groupedFeature name="Dynamic">
+					</groupedFeature>
+					</setRelation>
+
+				</solitaryFeature>
+
+				</binaryRelation>
+
+				<binaryRelation name="88">
+				<cardinality max="1" min="1"/>
+				<solitaryFeature name="Page_Replication">
+					<setRelation name="89">
+					<cardinality max="1" min="1"/>
+					<groupedFeature name="LRU">
+					</groupedFeature>
+					<groupedFeature name="LFU">
+					</groupedFeature>
+					</setRelation>
+
+				</solitaryFeature>
+
+				</binaryRelation>
+
+		</groupedFeature>
+		<groupedFeature name="In_Memory">
+		</groupedFeature>
+		</setRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="90">
+	<cardinality max="1" min="0"/>
+	<solitaryFeature name="Debug_Logging">
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="91">
+	<cardinality max="1" min="1"/>
+	<solitaryFeature name="Storage">
+		<binaryRelation name="92">
+		<cardinality max="1" min="1"/>
+		<solitaryFeature name="API">
+			<binaryRelation name="93">
+			<cardinality max="1" min="0"/>
+			<solitaryFeature name="Get">
+			</solitaryFeature>
+
+			</binaryRelation>
+
+			<binaryRelation name="94">
+			<cardinality max="1" min="0"/>
+			<solitaryFeature name="Put">
+			</solitaryFeature>
+
+			</binaryRelation>
+
+			<binaryRelation name="95">
+			<cardinality max="1" min="0"/>
+			<solitaryFeature name="Delete">
+			</solitaryFeature>
+
+			</binaryRelation>
+
+		</solitaryFeature>
+
+		</binaryRelation>
+
+		<setRelation name="96">
+		<cardinality max="1" min="1"/>
+		<groupedFeature name="B+_Tree">
+		</groupedFeature>
+		<groupedFeature name="Unindexed">
+		</groupedFeature>
+		</setRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+</feature>
+</feature-model>

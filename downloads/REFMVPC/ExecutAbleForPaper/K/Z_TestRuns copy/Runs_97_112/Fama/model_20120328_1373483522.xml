@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature-model xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.tdg-seville.info/benavides/featuremodelling/feature-model.xsd">
+<feature name="_r">
+	<binaryRelation name="95">
+	<cardinality max="1" min="1"/>
+	<solitaryFeature name="_r_2">
+		<binaryRelation name="96">
+		<cardinality max="1" min="1"/>
+		<solitaryFeature name="_r_2_3">
+		</solitaryFeature>
+
+		</binaryRelation>
+
+		<binaryRelation name="97">
+		<cardinality max="1" min="1"/>
+		<solitaryFeature name="_r_2_4">
+		</solitaryFeature>
+
+		</binaryRelation>
+
+		<binaryRelation name="98">
+		<cardinality max="1" min="1"/>
+		<solitaryFeature name="_r_2_10">
+			<setRelation name="99">
+			<cardinality max="1" min="1"/>
+			<groupedFeature name="_r_2_10_11_12">
+			</groupedFeature>
+			<groupedFeature name="_r_2_10_11_13">
+			</groupedFeature>
+			</setRelation>
+
+		</solitaryFeature>
+
+		</binaryRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="100">
+	<cardinality max="1" min="0"/>
+	<solitaryFeature name="_r_5">
+		<binaryRelation name="101">
+		<cardinality max="1" min="0"/>
+		<solitaryFeature name="_r_5_6">
+		</solitaryFeature>
+
+		</binaryRelation>
+
+		<binaryRelation name="102">
+		<cardinality max="1" min="0"/>
+		<solitaryFeature name="_r_5_14">
+		</solitaryFeature>
+
+		</binaryRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="103">
+	<cardinality max="1" min="1"/>
+	<solitaryFeature name="_r_9">
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="104">
+	<cardinality max="1" min="0"/>
+	<solitaryFeature name="_r_15">
+		<binaryRelation name="105">
+		<cardinality max="1" min="0"/>
+		<solitaryFeature name="_r_15_16">
+		</solitaryFeature>
+
+		</binaryRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+</feature>
+<requires feature="_r_15" name="constraint_6" requires="_r_15_16"/>
+<requires feature="_r_5_14" name="constraint_5" requires="_r_2_10_11_12"/>
+</feature-model>

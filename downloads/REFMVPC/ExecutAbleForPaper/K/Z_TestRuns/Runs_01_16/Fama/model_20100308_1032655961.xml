@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature-model xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.tdg-seville.info/benavides/featuremodelling/feature-model.xsd">
+<feature name="Cell_phone">
+	<binaryRelation name="162">
+	<cardinality max="1" min="1"/>
+	<solitaryFeature name="Basis_Functions">
+		<binaryRelation name="163">
+		<cardinality max="1" min="1"/>
+		<solitaryFeature name="Message">
+			<binaryRelation name="164">
+			<cardinality max="1" min="1"/>
+			<solitaryFeature name="SMS">
+			</solitaryFeature>
+
+			</binaryRelation>
+
+			<binaryRelation name="165">
+			<cardinality max="1" min="0"/>
+			<solitaryFeature name="MMS">
+			</solitaryFeature>
+
+			</binaryRelation>
+
+		</solitaryFeature>
+
+		</binaryRelation>
+
+		<binaryRelation name="166">
+		<cardinality max="1" min="1"/>
+		<solitaryFeature name="Voice_Call">
+		</solitaryFeature>
+
+		</binaryRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="167">
+	<cardinality max="1" min="0"/>
+	<solitaryFeature name="Communication">
+		<binaryRelation name="168">
+		<cardinality max="1" min="0"/>
+		<solitaryFeature name="WLAN">
+		</solitaryFeature>
+
+		</binaryRelation>
+
+		<binaryRelation name="169">
+		<cardinality max="1" min="0"/>
+		<solitaryFeature name="Bluetooth">
+		</solitaryFeature>
+
+		</binaryRelation>
+
+		<binaryRelation name="170">
+		<cardinality max="1" min="0"/>
+		<solitaryFeature name="UMTS">
+		</solitaryFeature>
+
+		</binaryRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="171">
+	<cardinality max="1" min="1"/>
+	<solitaryFeature name="Extras">
+		<setRelation name="172">
+		<cardinality max="2" min="1"/>
+		<groupedFeature name="MP3">
+		</groupedFeature>
+		<groupedFeature name="Camera">
+				<setRelation name="173">
+				<cardinality max="1" min="1"/>
+				<groupedFeature name="A3MP">
+				</groupedFeature>
+				<groupedFeature name="A8MP">
+				</groupedFeature>
+				</setRelation>
+
+		</groupedFeature>
+		</setRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+</feature>
+<requires feature="MMS" name="constraint_1" requires="Camera"/>
+<excludes feature="Bluetooth" name="constraint_2" excludes="MP3"/>
+</feature-model>

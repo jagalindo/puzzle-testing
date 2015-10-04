@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Package xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_wnC_IjgdEd-HoOOiFCUCvw" name="DirectedWithEdges" visibility="public">
+  <packageImport xmi:id="_wnC_IzgdEd-HoOOiFCUCvw">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Class" xmi:id="_wnDlsDgdEd-HoOOiFCUCvw" name="Edge" visibility="public" isAbstract="false">
+    <generalization xmi:id="_wnDlsTgdEd-HoOOiFCUCvw" general="_wnDl5DgdEd-HoOOiFCUCvw"/>
+    <ownedAttribute xmi:id="_wnDlsjgdEd-HoOOiFCUCvw" name="vertex" visibility="private" type="_wnDl8jgdEd-HoOOiFCUCvw" isReadOnly="false" association="_wnDmBzgdEd-HoOOiFCUCvw">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wnDlszgdEd-HoOOiFCUCvw" visibility="public" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wnDltDgdEd-HoOOiFCUCvw" visibility="public" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_wnDltTgdEd-HoOOiFCUCvw" name="graph" visibility="private" type="_wnDlyTgdEd-HoOOiFCUCvw" isReadOnly="false" association="_wnDmCzgdEd-HoOOiFCUCvw">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wnDltjgdEd-HoOOiFCUCvw" visibility="public" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wnDltzgdEd-HoOOiFCUCvw" visibility="public" value="1"/>
+    </ownedAttribute>
+    <ownedOperation xmi:id="_wnDluDgdEd-HoOOiFCUCvw" name="EdgeConstructor">
+      <ownedParameter xmi:id="_wnDluTgdEd-HoOOiFCUCvw" name="the_start" type="_wnDl8jgdEd-HoOOiFCUCvw"/>
+      <ownedParameter xmi:id="_wnDlujgdEd-HoOOiFCUCvw" name="the_end" type="_wnDl8jgdEd-HoOOiFCUCvw"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_wnDluzgdEd-HoOOiFCUCvw" name="adjustAdorns">
+      <ownedParameter xmi:id="_wnDlvDgdEd-HoOOiFCUCvw" name="the_edge"/>
+      <ownedParameter xmi:id="_wnDlvTgdEd-HoOOiFCUCvw" name="Parameter1" direction="return">
+        <type xmi:type="uml:Interface" href="Base.uml#_wnEM3zgdEd-HoOOiFCUCvw"/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_wnDlvjgdEd-HoOOiFCUCvw" name="setWeight">
+      <ownedParameter xmi:id="_wnDlvzgdEd-HoOOiFCUCvw" name="weigth">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_wnDlwDgdEd-HoOOiFCUCvw" name="getWeight">
+      <ownedParameter xmi:id="_wnDlwTgdEd-HoOOiFCUCvw" name="Parameter1" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_wnDlwjgdEd-HoOOiFCUCvw" name="getOtherVertex">
+      <ownedParameter xmi:id="_wnDlwzgdEd-HoOOiFCUCvw" name="vertex" type="_wnDl8jgdEd-HoOOiFCUCvw"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_wnDlxDgdEd-HoOOiFCUCvw" name="getStart">
+      <ownedParameter xmi:id="_wnDlxTgdEd-HoOOiFCUCvw" name="Parameter1" type="_wnDl8jgdEd-HoOOiFCUCvw" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_wnDlxjgdEd-HoOOiFCUCvw" name="getEnd">
+      <ownedParameter xmi:id="_wnDlxzgdEd-HoOOiFCUCvw" name="Parameter1" type="_wnDl8jgdEd-HoOOiFCUCvw" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_wnDlyDgdEd-HoOOiFCUCvw" name="display"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_wnDlyTgdEd-HoOOiFCUCvw" name="Graph" visibility="public" isAbstract="false">
+    <ownedAttribute xmi:id="_wnDlyjgdEd-HoOOiFCUCvw" name="edge" visibility="private" type="_wnDlsDgdEd-HoOOiFCUCvw" isReadOnly="false" aggregation="shared" association="_wnDmCzgdEd-HoOOiFCUCvw">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wnDlyzgdEd-HoOOiFCUCvw" visibility="public" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wnDlzDgdEd-HoOOiFCUCvw" visibility="public"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_wnDlzTgdEd-HoOOiFCUCvw" name="vertex" visibility="private" type="_wnDl8jgdEd-HoOOiFCUCvw" isReadOnly="false" aggregation="shared" association="_wnDmDDgdEd-HoOOiFCUCvw">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wnDlzjgdEd-HoOOiFCUCvw" visibility="public" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wnDlzzgdEd-HoOOiFCUCvw" visibility="public"/>
+    </ownedAttribute>
+    <ownedOperation xmi:id="_wnDl0DgdEd-HoOOiFCUCvw" name="Graph"/>
+    <ownedOperation xmi:id="_wnDl0TgdEd-HoOOiFCUCvw" name="run">
+      <ownedParameter xmi:id="_wnDl0jgdEd-HoOOiFCUCvw" name="s" type="_wnDl8jgdEd-HoOOiFCUCvw"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_wnDl0zgdEd-HoOOiFCUCvw" name="sortEdges">
+      <ownedParameter xmi:id="_wnDl1DgdEd-HoOOiFCUCvw" name="c" type="_wnDmDjgdEd-HoOOiFCUCvw"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_wnDl1TgdEd-HoOOiFCUCvw" name="sortVertices">
+      <ownedParameter xmi:id="_wnDl1jgdEd-HoOOiFCUCvw" name="c" type="_wnDmDjgdEd-HoOOiFCUCvw"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_wnDl1zgdEd-HoOOiFCUCvw" name="addEdge">
+      <ownedParameter xmi:id="_wnDl2DgdEd-HoOOiFCUCvw" name="start" type="_wnDl8jgdEd-HoOOiFCUCvw"/>
+      <ownedParameter xmi:id="_wnDl2TgdEd-HoOOiFCUCvw" name="end" type="_wnDl8jgdEd-HoOOiFCUCvw"/>
+      <ownedParameter xmi:id="_wnDl2jgdEd-HoOOiFCUCvw" name="Parameter1" direction="return">
+        <type xmi:type="uml:Interface" href="Base.uml#_wnEM3zgdEd-HoOOiFCUCvw"/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_wnDl2zgdEd-HoOOiFCUCvw" name="addVertex">
+      <ownedParameter xmi:id="_wnDl3DgdEd-HoOOiFCUCvw" name="v" type="_wnDl8jgdEd-HoOOiFCUCvw"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_wnDl3TgdEd-HoOOiFCUCvw" name="findsVertex">
+      <ownedParameter xmi:id="_wnDl3jgdEd-HoOOiFCUCvw" name="theName">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_wnDl3zgdEd-HoOOiFCUCvw" name="getVertices">
+      <ownedParameter xmi:id="_wnDl4DgdEd-HoOOiFCUCvw" name="Parameter1" direction="return">
+        <type xmi:type="uml:Class" href="Base.uml#_wnEM8jgdEd-HoOOiFCUCvw"/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_wnDl4TgdEd-HoOOiFCUCvw" name="getEdges">
+      <ownedParameter xmi:id="_wnDl4jgdEd-HoOOiFCUCvw" name="Parameter1" direction="return">
+        <type xmi:type="uml:Class" href="Base.uml#_wnEM7TgdEd-HoOOiFCUCvw"/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_wnDl4zgdEd-HoOOiFCUCvw" name="display"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_wnDl5DgdEd-HoOOiFCUCvw" name="Neighbor" visibility="public" isAbstract="false">
+    <ownedAttribute xmi:id="_wnDl5TgdEd-HoOOiFCUCvw" name="vertex" visibility="private" type="_wnDl8jgdEd-HoOOiFCUCvw" isReadOnly="false" association="_wnDmDzgdEd-HoOOiFCUCvw">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wnDl5jgdEd-HoOOiFCUCvw" visibility="public" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wnDl5zgdEd-HoOOiFCUCvw" visibility="public" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_wnDl6DgdEd-HoOOiFCUCvw" name="edge" visibility="private" type="_wnDlsDgdEd-HoOOiFCUCvw" isReadOnly="false" association="_wnDmEzgdEd-HoOOiFCUCvw">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wnDl6TgdEd-HoOOiFCUCvw" visibility="public" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wnDl6jgdEd-HoOOiFCUCvw" visibility="public" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_wnDl6zgdEd-HoOOiFCUCvw" name="vertex2" visibility="private" type="_wnDl8jgdEd-HoOOiFCUCvw" isReadOnly="false" association="_wnDmFzgdEd-HoOOiFCUCvw">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wnDl7DgdEd-HoOOiFCUCvw" visibility="public" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wnDl7TgdEd-HoOOiFCUCvw" visibility="public" value="1"/>
+    </ownedAttribute>
+    <ownedOperation xmi:id="_wnDl7jgdEd-HoOOiFCUCvw" name="Neighbor"/>
+    <ownedOperation xmi:id="_wnDl7zgdEd-HoOOiFCUCvw" name="Neighbor">
+      <ownedParameter xmi:id="_wnDl8DgdEd-HoOOiFCUCvw" name="v" type="_wnDl8jgdEd-HoOOiFCUCvw"/>
+      <ownedParameter xmi:id="_wnDl8TgdEd-HoOOiFCUCvw" name="e" type="_wnDlsDgdEd-HoOOiFCUCvw"/>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_wnDl8jgdEd-HoOOiFCUCvw" name="Vertex" visibility="public" isAbstract="false">
+    <ownedAttribute xmi:id="_wnDl8zgdEd-HoOOiFCUCvw" name="graph" visibility="private" type="_wnDlyTgdEd-HoOOiFCUCvw" isReadOnly="false" association="_wnDmDDgdEd-HoOOiFCUCvw">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wnDl9DgdEd-HoOOiFCUCvw" visibility="public" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wnDl9TgdEd-HoOOiFCUCvw" visibility="public" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_wnDl9jgdEd-HoOOiFCUCvw" name="neighbor" visibility="private" type="_wnDl5DgdEd-HoOOiFCUCvw" isReadOnly="false" aggregation="shared" association="_wnDmFzgdEd-HoOOiFCUCvw">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wnDl9zgdEd-HoOOiFCUCvw" visibility="public" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wnDl-DgdEd-HoOOiFCUCvw" visibility="public"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_wnDl-TgdEd-HoOOiFCUCvw" name="name" visibility="private" isReadOnly="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedOperation xmi:id="_wnDl-jgdEd-HoOOiFCUCvw" name="getName">
+      <ownedParameter xmi:id="_wnDl-zgdEd-HoOOiFCUCvw" name="Parameter1" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_wnDl_DgdEd-HoOOiFCUCvw" name="Vertex"/>
+    <ownedOperation xmi:id="_wnDl_TgdEd-HoOOiFCUCvw" name="VertexConstructor"/>
+    <ownedOperation xmi:id="_wnDl_jgdEd-HoOOiFCUCvw" name="assignName">
+      <ownedParameter xmi:id="_wnDl_zgdEd-HoOOiFCUCvw" name="name">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_wnDmADgdEd-HoOOiFCUCvw" name="addNeighbor">
+      <ownedParameter xmi:id="_wnDmATgdEd-HoOOiFCUCvw" name="name">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_wnDmAjgdEd-HoOOiFCUCvw" name="getNeighbors">
+      <ownedParameter xmi:id="_wnDmAzgdEd-HoOOiFCUCvw" name="Parameter1" direction="return">
+        <type xmi:type="uml:Class" href="Base.uml#_wnEM8jgdEd-HoOOiFCUCvw"/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_wnDmBDgdEd-HoOOiFCUCvw" name="getEdges">
+      <ownedParameter xmi:id="_wnDmBTgdEd-HoOOiFCUCvw" name="Parameter1" direction="return">
+        <type xmi:type="uml:Class" href="Base.uml#_wnEM7TgdEd-HoOOiFCUCvw"/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_wnDmBjgdEd-HoOOiFCUCvw" name="display"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_wnDmBzgdEd-HoOOiFCUCvw" name="start" visibility="public" memberEnd="_wnDlsjgdEd-HoOOiFCUCvw _wnDmCDgdEd-HoOOiFCUCvw">
+    <ownedEnd xmi:id="_wnDmCDgdEd-HoOOiFCUCvw" name="" visibility="private" type="_wnDlsDgdEd-HoOOiFCUCvw" isReadOnly="false" association="_wnDmBzgdEd-HoOOiFCUCvw">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wnDmCTgdEd-HoOOiFCUCvw" visibility="public" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wnDmCjgdEd-HoOOiFCUCvw" visibility="public"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_wnDmCzgdEd-HoOOiFCUCvw" name="edges" visibility="public" memberEnd="_wnDlyjgdEd-HoOOiFCUCvw _wnDltTgdEd-HoOOiFCUCvw"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_wnDmDDgdEd-HoOOiFCUCvw" name="vertices" visibility="public" memberEnd="_wnDlzTgdEd-HoOOiFCUCvw _wnDl8zgdEd-HoOOiFCUCvw"/>
+  <packagedElement xmi:type="uml:Package" xmi:id="_wnDmDTgdEd-HoOOiFCUCvw" name="PrimitiveTypes" visibility="public">
+    <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_wnDmDjgdEd-HoOOiFCUCvw" name="Comparator" visibility="public"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_wnDmDzgdEd-HoOOiFCUCvw" name="end" visibility="public" memberEnd="_wnDl5TgdEd-HoOOiFCUCvw _wnDmEDgdEd-HoOOiFCUCvw">
+    <ownedEnd xmi:id="_wnDmEDgdEd-HoOOiFCUCvw" name="" visibility="private" type="_wnDl5DgdEd-HoOOiFCUCvw" isReadOnly="false" association="_wnDmDzgdEd-HoOOiFCUCvw">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wnDmETgdEd-HoOOiFCUCvw" visibility="public" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wnDmEjgdEd-HoOOiFCUCvw" visibility="public" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_wnDmEzgdEd-HoOOiFCUCvw" name="edge" visibility="public" memberEnd="_wnDl6DgdEd-HoOOiFCUCvw _wnDmFDgdEd-HoOOiFCUCvw">
+    <ownedEnd xmi:id="_wnDmFDgdEd-HoOOiFCUCvw" name="" visibility="private" type="_wnDl5DgdEd-HoOOiFCUCvw" isReadOnly="false" association="_wnDmEzgdEd-HoOOiFCUCvw">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wnDmFTgdEd-HoOOiFCUCvw" visibility="public" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wnDmFjgdEd-HoOOiFCUCvw" visibility="public" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_wnDmFzgdEd-HoOOiFCUCvw" name="neighbors" visibility="public" memberEnd="_wnDl9jgdEd-HoOOiFCUCvw _wnDl6zgdEd-HoOOiFCUCvw"/>
+  <packagedElement xmi:type="uml:Collaboration" xmi:id="_wnDmGDgdEd-HoOOiFCUCvw" name="Collaboration1" visibility="public">
+    <ownedBehavior xmi:type="uml:Interaction" xmi:id="_wnDmGTgdEd-HoOOiFCUCvw" name="AddEdge" visibility="public" isAbstract="false">
+      <ownedConnector xmi:id="_wnDmGjgdEd-HoOOiFCUCvw">
+        <end xmi:id="_wnDmGzgdEd-HoOOiFCUCvw" role="_wnDmNDgdEd-HoOOiFCUCvw"/>
+        <end xmi:id="_wnDmHDgdEd-HoOOiFCUCvw" role="_wnDmNTgdEd-HoOOiFCUCvw"/>
+      </ownedConnector>
+      <ownedConnector xmi:id="_wnDmHTgdEd-HoOOiFCUCvw">
+        <end xmi:id="_wnDmHjgdEd-HoOOiFCUCvw" role="_wnDmNjgdEd-HoOOiFCUCvw"/>
+        <end xmi:id="_wnDmHzgdEd-HoOOiFCUCvw" role="_wnDmNDgdEd-HoOOiFCUCvw"/>
+      </ownedConnector>
+      <lifeline xmi:id="_wnDmIDgdEd-HoOOiFCUCvw" name="graph" represents="_wnDmNDgdEd-HoOOiFCUCvw" coveredBy="_wnDmIzgdEd-HoOOiFCUCvw _wnDmJTgdEd-HoOOiFCUCvw _wnDmKTgdEd-HoOOiFCUCvw _wnDmKjgdEd-HoOOiFCUCvw _wnDmLjgdEd-HoOOiFCUCvw"/>
+      <lifeline xmi:id="_wnDmITgdEd-HoOOiFCUCvw" name="edge" represents="_wnDmNTgdEd-HoOOiFCUCvw" coveredBy="_wnDmJDgdEd-HoOOiFCUCvw _wnDmJjgdEd-HoOOiFCUCvw _wnDmJzgdEd-HoOOiFCUCvw _wnDmKDgdEd-HoOOiFCUCvw"/>
+      <lifeline xmi:id="_wnDmIjgdEd-HoOOiFCUCvw" name="vertex" represents="_wnDmNjgdEd-HoOOiFCUCvw" coveredBy="_wnDmKzgdEd-HoOOiFCUCvw _wnDmLDgdEd-HoOOiFCUCvw _wnDmLTgdEd-HoOOiFCUCvw"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_wnDmIzgdEd-HoOOiFCUCvw" covered="_wnDmIDgdEd-HoOOiFCUCvw" event="_wnDmNzgdEd-HoOOiFCUCvw" message="_wnDmLzgdEd-HoOOiFCUCvw"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_wnDmJDgdEd-HoOOiFCUCvw" covered="_wnDmITgdEd-HoOOiFCUCvw" event="_wnDmODgdEd-HoOOiFCUCvw" message="_wnDmLzgdEd-HoOOiFCUCvw"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_wnDmJTgdEd-HoOOiFCUCvw" covered="_wnDmIDgdEd-HoOOiFCUCvw" event="_wnDmOjgdEd-HoOOiFCUCvw" message="_wnDmMDgdEd-HoOOiFCUCvw"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_wnDmJjgdEd-HoOOiFCUCvw" covered="_wnDmITgdEd-HoOOiFCUCvw" event="_wnDmOTgdEd-HoOOiFCUCvw" message="_wnDmMDgdEd-HoOOiFCUCvw"/>
+      <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_wnDmJzgdEd-HoOOiFCUCvw" covered="_wnDmITgdEd-HoOOiFCUCvw" start="_wnDmJjgdEd-HoOOiFCUCvw" finish="_wnDmKDgdEd-HoOOiFCUCvw"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_wnDmKDgdEd-HoOOiFCUCvw" covered="_wnDmITgdEd-HoOOiFCUCvw" event="_wnDmOjgdEd-HoOOiFCUCvw" message="_wnDmMTgdEd-HoOOiFCUCvw"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_wnDmKTgdEd-HoOOiFCUCvw" covered="_wnDmIDgdEd-HoOOiFCUCvw" event="_wnDmOTgdEd-HoOOiFCUCvw" message="_wnDmMTgdEd-HoOOiFCUCvw"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_wnDmKjgdEd-HoOOiFCUCvw" covered="_wnDmIDgdEd-HoOOiFCUCvw" event="_wnDmPDgdEd-HoOOiFCUCvw" message="_wnDmMjgdEd-HoOOiFCUCvw"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_wnDmKzgdEd-HoOOiFCUCvw" covered="_wnDmIjgdEd-HoOOiFCUCvw" event="_wnDmOzgdEd-HoOOiFCUCvw" message="_wnDmMjgdEd-HoOOiFCUCvw"/>
+      <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_wnDmLDgdEd-HoOOiFCUCvw" covered="_wnDmIjgdEd-HoOOiFCUCvw" start="_wnDmKzgdEd-HoOOiFCUCvw" finish="_wnDmLTgdEd-HoOOiFCUCvw"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_wnDmLTgdEd-HoOOiFCUCvw" covered="_wnDmIjgdEd-HoOOiFCUCvw" event="_wnDmPDgdEd-HoOOiFCUCvw" message="_wnDmMzgdEd-HoOOiFCUCvw"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_wnDmLjgdEd-HoOOiFCUCvw" covered="_wnDmIDgdEd-HoOOiFCUCvw" event="_wnDmOzgdEd-HoOOiFCUCvw" message="_wnDmMzgdEd-HoOOiFCUCvw"/>
+      <message xmi:id="_wnDmLzgdEd-HoOOiFCUCvw" name="Edge" messageSort="createMessage" receiveEvent="_wnDmJDgdEd-HoOOiFCUCvw" sendEvent="_wnDmIzgdEd-HoOOiFCUCvw" connector="_wnDmGjgdEd-HoOOiFCUCvw"/>
+      <message xmi:id="_wnDmMDgdEd-HoOOiFCUCvw" name="EdgeConstructor" receiveEvent="_wnDmJjgdEd-HoOOiFCUCvw" sendEvent="_wnDmJTgdEd-HoOOiFCUCvw" connector="_wnDmGjgdEd-HoOOiFCUCvw"/>
+      <message xmi:id="_wnDmMTgdEd-HoOOiFCUCvw" name="EdgeConstructor" messageSort="reply" receiveEvent="_wnDmKTgdEd-HoOOiFCUCvw" sendEvent="_wnDmKDgdEd-HoOOiFCUCvw" connector="_wnDmGjgdEd-HoOOiFCUCvw"/>
+      <message xmi:id="_wnDmMjgdEd-HoOOiFCUCvw" name="addNeighbor" receiveEvent="_wnDmKzgdEd-HoOOiFCUCvw" sendEvent="_wnDmKjgdEd-HoOOiFCUCvw" connector="_wnDmHTgdEd-HoOOiFCUCvw"/>
+      <message xmi:id="_wnDmMzgdEd-HoOOiFCUCvw" name="addNeighbor" messageSort="reply" receiveEvent="_wnDmLjgdEd-HoOOiFCUCvw" sendEvent="_wnDmLTgdEd-HoOOiFCUCvw" connector="_wnDmHTgdEd-HoOOiFCUCvw"/>
+    </ownedBehavior>
+    <ownedAttribute xmi:id="_wnDmNDgdEd-HoOOiFCUCvw" name="graph" type="_wnDlyTgdEd-HoOOiFCUCvw" isReadOnly="false"/>
+    <ownedAttribute xmi:id="_wnDmNTgdEd-HoOOiFCUCvw" name="edge" type="_wnDlsDgdEd-HoOOiFCUCvw" isReadOnly="false"/>
+    <ownedAttribute xmi:id="_wnDmNjgdEd-HoOOiFCUCvw" name="vertex" type="_wnDl8jgdEd-HoOOiFCUCvw" isReadOnly="false"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_wnDmNzgdEd-HoOOiFCUCvw" name="SendOperationEvent1" visibility="public"/>
+  <packagedElement xmi:type="uml:CreationEvent" xmi:id="_wnDmODgdEd-HoOOiFCUCvw" name="CreationEvent1" visibility="public"/>
+  <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_wnDmOTgdEd-HoOOiFCUCvw" name="ReceiveOperationEvent1" visibility="public" operation="_wnDluDgdEd-HoOOiFCUCvw"/>
+  <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_wnDmOjgdEd-HoOOiFCUCvw" name="SendOperationEvent2" visibility="public" operation="_wnDluDgdEd-HoOOiFCUCvw"/>
+  <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_wnDmOzgdEd-HoOOiFCUCvw" name="ReceiveOperationEvent2" visibility="public" operation="_wnDmADgdEd-HoOOiFCUCvw"/>
+  <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_wnDmPDgdEd-HoOOiFCUCvw" name="SendOperationEvent3" visibility="public" operation="_wnDmADgdEd-HoOOiFCUCvw"/>
+  <profileApplication xmi:id="_wnDmPTgdEd-HoOOiFCUCvw">
+    <eAnnotations xmi:id="_wnDmPjgdEd-HoOOiFCUCvw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <references xmi:type="ecore:EPackage" href="pathmap://UML_PROFILES/Standard.profile.uml#_yzU58YinEdqtvbnfB2L_5w"/>
+    </eAnnotations>
+    <appliedProfile href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
+  </profileApplication>
+</uml:Package>

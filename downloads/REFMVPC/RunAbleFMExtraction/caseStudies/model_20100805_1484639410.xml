@@ -1,0 +1,54 @@
+<!-- This model was created online using SPLOT's Feature Model Editor (http://www.splot-research.org) on Thu, Feb 3, 2011 - 5:21 PM  -->
+<feature_model name="GreenHouse_Control_and_Monitoring">
+<meta>
+<data name="description">First version of GreenHouse product line</data>
+<data name="creator">Ana Fabiola Anzures </data>
+<data name="address"></data>
+<data name="email">iscanzures@gmail.com</data>
+<data name="phone"></data>
+<data name="website"></data>
+<data name="organization">ITO/CIMAT (Mexico)</data>
+<data name="department"></data>
+<data name="date">August, 2010 </data>
+<data name="reference"></data>
+</meta>
+<feature_tree>
+:r GreenHouse(GreenHouse)
+	:m Control(Control)
+		:m Mode(Mode)
+			:o Day(Day)
+			:o Night(Night)
+		:m Temperature(Temperature)
+		:m On_Off_Water(On_Off_Water)
+		:m On_Off_Light(On_Off_Light)
+		:m Alarms(Alarms)
+			:m Alarm_No_water(Alarm_No_water)
+			:m Alarm_No_lights(Alarm_No_lights)
+			:o Others_Alarms(Others_Alarms)
+		:m Platform(Platform)
+			:o PC(PC)
+			:o Web(Web)
+			:o Mobile(Mobile)
+		:m UI(UI)
+			:o Console(Console)
+			:o Graphic(Graphic)
+				:o PC_Interface(PC_Interface)
+				:o Web_Interface(Web_Interface)
+				:o Mobile_Interface(Mobile_Interface)
+	:m Monitoring(Monitoring)
+		:m Log(Log)
+		:m Notification(Notification)
+			:o e_mail(e_mail)
+			:o SMS(SMS)
+			:o Call_phone(Call_phone)
+		:m Generate_Reports(Generate_Reports)
+			:m Consumer_Report(Consumer_Report)
+			:o Production_Report(Production_Report)
+</feature_tree>
+<constraints>
+constraint_4:~Web or Web_Interface
+constraint_5:~Mobile or Mobile_Interface
+constraint_2:~Console or ~Graphic
+constraint_3:~PC or PC_Interface
+</constraints>
+</feature_model>

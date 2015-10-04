@@ -1,0 +1,33 @@
+<feature_model name="Country">
+<feature_tree>
+:r Country (Country)
+	:m EC2 (EC2)
+	:m OS (OS)
+	:m Instance_Category (Instance_Category)
+	:g [1, 1]
+		: Linux (Linux)
+		: Windows (Windows)
+	:g [1, 1]
+		: US (US)
+		: EU (EU)
+	:g [1, 1]
+		: Reserve (Reserve)
+		: On_demand (On_demand)
+			:g [1, 1]
+				: High_Memory (High_Memory)
+					:g [1, 1]
+						: Duo (Duo)
+						: Qua (Qua)
+				: Standard (Standard)
+					:g [1, 1]
+						: S (S)
+						: L1 (L1)
+						: XL (XL)
+				: High_CPU (High_CPU)
+					:g [1, 1]
+						: M (M)
+						: L2 (L2)
+</feature_tree>
+<constraints>
+</constraints>
+</feature_model>

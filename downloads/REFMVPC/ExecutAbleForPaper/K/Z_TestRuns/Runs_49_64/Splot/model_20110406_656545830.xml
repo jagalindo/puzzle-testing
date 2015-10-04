@@ -1,0 +1,37 @@
+<!-- This model was created online using SPLOT's Feature Model Editor (http://www.splot-research.org) on Wed, Apr 6, 2011 - 3:20 PM  -->
+<feature_model name="AudioPlayer">
+<meta>
+<data name="description">http://en.wikipedia.org/wiki/Comparison_of_audio_player_software</data>
+<data name="creator">Sabrina / Airton</data>
+<data name="address"></data>
+<data name="email">sfs@cin.ufpe.br</data>
+<data name="phone"></data>
+<data name="website"></data>
+<data name="organization">UFPE</data>
+<data name="department"></data>
+<data name="date"></data>
+<data name="reference"></data>
+</meta>
+<feature_tree>
+:r _r(_r)
+	:m _r_1(_r_1)
+		:o _r_1_17(_r_1_17)
+		:o _r_1_18(_r_1_18)
+		:o _r_1_19(_r_1_19)
+	:o _r_2(_r_2)
+		:m _r_2_8(_r_2_8)
+	:m _r_3(_r_3)
+		:m _r_3_9(_r_3_9)
+		:m _r_3_10(_r_3_10)
+		:m _r_3_11(_r_3_11)
+		:m _r_3_12(_r_3_12)
+		:m _r_3_15(_r_3_15)
+		:m _r_3_20(_r_3_20)
+			:g (_r_3_20_23) [1,*] 
+				: _r_3_20_23_24(_r_3_20_23_24)
+				: _r_3_20_23_25(_r_3_20_23_25)
+		:o _r_3_21(_r_3_21)
+</feature_tree>
+<constraints>
+</constraints>
+</feature_model>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature-model xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.tdg-seville.info/benavides/featuremodelling/feature-model.xsd">
+<feature name="R">
+	<binaryRelation name="23103">
+	<cardinality max="1" min="0"/>
+	<solitaryFeature name="o_1">
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<setRelation name="23104">
+	<cardinality max="1" min="1"/>
+	<groupedFeature name="g_2_1">
+	</groupedFeature>
+	<groupedFeature name="g_2_2">
+	</groupedFeature>
+	<groupedFeature name="g_2_3">
+	</groupedFeature>
+	<groupedFeature name="g_2_4">
+	</groupedFeature>
+	</setRelation>
+
+	<binaryRelation name="23105">
+	<cardinality max="1" min="1"/>
+	<solitaryFeature name="m_3">
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<setRelation name="23106">
+	<cardinality max="3" min="1"/>
+	<groupedFeature name="g_4_1">
+	</groupedFeature>
+	<groupedFeature name="g_4_2">
+	</groupedFeature>
+	<groupedFeature name="g_4_3">
+	</groupedFeature>
+	</setRelation>
+
+</feature>
+</feature-model>

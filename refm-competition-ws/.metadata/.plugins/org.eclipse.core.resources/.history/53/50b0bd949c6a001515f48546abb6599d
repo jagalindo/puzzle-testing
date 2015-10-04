@@ -1,0 +1,10 @@
+package fr.inria.diverse.refm.competition.haslinger;
+
+import es.us.isa.FAMA.models.variabilityModel.VariabilityModel;
+
+public class HaslingerREFM {
+
+	public VariabilityModel execute(String PCMFile) throws Exception {
+		
+	}
+}

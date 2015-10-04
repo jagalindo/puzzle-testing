@@ -1,0 +1,34 @@
+<!-- This model was created online using SPLOT's Feature Model Editor (http://www.splot-research.org) on Wed, Jun 1, 2011 - 5:44 AM  -->
+<feature_model name="Text Editor">
+<meta>
+<data name="description">A Text editor</data>
+<data name="creator">Peter Z</data>
+<data name="address"></data>
+<data name="email">p_zeller@cs.uni-kl.de</data>
+<data name="phone"></data>
+<data name="website"></data>
+<data name="organization">uni kl</data>
+<data name="department"></data>
+<data name="date"></data>
+<data name="reference"></data>
+</meta>
+<feature_tree>
+:r _r(_r)
+	:m _r_1(_r_1)
+		:o _r_1_2(_r_1_2)
+			:o _r_1_2_3(_r_1_2_3)
+				:g (_r_1_2_3_4) [1,1] 
+					: _r_1_2_3_4_5(_r_1_2_3_4_5)
+					: _r_1_2_3_4_6(_r_1_2_3_4_6)
+					: _r_1_2_3_4_7(_r_1_2_3_4_7)
+		:o _r_1_8(_r_1_8)
+	:m _r_9(_r_9)
+		:m _r_9_10(_r_9_10)
+		:m _r_9_11(_r_9_11)
+		:o _r_9_12(_r_9_12)
+</feature_tree>
+<constraints>
+constraint_1:~_r_1_2 or ~_r_1_8
+constraint_3:~_r_1_8 or _r_9_12
+</constraints>
+</feature_model>

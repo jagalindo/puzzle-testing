@@ -1,0 +1,56 @@
+<!-- This model was created online using SPLOT's Feature Model Editor (http://www.splot-research.org) on Thu, Feb 2, 2012 - 1:05 PM  -->
+<feature_model name="RhiscomProcessModel">
+<meta>
+<data name="description">Rhiscom process model</data>
+<data name="creator">Luis Silvestre</data>
+<data name="address"></data>
+<data name="email">lsilvest@dcc.uchile.cl</data>
+<data name="phone"></data>
+<data name="website"></data>
+<data name="organization">ADAPTE Project</data>
+<data name="department"></data>
+<data name="date"></data>
+<data name="reference"></data>
+</meta>
+<feature_tree>
+:r _r(_r)
+	:m _r_22(_r_22)
+		:m _r_22_26(_r_22_26)
+		:o _r_22_27(_r_22_27)
+			:m _r_22_27_32(_r_22_27_32)
+			:m _r_22_27_33(_r_22_27_33)
+			:m _r_22_27_34(_r_22_27_34)
+				:g (_r_22_27_34_39) [1,1] 
+					: _r_22_27_34_39_40(_r_22_27_34_39_40)
+					: _r_22_27_34_39_42(_r_22_27_34_39_42)
+						:m _r_22_27_34_39_42_43(_r_22_27_34_39_42_43)
+			:m _r_22_27_35(_r_22_27_35)
+			:m _r_22_27_36(_r_22_27_36)
+			:m _r_22_27_37(_r_22_27_37)
+			:m _r_22_27_38(_r_22_27_38)
+				:g (_r_22_27_38_44) [1,1] 
+					: _r_22_27_38_44_45(_r_22_27_38_44_45)
+					: _r_22_27_38_44_46(_r_22_27_38_44_46)
+		:o _r_22_29(_r_22_29)
+			:o _r_22_29_47(_r_22_29_47)
+		:m _r_22_30(_r_22_30)
+			:o _r_22_30_48(_r_22_30_48)
+		:m _r_22_31(_r_22_31)
+	:m _r_24(_r_24)
+		:m _r_24_49(_r_24_49)
+			:g (_r_24_49_53) [1,1] 
+				: _r_24_49_53_54(_r_24_49_53_54)
+				: _r_24_49_53_55(_r_24_49_53_55)
+	:m _r_25(_r_25)
+		:m _r_25_56(_r_25_56)
+			:g (_r_25_56_59) [1,1] 
+				: _r_25_56_59_60(_r_25_56_59_60)
+				: _r_25_56_59_61(_r_25_56_59_61)
+</feature_tree>
+<constraints>
+constraint_1:~_r_22_27_34_39_40 or _r_25_56_59_60
+constraint_4:~_r_22_27_38_44_46 or _r_24_49_53_55
+constraint_2:~_r_22_27_34_39_42 or _r_25_56_59_61
+constraint_3:~_r_22_27_38_44_45 or _r_24_49_53_54
+</constraints>
+</feature_model>

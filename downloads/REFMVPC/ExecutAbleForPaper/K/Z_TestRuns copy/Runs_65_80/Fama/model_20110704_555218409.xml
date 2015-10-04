@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature-model xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.tdg-seville.info/benavides/featuremodelling/feature-model.xsd">
+<feature name="_r">
+	<binaryRelation name="70">
+	<cardinality max="1" min="1"/>
+	<solitaryFeature name="_r_1">
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="71">
+	<cardinality max="1" min="1"/>
+	<solitaryFeature name="_r_2">
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="72">
+	<cardinality max="1" min="1"/>
+	<solitaryFeature name="_r_3">
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="73">
+	<cardinality max="1" min="1"/>
+	<solitaryFeature name="_r_4">
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="74">
+	<cardinality max="1" min="1"/>
+	<solitaryFeature name="_r_5">
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="75">
+	<cardinality max="1" min="1"/>
+	<solitaryFeature name="_r_6">
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="76">
+	<cardinality max="1" min="1"/>
+	<solitaryFeature name="_r_7">
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="77">
+	<cardinality max="1" min="0"/>
+	<solitaryFeature name="_r_8">
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="78">
+	<cardinality max="1" min="1"/>
+	<solitaryFeature name="_r_9">
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="79">
+	<cardinality max="1" min="1"/>
+	<solitaryFeature name="_r_10">
+	</solitaryFeature>
+
+	</binaryRelation>
+
+</feature>
+</feature-model>

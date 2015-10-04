@@ -1,0 +1,226 @@
+package fma;
+import java.util.HashSet;
+import java.util.Iterator;
+import java.util.Set;
+
+/**
+ * A Product contains a set of Features. 
+ */
+public class Product { 
+	private Set<Feature> features;
+	
+	public Product(Set<Feature> features){
+		this.features = features;
+	}
+	
+	public boolean contains(Feature f){
+		return features.contains(f);
+	}
+	
+	public int size(){
+		return features.size();
+	}
+	
+	public Set<Feature> getFeatures() {
+		return features;
+	}
+
+	public void setFeatrues(Set<Feature> features) {
+		this.features = features;
+	}
+	
+	public void removeFeatures(Set<Feature> features){
+		this.features.removeAll(features);
+	}
+	public void removeFeature(Feature feature){
+		this.features.remove(feature);
+	}
+
+	/**
+	 * A Product equals another products, if they contain the same features
+	 */
+	@Override
+	public boolean equals(Object obj) {
+		Product product;
+		boolean ret=true;
+		if(this == obj){
+			return true;
+		}
+		if(!(obj instanceof Product)){
+			return false;
+		}
+		product=(Product) obj;
+		if(product.size()!=this.size()){
+			return false;
+		}
+		for(Feature f : features){
+			if(!product.contains(f)){
+				ret = false;
+				break;
+			}
+		}
+		return ret;
+	}
+
+	@Override
+	public int hashCode() { //possible optimization (calculate hashcode only once.
+		int ret = 0;
+		for(Feature f : features){
+			ret += f.hashCode();
+		}
+		return ret;
+	}
+
+	@Override
+	public String toString() {
+		StringBuffer sb = new StringBuffer();
+		for(Feature f : features){
+			sb.append(f.toString()+" ");
+		}
+		return sb.toString();
+	}
+	
+	/**
+	 * Returns true if there exists a product in the productlist which does not contain
+	 * any of the child features, but contians the topFeatures.
+	 * 
+	 * --> this function is ussed to determine, wether the child-features are all optional
+	 * features.
+	 * @param parent the parent feature of the child-features
+	 * @param children a list of child-features
+	 * @param products a list of products
+	 * @return true if there is a product where parent occurs without all children
+	 */
+	public static boolean existsWithout(Feature parent, Set<Feature> children,
+			Set<Product> products) {
+		boolean ret = false;
+		Set<Feature> childClone;
+		for (Product p : products) {
+			childClone = new HashSet<Feature>(children);
+			if (p.contains(parent)) {
+				childClone.retainAll(p.getFeatures());
+				if (childClone.size() == 0) {
+					ret = true;
+					break;
+				}
+			}
+		}
+		return ret;
+	}
+	
+	/**
+	 * Returns all features which are descendants of the parent feature. 
+	 * (=Attirbutes which do never occur without the feature parent)
+	 * @param products list of products
+	 * @param features list of features
+	 * @param parent feature for which the children are searched
+	 * @return returns a Set of child-features
+	 */
+	public static Set<Feature> getDescendants(Set<Product> products,
+			Set<Feature> features, Feature parent) {
+		Set<Feature> descendants = new HashSet<Feature>(features);
+		descendants.remove(parent);
+		for (Feature f : features) {
+			for (Product p : products) {
+				if (p.contains(f) && !p.contains(parent)) {
+					descendants.remove(f);
+					break;
+				}
+			}
+		}
+		return descendants;
+	}
+	
+
+	/**
+	 * Cuts away all features which are no parent features, therefore the
+	 * set of products is considerable
+	 * reduced.
+	 */
+	public static Set<Product> filterProductPatterns(Set<Product> products,
+			Set<Feature> directChildren) {
+		Set<Product> prods = new HashSet<Product>();
+		Set<Feature> directChildren_clone;
+		for (Product p : products) {
+			directChildren_clone = new HashSet<Feature>(directChildren);
+			directChildren_clone.retainAll(p.getFeatures());
+			prods.add(new Product(new HashSet<Feature>(directChildren_clone)));
+		}
+		return prods;
+	}
+	
+	/**
+	 * Cuts away all features which are no parent features, therefore the
+	 * set of products is considerable
+	 * reduced. Only products which contain feature f are considered. 
+	 */
+	public static Set<Product> filterProductPatterns(Set<Product> products, Feature f,
+			Set<Feature> descendants) {
+		Set<Product> prods = new HashSet<Product>();
+		Set<Feature> topFeature_clone;
+		for (Product p : products) {
+			if(p.contains(f)){
+				topFeature_clone = new HashSet<Feature>(descendants);
+				topFeature_clone.retainAll(p.getFeatures());
+				prods.add(new Product(new HashSet<Feature>(topFeature_clone)));
+			}
+		}
+		return prods;	
+	}
+
+	/**
+	 * Retrieves only the products which have the least number of features
+	 * @param products set of products
+	 */
+	public static void retainSmallestProducts(Set<Product> products) {
+		Set<Product> biggerProds = new HashSet<Product>();
+		Iterator<Product> it = products.iterator();
+		if(it.hasNext()){
+			Product p = it.next();
+			int smallest = p.size();
+			while (it.hasNext()) {
+				p = it.next();
+				if (p.size() < smallest) {
+					smallest = p.size();
+				}
+			}
+			for (Product prod : products) {
+				if (prod.size() > smallest) {
+					biggerProds.add(prod);
+				}
+			}
+			products.removeAll(biggerProds);
+		}
+	}
+	
+	/**
+	 * Retrieves all parent features (features which are independent of the
+	 * other features)of the given product set.
+	 * @param products set of products
+	 * @param features set of features
+	 * @return the set of topFeatures
+	 */
+	public static Set<Feature> getTopFeatures(Set<Product> products,
+			Set<Feature> features) {
+		Set<Feature> topFeatures = new HashSet<Feature>();
+		Set<Feature> feature_clone = new HashSet<Feature>(features);
+		Set<Feature> dependent;
+
+		for (Feature f : features) {
+			dependent = new HashSet<Feature>(features);
+			dependent.remove(f);
+			for (Product p : products) {
+				if (p.contains(f)) {
+					feature_clone.removeAll(p.getFeatures());
+					dependent.removeAll(feature_clone);
+					feature_clone = new HashSet<Feature>(features);
+					if (dependent.size() == 0) {
+						topFeatures.add(f);
+						break;
+					}
+				}
+			}
+		}
+		return topFeatures;
+	}
+}

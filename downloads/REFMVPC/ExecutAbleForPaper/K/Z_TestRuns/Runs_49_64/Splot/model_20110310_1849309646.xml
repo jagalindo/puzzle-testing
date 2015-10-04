@@ -1,0 +1,49 @@
+<!-- This model was created online using SPLOT's Feature Model Editor (http://www.splot-research.org) on Thu, Mar 10, 2011 - 2:42 PM  -->
+<feature_model name="VOTE4ME Serveur">
+<meta>
+<data name="description">côté serveur</data>
+<data name="creator">Guillaume </data>
+<data name="address"></data>
+<data name="email">guillaume.benats@gmail.com</data>
+<data name="phone"></data>
+<data name="website"></data>
+<data name="organization">FUNDP</data>
+<data name="department"></data>
+<data name="date"></data>
+<data name="reference"></data>
+</meta>
+<feature_tree>
+:r _r(_r)
+	:m _r_1(_r_1)
+	:m _r_2(_r_2)
+	:m _r_3(_r_3)
+		:g (_r_3_8) [1,*] 
+			: _r_3_8_9(_r_3_8_9)
+			: _r_3_8_10(_r_3_8_10)
+			: _r_3_8_11(_r_3_8_11)
+			: _r_3_8_12(_r_3_8_12)
+	:m _r_4(_r_4)
+		:g (_r_4_13) [1,1] 
+			: _r_4_13_14(_r_4_13_14)
+				:g (_r_4_13_14_38) [1,*] 
+					: _r_4_13_14_38_39(_r_4_13_14_38_39)
+					: _r_4_13_14_38_40(_r_4_13_14_38_40)
+			: _r_4_13_15(_r_4_13_15)
+				:g (_r_4_13_15_34) [1,*] 
+					: _r_4_13_15_34_35(_r_4_13_15_34_35)
+					: _r_4_13_15_34_37(_r_4_13_15_34_37)
+	:m _r_6(_r_6)
+		:g (_r_6_19) [1,1] 
+			: _r_6_19_20(_r_6_19_20)
+			: _r_6_19_21(_r_6_19_21)
+				:g (_r_6_19_21_26) [1,1] 
+					: _r_6_19_21_26_27(_r_6_19_21_26_27)
+						:g (_r_6_19_21_26_27_29) [1,*] 
+							: _r_6_19_21_26_27_29_30(_r_6_19_21_26_27_29_30)
+							: _r_6_19_21_26_27_29_31(_r_6_19_21_26_27_29_31)
+							: _r_6_19_21_26_27_29_32(_r_6_19_21_26_27_29_32)
+					: _r_6_19_21_26_28(_r_6_19_21_26_28)
+</feature_tree>
+<constraints>
+</constraints>
+</feature_model>

@@ -1,0 +1,74 @@
+<!-- This model was created online using SPLOT's Feature Model Editor (http://www.splot-research.org) on Mon, Aug 6, 2012 - 9:36 AM  -->
+<feature_model name="Web_Portal">
+<meta>
+<data name="description">This feature model describes the configurations of a web portal product line</data>
+<data name="creator">Marcilio Mendonca</data>
+<data name="address">200 University Ave. West, Waterloo, ON, Canada</data>
+<data name="email">marcilio dot mendonca at gmail dot com</data>
+<data name="phone">+1-519-883-7198</data>
+<data name="website">http://gsd.uwaterloo.ca/</data>
+<data name="organization">University of Waterloo</data>
+<data name="department">School of Computer Science</data>
+<data name="date"></data>
+<data name="reference">Marcilio Mendonca, Thiago Bartolomei, and Donald Cowan. Decision-making coordination in collaborative product con?guration. In 23rd Annual ACM Symposium on Applied Computing. ACM, March 2008.</data>
+</meta>
+<feature_tree>
+:r web_portal(web_portal)
+	:o add_services(add_services)
+		:o site_stats(site_stats)
+			:m basic(basic)
+			:o advanced(advanced)
+		:o site_search(site_search)
+			:o images(images)
+			:o text(text)
+				:m html(html)
+				:o dynamic(dynamic)
+		:o ad_server(ad_server)
+			:m reports(reports)
+			:o popups(popups)
+			:m banners(banners)
+				:m ban_img(ban_img)
+				:o ban_flash(ban_flash)
+			:o keyword(keyword)
+	:m web_server(web_server)
+		:o logging(logging)
+			:g (_id_0) [1,1] 
+				: db(db)
+				: file(file)
+		:o protocol(protocol)
+			:g (_id_1) [1,*] 
+				: nttp(nttp)
+				: ftp(ftp)
+				: https(https)
+		:m cont(cont)
+			:m static(static)
+			:o active(active)
+				:g (_id_2) [1,*] 
+					: asp(asp)
+					: php(php)
+					: jsp(jsp)
+					: cgi(cgi)
+	:o persistence(persistence)
+		:g (_id_3) [1,1] 
+			: xml(xml)
+			: database(database)
+	:o ri(ri)
+		:g (_id_4) [1,*] 
+			: data_storage(data_storage)
+			: data_transfer(data_transfer)
+			: user_auth(user_auth)
+	:o performance(performance)
+		:g (_id_5) [1,1] 
+			: ms(ms)
+			: sec(sec)
+			: min(min)
+</feature_tree>
+<constraints>
+C4:~data_transfer or https
+C3:~db or database
+C6:~https or ~ms
+C5:~file or ftp
+C1:~keyword or text
+C2:~dynamic or active
+</constraints>
+</feature_model>

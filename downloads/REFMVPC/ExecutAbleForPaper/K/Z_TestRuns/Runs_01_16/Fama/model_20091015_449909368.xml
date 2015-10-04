@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature-model xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.tdg-seville.info/benavides/featuremodelling/feature-model.xsd">
+<feature name="SAL">
+	<binaryRelation name="58">
+	<cardinality max="1" min="1"/>
+	<solitaryFeature name="Language">
+		<binaryRelation name="59">
+		<cardinality max="1" min="1"/>
+		<solitaryFeature name="Simple_Arithmetic">
+		</solitaryFeature>
+
+		</binaryRelation>
+
+		<binaryRelation name="60">
+		<cardinality max="1" min="0"/>
+		<solitaryFeature name="Conditional">
+		</solitaryFeature>
+
+		</binaryRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="61">
+	<cardinality max="1" min="1"/>
+	<solitaryFeature name="Evaluator">
+		<setRelation name="62">
+		<cardinality max="1" min="1"/>
+		<groupedFeature name="Evaluation_semantics">
+		</groupedFeature>
+		<groupedFeature name="Machine_semantics">
+		</groupedFeature>
+		</setRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="63">
+	<cardinality max="1" min="0"/>
+	<solitaryFeature name="Optimizer">
+		<setRelation name="64">
+		<cardinality max="2" min="1"/>
+		<groupedFeature name="Constant_folding">
+		</groupedFeature>
+		<groupedFeature name="Short_circuit">
+		</groupedFeature>
+		</setRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+</feature>
+<requires feature="Short_circuit" name="constraint_2" requires="Conditional"/>
+</feature-model>

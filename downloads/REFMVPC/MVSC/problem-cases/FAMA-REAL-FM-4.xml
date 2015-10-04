@@ -1,0 +1,1529 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature-model xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.tdg-seville.info/benavides/featuremodelling/feature-model.xsd">
+<feature name="eShop">
+	<binaryRelation name="958">
+	<cardinality max="1" min="1"/>
+	<solitaryFeature name="store_front">
+		<binaryRelation name="959">
+		<cardinality max="1" min="0"/>
+		<solitaryFeature name="homepage">
+			<setRelation name="960">
+			<cardinality max="2" min="1"/>
+			<groupedFeature name="_id_1">
+			</groupedFeature>
+			<groupedFeature name="_id_2">
+					<binaryRelation name="961">
+					<cardinality max="1" min="1"/>
+					<solitaryFeature name="_id_3">
+						<setRelation name="962">
+						<cardinality max="2" min="1"/>
+						<groupedFeature name="_id_5">
+						</groupedFeature>
+						<groupedFeature name="special_offers">
+						</groupedFeature>
+						</setRelation>
+
+					</solitaryFeature>
+
+					</binaryRelation>
+
+					<binaryRelation name="963">
+					<cardinality max="1" min="1"/>
+					<solitaryFeature name="_id_6">
+						<setRelation name="964">
+						<cardinality max="2" min="1"/>
+						<groupedFeature name="_id_8">
+						</groupedFeature>
+						<groupedFeature name="_id_9">
+						</groupedFeature>
+						</setRelation>
+
+					</solitaryFeature>
+
+					</binaryRelation>
+
+			</groupedFeature>
+			</setRelation>
+
+		</solitaryFeature>
+
+		</binaryRelation>
+
+		<binaryRelation name="965">
+		<cardinality max="1" min="0"/>
+		<solitaryFeature name="registration">
+			<binaryRelation name="966">
+			<cardinality max="1" min="1"/>
+			<solitaryFeature name="registration_enforcement">
+				<setRelation name="967">
+				<cardinality max="3" min="1"/>
+				<groupedFeature name="_id_11">
+				</groupedFeature>
+				<groupedFeature name="register_to_buy">
+				</groupedFeature>
+				<groupedFeature name="_id_12">
+				</groupedFeature>
+				</setRelation>
+
+			</solitaryFeature>
+
+			</binaryRelation>
+
+			<binaryRelation name="968">
+			<cardinality max="1" min="1"/>
+			<solitaryFeature name="_id_13">
+				<binaryRelation name="969">
+				<cardinality max="1" min="1"/>
+				<solitaryFeature name="_id_14">
+				</solitaryFeature>
+
+				</binaryRelation>
+
+				<binaryRelation name="970">
+				<cardinality max="1" min="0"/>
+				<solitaryFeature name="shipping_address">
+					<binaryRelation name="971">
+					<cardinality max="1" min="0"/>
+					<solitaryFeature name="_id_15">
+					</solitaryFeature>
+
+					</binaryRelation>
+
+				</solitaryFeature>
+
+				</binaryRelation>
+
+				<binaryRelation name="972">
+				<cardinality max="1" min="0"/>
+				<solitaryFeature name="_id_16">
+					<binaryRelation name="973">
+					<cardinality max="1" min="0"/>
+					<solitaryFeature name="_id_17">
+					</solitaryFeature>
+
+					</binaryRelation>
+
+				</solitaryFeature>
+
+				</binaryRelation>
+
+				<binaryRelation name="974">
+				<cardinality max="1" min="0"/>
+				<solitaryFeature name="_id_18">
+					<binaryRelation name="975">
+					<cardinality max="1" min="1"/>
+					<solitaryFeature name="_id_19">
+					</solitaryFeature>
+
+					</binaryRelation>
+
+					<binaryRelation name="976">
+					<cardinality max="1" min="1"/>
+					<solitaryFeature name="_id_20">
+					</solitaryFeature>
+
+					</binaryRelation>
+
+					<binaryRelation name="977">
+					<cardinality max="1" min="1"/>
+					<solitaryFeature name="_id_21">
+					</solitaryFeature>
+
+					</binaryRelation>
+
+					<binaryRelation name="978">
+					<cardinality max="1" min="0"/>
+					<solitaryFeature name="_id_22">
+					</solitaryFeature>
+
+					</binaryRelation>
+
+				</solitaryFeature>
+
+				</binaryRelation>
+
+				<binaryRelation name="979">
+				<cardinality max="1" min="0"/>
+				<solitaryFeature name="_id_23">
+					<setRelation name="980">
+					<cardinality max="4" min="1"/>
+					<groupedFeature name="_id_25">
+					</groupedFeature>
+					<groupedFeature name="_id_26">
+					</groupedFeature>
+					<groupedFeature name="_id_27">
+					</groupedFeature>
+					<groupedFeature name="_id_28">
+					</groupedFeature>
+					</setRelation>
+
+				</solitaryFeature>
+
+				</binaryRelation>
+
+				<binaryRelation name="981">
+				<cardinality max="1" min="0"/>
+				<solitaryFeature name="_id_29">
+				</solitaryFeature>
+
+				</binaryRelation>
+
+				<binaryRelation name="982">
+				<cardinality max="1" min="0"/>
+				<solitaryFeature name="preferences">
+					<setRelation name="983">
+					<cardinality max="3" min="1"/>
+					<groupedFeature name="_id_31">
+					</groupedFeature>
+					<groupedFeature name="_id_32">
+					</groupedFeature>
+					<groupedFeature name="_id_33">
+					</groupedFeature>
+					</setRelation>
+
+				</solitaryFeature>
+
+				</binaryRelation>
+
+				<binaryRelation name="984">
+				<cardinality max="1" min="0"/>
+				<solitaryFeature name="_id_34">
+				</solitaryFeature>
+
+				</binaryRelation>
+
+				<binaryRelation name="985">
+				<cardinality max="1" min="0"/>
+				<solitaryFeature name="quick_checkout_profile">
+				</solitaryFeature>
+
+				</binaryRelation>
+
+				<binaryRelation name="986">
+				<cardinality max="1" min="0"/>
+				<solitaryFeature name="_id_35">
+				</solitaryFeature>
+
+				</binaryRelation>
+
+			</solitaryFeature>
+
+			</binaryRelation>
+
+			<binaryRelation name="987">
+			<cardinality max="1" min="0"/>
+			<solitaryFeature name="user_behaviour_tracking_info">
+			</solitaryFeature>
+
+			</binaryRelation>
+
+		</solitaryFeature>
+
+		</binaryRelation>
+
+		<binaryRelation name="988">
+		<cardinality max="1" min="1"/>
+		<solitaryFeature name="catalog">
+			<binaryRelation name="989">
+			<cardinality max="1" min="1"/>
+			<solitaryFeature name="product_information">
+				<binaryRelation name="990">
+				<cardinality max="1" min="1"/>
+				<solitaryFeature name="product_type">
+					<setRelation name="991">
+					<cardinality max="3" min="1"/>
+					<groupedFeature name="eletronic_goods">
+					</groupedFeature>
+					<groupedFeature name="physical_goods">
+					</groupedFeature>
+					<groupedFeature name="services">
+					</groupedFeature>
+					</setRelation>
+
+				</solitaryFeature>
+
+				</binaryRelation>
+
+				<binaryRelation name="992">
+				<cardinality max="1" min="1"/>
+				<solitaryFeature name="basic_information">
+				</solitaryFeature>
+
+				</binaryRelation>
+
+				<binaryRelation name="993">
+				<cardinality max="1" min="0"/>
+				<solitaryFeature name="detailed_information">
+				</solitaryFeature>
+
+				</binaryRelation>
+
+				<binaryRelation name="994">
+				<cardinality max="1" min="0"/>
+				<solitaryFeature name="warranty_information">
+				</solitaryFeature>
+
+				</binaryRelation>
+
+				<binaryRelation name="995">
+				<cardinality max="1" min="0"/>
+				<solitaryFeature name="customer_reviews">
+				</solitaryFeature>
+
+				</binaryRelation>
+
+				<binaryRelation name="996">
+				<cardinality max="1" min="0"/>
+				<solitaryFeature name="associated_assets">
+					<setRelation name="997">
+					<cardinality max="2" min="1"/>
+					<groupedFeature name="_id_38">
+					</groupedFeature>
+					<groupedFeature name="_id_39">
+							<setRelation name="998">
+							<cardinality max="3" min="1"/>
+							<groupedFeature name="_id_41">
+									<setRelation name="999">
+									<cardinality max="6" min="1"/>
+									<groupedFeature name="_id_43">
+									</groupedFeature>
+									<groupedFeature name="_id_44">
+									</groupedFeature>
+									<groupedFeature name="_id_45">
+									</groupedFeature>
+									<groupedFeature name="_id_46">
+									</groupedFeature>
+									<groupedFeature name="_id_47">
+									</groupedFeature>
+									<groupedFeature name="_id_48">
+									</groupedFeature>
+									</setRelation>
+
+							</groupedFeature>
+							<groupedFeature name="_id_49">
+							</groupedFeature>
+							<groupedFeature name="_id_50">
+							</groupedFeature>
+							</setRelation>
+
+					</groupedFeature>
+					</setRelation>
+
+				</solitaryFeature>
+
+				</binaryRelation>
+
+				<binaryRelation name="1000">
+				<cardinality max="1" min="0"/>
+				<solitaryFeature name="product_variants">
+					<binaryRelation name="1001">
+					<cardinality max="1" min="0"/>
+					<solitaryFeature name="_id_51">
+					</solitaryFeature>
+
+					</binaryRelation>
+
+				</solitaryFeature>
+
+				</binaryRelation>
+
+				<binaryRelation name="1002">
+				<cardinality max="1" min="0"/>
+				<solitaryFeature name="size">
+				</solitaryFeature>
+
+				</binaryRelation>
+
+				<binaryRelation name="1003">
+				<cardinality max="1" min="0"/>
+				<solitaryFeature name="weight">
+				</solitaryFeature>
+
+				</binaryRelation>
+
+				<binaryRelation name="1004">
+				<cardinality max="1" min="0"/>
+				<solitaryFeature name="availability">
+				</solitaryFeature>
+
+				</binaryRelation>
+
+				<binaryRelation name="1005">
+				<cardinality max="1" min="0"/>
+				<solitaryFeature name="custom_fields">
+				</solitaryFeature>
+
+				</binaryRelation>
+
+			</solitaryFeature>
+
+			</binaryRelation>
+
+			<binaryRelation name="1006">
+			<cardinality max="1" min="0"/>
+			<solitaryFeature name="categories">
+				<binaryRelation name="1007">
+				<cardinality max="1" min="1"/>
+				<solitaryFeature name="categories_catalog">
+					<binaryRelation name="1008">
+					<cardinality max="1" min="0"/>
+					<solitaryFeature name="_id_52">
+						<binaryRelation name="1009">
+						<cardinality max="1" min="0"/>
+						<solitaryFeature name="_id_53">
+						</solitaryFeature>
+
+						</binaryRelation>
+
+						<binaryRelation name="1010">
+						<cardinality max="1" min="0"/>
+						<solitaryFeature name="_id_54">
+						</solitaryFeature>
+
+						</binaryRelation>
+
+					</solitaryFeature>
+
+					</binaryRelation>
+
+				</solitaryFeature>
+
+				</binaryRelation>
+
+			</solitaryFeature>
+
+			</binaryRelation>
+
+			<binaryRelation name="1011">
+			<cardinality max="1" min="0"/>
+			<solitaryFeature name="_id_55">
+			</solitaryFeature>
+
+			</binaryRelation>
+
+			<binaryRelation name="1012">
+			<cardinality max="1" min="0"/>
+			<solitaryFeature name="_id_56">
+				<setRelation name="1013">
+				<cardinality max="2" min="1"/>
+				<groupedFeature name="_id_58">
+				</groupedFeature>
+				<groupedFeature name="_id_59">
+				</groupedFeature>
+				</setRelation>
+
+			</solitaryFeature>
+
+			</binaryRelation>
+
+			<binaryRelation name="1014">
+			<cardinality max="1" min="0"/>
+			<solitaryFeature name="_id_60">
+				<binaryRelation name="1015">
+				<cardinality max="1" min="1"/>
+				<solitaryFeature name="_id_61">
+				</solitaryFeature>
+
+				</binaryRelation>
+
+				<binaryRelation name="1016">
+				<cardinality max="1" min="0"/>
+				<solitaryFeature name="category_page">
+				</solitaryFeature>
+
+				</binaryRelation>
+
+				<binaryRelation name="1017">
+				<cardinality max="1" min="0"/>
+				<solitaryFeature name="_id_62">
+					<binaryRelation name="1018">
+					<cardinality max="1" min="0"/>
+					<solitaryFeature name="_id_63">
+						<setRelation name="1019">
+						<cardinality max="5" min="1"/>
+						<groupedFeature name="_id_65">
+						</groupedFeature>
+						<groupedFeature name="_id_66">
+						</groupedFeature>
+						<groupedFeature name="_id_67">
+						</groupedFeature>
+						<groupedFeature name="_id_68">
+						</groupedFeature>
+						<groupedFeature name="_id_69">
+						</groupedFeature>
+						</setRelation>
+
+					</solitaryFeature>
+
+					</binaryRelation>
+
+				</solitaryFeature>
+
+				</binaryRelation>
+
+			</solitaryFeature>
+
+			</binaryRelation>
+
+			<binaryRelation name="1020">
+			<cardinality max="1" min="0"/>
+			<solitaryFeature name="_id_70">
+				<binaryRelation name="1021">
+				<cardinality max="1" min="0"/>
+				<solitaryFeature name="_id_71">
+				</solitaryFeature>
+
+				</binaryRelation>
+
+				<binaryRelation name="1022">
+				<cardinality max="1" min="0"/>
+				<solitaryFeature name="_id_72">
+				</solitaryFeature>
+
+				</binaryRelation>
+
+			</solitaryFeature>
+
+			</binaryRelation>
+
+		</solitaryFeature>
+
+		</binaryRelation>
+
+		<binaryRelation name="1023">
+		<cardinality max="1" min="0"/>
+		<solitaryFeature name="wish_list">
+			<binaryRelation name="1024">
+			<cardinality max="1" min="0"/>
+			<solitaryFeature name="wish_list_saved_after_session">
+			</solitaryFeature>
+
+			</binaryRelation>
+
+			<binaryRelation name="1025">
+			<cardinality max="1" min="0"/>
+			<solitaryFeature name="email_wish_list">
+			</solitaryFeature>
+
+			</binaryRelation>
+
+			<binaryRelation name="1026">
+			<cardinality max="1" min="0"/>
+			<solitaryFeature name="_id_73">
+			</solitaryFeature>
+
+			</binaryRelation>
+
+			<binaryRelation name="1027">
+			<cardinality max="1" min="0"/>
+			<solitaryFeature name="permissions">
+				<setRelation name="1028">
+				<cardinality max="3" min="1"/>
+				<groupedFeature name="_id_75">
+				</groupedFeature>
+				<groupedFeature name="_id_76">
+				</groupedFeature>
+				<groupedFeature name="_id_77">
+				</groupedFeature>
+				</setRelation>
+
+			</solitaryFeature>
+
+			</binaryRelation>
+
+		</solitaryFeature>
+
+		</binaryRelation>
+
+		<binaryRelation name="1029">
+		<cardinality max="1" min="1"/>
+		<solitaryFeature name="buy_paths">
+			<binaryRelation name="1030">
+			<cardinality max="1" min="1"/>
+			<solitaryFeature name="_id_78">
+				<binaryRelation name="1031">
+				<cardinality max="1" min="1"/>
+				<solitaryFeature name="_id_79">
+				</solitaryFeature>
+
+				</binaryRelation>
+
+				<binaryRelation name="1032">
+				<cardinality max="1" min="1"/>
+				<solitaryFeature name="_id_80">
+				</solitaryFeature>
+
+				</binaryRelation>
+
+				<binaryRelation name="1033">
+				<cardinality max="1" min="0"/>
+				<solitaryFeature name="_id_81">
+				</solitaryFeature>
+
+				</binaryRelation>
+
+				<binaryRelation name="1034">
+				<cardinality max="1" min="0"/>
+				<solitaryFeature name="_id_82">
+				</solitaryFeature>
+
+				</binaryRelation>
+
+			</solitaryFeature>
+
+			</binaryRelation>
+
+			<binaryRelation name="1035">
+			<cardinality max="1" min="1"/>
+			<solitaryFeature name="_id_83">
+				<binaryRelation name="1036">
+				<cardinality max="1" min="1"/>
+				<solitaryFeature name="_id_84">
+					<setRelation name="1037">
+					<cardinality max="2" min="1"/>
+					<groupedFeature name="registered_checkout">
+							<binaryRelation name="1038">
+							<cardinality max="1" min="0"/>
+							<solitaryFeature name="quick_checkout">
+								<binaryRelation name="1039">
+								<cardinality max="1" min="0"/>
+								<solitaryFeature name="_id_86">
+								</solitaryFeature>
+
+								</binaryRelation>
+
+							</solitaryFeature>
+
+							</binaryRelation>
+
+					</groupedFeature>
+					<groupedFeature name="_id_87">
+					</groupedFeature>
+					</setRelation>
+
+				</solitaryFeature>
+
+				</binaryRelation>
+
+				<binaryRelation name="1040">
+				<cardinality max="1" min="0"/>
+				<solitaryFeature name="shipping_options">
+					<binaryRelation name="1041">
+					<cardinality max="1" min="0"/>
+					<solitaryFeature name="_id_88">
+					</solitaryFeature>
+
+					</binaryRelation>
+
+					<binaryRelation name="1042">
+					<cardinality max="1" min="0"/>
+					<solitaryFeature name="_id_89">
+					</solitaryFeature>
+
+					</binaryRelation>
+
+					<binaryRelation name="1043">
+					<cardinality max="1" min="0"/>
+					<solitaryFeature name="_id_90">
+					</solitaryFeature>
+
+					</binaryRelation>
+
+					<binaryRelation name="1044">
+					<cardinality max="1" min="0"/>
+					<solitaryFeature name="_id_91">
+					</solitaryFeature>
+
+					</binaryRelation>
+
+					<binaryRelation name="1045">
+					<cardinality max="1" min="1"/>
+					<solitaryFeature name="_id_92">
+					</solitaryFeature>
+
+					</binaryRelation>
+
+				</solitaryFeature>
+
+				</binaryRelation>
+
+				<binaryRelation name="1046">
+				<cardinality max="1" min="1"/>
+				<solitaryFeature name="_id_93">
+					<setRelation name="1047">
+					<cardinality max="2" min="1"/>
+					<groupedFeature name="_id_95">
+							<binaryRelation name="1048">
+							<cardinality max="1" min="1"/>
+							<solitaryFeature name="_id_96">
+								<setRelation name="1049">
+								<cardinality max="2" min="1"/>
+								<groupedFeature name="_id_98">
+								</groupedFeature>
+								<groupedFeature name="_id_99">
+										<binaryRelation name="1050">
+										<cardinality max="1" min="1"/>
+										<solitaryFeature name="_id_100">
+										</solitaryFeature>
+
+										</binaryRelation>
+
+										<binaryRelation name="1051">
+										<cardinality max="1" min="1"/>
+										<solitaryFeature name="_id_101">
+											<binaryRelation name="1052">
+											<cardinality max="1" min="1"/>
+											<solitaryFeature name="shipping_2">
+											</solitaryFeature>
+
+											</binaryRelation>
+
+											<binaryRelation name="1053">
+											<cardinality max="1" min="0"/>
+											<solitaryFeature name="_id_102">
+											</solitaryFeature>
+
+											</binaryRelation>
+
+										</solitaryFeature>
+
+										</binaryRelation>
+
+										<binaryRelation name="1054">
+										<cardinality max="1" min="0"/>
+										<solitaryFeature name="_id_103">
+											<setRelation name="1055">
+											<cardinality max="3" min="1"/>
+											<groupedFeature name="_id_105">
+											</groupedFeature>
+											<groupedFeature name="_id_106">
+											</groupedFeature>
+											<groupedFeature name="_id_107">
+											</groupedFeature>
+											</setRelation>
+
+										</solitaryFeature>
+
+										</binaryRelation>
+
+								</groupedFeature>
+								</setRelation>
+
+							</solitaryFeature>
+
+							</binaryRelation>
+
+							<binaryRelation name="1056">
+							<cardinality max="1" min="1"/>
+							<solitaryFeature name="_id_108">
+								<setRelation name="1057">
+								<cardinality max="2" min="1"/>
+								<groupedFeature name="_id_110">
+								</groupedFeature>
+								<groupedFeature name="_id_111">
+								</groupedFeature>
+								</setRelation>
+
+							</solitaryFeature>
+
+							</binaryRelation>
+
+					</groupedFeature>
+					<groupedFeature name="_id_112">
+							<setRelation name="1058">
+							<cardinality max="3" min="1"/>
+							<groupedFeature name="_id_114">
+							</groupedFeature>
+							<groupedFeature name="_id_115">
+							</groupedFeature>
+							<groupedFeature name="_id_116">
+							</groupedFeature>
+							</setRelation>
+
+					</groupedFeature>
+					</setRelation>
+
+				</solitaryFeature>
+
+				</binaryRelation>
+
+				<binaryRelation name="1059">
+				<cardinality max="1" min="1"/>
+				<solitaryFeature name="_id_117">
+					<binaryRelation name="1060">
+					<cardinality max="1" min="1"/>
+					<solitaryFeature name="_id_118">
+						<setRelation name="1061">
+						<cardinality max="9" min="1"/>
+						<groupedFeature name="_id_120">
+						</groupedFeature>
+						<groupedFeature name="_id_121">
+						</groupedFeature>
+						<groupedFeature name="_id_122">
+						</groupedFeature>
+						<groupedFeature name="_id_123">
+						</groupedFeature>
+						<groupedFeature name="_id_124">
+						</groupedFeature>
+						<groupedFeature name="_id_125">
+						</groupedFeature>
+						<groupedFeature name="_id_126">
+						</groupedFeature>
+						<groupedFeature name="_id_127">
+						</groupedFeature>
+						<groupedFeature name="_id_128">
+						</groupedFeature>
+						</setRelation>
+
+					</solitaryFeature>
+
+					</binaryRelation>
+
+					<binaryRelation name="1062">
+					<cardinality max="1" min="0"/>
+					<solitaryFeature name="_id_129">
+					</solitaryFeature>
+
+					</binaryRelation>
+
+					<binaryRelation name="1063">
+					<cardinality max="1" min="0"/>
+					<solitaryFeature name="_id_130">
+						<setRelation name="1064">
+						<cardinality max="7" min="1"/>
+						<groupedFeature name="_id_132">
+						</groupedFeature>
+						<groupedFeature name="_id_133">
+						</groupedFeature>
+						<groupedFeature name="_id_134">
+						</groupedFeature>
+						<groupedFeature name="_id_135">
+						</groupedFeature>
+						<groupedFeature name="_id_136">
+						</groupedFeature>
+						<groupedFeature name="_id_137">
+						</groupedFeature>
+						<groupedFeature name="_id_138">
+						</groupedFeature>
+						</setRelation>
+
+					</solitaryFeature>
+
+					</binaryRelation>
+
+				</solitaryFeature>
+
+				</binaryRelation>
+
+			</solitaryFeature>
+
+			</binaryRelation>
+
+			<binaryRelation name="1065">
+			<cardinality max="1" min="1"/>
+			<solitaryFeature name="_id_139">
+				<setRelation name="1066">
+				<cardinality max="4" min="1"/>
+				<groupedFeature name="_id_141">
+				</groupedFeature>
+				<groupedFeature name="_id_142">
+				</groupedFeature>
+				<groupedFeature name="_id_143">
+				</groupedFeature>
+				<groupedFeature name="_id_144">
+				</groupedFeature>
+				</setRelation>
+
+			</solitaryFeature>
+
+			</binaryRelation>
+
+		</solitaryFeature>
+
+		</binaryRelation>
+
+		<binaryRelation name="1067">
+		<cardinality max="1" min="0"/>
+		<solitaryFeature name="customer_service">
+			<setRelation name="1068">
+			<cardinality max="4" min="1"/>
+			<groupedFeature name="_id_146">
+					<binaryRelation name="1069">
+					<cardinality max="1" min="0"/>
+					<solitaryFeature name="_id_147">
+					</solitaryFeature>
+
+					</binaryRelation>
+
+			</groupedFeature>
+			<groupedFeature name="_id_148">
+			</groupedFeature>
+			<groupedFeature name="_id_149">
+					<binaryRelation name="1070">
+					<cardinality max="1" min="1"/>
+					<solitaryFeature name="_id_150">
+						<setRelation name="1071">
+						<cardinality max="3" min="1"/>
+						<groupedFeature name="_id_152">
+						</groupedFeature>
+						<groupedFeature name="_id_153">
+						</groupedFeature>
+						<groupedFeature name="_id_154">
+						</groupedFeature>
+						</setRelation>
+
+					</solitaryFeature>
+
+					</binaryRelation>
+
+					<binaryRelation name="1072">
+					<cardinality max="1" min="0"/>
+					<solitaryFeature name="_id_155">
+					</solitaryFeature>
+
+					</binaryRelation>
+
+			</groupedFeature>
+			<groupedFeature name="_id_156">
+					<setRelation name="1073">
+					<cardinality max="2" min="1"/>
+					<groupedFeature name="_id_158">
+					</groupedFeature>
+					<groupedFeature name="_id_159">
+					</groupedFeature>
+					</setRelation>
+
+			</groupedFeature>
+			</setRelation>
+
+		</solitaryFeature>
+
+		</binaryRelation>
+
+		<binaryRelation name="1074">
+		<cardinality max="1" min="0"/>
+		<solitaryFeature name="user_behaviour_tracking">
+			<binaryRelation name="1075">
+			<cardinality max="1" min="1"/>
+			<solitaryFeature name="_id_160">
+				<setRelation name="1076">
+				<cardinality max="3" min="1"/>
+				<groupedFeature name="locally_visited_pages">
+				</groupedFeature>
+				<groupedFeature name="external_referring_pages">
+				</groupedFeature>
+				<groupedFeature name="behaviour_tracked_previous_purchases">
+				</groupedFeature>
+				</setRelation>
+
+			</solitaryFeature>
+
+			</binaryRelation>
+
+		</solitaryFeature>
+
+		</binaryRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="1077">
+	<cardinality max="1" min="1"/>
+	<solitaryFeature name="business_management">
+		<binaryRelation name="1078">
+		<cardinality max="1" min="1"/>
+		<solitaryFeature name="_id_162">
+			<binaryRelation name="1079">
+			<cardinality max="1" min="1"/>
+			<solitaryFeature name="_id_163">
+				<setRelation name="1080">
+				<cardinality max="3" min="1"/>
+				<groupedFeature name="physical_goods_fulfillment">
+						<binaryRelation name="1081">
+						<cardinality max="1" min="1"/>
+						<solitaryFeature name="warehouse_management">
+						</solitaryFeature>
+
+						</binaryRelation>
+
+						<binaryRelation name="1082">
+						<cardinality max="1" min="1"/>
+						<solitaryFeature name="shipping">
+							<setRelation name="1083">
+							<cardinality max="2" min="1"/>
+							<groupedFeature name="_id_166">
+									<binaryRelation name="1084">
+									<cardinality max="1" min="1"/>
+									<solitaryFeature name="_id_167">
+										<binaryRelation name="1085">
+										<cardinality max="1" min="1"/>
+										<solitaryFeature name="_id_168">
+										</solitaryFeature>
+
+										</binaryRelation>
+
+										<binaryRelation name="1086">
+										<cardinality max="1" min="0"/>
+										<solitaryFeature name="_id_169">
+											<setRelation name="1087">
+											<cardinality max="4" min="1"/>
+											<groupedFeature name="_id_171">
+											</groupedFeature>
+											<groupedFeature name="_id_172">
+											</groupedFeature>
+											<groupedFeature name="_id_173">
+											</groupedFeature>
+											<groupedFeature name="_id_174">
+											</groupedFeature>
+											</setRelation>
+
+										</solitaryFeature>
+
+										</binaryRelation>
+
+									</solitaryFeature>
+
+									</binaryRelation>
+
+							</groupedFeature>
+							<groupedFeature name="_id_175">
+									<setRelation name="1088">
+									<cardinality max="5" min="1"/>
+									<groupedFeature name="_id_177">
+									</groupedFeature>
+									<groupedFeature name="_id_178">
+									</groupedFeature>
+									<groupedFeature name="_id_179">
+									</groupedFeature>
+									<groupedFeature name="_id_180">
+									</groupedFeature>
+									<groupedFeature name="_id_181">
+									</groupedFeature>
+									</setRelation>
+
+							</groupedFeature>
+							</setRelation>
+
+						</solitaryFeature>
+
+						</binaryRelation>
+
+				</groupedFeature>
+				<groupedFeature name="eletronic_goods_fulfillment">
+						<binaryRelation name="1089">
+						<cardinality max="1" min="1"/>
+						<solitaryFeature name="_id_182">
+						</solitaryFeature>
+
+						</binaryRelation>
+
+						<binaryRelation name="1090">
+						<cardinality max="1" min="1"/>
+						<solitaryFeature name="_id_183">
+						</solitaryFeature>
+
+						</binaryRelation>
+
+				</groupedFeature>
+				<groupedFeature name="services_fulfillment">
+						<binaryRelation name="1091">
+						<cardinality max="1" min="0"/>
+						<solitaryFeature name="_id_184">
+						</solitaryFeature>
+
+						</binaryRelation>
+
+						<binaryRelation name="1092">
+						<cardinality max="1" min="0"/>
+						<solitaryFeature name="_id_185">
+						</solitaryFeature>
+
+						</binaryRelation>
+
+				</groupedFeature>
+				</setRelation>
+
+			</solitaryFeature>
+
+			</binaryRelation>
+
+		</solitaryFeature>
+
+		</binaryRelation>
+
+		<binaryRelation name="1093">
+		<cardinality max="1" min="0"/>
+		<solitaryFeature name="_id_186">
+			<binaryRelation name="1094">
+			<cardinality max="1" min="1"/>
+			<solitaryFeature name="_id_187">
+				<setRelation name="1095">
+				<cardinality max="9" min="1"/>
+				<groupedFeature name="customer_preferences">
+				</groupedFeature>
+				<groupedFeature name="_id_189">
+				</groupedFeature>
+				<groupedFeature name="_id_190">
+				</groupedFeature>
+				<groupedFeature name="targeting_criteria_previous_purchases">
+				</groupedFeature>
+				<groupedFeature name="_id_191">
+				</groupedFeature>
+				<groupedFeature name="wish_list_content">
+				</groupedFeature>
+				<groupedFeature name="previously_visited_pages">
+				</groupedFeature>
+				<groupedFeature name="_id_192">
+				</groupedFeature>
+				<groupedFeature name="_id_193">
+				</groupedFeature>
+				</setRelation>
+
+			</solitaryFeature>
+
+			</binaryRelation>
+
+			<binaryRelation name="1096">
+			<cardinality max="1" min="1"/>
+			<solitaryFeature name="_id_194">
+				<setRelation name="1097">
+				<cardinality max="3" min="1"/>
+				<groupedFeature name="_id_196">
+						<binaryRelation name="1098">
+						<cardinality max="1" min="1"/>
+						<solitaryFeature name="_id_197">
+							<setRelation name="1099">
+							<cardinality max="2" min="1"/>
+							<groupedFeature name="_id_199">
+							</groupedFeature>
+							<groupedFeature name="_id_200">
+							</groupedFeature>
+							</setRelation>
+
+						</solitaryFeature>
+
+						</binaryRelation>
+
+						<binaryRelation name="1100">
+						<cardinality max="1" min="1"/>
+						<solitaryFeature name="_id_201">
+							<setRelation name="1101">
+							<cardinality max="2" min="1"/>
+							<groupedFeature name="_id_203">
+							</groupedFeature>
+							<groupedFeature name="_id_204">
+									<binaryRelation name="1102">
+									<cardinality max="1" min="1"/>
+									<solitaryFeature name="_id_205">
+									</solitaryFeature>
+
+									</binaryRelation>
+
+							</groupedFeature>
+							</setRelation>
+
+						</solitaryFeature>
+
+						</binaryRelation>
+
+						<binaryRelation name="1103">
+						<cardinality max="1" min="0"/>
+						<solitaryFeature name="_id_206">
+						</solitaryFeature>
+
+						</binaryRelation>
+
+						<binaryRelation name="1104">
+						<cardinality max="1" min="0"/>
+						<solitaryFeature name="_id_207">
+						</solitaryFeature>
+
+						</binaryRelation>
+
+				</groupedFeature>
+				<groupedFeature name="discounts">
+						<binaryRelation name="1105">
+						<cardinality max="1" min="1"/>
+						<solitaryFeature name="_id_208">
+							<binaryRelation name="1106">
+							<cardinality max="1" min="1"/>
+							<solitaryFeature name="_id_209">
+							</solitaryFeature>
+
+							</binaryRelation>
+
+							<binaryRelation name="1107">
+							<cardinality max="1" min="1"/>
+							<solitaryFeature name="_id_210">
+							</solitaryFeature>
+
+							</binaryRelation>
+
+							<binaryRelation name="1108">
+							<cardinality max="1" min="0"/>
+							<solitaryFeature name="_id_211">
+							</solitaryFeature>
+
+							</binaryRelation>
+
+						</solitaryFeature>
+
+						</binaryRelation>
+
+						<binaryRelation name="1109">
+						<cardinality max="1" min="1"/>
+						<solitaryFeature name="_id_212">
+							<setRelation name="1110">
+							<cardinality max="3" min="1"/>
+							<groupedFeature name="_id_214">
+							</groupedFeature>
+							<groupedFeature name="_id_215">
+							</groupedFeature>
+							<groupedFeature name="_id_216">
+							</groupedFeature>
+							</setRelation>
+
+						</solitaryFeature>
+
+						</binaryRelation>
+
+						<binaryRelation name="1111">
+						<cardinality max="1" min="1"/>
+						<solitaryFeature name="_id_217">
+							<binaryRelation name="1112">
+							<cardinality max="1" min="0"/>
+							<solitaryFeature name="_id_218">
+							</solitaryFeature>
+
+							</binaryRelation>
+
+							<binaryRelation name="1113">
+							<cardinality max="1" min="0"/>
+							<solitaryFeature name="_id_219">
+							</solitaryFeature>
+
+							</binaryRelation>
+
+						</solitaryFeature>
+
+						</binaryRelation>
+
+						<binaryRelation name="1114">
+						<cardinality max="1" min="1"/>
+						<solitaryFeature name="_id_220">
+							<setRelation name="1115">
+							<cardinality max="2" min="1"/>
+							<groupedFeature name="_id_222">
+							</groupedFeature>
+							<groupedFeature name="_id_223">
+							</groupedFeature>
+							</setRelation>
+
+						</solitaryFeature>
+
+						</binaryRelation>
+
+						<binaryRelation name="1116">
+						<cardinality max="1" min="0"/>
+						<solitaryFeature name="_id_224">
+						</solitaryFeature>
+
+						</binaryRelation>
+
+						<binaryRelation name="1117">
+						<cardinality max="1" min="1"/>
+						<solitaryFeature name="_id_225">
+						</solitaryFeature>
+
+						</binaryRelation>
+
+				</groupedFeature>
+				<groupedFeature name="_id_226">
+						<setRelation name="1118">
+						<cardinality max="3" min="1"/>
+						<groupedFeature name="_id_228">
+						</groupedFeature>
+						<groupedFeature name="_id_229">
+								<binaryRelation name="1119">
+								<cardinality max="1" min="1"/>
+								<solitaryFeature name="_id_230">
+								</solitaryFeature>
+
+								</binaryRelation>
+
+						</groupedFeature>
+						<groupedFeature name="_id_231">
+								<binaryRelation name="1120">
+								<cardinality max="1" min="1"/>
+								<solitaryFeature name="_id_232">
+								</solitaryFeature>
+
+								</binaryRelation>
+
+						</groupedFeature>
+						</setRelation>
+
+				</groupedFeature>
+				</setRelation>
+
+			</solitaryFeature>
+
+			</binaryRelation>
+
+			<binaryRelation name="1121">
+			<cardinality max="1" min="1"/>
+			<solitaryFeature name="_id_233">
+				<setRelation name="1122">
+				<cardinality max="3" min="1"/>
+				<groupedFeature name="_id_235">
+				</groupedFeature>
+				<groupedFeature name="_id_236">
+				</groupedFeature>
+				<groupedFeature name="_id_237">
+						<binaryRelation name="1123">
+						<cardinality max="1" min="0"/>
+						<solitaryFeature name="personalized_emails">
+						</solitaryFeature>
+
+						</binaryRelation>
+
+						<binaryRelation name="1124">
+						<cardinality max="1" min="0"/>
+						<solitaryFeature name="_id_238">
+						</solitaryFeature>
+
+						</binaryRelation>
+
+				</groupedFeature>
+				</setRelation>
+
+			</solitaryFeature>
+
+			</binaryRelation>
+
+			<binaryRelation name="1125">
+			<cardinality max="1" min="0"/>
+			<solitaryFeature name="_id_239">
+			</solitaryFeature>
+
+			</binaryRelation>
+
+		</solitaryFeature>
+
+		</binaryRelation>
+
+		<binaryRelation name="1126">
+		<cardinality max="1" min="0"/>
+		<solitaryFeature name="_id_240">
+			<binaryRelation name="1127">
+			<cardinality max="1" min="1"/>
+			<solitaryFeature name="_id_241">
+			</solitaryFeature>
+
+			</binaryRelation>
+
+			<binaryRelation name="1128">
+			<cardinality max="1" min="1"/>
+			<solitaryFeature name="_id_242">
+			</solitaryFeature>
+
+			</binaryRelation>
+
+		</solitaryFeature>
+
+		</binaryRelation>
+
+		<binaryRelation name="1129">
+		<cardinality max="1" min="0"/>
+		<solitaryFeature name="inventory_tracking">
+			<binaryRelation name="1130">
+			<cardinality max="1" min="0"/>
+			<solitaryFeature name="_id_243">
+			</solitaryFeature>
+
+			</binaryRelation>
+
+		</solitaryFeature>
+
+		</binaryRelation>
+
+		<binaryRelation name="1131">
+		<cardinality max="1" min="0"/>
+		<solitaryFeature name="procurement">
+			<binaryRelation name="1132">
+			<cardinality max="1" min="1"/>
+			<solitaryFeature name="_id_244">
+				<binaryRelation name="1133">
+				<cardinality max="1" min="1"/>
+				<solitaryFeature name="_id_245">
+				</solitaryFeature>
+
+				</binaryRelation>
+
+				<binaryRelation name="1134">
+				<cardinality max="1" min="0"/>
+				<solitaryFeature name="automatic">
+					<binaryRelation name="1135">
+					<cardinality max="1" min="1"/>
+					<solitaryFeature name="_id_246">
+					</solitaryFeature>
+
+					</binaryRelation>
+
+				</solitaryFeature>
+
+				</binaryRelation>
+
+			</solitaryFeature>
+
+			</binaryRelation>
+
+		</solitaryFeature>
+
+		</binaryRelation>
+
+		<binaryRelation name="1136">
+		<cardinality max="1" min="0"/>
+		<solitaryFeature name="reporting_and_analysis">
+			<binaryRelation name="1137">
+			<cardinality max="1" min="1"/>
+			<solitaryFeature name="_id_247">
+			</solitaryFeature>
+
+			</binaryRelation>
+
+			<binaryRelation name="1138">
+			<cardinality max="1" min="1"/>
+			<solitaryFeature name="_id_248">
+			</solitaryFeature>
+
+			</binaryRelation>
+
+			<binaryRelation name="1139">
+			<cardinality max="1" min="1"/>
+			<solitaryFeature name="_id_249">
+			</solitaryFeature>
+
+			</binaryRelation>
+
+		</solitaryFeature>
+
+		</binaryRelation>
+
+		<binaryRelation name="1140">
+		<cardinality max="1" min="0"/>
+		<solitaryFeature name="_id_250">
+			<setRelation name="1141">
+			<cardinality max="4" min="1"/>
+			<groupedFeature name="fulfillment_system">
+			</groupedFeature>
+			<groupedFeature name="_id_252">
+			</groupedFeature>
+			<groupedFeature name="procurement_system">
+			</groupedFeature>
+			<groupedFeature name="_id_253">
+			</groupedFeature>
+			</setRelation>
+
+		</solitaryFeature>
+
+		</binaryRelation>
+
+		<binaryRelation name="1142">
+		<cardinality max="1" min="1"/>
+		<solitaryFeature name="_id_254">
+			<binaryRelation name="1143">
+			<cardinality max="1" min="1"/>
+			<solitaryFeature name="_id_255">
+				<binaryRelation name="1144">
+				<cardinality max="1" min="1"/>
+				<solitaryFeature name="_id_256">
+				</solitaryFeature>
+
+				</binaryRelation>
+
+				<binaryRelation name="1145">
+				<cardinality max="1" min="1"/>
+				<solitaryFeature name="_id_257">
+				</solitaryFeature>
+
+				</binaryRelation>
+
+				<binaryRelation name="1146">
+				<cardinality max="1" min="1"/>
+				<solitaryFeature name="_id_258">
+				</solitaryFeature>
+
+				</binaryRelation>
+
+				<binaryRelation name="1147">
+				<cardinality max="1" min="0"/>
+				<solitaryFeature name="_id_259">
+				</solitaryFeature>
+
+				</binaryRelation>
+
+			</solitaryFeature>
+
+			</binaryRelation>
+
+			<binaryRelation name="1148">
+			<cardinality max="1" min="1"/>
+			<solitaryFeature name="_id_260">
+				<binaryRelation name="1149">
+				<cardinality max="1" min="1"/>
+				<solitaryFeature name="_id_261">
+				</solitaryFeature>
+
+				</binaryRelation>
+
+				<binaryRelation name="1150">
+				<cardinality max="1" min="1"/>
+				<solitaryFeature name="_id_262">
+				</solitaryFeature>
+
+				</binaryRelation>
+
+				<binaryRelation name="1151">
+				<cardinality max="1" min="1"/>
+				<solitaryFeature name="_id_263">
+				</solitaryFeature>
+
+				</binaryRelation>
+
+			</solitaryFeature>
+
+			</binaryRelation>
+
+		</solitaryFeature>
+
+		</binaryRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+</feature>
+<requires feature="wish_list" name="c13a" requires="wish_list_saved_after_session"/>
+<!-- c13b: registration or wish_list_saved_after_session -->
+<requires feature="eletronic_goods" name="c9b" requires="size"/>
+<requires feature="physical_goods" name="c9a" requires="size"/>
+<requires feature="eletronic_goods" name="c6" requires="eletronic_goods_fulfillment"/>
+<requires feature="user_behaviour_tracking_info" name="c5" requires="user_behaviour_tracking"/>
+<requires feature="quick_checkout" name="c4" requires="quick_checkout_profile"/>
+<requires feature="customer_preferences" name="c3" requires="preferences"/>
+<requires feature="services" name="c8" requires="services_fulfillment"/>
+<requires feature="physical_goods" name="c7" requires="physical_goods_fulfillment"/>
+<requires feature="wish_list_content" name="c17" requires="wish_list"/>
+<requires feature="registered_checkout" name="c2b" requires="register_to_buy"/>
+<requires feature="registered_checkout" name="c2a" requires="registration_enforcement"/>
+<requires feature="shipping_options" name="c16" requires="shipping"/>
+<!-- c18: (~previously_visited_pages) or locally_visited_pages or external_referring_pages -->
+<requires feature="special_offers" name="c1" requires="discounts"/>
+<requires feature="availability" name="c11" requires="inventory_tracking"/>
+<requires feature="physical_goods" name="c10" requires="weight"/>
+<requires feature="category_page" name="c12" requires="categories"/>
+<requires feature="permissions" name="c15" requires="registration"/>
+<requires feature="email_wish_list" name="c14" requires="registration"/>
+</feature-model>

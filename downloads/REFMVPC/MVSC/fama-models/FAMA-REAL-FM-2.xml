@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature-model xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.tdg-seville.info/benavides/featuremodelling/feature-model.xsd">
+<feature name="Weather Station">
+	<binaryRelation name="882">
+	<cardinality max="1" min="1"/>
+	<solitaryFeature name="measurements">
+		<setRelation name="883">
+		<cardinality max="3" min="1"/>
+		<groupedFeature name="pressure">
+		</groupedFeature>
+		<groupedFeature name="temperature">
+		</groupedFeature>
+		<groupedFeature name="wind_speed">
+		</groupedFeature>
+		</setRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="884">
+	<cardinality max="1" min="1"/>
+	<solitaryFeature name="data_source">
+		<setRelation name="885">
+		<cardinality max="1" min="1"/>
+		<groupedFeature name="internet">
+		</groupedFeature>
+		<groupedFeature name="demo">
+		</groupedFeature>
+		<groupedFeature name="external_services">
+		</groupedFeature>
+		</setRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="886">
+	<cardinality max="1" min="1"/>
+	<solitaryFeature name="output_format">
+		<setRelation name="887">
+		<cardinality max="1" min="1"/>
+		<groupedFeature name="text">
+		</groupedFeature>
+		<groupedFeature name="web_server">
+		</groupedFeature>
+		<groupedFeature name="file">
+		</groupedFeature>
+		</setRelation>
+
+		<binaryRelation name="888">
+		<cardinality max="1" min="1"/>
+		<solitaryFeature name="format">
+			<setRelation name="889">
+			<cardinality max="1" min="1"/>
+			<groupedFeature name="xml">
+			</groupedFeature>
+			<groupedFeature name="html">
+			</groupedFeature>
+			<groupedFeature name="plain_text">
+			</groupedFeature>
+			</setRelation>
+
+		</solitaryFeature>
+
+		</binaryRelation>
+
+		<binaryRelation name="890">
+		<cardinality max="1" min="1"/>
+		<solitaryFeature name="language">
+			<setRelation name="891">
+			<cardinality max="1" min="1"/>
+			<groupedFeature name="english">
+			</groupedFeature>
+			<groupedFeature name="german">
+			</groupedFeature>
+			</setRelation>
+
+		</solitaryFeature>
+
+		</binaryRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="892">
+	<cardinality max="1" min="0"/>
+	<solitaryFeature name="alarm">
+		<setRelation name="893">
+		<cardinality max="2" min="1"/>
+		<groupedFeature name="freeze_point">
+		</groupedFeature>
+		<groupedFeature name="storm_alert">
+		</groupedFeature>
+		</setRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+</feature>
+<requires feature="freeze_point" name="c1" requires="temperature"/>
+<excludes feature="text" name="c2" excludes="xml"/>
+</feature-model>

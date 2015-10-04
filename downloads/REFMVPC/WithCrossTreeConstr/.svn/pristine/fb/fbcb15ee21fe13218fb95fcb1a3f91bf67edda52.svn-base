@@ -1,0 +1,59 @@
+package fma;
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.HashSet;
+import java.util.Set;
+
+
+public class Reader {
+	/**
+	 * Reads a file of the format:
+	 * A B C D E F G H I
+	 * 111110000
+	 * 010101011
+	 * 111000111
+	 * ...
+	 * @param path file which contains the product-set
+	 * @param products Set in which the products are stores
+	 * @param features Set in which a list of features is stored
+	 */
+	public static void readProduct(String path, Set<Product> products, Set<Feature> features, String splitBy){
+		try {
+			BufferedReader in = new BufferedReader(new FileReader(path));
+			//read the list of feature namess
+			String[] names = in.readLine().split(splitBy);
+			
+			String line=in.readLine();
+			char lineC[];
+			
+			
+			//Generate all features
+			Feature[] attrs = new Feature[line.length()];
+			for(int i=0; i<line.length(); i++){
+				attrs[i] = new Feature(names[i]);
+				features.add(attrs[i]);
+			}
+			
+			//Fill Product Set
+			Set<Feature> prodAttrs;
+			while(line!=null){
+				lineC=line.toCharArray();
+				prodAttrs = new HashSet<Feature>();
+				for(int i=0; i<lineC.length; i++){
+					if(lineC[i]=='1'){
+						prodAttrs.add(attrs[i]);
+					}
+				}
+				products.add(new Product(prodAttrs));
+				line=in.readLine();
+			}
+			
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+}

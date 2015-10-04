@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature-model xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.tdg-seville.info/benavides/featuremodelling/feature-model.xsd">
+<feature name="card_product">
+	<binaryRelation name="125">
+	<cardinality max="1" min="1"/>
+	<solitaryFeature name="Fees_and_Charges">
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="126">
+	<cardinality max="1" min="1"/>
+	<solitaryFeature name="Interest_Rates">
+		<binaryRelation name="127">
+		<cardinality max="1" min="0"/>
+		<solitaryFeature name="Balance_Transfer_Rate">
+		</solitaryFeature>
+
+		</binaryRelation>
+
+		<binaryRelation name="128">
+		<cardinality max="1" min="0"/>
+		<solitaryFeature name="Interest_Free_Days">
+		</solitaryFeature>
+
+		</binaryRelation>
+
+		<binaryRelation name="129">
+		<cardinality max="1" min="0"/>
+		<solitaryFeature name="Cash_Advance_Rate">
+		</solitaryFeature>
+
+		</binaryRelation>
+
+		<binaryRelation name="130">
+		<cardinality max="1" min="1"/>
+		<solitaryFeature name="Interest_Rate">
+		</solitaryFeature>
+
+		</binaryRelation>
+
+		<binaryRelation name="131">
+		<cardinality max="1" min="1"/>
+		<solitaryFeature name="Variable_Interest_Rate">
+		</solitaryFeature>
+
+		</binaryRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="132">
+	<cardinality max="1" min="1"/>
+	<solitaryFeature name="Payments">
+		<binaryRelation name="133">
+		<cardinality max="1" min="0"/>
+		<solitaryFeature name="Deferred">
+		</solitaryFeature>
+
+		</binaryRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="134">
+	<cardinality max="1" min="1"/>
+	<solitaryFeature name="Rewards">
+		<binaryRelation name="135">
+		<cardinality max="1" min="0"/>
+		<solitaryFeature name="Fly_by_Points">
+		</solitaryFeature>
+
+		</binaryRelation>
+
+		<binaryRelation name="136">
+		<cardinality max="1" min="0"/>
+		<solitaryFeature name="Fuel_Savings">
+		</solitaryFeature>
+
+		</binaryRelation>
+
+		<binaryRelation name="137">
+		<cardinality max="1" min="0"/>
+		<solitaryFeature name="GO_Business_Rewards">
+		</solitaryFeature>
+
+		</binaryRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="138">
+	<cardinality max="1" min="1"/>
+	<solitaryFeature name="Credit">
+		<binaryRelation name="139">
+		<cardinality max="1" min="1"/>
+		<solitaryFeature name="Minimum_Credit_Limit">
+		</solitaryFeature>
+
+		</binaryRelation>
+
+		<binaryRelation name="140">
+		<cardinality max="1" min="1"/>
+		<solitaryFeature name="Maximum_Credit_Limit">
+		</solitaryFeature>
+
+		</binaryRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="141">
+	<cardinality max="1" min="0"/>
+	<solitaryFeature name="Card">
+		<binaryRelation name="142">
+		<cardinality max="1" min="0"/>
+		<solitaryFeature name="Multiple_Cards">
+		</solitaryFeature>
+
+		</binaryRelation>
+
+		<binaryRelation name="143">
+		<cardinality max="1" min="0"/>
+		<solitaryFeature name="Name_on_Card">
+		</solitaryFeature>
+
+		</binaryRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+</feature>
+</feature-model>

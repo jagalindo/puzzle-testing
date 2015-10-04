@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Package xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_omhuTzsREd-r0M1vIKBI_g" name="DFS" visibility="public">
+  <packageImport xmi:id="_omhuUDsREd-r0M1vIKBI_g">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Class" xmi:id="_omhuUTsREd-r0M1vIKBI_g" name="WorkSpace" visibility="public" isAbstract="false">
+    <ownedOperation xmi:id="_omhuUjsREd-r0M1vIKBI_g" name="init_vertex">
+      <ownedParameter xmi:id="_omhuUzsREd-r0M1vIKBI_g" name="v" type="_omhuZTsREd-r0M1vIKBI_g"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_omhuVDsREd-r0M1vIKBI_g" name="preVisitAction">
+      <ownedParameter xmi:id="_omhuVTsREd-r0M1vIKBI_g" name="v" type="_omhuZTsREd-r0M1vIKBI_g"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_omhuVjsREd-r0M1vIKBI_g" name="postVisitAction">
+      <ownedParameter xmi:id="_omhuVzsREd-r0M1vIKBI_g" name="v" type="_omhuZTsREd-r0M1vIKBI_g"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_omhuWDsREd-r0M1vIKBI_g" name="nextRegionAction">
+      <ownedParameter xmi:id="_omhuWTsREd-r0M1vIKBI_g" name="v" type="_omhuZTsREd-r0M1vIKBI_g"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_omhuWjsREd-r0M1vIKBI_g" name="checkNeighborAction">
+      <ownedParameter xmi:id="_omhuWzsREd-r0M1vIKBI_g" name="vsource" type="_omhuZTsREd-r0M1vIKBI_g"/>
+      <ownedParameter xmi:id="_omhuXDsREd-r0M1vIKBI_g" name="vtarget" type="_omhuZTsREd-r0M1vIKBI_g"/>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_omhuXTsREd-r0M1vIKBI_g" name="Graph" visibility="public" isAbstract="false">
+    <ownedBehavior xmi:type="uml:StateMachine" xmi:id="_omhuXjsREd-r0M1vIKBI_g" name="StateMachine" visibility="public" isAbstract="false">
+      <region xmi:id="_omhuXzsREd-r0M1vIKBI_g" name="Region1">
+        <subvertex xmi:type="uml:State" xmi:id="_omhuYDsREd-r0M1vIKBI_g" name="State1"/>
+        <subvertex xmi:type="uml:State" xmi:id="_omhuYTsREd-r0M1vIKBI_g" name="State2"/>
+        <transition xmi:id="_omhuYjsREd-r0M1vIKBI_g" name="GraphSearch" target="_omhuYTsREd-r0M1vIKBI_g" source="_omhuYDsREd-r0M1vIKBI_g"/>
+      </region>
+    </ownedBehavior>
+    <ownedOperation xmi:id="_omhuYzsREd-r0M1vIKBI_g" name="GraphSearch">
+      <ownedParameter xmi:id="_omhuZDsREd-r0M1vIKBI_g" name="w" type="_omhuUTsREd-r0M1vIKBI_g"/>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_omhuZTsREd-r0M1vIKBI_g" name="Vertex" visibility="public" isAbstract="false">
+    <ownedAttribute xmi:id="_omhuZjsREd-r0M1vIKBI_g" name="visited" visibility="private" isReadOnly="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+    </ownedAttribute>
+    <ownedOperation xmi:id="_omhuZzsREd-r0M1vIKBI_g" name="VertexConstructor"/>
+    <ownedOperation xmi:id="_omhuaDsREd-r0M1vIKBI_g" name="init_vertex">
+      <ownedParameter xmi:id="_omhuaTsREd-r0M1vIKBI_g" name="w" type="_omhuUTsREd-r0M1vIKBI_g"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_omhuajsREd-r0M1vIKBI_g" name="nodeSearch">
+      <ownedParameter xmi:id="_omhuazsREd-r0M1vIKBI_g" name="w" type="_omhuUTsREd-r0M1vIKBI_g"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_omhubDsREd-r0M1vIKBI_g" name="display"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Collaboration" xmi:id="_omhubTsREd-r0M1vIKBI_g" name="Collaboration1" visibility="public">
+    <ownedBehavior xmi:type="uml:Interaction" xmi:id="_omhubjsREd-r0M1vIKBI_g" name="Interaction" visibility="public" isAbstract="false">
+      <ownedConnector xmi:id="_omhubzsREd-r0M1vIKBI_g">
+        <end xmi:id="_omhucDsREd-r0M1vIKBI_g" role="_omhugDsREd-r0M1vIKBI_g"/>
+        <end xmi:id="_omhucTsREd-r0M1vIKBI_g" role="_omhugDsREd-r0M1vIKBI_g"/>
+      </ownedConnector>
+      <ownedConnector xmi:id="_omhucjsREd-r0M1vIKBI_g">
+        <end xmi:id="_omhuczsREd-r0M1vIKBI_g" role="_omhugTsREd-r0M1vIKBI_g"/>
+        <end xmi:id="_omhudDsREd-r0M1vIKBI_g" role="_omhugDsREd-r0M1vIKBI_g"/>
+      </ownedConnector>
+      <lifeline xmi:id="_omhudTsREd-r0M1vIKBI_g" name="graph" represents="_omhugDsREd-r0M1vIKBI_g" coveredBy="_omhueTsREd-r0M1vIKBI_g _omhufTsREd-r0M1vIKBI_g"/>
+      <lifeline xmi:id="_omhudjsREd-r0M1vIKBI_g" name="vertexIter" represents="_omhugTsREd-r0M1vIKBI_g" coveredBy="_omhuejsREd-r0M1vIKBI_g _omhuezsREd-r0M1vIKBI_g _omhufDsREd-r0M1vIKBI_g"/>
+      <lifeline xmi:id="_omhudzsREd-r0M1vIKBI_g" name="vertex" represents="_omhugjsREd-r0M1vIKBI_g"/>
+      <lifeline xmi:id="_omhueDsREd-r0M1vIKBI_g" name="workSpace" represents="_omhugzsREd-r0M1vIKBI_g"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_omhueTsREd-r0M1vIKBI_g" covered="_omhudTsREd-r0M1vIKBI_g" event="_omhuhjsREd-r0M1vIKBI_g" message="_omhufjsREd-r0M1vIKBI_g"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_omhuejsREd-r0M1vIKBI_g" covered="_omhudjsREd-r0M1vIKBI_g" event="_omhuhzsREd-r0M1vIKBI_g" message="_omhufjsREd-r0M1vIKBI_g"/>
+      <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_omhuezsREd-r0M1vIKBI_g" covered="_omhudjsREd-r0M1vIKBI_g" start="_omhuejsREd-r0M1vIKBI_g" finish="_omhufDsREd-r0M1vIKBI_g"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_omhufDsREd-r0M1vIKBI_g" covered="_omhudjsREd-r0M1vIKBI_g" event="_omhuhjsREd-r0M1vIKBI_g" message="_omhufzsREd-r0M1vIKBI_g"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_omhufTsREd-r0M1vIKBI_g" covered="_omhudTsREd-r0M1vIKBI_g" event="_omhuhzsREd-r0M1vIKBI_g" message="_omhufzsREd-r0M1vIKBI_g"/>
+      <message xmi:id="_omhufjsREd-r0M1vIKBI_g" name="hasNext" receiveEvent="_omhuejsREd-r0M1vIKBI_g" sendEvent="_omhueTsREd-r0M1vIKBI_g" connector="_omhucjsREd-r0M1vIKBI_g"/>
+      <message xmi:id="_omhufzsREd-r0M1vIKBI_g" name="hasNext" messageSort="reply" receiveEvent="_omhufTsREd-r0M1vIKBI_g" sendEvent="_omhufDsREd-r0M1vIKBI_g" connector="_omhucjsREd-r0M1vIKBI_g"/>
+    </ownedBehavior>
+    <ownedAttribute xmi:id="_omhugDsREd-r0M1vIKBI_g" name="graph" type="_omhuXTsREd-r0M1vIKBI_g" isReadOnly="false"/>
+    <ownedAttribute xmi:id="_omhugTsREd-r0M1vIKBI_g" name="vertexIter" isReadOnly="false">
+      <type xmi:type="uml:Class" href="Base.uml#_omiVcTsREd-r0M1vIKBI_g"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_omhugjsREd-r0M1vIKBI_g" name="vertex" type="_omhuZTsREd-r0M1vIKBI_g" isReadOnly="false"/>
+    <ownedAttribute xmi:id="_omhugzsREd-r0M1vIKBI_g" name="workSpace" type="_omhuUTsREd-r0M1vIKBI_g" isReadOnly="false"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_omhuhDsREd-r0M1vIKBI_g" name="SendOperationEvent1" visibility="public"/>
+  <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_omhuhTsREd-r0M1vIKBI_g" name="ReceiveOperationEvent1" visibility="public"/>
+  <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_omhuhjsREd-r0M1vIKBI_g" name="SendOperationEvent2" visibility="public">
+    <operation href="Base.uml#_omiVcjsREd-r0M1vIKBI_g"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_omhuhzsREd-r0M1vIKBI_g" name="ReceiveOperationEvent2" visibility="public">
+    <operation href="Base.uml#_omiVcjsREd-r0M1vIKBI_g"/>
+  </packagedElement>
+  <profileApplication xmi:id="_omhuiDsREd-r0M1vIKBI_g">
+    <eAnnotations xmi:id="_omhuiTsREd-r0M1vIKBI_g" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <references xmi:type="ecore:EPackage" href="pathmap://UML_PROFILES/Standard.profile.uml#_yzU58YinEdqtvbnfB2L_5w"/>
+    </eAnnotations>
+    <appliedProfile href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
+  </profileApplication>
+</uml:Package>

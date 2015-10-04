@@ -1,0 +1,21 @@
+<feature_model name="sizes">
+<feature_tree>
+:r sizes (sizes)
+	:m tecom (tecom)
+	:m rack (rack)
+	:o messaging (messaging)
+		:o upgrade_swpack (upgrade_swpack)
+	:o ipvoice (ipvoice)
+		:m software (software)
+		:g [1, 1]
+			: swpack1 (swpack1)
+			: swpack2 (swpack2)
+	:g [1, 1]
+		: medium (medium)
+		: large (large)
+		: small (small)
+</feature_tree>
+<constraints>
+constraint_1:~swpack1 or ~upgrade_swpack
+</constraints>
+</feature_model>

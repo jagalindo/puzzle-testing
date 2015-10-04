@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature-model xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.tdg-seville.info/benavides/featuremodelling/feature-model.xsd">
+<feature name="GPL">
+	<binaryRelation name="102">
+	<cardinality max="1" min="1"/>
+	<solitaryFeature name="Graph_Type">
+		<setRelation name="103">
+		<cardinality max="1" min="1"/>
+		<groupedFeature name="directed">
+		</groupedFeature>
+		<groupedFeature name="undirected">
+		</groupedFeature>
+		</setRelation>
+
+		<setRelation name="104">
+		<cardinality max="1" min="1"/>
+		<groupedFeature name="weighted">
+		</groupedFeature>
+		<groupedFeature name="unweighted">
+		</groupedFeature>
+		</setRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="105">
+	<cardinality max="1" min="0"/>
+	<solitaryFeature name="search">
+		<setRelation name="106">
+		<cardinality max="1" min="1"/>
+		<groupedFeature name="DFS">
+		</groupedFeature>
+		<groupedFeature name="BFS">
+		</groupedFeature>
+		</setRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="107">
+	<cardinality max="1" min="1"/>
+	<solitaryFeature name="Algorithms">
+		<setRelation name="108">
+		<cardinality max="5" min="1"/>
+		<groupedFeature name="Shortest_Path">
+		</groupedFeature>
+		<groupedFeature name="Coloring">
+				<setRelation name="109">
+				<cardinality max="2" min="1"/>
+				<groupedFeature name="Approximation">
+				</groupedFeature>
+				<groupedFeature name="Brute_Force">
+				</groupedFeature>
+				</setRelation>
+
+		</groupedFeature>
+		<groupedFeature name="Cycle_Detection">
+		</groupedFeature>
+		<groupedFeature name="MST">
+		</groupedFeature>
+		<groupedFeature name="Strongly_Connected">
+		</groupedFeature>
+		</setRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+</feature>
+<requires feature="Strongly_Connected" name="constraint_6" requires="directed"/>
+<requires feature="Cycle_Detection" name="constraint_4" requires="DFS"/>
+<requires feature="Strongly_Connected" name="constraint_5" requires="DFS"/>
+</feature-model>

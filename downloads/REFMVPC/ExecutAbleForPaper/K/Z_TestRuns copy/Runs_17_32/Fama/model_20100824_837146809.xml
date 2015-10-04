@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature-model xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.tdg-seville.info/benavides/featuremodelling/feature-model.xsd">
+<feature name="StoreFront">
+	<binaryRelation name="183">
+	<cardinality max="1" min="1"/>
+	<solitaryFeature name="HomePage">
+		<setRelation name="184">
+		<cardinality max="2" min="1"/>
+		<groupedFeature name="StaticContent">
+		</groupedFeature>
+		<groupedFeature name="DynamicContent">
+				<binaryRelation name="185">
+				<cardinality max="1" min="1"/>
+				<solitaryFeature name="ContentType">
+					<setRelation name="186">
+					<cardinality max="2" min="1"/>
+					<groupedFeature name="WelcomeMessage">
+					</groupedFeature>
+					<groupedFeature name="SpecialOffers">
+					</groupedFeature>
+					</setRelation>
+
+				</solitaryFeature>
+
+				</binaryRelation>
+
+				<binaryRelation name="187">
+				<cardinality max="1" min="1"/>
+				<solitaryFeature name="VariationSource">
+					<setRelation name="188">
+					<cardinality max="2" min="1"/>
+					<groupedFeature name="TimeDependant">
+					</groupedFeature>
+					<groupedFeature name="Personalized">
+					</groupedFeature>
+					</setRelation>
+
+				</solitaryFeature>
+
+				</binaryRelation>
+
+		</groupedFeature>
+		</setRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="189">
+	<cardinality max="1" min="0"/>
+	<solitaryFeature name="UserBehTrack">
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="190">
+	<cardinality max="1" min="1"/>
+	<solitaryFeature name="Catalog">
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="191">
+	<cardinality max="1" min="0"/>
+	<solitaryFeature name="WishList">
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="192">
+	<cardinality max="1" min="1"/>
+	<solitaryFeature name="BuyPath">
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="193">
+	<cardinality max="1" min="0"/>
+	<solitaryFeature name="CustomerService">
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="194">
+	<cardinality max="1" min="0"/>
+	<solitaryFeature name="Registration">
+		<binaryRelation name="195">
+		<cardinality max="1" min="1"/>
+		<solitaryFeature name="RegistEnforc">
+			<setRelation name="196">
+			<cardinality max="3" min="1"/>
+			<groupedFeature name="RegToBrowse">
+			</groupedFeature>
+			<groupedFeature name="RegToBuy">
+			</groupedFeature>
+			<groupedFeature name="None">
+			</groupedFeature>
+			</setRelation>
+
+		</solitaryFeature>
+
+		</binaryRelation>
+
+		<binaryRelation name="197">
+		<cardinality max="1" min="1"/>
+		<solitaryFeature name="RegistInform">
+		</solitaryFeature>
+
+		</binaryRelation>
+
+		<binaryRelation name="198">
+		<cardinality max="1" min="1"/>
+		<solitaryFeature name="UserBehTracInf">
+		</solitaryFeature>
+
+		</binaryRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+</feature>
+</feature-model>

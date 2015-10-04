@@ -1,0 +1,38 @@
+<!-- This model was created online using SPLOT's Feature Model Editor (http://www.splot-research.org) on Thu, Feb 3, 2011 - 9:06 AM  -->
+<feature_model name="IDE4OCL">
+<meta>
+<data name="description">OCL tools reference and comparison model</data>
+<data name="creator">Joanna Chimiak-Opoka</data>
+<data name="address"></data>
+<data name="email">joanna.opoka@uibk.ac.at</data>
+<data name="phone"></data>
+<data name="website"></data>
+<data name="organization">University of Innsbruck</data>
+<data name="department"></data>
+<data name="date"></data>
+<data name="reference"></data>
+</meta>
+<feature_tree>
+:r _r(_r)
+	:m _r_1(_r_1)
+	:m _r_2(_r_2)
+	:m _r_3(_r_3)
+	:m _r_4(_r_4)
+	:m _r_5(_r_5)
+		:m _r_5_8(_r_5_8)
+			:g (_r_5_8_15) [1,*] 
+				: _r_5_8_15_16(_r_5_8_15_16)
+				: _r_5_8_15_17(_r_5_8_15_17)
+				: _r_5_8_15_18(_r_5_8_15_18)
+			:o _r_5_8_20(_r_5_8_20)
+		:o _r_5_9(_r_5_9)
+		:o _r_5_11(_r_5_11)
+		:o _r_5_12(_r_5_12)
+		:o _r_5_13(_r_5_13)
+		:o _r_5_14(_r_5_14)
+	:o _r_6(_r_6)
+	:m _r_7(_r_7)
+</feature_tree>
+<constraints>
+</constraints>
+</feature_model>

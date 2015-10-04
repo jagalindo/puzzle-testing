@@ -1,0 +1,26 @@
+<feature_model name="gui">
+<feature_tree>
+:r gui (gui)
+	:m core (core)
+	:m modules (modules)
+	:m james (james)
+	:m user_mngt (user_mngt)
+	:o ws_interface (ws_interface)
+	:g [1, *]
+		: pda (pda)
+		: pc (pc)
+	:g [1, *]
+		: forum (forum)
+		: repository (repository)
+			:o congress_mngt (congress_mngt)
+		: calendar (calendar)
+	:g [1, 1]
+		: db (db)
+		: ldap (ldap)
+</feature_tree>
+<constraints>
+constraint_1:~repository or pc
+constraint_2:~pda or ~repository
+constraint_3:~pda or ~congress_mngt
+</constraints>
+</feature_model>

@@ -1,0 +1,18 @@
+<feature_model name="Car PL">
+<feature_tree>
+:r Car
+	:o Automated_Driving_Controller
+		:m Collision_Avoidance_Braking
+			:g [1,1]
+				: Standard_Avoidance
+				: enhanced_avoidance (enhanced_avoidance)
+		:o parallel_parking (parallel_parking)
+	:m Sensors
+		:o lateral_range_finder (lateral_range_finder)
+		:o forward_range_finder (forward_range_finder)
+</feature_tree>
+<constraints>
+c1: ~enhanced_avoidance or forward_range_finder
+c2: ~parallel_parking or lateral_range_finder
+</constraints>
+</feature_model>

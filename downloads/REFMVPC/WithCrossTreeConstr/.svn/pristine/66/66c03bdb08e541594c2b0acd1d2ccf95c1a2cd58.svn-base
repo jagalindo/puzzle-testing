@@ -1,0 +1,35 @@
+package fma;
+
+import java.util.*;
+
+public class MutexGraph {
+	private Map<Feature, Set<Feature>> excludes;
+	
+	public MutexGraph(){
+		excludes = new HashMap<Feature, Set<Feature>>();
+	}
+	
+	public void buildGraph(Set<Product> products, Set<Feature> features){
+		HashSet<Feature> exc;
+		for(Feature f : features){
+			exc = new HashSet<Feature>(features);
+			for(Product p : products){
+				if(p.contains(f)){
+					exc.removeAll(p.getFeatures());
+				}
+			}
+			if(exc.size()>0){
+				excludes.put(f, exc);
+			}
+		}
+	}
+
+	public Map<Feature, Set<Feature>> getExcludes() {
+		Map<Feature, Set<Feature>> ret = new HashMap<Feature, Set<Feature>>();
+		for(Feature f : excludes.keySet()){
+			ret.put(f, new HashSet<Feature>(excludes.get(f)));
+		}
+		return ret; 
+	}
+	
+}

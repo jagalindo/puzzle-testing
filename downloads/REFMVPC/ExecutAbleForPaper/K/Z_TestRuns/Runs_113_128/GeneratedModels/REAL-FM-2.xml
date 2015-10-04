@@ -1,0 +1,38 @@
+<feature_model name="weather_station">
+<feature_tree>
+:r weather_station (weather_station)
+	:m format (format)
+	:m data_source (data_source)
+	:m output_format (output_format)
+	:m language (language)
+	:m measurements (measurements)
+	:o alarm (alarm)
+		:g [1, *]
+			: storm_alert (storm_alert)
+			: freeze_point (freeze_point)
+	:g [1, *]
+		: pressure (pressure)
+		: temperature (temperature)
+		: wind_speed (wind_speed)
+	:g [1, 1]
+		: german (german)
+		: english (english)
+	:g [1, 1]
+		: demo (demo)
+		: external_services (external_services)
+		: internet (internet)
+	:g [1, 1]
+		: html (html)
+		: xml (xml)
+		: plain_text (plain_text)
+	:g [1, 1]
+		: file (file)
+		: web_server (web_server)
+		: text (text)
+</feature_tree>
+<constraints>
+constraint_1:~freeze_point or weather_station
+constraint_2:~freeze_point or temperature
+constraint_3:~xml or ~text
+</constraints>
+</feature_model>

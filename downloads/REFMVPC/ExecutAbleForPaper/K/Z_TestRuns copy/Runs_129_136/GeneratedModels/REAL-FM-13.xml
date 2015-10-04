@@ -1,0 +1,21 @@
+<feature_model name="rack">
+<feature_tree>
+:r rack (rack)
+	:m tecom (tecom)
+	:m sizes (sizes)
+	:o ipvoice (ipvoice)
+		:m software (software)
+		:g [1, 1]
+			: swpack1 (swpack1)
+			: swpack2 (swpack2)
+	:o messaging (messaging)
+		:o upgrade_swpack (upgrade_swpack)
+	:g [1, 1]
+		: medium (medium)
+		: large (large)
+		: small (small)
+</feature_tree>
+<constraints>
+constraint_1:~swpack1 or ~upgrade_swpack
+</constraints>
+</feature_model>

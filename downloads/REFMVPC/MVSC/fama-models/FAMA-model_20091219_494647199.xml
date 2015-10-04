@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature-model xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.tdg-seville.info/benavides/featuremodelling/feature-model.xsd">
+<feature name="E-Portal">
+	<binaryRelation name="257">
+	<cardinality max="1" min="1"/>
+	<solitaryFeature name="_r_1">
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="258">
+	<cardinality max="1" min="1"/>
+	<solitaryFeature name="_r_2">
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="259">
+	<cardinality max="1" min="1"/>
+	<solitaryFeature name="_r_3">
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="260">
+	<cardinality max="1" min="1"/>
+	<solitaryFeature name="_r_4">
+		<binaryRelation name="261">
+		<cardinality max="1" min="1"/>
+		<solitaryFeature name="_r_4_5">
+		</solitaryFeature>
+
+		</binaryRelation>
+
+		<binaryRelation name="262">
+		<cardinality max="1" min="0"/>
+		<solitaryFeature name="_r_4_6">
+		</solitaryFeature>
+
+		</binaryRelation>
+
+		<binaryRelation name="263">
+		<cardinality max="1" min="0"/>
+		<solitaryFeature name="_r_4_7">
+			<setRelation name="264">
+			<cardinality max="2" min="1"/>
+			<groupedFeature name="_r_4_7_9_10">
+			</groupedFeature>
+			<groupedFeature name="_r_4_7_9_11">
+			</groupedFeature>
+			</setRelation>
+
+		</solitaryFeature>
+
+		</binaryRelation>
+
+		<binaryRelation name="265">
+		<cardinality max="1" min="0"/>
+		<solitaryFeature name="_r_4_8">
+		</solitaryFeature>
+
+		</binaryRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+</feature>
+</feature-model>

@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature-model xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.tdg-seville.info/benavides/featuremodelling/feature-model.xsd">
+<feature name="Sienna">
+	<binaryRelation name="127">
+	<cardinality max="1" min="1"/>
+	<solitaryFeature name="Trim">
+		<binaryRelation name="128">
+		<cardinality max="1" min="1"/>
+		<solitaryFeature name="Grade">
+			<setRelation name="129">
+			<cardinality max="1" min="1"/>
+			<groupedFeature name="Base">
+			</groupedFeature>
+			<groupedFeature name="LE">
+			</groupedFeature>
+			<groupedFeature name="SE">
+			</groupedFeature>
+			<groupedFeature name="XLE">
+					<binaryRelation name="130">
+					<cardinality max="1" min="0"/>
+					<solitaryFeature name="XLE_Navigation_Package">
+					</solitaryFeature>
+
+					</binaryRelation>
+
+					<binaryRelation name="131">
+					<cardinality max="1" min="0"/>
+					<solitaryFeature name="XLE_Premium_Package">
+					</solitaryFeature>
+
+					</binaryRelation>
+
+			</groupedFeature>
+			<groupedFeature name="LTD">
+			</groupedFeature>
+			</setRelation>
+
+		</solitaryFeature>
+
+		</binaryRelation>
+
+		<binaryRelation name="132">
+		<cardinality max="1" min="1"/>
+		<solitaryFeature name="Engine">
+			<setRelation name="133">
+			<cardinality max="1" min="1"/>
+			<groupedFeature name="L4">
+			</groupedFeature>
+			<groupedFeature name="V6">
+			</groupedFeature>
+			</setRelation>
+
+		</solitaryFeature>
+
+		</binaryRelation>
+
+		<binaryRelation name="134">
+		<cardinality max="1" min="1"/>
+		<solitaryFeature name="Drive">
+			<setRelation name="135">
+			<cardinality max="1" min="1"/>
+			<groupedFeature name="TwoWd">
+			</groupedFeature>
+			<groupedFeature name="AWD">
+			</groupedFeature>
+			</setRelation>
+
+		</solitaryFeature>
+
+		</binaryRelation>
+
+		<binaryRelation name="136">
+		<cardinality max="1" min="1"/>
+		<solitaryFeature name="PsgrCount">
+			<setRelation name="137">
+			<cardinality max="1" min="1"/>
+			<groupedFeature name="SevenPSGR">
+			</groupedFeature>
+			<groupedFeature name="EightPSGR">
+			</groupedFeature>
+			</setRelation>
+
+		</solitaryFeature>
+
+		</binaryRelation>
+
+		<binaryRelation name="138">
+		<cardinality max="1" min="1"/>
+		<solitaryFeature name="ModelCode">
+			<setRelation name="139">
+			<cardinality max="1" min="1"/>
+			<groupedFeature name="Five312">
+			</groupedFeature>
+			<groupedFeature name="Five328">
+			</groupedFeature>
+			</setRelation>
+
+		</solitaryFeature>
+
+		</binaryRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="140">
+	<cardinality max="1" min="1"/>
+	<solitaryFeature name="Color">
+		<binaryRelation name="141">
+		<cardinality max="1" min="1"/>
+		<solitaryFeature name="ExteriorColor">
+			<setRelation name="142">
+			<cardinality max="1" min="1"/>
+			<groupedFeature name="Silver_Sky_Metallic">
+			</groupedFeature>
+			<groupedFeature name="Super_White">
+			</groupedFeature>
+			<groupedFeature name="Blizzard_Pearl">
+			</groupedFeature>
+			</setRelation>
+
+		</solitaryFeature>
+
+		</binaryRelation>
+
+		<binaryRelation name="143">
+		<cardinality max="1" min="1"/>
+		<solitaryFeature name="InteriorColor">
+			<setRelation name="144">
+			<cardinality max="1" min="1"/>
+			<groupedFeature name="Bisc">
+			</groupedFeature>
+			<groupedFeature name="Gray">
+			</groupedFeature>
+			<groupedFeature name="Charcoal">
+			</groupedFeature>
+			</setRelation>
+
+		</solitaryFeature>
+
+		</binaryRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="145">
+	<cardinality max="1" min="0"/>
+	<solitaryFeature name="Accessories">
+		<binaryRelation name="146">
+		<cardinality max="1" min="0"/>
+		<solitaryFeature name="Floor_Mats">
+		</solitaryFeature>
+
+		</binaryRelation>
+
+		<binaryRelation name="147">
+		<cardinality max="1" min="0"/>
+		<solitaryFeature name="Mud_Flaps">
+		</solitaryFeature>
+
+		</binaryRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="148">
+	<cardinality max="1" min="1"/>
+	<solitaryFeature name="Derived">
+		<binaryRelation name="149">
+		<cardinality max="1" min="1"/>
+		<solitaryFeature name="Antenna">
+			<setRelation name="150">
+			<cardinality max="1" min="1"/>
+			<groupedFeature name="In_Glass">
+			</groupedFeature>
+			<groupedFeature name="Pole">
+			</groupedFeature>
+			</setRelation>
+
+		</solitaryFeature>
+
+		</binaryRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+</feature>
+<requires feature="Five312" name="constraint_8" requires="Base"/>
+<requires feature="XLE_Premium_Package" name="constraint_10" requires="In_Glass"/>
+<requires feature="XLE_Navigation_Package" name="constraint_9" requires="In_Glass"/>
+<requires feature="LTD" name="constraint_6" requires="In_Glass"/>
+<requires feature="LE" name="constraint_4" requires="Pole"/>
+<requires feature="SE" name="constraint_5" requires="Pole"/>
+<requires feature="Charcoal" name="constraint_2" requires="SE"/>
+<requires feature="Base" name="constraint_3" requires="Pole"/>
+</feature-model>

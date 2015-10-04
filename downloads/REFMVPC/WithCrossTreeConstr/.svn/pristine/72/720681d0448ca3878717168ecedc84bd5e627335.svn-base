@@ -1,0 +1,816 @@
+package fma;
+
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Iterator;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
+import java.util.Stack;
+
+import com.sun.xml.internal.fastinfoset.sax.Features;
+
+import fma.ImplicationGraph.ImplicationNode;
+
+/**
+ * The Analyzer is able to retrieve the feature-model of a given set of
+ * products, if the relations in the product-set are ONLY xor-, or-, optional- 
+ * mandatory-relations and requires and excludes CTCs.
+ * 
+ * Therefore a preprocessing step is needed before using this analyzer. (extract
+ * mandatory features, with the MandAnalyzer)
+ */
+public class Analyzer {
+	FeatureModel fm;
+	MutexGraph mutGraph;
+	Set<Product> products;
+	Set<Feature> allFeatures;
+
+	Map<Feature, Set<Feature>> constrs;
+
+	public Analyzer() {
+		fm = new FeatureModel();
+		mutGraph = new MutexGraph();
+		constrs = new HashMap<Feature, Set<Feature>>();
+		allFeatures = new HashSet<Feature>();
+	}
+
+	public FeatureModel getFm() {
+		return fm;
+	}
+
+	/**
+	 * This method is used to build recursively the feature-model tree (only
+	 * consisting of xor, or, optional relations and requires and excludes CTCs).
+	 * 
+	 * @param products
+	 *            list of products containing only features of the set features
+	 * @param features
+	 *            set of valid features in the product set
+	 * @param parent
+	 *            parent node in the RNode-data structure
+	 */
+	public void analyse(Set<Product> products, Set<Feature> features, RNode root) {
+		allFeatures = new HashSet<Feature>(features);
+
+		Map<fma.Feature, Set<fma.Feature>> atomicSets;
+		fma.MandAnalyzer ma = new fma.MandAnalyzer();
+
+		atomicSets = ma.analyse(products, features, root);
+
+		fm.buildGraph(products, features, root);
+		mutGraph.buildGraph(products, features);
+		this.products = products;
+
+		Stack<RNode> stack = new Stack<RNode>();
+		stack.push(root);
+		analyse_int(products, atomicSets, root, stack);
+		fm.extractExcludeRelations(mutGraph);
+	}
+
+	// recursion to retrieve the feature model.
+	private void analyse_int(Set<Product> products,
+			Map<Feature, Set<Feature>> mandatories, RNode parent,
+			Stack<RNode> stack) {
+		Set<Product> rProds;
+
+		/* Start with recursive calls for all unresolved nodes */
+		Set<RNode> clone_unresolved = new HashSet<RNode>(parent.getUnresolved());
+		for (RNode n : clone_unresolved) {
+			if (n.getUnresolved().size() > 0) {
+				rProds = Product.filterProductPatterns(products,
+						n.getFeature(), n.getDescendants());
+				stack.push(n);
+				analyse_int(rProds, mandatories, n, stack);
+			}
+		}
+
+		Set<Feature> dirChildren = parent.getUnresolvedFeatures();
+
+		insertXors(products, dirChildren, parent, mandatories);
+
+		rProds = Product.filterProductPatterns(products, dirChildren);
+		Product.retainSmallestProducts(rProds);
+
+		insertOptionalsPushUpwardWrongOpts(mandatories, parent, stack, rProds,
+				dirChildren);
+		
+		rProds = Product.filterProductPatterns(products, dirChildren);
+		Product.retainSmallestProducts(rProds);
+
+		insertOrs(rProds, products, dirChildren, parent, mandatories, stack);
+		stack.pop();
+	}
+
+	private void insertOptionalsPushUpwardWrongOpts(
+			Map<Feature, Set<Feature>> mandatories, RNode parent,
+			Stack<RNode> stack, Set<Product> rProds, Set<Feature> dirChildren) {
+		insertOptionalCandidates(rProds, dirChildren, parent, mandatories);
+		checkOptionals(parent, stack);
+	}
+
+	private void checkOptionals(RNode parent, Stack<RNode> stack) {
+		if (parent.getType() != RType.root) {
+			for (RNode node : new HashSet<RNode>(parent.getOptional())) {
+				// Search for products where node.getFeature() is selected
+				Set<Product> orSelected = new HashSet<Product>();
+				Set<Feature> relFeatures = new HashSet<Feature>(
+						this.allFeatures);
+				Set<Feature> impliedBy = fm.impliedBy(node.getFeature());
+				for (Feature f : node.getDescendants()) {
+					impliedBy.addAll(fm.impliedBy(f));
+				}
+				//TODO: Why not use instead relFeatures = relFeatures - impliedBy? then you could skip the following for-loop?
+				relFeatures.removeAll(node.getDescendants());
+				Set<Product> relProds = Product.filterProductPatterns(
+						this.products, relFeatures);
+				for (Product p : new HashSet<Product>(relProds)) {
+					Set<Feature> tmp = new HashSet<Feature>(p.getFeatures());
+					tmp.retainAll(impliedBy);
+					if (tmp.size() > 0) {
+						relProds.remove(p);
+					}
+				}
+				for (Product p : relProds) {
+					if (p.contains(node.getFeature())) {
+						Product p1 = new Product(new HashSet<Feature>(
+								p.getFeatures()));
+						p1.removeFeature(node.getFeature());
+						orSelected.add(p1);
+					}
+				}
+				for (Product p : orSelected) {
+					if (!relProds.contains(p)) {
+						parent.getOptional().remove(node);
+						node.setType(RType.unknown);
+						RNode grandparent = stack.get(stack.size() - 2);
+						grandparent.getUnresolved().add(node);
+						node.getParent().remove(parent);
+						node.addParent(grandparent);
+						Set<Feature> descs;
+						descs = parent.getDescendants();
+						if (!fm.cTImplContainsDesc(descs, node.getFeature())) {
+							fm.addImplies(node.getFeature(),
+									parent.getFeature());
+						}
+						break;
+					}
+				}
+			}
+		}
+	}
+
+	/**
+	 * Inserts OR-Relations into the parent-node. rProds has to contain only the
+	 * smallest products, and there are no Xor-Relations left.
+	 * 
+	 * @param rProds
+	 *            list of smallest products, consisting of products which only
+	 *            contain features of the topFeatures-set
+	 * @param topFeatures
+	 *            set of topFeatures
+	 * @param parent
+	 *            parent-node
+	 * @param mandatories
+	 *            map of mandatories
+	 */
+	private void insertOrs(Set<Product> rProds, Set<Product> prods,
+			Set<Feature> topFeatures, RNode parent,
+			Map<Feature, Set<Feature>> mandatories, Stack<RNode> stack) {
+		RNode node;
+		// check if simpleAttempt can be done
+//		Set<Feature> siblings;
+//		boolean simple = getOrExtractionMethod(topFeatures, parent);
+//
+//		if (simple) {
+//			Set<Feature> inMinProds = new HashSet<Feature>(topFeatures);
+//			inMinProds.removeAll(notInMinProducts(rProds, topFeatures));
+//			Set<Feature> inMinProdsClone = new HashSet<Feature>(inMinProds);
+//			orExtractionSimpleAttempt(rProds, inMinProdsClone, parent,
+//					mandatories);
+//			inMinProds.removeAll(inMinProdsClone);
+//			topFeatures.removeAll(inMinProds);
+//		}
+
+		if (topFeatures.size() > 0) {
+			orExtractionBuckets(prods, topFeatures, parent,
+					mandatories, stack);
+		}
+	}
+
+	private boolean getOrExtractionMethod(Set<Feature> topFeatures, RNode parent) {
+		Set<Feature> siblings;
+		boolean simple = true;
+		for (Feature f : topFeatures) {
+			siblings = getImpliedSiblings(f, parent);
+			siblings.retainAll(topFeatures);
+			if (siblings.size() > 0) {
+				simple = false;
+				break;
+			}
+			if (this.mutGraph.getExcludes().get(f) != null) {
+				siblings = new HashSet<Feature>(topFeatures);
+				siblings.retainAll(this.mutGraph.getExcludes().get(f));
+				if (siblings.size() > 0) {
+					simple = false;
+					break;
+				}
+			}
+		}
+		return simple;
+	}
+
+	private void orExtractionBuckets(Set<Product> prods,
+			Set<Feature> topFeatures, RNode parent,
+			Map<Feature, Set<Feature>> mandatories, Stack<RNode> stack) {
+		Set<Product> rProds;
+		if (parent.getType() == RType.root) {
+			rProds = Product.filterProductPatterns(products, topFeatures);
+		} else {
+			rProds = Product.filterProductPatterns(products,
+					parent.getFeature(), topFeatures);
+		}
+
+		Product.retainSmallestProducts(rProds);
+		int numBuckets = 0;
+		if (rProds.size() != 0) {
+			numBuckets = rProds.iterator().next().size();
+		}
+		RNode node;
+		if (numBuckets == 0) {
+			// In this case there are actually no OR-Relations left. All direct
+			// Children will be passed to the next higher level.
+			// If the current level is already root, then these features will be
+			// considered to be Optional-Features.
+			dealWithUncategorizedFeatures(topFeatures, parent, mandatories, stack);
+		} else {
+			Set<Feature> notInMinProds = notInMinProducts(rProds, topFeatures);
+
+			Map<Integer, Set<Feature>> buckets = new HashMap<Integer, Set<Feature>>();
+			int i;
+			rProds = fillBuckets(rProds, numBuckets, buckets);
+
+			tryToInsertFeaturesNotInMinProds(notInMinProds, buckets, prods,
+					parent);
+			Set<Set<Feature>> posOrs = new HashSet<Set<Feature>>();
+			for (i = 0; i < numBuckets; i++) {
+				posOrs.add(buckets.get(i));
+			}
+			i = checkAndInsertOr(rProds, topFeatures, parent, mandatories,
+					posOrs);
+			dealWithUncategorizedFeatures(topFeatures, parent, mandatories, stack);
+			
+		}
+	}
+
+	private Set<Feature> notInMinProducts(Set<Product> rProds,
+			Set<Feature> topFeatures) {
+		Set<Feature> notInMinProds = new HashSet<Feature>(topFeatures);
+		for (Product p : rProds) {
+			notInMinProds.removeAll(p.getFeatures());
+		}
+		return notInMinProds;
+	}
+
+	private void tryToInsertFeaturesNotInMinProds(Set<Feature> notInMinProds,
+			Map<Integer, Set<Feature>> buckets, Set<Product> prods, RNode parent) {
+		int numBuckets = buckets.keySet().size();
+		// BucketID --> implied features in this bucket.
+		Map<Integer, Set<Feature>> impliedByBucket;
+		Set<Feature> impliedSiblings;
+		Set<Feature> impliedPerBucket = new HashSet<Feature>();
+		Set<Product> genProducts = new HashSet<Product>();
+		Product newProd;
+		boolean first;
+
+		for (Feature f : notInMinProds) {
+			impliedByBucket = new HashMap<Integer, Set<Feature>>();
+			impliedSiblings = this.getImpliedSiblings(f, parent);
+			for (int i : buckets.keySet()) {
+				impliedPerBucket = new HashSet<Feature>(impliedSiblings);
+				impliedPerBucket.retainAll(buckets.get(i));
+
+				if (impliedPerBucket.size() > 1) {
+					impliedByBucket.put(i, impliedPerBucket);
+				}
+			}
+			
+			if (impliedByBucket.size() > 0) {
+				for (Product p : prods) {
+					if (p.contains(f)) {
+						newProd = new Product(new HashSet<Feature>(p.getFeatures()));
+						for (int i : impliedByBucket.keySet()) {
+							impliedPerBucket = new HashSet<Feature>(
+									impliedByBucket.get(i));
+							impliedPerBucket.retainAll(p.getFeatures());
+							if (impliedPerBucket.size() > 1) {
+								first = true;
+								//TODO: Did I want to generate here several new products per iteration or just one new one?
+								//In Pseudo-Code I am generating just 1, Check this!
+								for (Feature f2 : impliedPerBucket) {
+									if (!first) {
+										newProd.removeFeature(f2);
+										genProducts.add(newProd);
+									}
+									first = false;
+								}
+							}
+						}
+					}
+
+				}
+			}
+		}
+		//TODO Is this Do-While actually necessary, check this!
+		int size = 0;
+		do {
+			size = genProducts.size();
+			genProducts = addToBuckets(genProducts, numBuckets, buckets);
+		} while (size != genProducts.size());
+
+	}
+
+
+	 // TODO This function returns not only implied Siblings, probably change this. But check all places where this function is used!
+	private Set<Feature> getImpliedSiblings(Feature f, RNode parent) {
+		Set<Feature> implied = new HashSet<Feature>();
+		if (fm.getcTImplies().containsKey(f)) {
+			implied = new HashSet<Feature>(fm.getcTImplies().get(f));
+			Set<Feature> descendants;
+			for (Feature posImpl : fm.getRNode(f).getSiblingFeatures(parent)) {
+				descendants = fm.getRNode(posImpl).getDescendants();
+				descendants.retainAll(implied);
+				if (descendants.size() != 0) {
+					implied.add(posImpl);
+				}
+			}
+		}
+		return implied;
+	}
+
+	private Set<Product> fillBuckets(Set<Product> rProds, int numBuckets,
+			Map<Integer, Set<Feature>> buckets) {
+		Set<Feature> features = rProds.iterator().next().getFeatures();
+		/*
+		 * Determine which features are not present in any of the minimal
+		 * products this are features which cannot be inserted in one of the
+		 * buckets. With these features will be dealt at a later stage.
+		 */
+
+		int i = 0;
+		// Initialize buckets and insert the first product
+		for (Feature f : features) {
+			buckets.put(i, new HashSet<Feature>());
+			buckets.get(i).add(f);
+			i++;
+		}
+		Map<Integer, Feature> tmp;
+		Set<Feature> alreadyIn;
+		Set<Product> cpyRProds;
+		/*
+		 * Fill buckets as far as possible
+		 */
+		rProds = addToBuckets(rProds, numBuckets, buckets);
+		return rProds;
+	}
+
+	private Set<Product> addToBuckets(Set<Product> rProds, int numBuckets,
+			Map<Integer, Set<Feature>> buckets) {
+		int i;
+		Map<Integer, Feature> tmp;
+		Set<Feature> alreadyIn;
+		Set<Product> cpyRProds;
+		boolean inserted = true;
+		while (inserted) {
+			inserted = false;
+			cpyRProds = new HashSet<Product>(rProds);
+			for (Product p : rProds) {
+				tmp = new HashMap<Integer, Feature>();
+
+				alreadyIn = new HashSet<Feature>();
+				for (Feature f : p.getFeatures()) {
+					for (i = 0; i < numBuckets; i++) {
+						if (buckets.get(i).contains(f)) {
+							tmp.put(i, f);
+							alreadyIn.add(f);
+						}
+					}
+				}
+				// Only case where we can insert new features
+				if (tmp.keySet().size() == numBuckets - 1) {
+					inserted = true;
+					for (i = 0; i < numBuckets; i++) {
+						if (tmp.get(i) == null) {
+							//TODO make this more efficient. See pseudo code.
+							for (Feature f : p.getFeatures()) {
+								if (!alreadyIn.contains(f)) {
+									buckets.get(i).add(f);
+								}
+							}
+						}
+					}
+					cpyRProds.remove(p);
+				} else if (tmp.keySet().size() == numBuckets) {
+					cpyRProds.remove(p);
+				}
+			}
+			rProds = cpyRProds;
+		}
+		return rProds;
+	}
+
+	private void dealWithUncategorizedFeatures(Set<Feature> topFeatures,
+			RNode parent, Map<Feature, Set<Feature>> mandatories,  Stack<RNode> stack) {
+		RNode node;
+		if (parent.getType() != RType.root) {
+			for (Feature f : topFeatures) {
+				node = parent.getUnresolved(f);
+				parent.getUnresolved().remove(node);
+				RNode grandparent = stack.get(stack.size() - 2);
+				grandparent.getUnresolved().add(node);
+				node.getParent().remove(parent);
+				node.addParent(grandparent);
+
+				Set<Feature> descs;
+				descs = parent.getDescendants();
+				if (!fm.cTImplContainsDesc(descs, f)) {
+					fm.addImplies(node.getFeature(), parent.getFeature());
+				}
+			}
+			topFeatures.removeAll(topFeatures);
+		} else {
+			for (Feature f : topFeatures) {
+				node = parent.getUnresolved(f);
+				if (node.getType() == RType.unknown) {
+					parent.addOptional(node);
+					node.setType(RType.optional);
+					addMandatoryFeatures(mandatories, node);
+				}
+			}
+		}
+	}
+
+	private void orExtractionSimpleAttempt(Set<Product> rProds,
+			Set<Feature> topFeatures, RNode parent,
+			Map<Feature, Set<Feature>> mandatories) {
+		RNode node;
+		Set<Feature> xorAnal;
+		Set<Feature> f_clone = new HashSet<Feature>(topFeatures);
+		Set<Set<Feature>> posOrs = new HashSet<Set<Feature>>();
+		for (Feature f : topFeatures) {
+			if (f_clone.contains(f)) {
+				xorAnal = new HashSet<Feature>(f_clone);
+				for (Product p : rProds) {
+					if (p.contains(f)) {
+						/*
+						 * if two features are both in the same object, they can
+						 * not form an or-relation
+						 */
+						xorAnal.removeAll(p.getFeatures());
+					}
+				}
+				xorAnal.add(f);
+				// features which are in one or-relation should not be processed
+				// again
+				f_clone.removeAll(xorAnal);
+				posOrs.add(xorAnal);
+			}
+		}
+		checkAndInsertOr(rProds, topFeatures, parent, mandatories, posOrs);
+	}
+
+	private int checkAndInsertOr(Set<Product> rProds, Set<Feature> topFeatures,
+			RNode parent, Map<Feature, Set<Feature>> mandatories,
+			Set<Set<Feature>> posOrs) {
+		RNode node;
+		boolean found;
+		int i = 0;
+		for (Set<Feature> or : new HashSet<Set<Feature>>(posOrs)) {
+			found = false;
+			for (Product p : rProds) {
+				Set<Feature> tmp = new HashSet<Feature>(or);
+				tmp.retainAll(p.getFeatures());
+				if (tmp.size() == 0) {
+					// The extracted features in the OR-Relation do not form an
+					// OR.
+					found = true;
+				}
+			}
+			if (!found) {
+				Set<RNode> orNode = new HashSet<RNode>();
+				for (Feature f : or) {
+					if (parent.getUnresolved(f) == null) {
+						// This or-node was already inserted in an earlier call
+						// of the method.
+						break;
+					}
+					node = parent.getUnresolved(f);
+					node.setType(RType.or);
+					retrievePossibleImplies(node, parent);
+					orNode.add(node);
+					parent.getUnresolved().remove(node);
+					addMandatoryFeatures(mandatories, node);
+				}
+				i++;
+				parent.addOr(orNode);
+				topFeatures.removeAll(or);
+				posOrs.remove(or);
+			}
+		}
+		return i;
+	}
+
+	/**
+	 * Inserts all optional features of the topFeatures into the parent-RNode
+	 * Removes these optional features from the topFeatures
+	 * 
+	 * rProds has to contain only the smallest products and no features which
+	 * are in a Xor-Relaion therefore those features which do not occur in the
+	 * rProds-set have to be optional features.
+	 */
+	private void insertOptionalCandidates(Set<Product> rProds, Set<Feature> dirChildren,
+			RNode parent, Map<Feature, Set<Feature>> mandatories) {
+		Set<Feature> n_clone = new HashSet<Feature>(dirChildren);
+		boolean found;
+		RNode node;
+		for (Feature f : dirChildren) {
+			found = false;
+			for (Product p : rProds) {
+				if (p.contains(f)) {
+					found = true;
+					break;
+				}
+			}
+			if (!found) {
+				node = parent.getUnresolved(f);
+				Set<Feature> implied = new HashSet<Feature>();
+				if (fm.getcTImplies().containsKey(f)) {
+					implied = getImpliedSiblings(f, parent);
+					Set<Feature> sibblings = node.getSiblingFeatures(parent);
+					implied.retainAll(sibblings);
+				}
+				if (implied.size() == 0) {
+					if (node.getType().equals(RType.unknown)) {
+						node.setType(RType.optional);
+						parent.addOptional(node);
+						parent.getUnresolved().remove(node);
+						addMandatoryFeatures(mandatories, node);
+					} else {
+						// Node is already inserted in the feature model tree
+						// and the optional relation is always weaker than the
+						// other
+						// types
+						parent.getUnresolved().remove(node);
+						node.getParent().remove(parent);
+						this.fm.addImplies(node.getFeature(),
+								parent.getFeature());
+					}
+					n_clone.remove(f);
+				}
+			}
+		}
+		dirChildren.retainAll(n_clone);
+	}
+
+	private void addMandatoryFeatures(Map<Feature, Set<Feature>> mandatories,
+			RNode node) {
+		boolean found;
+		if (mandatories.containsKey(node.getFeature())) {
+			found = false;
+			/*
+			 * Add mandatories only if they have not already been added. This could be the case when optional features
+			 * are passed upwards in the implication graph. 
+			 */
+			for (Feature fMand : mandatories.get(node.getFeature())) {
+				for(RNode mand : node.getMandatory()){
+					if(mand.getFeature().equals(fMand)){
+						found = true;
+					}
+				}
+				if(!found){
+					node.addMandatory(new RNode(RType.mandatory, fMand));
+				}
+			}
+		}
+	}
+
+	private void extractMutexes(Set<Feature> fs,
+			Set<Product> products, Set<Feature> dirChildren, Set<Set<Feature>> xors) {
+		boolean branched = false;
+		boolean occuredWithout = false;
+		Set<Feature> help;
+		for (Feature f : fs) {
+			help = new HashSet<Feature>(this.mutGraph.getExcludes().get(f));
+			help.add(f);
+			help.retainAll(fs);
+			if (!help.equals(fs)) {
+				extractMutexes(help, products, dirChildren, xors);
+				branched = true;
+			}
+		}
+
+		if (!branched) {
+			for (Product p : products) {
+				help = new HashSet<Feature>(p.getFeatures());
+				help.retainAll(fs);
+				if (help.size() == 0) {
+					occuredWithout = true;
+				}
+			}
+
+			if (!occuredWithout) {
+				xors.add(fs);
+			}
+		}
+	}
+
+	// Analyzes if there are xor-relations within the topFeatures
+	// the xor-realtions are addet to the parent-RNode and removed from the
+	// set of topFeatures
+	// also possible mandatories are added to the xor-features
+	private void insertXors(Set<Product> products, Set<Feature> dirChildren,
+			RNode parent, Map<Feature, Set<Feature>> mandatories) {
+
+		Set<Set<Feature>> xors = new HashSet<Set<Feature>>();
+		Map<Feature, Set<Feature>> mutex = this.mutGraph.getExcludes();
+
+		Set<Feature> fs;
+		Set<Feature> help = new HashSet<Feature>(dirChildren);
+		RNode node;
+		Set<Feature> xorFeatures = new HashSet<Feature>();
+
+		for (Feature f : dirChildren) {
+			if (mutex.get(f) != null) {
+				fs = new HashSet<Feature>(mutex.get(f));
+				fs.add(f);
+				fs.retainAll(help);
+				if (fs.size() > 1) {
+					extractMutexes(fs, products, dirChildren, 
+							xors);
+					help.remove(f); 
+
+					for (Set<Feature> xor : xors) {
+						Set<RNode> xorNodes = new HashSet<RNode>();
+						for (Feature x : xor) {
+							node = fm.getRNode(x);
+							node.setType(RType.xor);
+							retrievePossibleImplies(node, parent);
+							xorNodes.add(node);
+							addMandatoryFeatures(mandatories, node);
+							parent.getUnresolved().remove(node);
+							xorFeatures.add(x);
+						}
+						parent.addXor(xorNodes);
+					}
+					xors = new HashSet<Set<Feature>>();
+				}
+			}
+		}
+
+		if (xorFeatures.size() > 0) { // only if there are xor-features
+			dirChildren.removeAll(xorFeatures);
+		}
+	}
+
+	private void retrievePossibleImplies(RNode node, RNode parent) {
+		if (!node.getType().equals(RType.unknown)) {
+			Set<RNode> parents = new HashSet<RNode>(node.getParent());
+			parents.remove(parent); 
+			for (RNode n : parents) {
+				n.getOptional().remove(node);
+				n.getUnresolved().remove(node);
+				fm.addImplies(node.getFeature(), n.getFeature());
+			}
+		}
+	}
+	
+//	private Pair<Integer, Set<Integer>> getImpliedByMinNewId(
+//			Map<Integer, Integer> newID,
+//			Set<Pair<Integer, Set<Integer>>> toOrder) {
+//		int minId = Integer.MAX_VALUE;
+//		Pair<Integer, Set<Integer>> minPair = toOrder.iterator().next();
+//		for (Pair<Integer, Set<Integer>> p : toOrder) {
+//			for (int i : p.second) {
+//				if (newID.get(i) < minId) {
+//					minId = newID.get(i);
+//					minPair = p;
+//				}
+//			}
+//		}
+//		return minPair;
+//	}
+//
+//	private int getMaxKey(
+//			Map<Integer, Set<Pair<Integer, Set<Integer>>>> ordering) {
+//		int max = 0;
+//		for (int i : ordering.keySet()) {
+//			if (i > max) {
+//				max = i;
+//			}
+//		}
+//		return max;
+//	}
+	
+//	private void mergeBuckets(Map<Integer, Set<Feature>> buckets,
+//			Map<Integer, Set<Feature>> buckets2) {
+//		for (int i : buckets.keySet()) {
+//			buckets.get(i).addAll(buckets2.get(i));
+//		}
+//	}
+//
+//	private void orderBuckets(Map<Integer, Set<Feature>> buckets, RNode parent) {
+//		// Set stores the highest number of features which are in other buckets.
+//		// (max possibele number = numBuckets-1)
+//		Map<Integer, Pair<Integer, Set<Integer>>> impliedRel = new HashMap<Integer, Pair<Integer, Set<Integer>>>(); // (Bucket,
+//																													// numImplies,
+//																													// impliedByMin)
+//		for (int i : buckets.keySet()) {
+//			impliedRel.put(i, new Pair(0, new HashSet<Integer>()));
+//		}
+//
+//		int max, cnt;
+//		Feature maxImplFeature;
+//		Set<Feature> features;
+//		Set<Feature> impliedSibblings;
+//		Set<Integer> impliedBuckets, maxImpliedBuckets = new HashSet<Integer>();
+//		Set<Feature> tmp;
+//		for (int i : buckets.keySet()) {
+//			max = 0;
+//			features = buckets.get(i);
+//			for (Feature f : features) {
+//				cnt = 0;
+//				impliedSibblings = getImpliedSiblings(f, parent);
+//				tmp = new HashSet<Feature>(impliedSibblings);
+//				impliedBuckets = new HashSet<Integer>();
+//				for (int j : buckets.keySet()) {
+//					if (j != i) {
+//						tmp.retainAll(buckets.get(j));
+//						if (tmp.size() > 0) {
+//							cnt++;
+//							impliedBuckets.add(j);
+//						}
+//					}
+//					tmp = new HashSet<Feature>(impliedSibblings);
+//				}
+//				if (cnt > max) {
+//					maxImplFeature = f;
+//					max = cnt;
+//					maxImpliedBuckets = impliedBuckets;
+//				}
+//			}
+//			impliedRel.get(i).setFirst(max);
+//			for (int j : maxImpliedBuckets) {
+//				impliedRel.get(j).getSecond().add(i);
+//			}
+//		}
+//		// Now impliedRel contains for each bucket, how many and by which other
+//		// buckets they are implied
+//		// (But only for that feature which implies the most other buckets)
+//
+//		// oldIndex --> new Index
+//		Map<Integer, Integer> oldToNew = new HashMap<Integer, Integer>();
+//		// numImplied --> bucket-ID, {impliedBy}
+//		Map<Integer, Set<Pair<Integer, Set<Integer>>>> ordering = new HashMap<Integer, Set<Pair<Integer, Set<Integer>>>>();
+//
+//		for (int i : impliedRel.keySet()) {
+//			Pair<Integer, Set<Integer>> p = impliedRel.get(i);
+//			if (!ordering.containsKey(p.first)) {
+//				ordering.put(p.first,
+//						new HashSet<Pair<Integer, Set<Integer>>>());
+//			}
+//			ordering.get(p.first).add(new Pair(i, p.second));
+//		}
+//		int newId = 0;
+//		while (ordering.size() > 0) {
+//			max = getMaxKey(ordering);
+//			Set<Pair<Integer, Set<Integer>>> toOrder = ordering.get(max);
+//			if (newId == 0) {
+//				for (Pair<Integer, Set<Integer>> p : toOrder) {
+//					oldToNew.put(p.first, newId);
+//					newId++;
+//				}
+//			} else {
+//				while (toOrder.size() > 0) {
+//					Pair<Integer, Set<Integer>> refByMinNewId = getImpliedByMinNewId(
+//							oldToNew, toOrder);
+//					toOrder.remove(refByMinNewId);
+//					oldToNew.put(refByMinNewId.first, newId);
+//					newId++;
+//				}
+//			}
+//			ordering.remove(max);
+//		}
+//
+//		Map<Integer, Set<Feature>> bucketsCpy = new HashMap<Integer, Set<Feature>>();
+//		for (int i : buckets.keySet()) {
+//			bucketsCpy.put(i, new HashSet<Feature>(buckets.get(i)));
+//		}
+//		for (int i : buckets.keySet()) {
+//			buckets.put(oldToNew.get(i), bucketsCpy.get(i));
+//		}
+//	}
+
+}
+
+

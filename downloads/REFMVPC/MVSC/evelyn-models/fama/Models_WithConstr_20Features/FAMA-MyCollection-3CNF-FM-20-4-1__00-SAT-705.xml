@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature-model xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.tdg-seville.info/benavides/featuremodelling/feature-model.xsd">
+<feature name="R">
+	<setRelation name="17111">
+	<cardinality max="1" min="1"/>
+	<groupedFeature name="g_1_1">
+	</groupedFeature>
+	<groupedFeature name="g_1_2">
+	</groupedFeature>
+	<groupedFeature name="g_1_3">
+	</groupedFeature>
+	<groupedFeature name="g_1_4">
+	</groupedFeature>
+	<groupedFeature name="g_1_5">
+	</groupedFeature>
+	<groupedFeature name="g_1_6">
+	</groupedFeature>
+	</setRelation>
+
+	<binaryRelation name="17112">
+	<cardinality max="1" min="1"/>
+	<solitaryFeature name="m_2">
+		<binaryRelation name="17113">
+		<cardinality max="1" min="0"/>
+		<solitaryFeature name="o_2_1">
+		</solitaryFeature>
+
+		</binaryRelation>
+
+		<binaryRelation name="17114">
+		<cardinality max="1" min="1"/>
+		<solitaryFeature name="m_2_2">
+		</solitaryFeature>
+
+		</binaryRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<setRelation name="17115">
+	<cardinality max="1" min="1"/>
+	<groupedFeature name="g_3_1">
+			<binaryRelation name="17116">
+			<cardinality max="1" min="1"/>
+			<solitaryFeature name="m_3_1_1">
+			</solitaryFeature>
+
+			</binaryRelation>
+
+	</groupedFeature>
+	<groupedFeature name="g_3_2">
+			<setRelation name="17117">
+			<cardinality max="4" min="1"/>
+			<groupedFeature name="g_3_2_1_1">
+			</groupedFeature>
+			<groupedFeature name="g_3_2_1_2">
+			</groupedFeature>
+			<groupedFeature name="g_3_2_1_3">
+			</groupedFeature>
+			<groupedFeature name="g_3_2_1_4">
+			</groupedFeature>
+			</setRelation>
+
+	</groupedFeature>
+	</setRelation>
+
+	<binaryRelation name="17118">
+	<cardinality max="1" min="0"/>
+	<solitaryFeature name="o_4">
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="17119">
+	<cardinality max="1" min="1"/>
+	<solitaryFeature name="m_5">
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="17120">
+	<cardinality max="1" min="0"/>
+	<solitaryFeature name="o_6">
+	</solitaryFeature>
+
+	</binaryRelation>
+
+</feature>
+<!-- Clause3CNF_1: g_1_4 or (~g_1_6) or (~m_2_2) -->
+<!-- Clause3CNF_2: g_1_6 or m_2_2 or (~o_6) -->
+<!-- Clause3CNF_3: g_1_4 or (~g_1_6) or m_2_2 -->
+<!-- Clause3CNF_4: (~g_1_6) or m_2_2 or (~o_6) -->
+</feature-model>

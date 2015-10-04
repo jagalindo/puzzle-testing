@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature-model xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.tdg-seville.info/benavides/featuremodelling/feature-model.xsd">
+<feature name="R">
+	<setRelation name="38970">
+	<cardinality max="1" min="1"/>
+	<groupedFeature name="g_1_1">
+	</groupedFeature>
+	<groupedFeature name="g_1_2">
+	</groupedFeature>
+	<groupedFeature name="g_1_3">
+	</groupedFeature>
+	</setRelation>
+
+	<setRelation name="38971">
+	<cardinality max="1" min="1"/>
+	<groupedFeature name="g_2_1">
+			<setRelation name="38972">
+			<cardinality max="6" min="1"/>
+			<groupedFeature name="g_2_1_1_1">
+			</groupedFeature>
+			<groupedFeature name="g_2_1_1_2">
+			</groupedFeature>
+			<groupedFeature name="g_2_1_1_3">
+			</groupedFeature>
+			<groupedFeature name="g_2_1_1_4">
+			</groupedFeature>
+			<groupedFeature name="g_2_1_1_5">
+			</groupedFeature>
+			<groupedFeature name="g_2_1_1_6">
+			</groupedFeature>
+			</setRelation>
+
+	</groupedFeature>
+	<groupedFeature name="g_2_2">
+			<binaryRelation name="38973">
+			<cardinality max="1" min="1"/>
+			<solitaryFeature name="m_2_2_1">
+			</solitaryFeature>
+
+			</binaryRelation>
+
+	</groupedFeature>
+	</setRelation>
+
+	<binaryRelation name="38974">
+	<cardinality max="1" min="0"/>
+	<solitaryFeature name="o_3">
+		<binaryRelation name="38975">
+		<cardinality max="1" min="0"/>
+		<solitaryFeature name="o_3_1">
+		</solitaryFeature>
+
+		</binaryRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<setRelation name="38976">
+	<cardinality max="3" min="1"/>
+	<groupedFeature name="g_4_1">
+	</groupedFeature>
+	<groupedFeature name="g_4_2">
+	</groupedFeature>
+	<groupedFeature name="g_4_3">
+	</groupedFeature>
+	</setRelation>
+
+	<binaryRelation name="38977">
+	<cardinality max="1" min="0"/>
+	<solitaryFeature name="o_5">
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="38978">
+	<cardinality max="1" min="0"/>
+	<solitaryFeature name="o_6">
+	</solitaryFeature>
+
+	</binaryRelation>
+
+</feature>
+</feature-model>

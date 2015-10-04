@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature-model xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.tdg-seville.info/benavides/featuremodelling/feature-model.xsd">
+<feature name="_id_0">
+	<binaryRelation name="12">
+	<cardinality max="1" min="0"/>
+	<solitaryFeature name="page_translation">
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="13">
+	<cardinality max="1" min="1"/>
+	<solitaryFeature name="_id_1">
+		<binaryRelation name="14">
+		<cardinality max="1" min="1"/>
+		<solitaryFeature name="_id_2">
+		</solitaryFeature>
+
+		</binaryRelation>
+
+		<binaryRelation name="15">
+		<cardinality max="1" min="0"/>
+		<solitaryFeature name="_id_3">
+			<setRelation name="16">
+			<cardinality max="1" min="1"/>
+			<groupedFeature name="_id_5">
+			</groupedFeature>
+			<groupedFeature name="_id_6">
+			</groupedFeature>
+			<groupedFeature name="svg">
+			</groupedFeature>
+			</setRelation>
+
+		</solitaryFeature>
+
+		</binaryRelation>
+
+		<binaryRelation name="17">
+		<cardinality max="1" min="0"/>
+		<solitaryFeature name="_id_7">
+		</solitaryFeature>
+
+		</binaryRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="18">
+	<cardinality max="1" min="0"/>
+	<solitaryFeature name="search_by_language">
+		<setRelation name="19">
+		<cardinality max="3" min="1"/>
+		<groupedFeature name="_id_9">
+		</groupedFeature>
+		<groupedFeature name="_id_10">
+		</groupedFeature>
+		<groupedFeature name="_id_11">
+		</groupedFeature>
+		</setRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="20">
+	<cardinality max="1" min="0"/>
+	<solitaryFeature name="page_preview">
+	</solitaryFeature>
+
+	</binaryRelation>
+
+</feature>
+<requires feature="search_by_language" name="c1" requires="page_translation"/>
+<excludes feature="page_preview" name="c2" excludes="svg"/>
+</feature-model>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature-model xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.tdg-seville.info/benavides/featuremodelling/feature-model.xsd">
+<feature name="JCalc">
+	<binaryRelation name="77">
+	<cardinality max="1" min="1"/>
+	<solitaryFeature name="LANG">
+		<setRelation name="78">
+		<cardinality max="1" min="1"/>
+		<groupedFeature name="PT_BR">
+		</groupedFeature>
+		<groupedFeature name="EN">
+		</groupedFeature>
+		</setRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="79">
+	<cardinality max="1" min="1"/>
+	<solitaryFeature name="MENU">
+		<binaryRelation name="80">
+		<cardinality max="1" min="1"/>
+		<solitaryFeature name="FILE">
+		</solitaryFeature>
+
+		</binaryRelation>
+
+		<binaryRelation name="81">
+		<cardinality max="1" min="1"/>
+		<solitaryFeature name="HELP">
+		</solitaryFeature>
+
+		</binaryRelation>
+
+		<binaryRelation name="82">
+		<cardinality max="1" min="0"/>
+		<solitaryFeature name="EDIT">
+		</solitaryFeature>
+
+		</binaryRelation>
+
+		<binaryRelation name="83">
+		<cardinality max="1" min="0"/>
+		<solitaryFeature name="SAVE">
+		</solitaryFeature>
+
+		</binaryRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="84">
+	<cardinality max="1" min="0"/>
+	<solitaryFeature name="LOOKANDFEEL">
+		<setRelation name="85">
+		<cardinality max="1" min="1"/>
+		<groupedFeature name="Metal">
+		</groupedFeature>
+		<groupedFeature name="System">
+		</groupedFeature>
+		<groupedFeature name="Motif">
+		</groupedFeature>
+		<groupedFeature name="GTK">
+		</groupedFeature>
+		<groupedFeature name="Windows">
+		</groupedFeature>
+		</setRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="86">
+	<cardinality max="1" min="0"/>
+	<solitaryFeature name="ANALYZER">
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="87">
+	<cardinality max="1" min="0"/>
+	<solitaryFeature name="PERFORMANCE">
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="88">
+	<cardinality max="1" min="1"/>
+	<solitaryFeature name="DEVICE">
+		<setRelation name="89">
+		<cardinality max="1" min="1"/>
+		<groupedFeature name="Z6">
+		</groupedFeature>
+		<groupedFeature name="Milestone">
+		</groupedFeature>
+		<groupedFeature name="PC">
+		</groupedFeature>
+		</setRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="90">
+	<cardinality max="1" min="0"/>
+	<solitaryFeature name="COMMA">
+	</solitaryFeature>
+
+	</binaryRelation>
+
+</feature>
+</feature-model>

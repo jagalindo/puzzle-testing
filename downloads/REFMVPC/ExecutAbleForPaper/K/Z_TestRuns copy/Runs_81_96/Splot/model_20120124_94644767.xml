@@ -1,0 +1,32 @@
+<!-- This model was created online using SPLOT's Feature Model Editor (http://www.splot-research.org) on Tue, Jan 24, 2012 - 3:39 PM  -->
+<feature_model name="CCCMS">
+<meta>
+<data name="description">Part of the Car Crash Crisis Management System</data>
+<data name="creator">Mauricio Alférez</data>
+<data name="address"></data>
+<data name="email">alferez.mauricio@gmail.com</data>
+<data name="phone"></data>
+<data name="website"></data>
+<data name="organization">universidade nova de lisboa</data>
+<data name="department"></data>
+<data name="date"></data>
+<data name="reference"></data>
+</meta>
+<feature_tree>
+:r _r(_r)
+	:o _r_1(_r_1)
+	:o _r_2(_r_2)
+	:m _r_3(_r_3)
+		:g (_r_3_4) [1,*] 
+			: _r_3_4_5(_r_3_4_5)
+			: _r_3_4_6(_r_3_4_6)
+			: _r_3_4_7(_r_3_4_7)
+			: _r_3_4_8(_r_3_4_8)
+	:o _r_9(_r_9)
+	:m _r_11(_r_11)
+	:m _r_12(_r_12)
+		:o _r_12_13(_r_12_13)
+</feature_tree>
+<constraints>
+</constraints>
+</feature_model>

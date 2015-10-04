@@ -1,0 +1,31 @@
+<!-- This model was created online using SPLOT's Feature Model Editor (http://www.splot-research.org) on Sat, Sep 4, 2010 - 12:35 AM  -->
+<feature_model name="AvionFEatures">
+<meta>
+<data name="description">cosas de un avion</data>
+<data name="creator">SSC</data>
+<data name="address"></data>
+<data name="email">ssc.cursos@gmail.com</data>
+<data name="phone"></data>
+<data name="website"></data>
+<data name="organization">UFRO</data>
+<data name="department"></data>
+<data name="date"></data>
+<data name="reference"></data>
+</meta>
+<feature_tree>
+:r Avion(Avion)
+	:m fuselaje(fuselaje)
+	:m motor(motor)
+		:g (_r_2_3) [1,*] 
+			: turbina(turbina)
+			: helice(helice)
+	:m alas(alas)
+	:m tren_aterrizaje(tren_aterrizaje)
+	:o usos(usos)
+		:g (_r_8_9) [1,*] 
+			: carga(carga)
+			: pasajero(pasajero)
+</feature_tree>
+<constraints>
+</constraints>
+</feature_model>

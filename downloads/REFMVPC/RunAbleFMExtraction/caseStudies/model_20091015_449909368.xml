@@ -1,0 +1,32 @@
+<!-- This model was created online using SPLOT's Feature Model Editor (http://www.splot-research.org) on Fri, Oct 30, 2009 - 2:22 AM  -->
+<feature_model name="SAL">
+<meta>
+<data name="description">Simple Arithmetic Language</data>
+<data name="creator">Wonseok Chae</data>
+<data name="address"></data>
+<data name="email">wschae@gmail.com</data>
+<data name="phone"></data>
+<data name="website"></data>
+<data name="organization">TTI-C</data>
+<data name="department"></data>
+<data name="date"></data>
+<data name="reference"></data>
+</meta>
+<feature_tree>
+:r SAL(SAL)
+	:m Language(Language)
+		:m Simple_Arithmetic(Simple_Arithmetic)
+		:o Conditional(Conditional)
+	:m Evaluator(Evaluator)
+		:g (_r_2_6) [1,1] 
+			: Evaluation_semantics(Evaluation_semantics)
+			: Machine_semantics(Machine_semantics)
+	:o Optimizer(Optimizer)
+		:g (_r_3_9) [1,*] 
+			: Constant_folding(Constant_folding)
+			: Short_circuit(Short_circuit)
+</feature_tree>
+<constraints>
+constraint_2:Conditional or ~Short_circuit
+</constraints>
+</feature_model>

@@ -1,0 +1,44 @@
+<!-- This model was created online using SPLOT's Feature Model Editor (http://www.splot-research.org) on Fri, Jul 23, 2010 - 9:25 PM  -->
+<feature_model name="Small Graph Product Line">
+<meta>
+<data name="description">A model of a graph product line</data>
+<data name="creator">Ebrahim Bagheri</data>
+<data name="address"></data>
+<data name="email">ebagheri@athabascau.ca</data>
+<data name="phone"></data>
+<data name="website"></data>
+<data name="organization">Athabasca University</data>
+<data name="department"></data>
+<data name="date"></data>
+<data name="reference"></data>
+</meta>
+<feature_tree>
+:r GPL(GPL)
+	:m Graph_Type(Graph_Type)
+		:g (_r_1_2) [1,1] 
+			: directed(directed)
+			: undirected(undirected)
+		:g (_r_1_5) [1,1] 
+			: weighted(weighted)
+			: unweighted(unweighted)
+	:o search(search)
+		:g (_r_8_9) [1,1] 
+			: DFS(DFS)
+			: BFS(BFS)
+	:m Algorithms(Algorithms)
+		:g (_r_12_13) [1,*] 
+			: Shortest_Path(Shortest_Path)
+			: Coloring(Coloring)
+				:g (_r_12_13_16_20) [1,*] 
+					: Approximation(Approximation)
+					: Brute_Force(Brute_Force)
+			: Cycle_Detection(Cycle_Detection)
+			: MST(MST)
+			: Strongly_Connected(Strongly_Connected)
+</feature_tree>
+<constraints>
+constraint_6:directed or ~Strongly_Connected
+constraint_4:DFS or ~Cycle_Detection
+constraint_5:DFS or ~Strongly_Connected
+</constraints>
+</feature_model>

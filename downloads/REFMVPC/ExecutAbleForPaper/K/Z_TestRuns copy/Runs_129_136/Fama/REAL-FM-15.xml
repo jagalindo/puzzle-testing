@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature-model xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.tdg-seville.info/benavides/featuremodelling/feature-model.xsd">
+<feature name="kwic">
+	<binaryRelation name="44">
+	<cardinality max="1" min="1"/>
+	<solitaryFeature name="input_output">
+		<setRelation name="45">
+		<cardinality max="2" min="1"/>
+		<groupedFeature name="file">
+		</groupedFeature>
+		<groupedFeature name="console">
+		</groupedFeature>
+		</setRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="46">
+	<cardinality max="1" min="1"/>
+	<solitaryFeature name="circular_shift">
+		<binaryRelation name="47">
+		<cardinality max="1" min="1"/>
+		<solitaryFeature name="shift_data">
+			<setRelation name="48">
+			<cardinality max="1" min="1"/>
+			<groupedFeature name="implicit">
+			</groupedFeature>
+			<groupedFeature name="explicit">
+			</groupedFeature>
+			</setRelation>
+
+		</solitaryFeature>
+
+		</binaryRelation>
+
+		<binaryRelation name="49">
+		<cardinality max="1" min="0"/>
+		<solitaryFeature name="compression">
+			<binaryRelation name="50">
+			<cardinality max="1" min="1"/>
+			<solitaryFeature name="shift_processing">
+			</solitaryFeature>
+
+			</binaryRelation>
+
+			<setRelation name="51">
+			<cardinality max="1" min="1"/>
+			<groupedFeature name="each_line">
+			</groupedFeature>
+			<groupedFeature name="all_lines">
+			</groupedFeature>
+			</setRelation>
+
+			<binaryRelation name="52">
+			<cardinality max="1" min="0"/>
+			<solitaryFeature name="noise_words">
+			</solitaryFeature>
+
+			</binaryRelation>
+
+		</solitaryFeature>
+
+		</binaryRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="53">
+	<cardinality max="1" min="1"/>
+	<solitaryFeature name="alpha_sort">
+		<binaryRelation name="54">
+		<cardinality max="1" min="1"/>
+		<solitaryFeature name="order">
+			<setRelation name="55">
+			<cardinality max="1" min="1"/>
+			<groupedFeature name="descendant">
+			</groupedFeature>
+			<groupedFeature name="ascendant">
+			</groupedFeature>
+			</setRelation>
+
+		</solitaryFeature>
+
+		</binaryRelation>
+
+		<binaryRelation name="56">
+		<cardinality max="1" min="1"/>
+		<solitaryFeature name="case_sensitivity">
+			<setRelation name="57">
+			<cardinality max="1" min="1"/>
+			<groupedFeature name="sensitive">
+			</groupedFeature>
+			<groupedFeature name="insensitive">
+			</groupedFeature>
+			</setRelation>
+
+		</solitaryFeature>
+
+		</binaryRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="58">
+	<cardinality max="1" min="1"/>
+	<solitaryFeature name="arch_style">
+		<setRelation name="59">
+		<cardinality max="1" min="1"/>
+		<groupedFeature name="shared_data">
+		</groupedFeature>
+		<groupedFeature name="adt">
+		</groupedFeature>
+		<groupedFeature name="implicit_invocation">
+		</groupedFeature>
+		<groupedFeature name="pipe_and_filter">
+		</groupedFeature>
+		</setRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+</feature>
+<requires feature="compression" name="c1" requires="explicit"/>
+<requires feature="pipe_and_filter" name="c2" requires="all_lines"/>
+<requires feature="pipe_and_filter" name="c3" requires="explicit"/>
+</feature-model>

@@ -1,0 +1,27 @@
+<feature_model name="Element_Type">
+<feature_tree>
+:r Element_Type (Element_Type)
+	:m Stack (Stack)
+	:o Counter (Counter)
+	:o Additional_Features (Additional_Features)
+		:g [1, *]
+			: Bounds_Check (Bounds_Check)
+			: Thread_Safety (Thread_Safety)
+			: Type_Check (Type_Check)
+	:o Size (Size)
+		:g [1, 1]
+			: Fixed (Fixed)
+				:m Value (Value)
+			: Dynamic (Dynamic)
+	:o Optimization (Optimization)
+		:g [1, 1]
+			: Speed (Speed)
+			: Memory_Usage (Memory_Usage)
+	:g [1, 1]
+		: String (String)
+		: Float (Float)
+		: Integer (Integer)
+</feature_tree>
+<constraints>
+</constraints>
+</feature_model>

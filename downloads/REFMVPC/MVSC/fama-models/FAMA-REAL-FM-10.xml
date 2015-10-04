@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature-model xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.tdg-seville.info/benavides/featuremodelling/feature-model.xsd">
+<feature name="vof">
+	<binaryRelation name="678">
+	<cardinality max="1" min="0"/>
+	<solitaryFeature name="undefined_on_paper">
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="679">
+	<cardinality max="1" min="1"/>
+	<solitaryFeature name="follow_me">
+		<binaryRelation name="680">
+		<cardinality max="1" min="0"/>
+		<solitaryFeature name="_undefined_on_paper">
+		</solitaryFeature>
+
+		</binaryRelation>
+
+		<binaryRelation name="681">
+		<cardinality max="1" min="1"/>
+		<solitaryFeature name="user_localize">
+			<binaryRelation name="682">
+			<cardinality max="1" min="1"/>
+			<solitaryFeature name="user_pos_method">
+				<setRelation name="683">
+				<cardinality max="1" min="1"/>
+				<groupedFeature name="access_point">
+				</groupedFeature>
+				<groupedFeature name="rfid">
+				</groupedFeature>
+				</setRelation>
+
+			</solitaryFeature>
+
+			</binaryRelation>
+
+		</solitaryFeature>
+
+		</binaryRelation>
+
+		<binaryRelation name="684">
+		<cardinality max="1" min="1"/>
+		<solitaryFeature name="logon">
+			<binaryRelation name="685">
+			<cardinality max="1" min="0"/>
+			<solitaryFeature name="__undefined_on_paper">
+			</solitaryFeature>
+
+			</binaryRelation>
+
+		</solitaryFeature>
+
+		</binaryRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="686">
+	<cardinality max="1" min="0"/>
+	<solitaryFeature name="virtual_printer">
+		<binaryRelation name="687">
+		<cardinality max="1" min="1"/>
+		<solitaryFeature name="printer_register">
+		</solitaryFeature>
+
+		</binaryRelation>
+
+		<binaryRelation name="688">
+		<cardinality max="1" min="1"/>
+		<solitaryFeature name="file_upload">
+		</solitaryFeature>
+
+		</binaryRelation>
+
+		<binaryRelation name="689">
+		<cardinality max="1" min="0"/>
+		<solitaryFeature name="file_converter">
+		</solitaryFeature>
+
+		</binaryRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+</feature>
+</feature-model>

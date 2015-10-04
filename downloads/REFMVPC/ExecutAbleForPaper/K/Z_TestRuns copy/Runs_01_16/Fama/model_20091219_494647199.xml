@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature-model xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.tdg-seville.info/benavides/featuremodelling/feature-model.xsd">
+<feature name="E_Portal">
+	<binaryRelation name="108">
+	<cardinality max="1" min="1"/>
+	<solitaryFeature name="Site">
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="109">
+	<cardinality max="1" min="1"/>
+	<solitaryFeature name="Elementos">
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="110">
+	<cardinality max="1" min="1"/>
+	<solitaryFeature name="Menu">
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="111">
+	<cardinality max="1" min="1"/>
+	<solitaryFeature name="Box">
+		<binaryRelation name="112">
+		<cardinality max="1" min="1"/>
+		<solitaryFeature name="Texto">
+		</solitaryFeature>
+
+		</binaryRelation>
+
+		<binaryRelation name="113">
+		<cardinality max="1" min="0"/>
+		<solitaryFeature name="Foto">
+		</solitaryFeature>
+
+		</binaryRelation>
+
+		<binaryRelation name="114">
+		<cardinality max="1" min="0"/>
+		<solitaryFeature name="Destaque_Wide">
+			<setRelation name="115">
+			<cardinality max="2" min="1"/>
+			<groupedFeature name="Com_Foto">
+			</groupedFeature>
+			<groupedFeature name="Sem_Foto">
+			</groupedFeature>
+			</setRelation>
+
+		</solitaryFeature>
+
+		</binaryRelation>
+
+		<binaryRelation name="116">
+		<cardinality max="1" min="0"/>
+		<solitaryFeature name="Destaque_Duplo">
+		</solitaryFeature>
+
+		</binaryRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+</feature>
+</feature-model>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature-model xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.tdg-seville.info/benavides/featuremodelling/feature-model.xsd">
+<feature name="Conference_Context">
+	<binaryRelation name="0">
+	<cardinality max="1" min="0"/>
+	<solitaryFeature name="Person">
+		<setRelation name="1">
+		<cardinality max="4" min="1"/>
+		<groupedFeature name="Location">
+				<setRelation name="2">
+				<cardinality max="1" min="1"/>
+				<groupedFeature name="RoomResolution">
+				</groupedFeature>
+				<groupedFeature name="BuildingResolution">
+				</groupedFeature>
+				</setRelation>
+
+		</groupedFeature>
+		<groupedFeature name="EventsPreference">
+		</groupedFeature>
+		<groupedFeature name="Publications">
+				<setRelation name="3">
+				<cardinality max="3" min="1"/>
+				<groupedFeature name="ConferencePapers">
+				</groupedFeature>
+				<groupedFeature name="JournalPapers">
+				</groupedFeature>
+				<groupedFeature name="BookChapters">
+				</groupedFeature>
+				</setRelation>
+
+		</groupedFeature>
+		<groupedFeature name="ContactDetails">
+		</groupedFeature>
+		</setRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="4">
+	<cardinality max="1" min="0"/>
+	<solitaryFeature name="Conference">
+		<binaryRelation name="5">
+		<cardinality max="1" min="0"/>
+		<solitaryFeature name="Venue">
+		</solitaryFeature>
+
+		</binaryRelation>
+
+		<binaryRelation name="6">
+		<cardinality max="1" min="0"/>
+		<solitaryFeature name="ParticipatingPeople">
+			<setRelation name="7">
+			<cardinality max="2" min="1"/>
+			<groupedFeature name="PhDStudent">
+			</groupedFeature>
+			<groupedFeature name="Experts">
+					<setRelation name="8">
+					<cardinality max="1" min="1"/>
+					<groupedFeature name="HavingAwards">
+					</groupedFeature>
+					<groupedFeature name="HavingJournalPublications">
+					</groupedFeature>
+					</setRelation>
+
+			</groupedFeature>
+			</setRelation>
+
+		</solitaryFeature>
+
+		</binaryRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+</feature>
+</feature-model>

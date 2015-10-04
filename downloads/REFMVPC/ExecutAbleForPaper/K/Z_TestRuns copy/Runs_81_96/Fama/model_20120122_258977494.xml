@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature-model xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.tdg-seville.info/benavides/featuremodelling/feature-model.xsd">
+<feature name="_r">
+	<binaryRelation name="178">
+	<cardinality max="1" min="1"/>
+	<solitaryFeature name="_r_1">
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="179">
+	<cardinality max="1" min="1"/>
+	<solitaryFeature name="_r_2">
+		<binaryRelation name="180">
+		<cardinality max="1" min="1"/>
+		<solitaryFeature name="_r_2_31">
+		</solitaryFeature>
+
+		</binaryRelation>
+
+		<binaryRelation name="181">
+		<cardinality max="1" min="0"/>
+		<solitaryFeature name="_r_2_32">
+		</solitaryFeature>
+
+		</binaryRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="182">
+	<cardinality max="1" min="0"/>
+	<solitaryFeature name="_r_3">
+		<setRelation name="183">
+		<cardinality max="1" min="1"/>
+		<groupedFeature name="_r_3_17_18">
+		</groupedFeature>
+		<groupedFeature name="_r_3_17_19">
+		</groupedFeature>
+		</setRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="184">
+	<cardinality max="1" min="0"/>
+	<solitaryFeature name="_r_4">
+		<setRelation name="185">
+		<cardinality max="2" min="1"/>
+		<groupedFeature name="_r_4_20_21">
+		</groupedFeature>
+		<groupedFeature name="_r_4_20_22">
+		</groupedFeature>
+		</setRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="186">
+	<cardinality max="1" min="1"/>
+	<solitaryFeature name="_r_6">
+		<setRelation name="187">
+		<cardinality max="1" min="1"/>
+		<groupedFeature name="_r_6_13_14">
+		</groupedFeature>
+		<groupedFeature name="_r_6_13_15">
+		</groupedFeature>
+		<groupedFeature name="_r_6_13_16">
+		</groupedFeature>
+		</setRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="188">
+	<cardinality max="1" min="1"/>
+	<solitaryFeature name="_r_10">
+		<setRelation name="189">
+		<cardinality max="1" min="1"/>
+		<groupedFeature name="_r_10_27_28">
+		</groupedFeature>
+		<groupedFeature name="_r_10_27_29">
+		</groupedFeature>
+		<groupedFeature name="_r_10_27_30">
+		</groupedFeature>
+		</setRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+</feature>
+<excludes feature="_r_6_13_14" name="constraint_6" excludes="_r_10_27_30"/>
+<excludes feature="_r_6_13_14" name="constraint_7" excludes="_r_10_27_29"/>
+<excludes feature="_r_4_20_21" name="constraint_4" excludes="_r_10_27_28"/>
+<requires feature="_r_2_32" name="constraint_2" requires="_r_3_17_19"/>
+<requires feature="_r_4_20_21" name="constraint_3" requires="_r_6_13_16"/>
+</feature-model>

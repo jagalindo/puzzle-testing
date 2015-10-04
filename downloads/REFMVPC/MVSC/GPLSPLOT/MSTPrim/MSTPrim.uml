@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Package xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_N6TRwDgoEd-1B74Xk3luDQ" name="MSTPrim" visibility="public">
+  <packageImport xmi:id="_N6TRwTgoEd-1B74Xk3luDQ">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Class" xmi:id="_N6TRwjgoEd-1B74Xk3luDQ" name="Graph" visibility="public" isAbstract="false">
+    <ownedBehavior xmi:type="uml:StateMachine" xmi:id="_N6TRwzgoEd-1B74Xk3luDQ" name="StateMachine" visibility="public" isAbstract="false">
+      <region xmi:id="_N6TRxDgoEd-1B74Xk3luDQ" name="Region1">
+        <subvertex xmi:type="uml:State" xmi:id="_N6TRxTgoEd-1B74Xk3luDQ" name="computingPrim"/>
+        <subvertex xmi:type="uml:State" xmi:id="_N6TRxjgoEd-1B74Xk3luDQ" name="displaying"/>
+        <subvertex xmi:type="uml:Pseudostate" xmi:id="_N6TRxzgoEd-1B74Xk3luDQ"/>
+        <transition xmi:id="_N6TRyDgoEd-1B74Xk3luDQ" name="Prim" target="_N6TRxTgoEd-1B74Xk3luDQ" source="_N6TRxzgoEd-1B74Xk3luDQ"/>
+        <transition xmi:id="_N6TRyTgoEd-1B74Xk3luDQ" name="display" target="_N6TRxjgoEd-1B74Xk3luDQ" source="_N6TRxTgoEd-1B74Xk3luDQ"/>
+      </region>
+    </ownedBehavior>
+    <ownedOperation xmi:id="_N6TRyjgoEd-1B74Xk3luDQ" name="run">
+      <ownedParameter xmi:id="_N6TRyzgoEd-1B74Xk3luDQ" name="s" type="_N6TRzzgoEd-1B74Xk3luDQ"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_N6TRzDgoEd-1B74Xk3luDQ" name="Prim">
+      <ownedParameter xmi:id="_N6TRzTgoEd-1B74Xk3luDQ" name="r" type="_N6TRzzgoEd-1B74Xk3luDQ"/>
+      <ownedParameter xmi:id="_N6TRzjgoEd-1B74Xk3luDQ" name="Parameter1" type="_N6TRwjgoEd-1B74Xk3luDQ" direction="return"/>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_N6TRzzgoEd-1B74Xk3luDQ" name="Vertex" visibility="public" isAbstract="false">
+    <ownedAttribute xmi:id="_N6TR0DgoEd-1B74Xk3luDQ" name="pred" visibility="private" isReadOnly="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_N6TR0TgoEd-1B74Xk3luDQ" name="key" visibility="private" isReadOnly="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+    </ownedAttribute>
+    <ownedOperation xmi:id="_N6TR0jgoEd-1B74Xk3luDQ" name="display"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Collaboration" xmi:id="_N6TR0zgoEd-1B74Xk3luDQ" name="Collaboration1" visibility="public">
+    <ownedBehavior xmi:type="uml:Interaction" xmi:id="_N6TR1DgoEd-1B74Xk3luDQ" name="Interaction1" visibility="public" isAbstract="false">
+      <ownedConnector xmi:id="_N6TR1TgoEd-1B74Xk3luDQ">
+        <end xmi:id="_N6TR1jgoEd-1B74Xk3luDQ" role="_N6TR7DgoEd-1B74Xk3luDQ"/>
+        <end xmi:id="_N6TR1zgoEd-1B74Xk3luDQ" role="_N6TR6zgoEd-1B74Xk3luDQ"/>
+      </ownedConnector>
+      <ownedConnector xmi:id="_N6TR2DgoEd-1B74Xk3luDQ">
+        <end xmi:id="_N6TR2TgoEd-1B74Xk3luDQ" role="_N6TR7DgoEd-1B74Xk3luDQ"/>
+        <end xmi:id="_N6TR2jgoEd-1B74Xk3luDQ" role="_N6TR7DgoEd-1B74Xk3luDQ"/>
+      </ownedConnector>
+      <lifeline xmi:id="_N6TR2zgoEd-1B74Xk3luDQ" name="graph" represents="_N6TR6zgoEd-1B74Xk3luDQ" coveredBy="_N6TR3TgoEd-1B74Xk3luDQ _N6TR4TgoEd-1B74Xk3luDQ"/>
+      <lifeline xmi:id="_N6TR3DgoEd-1B74Xk3luDQ" name="graph2" represents="_N6TR7DgoEd-1B74Xk3luDQ" coveredBy="_N6TR3jgoEd-1B74Xk3luDQ _N6TR3zgoEd-1B74Xk3luDQ _N6TR4DgoEd-1B74Xk3luDQ _N6TR4jgoEd-1B74Xk3luDQ _N6TR4zgoEd-1B74Xk3luDQ _N6TR5DgoEd-1B74Xk3luDQ _N6TR5TgoEd-1B74Xk3luDQ _N6TR5jgoEd-1B74Xk3luDQ"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_N6TR3TgoEd-1B74Xk3luDQ" covered="_N6TR2zgoEd-1B74Xk3luDQ" event="_N6TR7TgoEd-1B74Xk3luDQ" message="_N6TR5zgoEd-1B74Xk3luDQ"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_N6TR3jgoEd-1B74Xk3luDQ" covered="_N6TR3DgoEd-1B74Xk3luDQ" event="_N6TR7jgoEd-1B74Xk3luDQ" message="_N6TR5zgoEd-1B74Xk3luDQ"/>
+      <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_N6TR3zgoEd-1B74Xk3luDQ" covered="_N6TR3DgoEd-1B74Xk3luDQ" start="_N6TR3jgoEd-1B74Xk3luDQ" finish="_N6TR4DgoEd-1B74Xk3luDQ"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_N6TR4DgoEd-1B74Xk3luDQ" covered="_N6TR3DgoEd-1B74Xk3luDQ" event="_N6TR7TgoEd-1B74Xk3luDQ" message="_N6TR6DgoEd-1B74Xk3luDQ"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_N6TR4TgoEd-1B74Xk3luDQ" covered="_N6TR2zgoEd-1B74Xk3luDQ" event="_N6TR7jgoEd-1B74Xk3luDQ" message="_N6TR6DgoEd-1B74Xk3luDQ"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_N6TR4jgoEd-1B74Xk3luDQ" covered="_N6TR3DgoEd-1B74Xk3luDQ" event="_N6TR7zgoEd-1B74Xk3luDQ" message="_N6TR6TgoEd-1B74Xk3luDQ"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_N6TR4zgoEd-1B74Xk3luDQ" covered="_N6TR3DgoEd-1B74Xk3luDQ" event="_N6TR8DgoEd-1B74Xk3luDQ" message="_N6TR6TgoEd-1B74Xk3luDQ"/>
+      <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_N6TR5DgoEd-1B74Xk3luDQ" covered="_N6TR3DgoEd-1B74Xk3luDQ" start="_N6TR4zgoEd-1B74Xk3luDQ" finish="_N6TR5TgoEd-1B74Xk3luDQ"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_N6TR5TgoEd-1B74Xk3luDQ" covered="_N6TR3DgoEd-1B74Xk3luDQ" event="_N6TR7zgoEd-1B74Xk3luDQ" message="_N6TR6jgoEd-1B74Xk3luDQ"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_N6TR5jgoEd-1B74Xk3luDQ" covered="_N6TR3DgoEd-1B74Xk3luDQ" event="_N6TR8DgoEd-1B74Xk3luDQ" message="_N6TR6jgoEd-1B74Xk3luDQ"/>
+      <message xmi:id="_N6TR5zgoEd-1B74Xk3luDQ" name="Prim" receiveEvent="_N6TR3jgoEd-1B74Xk3luDQ" sendEvent="_N6TR3TgoEd-1B74Xk3luDQ" connector="_N6TR1TgoEd-1B74Xk3luDQ"/>
+      <message xmi:id="_N6TR6DgoEd-1B74Xk3luDQ" name="Prim" messageSort="reply" receiveEvent="_N6TR4TgoEd-1B74Xk3luDQ" sendEvent="_N6TR4DgoEd-1B74Xk3luDQ" connector="_N6TR1TgoEd-1B74Xk3luDQ"/>
+      <message xmi:id="_N6TR6TgoEd-1B74Xk3luDQ" name="display" receiveEvent="_N6TR4zgoEd-1B74Xk3luDQ" sendEvent="_N6TR4jgoEd-1B74Xk3luDQ" connector="_N6TR2DgoEd-1B74Xk3luDQ"/>
+      <message xmi:id="_N6TR6jgoEd-1B74Xk3luDQ" name="display" messageSort="reply" receiveEvent="_N6TR5jgoEd-1B74Xk3luDQ" sendEvent="_N6TR5TgoEd-1B74Xk3luDQ" connector="_N6TR2DgoEd-1B74Xk3luDQ"/>
+    </ownedBehavior>
+    <ownedAttribute xmi:id="_N6TR6zgoEd-1B74Xk3luDQ" name="graph" type="_N6TRwjgoEd-1B74Xk3luDQ" isReadOnly="false"/>
+    <ownedAttribute xmi:id="_N6TR7DgoEd-1B74Xk3luDQ" name="graph2" type="_N6TRwjgoEd-1B74Xk3luDQ" isReadOnly="false"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_N6TR7TgoEd-1B74Xk3luDQ" name="SendOperationEvent1" visibility="public" operation="_N6TRzDgoEd-1B74Xk3luDQ"/>
+  <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_N6TR7jgoEd-1B74Xk3luDQ" name="ReceiveOperationEvent1" visibility="public" operation="_N6TRzDgoEd-1B74Xk3luDQ"/>
+  <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_N6TR7zgoEd-1B74Xk3luDQ" name="SendOperationEvent2" visibility="public"/>
+  <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_N6TR8DgoEd-1B74Xk3luDQ" name="ReceiveOperationEvent2" visibility="public"/>
+  <profileApplication xmi:id="_N6TR8TgoEd-1B74Xk3luDQ">
+    <eAnnotations xmi:id="_N6TR8jgoEd-1B74Xk3luDQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <references xmi:type="ecore:EPackage" href="pathmap://UML_PROFILES/Standard.profile.uml#_yzU58YinEdqtvbnfB2L_5w"/>
+    </eAnnotations>
+    <appliedProfile href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
+  </profileApplication>
+</uml:Package>

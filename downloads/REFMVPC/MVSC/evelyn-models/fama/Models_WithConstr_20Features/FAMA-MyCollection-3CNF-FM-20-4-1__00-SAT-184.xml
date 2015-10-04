@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature-model xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.tdg-seville.info/benavides/featuremodelling/feature-model.xsd">
+<feature name="R">
+	<binaryRelation name="10003">
+	<cardinality max="1" min="1"/>
+	<solitaryFeature name="m_1">
+		<binaryRelation name="10004">
+		<cardinality max="1" min="1"/>
+		<solitaryFeature name="m_1_1">
+		</solitaryFeature>
+
+		</binaryRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="10005">
+	<cardinality max="1" min="0"/>
+	<solitaryFeature name="o_2">
+		<binaryRelation name="10006">
+		<cardinality max="1" min="1"/>
+		<solitaryFeature name="m_2_1">
+		</solitaryFeature>
+
+		</binaryRelation>
+
+		<binaryRelation name="10007">
+		<cardinality max="1" min="0"/>
+		<solitaryFeature name="o_2_2">
+		</solitaryFeature>
+
+		</binaryRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<setRelation name="10008">
+	<cardinality max="2" min="1"/>
+	<groupedFeature name="g_3_1">
+			<setRelation name="10009">
+			<cardinality max="1" min="1"/>
+			<groupedFeature name="g_3_1_1_1">
+			</groupedFeature>
+			<groupedFeature name="g_3_1_1_2">
+			</groupedFeature>
+			<groupedFeature name="g_3_1_1_3">
+			</groupedFeature>
+			<groupedFeature name="g_3_1_1_4">
+			</groupedFeature>
+			</setRelation>
+
+	</groupedFeature>
+	<groupedFeature name="g_3_2">
+			<setRelation name="10010">
+			<cardinality max="3" min="1"/>
+			<groupedFeature name="g_3_2_1_1">
+			</groupedFeature>
+			<groupedFeature name="g_3_2_1_2">
+			</groupedFeature>
+			<groupedFeature name="g_3_2_1_3">
+			</groupedFeature>
+			</setRelation>
+
+	</groupedFeature>
+	</setRelation>
+
+	<setRelation name="10011">
+	<cardinality max="2" min="1"/>
+	<groupedFeature name="g_4_1">
+	</groupedFeature>
+	<groupedFeature name="g_4_2">
+	</groupedFeature>
+	</setRelation>
+
+	<binaryRelation name="10012">
+	<cardinality max="1" min="1"/>
+	<solitaryFeature name="m_5">
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<setRelation name="10013">
+	<cardinality max="2" min="1"/>
+	<groupedFeature name="g_6_1">
+	</groupedFeature>
+	<groupedFeature name="g_6_2">
+	</groupedFeature>
+	</setRelation>
+
+</feature>
+<!-- Clause3CNF_1: (~g_6_1) or m_1_1 or (~o_2_2) -->
+<!-- Clause3CNF_2: g_3_2_1_1 or m_1_1 or o_2_2 -->
+<!-- Clause3CNF_3: g_3_2_1_1 or (~g_6_1) or o_2_2 -->
+<!-- Clause3CNF_4: g_3_2_1_1 or m_1_1 or (~o_2_2) -->
+</feature-model>

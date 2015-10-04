@@ -1,0 +1,18 @@
+<feature_model name="Avion">
+<feature_tree>
+:r Avion (Avion)
+	:m alas (alas)
+	:m tren_aterrizaje (tren_aterrizaje)
+	:m motor (motor)
+	:m fuselaje (fuselaje)
+	:o usos (usos)
+		:g [1, *]
+			: pasajero (pasajero)
+			: carga (carga)
+	:g [1, *]
+		: helice (helice)
+		: turbina (turbina)
+</feature_tree>
+<constraints>
+</constraints>
+</feature_model>

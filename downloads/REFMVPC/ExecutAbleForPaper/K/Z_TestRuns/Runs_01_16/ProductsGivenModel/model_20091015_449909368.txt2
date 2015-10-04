@@ -1,0 +1,13 @@
+Evaluation_semantics;Optimizer;Short_circuit;SAL;Evaluator;Conditional;Machine_semantics;Simple_Arithmetic;Constant_folding;Language;
+0 0 0 1 1 0 1 1 0 1 
+0 0 0 1 1 1 1 1 0 1 
+0 1 1 1 1 1 1 1 0 1 
+0 1 0 1 1 0 1 1 1 1 
+0 1 0 1 1 1 1 1 1 1 
+0 1 1 1 1 1 1 1 1 1 
+1 0 0 1 1 0 0 1 0 1 
+1 0 0 1 1 1 0 1 0 1 
+1 1 1 1 1 1 0 1 0 1 
+1 1 0 1 1 0 0 1 1 1 
+1 1 0 1 1 1 0 1 1 1 
+1 1 1 1 1 1 0 1 1 1 

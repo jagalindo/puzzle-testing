@@ -1,0 +1,53 @@
+<!-- This model was created online using SPLOT's Feature Model Editor (http://www.splot-research.org) on Fri, Mar 26, 2010 - 7:47 PM  -->
+<feature_model name="Bicycle feature model">
+<meta>
+<data name="description">Bicycle feature model</data>
+<data name="creator">Marcilio Mendonca</data>
+<data name="address"></data>
+<data name="email">marcilio.mendonca@gmail.com</data>
+<data name="phone"></data>
+<data name="website"></data>
+<data name="organization">University of Waterloo</data>
+<data name="department"></data>
+<data name="date">March 2010</data>
+<data name="reference"></data>
+</meta>
+<feature_tree>
+:r Bicycle(Bicycle)
+	:m Frame(Frame)
+		:g (_r_1_2) [1,1] 
+			: Iron(Iron)
+			: Aluminum(Aluminum)
+			: Carbon(Carbon)
+				:g (_r_1_2_5_6) [1,1] 
+					: White(White)
+					: Red(Red)
+					: Black(Black)
+	:o Gears(Gears)
+		:o Front(Front)
+		:o Rear(Rear)
+	:m Wheels(Wheels)
+	:m Saddle(Saddle)
+	:m Color(Color)
+		:g (_r_15_16) [1,1] 
+			: Red2(Red2)
+			: Green(Green)
+			: Blue(Blue)
+	:m Handle_bars(Handle_bars)
+	:o Pedals(Pedals)
+	:o Warranty(Warranty)
+		:g (_r_22_23) [1,1] 
+			: d1_year(d1_year)
+			: d2_years(d2_years)
+			: d3_years(d3_years)
+	:o Maintenance_plan(Maintenance_plan)
+		:g (_r_29_30) [1,1] 
+			: f2_years(f2_years)
+			: f3_years(f3_years)
+			: lifetime(lifetime)
+</feature_tree>
+<constraints>
+constraint_1:~Front or Rear
+constraint_3:~Carbon or Red2
+</constraints>
+</feature_model>

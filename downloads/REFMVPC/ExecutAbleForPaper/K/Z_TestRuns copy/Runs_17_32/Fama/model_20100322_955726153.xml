@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature-model xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.tdg-seville.info/benavides/featuremodelling/feature-model.xsd">
+<feature name="Mobile_Phone">
+	<binaryRelation name="9">
+	<cardinality max="1" min="1"/>
+	<solitaryFeature name="Utility_Functions">
+		<binaryRelation name="10">
+		<cardinality max="1" min="1"/>
+		<solitaryFeature name="Calls">
+		</solitaryFeature>
+
+		</binaryRelation>
+
+		<binaryRelation name="11">
+		<cardinality max="1" min="1"/>
+		<solitaryFeature name="Messaging">
+			<setRelation name="12">
+			<cardinality max="2" min="1"/>
+			<groupedFeature name="SMS">
+			</groupedFeature>
+			<groupedFeature name="MMS">
+			</groupedFeature>
+			</setRelation>
+
+		</solitaryFeature>
+
+		</binaryRelation>
+
+		<binaryRelation name="13">
+		<cardinality max="1" min="0"/>
+		<solitaryFeature name="Games">
+		</solitaryFeature>
+
+		</binaryRelation>
+
+		<binaryRelation name="14">
+		<cardinality max="1" min="1"/>
+		<solitaryFeature name="Alarm">
+		</solitaryFeature>
+
+		</binaryRelation>
+
+		<binaryRelation name="15">
+		<cardinality max="1" min="1"/>
+		<solitaryFeature name="Ringing_Tones">
+		</solitaryFeature>
+
+		</binaryRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="16">
+	<cardinality max="1" min="1"/>
+	<solitaryFeature name="Settings">
+		<binaryRelation name="17">
+		<cardinality max="1" min="1"/>
+		<solitaryFeature name="OS">
+			<setRelation name="18">
+			<cardinality max="1" min="1"/>
+			<groupedFeature name="Symbian">
+			</groupedFeature>
+			<groupedFeature name="WinCE">
+			</groupedFeature>
+			</setRelation>
+
+		</solitaryFeature>
+
+		</binaryRelation>
+
+		<binaryRelation name="19">
+		<cardinality max="1" min="0"/>
+		<solitaryFeature name="Java_Support">
+		</solitaryFeature>
+
+		</binaryRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="20">
+	<cardinality max="1" min="0"/>
+	<solitaryFeature name="Media">
+		<binaryRelation name="21">
+		<cardinality max="1" min="1"/>
+		<solitaryFeature name="Camera">
+		</solitaryFeature>
+
+		</binaryRelation>
+
+		<binaryRelation name="22">
+		<cardinality max="1" min="0"/>
+		<solitaryFeature name="MP3">
+		</solitaryFeature>
+
+		</binaryRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="23">
+	<cardinality max="1" min="0"/>
+	<solitaryFeature name="Connectivity">
+		<binaryRelation name="24">
+		<cardinality max="1" min="1"/>
+		<solitaryFeature name="USB">
+		</solitaryFeature>
+
+		</binaryRelation>
+
+		<binaryRelation name="25">
+		<cardinality max="1" min="0"/>
+		<solitaryFeature name="Bluetooth">
+		</solitaryFeature>
+
+		</binaryRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+</feature>
+<requires feature="Games" name="constraint_1" requires="Java_Support"/>
+</feature-model>

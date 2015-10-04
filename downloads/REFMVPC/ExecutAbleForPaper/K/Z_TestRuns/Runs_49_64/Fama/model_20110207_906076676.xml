@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature-model xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.tdg-seville.info/benavides/featuremodelling/feature-model.xsd">
+<feature name="_r">
+	<binaryRelation name="50">
+	<cardinality max="1" min="1"/>
+	<solitaryFeature name="_r_1">
+		<setRelation name="51">
+		<cardinality max="1" min="1"/>
+		<groupedFeature name="_r_1_4_5">
+		</groupedFeature>
+		<groupedFeature name="_r_1_4_6">
+		</groupedFeature>
+		<groupedFeature name="_r_1_4_7">
+		</groupedFeature>
+		</setRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="52">
+	<cardinality max="1" min="1"/>
+	<solitaryFeature name="_r_2">
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="53">
+	<cardinality max="1" min="1"/>
+	<solitaryFeature name="_r_3">
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="54">
+	<cardinality max="1" min="1"/>
+	<solitaryFeature name="_r_8">
+		<setRelation name="55">
+		<cardinality max="1" min="1"/>
+		<groupedFeature name="_r_8_9_10">
+		</groupedFeature>
+		<groupedFeature name="_r_8_9_11">
+		</groupedFeature>
+		<groupedFeature name="_r_8_9_12">
+		</groupedFeature>
+		</setRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<setRelation name="56">
+	<cardinality max="1" min="1"/>
+	<groupedFeature name="_r_13_14">
+	</groupedFeature>
+	</setRelation>
+
+</feature>
+</feature-model>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature-model xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.tdg-seville.info/benavides/featuremodelling/feature-model.xsd">
+<feature name="editor_config">
+	<binaryRelation name="767">
+	<cardinality max="1" min="1"/>
+	<solitaryFeature name="backup">
+		<binaryRelation name="768">
+		<cardinality max="1" min="0"/>
+		<solitaryFeature name="autosave">
+			<binaryRelation name="769">
+			<cardinality max="1" min="1"/>
+			<solitaryFeature name="minutes">
+			</solitaryFeature>
+
+			</binaryRelation>
+
+		</solitaryFeature>
+
+		</binaryRelation>
+
+		<binaryRelation name="770">
+		<cardinality max="1" min="0"/>
+		<solitaryFeature name="backup_onchange">
+		</solitaryFeature>
+
+		</binaryRelation>
+
+		<binaryRelation name="771">
+		<cardinality max="1" min="1"/>
+		<solitaryFeature name="backup_extension">
+			<setRelation name="772">
+			<cardinality max="1" min="1"/>
+			<groupedFeature name="file_bak">
+			</groupedFeature>
+			<groupedFeature name="file_bak_ext">
+			</groupedFeature>
+			<groupedFeature name="file_ext_bak">
+			</groupedFeature>
+			</setRelation>
+
+		</solitaryFeature>
+
+		</binaryRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="773">
+	<cardinality max="1" min="0"/>
+	<solitaryFeature name="document_class">
+		<binaryRelation name="774">
+		<cardinality max="1" min="1"/>
+		<solitaryFeature name="associated_file_ext">
+			<binaryRelation name="775">
+			<cardinality max="1" min="0"/>
+			<solitaryFeature name="ext">
+			</solitaryFeature>
+
+			</binaryRelation>
+
+		</solitaryFeature>
+
+		</binaryRelation>
+
+		<binaryRelation name="776">
+		<cardinality max="1" min="1"/>
+		<solitaryFeature name="commands">
+			<binaryRelation name="777">
+			<cardinality max="1" min="0"/>
+			<solitaryFeature name="remove_blank_lines">
+			</solitaryFeature>
+
+			</binaryRelation>
+
+			<binaryRelation name="778">
+			<cardinality max="1" min="0"/>
+			<solitaryFeature name="spell_check">
+			</solitaryFeature>
+
+			</binaryRelation>
+
+			<binaryRelation name="779">
+			<cardinality max="1" min="0"/>
+			<solitaryFeature name="dos_unix_conversion">
+			</solitaryFeature>
+
+			</binaryRelation>
+
+		</solitaryFeature>
+
+		</binaryRelation>
+
+		<binaryRelation name="780">
+		<cardinality max="1" min="0"/>
+		<solitaryFeature name="syntax_highlighting">
+			<binaryRelation name="781">
+			<cardinality max="1" min="1"/>
+			<solitaryFeature name="syntax_definition_file">
+			</solitaryFeature>
+
+			</binaryRelation>
+
+		</solitaryFeature>
+
+		</binaryRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+</feature>
+</feature-model>

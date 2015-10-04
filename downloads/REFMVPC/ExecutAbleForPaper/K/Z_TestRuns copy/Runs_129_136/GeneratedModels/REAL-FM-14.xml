@@ -1,0 +1,25 @@
+<feature_model name="backup">
+<feature_tree>
+:r backup (backup)
+	:m editor_config (editor_config)
+	:m backup_extension (backup_extension)
+	:o minutes (minutes)
+		:m autosave (autosave)
+	:o backup_onchange (backup_onchange)
+	:o commands (commands)
+		:m document_class (document_class)
+		:m associated_file_ext (associated_file_ext)
+		:o ext (ext)
+		:o dos_unix_conversion (dos_unix_conversion)
+		:o remove_blank_lines (remove_blank_lines)
+		:o syntax_highlighting (syntax_highlighting)
+			:m syntax_definition_file (syntax_definition_file)
+		:o spell_check (spell_check)
+	:g [1, 1]
+		: file_bak_ext (file_bak_ext)
+		: file_bak (file_bak)
+		: file_ext_bak (file_ext_bak)
+</feature_tree>
+<constraints>
+</constraints>
+</feature_model>

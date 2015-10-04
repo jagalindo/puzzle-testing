@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature-model xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.tdg-seville.info/benavides/featuremodelling/feature-model.xsd">
+<feature name="Stacja pogodowa">
+	<binaryRelation name="491">
+	<cardinality max="1" min="1"/>
+	<solitaryFeature name="_r_1">
+		<setRelation name="492">
+		<cardinality max="3" min="1"/>
+		<groupedFeature name="_r_1_2_3">
+		</groupedFeature>
+		<groupedFeature name="_r_1_2_4">
+		</groupedFeature>
+		<groupedFeature name="_r_1_2_5">
+		</groupedFeature>
+		</setRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="493">
+	<cardinality max="1" min="1"/>
+	<solitaryFeature name="_r_6">
+		<setRelation name="494">
+		<cardinality max="1" min="1"/>
+		<groupedFeature name="_r_6_26_27">
+		</groupedFeature>
+		<groupedFeature name="_r_6_26_28">
+		</groupedFeature>
+		</setRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="495">
+	<cardinality max="1" min="1"/>
+	<solitaryFeature name="_r_10">
+		<binaryRelation name="496">
+		<cardinality max="1" min="1"/>
+		<solitaryFeature name="_r_10_11">
+			<setRelation name="497">
+			<cardinality max="1" min="1"/>
+			<groupedFeature name="_r_10_11_12_13">
+			</groupedFeature>
+			<groupedFeature name="_r_10_11_12_14">
+			</groupedFeature>
+			</setRelation>
+
+		</solitaryFeature>
+
+		</binaryRelation>
+
+		<setRelation name="498">
+		<cardinality max="1" min="1"/>
+		<groupedFeature name="_r_10_15_16">
+		</groupedFeature>
+		<groupedFeature name="_r_10_15_17">
+		</groupedFeature>
+		<groupedFeature name="_r_10_15_22">
+				<setRelation name="499">
+				<cardinality max="1" min="1"/>
+				<groupedFeature name="_r_10_15_22_23_24">
+				</groupedFeature>
+				<groupedFeature name="_r_10_15_22_23_25">
+				</groupedFeature>
+				</setRelation>
+
+		</groupedFeature>
+		</setRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="500">
+	<cardinality max="1" min="0"/>
+	<solitaryFeature name="_r_18">
+		<setRelation name="501">
+		<cardinality max="2" min="1"/>
+		<groupedFeature name="_r_18_19_20">
+		</groupedFeature>
+		<groupedFeature name="_r_18_19_21">
+		</groupedFeature>
+		</setRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+</feature>
+</feature-model>

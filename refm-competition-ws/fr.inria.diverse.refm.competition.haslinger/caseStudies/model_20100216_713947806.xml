@@ -1,0 +1,31 @@
+<!-- This model was created online using SPLOT's Feature Model Editor (http://www.splot-research.org) on Tue, Feb 16, 2010 - 10:20 AM  -->
+<feature_model name="test_fm">
+<meta>
+<data name="description">test</data>
+<data name="creator">YMTT</data>
+<data name="address"></data>
+<data name="email">yan-mei.tang@technicolor.com</data>
+<data name="phone"></data>
+<data name="website"></data>
+<data name="organization">Technicolor</data>
+<data name="department"></data>
+<data name="date"></data>
+<data name="reference"></data>
+</meta>
+<feature_tree>
+:r YM_Test(YM_Test)
+	:m POWER_SUPPLY(POWER_SUPPLY)
+	:m TUNER_and_CHANNEL_DECODING(TUNER_and_CHANNEL_DECODING)
+	:m DEMULTIPLEXER_and_DESCRAMBLING(DEMULTIPLEXER_and_DESCRAMBLING)
+	:m AUDIO_and_VIDEO_DECODING(AUDIO_and_VIDEO_DECODING)
+	:m CONDITIONAL_ACCESS(CONDITIONAL_ACCESS)
+	:m SECURITY(SECURITY)
+	:m PROCESSOR_and_DATA_STORAGE(PROCESSOR_and_DATA_STORAGE)
+	:m DATA_INTERFACES(DATA_INTERFACES)
+		:o USB(USB)
+		:o Wifi(Wifi)
+		:o Power_Line_Control(Power_Line_Control)
+</feature_tree>
+<constraints>
+</constraints>
+</feature_model>

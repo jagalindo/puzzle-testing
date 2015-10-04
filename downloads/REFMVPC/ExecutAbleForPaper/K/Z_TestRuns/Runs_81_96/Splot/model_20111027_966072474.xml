@@ -1,0 +1,29 @@
+<!-- This model was created online using SPLOT's Feature Model Editor (http://www.splot-research.org) on Thu, Oct 27, 2011 - 7:39 AM  -->
+<feature_model name="FeatureModel1">
+<meta>
+<data name="description">FeatureModelDesc1</data>
+<data name="creator">test</data>
+<data name="address"></data>
+<data name="email">test@gmail.com</data>
+<data name="phone"></data>
+<data name="website"></data>
+<data name="organization">GU</data>
+<data name="department"></data>
+<data name="date"></data>
+<data name="reference"></data>
+</meta>
+<feature_tree>
+:r _r(_r)
+	:m _r_1(_r_1)
+		:o _r_1_2(_r_1_2)
+		:o _r_1_8(_r_1_8)
+	:m _r_3(_r_3)
+		:o _r_3_4(_r_3_4)
+		:m _r_3_9(_r_3_9)
+	:m _r_5(_r_5)
+		:o _r_5_6(_r_5_6)
+	:m _r_7(_r_7)
+</feature_tree>
+<constraints>
+</constraints>
+</feature_model>

@@ -1,0 +1,38 @@
+<!-- This model was created online using SPLOT's Feature Model Editor (http://www.splot-research.org) on Tue, Dec 20, 2011 - 10:21 AM  -->
+<feature_model name="Transmission">
+<meta>
+<data name="description">Configuration of a Transmission</data>
+<data name="creator">TD</data>
+<data name="address"></data>
+<data name="email">tobiasd123@gmx.de</data>
+<data name="phone"></data>
+<data name="website"></data>
+<data name="organization">none</data>
+<data name="department"></data>
+<data name="date"></data>
+<data name="reference"></data>
+</meta>
+<feature_tree>
+:r _r(_r)
+	:m _r_18(_r_18)
+		:g (_r_18_19) [1,1] 
+			: _r_18_19_20(_r_18_19_20)
+			: _r_18_19_21(_r_18_19_21)
+			: _r_18_19_22(_r_18_19_22)
+			: _r_18_19_23(_r_18_19_23)
+	:m _r_24(_r_24)
+		:g (_r_24_25) [1,1] 
+			: _r_24_25_26(_r_24_25_26)
+			: _r_24_25_27(_r_24_25_27)
+				:g (_r_24_25_27_28) [1,1] 
+					: _r_24_25_27_28_29(_r_24_25_27_28_29)
+					: _r_24_25_27_28_30(_r_24_25_27_28_30)
+	:o _r_31(_r_31)
+		:g (_r_31_32) [1,1] 
+			: _r_31_32_33(_r_31_32_33)
+			: _r_31_32_34(_r_31_32_34)
+			: _r_31_32_35(_r_31_32_35)
+</feature_tree>
+<constraints>
+</constraints>
+</feature_model>

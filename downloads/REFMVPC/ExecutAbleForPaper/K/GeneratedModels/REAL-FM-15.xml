@@ -1,0 +1,39 @@
+<feature_model name="arch_style">
+<feature_tree>
+:r arch_style (arch_style)
+	:m order (order)
+	:m alpha_sort (alpha_sort)
+	:m shift_data (shift_data)
+	:m case_sensitivity (case_sensitivity)
+	:m circular_shift (circular_shift)
+	:m kwic (kwic)
+	:m input_output (input_output)
+	:g [1, *]
+		: console (console)
+		: file (file)
+	:g [1, 1]
+		: descendant (descendant)
+		: ascendant (ascendant)
+	:g [1, 1]
+		: insensitive (insensitive)
+		: sensitive (sensitive)
+	:g [1, 1]
+		: implicit_invocation (implicit_invocation)
+		: adt (adt)
+		: pipe_and_filter (pipe_and_filter)
+		: shared_data (shared_data)
+	:g [1, 1]
+		: implicit (implicit)
+		: explicit (explicit)
+			:o shift_processing (shift_processing)
+				:m compression (compression)
+				:o noise_words (noise_words)
+				:g [1, 1]
+					: each_line (each_line)
+					: all_lines (all_lines)
+</feature_tree>
+<constraints>
+constraint_1:~pipe_and_filter or all_lines
+constraint_2:~implicit or ~pipe_and_filter
+</constraints>
+</feature_model>

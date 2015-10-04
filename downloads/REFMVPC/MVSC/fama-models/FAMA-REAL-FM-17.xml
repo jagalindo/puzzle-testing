@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature-model xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.tdg-seville.info/benavides/featuremodelling/feature-model.xsd">
+<feature name="insurance_product">
+	<binaryRelation name="823">
+	<cardinality max="1" min="1"/>
+	<solitaryFeature name="insured_object">
+		<setRelation name="824">
+		<cardinality max="1" min="1"/>
+		<groupedFeature name="corporation">
+		</groupedFeature>
+		<groupedFeature name="realty">
+		</groupedFeature>
+		<groupedFeature name="movable_property">
+		</groupedFeature>
+		<groupedFeature name="person">
+		</groupedFeature>
+		</setRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="825">
+	<cardinality max="1" min="1"/>
+	<solitaryFeature name="coverage">
+		<setRelation name="826">
+		<cardinality max="5" min="1"/>
+		<groupedFeature name="illness">
+		</groupedFeature>
+		<groupedFeature name="life">
+		</groupedFeature>
+		<groupedFeature name="unemployment">
+		</groupedFeature>
+		<groupedFeature name="damage">
+		</groupedFeature>
+		<groupedFeature name="loss">
+		</groupedFeature>
+		</setRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="827">
+	<cardinality max="1" min="1"/>
+	<solitaryFeature name="payment">
+		<setRelation name="828">
+		<cardinality max="1" min="1"/>
+		<groupedFeature name="service">
+		</groupedFeature>
+		<groupedFeature name="ammount">
+		</groupedFeature>
+		</setRelation>
+
+		<binaryRelation name="829">
+		<cardinality max="1" min="0"/>
+		<solitaryFeature name="own_risk">
+		</solitaryFeature>
+
+		</binaryRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="830">
+	<cardinality max="1" min="1"/>
+	<solitaryFeature name="conditions">
+		<binaryRelation name="831">
+		<cardinality max="1" min="1"/>
+		<solitaryFeature name="acceptance">
+		</solitaryFeature>
+
+		</binaryRelation>
+
+		<binaryRelation name="832">
+		<cardinality max="1" min="1"/>
+		<solitaryFeature name="exception">
+		</solitaryFeature>
+
+		</binaryRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="833">
+	<cardinality max="1" min="1"/>
+	<solitaryFeature name="premium">
+		<setRelation name="834">
+		<cardinality max="1" min="1"/>
+		<groupedFeature name="direct">
+		</groupedFeature>
+		<groupedFeature name="periodical">
+		</groupedFeature>
+		</setRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="835">
+	<cardinality max="1" min="1"/>
+	<solitaryFeature name="payee">
+		<setRelation name="836">
+		<cardinality max="2" min="1"/>
+		<groupedFeature name="_person">
+		</groupedFeature>
+		<groupedFeature name="payee_corporation">
+		</groupedFeature>
+		</setRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+</feature>
+<excludes feature="corporation" name="c1" excludes="illness"/>
+<excludes feature="person" name="c2" excludes="damage"/>
+<requires feature="loss" name="c3" requires="movable_property"/>
+<requires feature="corporation" name="c4" requires="payee_corporation"/>
+</feature-model>

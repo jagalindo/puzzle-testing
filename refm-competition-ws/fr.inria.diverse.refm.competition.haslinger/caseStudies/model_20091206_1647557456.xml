@@ -1,0 +1,30 @@
+<!-- This model was created online using SPLOT's Feature Model Editor (http://www.splot-research.org) on Sun, Dec 6, 2009 - 5:56 PM  -->
+<feature_model name="Mobile Game">
+<meta>
+<data name="description">PL Ex2</data>
+<data name="creator">Bruce Lee</data>
+<data name="address"></data>
+<data name="email">bruce.lee@kungfu</data>
+<data name="phone"></data>
+<data name="website"></data>
+<data name="organization">testOrg</data>
+<data name="department"></data>
+<data name="date"></data>
+<data name="reference"></data>
+</meta>
+<feature_tree>
+:r Mobile_Game(Mobile_Game)
+	:m Input(Input)
+		:g (_r_1_6) [1,*] 
+			: Movement_Detection(Movement_Detection)
+			: Speech_Input(Speech_Input)
+			: Keypad(Keypad)
+			: Touchscreen(Touchscreen)
+	:o Output(Output)
+		:o Force_Feedback(Force_Feedback)
+	:o Network_Support(Network_Support)
+		:o Online_Multiplayer(Online_Multiplayer)
+</feature_tree>
+<constraints>
+</constraints>
+</feature_model>

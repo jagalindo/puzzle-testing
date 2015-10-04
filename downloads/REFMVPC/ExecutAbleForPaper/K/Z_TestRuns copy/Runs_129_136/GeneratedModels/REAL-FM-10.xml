@@ -1,0 +1,21 @@
+<feature_model name="logon10">
+<feature_tree>
+:r logon10 (logon10)
+	:m follow_me3 (follow_me3)
+	:m user_pos_metho6 (user_pos_metho6)
+	:m vof1 (vof1)
+	:m user_localiz5 (user_localiz5)
+	:o printer_register12 (printer_register12)
+		:m file_upload13 (file_upload13)
+		:m virtual_printer11 (virtual_printer11)
+		:o file_converter14 (file_converter14)
+	:o undefined_on_paper9 (undefined_on_paper9)
+	:o undefined_on_paper4 (undefined_on_paper4)
+	:o undefined_on_paper2 (undefined_on_paper2)
+	:g [1, 1]
+		: rfid8 (rfid8)
+		: access_point7 (access_point7)
+</feature_tree>
+<constraints>
+</constraints>
+</feature_model>

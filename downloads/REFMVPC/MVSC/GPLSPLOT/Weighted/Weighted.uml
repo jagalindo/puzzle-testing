@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Package xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_uj6rgDgsEd-C-Y-nXySsMw" name="Weighted" visibility="public">
+  <packageImport xmi:id="_uj6rgTgsEd-C-Y-nXySsMw">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Class" xmi:id="_uj6rgjgsEd-C-Y-nXySsMw" name="Edge" visibility="public" isAbstract="false">
+    <ownedAttribute xmi:id="_uj6rgzgsEd-C-Y-nXySsMw" name="weight" visibility="private" isReadOnly="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+    </ownedAttribute>
+    <ownedBehavior xmi:type="uml:StateMachine" xmi:id="_uj6rhDgsEd-C-Y-nXySsMw" name="StateMachine1" visibility="public" isAbstract="false">
+      <region xmi:id="_uj6rhTgsEd-C-Y-nXySsMw" name="Region1">
+        <subvertex xmi:type="uml:Pseudostate" xmi:id="_uj6rhjgsEd-C-Y-nXySsMw"/>
+        <subvertex xmi:type="uml:State" xmi:id="_uj6rhzgsEd-C-Y-nXySsMw" name="changeWeight"/>
+        <transition xmi:id="_uj6riDgsEd-C-Y-nXySsMw" name="setWeigth" target="_uj6rhzgsEd-C-Y-nXySsMw" source="_uj6rhjgsEd-C-Y-nXySsMw"/>
+      </region>
+    </ownedBehavior>
+    <ownedOperation xmi:id="_uj6riTgsEd-C-Y-nXySsMw" name="EdgeConstructor">
+      <ownedParameter xmi:id="_uj6rijgsEd-C-Y-nXySsMw" name="the_start">
+        <type xmi:type="uml:PrimitiveType" href="Base.uml#_uj6r6TgsEd-C-Y-nXySsMw"/>
+      </ownedParameter>
+      <ownedParameter xmi:id="_uj6rizgsEd-C-Y-nXySsMw" name="the_end">
+        <type xmi:type="uml:PrimitiveType" href="Base.uml#_uj6r6TgsEd-C-Y-nXySsMw"/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_uj6rjDgsEd-C-Y-nXySsMw" name="adjustAdorns">
+      <ownedParameter xmi:id="_uj6rjTgsEd-C-Y-nXySsMw" name="the_edge" type="_uj6rkzgsEd-C-Y-nXySsMw"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_uj6rjjgsEd-C-Y-nXySsMw" name="setWeight">
+      <ownedParameter xmi:id="_uj6rjzgsEd-C-Y-nXySsMw" name="weight">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_uj6rkDgsEd-C-Y-nXySsMw" name="getWeight">
+      <ownedParameter xmi:id="_uj6rkTgsEd-C-Y-nXySsMw" name="Parameter1" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_uj6rkjgsEd-C-Y-nXySsMw" name="display"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_uj6rkzgsEd-C-Y-nXySsMw" name="EdgeIfc" visibility="public">
+    <ownedOperation xmi:id="_uj6rlDgsEd-C-Y-nXySsMw" name="getWeight"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Collaboration" xmi:id="_uj6rlTgsEd-C-Y-nXySsMw" name="Collaboration1" visibility="public">
+    <ownedBehavior xmi:type="uml:Interaction" xmi:id="_uj6rljgsEd-C-Y-nXySsMw" name="Interaction1" visibility="public" isAbstract="false">
+      <ownedConnector xmi:id="_uj6rlzgsEd-C-Y-nXySsMw">
+        <end xmi:id="_uj6rmDgsEd-C-Y-nXySsMw" role="_uj6rqTgsEd-C-Y-nXySsMw"/>
+        <end xmi:id="_uj6rmTgsEd-C-Y-nXySsMw" role="_uj6rqTgsEd-C-Y-nXySsMw"/>
+      </ownedConnector>
+      <lifeline xmi:id="_uj6rmjgsEd-C-Y-nXySsMw" name="edge" represents="_uj6rqTgsEd-C-Y-nXySsMw" coveredBy="_uj6rmzgsEd-C-Y-nXySsMw _uj6rnDgsEd-C-Y-nXySsMw _uj6rnTgsEd-C-Y-nXySsMw _uj6rnjgsEd-C-Y-nXySsMw _uj6rnzgsEd-C-Y-nXySsMw _uj6roDgsEd-C-Y-nXySsMw _uj6roTgsEd-C-Y-nXySsMw _uj6rojgsEd-C-Y-nXySsMw _uj6rozgsEd-C-Y-nXySsMw _uj6rpDgsEd-C-Y-nXySsMw"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_uj6rmzgsEd-C-Y-nXySsMw" covered="_uj6rmjgsEd-C-Y-nXySsMw" event="_uj6rqjgsEd-C-Y-nXySsMw" message="_uj6rpTgsEd-C-Y-nXySsMw"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_uj6rnDgsEd-C-Y-nXySsMw" covered="_uj6rmjgsEd-C-Y-nXySsMw" event="_uj6rqzgsEd-C-Y-nXySsMw" message="_uj6rpTgsEd-C-Y-nXySsMw"/>
+      <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_uj6rnTgsEd-C-Y-nXySsMw" covered="_uj6rmjgsEd-C-Y-nXySsMw" start="_uj6rnDgsEd-C-Y-nXySsMw" finish="_uj6rnjgsEd-C-Y-nXySsMw"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_uj6rnjgsEd-C-Y-nXySsMw" covered="_uj6rmjgsEd-C-Y-nXySsMw" event="_uj6rqjgsEd-C-Y-nXySsMw" message="_uj6rpjgsEd-C-Y-nXySsMw"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_uj6rnzgsEd-C-Y-nXySsMw" covered="_uj6rmjgsEd-C-Y-nXySsMw" event="_uj6rqzgsEd-C-Y-nXySsMw" message="_uj6rpjgsEd-C-Y-nXySsMw"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_uj6roDgsEd-C-Y-nXySsMw" covered="_uj6rmjgsEd-C-Y-nXySsMw" event="_uj6rrDgsEd-C-Y-nXySsMw" message="_uj6rpzgsEd-C-Y-nXySsMw"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_uj6roTgsEd-C-Y-nXySsMw" covered="_uj6rmjgsEd-C-Y-nXySsMw" event="_uj6rrTgsEd-C-Y-nXySsMw" message="_uj6rpzgsEd-C-Y-nXySsMw"/>
+      <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_uj6rojgsEd-C-Y-nXySsMw" covered="_uj6rmjgsEd-C-Y-nXySsMw" start="_uj6roTgsEd-C-Y-nXySsMw" finish="_uj6rozgsEd-C-Y-nXySsMw"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_uj6rozgsEd-C-Y-nXySsMw" covered="_uj6rmjgsEd-C-Y-nXySsMw" event="_uj6rrDgsEd-C-Y-nXySsMw" message="_uj6rqDgsEd-C-Y-nXySsMw"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_uj6rpDgsEd-C-Y-nXySsMw" covered="_uj6rmjgsEd-C-Y-nXySsMw" event="_uj6rrTgsEd-C-Y-nXySsMw" message="_uj6rqDgsEd-C-Y-nXySsMw"/>
+      <message xmi:id="_uj6rpTgsEd-C-Y-nXySsMw" name="adjustAdorns" receiveEvent="_uj6rnDgsEd-C-Y-nXySsMw" sendEvent="_uj6rmzgsEd-C-Y-nXySsMw" connector="_uj6rlzgsEd-C-Y-nXySsMw"/>
+      <message xmi:id="_uj6rpjgsEd-C-Y-nXySsMw" name="adjustAdorns" messageSort="reply" receiveEvent="_uj6rnzgsEd-C-Y-nXySsMw" sendEvent="_uj6rnjgsEd-C-Y-nXySsMw" connector="_uj6rlzgsEd-C-Y-nXySsMw"/>
+      <message xmi:id="_uj6rpzgsEd-C-Y-nXySsMw" name="setWeight" receiveEvent="_uj6roTgsEd-C-Y-nXySsMw" sendEvent="_uj6roDgsEd-C-Y-nXySsMw" connector="_uj6rlzgsEd-C-Y-nXySsMw"/>
+      <message xmi:id="_uj6rqDgsEd-C-Y-nXySsMw" name="setWeight" messageSort="reply" receiveEvent="_uj6rpDgsEd-C-Y-nXySsMw" sendEvent="_uj6rozgsEd-C-Y-nXySsMw" connector="_uj6rlzgsEd-C-Y-nXySsMw"/>
+    </ownedBehavior>
+    <ownedAttribute xmi:id="_uj6rqTgsEd-C-Y-nXySsMw" name="edge" type="_uj6rgjgsEd-C-Y-nXySsMw" isReadOnly="false"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_uj6rqjgsEd-C-Y-nXySsMw" name="SendOperationEvent1" visibility="public" operation="_uj6rjDgsEd-C-Y-nXySsMw"/>
+  <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_uj6rqzgsEd-C-Y-nXySsMw" name="ReceiveOperationEvent1" visibility="public" operation="_uj6rjDgsEd-C-Y-nXySsMw"/>
+  <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_uj6rrDgsEd-C-Y-nXySsMw" name="SendOperationEvent2" visibility="public" operation="_uj6rjjgsEd-C-Y-nXySsMw"/>
+  <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_uj6rrTgsEd-C-Y-nXySsMw" name="ReceiveOperationEvent2" visibility="public" operation="_uj6rjjgsEd-C-Y-nXySsMw"/>
+  <profileApplication xmi:id="_uj6rrjgsEd-C-Y-nXySsMw">
+    <eAnnotations xmi:id="_uj6rrzgsEd-C-Y-nXySsMw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <references xmi:type="ecore:EPackage" href="pathmap://UML_PROFILES/Standard.profile.uml#_yzU58YinEdqtvbnfB2L_5w"/>
+    </eAnnotations>
+    <appliedProfile href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
+  </profileApplication>
+</uml:Package>

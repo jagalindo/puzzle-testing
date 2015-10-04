@@ -1,0 +1,36 @@
+package fma;
+
+/**
+ * Used to store the type of a relation.
+ */
+public enum RType {
+	unknown, root, or, xor, optional, mandatory;
+
+	@Override
+	public String toString() {
+		String s;
+		switch (this) {
+		case root:
+			s = "root";
+			break;
+		case or:
+			s = "or";
+			break;
+		case xor:
+			s = "xor";
+			break;
+		case optional:
+			s = "optional";
+			break;
+		case mandatory:
+			s = "mandatory";
+			break;
+		case unknown:
+			s="unknown";
+			break;
+		default:
+			s = "undefined";
+		}
+		return s;
+	}
+}

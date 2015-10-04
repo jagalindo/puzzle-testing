@@ -1,0 +1,156 @@
+package fma;
+
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
+
+public class MandAnalyzer {
+	/**
+	 * Appends all mandatories of the root, to the input variable root. All
+	 * other mandatory relations are returned via a Map. All mandatory
+	 * attributes are trimmed from the products in the input variable
+	 * products.
+	 * 
+	 * @param products
+	 *            set of all products
+	 * @param features
+	 *            set of all features
+	 * @param root
+	 *            root node of the feature model
+	 * @return map of mandatory relations
+	 */
+	public Map<Feature, Set<Feature>> analyse(Set<Product> products,
+			Set<Feature> features, RNode root) {
+		Map<Feature, Set<Feature>> mandCandidates = new HashMap<Feature, Set<Feature>>();
+
+		// Get all mandatories of the root node
+		insertMandatoriesOfRoot(products, features, root);
+
+		// Get other mandatories
+		Set<Feature> occuredW;
+		Set<Feature> posMands = new HashSet<Feature>();
+
+		// Retrieve list of possible mandatory candidates and store them in
+		// posMands
+		for (Feature f : features) {
+			occuredW = new HashSet<Feature>(features);
+			for (Product p : products) {
+				if (p.contains(f)) {
+					occuredW.retainAll(p.getFeatures());
+					if (occuredW.size() == 1) {// there are no mandatory
+												// features
+						break;
+					}
+				}
+			}
+			if (occuredW.size() > 1) {
+				occuredW.remove(f);
+				mandCandidates.put(f, occuredW);
+				posMands.add(f);
+			}
+		}
+
+		// Delete all those features from the posMands-set which are not really
+		// mandatories
+		Set<Feature> pM;
+		for (Feature f : posMands) {
+			pM = mandCandidates.get(f);
+			if (pM != null) {
+				pM = new HashSet<Feature>(pM);
+				for (Feature fMan : pM) { // possible Mandatory Feature of f
+					if (mandCandidates.containsKey(fMan)
+							&& mandCandidates.get(fMan).contains(f)) { 
+						//aMan is mandatory Feature  of a
+						// therefore remove aMan from mandCandidates (does not have to be saved anymore)
+						mandCandidates.remove(fMan); 
+					} else { 
+						// aMan is not mandatory of Feature f
+						mandCandidates.get(f).remove(fMan);
+					}
+				}
+				if (mandCandidates.get(f).size() == 0) {
+					mandCandidates.remove(f);
+				}
+			}
+		}
+		removeMandFeatures(products, features, mandCandidates);
+
+		return mandCandidates;
+	}
+
+	private void removeMandFeatures(Set<Product> products, Set<Feature> features,
+			Map<Feature, Set<Feature>> mandatories) {
+		for (Product p : products) {
+			for (Feature f : mandatories.keySet()) {
+				if (p.contains(f)) {
+					p.removeFeatures(mandatories.get(f));
+				}
+			}
+		}
+		
+		for(Feature f : mandatories.keySet()){
+			for(Feature f2: mandatories.get(f)){
+				features.remove(f2); 
+			}
+		}
+	}
+
+	/**
+	 * Retrieves all mandatory features of the root node. This features are
+	 * deleted from the list of possible Features and of the products in the
+	 * products-list.
+	 * 
+	 * @param products
+	 *            list of products
+	 * @param features
+	 *            list of possible features
+	 * @param root
+	 *            root node of the feature model
+	 */
+	private void insertMandatoriesOfRoot(Set<Product> products,
+			Set<Feature> features, RNode root) {
+		boolean contained = true;
+		boolean first = true;
+		Set<Feature> mandFeatures = new HashSet<Feature>();
+
+		for (Feature f : features) {
+			contained = true;
+			for (Product p : products) {
+				if (!p.contains(f)) {
+					contained = false;
+					break;
+				}
+			}
+
+			if (contained == true) {
+				// Store the first found mandatory feature, as the feature
+				// of the root-node
+				if (first == true) {
+					root.setAttr(f);
+					first = false;
+				} else {
+					root.addMandatory(new RNode(RType.mandatory, f));
+					mandFeatures.add(f);
+				}
+			}
+		}
+
+		// Remove Mandatory features, from the list of features, and from
+		// the products which are in the set of products
+		if (mandFeatures.size() > 0) {
+			for (Product p : products) {
+				p.removeFeatures(mandFeatures);
+			}
+		}
+		features.removeAll(mandFeatures);
+		if (root.getFeature() != null) {
+			for (Product p : products) {
+				p.removeFeature(root.getFeature());
+			}
+			features.remove(root.getFeature());
+		}
+	}
+}

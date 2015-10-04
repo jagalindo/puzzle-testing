@@ -1,0 +1,18 @@
+<feature_model name="PROCESSOR_and_DATA_STORAGE">
+<feature_tree>
+:r PROCESSOR_and_DATA_STORAGE (PROCESSOR_and_DATA_STORAGE)
+	:m DATA_INTERFACES (DATA_INTERFACES)
+	:m DEMULTIPLEXER_and_DESCRAMBLING (DEMULTIPLEXER_and_DESCRAMBLING)
+	:m TUNER_and_CHANNEL_DECODING (TUNER_and_CHANNEL_DECODING)
+	:m YM_Test (YM_Test)
+	:m CONDITIONAL_ACCESS (CONDITIONAL_ACCESS)
+	:m AUDIO_and_VIDEO_DECODING (AUDIO_and_VIDEO_DECODING)
+	:m SECURITY (SECURITY)
+	:m POWER_SUPPLY (POWER_SUPPLY)
+	:o Power_Line_Control (Power_Line_Control)
+	:o Wifi (Wifi)
+	:o USB (USB)
+</feature_tree>
+<constraints>
+</constraints>
+</feature_model>

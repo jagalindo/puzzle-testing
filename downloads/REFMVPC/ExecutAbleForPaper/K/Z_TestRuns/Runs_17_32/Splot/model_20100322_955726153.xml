@@ -1,0 +1,42 @@
+<!-- This model was created online using SPLOT's Feature Model Editor (http://www.splot-research.org) on Sun, Sep 25, 2011 - 9:31 PM  -->
+<feature_model name="Mobile Phone">
+<meta>
+<data name="description">MobilePhone</data>
+<data name="creator">Sergio Segura</data>
+<data name="address"></data>
+<data name="email">sergiosegura@us.es</data>
+<data name="phone"></data>
+<data name="website">http://www.lsi.us.es/~segura</data>
+<data name="organization">University of Seville</data>
+<data name="department"></data>
+<data name="date"></data>
+<data name="reference">ASPL'08</data>
+</meta>
+<feature_tree>
+:r Mobile_Phone(Mobile_Phone)
+	:m Utility_Functions(Utility_Functions)
+		:m Calls(Calls)
+		:m Messaging(Messaging)
+			:g (_r_1_3_5) [1,*] 
+				: SMS(SMS)
+				: MMS(MMS)
+		:o Games(Games)
+		:m Alarm(Alarm)
+		:m Ringing_Tones(Ringing_Tones)
+	:m Settings(Settings)
+		:m OS(OS)
+			:g (_r_11_12_14) [1,1] 
+				: Symbian(Symbian)
+				: WinCE(WinCE)
+		:o Java_Support(Java_Support)
+	:o Media(Media)
+		:m Camera(Camera)
+		:o MP3(MP3)
+	:o Connectivity(Connectivity)
+		:m USB(USB)
+		:o Bluetooth(Bluetooth)
+</feature_tree>
+<constraints>
+constraint_1:~Games or Java_Support
+</constraints>
+</feature_model>

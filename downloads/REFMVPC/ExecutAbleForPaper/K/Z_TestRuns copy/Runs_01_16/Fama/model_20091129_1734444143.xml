@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature-model xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.tdg-seville.info/benavides/featuremodelling/feature-model.xsd">
+<feature name="IntelligentTutoring">
+	<binaryRelation name="81">
+	<cardinality max="1" min="1"/>
+	<solitaryFeature name="Tutoring">
+		<setRelation name="82">
+		<cardinality max="2" min="1"/>
+		<groupedFeature name="tutoring_simulation">
+		</groupedFeature>
+		<groupedFeature name="tutoring_simulation2">
+		</groupedFeature>
+		</setRelation>
+
+		<binaryRelation name="83">
+		<cardinality max="1" min="0"/>
+		<solitaryFeature name="Tutoring_lecture">
+		</solitaryFeature>
+
+		</binaryRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="84">
+	<cardinality max="1" min="1"/>
+	<solitaryFeature name="Feedback">
+		<binaryRelation name="85">
+		<cardinality max="1" min="1"/>
+		<solitaryFeature name="Advice">
+		</solitaryFeature>
+
+		</binaryRelation>
+
+		<binaryRelation name="86">
+		<cardinality max="1" min="0"/>
+		<solitaryFeature name="Grading">
+		</solitaryFeature>
+
+		</binaryRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="87">
+	<cardinality max="1" min="0"/>
+	<solitaryFeature name="Result_Monitoring">
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="88">
+	<cardinality max="1" min="0"/>
+	<solitaryFeature name="User_Authentication">
+		<setRelation name="89">
+		<cardinality max="2" min="1"/>
+		<groupedFeature name="Student">
+		</groupedFeature>
+		<groupedFeature name="Instructor">
+		</groupedFeature>
+		</setRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+</feature>
+<requires feature="Result_Monitoring" name="constraint_1" requires="User_Authentication"/>
+</feature-model>

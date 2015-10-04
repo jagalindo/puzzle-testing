@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature-model xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.tdg-seville.info/benavides/featuremodelling/feature-model.xsd">
+<feature name="Web_Content_Delivery">
+	<binaryRelation name="174">
+	<cardinality max="1" min="1"/>
+	<solitaryFeature name="Check_for_content_updates">
+		<setRelation name="175">
+		<cardinality max="1" min="1"/>
+		<groupedFeature name="Check_after_defined_wait">
+		</groupedFeature>
+		<groupedFeature name="Check_after_heuristic_wait">
+		</groupedFeature>
+		<groupedFeature name="Always_check_for_updates">
+		</groupedFeature>
+		</setRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="176">
+	<cardinality max="1" min="0"/>
+	<solitaryFeature name="Authorise_access_to_content">
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="177">
+	<cardinality max="1" min="0"/>
+	<solitaryFeature name="Store_in_cache">
+		<setRelation name="178">
+		<cardinality max="2" min="1"/>
+		<groupedFeature name="Store_in_browser_cache">
+				<setRelation name="179">
+				<cardinality max="1" min="1"/>
+				<groupedFeature name="Short_term_cache">
+				</groupedFeature>
+				<groupedFeature name="Long_term_cache">
+				</groupedFeature>
+				</setRelation>
+
+		</groupedFeature>
+		<groupedFeature name="Store_in_proxy_cache">
+		</groupedFeature>
+		</setRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="180">
+	<cardinality max="1" min="0"/>
+	<solitaryFeature name="Encrypt_content">
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="181">
+	<cardinality max="1" min="0"/>
+	<solitaryFeature name="Serve_from_cache">
+		<setRelation name="182">
+		<cardinality max="1" min="1"/>
+		<groupedFeature name="Serve_from_browser_cache">
+		</groupedFeature>
+		<groupedFeature name="Serve_from_proxy_cache">
+		</groupedFeature>
+		</setRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+</feature>
+<requires feature="Check_after_heuristic_wait" name="constraint_6" requires="Store_in_cache"/>
+<requires feature="Always_check_for_updates" name="constraint_7" requires="Authorise_access_to_content"/>
+<requires feature="Check_after_defined_wait" name="constraint_5" requires="Store_in_cache"/>
+<requires feature="Store_in_browser_cache" name="constraint_2" requires="Serve_from_browser_cache"/>
+<requires feature="Store_in_proxy_cache" name="constraint_3" requires="Serve_from_proxy_cache"/>
+</feature-model>

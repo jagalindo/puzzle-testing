@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature-model xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.tdg-seville.info/benavides/featuremodelling/feature-model.xsd">
+<feature name="james">
+	<binaryRelation name="160">
+	<cardinality max="1" min="1"/>
+	<solitaryFeature name="user_mngt">
+		<setRelation name="161">
+		<cardinality max="1" min="1"/>
+		<groupedFeature name="db">
+		</groupedFeature>
+		<groupedFeature name="ldap">
+		</groupedFeature>
+		</setRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="162">
+	<cardinality max="1" min="0"/>
+	<solitaryFeature name="ws_interface">
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="163">
+	<cardinality max="1" min="1"/>
+	<solitaryFeature name="gui">
+		<setRelation name="164">
+		<cardinality max="2" min="1"/>
+		<groupedFeature name="pc">
+		</groupedFeature>
+		<groupedFeature name="pda">
+		</groupedFeature>
+		</setRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="165">
+	<cardinality max="1" min="1"/>
+	<solitaryFeature name="core">
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="166">
+	<cardinality max="1" min="1"/>
+	<solitaryFeature name="modules">
+		<setRelation name="167">
+		<cardinality max="4" min="1"/>
+		<groupedFeature name="calendar">
+		</groupedFeature>
+		<groupedFeature name="forum">
+		</groupedFeature>
+		<groupedFeature name="congress_mngt">
+		</groupedFeature>
+		<groupedFeature name="repository">
+		</groupedFeature>
+		</setRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+</feature>
+<excludes feature="pda" name="c1" excludes="repository"/>
+<requires feature="congress_mngt" name="c2" requires="repository"/>
+</feature-model>

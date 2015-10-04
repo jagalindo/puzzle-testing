@@ -1,0 +1,14 @@
+parallel_parking;Car;Standard_Avoidance;Sensors;enhanced_avoidance;Automated_Driving_Controller;lateral_range_finder;forward_range_finder;Collision_Avoidance_Braking;
+010100000
+010100100
+010100010
+010100110
+011101001
+011101101
+011101011
+010111011
+011101111
+010111111
+111101101
+111101111
+110111111

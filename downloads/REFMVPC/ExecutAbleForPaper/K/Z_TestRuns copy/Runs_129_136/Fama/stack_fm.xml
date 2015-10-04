@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature-model xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.tdg-seville.info/benavides/featuremodelling/feature-model.xsd">
+<feature name="Stack">
+	<binaryRelation name="100">
+	<cardinality max="1" min="0"/>
+	<solitaryFeature name="Size">
+		<setRelation name="101">
+		<cardinality max="1" min="1"/>
+		<groupedFeature name="Fixed">
+				<binaryRelation name="102">
+				<cardinality max="1" min="1"/>
+				<solitaryFeature name="Value">
+				</solitaryFeature>
+
+				</binaryRelation>
+
+		</groupedFeature>
+		<groupedFeature name="Dynamic">
+		</groupedFeature>
+		</setRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="103">
+	<cardinality max="1" min="1"/>
+	<solitaryFeature name="Element_Type">
+		<setRelation name="104">
+		<cardinality max="1" min="1"/>
+		<groupedFeature name="Integer">
+		</groupedFeature>
+		<groupedFeature name="Float">
+		</groupedFeature>
+		<groupedFeature name="String">
+		</groupedFeature>
+		</setRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="105">
+	<cardinality max="1" min="0"/>
+	<solitaryFeature name="Optimization">
+		<setRelation name="106">
+		<cardinality max="1" min="1"/>
+		<groupedFeature name="Speed">
+		</groupedFeature>
+		<groupedFeature name="Memory_Usage">
+		</groupedFeature>
+		</setRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="107">
+	<cardinality max="1" min="0"/>
+	<solitaryFeature name="Counter">
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="108">
+	<cardinality max="1" min="0"/>
+	<solitaryFeature name="Additional_Features">
+		<setRelation name="109">
+		<cardinality max="3" min="1"/>
+		<groupedFeature name="Thread_Safety">
+		</groupedFeature>
+		<groupedFeature name="Bounds_Check">
+		</groupedFeature>
+		<groupedFeature name="Type_Check">
+		</groupedFeature>
+		</setRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+</feature>
+</feature-model>

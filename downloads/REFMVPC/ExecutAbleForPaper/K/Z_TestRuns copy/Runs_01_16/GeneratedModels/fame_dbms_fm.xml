@@ -1,0 +1,32 @@
+<feature_model name="FAME_DBMS">
+<feature_tree>
+:r FAME_DBMS (FAME_DBMS)
+	:m Buffer_Manager (Buffer_Manager)
+	:m Storage (Storage)
+	:m API (API)
+	:m OS (OS)
+	:o Delete (Delete)
+	:o Get (Get)
+	:o Debug_Logging (Debug_Logging)
+	:o Put (Put)
+	:g [1, 1]
+		: Nut_OS (Nut_OS)
+		: Win (Win)
+	:g [1, 1]
+		: Memory_Allocation (Memory_Allocation)
+			:m Page_Replication (Page_Replication)
+			:m Persistent (Persistent)
+			:g [1, 1]
+				: Static (Static)
+				: Dynamic (Dynamic)
+			:g [1, 1]
+				: LFU (LFU)
+				: LRU (LRU)
+		: In_Memory (In_Memory)
+	:g [1, 1]
+		: B_Tree (B_Tree)
+		: Unindexed (Unindexed)
+</feature_tree>
+<constraints>
+</constraints>
+</feature_model>

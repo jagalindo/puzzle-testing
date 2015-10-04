@@ -1,0 +1,42 @@
+<!-- This model was created online using SPLOT's Feature Model Editor (http://www.splot-research.org) on Wed, Mar 28, 2012 - 9:53 AM  -->
+<feature_model name="Fabrica de software">
+<meta>
+<data name="description">Fabrica de software</data>
+<data name="creator">Juliana Alves Pereira</data>
+<data name="address"></data>
+<data name="email">jualvespereira@gmail.com</data>
+<data name="phone"></data>
+<data name="website"></data>
+<data name="organization">UFMG</data>
+<data name="department"></data>
+<data name="date"></data>
+<data name="reference"></data>
+</meta>
+<feature_tree>
+:r _r(_r)
+	:m _r_1(_r_1)
+		:m _r_1_16(_r_1_16)
+		:m _r_1_17(_r_1_17)
+		:m _r_1_18(_r_1_18)
+	:m _r_4(_r_4)
+		:m _r_4_11(_r_4_11)
+		:m _r_4_12(_r_4_12)
+		:m _r_4_13(_r_4_13)
+	:m _r_5(_r_5)
+		:g (_r_5_6) [1,*] 
+			: _r_5_6_7(_r_5_6_7)
+			: _r_5_6_27(_r_5_6_27)
+		:m _r_5_9(_r_5_9)
+		:m _r_5_10(_r_5_10)
+		:m _r_5_25(_r_5_25)
+		:o _r_5_29(_r_5_29)
+			:m _r_5_29_30(_r_5_29_30)
+	:m _r_19(_r_19)
+		:m _r_19_22(_r_19_22)
+		:m _r_19_23(_r_19_23)
+		:m _r_19_32(_r_19_32)
+			:o _r_19_32_34(_r_19_32_34)
+</feature_tree>
+<constraints>
+</constraints>
+</feature_model>

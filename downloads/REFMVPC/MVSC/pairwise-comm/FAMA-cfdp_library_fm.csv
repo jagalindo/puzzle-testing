@@ -1,0 +1,80 @@
+FAMA-cfdp_library_fm.xml , 13 , 319.0 , 172
+CFDP Library , Reboot , 246.0 , 32
+CFDP Library , Reboot_Entity , 123.0 , 140
+CFDP Library , Receive_Acknowledged_Mode , 140.0 , 31
+CFDP Library , Send_Acknowledged_Mode , 140.0 , 141
+CFDP Library , pus , 245.0 , 31
+CFDP Library , pus_copy , 100.0 , 140
+CFDP Library , pus_rename , 40.0 , 31
+CFDP Library , reboot_pus , 98.0 , 141
+CFDP Library , receive , 280.0 , 47
+CFDP Library , receive_fs_operations , 160.0 , 124
+CFDP Library , send , 280.0 , 31
+CFDP Library , send_fs_operations , 160.0 , 125
+Reboot , Reboot_Entity , 123.0 , 47
+Reboot , Receive_Acknowledged_Mode , 108.0 , 125
+Reboot , Send_Acknowledged_Mode , 108.0 , 46
+Reboot , pus , 196.0 , 141
+Reboot , pus_copy , 80.0 , 31
+Reboot , pus_rename , 32.0 , 140
+Reboot , reboot_pus , 98.0 , 32
+Reboot , receive , 216.0 , 124
+Reboot , receive_fs_operations , 124.0 , 47
+Reboot , send , 216.0 , 125
+Reboot , send_fs_operations , 124.0 , 47
+Reboot_Entity , Receive_Acknowledged_Mode , 54.0 , 125
+Reboot_Entity , Send_Acknowledged_Mode , 54.0 , 31
+Reboot_Entity , pus , 98.0 , 140
+Reboot_Entity , pus_copy , 40.0 , 31
+Reboot_Entity , pus_rename , 16.0 , 141
+Reboot_Entity , reboot_pus , 49.0 , 31
+Reboot_Entity , receive , 108.0 , 140
+Reboot_Entity , receive_fs_operations , 62.0 , 32
+Reboot_Entity , send , 108.0 , 140
+Reboot_Entity , send_fs_operations , 62.0 , 31
+Receive_Acknowledged_Mode , Send_Acknowledged_Mode , 62.0 , 125
+Receive_Acknowledged_Mode , pus , 110.0 , 47
+Receive_Acknowledged_Mode , pus_copy , 50.0 , 125
+Receive_Acknowledged_Mode , pus_rename , 20.0 , 46
+Receive_Acknowledged_Mode , reboot_pus , 44.0 , 125
+Receive_Acknowledged_Mode , receive , 140.0 , 31
+Receive_Acknowledged_Mode , receive_fs_operations , 80.0 , 141
+Receive_Acknowledged_Mode , send , 124.0 , 31
+Receive_Acknowledged_Mode , send_fs_operations , 72.0 , 140
+Send_Acknowledged_Mode , pus , 110.0 , 32
+Send_Acknowledged_Mode , pus_copy , 50.0 , 124
+Send_Acknowledged_Mode , pus_rename , 20.0 , 47
+Send_Acknowledged_Mode , reboot_pus , 44.0 , 125
+Send_Acknowledged_Mode , receive , 124.0 , 47
+Send_Acknowledged_Mode , receive_fs_operations , 72.0 , 125
+Send_Acknowledged_Mode , send , 140.0 , 31
+Send_Acknowledged_Mode , send_fs_operations , 80.0 , 125
+pus , pus_copy , 100.0 , 47
+pus , pus_rename , 40.0 , 125
+pus , reboot_pus , 98.0 , 47
+pus , receive , 220.0 , 140
+pus , receive_fs_operations , 130.0 , 31
+pus , send , 220.0 , 141
+pus , send_fs_operations , 130.0 , 31
+pus_copy , pus_rename , 20.0 , 140
+pus_copy , reboot_pus , 40.0 , 31
+pus_copy , receive , 100.0 , 141
+pus_copy , receive_fs_operations , 60.0 , 31
+pus_copy , send , 100.0 , 140
+pus_copy , send_fs_operations , 60.0 , 32
+pus_rename , reboot_pus , 16.0 , 156
+pus_rename , receive , 40.0 , 31
+pus_rename , receive_fs_operations , 40.0 , 140
+pus_rename , send , 40.0 , 31
+pus_rename , send_fs_operations , 40.0 , 141
+reboot_pus , receive , 88.0 , 31
+reboot_pus , receive_fs_operations , 52.0 , 140
+reboot_pus , send , 88.0 , 32
+reboot_pus , send_fs_operations , 52.0 , 140
+receive , receive_fs_operations , 160.0 , 31
+receive , send , 248.0 , 141
+receive , send_fs_operations , 144.0 , 31
+receive_fs_operations , send , 144.0 , 140
+receive_fs_operations , send_fs_operations , 92.0 , 31
+send , send_fs_operations , 160.0 , 141
+6662,78

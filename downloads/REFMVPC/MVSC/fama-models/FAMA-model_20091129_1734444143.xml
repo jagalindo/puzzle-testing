@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature-model xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.tdg-seville.info/benavides/featuremodelling/feature-model.xsd">
+<feature name="IntelligentTutoring">
+	<binaryRelation name="141">
+	<cardinality max="1" min="1"/>
+	<solitaryFeature name="_r_1">
+		<setRelation name="142">
+		<cardinality max="2" min="1"/>
+		<groupedFeature name="_r_1_5_6">
+		</groupedFeature>
+		<groupedFeature name="_r_1_5_7">
+		</groupedFeature>
+		</setRelation>
+
+		<binaryRelation name="143">
+		<cardinality max="1" min="0"/>
+		<solitaryFeature name="_r_1_8">
+		</solitaryFeature>
+
+		</binaryRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="144">
+	<cardinality max="1" min="1"/>
+	<solitaryFeature name="_r_2">
+		<binaryRelation name="145">
+		<cardinality max="1" min="1"/>
+		<solitaryFeature name="_r_2_9">
+		</solitaryFeature>
+
+		</binaryRelation>
+
+		<binaryRelation name="146">
+		<cardinality max="1" min="0"/>
+		<solitaryFeature name="_r_2_10">
+		</solitaryFeature>
+
+		</binaryRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="147">
+	<cardinality max="1" min="0"/>
+	<solitaryFeature name="_r_3">
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="148">
+	<cardinality max="1" min="0"/>
+	<solitaryFeature name="_r_4">
+		<setRelation name="149">
+		<cardinality max="2" min="1"/>
+		<groupedFeature name="_r_4_11_12">
+		</groupedFeature>
+		<groupedFeature name="_r_4_11_14">
+		</groupedFeature>
+		</setRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+</feature>
+<requires feature="_r_3" name="constraint_1" requires="_r_4"/>
+</feature-model>

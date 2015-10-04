@@ -1,0 +1,32 @@
+<feature_model name="HomePage">
+<feature_tree>
+:r HomePage (HomePage)
+	:m StoreFront (StoreFront)
+	:m Catalog (Catalog)
+	:m BuyPath (BuyPath)
+	:o CustomerService (CustomerService)
+	:o Registration (Registration)
+		:m RegistEnforc (RegistEnforc)
+		:m UserBehTracInf (UserBehTracInf)
+		:m RegistInform (RegistInform)
+		:g [1, *]
+			: RegToBrowse (RegToBrowse)
+			: RegToBuy (RegToBuy)
+			: None (None)
+	:o UserBehTrack (UserBehTrack)
+	:o WishList (WishList)
+	:g [1, *]
+		: DynamicContent (DynamicContent)
+			:m ContentType (ContentType)
+			:m VariationSource (VariationSource)
+			:g [1, *]
+				: WelcomeMessage (WelcomeMessage)
+				: SpecialOffers (SpecialOffers)
+			:g [1, *]
+				: TimeDependant (TimeDependant)
+				: Personalized (Personalized)
+		: StaticContent (StaticContent)
+</feature_tree>
+<constraints>
+</constraints>
+</feature_model>

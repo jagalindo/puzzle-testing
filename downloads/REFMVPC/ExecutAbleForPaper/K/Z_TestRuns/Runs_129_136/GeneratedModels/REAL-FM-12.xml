@@ -1,0 +1,23 @@
+<feature_model name="_id_0">
+<feature_tree>
+:r _id_0 (_id_0)
+	:m _id_1 (_id_1)
+	:m _id_2 (_id_2)
+	:o _id_3 (_id_3)
+		:g [1, 1]
+			: _id_5 (_id_5)
+			: svg (svg)
+			: _id_6 (_id_6)
+	:o _id_7 (_id_7)
+	:o page_translation (page_translation)
+		:o search_by_language (search_by_language)
+			:g [1, *]
+				: _id_11 (_id_11)
+				: _id_10 (_id_10)
+				: _id_9 (_id_9)
+	:o page_preview (page_preview)
+</feature_tree>
+<constraints>
+constraint_1:~svg or ~page_preview
+</constraints>
+</feature_model>

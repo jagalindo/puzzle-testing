@@ -1,0 +1,33 @@
+<feature_model name="Connector">
+<feature_tree>
+:r Connector (Connector)
+	:m Paradigm (Paradigm)
+	:m Technology (Technology)
+	:g [1, 1]
+		: CAN (CAN)
+		: Local (Local)
+	:g [1, 1]
+		: Client_Server (Client_Server)
+			:g [1, 1]
+				: Synchronous (Synchronous)
+					:o Timeout (Timeout)
+				: Asynchronous (Asynchronous)
+					:g [1, 1]
+						: Polling (Polling)
+							:g [1, 1]
+								: Blocking (Blocking)
+								: Non_blocking (Non_blocking)
+						: Callback (Callback)
+		: Receiver (Receiver)
+			:m Message_Based (Message_Based)
+			:m Sender (Sender)
+			:g [1, 1]
+				: Push (Push)
+				: Pull (Pull)
+					:g [1, *]
+						: Non_Queued (Non_Queued)
+						: Queued (Queued)
+</feature_tree>
+<constraints>
+</constraints>
+</feature_model>

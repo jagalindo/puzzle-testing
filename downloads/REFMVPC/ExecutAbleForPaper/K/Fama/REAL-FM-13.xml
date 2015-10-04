@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature-model xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.tdg-seville.info/benavides/featuremodelling/feature-model.xsd">
+<feature name="tecom">
+	<binaryRelation name="21">
+	<cardinality max="1" min="0"/>
+	<solitaryFeature name="ipvoice">
+		<binaryRelation name="22">
+		<cardinality max="1" min="1"/>
+		<solitaryFeature name="software">
+			<setRelation name="23">
+			<cardinality max="1" min="1"/>
+			<groupedFeature name="swpack1">
+			</groupedFeature>
+			<groupedFeature name="swpack2">
+			</groupedFeature>
+			</setRelation>
+
+		</solitaryFeature>
+
+		</binaryRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="24">
+	<cardinality max="1" min="1"/>
+	<solitaryFeature name="rack">
+		<binaryRelation name="25">
+		<cardinality max="1" min="1"/>
+		<solitaryFeature name="sizes">
+			<setRelation name="26">
+			<cardinality max="1" min="1"/>
+			<groupedFeature name="large">
+			</groupedFeature>
+			<groupedFeature name="medium">
+			</groupedFeature>
+			<groupedFeature name="small">
+			</groupedFeature>
+			</setRelation>
+
+		</solitaryFeature>
+
+		</binaryRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="27">
+	<cardinality max="1" min="0"/>
+	<solitaryFeature name="messaging">
+		<binaryRelation name="28">
+		<cardinality max="1" min="0"/>
+		<solitaryFeature name="upgrade_swpack">
+		</solitaryFeature>
+
+		</binaryRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+</feature>
+<excludes feature="swpack1" name="c1" excludes="upgrade_swpack"/>
+</feature-model>

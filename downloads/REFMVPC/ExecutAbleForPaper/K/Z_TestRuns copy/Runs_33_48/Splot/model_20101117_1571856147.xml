@@ -1,0 +1,31 @@
+<!-- This model was created online using SPLOT's Feature Model Editor (http://www.splot-research.org) on Wed, Nov 17, 2010 - 12:03 PM  -->
+<feature_model name="Ökonomische Merkmale">
+<meta>
+<data name="description">Ausgewählte ökonomische Merkmale</data>
+<data name="creator">CV</data>
+<data name="address"></data>
+<data name="email">christin_voigt1986@web.de</data>
+<data name="phone"></data>
+<data name="website"></data>
+<data name="organization">University</data>
+<data name="department"></data>
+<data name="date"></data>
+<data name="reference"></data>
+</meta>
+<feature_tree>
+:r _r(_r)
+	:m _r_1(_r_1)
+		:g (_r_1_2) [1,*] 
+			: _r_1_2_3(_r_1_2_3)
+			: _r_1_2_4(_r_1_2_4)
+	:m _r_5(_r_5)
+		:m _r_5_6(_r_5_6)
+		:o _r_5_7(_r_5_7)
+			:g (_r_5_7_8) [1,*] 
+				: _r_5_7_8_9(_r_5_7_8_9)
+				: _r_5_7_8_10(_r_5_7_8_10)
+				: _r_5_7_8_11(_r_5_7_8_11)
+</feature_tree>
+<constraints>
+</constraints>
+</feature_model>

@@ -1,0 +1,18 @@
+<feature_model name="_r">
+<feature_tree>
+:r _r (_r)
+	:m _r_2 (_r_2)
+	:m _r_14 (_r_14)
+	:o _r_14_18 (_r_14_18)
+	:o _r_15 (_r_15)
+		:o _r_15_20 (_r_15_20)
+		:o _r_15_19 (_r_15_19)
+	:o _r_14_17 (_r_14_17)
+	:o _r_1 (_r_1)
+	:o _r_14_16 (_r_14_16)
+</feature_tree>
+<constraints>
+constraint_1:~_r_14_16 or ~_r_1
+constraint_2:~_r_14_18 or ~_r_15_19
+</constraints>
+</feature_model>

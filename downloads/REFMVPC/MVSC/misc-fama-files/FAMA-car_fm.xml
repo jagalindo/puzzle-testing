@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature-model xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.tdg-seville.info/benavides/featuremodelling/feature-model.xsd">
+<feature name="Car">
+	<binaryRelation name="38">
+	<cardinality max="1" min="0"/>
+	<solitaryFeature name="Automated_Driving_Controller">
+		<binaryRelation name="39">
+		<cardinality max="1" min="1"/>
+		<solitaryFeature name="Collision_Avoidance_Braking">
+			<setRelation name="40">
+			<cardinality max="1" min="1"/>
+			<groupedFeature name="Standard_Avoidance">
+			</groupedFeature>
+			<groupedFeature name="enhanced_avoidance">
+			</groupedFeature>
+			</setRelation>
+
+		</solitaryFeature>
+
+		</binaryRelation>
+
+		<binaryRelation name="41">
+		<cardinality max="1" min="0"/>
+		<solitaryFeature name="parallel_parking">
+		</solitaryFeature>
+
+		</binaryRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="42">
+	<cardinality max="1" min="1"/>
+	<solitaryFeature name="Sensors">
+		<binaryRelation name="43">
+		<cardinality max="1" min="0"/>
+		<solitaryFeature name="lateral_range_finder">
+		</solitaryFeature>
+
+		</binaryRelation>
+
+		<binaryRelation name="44">
+		<cardinality max="1" min="0"/>
+		<solitaryFeature name="forward_range_finder">
+		</solitaryFeature>
+
+		</binaryRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+</feature>
+<requires feature="enhanced_avoidance" name="c1" requires="forward_range_finder"/>
+<requires feature="parallel_parking" name="c2" requires="lateral_range_finder"/>
+</feature-model>

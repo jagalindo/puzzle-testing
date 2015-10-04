@@ -1,0 +1,39 @@
+<!-- This model was created online using SPLOT's Feature Model Editor (http://www.splot-research.org) on Wed, Oct 20, 2010 - 4:05 PM  -->
+<feature_model name="Respaldo de base de datos (Poda)">
+<meta>
+<data name="description">Servicio respaldo base de datos (Poda)</data>
+<data name="creator">Ronald Alarcon</data>
+<data name="address"></data>
+<data name="email">ralarconbazan@gmail.com</data>
+<data name="phone"></data>
+<data name="website"></data>
+<data name="organization">UNMSM</data>
+<data name="department"></data>
+<data name="date"></data>
+<data name="reference"></data>
+</meta>
+<feature_tree>
+:r ServicioRespaldo1(ServicioRespaldo1)
+	:m a4gl2(a4gl2)
+		:m Nombre_archivo3(Nombre_archivo3)
+		:m Usuario14(Usuario14)
+		:m Fecha5(Fecha5)
+		:o Variable_ruta_respaldo6(Variable_ruta_respaldo6)
+			:m Valor_ruta_respaldo7(Valor_ruta_respaldo7)
+			:m Actualizacion_post_respaldo8(Actualizacion_post_respaldo8)
+			:m SQL_count9(SQL_count9)
+			:m SQL_update0(SQL_update0)
+			:m SQL_unload10(SQL_unload10)
+			:m Funcion_respaldo11(Funcion_respaldo11)
+		:m Valor_ruta_log12(Valor_ruta_log12)
+	:m com13(com13)
+		:m Nombre_archivo14(Nombre_archivo14)
+		:m Usuario215(Usuario215)
+		:m Ruta_ejecutable16(Ruta_ejecutable16)
+	:m Makefile17(Makefile17)
+		:m Nombre_archivo_fuente18(Nombre_archivo_fuente18)
+		:m Nombre_archivo_ejecutable19(Nombre_archivo_ejecutable19)
+</feature_tree>
+<constraints>
+</constraints>
+</feature_model>

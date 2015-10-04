@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature-model xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.tdg-seville.info/benavides/featuremodelling/feature-model.xsd">
+<feature name="Mobile Game">
+	<binaryRelation name="217">
+	<cardinality max="1" min="1"/>
+	<solitaryFeature name="_r_1">
+		<setRelation name="218">
+		<cardinality max="4" min="1"/>
+		<groupedFeature name="_r_1_6_7">
+		</groupedFeature>
+		<groupedFeature name="_r_1_6_8">
+		</groupedFeature>
+		<groupedFeature name="_r_1_6_9">
+		</groupedFeature>
+		<groupedFeature name="_r_1_6_10">
+		</groupedFeature>
+		</setRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="219">
+	<cardinality max="1" min="0"/>
+	<solitaryFeature name="_r_2">
+		<binaryRelation name="220">
+		<cardinality max="1" min="0"/>
+		<solitaryFeature name="_r_2_12">
+		</solitaryFeature>
+
+		</binaryRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="221">
+	<cardinality max="1" min="0"/>
+	<solitaryFeature name="_r_3">
+		<binaryRelation name="222">
+		<cardinality max="1" min="0"/>
+		<solitaryFeature name="_r_3_13">
+		</solitaryFeature>
+
+		</binaryRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+</feature>
+</feature-model>

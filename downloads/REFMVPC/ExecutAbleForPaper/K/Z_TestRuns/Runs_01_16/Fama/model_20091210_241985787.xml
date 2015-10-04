@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature-model xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.tdg-seville.info/benavides/featuremodelling/feature-model.xsd">
+<feature name="Mobile_Games">
+	<binaryRelation name="96">
+	<cardinality max="1" min="1"/>
+	<solitaryFeature name="Input">
+		<setRelation name="97">
+		<cardinality max="4" min="1"/>
+		<groupedFeature name="Touch_Screen">
+		</groupedFeature>
+		<groupedFeature name="Keypad">
+		</groupedFeature>
+		<groupedFeature name="Speech">
+		</groupedFeature>
+		<groupedFeature name="Movement_detection">
+		</groupedFeature>
+		</setRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="98">
+	<cardinality max="1" min="0"/>
+	<solitaryFeature name="Output">
+		<binaryRelation name="99">
+		<cardinality max="1" min="0"/>
+		<solitaryFeature name="Force_Feedback">
+		</solitaryFeature>
+
+		</binaryRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="100">
+	<cardinality max="1" min="0"/>
+	<solitaryFeature name="Network_Support">
+		<binaryRelation name="101">
+		<cardinality max="1" min="0"/>
+		<solitaryFeature name="Online_Multiplayer">
+		</solitaryFeature>
+
+		</binaryRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="102">
+	<cardinality max="1" min="0"/>
+	<solitaryFeature name="Internationalization">
+		<binaryRelation name="103">
+		<cardinality max="1" min="0"/>
+		<solitaryFeature name="International_languanges_support">
+		</solitaryFeature>
+
+		</binaryRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="104">
+	<cardinality max="1" min="0"/>
+	<solitaryFeature name="Platform_Independence">
+		<binaryRelation name="105">
+		<cardinality max="1" min="0"/>
+		<solitaryFeature name="Platform_independence_support">
+		</solitaryFeature>
+
+		</binaryRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="106">
+	<cardinality max="1" min="0"/>
+	<solitaryFeature name="Pay_and_bill_support">
+		<binaryRelation name="107">
+		<cardinality max="1" min="0"/>
+		<solitaryFeature name="Pay_and_bill_system">
+		</solitaryFeature>
+
+		</binaryRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+</feature>
+</feature-model>

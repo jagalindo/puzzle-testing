@@ -1,0 +1,32 @@
+<!-- This model was created online using SPLOT's Feature Model Editor (http://www.splot-research.org) on Tue, Jan 10, 2012 - 11:21 AM  -->
+<feature_model name="Mobile Phone GF">
+<meta>
+<data name="description">Mobile Smart Phone</data>
+<data name="creator">Guillermo Fuentes</data>
+<data name="address"></data>
+<data name="email">alu@ull.es</data>
+<data name="phone"></data>
+<data name="website"></data>
+<data name="organization">Avantic</data>
+<data name="department"></data>
+<data name="date"></data>
+<data name="reference"></data>
+</meta>
+<feature_tree>
+:r _r(_r)
+	:m _r_1(_r_1)
+	:o _r_2(_r_2)
+	:m _r_3(_r_3)
+		:g (_r_3_5) [1,1] 
+			: _r_3_5_6(_r_3_5_6)
+			: _r_3_5_9(_r_3_5_9)
+			: _r_3_5_12(_r_3_5_12)
+	:o _r_4(_r_4)
+		:g (_r_4_13) [1,*] 
+			: _r_4_13_14(_r_4_13_14)
+			: _r_4_13_15(_r_4_13_15)
+</feature_tree>
+<constraints>
+constraint_2:~_r_2 or ~_r_3_5_6
+</constraints>
+</feature_model>

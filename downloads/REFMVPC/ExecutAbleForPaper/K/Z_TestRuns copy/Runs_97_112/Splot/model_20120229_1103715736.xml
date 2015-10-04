@@ -1,0 +1,35 @@
+<!-- This model was created online using SPLOT's Feature Model Editor (http://www.splot-research.org) on Wed, Feb 29, 2012 - 5:16 PM  -->
+<feature_model name="ELPS - ISE">
+<meta>
+<data name="description">ELPS - ISE</data>
+<data name="creator">Tulio Paiva</data>
+<data name="address"></data>
+<data name="email">paivatulio@gmail.com</data>
+<data name="phone"></data>
+<data name="website"></data>
+<data name="organization">UFRN</data>
+<data name="department"></data>
+<data name="date"></data>
+<data name="reference"></data>
+</meta>
+<feature_tree>
+:r _r(_r)
+	:m _r_2(_r_2)
+		:g (_r_2_5) [1,*] 
+			: _r_2_5_6(_r_2_5_6)
+			: _r_2_5_7(_r_2_5_7)
+			: _r_2_5_9(_r_2_5_9)
+	:o _r_10(_r_10)
+		:o _r_10_11(_r_10_11)
+		:o _r_10_12(_r_10_12)
+		:o _r_10_13(_r_10_13)
+		:o _r_10_14(_r_10_14)
+		:o _r_10_15(_r_10_15)
+	:m _r_16(_r_16)
+		:g (_r_16_17) [1,1] 
+			: _r_16_17_18(_r_16_17_18)
+			: _r_16_17_19(_r_16_17_19)
+</feature_tree>
+<constraints>
+</constraints>
+</feature_model>

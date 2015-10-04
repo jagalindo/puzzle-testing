@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature-model xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.tdg-seville.info/benavides/featuremodelling/feature-model.xsd">
+<feature name="CFDP_Library">
+	<setRelation name="49">
+	<cardinality max="4" min="1"/>
+	<groupedFeature name="Send">
+			<binaryRelation name="50">
+			<cardinality max="1" min="0"/>
+			<solitaryFeature name="Send_Acknowledged_Mode">
+			</solitaryFeature>
+
+			</binaryRelation>
+
+			<binaryRelation name="51">
+			<cardinality max="1" min="0"/>
+			<solitaryFeature name="Send_File_System_Operations">
+			</solitaryFeature>
+
+			</binaryRelation>
+
+	</groupedFeature>
+	<groupedFeature name="Receive">
+			<binaryRelation name="52">
+			<cardinality max="1" min="0"/>
+			<solitaryFeature name="Receive_Acknowledged_Mode">
+			</solitaryFeature>
+
+			</binaryRelation>
+
+			<binaryRelation name="53">
+			<cardinality max="1" min="0"/>
+			<solitaryFeature name="Receive_File_System_Operations">
+			</solitaryFeature>
+
+			</binaryRelation>
+
+	</groupedFeature>
+	<groupedFeature name="PUS_">
+			<binaryRelation name="54">
+			<cardinality max="1" min="0"/>
+			<solitaryFeature name="PUS_Rename">
+			</solitaryFeature>
+
+			</binaryRelation>
+
+			<binaryRelation name="55">
+			<cardinality max="1" min="0"/>
+			<solitaryFeature name="PUS_Copy">
+			</solitaryFeature>
+
+			</binaryRelation>
+
+	</groupedFeature>
+	<groupedFeature name="Reboot_">
+			<binaryRelation name="56">
+			<cardinality max="1" min="0"/>
+			<solitaryFeature name="Reboot_Entity">
+			</solitaryFeature>
+
+			</binaryRelation>
+
+			<binaryRelation name="57">
+			<cardinality max="1" min="0"/>
+			<solitaryFeature name="Reboot_PUS">
+			</solitaryFeature>
+
+			</binaryRelation>
+
+	</groupedFeature>
+	</setRelation>
+
+</feature>
+</feature-model>

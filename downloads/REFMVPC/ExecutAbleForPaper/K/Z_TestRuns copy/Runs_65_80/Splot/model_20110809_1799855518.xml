@@ -1,0 +1,50 @@
+<!-- This model was created online using SPLOT's Feature Model Editor (http://www.splot-research.org) on Tue, Aug 9, 2011 - 2:11 PM  -->
+<feature_model name="Carros">
+<meta>
+<data name="description">Carros comuns no Brasil</data>
+<data name="creator">Alberto</data>
+<data name="address"></data>
+<data name="email">albertocn@yahoo.com</data>
+<data name="phone"></data>
+<data name="website"></data>
+<data name="organization">UFS</data>
+<data name="department"></data>
+<data name="date"></data>
+<data name="reference"></data>
+</meta>
+<feature_tree>
+:r _r(_r)
+	:m _r_3(_r_3)
+		:g (_r_3_4) [1,1] 
+			: _r_3_4_5(_r_3_4_5)
+			: _r_3_4_6(_r_3_4_6)
+			: _r_3_4_7(_r_3_4_7)
+			: _r_3_4_8(_r_3_4_8)
+			: _r_3_4_9(_r_3_4_9)
+	:m _r_12(_r_12)
+		:g (_r_12_13) [1,1] 
+			: _r_12_13_14(_r_12_13_14)
+			: _r_12_13_15(_r_12_13_15)
+			: _r_12_13_16(_r_12_13_16)
+	:o _r_17(_r_17)
+		:g (_r_17_18) [1,1] 
+			: _r_17_18_19(_r_17_18_19)
+			: _r_17_18_20(_r_17_18_20)
+			: _r_17_18_21(_r_17_18_21)
+	:o _r_22(_r_22)
+		:g (_r_22_23) [1,1] 
+			: _r_22_23_24(_r_22_23_24)
+			: _r_22_23_25(_r_22_23_25)
+	:o _r_26(_r_26)
+		:g (_r_26_27) [1,1] 
+			: _r_26_27_28(_r_26_27_28)
+			: _r_26_27_30(_r_26_27_30)
+	:m _r_31(_r_31)
+		:g (_r_31_32) [1,1] 
+			: _r_31_32_33(_r_31_32_33)
+			: _r_31_32_34(_r_31_32_34)
+			: _r_31_32_35(_r_31_32_35)
+</feature_tree>
+<constraints>
+</constraints>
+</feature_model>

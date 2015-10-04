@@ -1,0 +1,31 @@
+<feature_model name="Algorithms">
+<feature_tree>
+:r Algorithms (Algorithms)
+	:m GPL (GPL)
+	:m Graph_Type (Graph_Type)
+	:o search (search)
+		:g [1, 1]
+			: DFS (DFS)
+			: BFS (BFS)
+	:g [1, *]
+		: Cycle_Detection (Cycle_Detection)
+		: Shortest_Path (Shortest_Path)
+		: Coloring (Coloring)
+			:g [1, *]
+				: Approximation (Approximation)
+				: Brute_Force (Brute_Force)
+		: Strongly_Connected (Strongly_Connected)
+		: MST (MST)
+	:g [1, 1]
+		: weighted (weighted)
+		: unweighted (unweighted)
+	:g [1, 1]
+		: undirected (undirected)
+		: directed (directed)
+</feature_tree>
+<constraints>
+constraint_1:~Strongly_Connected or directed
+constraint_2:~Strongly_Connected or DFS
+constraint_3:~Cycle_Detection or DFS
+</constraints>
+</feature_model>

@@ -1,0 +1,41 @@
+<!-- This model was created online using SPLOT's Feature Model Editor (http://www.splot-research.org) on Tue, Jan 25, 2011 - 5:29 AM  -->
+<feature_model name="Car Software System">
+<meta>
+<data name="description">Simple model of a car's software productline</data>
+<data name="creator">Chr Wol</data>
+<data name="address"></data>
+<data name="email">meull@madkfjadfjkajfd.com</data>
+<data name="phone"></data>
+<data name="website"></data>
+<data name="organization">TU KL</data>
+<data name="department"></data>
+<data name="date"></data>
+<data name="reference"></data>
+</meta>
+<feature_tree>
+:r _r(_r)
+	:m _r_1(_r_1)
+		:m _r_1_2(_r_1_2)
+		:m _r_1_3(_r_1_3)
+		:m _r_1_4(_r_1_4)
+		:o _r_1_5(_r_1_5)
+	:g (_r_6) [1,*] 
+		: _r_6_7(_r_6_7)
+			:m _r_6_7_10(_r_6_7_10)
+			:o _r_6_7_12(_r_6_7_12)
+		: _r_6_8(_r_6_8)
+			:m _r_6_8_13(_r_6_8_13)
+				:g (_r_6_8_13_14) [1,*] 
+					: _r_6_8_13_14_15(_r_6_8_13_14_15)
+					: _r_6_8_13_14_16(_r_6_8_13_14_16)
+			:o _r_6_8_17(_r_6_8_17)
+		: _r_6_9(_r_6_9)
+			:g (_r_6_9_18) [1,1] 
+				: _r_6_9_18_19(_r_6_9_18_19)
+				: _r_6_9_18_20(_r_6_9_18_20)
+			:m _r_6_9_21(_r_6_9_21)
+</feature_tree>
+<constraints>
+constraint_2:~_r_6_8_13 or _r_6_8_17
+</constraints>
+</feature_model>

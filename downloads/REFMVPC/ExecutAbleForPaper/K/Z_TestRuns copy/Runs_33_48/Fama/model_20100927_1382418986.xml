@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature-model xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.tdg-seville.info/benavides/featuremodelling/feature-model.xsd">
+<feature name="Phone">
+	<setRelation name="0">
+	<cardinality max="2" min="1"/>
+	<groupedFeature name="Smart_Phone">
+			<binaryRelation name="1">
+			<cardinality max="1" min="1"/>
+			<solitaryFeature name="OS1">
+				<setRelation name="2">
+				<cardinality max="3" min="1"/>
+				<groupedFeature name="Android">
+				</groupedFeature>
+				<groupedFeature name="WindowMobile">
+				</groupedFeature>
+				<groupedFeature name="Mac">
+				</groupedFeature>
+				</setRelation>
+
+			</solitaryFeature>
+
+			</binaryRelation>
+
+	</groupedFeature>
+	<groupedFeature name="FeaturePhone">
+			<binaryRelation name="3">
+			<cardinality max="1" min="1"/>
+			<solitaryFeature name="OS2">
+				<setRelation name="4">
+				<cardinality max="2" min="1"/>
+				<groupedFeature name="Brew">
+				</groupedFeature>
+				<groupedFeature name="WIPI">
+				</groupedFeature>
+				</setRelation>
+
+			</solitaryFeature>
+
+			</binaryRelation>
+
+	</groupedFeature>
+	</setRelation>
+
+</feature>
+</feature-model>

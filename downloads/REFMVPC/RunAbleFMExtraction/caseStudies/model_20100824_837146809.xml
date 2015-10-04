@@ -1,0 +1,45 @@
+<!-- This model was created online using SPLOT's Feature Model Editor (http://www.splot-research.org) on Tue, Aug 24, 2010 - 12:32 PM  -->
+<feature_model name="StoreFrontSystem">
+<meta>
+<data name="description">Extract of e-commerce system</data>
+<data name="creator">Felice</data>
+<data name="address"></data>
+<data name="email">lfelice@exa.unicen.edu.ar</data>
+<data name="phone"></data>
+<data name="website"></data>
+<data name="organization">UNCPBA</data>
+<data name="department"></data>
+<data name="date"></data>
+<data name="reference"></data>
+</meta>
+<feature_tree>
+:r StoreFront(StoreFront)
+	:m HomePage(HomePage)
+		:g (_r_1_8) [1,*] 
+			: StaticContent(StaticContent)
+			: DynamicContent(DynamicContent)
+				:m ContentType(ContentType)
+					:g (_r_1_8_12_13_15) [1,*] 
+						: WelcomeMessage(WelcomeMessage)
+						: SpecialOffers(SpecialOffers)
+				:m VariationSource(VariationSource)
+					:g (_r_1_8_12_14_18) [1,*] 
+						: TimeDependant(TimeDependant)
+						: Personalized(Personalized)
+	:o UserBehTrack(UserBehTrack)
+	:m Catalog(Catalog)
+	:o WishList(WishList)
+	:m BuyPath(BuyPath)
+	:o CustomerService(CustomerService)
+	:o Registration(Registration)
+		:m RegistEnforc(RegistEnforc)
+			:g (_r_7_21_24) [1,*] 
+				: RegToBrowse(RegToBrowse)
+				: RegToBuy(RegToBuy)
+				: None(None)
+		:m RegistInform(RegistInform)
+		:m UserBehTracInf(UserBehTracInf)
+</feature_tree>
+<constraints>
+</constraints>
+</feature_model>

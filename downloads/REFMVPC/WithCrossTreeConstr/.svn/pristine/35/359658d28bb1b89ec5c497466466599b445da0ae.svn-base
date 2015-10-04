@@ -1,0 +1,311 @@
+package fma;
+
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.util.Collection;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Map;
+import java.util.Set;
+
+/**
+ * Stores the extracted feature model, i.e. the excludes and requires CTCs 
+ * as well as the root node. 
+ */
+import fma.ImplicationGraph.ImplicationNode;
+
+public class FeatureModel {
+	RNode root;
+	
+	private Map<Feature, Set<Feature>> cTImplies;
+	private Map<Feature, Set<Feature>> cTExcludes;
+	private Set<RNode> alreadyIn;
+	
+	
+	public Map<Feature, Set<Feature>> getcTImplies() {
+		return cTImplies;
+	}
+
+
+	public FeatureModel() {
+		cTImplies = new HashMap<Feature, Set<Feature>>();
+		alreadyIn = new HashSet<RNode>();
+		cTExcludes = new HashMap<Feature, Set<Feature>>();
+	}
+	
+	
+	public void buildGraph(Set<Product> products, Set<Feature> features, RNode root){
+		cTImplies = new HashMap<Feature, Set<Feature>>();
+		alreadyIn = new HashSet<RNode>();
+		
+		this.root = root;
+		buildGraph_int(products, features, this.root);
+	}
+	public boolean cTImplContainsDesc(Set<Feature> descendant, Feature implies){
+		boolean ret = false;
+		for(Feature desc : descendant){
+			if(cTImplies.containsKey(implies) && cTImplies.get(implies).contains(desc)){
+				ret = true;
+				break;
+			}
+		}
+		return ret;
+	}
+	public void addImplies(Feature f, Feature implied_f){
+		if(cTImplies.containsKey(f)){
+			cTImplies.get(f).add(implied_f);
+		}else{
+			Set<Feature> implied = new HashSet<Feature>();
+			implied.add(implied_f);
+			cTImplies.put(f, implied);
+		}
+	}
+	public void addExcludes(Feature f, Set<Feature> excludes){
+		if(cTExcludes.containsKey(f)){
+			cTExcludes.get(f).addAll(excludes);
+		}else{
+			cTExcludes.put(f, excludes);
+		}
+	}
+	private void buildGraph_int(Set<Product> products, Set<Feature> features, RNode parent){		
+		RNode child;
+		Set<Feature> descendants;
+		Set<Product> rProds;
+		Set<Feature> topFeatures = Product.getTopFeatures(products, features);
+		
+		for(Feature f : topFeatures){
+			if(alreadyInContains(f)){
+				child = this.alreadyInGetByFeature(f);
+				child.addParent(parent); //beforehand child was added?!
+				parent.getUnresolved().add(child);
+			}else{
+				child = new RNode(RType.unknown, f);
+				child.addParent(parent);
+				alreadyIn.add(child);
+				parent.getUnresolved().add(child);
+				
+				descendants = Product.getDescendants(products, features, f);
+				if (descendants.size() > 0) {
+					rProds = Product.filterProductPatterns(products, f, descendants);
+					buildGraph_int(rProds, descendants, child);
+				}
+			}
+		}
+	}
+	
+	public void writeFamaModelToFile(String genModelPath){
+		try {
+			File file = new File(genModelPath);
+			FileWriter fw= new FileWriter(file);
+			BufferedWriter bw = new BufferedWriter(fw);
+			
+			bw.write("%Relationships \r\n");
+			root.writeFamaModelToFile(bw);
+			
+			if(cTImplies.keySet().size()+cTExcludes.keySet().size()>0){
+				bw.write("%Constraints \r\n");
+				for(Feature k : cTImplies.keySet()){
+					for(Feature f : cTImplies.get(k)){
+						bw.write(k.toString()+" REQUIRES "+f+";");
+						bw.newLine();
+					}
+				}
+				
+				for(Feature k : cTExcludes.keySet()){
+					for(Feature f : cTExcludes.get(k)){
+						bw.write(k.toString()+" EXCLUDES "+f+";");
+						bw.newLine();
+					}
+				}
+			}
+			bw.close();
+			fw.close();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+	
+	public void writeSplotModelToFile(String genModelPath){
+		try {
+			File file = new File(genModelPath);
+			FileWriter fw= new FileWriter(file);
+			BufferedWriter bw = new BufferedWriter(fw);
+			
+			bw.write("<feature_model name=\""+root.getFeature()+"\">");
+			bw.newLine();
+			bw.write("<feature_tree>");
+			bw.newLine();
+			root.writeSplotModelToFile(bw);
+			
+			bw.write("</feature_tree>");
+			bw.newLine();
+			bw.write("<constraints>");
+			bw.newLine();
+			if(cTImplies.keySet().size()+cTExcludes.keySet().size()>0){
+				int i = 1;
+				for(Feature k : cTImplies.keySet()){
+					for(Feature f : cTImplies.get(k)){
+						bw.write("constraint_"+i+":"+"~"+k+" or "+f);
+						bw.newLine();
+						i++;
+					}
+				}
+				
+				for(Feature k : cTExcludes.keySet()){
+					for(Feature f : cTExcludes.get(k)){
+						bw.write("constraint_"+i+":"+"~"+k+" or ~"+f);
+						bw.newLine();
+						i++;
+					}
+				}
+			}
+			bw.write("</constraints>");
+			bw.newLine();
+			bw.write("</feature_model>");
+			bw.newLine();
+			bw.close();
+			fw.close();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+	
+	public void extractExcludeRelations(MutexGraph mutexG){
+		Map<Feature, Set<Feature>> mutex = new HashMap<Feature, Set<Feature>>();
+		extractMutex(root, mutex);
+		addMutexesDueImpliedFeatures(mutex);
+		
+		Set<Feature> excludes;
+		Map<Feature, Set<Feature>> excludes_clone = mutexG.getExcludes();
+		
+		for(Feature f : mutexG.getExcludes().keySet()){
+			excludes = excludes_clone.get(f);
+			if(mutex.get(f)!=null){
+				excludes.removeAll(mutex.get(f));
+			}
+			for(Feature excl : excludes){
+				if(excludes_clone.get(excl)!=null){
+					excludes_clone.get(excl).remove(f);
+				}
+			}
+			if(excludes.size()>0){
+				this.cTExcludes.put(f, excludes);
+			}
+		}
+	}
+	
+	private void addMutexesDueImpliedFeatures(Map<Feature, Set<Feature>> mutex) {
+		Set<Feature> excluded;
+		for(Feature f : cTImplies.keySet()){
+			excluded = new HashSet<Feature>();
+			for(Feature implied : cTImplies.get(f)){
+				if(mutex.get(implied)!=null){
+					excluded.addAll(mutex.get(implied));
+				}
+			}
+			if(mutex.containsKey(f)){
+				mutex.get(f).addAll(excluded);
+			}else{
+				mutex.put(f, excluded);
+			}
+		}
+		
+	}
+
+
+	private void extractMutex(RNode curentNode, Map<Feature, Set<Feature>> mutex){
+		Set<Set<RNode>> xors = curentNode.getXor();
+		Set<Feature> excluded;
+		Map<Feature, Set<Feature>> descendants = new HashMap<Feature, Set<Feature>>();
+		Set<Feature> descendant;
+		
+		for(Set<RNode> xor : xors){
+			for(RNode node :xor){
+				descendant = node.getDescendants();
+				descendants.put(node.getFeature(), descendant);
+			}
+		}
+		
+		//Probably optimize this loop? Descendants are calculated several times;
+		for(Set<RNode> xor: xors){
+			for(RNode node : xor){
+				for(RNode node2 : xor){
+					if(node!=node2){
+						excluded = node2.getDescendants();
+						excluded.add(node2.getFeature());
+						excluded.addAll(impliedBy(node2.getFeature()));
+						//To remove exclude-relations which are implicitely in the model
+						if(cTImplies.get(node2)!=null){
+							excluded.addAll(cTImplies.get(node2));
+						}
+						
+						if(mutex.containsKey(node.getFeature())){
+							mutex.get(node.getFeature()).addAll(excluded);
+						}else{
+							mutex.put(node.getFeature(), excluded);
+						}
+						for(Feature f : descendants.get(node.getFeature())){
+							if(mutex.containsKey(f)){
+								mutex.get(f).addAll(excluded);
+							}else{
+								mutex.put(f, excluded);
+							}
+						}
+					}
+				}
+			}
+		}
+		
+		for(RNode node : curentNode.getChildren()){
+			extractMutex(node, mutex);
+		}
+	}
+	
+	public Set<Feature> impliedBy(Feature feature) {
+		Set<Feature> impliedBy = new HashSet<Feature>();
+		for(Feature f : cTImplies.keySet()){
+			if(cTImplies.get(f)!=null && cTImplies.get(f).contains(feature)){
+				impliedBy.add(f);
+			}
+		}
+		return impliedBy;
+	}
+
+
+	private boolean alreadyInContains(Feature f){
+		boolean found = false;
+		for(RNode node : alreadyIn){
+			if(node.getFeature().equals(f)){
+				found = true;
+				break;
+			}
+		}
+		return found;
+	}
+
+	private RNode alreadyInGetByFeature(Feature f){
+		RNode rNode=null;
+		for(RNode node : alreadyIn){
+			if(node.getFeature().equals(f)){
+				rNode = node;
+			}
+		}
+		return rNode;
+	}
+	
+	public RNode getRNode(Feature f){
+		return alreadyInGetByFeature(f);
+	}
+
+	public RNode getRoot() {
+		return root;
+	}
+
+	public void addExcludes(Map<Feature, Set<Feature>> constrs) {
+		this.cTExcludes.putAll(constrs);
+	}
+	
+	
+}

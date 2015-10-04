@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature-model xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.tdg-seville.info/benavides/featuremodelling/feature-model.xsd">
+<feature name="thread">
+	<binaryRelation name="894">
+	<cardinality max="1" min="1"/>
+	<solitaryFeature name="thread_instance">
+		<setRelation name="895">
+		<cardinality max="1" min="1"/>
+		<groupedFeature name="multiple">
+				<binaryRelation name="896">
+				<cardinality max="1" min="0"/>
+				<solitaryFeature name="coroutine">
+					<binaryRelation name="897">
+					<cardinality max="1" min="0"/>
+					<solitaryFeature name="dispatching">
+						<binaryRelation name="898">
+						<cardinality max="1" min="1"/>
+						<solitaryFeature name="dispach_method">
+							<binaryRelation name="899">
+							<cardinality max="1" min="1"/>
+							<solitaryFeature name="global_life">
+							</solitaryFeature>
+
+							</binaryRelation>
+
+						</solitaryFeature>
+
+						</binaryRelation>
+
+						<binaryRelation name="900">
+						<cardinality max="1" min="0"/>
+						<solitaryFeature name="scheduling">
+							<binaryRelation name="901">
+							<cardinality max="1" min="0"/>
+							<solitaryFeature name="bundle_schedule">
+								<binaryRelation name="902">
+								<cardinality max="1" min="0"/>
+								<solitaryFeature name="bundle_preemption">
+								</solitaryFeature>
+
+								</binaryRelation>
+
+								<binaryRelation name="903">
+								<cardinality max="1" min="1"/>
+								<solitaryFeature name="bundle_strategy">
+									<binaryRelation name="904">
+									<cardinality max="1" min="0"/>
+									<solitaryFeature name="bundle_strategy_replugging">
+									</solitaryFeature>
+
+									</binaryRelation>
+
+									<setRelation name="905">
+									<cardinality max="1" min="1"/>
+									<groupedFeature name="bundle_fcfs">
+									</groupedFeature>
+									<groupedFeature name="bundle_lcfs">
+									</groupedFeature>
+									</setRelation>
+
+								</solitaryFeature>
+
+								</binaryRelation>
+
+							</solitaryFeature>
+
+							</binaryRelation>
+
+							<binaryRelation name="906">
+							<cardinality max="1" min="0"/>
+							<solitaryFeature name="idle_control">
+								<setRelation name="907">
+								<cardinality max="1" min="1"/>
+								<groupedFeature name="idle_guard">
+								</groupedFeature>
+								<groupedFeature name="idle_panic">
+								</groupedFeature>
+								<groupedFeature name="idle_user">
+								</groupedFeature>
+								</setRelation>
+
+							</solitaryFeature>
+
+							</binaryRelation>
+
+							<binaryRelation name="908">
+							<cardinality max="1" min="0"/>
+							<solitaryFeature name="query_schedule">
+							</solitaryFeature>
+
+							</binaryRelation>
+
+							<binaryRelation name="909">
+							<cardinality max="1" min="1"/>
+							<solitaryFeature name="thread_schedule">
+								<binaryRelation name="910">
+								<cardinality max="1" min="0"/>
+								<solitaryFeature name="thread_preemption">
+									<binaryRelation name="911">
+									<cardinality max="1" min="0"/>
+									<solitaryFeature name="non_preemptable_threads">
+									</solitaryFeature>
+
+									</binaryRelation>
+
+									<binaryRelation name="912">
+									<cardinality max="1" min="0"/>
+									<solitaryFeature name="scheduler_lockable">
+									</solitaryFeature>
+
+									</binaryRelation>
+
+								</solitaryFeature>
+
+								</binaryRelation>
+
+								<binaryRelation name="913">
+								<cardinality max="1" min="1"/>
+								<solitaryFeature name="thread_strategy">
+									<setRelation name="914">
+									<cardinality max="1" min="1"/>
+									<groupedFeature name="priority">
+											<binaryRelation name="915">
+											<cardinality max="1" min="0"/>
+											<solitaryFeature name="schedule_same_priority">
+											</solitaryFeature>
+
+											</binaryRelation>
+
+											<binaryRelation name="916">
+											<cardinality max="1" min="1"/>
+											<solitaryFeature name="priority_behaviour">
+												<setRelation name="917">
+												<cardinality max="1" min="1"/>
+												<groupedFeature name="priority_cooperative">
+												</groupedFeature>
+												<groupedFeature name="priority_preemptive">
+												</groupedFeature>
+												</setRelation>
+
+											</solitaryFeature>
+
+											</binaryRelation>
+
+											<binaryRelation name="918">
+											<cardinality max="1" min="1"/>
+											<solitaryFeature name="priority_count">
+												<setRelation name="919">
+												<cardinality max="1" min="1"/>
+												<groupedFeature name="priority_16">
+												</groupedFeature>
+												<groupedFeature name="priority_32">
+												</groupedFeature>
+												<groupedFeature name="priority_8">
+												</groupedFeature>
+												</setRelation>
+
+											</solitaryFeature>
+
+											</binaryRelation>
+
+									</groupedFeature>
+									<groupedFeature name="thread_fcfs">
+									</groupedFeature>
+									<groupedFeature name="thread_lcfs">
+									</groupedFeature>
+									</setRelation>
+
+									<binaryRelation name="920">
+									<cardinality max="1" min="0"/>
+									<solitaryFeature name="thread_strategy_replugging">
+									</solitaryFeature>
+
+									</binaryRelation>
+
+								</solitaryFeature>
+
+								</binaryRelation>
+
+							</solitaryFeature>
+
+							</binaryRelation>
+
+						</solitaryFeature>
+
+						</binaryRelation>
+
+					</solitaryFeature>
+
+					</binaryRelation>
+
+					<binaryRelation name="921">
+					<cardinality max="1" min="1"/>
+					<solitaryFeature name="location">
+						<setRelation name="922">
+						<cardinality max="1" min="1"/>
+						<groupedFeature name="integrated">
+						</groupedFeature>
+						<groupedFeature name="separated">
+						</groupedFeature>
+						</setRelation>
+
+					</solitaryFeature>
+
+					</binaryRelation>
+
+					<binaryRelation name="923">
+					<cardinality max="1" min="1"/>
+					<solitaryFeature name="size">
+						<binaryRelation name="924">
+						<cardinality max="1" min="0"/>
+						<solitaryFeature name="float_set">
+						</solitaryFeature>
+
+						</binaryRelation>
+
+						<binaryRelation name="925">
+						<cardinality max="1" min="0"/>
+						<solitaryFeature name="volatile_set">
+						</solitaryFeature>
+
+						</binaryRelation>
+
+						<binaryRelation name="926">
+						<cardinality max="1" min="1"/>
+						<solitaryFeature name="minimal_set">
+						</solitaryFeature>
+
+						</binaryRelation>
+
+					</solitaryFeature>
+
+					</binaryRelation>
+
+				</solitaryFeature>
+
+				</binaryRelation>
+
+		</groupedFeature>
+		<groupedFeature name="single">
+		</groupedFeature>
+		</setRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+</feature>
+</feature-model>

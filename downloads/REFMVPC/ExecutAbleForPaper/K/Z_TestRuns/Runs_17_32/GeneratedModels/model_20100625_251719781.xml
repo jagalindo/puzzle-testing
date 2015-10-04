@@ -1,0 +1,22 @@
+<feature_model name="GoPhone">
+<feature_tree>
+:r GoPhone (GoPhone)
+	:o Messaging (Messaging)
+		:o SMS (SMS)
+		:o Email (Email)
+			:o Attachment (Attachment)
+	:o DataTransfer (DataTransfer)
+		:o GPRS (GPRS)
+		:o IrDA (IrDA)
+		:o Bluetooth (Bluetooth)
+	:o MMS (MMS)
+	:o Calendar (Calendar)
+		:o Alarm (Alarm)
+		:o MS_Outlook_Sync (MS_Outlook_Sync)
+	:o CallManagement (CallManagement)
+		:o Voice_Dial (Voice_Dial)
+		:o Call_Filter (Call_Filter)
+</feature_tree>
+<constraints>
+</constraints>
+</feature_model>

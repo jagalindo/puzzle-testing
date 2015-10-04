@@ -1,0 +1,18 @@
+<feature_model name="Sensors">
+<feature_tree>
+:r Sensors (Sensors)
+	:m Car (Car)
+	:o Automated_Driving_Controller (Automated_Driving_Controller)
+		:m Collision_Avoidance_Braking (Collision_Avoidance_Braking)
+		:o parallel_parking (parallel_parking)
+		:g [1, 1]
+			: Standard_Avoidance (Standard_Avoidance)
+			: enhanced_avoidance (enhanced_avoidance)
+	:o forward_range_finder (forward_range_finder)
+	:o lateral_range_finder (lateral_range_finder)
+</feature_tree>
+<constraints>
+constraint_1:~enhanced_avoidance or forward_range_finder
+constraint_2:~parallel_parking or lateral_range_finder
+</constraints>
+</feature_model>

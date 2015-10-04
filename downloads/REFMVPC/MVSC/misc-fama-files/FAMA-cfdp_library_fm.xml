@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature-model xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.tdg-seville.info/benavides/featuremodelling/feature-model.xsd">
+<feature name="CFDP Library">
+	<setRelation name="45">
+	<cardinality max="4" min="1"/>
+	<groupedFeature name="send">
+			<binaryRelation name="46">
+			<cardinality max="1" min="0"/>
+			<solitaryFeature name="Send_Acknowledged_Mode">
+			</solitaryFeature>
+
+			</binaryRelation>
+
+			<binaryRelation name="47">
+			<cardinality max="1" min="0"/>
+			<solitaryFeature name="send_fs_operations">
+			</solitaryFeature>
+
+			</binaryRelation>
+
+	</groupedFeature>
+	<groupedFeature name="receive">
+			<binaryRelation name="48">
+			<cardinality max="1" min="0"/>
+			<solitaryFeature name="Receive_Acknowledged_Mode">
+			</solitaryFeature>
+
+			</binaryRelation>
+
+			<binaryRelation name="49">
+			<cardinality max="1" min="0"/>
+			<solitaryFeature name="receive_fs_operations">
+			</solitaryFeature>
+
+			</binaryRelation>
+
+	</groupedFeature>
+	<groupedFeature name="pus">
+			<binaryRelation name="50">
+			<cardinality max="1" min="0"/>
+			<solitaryFeature name="pus_rename">
+			</solitaryFeature>
+
+			</binaryRelation>
+
+			<binaryRelation name="51">
+			<cardinality max="1" min="0"/>
+			<solitaryFeature name="pus_copy">
+			</solitaryFeature>
+
+			</binaryRelation>
+
+	</groupedFeature>
+	<groupedFeature name="Reboot">
+			<binaryRelation name="52">
+			<cardinality max="1" min="0"/>
+			<solitaryFeature name="Reboot_Entity">
+			</solitaryFeature>
+
+			</binaryRelation>
+
+			<binaryRelation name="53">
+			<cardinality max="1" min="0"/>
+			<solitaryFeature name="reboot_pus">
+			</solitaryFeature>
+
+			</binaryRelation>
+
+	</groupedFeature>
+	</setRelation>
+
+</feature>
+<requires feature="pus_copy" name="c1a" requires="send"/>
+<requires feature="pus_copy" name="c1b" requires="receive"/>
+<requires feature="pus_rename" name="c2a" requires="send_fs_operations"/>
+<requires feature="pus_rename" name="c2b" requires="receive_fs_operations"/>
+<requires feature="reboot_pus" name="c3" requires="pus"/>
+</feature-model>

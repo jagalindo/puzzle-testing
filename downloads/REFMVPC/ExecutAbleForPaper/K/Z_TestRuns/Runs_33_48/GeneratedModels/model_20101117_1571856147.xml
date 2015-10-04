@@ -1,0 +1,18 @@
+<feature_model name="_r">
+<feature_tree>
+:r _r (_r)
+	:m _r_1 (_r_1)
+	:m _r_5 (_r_5)
+	:m _r_5_6 (_r_5_6)
+	:o _r_5_7 (_r_5_7)
+		:g [1, *]
+			: _r_5_7_8_11 (_r_5_7_8_11)
+			: _r_5_7_8_10 (_r_5_7_8_10)
+			: _r_5_7_8_9 (_r_5_7_8_9)
+	:g [1, *]
+		: _r_1_2_3 (_r_1_2_3)
+		: _r_1_2_4 (_r_1_2_4)
+</feature_tree>
+<constraints>
+</constraints>
+</feature_model>

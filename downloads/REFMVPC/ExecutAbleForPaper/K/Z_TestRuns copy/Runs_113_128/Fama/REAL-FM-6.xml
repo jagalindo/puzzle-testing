@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature-model xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.tdg-seville.info/benavides/featuremodelling/feature-model.xsd">
+<feature name="cellphone">
+	<binaryRelation name="130">
+	<cardinality max="1" min="0"/>
+	<solitaryFeature name="wireless">
+		<setRelation name="131">
+		<cardinality max="2" min="1"/>
+		<groupedFeature name="infrared">
+		</groupedFeature>
+		<groupedFeature name="bluetooth">
+		</groupedFeature>
+		</setRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="132">
+	<cardinality max="1" min="1"/>
+	<solitaryFeature name="accu_cell">
+		<setRelation name="133">
+		<cardinality max="1" min="1"/>
+		<groupedFeature name="li_ion">
+		</groupedFeature>
+		<groupedFeature name="ni_mh">
+		</groupedFeature>
+		<groupedFeature name="ni_ca">
+		</groupedFeature>
+		</setRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="134">
+	<cardinality max="1" min="1"/>
+	<solitaryFeature name="display">
+		<setRelation name="135">
+		<cardinality max="1" min="1"/>
+		<groupedFeature name="color">
+		</groupedFeature>
+		<groupedFeature name="monochrome">
+		</groupedFeature>
+		</setRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+</feature>
+<requires feature="bluetooth" name="c1" requires="li_ion"/>
+<excludes feature="color" name="c2" excludes="ni_ca"/>
+</feature-model>

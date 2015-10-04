@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature-model xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.tdg-seville.info/benavides/featuremodelling/feature-model.xsd">
+<feature name="EC2">
+	<binaryRelation name="285">
+	<cardinality max="1" min="1"/>
+	<solitaryFeature name="_r_1">
+		<setRelation name="286">
+		<cardinality max="1" min="1"/>
+		<groupedFeature name="_r_1_14_15">
+		</groupedFeature>
+		<groupedFeature name="_r_1_14_16">
+		</groupedFeature>
+		</setRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="287">
+	<cardinality max="1" min="1"/>
+	<solitaryFeature name="_r_2">
+		<setRelation name="288">
+		<cardinality max="1" min="1"/>
+		<groupedFeature name="_r_2_7_8">
+		</groupedFeature>
+		<groupedFeature name="_r_2_7_9">
+		</groupedFeature>
+		</setRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="289">
+	<cardinality max="1" min="1"/>
+	<solitaryFeature name="_r_3">
+		<setRelation name="290">
+		<cardinality max="1" min="1"/>
+		<groupedFeature name="_r_3_4_5">
+				<setRelation name="291">
+				<cardinality max="1" min="1"/>
+				<groupedFeature name="_r_3_4_5_17_18">
+						<setRelation name="292">
+						<cardinality max="1" min="1"/>
+						<groupedFeature name="_r_3_4_5_17_18_21_22">
+						</groupedFeature>
+						<groupedFeature name="_r_3_4_5_17_18_21_23">
+						</groupedFeature>
+						<groupedFeature name="_r_3_4_5_17_18_21_24">
+						</groupedFeature>
+						</setRelation>
+
+				</groupedFeature>
+				<groupedFeature name="_r_3_4_5_17_19">
+						<setRelation name="293">
+						<cardinality max="1" min="1"/>
+						<groupedFeature name="_r_3_4_5_17_19_26_27">
+						</groupedFeature>
+						<groupedFeature name="_r_3_4_5_17_19_26_28">
+						</groupedFeature>
+						</setRelation>
+
+				</groupedFeature>
+				<groupedFeature name="_r_3_4_5_17_20">
+						<setRelation name="294">
+						<cardinality max="1" min="1"/>
+						<groupedFeature name="_r_3_4_5_17_20_29_30">
+						</groupedFeature>
+						<groupedFeature name="_r_3_4_5_17_20_29_31">
+						</groupedFeature>
+						</setRelation>
+
+				</groupedFeature>
+				</setRelation>
+
+		</groupedFeature>
+		<groupedFeature name="_r_3_4_6">
+		</groupedFeature>
+		</setRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+</feature>
+</feature-model>

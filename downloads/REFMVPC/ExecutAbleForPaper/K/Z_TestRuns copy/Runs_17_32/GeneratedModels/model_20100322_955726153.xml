@@ -1,0 +1,28 @@
+<feature_model name="Ringing_Tones">
+<feature_tree>
+:r Ringing_Tones (Ringing_Tones)
+	:m Calls (Calls)
+	:m Utility_Functions (Utility_Functions)
+	:m Mobile_Phone (Mobile_Phone)
+	:m Messaging (Messaging)
+	:m Settings (Settings)
+	:m OS (OS)
+	:m Alarm (Alarm)
+	:o Java_Support (Java_Support)
+		:o Games (Games)
+	:o Camera (Camera)
+		:m Media (Media)
+		:o MP3 (MP3)
+	:o Connectivity (Connectivity)
+		:m USB (USB)
+		:o Bluetooth (Bluetooth)
+	:g [1, *]
+		: MMS (MMS)
+		: SMS (SMS)
+	:g [1, 1]
+		: WinCE (WinCE)
+		: Symbian (Symbian)
+</feature_tree>
+<constraints>
+</constraints>
+</feature_model>

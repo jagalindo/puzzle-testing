@@ -1,0 +1,80 @@
+FAMA-movies_app_fm.xml , 13 , 24.0 , 296
+Bluetooth , Built-In , 4.0 , 94
+Bluetooth , Cache_Policy , 6.0 , 218
+Bluetooth , DB , 12.0 , 63
+Bluetooth , GPS , 8.0 , 218
+Bluetooth , GUI , 12.0 , 62
+Bluetooth , Local , 6.0 , 203
+Bluetooth , Movies App , 12.0 , 63
+Bluetooth , Network , 12.0 , 202
+Bluetooth , Remote , 6.0 , 63
+Bluetooth , Rich , 6.0 , 203
+Bluetooth , Thin , 6.0 , 62
+Bluetooth , Wifi , 0.0 , 218
+Built-In , Cache_Policy , 4.0 , 47
+Built-In , DB , 8.0 , 203
+Built-In , GPS , 8.0 , 62
+Built-In , GUI , 8.0 , 218
+Built-In , Local , 4.0 , 63
+Built-In , Movies App , 8.0 , 203
+Built-In , Network , 8.0 , 62
+Built-In , Remote , 4.0 , 203
+Built-In , Rich , 4.0 , 62
+Built-In , Thin , 4.0 , 203
+Built-In , Wifi , 4.0 , 62
+Cache_Policy , DB , 12.0 , 218
+Cache_Policy , GPS , 8.0 , 63
+Cache_Policy , GUI , 12.0 , 203
+Cache_Policy , Local , 0.0 , 62
+Cache_Policy , Movies App , 12.0 , 203
+Cache_Policy , Network , 12.0 , 62
+Cache_Policy , Remote , 12.0 , 219
+Cache_Policy , Rich , 6.0 , 62
+Cache_Policy , Thin , 6.0 , 203
+Cache_Policy , Wifi , 6.0 , 62
+DB , GPS , 16.0 , 203
+DB , GUI , 24.0 , 47
+DB , Local , 12.0 , 218
+DB , Movies App , 24.0 , 47
+DB , Network , 24.0 , 218
+DB , Remote , 12.0 , 63
+DB , Rich , 12.0 , 203
+DB , Thin , 12.0 , 62
+DB , Wifi , 12.0 , 203
+GPS , GUI , 16.0 , 62
+GPS , Local , 8.0 , 203
+GPS , Movies App , 16.0 , 62
+GPS , Network , 16.0 , 203
+GPS , Remote , 8.0 , 78
+GPS , Rich , 8.0 , 203
+GPS , Thin , 8.0 , 62
+GPS , Wifi , 8.0 , 203
+GUI , Local , 12.0 , 47
+GUI , Movies App , 24.0 , 203
+GUI , Network , 24.0 , 62
+GUI , Remote , 12.0 , 234
+GUI , Rich , 12.0 , 63
+GUI , Thin , 12.0 , 218
+GUI , Wifi , 12.0 , 47
+Local , Movies App , 12.0 , 203
+Local , Network , 12.0 , 62
+Local , Remote , 0.0 , 203
+Local , Rich , 6.0 , 62
+Local , Thin , 6.0 , 203
+Local , Wifi , 6.0 , 62
+Movies App , Network , 24.0 , 203
+Movies App , Remote , 12.0 , 63
+Movies App , Rich , 12.0 , 202
+Movies App , Thin , 12.0 , 47
+Movies App , Wifi , 12.0 , 234
+Network , Remote , 12.0 , 63
+Network , Rich , 12.0 , 218
+Network , Thin , 12.0 , 47
+Network , Wifi , 12.0 , 218
+Remote , Rich , 6.0 , 47
+Remote , Thin , 6.0 , 203
+Remote , Wifi , 6.0 , 62
+Rich , Thin , 0.0 , 219
+Rich , Wifi , 6.0 , 46
+Thin , Wifi , 6.0 , 203
+10498,78

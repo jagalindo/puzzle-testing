@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature-model xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.tdg-seville.info/benavides/featuremodelling/feature-model.xsd">
+<feature name="_r">
+	<binaryRelation name="91">
+	<cardinality max="1" min="1"/>
+	<solitaryFeature name="_r_1">
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="92">
+	<cardinality max="1" min="1"/>
+	<solitaryFeature name="_r_2">
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="93">
+	<cardinality max="1" min="1"/>
+	<solitaryFeature name="_r_3">
+		<setRelation name="94">
+		<cardinality max="4" min="1"/>
+		<groupedFeature name="_r_3_8_9">
+		</groupedFeature>
+		<groupedFeature name="_r_3_8_10">
+		</groupedFeature>
+		<groupedFeature name="_r_3_8_11">
+		</groupedFeature>
+		<groupedFeature name="_r_3_8_12">
+		</groupedFeature>
+		</setRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="95">
+	<cardinality max="1" min="1"/>
+	<solitaryFeature name="_r_4">
+		<setRelation name="96">
+		<cardinality max="1" min="1"/>
+		<groupedFeature name="_r_4_13_14">
+				<setRelation name="97">
+				<cardinality max="2" min="1"/>
+				<groupedFeature name="_r_4_13_14_38_39">
+				</groupedFeature>
+				<groupedFeature name="_r_4_13_14_38_40">
+				</groupedFeature>
+				</setRelation>
+
+		</groupedFeature>
+		<groupedFeature name="_r_4_13_15">
+				<setRelation name="98">
+				<cardinality max="2" min="1"/>
+				<groupedFeature name="_r_4_13_15_34_35">
+				</groupedFeature>
+				<groupedFeature name="_r_4_13_15_34_37">
+				</groupedFeature>
+				</setRelation>
+
+		</groupedFeature>
+		</setRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="99">
+	<cardinality max="1" min="1"/>
+	<solitaryFeature name="_r_6">
+		<setRelation name="100">
+		<cardinality max="1" min="1"/>
+		<groupedFeature name="_r_6_19_20">
+		</groupedFeature>
+		<groupedFeature name="_r_6_19_21">
+				<setRelation name="101">
+				<cardinality max="1" min="1"/>
+				<groupedFeature name="_r_6_19_21_26_27">
+						<setRelation name="102">
+						<cardinality max="3" min="1"/>
+						<groupedFeature name="_r_6_19_21_26_27_29_30">
+						</groupedFeature>
+						<groupedFeature name="_r_6_19_21_26_27_29_31">
+						</groupedFeature>
+						<groupedFeature name="_r_6_19_21_26_27_29_32">
+						</groupedFeature>
+						</setRelation>
+
+				</groupedFeature>
+				<groupedFeature name="_r_6_19_21_26_28">
+				</groupedFeature>
+				</setRelation>
+
+		</groupedFeature>
+		</setRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+</feature>
+</feature-model>

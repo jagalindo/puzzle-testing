@@ -1,0 +1,56 @@
+<!-- This model was created online using SPLOT's Feature Model Editor (http://www.splot-research.org) on Wed, Feb 9, 2011 - 8:38 AM  -->
+<feature_model name="PFTest">
+<meta>
+<data name="description">Product Family Test</data>
+<data name="creator">Chittimalli</data>
+<data name="address"></data>
+<data name="email">Chantabbai@gmail.com</data>
+<data name="phone"></data>
+<data name="website"></data>
+<data name="organization">TRDDC</data>
+<data name="department"></data>
+<data name="date"></data>
+<data name="reference"></data>
+</meta>
+<feature_tree>
+:r _r(_r)
+	:m _r_1(_r_1)
+		:m _r_1_2(_r_1_2)
+		:m _r_1_3(_r_1_3)
+		:o _r_1_4(_r_1_4)
+		:o _r_1_5(_r_1_5)
+		:g (_r_1_25) [1,1] 
+			: _r_1_25_26(_r_1_25_26)
+			: _r_1_25_27(_r_1_25_27)
+	:m _r_6(_r_6)
+		:m _r_6_7(_r_6_7)
+		:m _r_6_8(_r_6_8)
+		:o _r_6_9(_r_6_9)
+	:m _r_10(_r_10)
+		:m _r_10_11(_r_10_11)
+		:m _r_10_12(_r_10_12)
+		:m _r_10_13(_r_10_13)
+	:m _r_16(_r_16)
+		:g (_r_16_17) [1,1] 
+			: _r_16_17_18(_r_16_17_18)
+			: _r_16_17_19(_r_16_17_19)
+			: _r_16_17_20(_r_16_17_20)
+			: _r_16_17_21(_r_16_17_21)
+	:m _r_22(_r_22)
+		:m _r_22_23(_r_22_23)
+	:m _r_25(_r_25)
+		:m _r_25_28(_r_25_28)
+		:o _r_25_29(_r_25_29)
+	:o _r_31(_r_31)
+</feature_tree>
+<constraints>
+constraint_1:_r_1_2 or ~_r_1_3
+constraint_18:_r_1_5 or ~_r_16_17_21
+constraint_6:_r_16_17_18 or ~_r_1_25_26
+constraint_20:~_r_16_17_21 or _r_31
+constraint_14:_r_1_4 or ~_r_16_17_20
+constraint_2:_r_1_3 or ~_r_1_4
+constraint_16:~_r_16_17_21 or _r_25_29
+constraint_3:_r_1_4 or ~_r_1_5
+</constraints>
+</feature_model>

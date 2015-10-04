@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature-model xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.tdg-seville.info/benavides/featuremodelling/feature-model.xsd">
+<feature name="YM_Test">
+	<binaryRelation name="319">
+	<cardinality max="1" min="1"/>
+	<solitaryFeature name="_r_2">
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="320">
+	<cardinality max="1" min="1"/>
+	<solitaryFeature name="_r_3">
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="321">
+	<cardinality max="1" min="1"/>
+	<solitaryFeature name="_r_4">
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="322">
+	<cardinality max="1" min="1"/>
+	<solitaryFeature name="_r_5">
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="323">
+	<cardinality max="1" min="1"/>
+	<solitaryFeature name="_r_7">
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="324">
+	<cardinality max="1" min="1"/>
+	<solitaryFeature name="_r_8">
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="325">
+	<cardinality max="1" min="1"/>
+	<solitaryFeature name="_r_9">
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="326">
+	<cardinality max="1" min="1"/>
+	<solitaryFeature name="_r_11">
+		<binaryRelation name="327">
+		<cardinality max="1" min="0"/>
+		<solitaryFeature name="_r_11_12">
+		</solitaryFeature>
+
+		</binaryRelation>
+
+		<binaryRelation name="328">
+		<cardinality max="1" min="0"/>
+		<solitaryFeature name="_r_11_13">
+		</solitaryFeature>
+
+		</binaryRelation>
+
+		<binaryRelation name="329">
+		<cardinality max="1" min="0"/>
+		<solitaryFeature name="PLC">
+		</solitaryFeature>
+
+		</binaryRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+</feature>
+</feature-model>

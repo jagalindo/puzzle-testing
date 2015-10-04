@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature-model xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.tdg-seville.info/benavides/featuremodelling/feature-model.xsd">
+<feature name="Reference Management Software">
+	<binaryRelation name="450">
+	<cardinality max="1" min="1"/>
+	<solitaryFeature name="_r_2">
+		<setRelation name="451">
+		<cardinality max="1" min="1"/>
+		<groupedFeature name="_r_2_3_4">
+		</groupedFeature>
+		<groupedFeature name="_r_2_3_5">
+		</groupedFeature>
+		</setRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="452">
+	<cardinality max="1" min="1"/>
+	<solitaryFeature name="_r_6">
+		<binaryRelation name="453">
+		<cardinality max="1" min="1"/>
+		<solitaryFeature name="_r_6_7">
+		</solitaryFeature>
+
+		</binaryRelation>
+
+		<binaryRelation name="454">
+		<cardinality max="1" min="0"/>
+		<solitaryFeature name="_r_6_9">
+		</solitaryFeature>
+
+		</binaryRelation>
+
+		<binaryRelation name="455">
+		<cardinality max="1" min="0"/>
+		<solitaryFeature name="_r_6_10">
+			<binaryRelation name="456">
+			<cardinality max="1" min="0"/>
+			<solitaryFeature name="_r_6_10_11">
+			</solitaryFeature>
+
+			</binaryRelation>
+
+		</solitaryFeature>
+
+		</binaryRelation>
+
+		<binaryRelation name="457">
+		<cardinality max="1" min="1"/>
+		<solitaryFeature name="_r_6_13">
+		</solitaryFeature>
+
+		</binaryRelation>
+
+		<binaryRelation name="458">
+		<cardinality max="1" min="1"/>
+		<solitaryFeature name="_r_6_14">
+			<setRelation name="459">
+			<cardinality max="2" min="1"/>
+			<groupedFeature name="_r_6_14_15_16">
+			</groupedFeature>
+			<groupedFeature name="_r_6_14_15_17">
+			</groupedFeature>
+			</setRelation>
+
+		</solitaryFeature>
+
+		</binaryRelation>
+
+		<binaryRelation name="460">
+		<cardinality max="1" min="0"/>
+		<solitaryFeature name="_r_6_18">
+			<setRelation name="461">
+			<cardinality max="5" min="1"/>
+			<groupedFeature name="_r_6_18_19_20">
+			</groupedFeature>
+			<groupedFeature name="_r_6_18_19_21">
+			</groupedFeature>
+			<groupedFeature name="_r_6_18_19_22">
+			</groupedFeature>
+			<groupedFeature name="_r_6_18_19_23">
+			</groupedFeature>
+			<groupedFeature name="_r_6_18_19_24">
+			</groupedFeature>
+			</setRelation>
+
+		</solitaryFeature>
+
+		</binaryRelation>
+
+		<binaryRelation name="462">
+		<cardinality max="1" min="0"/>
+		<solitaryFeature name="_r_6_25">
+			<setRelation name="463">
+			<cardinality max="5" min="1"/>
+			<groupedFeature name="_r_6_25_26_27">
+			</groupedFeature>
+			<groupedFeature name="_r_6_25_26_28">
+			</groupedFeature>
+			<groupedFeature name="_r_6_25_26_29">
+			</groupedFeature>
+			<groupedFeature name="_r_6_25_26_30">
+			</groupedFeature>
+			<groupedFeature name="_r_6_25_26_31">
+			</groupedFeature>
+			</setRelation>
+
+		</solitaryFeature>
+
+		</binaryRelation>
+
+		<binaryRelation name="464">
+		<cardinality max="1" min="0"/>
+		<solitaryFeature name="_r_6_32">
+		</solitaryFeature>
+
+		</binaryRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="465">
+	<cardinality max="1" min="0"/>
+	<solitaryFeature name="_r_33">
+		<binaryRelation name="466">
+		<cardinality max="1" min="1"/>
+		<solitaryFeature name="_r_33_34">
+		</solitaryFeature>
+
+		</binaryRelation>
+
+		<binaryRelation name="467">
+		<cardinality max="1" min="0"/>
+		<solitaryFeature name="_r_33_39">
+		</solitaryFeature>
+
+		</binaryRelation>
+
+		<binaryRelation name="468">
+		<cardinality max="1" min="0"/>
+		<solitaryFeature name="_r_33_40">
+		</solitaryFeature>
+
+		</binaryRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="469">
+	<cardinality max="1" min="0"/>
+	<solitaryFeature name="_r_41">
+	</solitaryFeature>
+
+	</binaryRelation>
+
+</feature>
+<requires feature="_r_6_9" name="constraint_18" requires="_r_33_40"/>
+<requires feature="_r_2_3_4" name="constraint_19" requires="_r_33"/>
+<requires feature="_r_6_18_19_22" name="constraint_22" requires="_r_6_25_26_29"/>
+<requires feature="_r_6_18_19_23" name="constraint_23" requires="_r_6_25_26_30"/>
+<requires feature="_r_6_18_19_20" name="constraint_20" requires="_r_6_25_26_27"/>
+<requires feature="_r_6_18_19_21" name="constraint_21" requires="_r_6_25_26_28"/>
+<requires feature="_r_6_18_19_24" name="constraint_24" requires="_r_6_25_26_31"/>
+</feature-model>

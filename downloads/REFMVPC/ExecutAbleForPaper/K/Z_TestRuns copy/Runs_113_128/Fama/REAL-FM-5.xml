@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature-model xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.tdg-seville.info/benavides/featuremodelling/feature-model.xsd">
+<feature name="_r">
+	<binaryRelation name="122">
+	<cardinality max="1" min="1"/>
+	<solitaryFeature name="_r_3">
+		<setRelation name="123">
+		<cardinality max="1" min="1"/>
+		<groupedFeature name="_r_3_4_5">
+		</groupedFeature>
+		<groupedFeature name="_r_3_4_6">
+		</groupedFeature>
+		</setRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="124">
+	<cardinality max="1" min="0"/>
+	<solitaryFeature name="_r_10">
+		<setRelation name="125">
+		<cardinality max="1" min="1"/>
+		<groupedFeature name="_r_10_11_12">
+		</groupedFeature>
+		<groupedFeature name="_r_10_11_13">
+		</groupedFeature>
+		</setRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="126">
+	<cardinality max="1" min="0"/>
+	<solitaryFeature name="_r_15">
+		<setRelation name="127">
+		<cardinality max="1" min="1"/>
+		<groupedFeature name="_r_15_16_17">
+		</groupedFeature>
+		<groupedFeature name="_r_15_16_18">
+		</groupedFeature>
+		</setRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="128">
+	<cardinality max="1" min="1"/>
+	<solitaryFeature name="_r_19">
+		<setRelation name="129">
+		<cardinality max="6" min="1"/>
+		<groupedFeature name="_r_19_20_22">
+		</groupedFeature>
+		<groupedFeature name="_r_19_20_23">
+		</groupedFeature>
+		<groupedFeature name="_r_19_20_24">
+		</groupedFeature>
+		<groupedFeature name="_r_19_20_25">
+		</groupedFeature>
+		<groupedFeature name="_r_19_20_26">
+		</groupedFeature>
+		<groupedFeature name="_r_19_20_27">
+		</groupedFeature>
+		</setRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+</feature>
+<requires feature="_r_19_20_25" name="constraint11" requires="_r_10_11_13"/>
+<excludes feature="_r_19_20_23" name="constraint_17" excludes="_r_19_20_27"/>
+<requires feature="_r_19_20_25" name="constraint10" requires="_r_3_4_6"/>
+<requires feature="_r_19_20_27" name="constraint13" requires="_r_3_4_5"/>
+<excludes feature="_r_19_20_25" name="constraint12" excludes="_r_19_20_26"/>
+<requires feature="_r_19_20_26" name="constraint9" requires="_r_10_11_13"/>
+<requires feature="_r_19_20_23" name="constraint6" requires="_r_3_4_6"/>
+<excludes feature="_r_19_20_22" name="constraint_13" excludes="_r_19_20_23"/>
+<requires feature="_r_19_20_22" name="constraint5" requires="_r_15"/>
+<requires feature="_r_19_20_26" name="constraint8" requires="_r_3_4_6"/>
+<excludes feature="_r_19_20_26" name="constraint_15" excludes="_r_19_20_27"/>
+<requires feature="_r_19_20_24" name="constraint7" requires="_r_15_16_18"/>
+<excludes feature="_r_19_20_25" name="constraint_16" excludes="_r_19_20_27"/>
+</feature-model>

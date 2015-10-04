@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature-model xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.tdg-seville.info/benavides/featuremodelling/feature-model.xsd">
+<feature name="Insurance_Policy">
+	<binaryRelation name="65">
+	<cardinality max="1" min="1"/>
+	<solitaryFeature name="LOB">
+		<setRelation name="66">
+		<cardinality max="4" min="1"/>
+		<groupedFeature name="Auto">
+				<setRelation name="67">
+				<cardinality max="2" min="1"/>
+				<groupedFeature name="Comprehensive">
+				</groupedFeature>
+				<groupedFeature name="TP">
+				</groupedFeature>
+				</setRelation>
+
+		</groupedFeature>
+		<groupedFeature name="Home">
+		</groupedFeature>
+		<groupedFeature name="commercial">
+		</groupedFeature>
+		<groupedFeature name="watercraft">
+		</groupedFeature>
+		</setRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="68">
+	<cardinality max="1" min="1"/>
+	<solitaryFeature name="Financials">
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="69">
+	<cardinality max="1" min="1"/>
+	<solitaryFeature name="Reporting">
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="70">
+	<cardinality max="1" min="0"/>
+	<solitaryFeature name="Third_Party_Services">
+		<binaryRelation name="71">
+		<cardinality max="1" min="0"/>
+		<solitaryFeature name="Add_Validation">
+		</solitaryFeature>
+
+		</binaryRelation>
+
+		<binaryRelation name="72">
+		<cardinality max="1" min="0"/>
+		<solitaryFeature name="VIN_Validation">
+		</solitaryFeature>
+
+		</binaryRelation>
+
+		<binaryRelation name="73">
+		<cardinality max="1" min="0"/>
+		<solitaryFeature name="Credit_Check">
+			<setRelation name="74">
+			<cardinality max="1" min="1"/>
+			<groupedFeature name="simple">
+			</groupedFeature>
+			<groupedFeature name="advanced">
+			</groupedFeature>
+			</setRelation>
+
+		</solitaryFeature>
+
+		</binaryRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="75">
+	<cardinality max="1" min="1"/>
+	<solitaryFeature name="Data_Capture">
+		<binaryRelation name="76">
+		<cardinality max="1" min="1"/>
+		<solitaryFeature name="client_data">
+		</solitaryFeature>
+
+		</binaryRelation>
+
+		<binaryRelation name="77">
+		<cardinality max="1" min="0"/>
+		<solitaryFeature name="car_details">
+		</solitaryFeature>
+
+		</binaryRelation>
+
+		<binaryRelation name="78">
+		<cardinality max="1" min="0"/>
+		<solitaryFeature name="house_details">
+		</solitaryFeature>
+
+		</binaryRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="79">
+	<cardinality max="1" min="1"/>
+	<solitaryFeature name="UW">
+		<binaryRelation name="80">
+		<cardinality max="1" min="1"/>
+		<solitaryFeature name="decision">
+		</solitaryFeature>
+
+		</binaryRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+</feature>
+</feature-model>

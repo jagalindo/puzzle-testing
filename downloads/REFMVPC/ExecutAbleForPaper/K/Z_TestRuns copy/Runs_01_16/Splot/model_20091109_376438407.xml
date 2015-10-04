@@ -1,0 +1,44 @@
+<!-- This model was created online using SPLOT's Feature Model Editor (http://www.splot-research.org) on Tue, Jun 1, 2010 - 3:11 AM  -->
+<feature_model name="Insurance Policy">
+<meta>
+<data name="description">Insurance Policy system</data>
+<data name="creator">Adeel</data>
+<data name="address"></data>
+<data name="email">adeeltalib@hotmail.com</data>
+<data name="phone"></data>
+<data name="website"></data>
+<data name="organization">Swinburne University of Technology</data>
+<data name="department"></data>
+<data name="date"></data>
+<data name="reference"></data>
+</meta>
+<feature_tree>
+:r Insurance_Policy(Insurance_Policy)
+	:m LOB(LOB)
+		:g (_r_1_11) [1,*] 
+			: Auto(Auto)
+				:g (_r_1_11_12_15) [1,*] 
+					: Comprehensive(Comprehensive)
+					: TP(TP)
+			: Home(Home)
+			: commercial(commercial)
+			: watercraft(watercraft)
+	:m Financials(Financials)
+	:m Reporting(Reporting)
+	:o Third_Party_Services(Third_Party_Services)
+		:o Add_Validation(Add_Validation)
+		:o VIN_Validation(VIN_Validation)
+		:o Credit_Check(Credit_Check)
+			:g (_r_4_7_8) [1,1] 
+				: simple(simple)
+				: advanced(advanced)
+	:m Data_Capture(Data_Capture)
+		:m client_data(client_data)
+		:o car_details(car_details)
+		:o house_details(house_details)
+	:m UW(UW)
+		:m decision(decision)
+</feature_tree>
+<constraints>
+</constraints>
+</feature_model>

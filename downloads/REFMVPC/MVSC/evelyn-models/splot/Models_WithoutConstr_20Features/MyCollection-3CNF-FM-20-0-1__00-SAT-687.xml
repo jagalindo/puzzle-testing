@@ -1,0 +1,62 @@
+<feature_model name="MyCollection-3CNF-FM-20-0-1,00-SAT-687">
+<meta>
+<data name="description">This is a 3-CNF Feature Model generated automatically</data>
+<data name="creator">SPLOT Feature Model Generator</data>
+<data name="email"></data>
+<data name="date">Sun May 08 10:54:25 CEST 2011</data>
+<data name="department">SPLOT Project</data>
+<data name="organization">University of Waterloo</data>
+<data name="address"></data>
+<data name="phone"></data>
+<data name="website">http://www.splot-research.org/</data>
+<data name="reference">http://www.splot-research.org/</data>
+</meta>
+<feature_tree>
+:r R(R)
+	:o o_1(o_1)
+		:o o_1_1(o_1_1)
+		:o o_1_2(o_1_2)
+	:m m_2(m_2)
+		:o o_2_1(o_2_1)
+		:g _Gi__2_2(_Gi__2_2) [1,*] 
+			: g_2_2_1(g_2_2_1)
+			: g_2_2_2(g_2_2_2)
+			: g_2_2_3(g_2_2_3)
+	:m m_3(m_3)
+		:o o_3_1(o_3_1)
+		:o o_3_2(o_3_2)
+	:m m_4(m_4)
+		:m m_4_1(m_4_1)
+		:m m_4_2(m_4_2)
+	:m m_5(m_5)
+		:o o_5_1(o_5_1)
+		:g _Ge__5_2(_Ge__5_2) [1,1] 
+			: g_5_2_1(g_5_2_1)
+			: g_5_2_2(g_5_2_2)
+	:o o_6(o_6)
+</feature_tree>
+<constraints>
+</constraints>
+</feature_model>
+<!--
+*************************************************************
+FEATURE TREE STATISTICS
+  Model name.: MyCollection-3CNF-FM-20-0-1,00-SAT-687
+  tree depth.: 3
+  #root......: 1
+  #opt.......: 8
+  #man.......: 6
+  #grouped...: 5
+  #grouped [1,1]: 2
+  #grouped [1,n]: 3
+  #fgrp [1,1]: 1 (exclusive-OR)
+  #fgrp [1,N]: 1 (inclusive-OR)
+  #total features: 20
+  #total nodes: 22
+*************************************************************
+CROSS-TREE CONSTRAINTS (Random 3-CNF Formula)
+  CTC Representativeness (CTCR): 0,0%
+  Number of 3-CNF clauses......: 0
+  CTC clause density specified.: 1,00
+*************************************************************
+-->

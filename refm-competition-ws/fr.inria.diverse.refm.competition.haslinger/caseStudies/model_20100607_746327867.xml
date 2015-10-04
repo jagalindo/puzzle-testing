@@ -1,0 +1,45 @@
+<!-- This model was created online using SPLOT's Feature Model Editor (http://www.splot-research.org) on Mon, Jun 7, 2010 - 6:45 PM  -->
+<feature_model name="Stacja Pogodowa">
+<meta>
+<data name="description">opis stacji pogodowej</data>
+<data name="creator">K.M</data>
+<data name="address"></data>
+<data name="email">myszthepunisher@gmail.com</data>
+<data name="phone"></data>
+<data name="website"></data>
+<data name="organization">student</data>
+<data name="department"></data>
+<data name="date"></data>
+<data name="reference"></data>
+</meta>
+<feature_tree>
+:r Stacja_pogodowa(Stacja_pogodowa)
+	:m Pomiary(Pomiary)
+		:g (_r_1_2) [1,*] 
+			: Temperatura(Temperatura)
+			: Wiatr(Wiatr)
+			: Cisnienie(Cisnienie)
+	:m Zrodla_danych(Zrodla_danych)
+		:g (_r_6_26) [1,1] 
+			: Internet(Internet)
+			: Sensory(Sensory)
+	:m Format_wyjsciowy(Format_wyjsciowy)
+		:m Jezyk(Jezyk)
+			:g (_r_10_11_12) [1,1] 
+				: Polski(Polski)
+				: Angielski(Angielski)
+		:g (_r_10_15) [1,1] 
+			: Plik(Plik)
+			: Tekst(Tekst)
+			: Serwer(Serwer)
+				:g (_r_10_15_22_23) [1,1] 
+					: HTML(HTML)
+					: XML(XML)
+	:o Alarm(Alarm)
+		:g (_r_18_19) [1,*] 
+			: Sztorm(Sztorm)
+			: Zamarzniecie(Zamarzniecie)
+</feature_tree>
+<constraints>
+</constraints>
+</feature_model>

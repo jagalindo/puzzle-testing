@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature-model xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.tdg-seville.info/benavides/featuremodelling/feature-model.xsd">
+<feature name="Model Transformation">
+	<binaryRelation name="624">
+	<cardinality max="1" min="1"/>
+	<solitaryFeature name="Transformation_rules">
+		<binaryRelation name="625">
+		<cardinality max="1" min="1"/>
+		<solitaryFeature name="LHS/RHS">
+			<binaryRelation name="626">
+			<cardinality max="1" min="0"/>
+			<solitaryFeature name="Variables">
+				<setRelation name="627">
+				<cardinality max="1" min="1"/>
+				<groupedFeature name="Untyped">
+				</groupedFeature>
+				<groupedFeature name="Syntactically_typed">
+				</groupedFeature>
+				<groupedFeature name="Semantically_typed">
+				</groupedFeature>
+				</setRelation>
+
+			</solitaryFeature>
+
+			</binaryRelation>
+
+			<setRelation name="628">
+			<cardinality max="2" min="1"/>
+			<groupedFeature name="Patterns">
+					<binaryRelation name="629">
+					<cardinality max="1" min="1"/>
+					<solitaryFeature name="Form">
+						<setRelation name="630">
+						<cardinality max="1" min="1"/>
+						<groupedFeature name="Strings">
+						</groupedFeature>
+						<groupedFeature name="Terms">
+						</groupedFeature>
+						<groupedFeature name="Graphs">
+						</groupedFeature>
+						</setRelation>
+
+					</solitaryFeature>
+
+					</binaryRelation>
+
+					<binaryRelation name="631">
+					<cardinality max="1" min="1"/>
+					<solitaryFeature name="Syntax">
+						<setRelation name="632">
+						<cardinality max="2" min="1"/>
+						<groupedFeature name="Abstract">
+						</groupedFeature>
+						<groupedFeature name="Concrete">
+								<setRelation name="633">
+								<cardinality max="2" min="1"/>
+								<groupedFeature name="Textual">
+								</groupedFeature>
+								<groupedFeature name="Graphical">
+								</groupedFeature>
+								</setRelation>
+
+						</groupedFeature>
+						</setRelation>
+
+					</solitaryFeature>
+
+					</binaryRelation>
+
+					<binaryRelation name="634">
+					<cardinality max="1" min="1"/>
+					<solitaryFeature name="Typing">
+						<setRelation name="635">
+						<cardinality max="1" min="1"/>
+						<groupedFeature name="typ_untyped">
+						</groupedFeature>
+						<groupedFeature name="typ_syntactically_typed">
+						</groupedFeature>
+						<groupedFeature name="typ_semantically_typed">
+						</groupedFeature>
+						</setRelation>
+
+					</solitaryFeature>
+
+					</binaryRelation>
+
+			</groupedFeature>
+			<groupedFeature name="Logic">
+					<setRelation name="636">
+					<cardinality max="2" min="1"/>
+					<groupedFeature name="Non-executable">
+					</groupedFeature>
+					<groupedFeature name="Executable">
+							<setRelation name="637">
+							<cardinality max="2" min="1"/>
+							<groupedFeature name="Imperative">
+							</groupedFeature>
+							<groupedFeature name="Declarative">
+							</groupedFeature>
+							</setRelation>
+
+					</groupedFeature>
+					</setRelation>
+
+			</groupedFeature>
+			</setRelation>
+
+		</solitaryFeature>
+
+		</binaryRelation>
+
+		<binaryRelation name="638">
+		<cardinality max="1" min="0"/>
+		<solitaryFeature name="LHS/RHS_Syntactic_Separation">
+		</solitaryFeature>
+
+		</binaryRelation>
+
+		<binaryRelation name="639">
+		<cardinality max="1" min="0"/>
+		<solitaryFeature name="Bidirectionality">
+		</solitaryFeature>
+
+		</binaryRelation>
+
+		<binaryRelation name="640">
+		<cardinality max="1" min="0"/>
+		<solitaryFeature name="Parameterization">
+		</solitaryFeature>
+
+		</binaryRelation>
+
+		<binaryRelation name="641">
+		<cardinality max="1" min="0"/>
+		<solitaryFeature name="Intermediate_structures">
+		</solitaryFeature>
+
+		</binaryRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="642">
+	<cardinality max="1" min="0"/>
+	<solitaryFeature name="Rule_application_scoping">
+		<setRelation name="643">
+		<cardinality max="2" min="1"/>
+		<groupedFeature name="scoping_source">
+		</groupedFeature>
+		<groupedFeature name="target_source">
+		</groupedFeature>
+		</setRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="644">
+	<cardinality max="1" min="1"/>
+	<solitaryFeature name="Source-Target_relationship">
+		<setRelation name="645">
+		<cardinality max="2" min="1"/>
+		<groupedFeature name="New_target">
+		</groupedFeature>
+		<groupedFeature name="Existing_target">
+				<binaryRelation name="646">
+				<cardinality max="1" min="0"/>
+				<solitaryFeature name="In-place">
+				</solitaryFeature>
+
+				</binaryRelation>
+
+				<binaryRelation name="647">
+				<cardinality max="1" min="1"/>
+				<solitaryFeature name="Update">
+					<setRelation name="648">
+					<cardinality max="1" min="1"/>
+					<groupedFeature name="Destructive">
+					</groupedFeature>
+					<groupedFeature name="Extension_only">
+					</groupedFeature>
+					</setRelation>
+
+				</solitaryFeature>
+
+				</binaryRelation>
+
+		</groupedFeature>
+		</setRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="649">
+	<cardinality max="1" min="1"/>
+	<solitaryFeature name="Rule_application_strategy">
+		<setRelation name="650">
+		<cardinality max="3" min="1"/>
+		<groupedFeature name="Deterministic">
+		</groupedFeature>
+		<groupedFeature name="Non-deterministic">
+				<setRelation name="651">
+				<cardinality max="2" min="1"/>
+				<groupedFeature name="Concurrent">
+				</groupedFeature>
+				<groupedFeature name="One-point">
+				</groupedFeature>
+				</setRelation>
+
+		</groupedFeature>
+		<groupedFeature name="Interactive">
+		</groupedFeature>
+		</setRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="652">
+	<cardinality max="1" min="1"/>
+	<solitaryFeature name="Rule_scheduling">
+		<binaryRelation name="653">
+		<cardinality max="1" min="1"/>
+		<solitaryFeature name="_Form">
+			<setRelation name="654">
+			<cardinality max="2" min="1"/>
+			<groupedFeature name="Implicit">
+			</groupedFeature>
+			<groupedFeature name="Explicit">
+					<setRelation name="655">
+					<cardinality max="1" min="1"/>
+					<groupedFeature name="Internal">
+					</groupedFeature>
+					<groupedFeature name="External">
+					</groupedFeature>
+					</setRelation>
+
+			</groupedFeature>
+			</setRelation>
+
+		</solitaryFeature>
+
+		</binaryRelation>
+
+		<binaryRelation name="656">
+		<cardinality max="1" min="1"/>
+		<solitaryFeature name="Rule_selection">
+			<setRelation name="657">
+			<cardinality max="4" min="1"/>
+			<groupedFeature name="Explicit_condition">
+			</groupedFeature>
+			<groupedFeature name="Non-determinism">
+			</groupedFeature>
+			<groupedFeature name="Conflict_resolution">
+			</groupedFeature>
+			<groupedFeature name="_Interactive">
+			</groupedFeature>
+			</setRelation>
+
+		</solitaryFeature>
+
+		</binaryRelation>
+
+		<binaryRelation name="658">
+		<cardinality max="1" min="0"/>
+		<solitaryFeature name="Rule_Iteration">
+			<setRelation name="659">
+			<cardinality max="1" min="1"/>
+			<groupedFeature name="Recursion">
+			</groupedFeature>
+			<groupedFeature name="Looping">
+			</groupedFeature>
+			<groupedFeature name="Fixpoint_Iteration">
+			</groupedFeature>
+			</setRelation>
+
+		</solitaryFeature>
+
+		</binaryRelation>
+
+		<binaryRelation name="660">
+		<cardinality max="1" min="0"/>
+		<solitaryFeature name="Phasing">
+		</solitaryFeature>
+
+		</binaryRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="661">
+	<cardinality max="1" min="1"/>
+	<solitaryFeature name="Rule_organization">
+		<binaryRelation name="662">
+		<cardinality max="1" min="0"/>
+		<solitaryFeature name="Modulatiry_mechanisms">
+		</solitaryFeature>
+
+		</binaryRelation>
+
+		<binaryRelation name="663">
+		<cardinality max="1" min="0"/>
+		<solitaryFeature name="Reuse_mechanisms">
+			<setRelation name="664">
+			<cardinality max="2" min="1"/>
+			<groupedFeature name="Inheritance">
+			</groupedFeature>
+			<groupedFeature name="Logical_composition">
+			</groupedFeature>
+			</setRelation>
+
+		</solitaryFeature>
+
+		</binaryRelation>
+
+		<binaryRelation name="665">
+		<cardinality max="1" min="1"/>
+		<solitaryFeature name="Organizational_Structure">
+			<setRelation name="666">
+			<cardinality max="1" min="1"/>
+			<groupedFeature name="Source-oriented">
+			</groupedFeature>
+			<groupedFeature name="Target-oriented">
+			</groupedFeature>
+			<groupedFeature name="Independent">
+			</groupedFeature>
+			</setRelation>
+
+		</solitaryFeature>
+
+		</binaryRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="667">
+	<cardinality max="1" min="1"/>
+	<solitaryFeature name="Tracing">
+		<binaryRelation name="668">
+		<cardinality max="1" min="0"/>
+		<solitaryFeature name="Dedicated_support">
+			<binaryRelation name="669">
+			<cardinality max="1" min="1"/>
+			<solitaryFeature name="Storage_location">
+				<setRelation name="670">
+				<cardinality max="1" min="1"/>
+				<groupedFeature name="Model">
+						<setRelation name="671">
+						<cardinality max="2" min="1"/>
+						<groupedFeature name="model_source">
+						</groupedFeature>
+						<groupedFeature name="model_target">
+						</groupedFeature>
+						</setRelation>
+
+				</groupedFeature>
+				<groupedFeature name="Separate">
+				</groupedFeature>
+				</setRelation>
+
+			</solitaryFeature>
+
+			</binaryRelation>
+
+			<binaryRelation name="672">
+			<cardinality max="1" min="1"/>
+			<solitaryFeature name="Control">
+				<setRelation name="673">
+				<cardinality max="1" min="1"/>
+				<groupedFeature name="Manual">
+				</groupedFeature>
+				<groupedFeature name="Automatic">
+						<setRelation name="674">
+						<cardinality max="1" min="1"/>
+						<groupedFeature name="All_rules">
+						</groupedFeature>
+						<groupedFeature name="Selected_rules">
+						</groupedFeature>
+						</setRelation>
+
+				</groupedFeature>
+				</setRelation>
+
+			</solitaryFeature>
+
+			</binaryRelation>
+
+		</solitaryFeature>
+
+		</binaryRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="675">
+	<cardinality max="1" min="1"/>
+	<solitaryFeature name="Directionality">
+		<setRelation name="676">
+		<cardinality max="2" min="1"/>
+		<groupedFeature name="Unidirectional">
+		</groupedFeature>
+		<groupedFeature name="Bidirectional">
+				<setRelation name="677">
+				<cardinality max="1" min="1"/>
+				<groupedFeature name="Bidirectional_rules">
+				</groupedFeature>
+				<groupedFeature name="Complementary_pairs">
+				</groupedFeature>
+				</setRelation>
+
+		</groupedFeature>
+		</setRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+</feature>
+</feature-model>

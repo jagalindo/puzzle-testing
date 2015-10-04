@@ -1,0 +1,29 @@
+<!-- This model was created online using SPLOT's Feature Model Editor (http://www.splot-research.org) on Mon, Apr 12, 2010 - 1:15 PM  -->
+<feature_model name="CIMS PL">
+<meta>
+<data name="description">CIMS Product Line</data>
+<data name="creator">Venkat</data>
+<data name="address"></data>
+<data name="email">prvenkatr@yahoo.com</data>
+<data name="phone"></data>
+<data name="website"></data>
+<data name="organization">NCS</data>
+<data name="department"></data>
+<data name="date"></data>
+<data name="reference"></data>
+</meta>
+<feature_tree>
+:r CIMS_Product_Line(CIMS_Product_Line)
+	:m Client(Client)
+		:m Client_Assesment(Client_Assesment)
+		:m Client_Transport(Client_Transport)
+		:m Client_Payment(Client_Payment)
+		:m Client_Training(Client_Training)
+	:m Inventory(Inventory)
+	:m UserProfile(UserProfile)
+	:m Reports(Reports)
+	:m Database(Database)
+</feature_tree>
+<constraints>
+</constraints>
+</feature_model>

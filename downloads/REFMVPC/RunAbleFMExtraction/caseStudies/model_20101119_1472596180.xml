@@ -1,0 +1,50 @@
+<!-- This model was created online using SPLOT's Feature Model Editor (http://www.splot-research.org) on Fri, Nov 19, 2010 - 4:06 PM  -->
+<feature_model name="Mobile Phone">
+<meta>
+<data name="description">Nothing</data>
+<data name="creator">AE</data>
+<data name="address"></data>
+<data name="email">alireza_ensan@yahoo.com</data>
+<data name="phone"></data>
+<data name="website"></data>
+<data name="organization">UNB</data>
+<data name="department"></data>
+<data name="date"></data>
+<data name="reference"></data>
+</meta>
+<feature_tree>
+:r _r(_r)
+	:m _r_1(_r_1)
+		:m _r_1_2(_r_1_2)
+			:g (_r_1_2_7) [1,*] 
+				: _r_1_2_7_8(_r_1_2_7_8)
+				: _r_1_2_7_9(_r_1_2_7_9)
+		:m _r_1_3(_r_1_3)
+			:g (_r_1_3_10) [1,*] 
+				: _r_1_3_10_11(_r_1_3_10_11)
+				: _r_1_3_10_12(_r_1_3_10_12)
+				: _r_1_3_10_13(_r_1_3_10_13)
+		:o _r_1_4(_r_1_4)
+		:m _r_1_5(_r_1_5)
+		:m _r_1_6(_r_1_6)
+	:m _r_14(_r_14)
+		:o _r_14_15(_r_14_15)
+		:m _r_14_16(_r_14_16)
+			:g (_r_14_16_17) [1,1] 
+				: _r_14_16_17_18(_r_14_16_17_18)
+				: _r_14_16_17_19(_r_14_16_17_19)
+	:o _r_20(_r_20)
+		:o _r_20_21(_r_20_21)
+		:o _r_20_22(_r_20_22)
+		:o _r_20_23(_r_20_23)
+	:o _r_24(_r_24)
+		:g (_r_24_25) [1,*] 
+			: _r_24_25_26(_r_24_25_26)
+			: _r_24_25_27(_r_24_25_27)
+			: _r_24_25_28(_r_24_25_28)
+</feature_tree>
+<constraints>
+constraint_4:~_r_1_4 or _r_14_15
+constraint_5:~_r_20_22 or ~_r_20_23
+</constraints>
+</feature_model>

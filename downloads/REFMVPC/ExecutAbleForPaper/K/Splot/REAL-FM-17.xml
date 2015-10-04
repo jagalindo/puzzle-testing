@@ -1,0 +1,53 @@
+<feature_model name="Insurance_Product">
+<meta>
+<data name="description">Feature model of an simple insurance product</data>
+<data name="creator">Bedir Tekinerdogan</data>
+<data name="email"></data>
+<data name="date"></data>
+<data name="department"></data>
+<data name="organization"></data>
+<data name="address"></data>
+<data name="phone"></data>
+<data name="website"></data>
+<data name="reference">Bedir Tekinerdogan and Mehmet Aksit. Managing variability in product line scoping using design space models. Proceedings of Software Variability Management Workshop, Gronin-gen, IWI 2003-7-01, The Netherlands, pages 5–12, 2003.</data>
+</meta>
+<feature_tree>
+:r insurance_product1
+	:m insured_object2
+		:g [1,1]
+			: corporation (corporation)
+			: realty4
+			: movable_property (movable_property)
+			: person (person)
+	:m coverage7
+		:g [1,*]
+			: illness (illness)
+			: life9
+			: unemployment10
+			: damage (damage)
+			: loss (loss)
+	:m payment13
+		:g [1,1]
+			: service14
+			: ammount15
+		:o own_risk16
+	:m conditions17
+		:m acceptance18
+		:m exception19
+	:m premium20
+		:g [1,1]
+			: direct21
+			: periodical22
+	:m payee23
+		:g [1,*]
+			: person224
+			: payee_corporation (payee_corporation)
+</feature_tree>
+<constraints>
+c1: ~corporation or ~illness
+c2: ~person or ~damage
+c3: ~loss or movable_property
+c4: ~corporation or payee_corporation
+</constraints>
+</feature_model>
+

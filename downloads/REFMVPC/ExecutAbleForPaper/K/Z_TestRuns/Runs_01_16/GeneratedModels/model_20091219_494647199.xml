@@ -1,0 +1,18 @@
+<feature_model name="Elementos">
+<feature_tree>
+:r Elementos (Elementos)
+	:m Menu (Menu)
+	:m Box (Box)
+	:m Texto (Texto)
+	:m E_Portal (E_Portal)
+	:m Site (Site)
+	:o Foto (Foto)
+	:o Destaque_Duplo (Destaque_Duplo)
+	:o Destaque_Wide (Destaque_Wide)
+		:g [1, *]
+			: Com_Foto (Com_Foto)
+			: Sem_Foto (Sem_Foto)
+</feature_tree>
+<constraints>
+</constraints>
+</feature_model>

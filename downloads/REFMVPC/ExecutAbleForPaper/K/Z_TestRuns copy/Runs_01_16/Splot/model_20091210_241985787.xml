@@ -1,0 +1,36 @@
+<!-- This model was created online using SPLOT's Feature Model Editor (http://www.splot-research.org) on Fri, Jan 8, 2010 - 12:20 PM  -->
+<feature_model name="Mobile Games">
+<meta>
+<data name="description">Mobile Games Development</data>
+<data name="creator">Edi</data>
+<data name="address"></data>
+<data name="email">edi198@yahoo.com</data>
+<data name="phone"></data>
+<data name="website"></data>
+<data name="organization">UKL</data>
+<data name="department"></data>
+<data name="date"></data>
+<data name="reference"></data>
+</meta>
+<feature_tree>
+:r Mobile_Games(Mobile_Games)
+	:m Input(Input)
+		:g (_r_3_29) [1,*] 
+			: Touch_Screen(Touch_Screen)
+			: Keypad(Keypad)
+			: Speech(Speech)
+			: Movement_detection(Movement_detection)
+	:o Output(Output)
+		:o Force_Feedback(Force_Feedback)
+	:o Network_Support(Network_Support)
+		:o Online_Multiplayer(Online_Multiplayer)
+	:o Internationalization(Internationalization)
+		:o International_languanges_support(International_languanges_support)
+	:o Platform_Independence(Platform_Independence)
+		:o Platform_independence_support(Platform_independence_support)
+	:o Pay_and_bill_support(Pay_and_bill_support)
+		:o Pay_and_bill_system(Pay_and_bill_system)
+</feature_tree>
+<constraints>
+</constraints>
+</feature_model>

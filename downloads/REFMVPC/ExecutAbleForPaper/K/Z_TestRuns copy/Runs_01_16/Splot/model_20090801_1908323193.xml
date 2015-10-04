@@ -1,0 +1,33 @@
+<!-- This model was created online using SPLOT's Feature Model Editor (http://www.splot-research.org) on Mon, May 2, 2011 - 11:29 AM  -->
+<feature_model name="CFDP Library">
+<meta>
+<data name="description">Feature Model of the CFDP library</data>
+<data name="creator">Arnaud Hubaux et. al</data>
+<data name="address">5000 Namur, Belgium</data>
+<data name="email">ahu@info.fundp.ac.be</data>
+<data name="phone"></data>
+<data name="website"></data>
+<data name="organization">PReCISE Research Centre, Faculty of Computer Science, University of Namur</data>
+<data name="department"></data>
+<data name="date">Aug 2009</data>
+<data name="reference">Arnaud Hubaux, Andreas Classen and Patrick Heymans, Formal Modelling of Feature Configuration Workflows, SPLC 2009, San Francisco, USA.</data>
+</meta>
+<feature_tree>
+:r CFDP_Library(CFDP_Library)
+	:g (_r_1) [1,*] 
+		: Send(Send)
+			:o Send_Acknowledged_Mode(Send_Acknowledged_Mode)
+			:o Send_File_System_Operations(Send_File_System_Operations)
+		: Receive(Receive)
+			:o Receive_Acknowledged_Mode(Receive_Acknowledged_Mode)
+			:o Receive_File_System_Operations(Receive_File_System_Operations)
+		: PUS_(PUS_)
+			:o PUS_Rename(PUS_Rename)
+			:o PUS_Copy(PUS_Copy)
+		: Reboot_(Reboot_)
+			:o Reboot_Entity(Reboot_Entity)
+			:o Reboot_PUS(Reboot_PUS)
+</feature_tree>
+<constraints>
+</constraints>
+</feature_model>

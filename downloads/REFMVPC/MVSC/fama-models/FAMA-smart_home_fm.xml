@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature-model xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.tdg-seville.info/benavides/featuremodelling/feature-model.xsd">
+<feature name="Smart Home">
+	<binaryRelation name="1200">
+	<cardinality max="1" min="1"/>
+	<solitaryFeature name="Environment_Control">
+		<binaryRelation name="1201">
+		<cardinality max="1" min="1"/>
+		<solitaryFeature name="Measurement_Units">
+			<binaryRelation name="1202">
+			<cardinality max="1" min="0"/>
+			<solitaryFeature name="Celsius">
+			</solitaryFeature>
+
+			</binaryRelation>
+
+			<binaryRelation name="1203">
+			<cardinality max="1" min="0"/>
+			<solitaryFeature name="Fahrenheit">
+			</solitaryFeature>
+
+			</binaryRelation>
+
+		</solitaryFeature>
+
+		</binaryRelation>
+
+		<binaryRelation name="1204">
+		<cardinality max="1" min="1"/>
+		<solitaryFeature name="Temperature_Management">
+			<binaryRelation name="1205">
+			<cardinality max="1" min="1"/>
+			<solitaryFeature name="Heating_Management">
+			</solitaryFeature>
+
+			</binaryRelation>
+
+			<binaryRelation name="1206">
+			<cardinality max="1" min="0"/>
+			<solitaryFeature name="Smart_Heating_Management">
+			</solitaryFeature>
+
+			</binaryRelation>
+
+		</solitaryFeature>
+
+		</binaryRelation>
+
+		<binaryRelation name="1207">
+		<cardinality max="1" min="1"/>
+		<solitaryFeature name="Windows_Management">
+			<binaryRelation name="1208">
+			<cardinality max="1" min="1"/>
+			<solitaryFeature name="Manual_Windows">
+			</solitaryFeature>
+
+			</binaryRelation>
+
+			<binaryRelation name="1209">
+			<cardinality max="1" min="0"/>
+			<solitaryFeature name="Automatic_Windows">
+			</solitaryFeature>
+
+			</binaryRelation>
+
+		</solitaryFeature>
+
+		</binaryRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="1210">
+	<cardinality max="1" min="1"/>
+	<solitaryFeature name="Light_Management">
+		<binaryRelation name="1211">
+		<cardinality max="1" min="0"/>
+		<solitaryFeature name="Smart_Light_Management">
+		</solitaryFeature>
+
+		</binaryRelation>
+
+		<binaryRelation name="1212">
+		<cardinality max="1" min="0"/>
+		<solitaryFeature name="Pre-defined_Values">
+		</solitaryFeature>
+
+		</binaryRelation>
+
+		<binaryRelation name="1213">
+		<cardinality max="1" min="1"/>
+		<solitaryFeature name="Simple_Control">
+		</solitaryFeature>
+
+		</binaryRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="1214">
+	<cardinality max="1" min="1"/>
+	<solitaryFeature name="GUI">
+		<binaryRelation name="1215">
+		<cardinality max="1" min="0"/>
+		<solitaryFeature name="Touch_Screen">
+		</solitaryFeature>
+
+		</binaryRelation>
+
+		<binaryRelation name="1216">
+		<cardinality max="1" min="0"/>
+		<solitaryFeature name="Mobile">
+		</solitaryFeature>
+
+		</binaryRelation>
+
+		<binaryRelation name="1217">
+		<cardinality max="1" min="0"/>
+		<solitaryFeature name="Internet">
+		</solitaryFeature>
+
+		</binaryRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="1218">
+	<cardinality max="1" min="1"/>
+	<solitaryFeature name="Presence_Simulator">
+		<binaryRelation name="1219">
+		<cardinality max="1" min="0"/>
+		<solitaryFeature name="Light_Simulation">
+		</solitaryFeature>
+
+		</binaryRelation>
+
+		<binaryRelation name="1220">
+		<cardinality max="1" min="0"/>
+		<solitaryFeature name="Blind_Simulation">
+		</solitaryFeature>
+
+		</binaryRelation>
+
+		<binaryRelation name="1221">
+		<cardinality max="1" min="0"/>
+		<solitaryFeature name="Music_Simulation">
+		</solitaryFeature>
+
+		</binaryRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="1222">
+	<cardinality max="1" min="1"/>
+	<solitaryFeature name="Fire_Control">
+		<binaryRelation name="1223">
+		<cardinality max="1" min="1"/>
+		<solitaryFeature name="First_Aid_Group">
+			<binaryRelation name="1224">
+			<cardinality max="1" min="0"/>
+			<solitaryFeature name="Fire_Department">
+			</solitaryFeature>
+
+			</binaryRelation>
+
+			<binaryRelation name="1225">
+			<cardinality max="1" min="0"/>
+			<solitaryFeature name="Other_Group">
+			</solitaryFeature>
+
+			</binaryRelation>
+
+		</solitaryFeature>
+
+		</binaryRelation>
+
+		<binaryRelation name="1226">
+		<cardinality max="1" min="1"/>
+		<solitaryFeature name="Fire_Alarm">
+			<binaryRelation name="1227">
+			<cardinality max="1" min="0"/>
+			<solitaryFeature name="Siren">
+			</solitaryFeature>
+
+			</binaryRelation>
+
+			<binaryRelation name="1228">
+			<cardinality max="1" min="0"/>
+			<solitaryFeature name="Bell">
+			</solitaryFeature>
+
+			</binaryRelation>
+
+			<binaryRelation name="1229">
+			<cardinality max="1" min="0"/>
+			<solitaryFeature name="Light">
+			</solitaryFeature>
+
+			</binaryRelation>
+
+		</solitaryFeature>
+
+		</binaryRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="1230">
+	<cardinality max="1" min="1"/>
+	<solitaryFeature name="Door_Lock">
+		<binaryRelation name="1231">
+		<cardinality max="1" min="0"/>
+		<solitaryFeature name="Keypad_Reader">
+		</solitaryFeature>
+
+		</binaryRelation>
+
+		<binaryRelation name="1232">
+		<cardinality max="1" min="0"/>
+		<solitaryFeature name="Card_Reader">
+		</solitaryFeature>
+
+		</binaryRelation>
+
+		<binaryRelation name="1233">
+		<cardinality max="1" min="0"/>
+		<solitaryFeature name="Fingerprint_Reader">
+		</solitaryFeature>
+
+		</binaryRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+</feature>
+</feature-model>

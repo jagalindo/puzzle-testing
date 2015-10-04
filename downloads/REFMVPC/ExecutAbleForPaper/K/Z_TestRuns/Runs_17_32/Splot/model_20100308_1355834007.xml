@@ -1,0 +1,42 @@
+<!-- This model was created online using SPLOT's Feature Model Editor (http://www.splot-research.org) on Thu, Apr 29, 2010 - 9:22 AM  -->
+<feature_model name="Context Feature Model">
+<meta>
+<data name="description">Context Feature Model</data>
+<data name="creator">Zakwan</data>
+<data name="address"></data>
+<data name="email">z.jaroucheh@napier.ac.uk</data>
+<data name="phone"></data>
+<data name="website"></data>
+<data name="organization">Edinburgh Napier University</data>
+<data name="department"></data>
+<data name="date"></data>
+<data name="reference"></data>
+</meta>
+<feature_tree>
+:r Conference_Context(Conference_Context)
+	:o Person(Person)
+		:g (_r_1_4) [1,*] 
+			: Location(Location)
+				:g (_r_1_4_5_9) [1,1] 
+					: RoomResolution(RoomResolution)
+					: BuildingResolution(BuildingResolution)
+			: EventsPreference(EventsPreference)
+			: Publications(Publications)
+				:g (_r_1_4_7_15) [1,*] 
+					: ConferencePapers(ConferencePapers)
+					: JournalPapers(JournalPapers)
+					: BookChapters(BookChapters)
+			: ContactDetails(ContactDetails)
+	:o Conference(Conference)
+		:o Venue(Venue)
+		:o ParticipatingPeople(ParticipatingPeople)
+			:g (_r_2_15_23) [1,*] 
+				: PhDStudent(PhDStudent)
+				: Experts(Experts)
+					:g (_r_2_15_23_28_29) [1,1] 
+						: HavingAwards(HavingAwards)
+						: HavingJournalPublications(HavingJournalPublications)
+</feature_tree>
+<constraints>
+</constraints>
+</feature_model>

@@ -1,0 +1,12 @@
+package fr.inria.diverse.refm.competition.haslinger;
+
+public class BenchmarkingHaslingerREFM {
+
+	// ---------------------------------------------------
+	// Attributes
+	// ---------------------------------------------------
+	
+	private HaslingerREFM synthesizer;
+	private int initialInstance;
+	private int finalInstance;
+}

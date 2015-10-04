@@ -1,0 +1,46 @@
+<!-- This model was created online using SPLOT's Feature Model Editor (http://www.splot-research.org) on Sat, Nov 20, 2010 - 8:47 AM  -->
+<feature_model name="Monitor Engine">
+<meta>
+<data name="description">Its a feature model of Monitor Engine, represents common and variable features </data>
+<data name="creator">Sarwat</data>
+<data name="address"></data>
+<data name="email">hereissarwat@hotmail.com</data>
+<data name="phone"></data>
+<data name="website"></data>
+<data name="organization">KIET</data>
+<data name="department"></data>
+<data name="date"></data>
+<data name="reference"></data>
+</meta>
+<feature_tree>
+:r _r(_r)
+	:m _r_2(_r_2)
+		:m _r_2_6(_r_2_6)
+			:o _r_2_6_9(_r_2_6_9)
+			:m _r_2_6_10(_r_2_6_10)
+			:m _r_2_6_11(_r_2_6_11)
+			:m _r_2_6_12(_r_2_6_12)
+		:m _r_2_7(_r_2_7)
+		:m _r_2_8(_r_2_8)
+	:m _r_3(_r_3)
+		:m _r_3_4(_r_3_4)
+			:g (_r_3_4_13) [1,1] 
+				: _r_3_4_13_14(_r_3_4_13_14)
+			:g (_r_3_4_15) [1,1] 
+				: _r_3_4_15_16(_r_3_4_15_16)
+		:m _r_3_5(_r_3_5)
+			:g (_r_3_5_17) [1,1] 
+				: _r_3_5_17_18(_r_3_5_17_18)
+			:g (_r_3_5_19) [1,1] 
+				: _r_3_5_19_20(_r_3_5_19_20)
+			:g (_r_3_5_21) [1,1] 
+				: _r_3_5_21_22(_r_3_5_21_22)
+		:o _r_3_24(_r_3_24)
+			:g (_r_3_24_25) [1,*] 
+				: _r_3_24_25_26(_r_3_24_25_26)
+			:g (_r_3_24_28) [1,*] 
+				: _r_3_24_28_29(_r_3_24_28_29)
+</feature_tree>
+<constraints>
+</constraints>
+</feature_model>

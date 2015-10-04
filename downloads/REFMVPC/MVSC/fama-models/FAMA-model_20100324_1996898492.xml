@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature-model xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.tdg-seville.info/benavides/featuremodelling/feature-model.xsd">
+<feature name="VODPlayer">
+	<binaryRelation name="386">
+	<cardinality max="1" min="1"/>
+	<solitaryFeature name="_r_1">
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="387">
+	<cardinality max="1" min="1"/>
+	<solitaryFeature name="_r_2">
+		<binaryRelation name="388">
+		<cardinality max="1" min="0"/>
+		<solitaryFeature name="_r_2_9">
+		</solitaryFeature>
+
+		</binaryRelation>
+
+		<binaryRelation name="389">
+		<cardinality max="1" min="0"/>
+		<solitaryFeature name="_r_2_10">
+		</solitaryFeature>
+
+		</binaryRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="390">
+	<cardinality max="1" min="1"/>
+	<solitaryFeature name="_r_3">
+		<binaryRelation name="391">
+		<cardinality max="1" min="0"/>
+		<solitaryFeature name="_r_3_8">
+		</solitaryFeature>
+
+		</binaryRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="392">
+	<cardinality max="1" min="1"/>
+	<solitaryFeature name="_r_4">
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="393">
+	<cardinality max="1" min="1"/>
+	<solitaryFeature name="_r_5">
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="394">
+	<cardinality max="1" min="0"/>
+	<solitaryFeature name="_r_6">
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="395">
+	<cardinality max="1" min="0"/>
+	<solitaryFeature name="_r_7">
+	</solitaryFeature>
+
+	</binaryRelation>
+
+</feature>
+<requires feature="_r_3" name="constraint_1" requires="_r_7"/>
+<!-- constraint_2: _r_2 or (~_r_2_9) or (~_r_2_10) -->
+<requires feature="_r_3" name="constraint_3" requires="_r_3_8"/>
+</feature-model>

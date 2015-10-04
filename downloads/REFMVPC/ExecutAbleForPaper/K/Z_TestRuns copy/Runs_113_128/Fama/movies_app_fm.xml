@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature-model xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.tdg-seville.info/benavides/featuremodelling/feature-model.xsd">
+<feature name="MoviesApp">
+	<binaryRelation name="101">
+	<cardinality max="1" min="1"/>
+	<solitaryFeature name="GUI">
+		<setRelation name="102">
+		<cardinality max="1" min="1"/>
+		<groupedFeature name="Thin">
+		</groupedFeature>
+		<groupedFeature name="Rich">
+		</groupedFeature>
+		</setRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="103">
+	<cardinality max="1" min="1"/>
+	<solitaryFeature name="DB">
+		<setRelation name="104">
+		<cardinality max="1" min="1"/>
+		<groupedFeature name="Local">
+		</groupedFeature>
+		<groupedFeature name="Remote">
+				<binaryRelation name="105">
+				<cardinality max="1" min="1"/>
+				<solitaryFeature name="CachePolicy">
+				</solitaryFeature>
+
+				</binaryRelation>
+
+		</groupedFeature>
+		</setRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="106">
+	<cardinality max="1" min="1"/>
+	<solitaryFeature name="Network">
+		<setRelation name="107">
+		<cardinality max="1" min="1"/>
+		<groupedFeature name="Wifi">
+		</groupedFeature>
+		<groupedFeature name="Bluetooth">
+		</groupedFeature>
+		</setRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="108">
+	<cardinality max="1" min="0"/>
+	<solitaryFeature name="GPS">
+		<binaryRelation name="109">
+		<cardinality max="1" min="0"/>
+		<solitaryFeature name="BuiltIn">
+		</solitaryFeature>
+
+		</binaryRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+</feature>
+</feature-model>

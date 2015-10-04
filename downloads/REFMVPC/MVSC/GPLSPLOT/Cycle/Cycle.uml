@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Package xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_4_8b_zf7Ed-J0Y-wuCzxdQ" name="Cycle" visibility="public">
+  <packageImport xmi:id="_4_8cADf7Ed-J0Y-wuCzxdQ">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Class" xmi:id="_4_8cATf7Ed-J0Y-wuCzxdQ" name="Graph" visibility="public" isAbstract="false">
+    <ownedBehavior xmi:type="uml:StateMachine" xmi:id="_4_8cAjf7Ed-J0Y-wuCzxdQ" name="StateMachine" visibility="public" isAbstract="false">
+      <region xmi:id="_4_8cAzf7Ed-J0Y-wuCzxdQ" name="Region1">
+        <subvertex xmi:type="uml:Pseudostate" xmi:id="_4_8cBDf7Ed-J0Y-wuCzxdQ"/>
+        <subvertex xmi:type="uml:State" xmi:id="_4_8cBTf7Ed-J0Y-wuCzxdQ" name="running"/>
+        <subvertex xmi:type="uml:State" xmi:id="_4_8cBjf7Ed-J0Y-wuCzxdQ" name="cycleChecking"/>
+        <subvertex xmi:type="uml:FinalState" xmi:id="_4_8cBzf7Ed-J0Y-wuCzxdQ"/>
+        <transition xmi:id="_4_8cCDf7Ed-J0Y-wuCzxdQ" name="run" target="_4_8cBTf7Ed-J0Y-wuCzxdQ" source="_4_8cBDf7Ed-J0Y-wuCzxdQ"/>
+        <transition xmi:id="_4_8cCTf7Ed-J0Y-wuCzxdQ" name="CycleCheck" target="_4_8cBjf7Ed-J0Y-wuCzxdQ" source="_4_8cBTf7Ed-J0Y-wuCzxdQ"/>
+        <transition xmi:id="_4_8cCjf7Ed-J0Y-wuCzxdQ" target="_4_8cBzf7Ed-J0Y-wuCzxdQ" source="_4_8cBjf7Ed-J0Y-wuCzxdQ"/>
+      </region>
+    </ownedBehavior>
+    <ownedOperation xmi:id="_4_8cCzf7Ed-J0Y-wuCzxdQ" name="run">
+      <ownedParameter xmi:id="_4_8cDDf7Ed-J0Y-wuCzxdQ" name="v" type="_4_8cDzf7Ed-J0Y-wuCzxdQ"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_4_8cDTf7Ed-J0Y-wuCzxdQ" name="cycleCheck">
+      <ownedParameter xmi:id="_4_8cDjf7Ed-J0Y-wuCzxdQ" name="Parameter1" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+      </ownedParameter>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_4_8cDzf7Ed-J0Y-wuCzxdQ" name="Vertex" visibility="public" isAbstract="false">
+    <ownedAttribute xmi:id="_4_8cEDf7Ed-J0Y-wuCzxdQ" name="VertexCycle" visibility="private" isReadOnly="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_4_8cETf7Ed-J0Y-wuCzxdQ" name="VertexColor" visibility="private" isReadOnly="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+    </ownedAttribute>
+    <ownedOperation xmi:id="_4_8cEjf7Ed-J0Y-wuCzxdQ" name="display"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_4_8cEzf7Ed-J0Y-wuCzxdQ" name="CycleWorkSpace" visibility="public" isAbstract="false">
+    <ownedAttribute xmi:id="_4_8cFDf7Ed-J0Y-wuCzxdQ" name="AnyCycles" visibility="private" isReadOnly="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_4_8cFTf7Ed-J0Y-wuCzxdQ" name="counter" visibility="private" isReadOnly="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_4_8cFjf7Ed-J0Y-wuCzxdQ" name="isDirected" visibility="private" isReadOnly="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_4_8cFzf7Ed-J0Y-wuCzxdQ" name="WHITE" visibility="private" isStatic="true" isReadOnly="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      <defaultValue xmi:type="uml:LiteralInteger" xmi:id="_4_8cGDf7Ed-J0Y-wuCzxdQ" visibility="public">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </defaultValue>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_4_8cGTf7Ed-J0Y-wuCzxdQ" name="GRAY" visibility="private" isStatic="true" isReadOnly="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      <defaultValue xmi:type="uml:LiteralInteger" xmi:id="_4_8cGjf7Ed-J0Y-wuCzxdQ" visibility="public" value="1">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </defaultValue>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_4_8cGzf7Ed-J0Y-wuCzxdQ" name="BLACK" visibility="private" isStatic="true" isReadOnly="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      <defaultValue xmi:type="uml:LiteralInteger" xmi:id="_4_8cHDf7Ed-J0Y-wuCzxdQ" visibility="public" value="2">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </defaultValue>
+    </ownedAttribute>
+    <ownedOperation xmi:id="_4_8cHTf7Ed-J0Y-wuCzxdQ" name="CycleWorkSpace"/>
+    <ownedOperation xmi:id="_4_8cHjf7Ed-J0Y-wuCzxdQ" name="init_vertex">
+      <ownedParameter xmi:id="_4_8cHzf7Ed-J0Y-wuCzxdQ" name="v" type="_4_8cDzf7Ed-J0Y-wuCzxdQ"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_4_8cIDf7Ed-J0Y-wuCzxdQ" name="preVisitAction">
+      <ownedParameter xmi:id="_4_8cITf7Ed-J0Y-wuCzxdQ" name="v" type="_4_8cDzf7Ed-J0Y-wuCzxdQ"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_4_8cIjf7Ed-J0Y-wuCzxdQ" name="postVisitAction">
+      <ownedParameter xmi:id="_4_8cIzf7Ed-J0Y-wuCzxdQ" name="v" type="_4_8cDzf7Ed-J0Y-wuCzxdQ"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_4_8cJDf7Ed-J0Y-wuCzxdQ" name="checkNeighborAction">
+      <ownedParameter xmi:id="_4_8cJTf7Ed-J0Y-wuCzxdQ" name="vsource" type="_4_8cDzf7Ed-J0Y-wuCzxdQ"/>
+      <ownedParameter xmi:id="_4_8cJjf7Ed-J0Y-wuCzxdQ" name="vtarget" type="_4_8cDzf7Ed-J0Y-wuCzxdQ"/>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Collaboration" xmi:id="_4_8cJzf7Ed-J0Y-wuCzxdQ" name="Collaboration1" visibility="public">
+    <ownedBehavior xmi:type="uml:Interaction" xmi:id="_4_8cKDf7Ed-J0Y-wuCzxdQ" name="Interaction" visibility="public" isAbstract="false">
+      <ownedConnector xmi:id="_4_8cKTf7Ed-J0Y-wuCzxdQ">
+        <end xmi:id="_4_8cKjf7Ed-J0Y-wuCzxdQ" role="_4_8cRjf7Ed-J0Y-wuCzxdQ"/>
+        <end xmi:id="_4_8cKzf7Ed-J0Y-wuCzxdQ" role="_4_8cRjf7Ed-J0Y-wuCzxdQ"/>
+      </ownedConnector>
+      <ownedConnector xmi:id="_4_8cLDf7Ed-J0Y-wuCzxdQ">
+        <end xmi:id="_4_8cLTf7Ed-J0Y-wuCzxdQ" role="_4_8cRzf7Ed-J0Y-wuCzxdQ"/>
+        <end xmi:id="_4_8cLjf7Ed-J0Y-wuCzxdQ" role="_4_8cRjf7Ed-J0Y-wuCzxdQ"/>
+      </ownedConnector>
+      <lifeline xmi:id="_4_8cLzf7Ed-J0Y-wuCzxdQ" name="graph" represents="_4_8cRjf7Ed-J0Y-wuCzxdQ" coveredBy="_4_8cMTf7Ed-J0Y-wuCzxdQ _4_8cMjf7Ed-J0Y-wuCzxdQ _4_8cMzf7Ed-J0Y-wuCzxdQ _4_8cNDf7Ed-J0Y-wuCzxdQ _4_8cNTf7Ed-J0Y-wuCzxdQ _4_8cNjf7Ed-J0Y-wuCzxdQ _4_8cNzf7Ed-J0Y-wuCzxdQ _4_8cODf7Ed-J0Y-wuCzxdQ _4_8cOTf7Ed-J0Y-wuCzxdQ _4_8cOjf7Ed-J0Y-wuCzxdQ _4_8cOzf7Ed-J0Y-wuCzxdQ _4_8cPzf7Ed-J0Y-wuCzxdQ"/>
+      <lifeline xmi:id="_4_8cMDf7Ed-J0Y-wuCzxdQ" name="cycleWorkSpace" represents="_4_8cRzf7Ed-J0Y-wuCzxdQ" coveredBy="_4_8cPDf7Ed-J0Y-wuCzxdQ _4_8cPTf7Ed-J0Y-wuCzxdQ _4_8cPjf7Ed-J0Y-wuCzxdQ"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_4_8cMTf7Ed-J0Y-wuCzxdQ" covered="_4_8cLzf7Ed-J0Y-wuCzxdQ" event="_4_8cSDf7Ed-J0Y-wuCzxdQ" message="_4_8cQDf7Ed-J0Y-wuCzxdQ"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_4_8cMjf7Ed-J0Y-wuCzxdQ" covered="_4_8cLzf7Ed-J0Y-wuCzxdQ" event="_4_8cSTf7Ed-J0Y-wuCzxdQ" message="_4_8cQDf7Ed-J0Y-wuCzxdQ"/>
+      <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_4_8cMzf7Ed-J0Y-wuCzxdQ" covered="_4_8cLzf7Ed-J0Y-wuCzxdQ" start="_4_8cMjf7Ed-J0Y-wuCzxdQ" finish="_4_8cNDf7Ed-J0Y-wuCzxdQ"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_4_8cNDf7Ed-J0Y-wuCzxdQ" covered="_4_8cLzf7Ed-J0Y-wuCzxdQ" event="_4_8cSDf7Ed-J0Y-wuCzxdQ" message="_4_8cQTf7Ed-J0Y-wuCzxdQ"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_4_8cNTf7Ed-J0Y-wuCzxdQ" covered="_4_8cLzf7Ed-J0Y-wuCzxdQ" event="_4_8cSTf7Ed-J0Y-wuCzxdQ" message="_4_8cQTf7Ed-J0Y-wuCzxdQ"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_4_8cNjf7Ed-J0Y-wuCzxdQ" covered="_4_8cLzf7Ed-J0Y-wuCzxdQ" event="_4_8cSDf7Ed-J0Y-wuCzxdQ" message="_4_8cQjf7Ed-J0Y-wuCzxdQ"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_4_8cNzf7Ed-J0Y-wuCzxdQ" covered="_4_8cLzf7Ed-J0Y-wuCzxdQ" event="_4_8cSTf7Ed-J0Y-wuCzxdQ" message="_4_8cQjf7Ed-J0Y-wuCzxdQ"/>
+      <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_4_8cODf7Ed-J0Y-wuCzxdQ" covered="_4_8cLzf7Ed-J0Y-wuCzxdQ" start="_4_8cNzf7Ed-J0Y-wuCzxdQ" finish="_4_8cOTf7Ed-J0Y-wuCzxdQ"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_4_8cOTf7Ed-J0Y-wuCzxdQ" covered="_4_8cLzf7Ed-J0Y-wuCzxdQ" event="_4_8cSDf7Ed-J0Y-wuCzxdQ" message="_4_8cQzf7Ed-J0Y-wuCzxdQ"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_4_8cOjf7Ed-J0Y-wuCzxdQ" covered="_4_8cLzf7Ed-J0Y-wuCzxdQ" event="_4_8cSTf7Ed-J0Y-wuCzxdQ" message="_4_8cQzf7Ed-J0Y-wuCzxdQ"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_4_8cOzf7Ed-J0Y-wuCzxdQ" covered="_4_8cLzf7Ed-J0Y-wuCzxdQ" event="_4_8cSjf7Ed-J0Y-wuCzxdQ" message="_4_8cRDf7Ed-J0Y-wuCzxdQ"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_4_8cPDf7Ed-J0Y-wuCzxdQ" covered="_4_8cMDf7Ed-J0Y-wuCzxdQ" event="_4_8cSzf7Ed-J0Y-wuCzxdQ" message="_4_8cRDf7Ed-J0Y-wuCzxdQ"/>
+      <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_4_8cPTf7Ed-J0Y-wuCzxdQ" covered="_4_8cMDf7Ed-J0Y-wuCzxdQ" start="_4_8cPDf7Ed-J0Y-wuCzxdQ" finish="_4_8cPjf7Ed-J0Y-wuCzxdQ"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_4_8cPjf7Ed-J0Y-wuCzxdQ" covered="_4_8cMDf7Ed-J0Y-wuCzxdQ" event="_4_8cSjf7Ed-J0Y-wuCzxdQ" message="_4_8cRTf7Ed-J0Y-wuCzxdQ"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_4_8cPzf7Ed-J0Y-wuCzxdQ" covered="_4_8cLzf7Ed-J0Y-wuCzxdQ" event="_4_8cSzf7Ed-J0Y-wuCzxdQ" message="_4_8cRTf7Ed-J0Y-wuCzxdQ"/>
+      <message xmi:id="_4_8cQDf7Ed-J0Y-wuCzxdQ" name="run" receiveEvent="_4_8cMjf7Ed-J0Y-wuCzxdQ" sendEvent="_4_8cMTf7Ed-J0Y-wuCzxdQ" connector="_4_8cKTf7Ed-J0Y-wuCzxdQ"/>
+      <message xmi:id="_4_8cQTf7Ed-J0Y-wuCzxdQ" name="run" messageSort="reply" receiveEvent="_4_8cNTf7Ed-J0Y-wuCzxdQ" sendEvent="_4_8cNDf7Ed-J0Y-wuCzxdQ" connector="_4_8cKTf7Ed-J0Y-wuCzxdQ"/>
+      <message xmi:id="_4_8cQjf7Ed-J0Y-wuCzxdQ" name="run" receiveEvent="_4_8cNzf7Ed-J0Y-wuCzxdQ" sendEvent="_4_8cNjf7Ed-J0Y-wuCzxdQ" connector="_4_8cKTf7Ed-J0Y-wuCzxdQ"/>
+      <message xmi:id="_4_8cQzf7Ed-J0Y-wuCzxdQ" name="run" messageSort="reply" receiveEvent="_4_8cOjf7Ed-J0Y-wuCzxdQ" sendEvent="_4_8cOTf7Ed-J0Y-wuCzxdQ" connector="_4_8cKTf7Ed-J0Y-wuCzxdQ"/>
+      <message xmi:id="_4_8cRDf7Ed-J0Y-wuCzxdQ" name="CycleWorkSpace" receiveEvent="_4_8cPDf7Ed-J0Y-wuCzxdQ" sendEvent="_4_8cOzf7Ed-J0Y-wuCzxdQ" connector="_4_8cLDf7Ed-J0Y-wuCzxdQ"/>
+      <message xmi:id="_4_8cRTf7Ed-J0Y-wuCzxdQ" name="CycleWorkSpace" messageSort="reply" receiveEvent="_4_8cPzf7Ed-J0Y-wuCzxdQ" sendEvent="_4_8cPjf7Ed-J0Y-wuCzxdQ" connector="_4_8cLDf7Ed-J0Y-wuCzxdQ"/>
+    </ownedBehavior>
+    <ownedAttribute xmi:id="_4_8cRjf7Ed-J0Y-wuCzxdQ" name="graph" type="_4_8cATf7Ed-J0Y-wuCzxdQ" isReadOnly="false"/>
+    <ownedAttribute xmi:id="_4_8cRzf7Ed-J0Y-wuCzxdQ" name="cycleWorkSpace" type="_4_8cEzf7Ed-J0Y-wuCzxdQ" isReadOnly="false"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_4_8cSDf7Ed-J0Y-wuCzxdQ" name="SendOperationEvent1" visibility="public" operation="_4_8cCzf7Ed-J0Y-wuCzxdQ"/>
+  <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_4_8cSTf7Ed-J0Y-wuCzxdQ" name="ReceiveOperationEvent1" visibility="public" operation="_4_8cCzf7Ed-J0Y-wuCzxdQ"/>
+  <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_4_8cSjf7Ed-J0Y-wuCzxdQ" name="SendOperationEvent2" visibility="public" operation="_4_8cHTf7Ed-J0Y-wuCzxdQ"/>
+  <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_4_8cSzf7Ed-J0Y-wuCzxdQ" name="ReceiveOperationEvent2" visibility="public" operation="_4_8cHTf7Ed-J0Y-wuCzxdQ"/>
+  <profileApplication xmi:id="_4_8cTDf7Ed-J0Y-wuCzxdQ">
+    <eAnnotations xmi:id="_4_8cTTf7Ed-J0Y-wuCzxdQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <references xmi:type="ecore:EPackage" href="pathmap://UML_PROFILES/Standard.profile.uml#_yzU58YinEdqtvbnfB2L_5w"/>
+    </eAnnotations>
+    <appliedProfile href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
+  </profileApplication>
+</uml:Package>

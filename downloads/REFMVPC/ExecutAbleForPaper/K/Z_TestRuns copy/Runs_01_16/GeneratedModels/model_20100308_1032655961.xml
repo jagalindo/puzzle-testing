@@ -1,0 +1,25 @@
+<feature_model name="Extras">
+<feature_tree>
+:r Extras (Extras)
+	:m SMS (SMS)
+	:m Voice_Call (Voice_Call)
+	:m Cell_phone (Cell_phone)
+	:m Message (Message)
+	:m Basis_Functions (Basis_Functions)
+	:o Communication (Communication)
+		:o UMTS (UMTS)
+		:o WLAN (WLAN)
+		:o Bluetooth (Bluetooth)
+	:g [1, *]
+		: MP3 (MP3)
+		: Camera (Camera)
+			:o MMS (MMS)
+			:g [1, 1]
+				: A8MP (A8MP)
+				: A3MP (A3MP)
+</feature_tree>
+<constraints>
+constraint_1:~Bluetooth or Camera
+constraint_2:~MP3 or ~Bluetooth
+</constraints>
+</feature_model>

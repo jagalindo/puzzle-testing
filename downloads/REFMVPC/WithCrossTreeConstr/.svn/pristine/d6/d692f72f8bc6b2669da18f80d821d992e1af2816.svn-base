@@ -1,0 +1,386 @@
+package fma;
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.util.HashSet;
+import java.util.Iterator;
+import java.util.Set;
+
+/**
+ * Data-Structure which is used to store the individual nodes of the extracted FM.
+ */
+public class RNode {
+	//ID is only used to generate hash-value
+	private static int id_cnt;
+	private int id;
+	
+	private RType type;
+	//Attribute of this RNode
+	private Feature attr;
+	
+	//An or-relation consists of a Set of RNodes, each RNode can have
+	//arbitrary many or-relations (the same holds for xor-relations)
+	private Set<Set<RNode>> or;
+	private Set<Set<RNode>> xor;
+	//An optional-relation consists of one RNode, each RNode can have
+	//arbitrary many optional child features (the same holds for mandatory relations).
+	private Set<RNode> optional;
+	private Set<RNode> mandatory;
+	
+	//for those direct children whose relation has not been retrieved yet
+	private Set<RNode> unresolved;
+	private Set<RNode> parent;
+	
+	public RNode(RType type, Feature attr){
+		this.attr = attr;
+		this.type = type;
+		id=id_cnt;
+		id_cnt ++;
+		
+		or = new HashSet<Set<RNode>>();
+		xor = new HashSet<Set<RNode>>();
+		optional = new HashSet<RNode>();
+		mandatory = new HashSet<RNode>();
+		parent = new HashSet<RNode>();
+		unresolved = new HashSet<RNode>();
+	}
+	
+	public RNode getUnresolved(Feature f){
+		RNode ret = null;
+		for(RNode node : this.unresolved){
+			if(node.getFeature().equals(f)){
+				ret = node;
+				break;
+			}
+		}
+		return ret;
+	}
+	public RType getType() {
+		return type;
+	}
+
+	public void setType(RType type) {
+		this.type = type;
+	}
+
+	public Set<RNode> getUnresolved() {
+		return unresolved;
+	}
+
+	public void setUnresolved(Set<RNode> unresolved) {
+		this.unresolved = unresolved;
+	}
+
+	public Set<RNode> getParent() {
+		return parent;
+	}
+
+	public void setAttr(Feature attr){
+		this.attr = attr;
+	}
+	
+	public void addOr(Set<RNode> or){
+		if(this.or == null){
+			this.or = new HashSet<Set<RNode>>();
+		}
+		this.or.add(or);
+	}
+	
+	public void addXor(Set<RNode> xor){
+		if(this.xor == null){
+			this.xor = new HashSet<Set<RNode>>();
+		}
+		this.xor.add(xor);
+	}
+	
+	
+	public void addOptional(RNode optional){
+		if(this.optional == null){
+			this.optional = new HashSet<RNode>();
+		}
+		this.optional.add(optional);
+	}
+	
+	public void addMandatory(RNode mandatory){
+		if(this.mandatory == null){
+			this.mandatory = new HashSet<RNode>();
+		}
+		this.mandatory.add(mandatory);
+	}
+	
+	public Set<Set<RNode>> getOr() {
+		return or;
+	}
+
+	public Set<Set<RNode>> getXor() {
+		return xor;
+	}
+
+	public Set<RNode> getOptional() {
+		return optional;
+	}
+
+	public Set<RNode> getMandatory() {
+		return mandatory;
+	}
+
+	public Feature getFeature(){
+		return attr;
+	}
+
+	@Override
+	public boolean equals(Object arg0) {
+		return arg0==this;
+	}
+
+	@Override
+	public int hashCode() {
+		return id;
+	}
+		
+	public Set<Feature> getDescendants(){
+		Set<Feature> descendants = new HashSet<Feature>();
+		getDescendants(descendants);
+		return descendants;
+	}
+	private void getDescendants(Set<Feature> descendants){
+		for(RNode node: this.optional){
+			descendants.add(node.getFeature());
+			node.getDescendants(descendants);
+		}
+		for(Set<RNode> nodes : this.or){
+			for(RNode node : nodes){
+				descendants.add(node.getFeature());
+				node.getDescendants(descendants);
+			}
+		}
+		for(Set<RNode> nodes : this.xor){
+			for(RNode node :nodes){
+				descendants.add(node.getFeature());
+				node.getDescendants(descendants);
+			}
+		}
+		for(RNode node : this.unresolved){
+				descendants.add(node.getFeature());
+				node.getDescendants(descendants);
+		}
+	}
+	
+	public Set<Feature> getSiblingFeatures(RNode parent){
+		Set<Feature> ret = new HashSet<Feature>();
+		
+		for(Set<RNode> xors : parent.xor){
+			for(RNode xor : xors){
+				ret.add(xor.getFeature());
+			}
+		}
+		for(Set<RNode> ors : parent.or){
+			for(RNode or : ors){
+				ret.add(or.getFeature());
+			}
+		}
+		
+		for(RNode opt : parent.optional){
+			ret.add(opt.getFeature());
+		}
+		
+		for(RNode unres : parent.getUnresolved()){
+			ret.add(unres.getFeature());
+		}
+		return ret;
+	}
+	
+	public Set<RNode> getChildren(){
+		Set<RNode> toProcess = new HashSet<RNode>();
+		toProcess.addAll(getOptional());
+		for(Set<RNode> nodes : getOr()){
+			toProcess.addAll(nodes);
+		}
+		for(Set<RNode> nodes : getXor()){
+			toProcess.addAll(nodes);
+		}
+		return toProcess;
+	}
+
+	public Set<Feature> getUnresolvedFeatures() {
+		Set<Feature> features = new HashSet<Feature>();
+		for(RNode node : this.unresolved){
+			features.add(node.getFeature());
+		}
+		return features;
+	}
+
+	public void addParent(RNode node) {
+		this.parent.add(node);
+	}
+	
+	public void clearRetrievedRelations() {
+		for(Set<RNode> xors: xor){
+			for(RNode x : xors){
+				unresolved.add(x);
+				x.setType(RType.unknown);
+			}
+		}
+		xor = new HashSet<Set<RNode>>();
+		
+		for(Set<RNode> ors: or){
+			for(RNode o : ors){
+				unresolved.add(o);
+				o.setType(RType.unknown);
+			}
+		}
+		or = new HashSet<Set<RNode>>();
+		
+		for(RNode o : optional){
+			unresolved.add(o);
+			o.setType(RType.unknown);
+		}
+		optional = new HashSet<RNode>();
+	}
+	
+	public void writeSplotModelToFile(BufferedWriter bw) throws IOException{
+		try {
+			bw.write(":r"+" "+this.attr.toString()+" ("+this.attr+")");
+			bw.newLine();
+			writeSplotModelToFile(bw, "\t");
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+	private void writeSplotModelToFile(BufferedWriter bw, String indent) throws IOException{
+		if(or.size()>0 || mandatory.size()>0 || xor.size()>0 || optional.size()>0){			
+			for(RNode node : this.mandatory){
+				bw.write(indent+":m "+node.attr.toString()+" ("+node.attr+")");
+				bw.newLine();
+			}
+
+			for(RNode node : this.optional){
+				bw.write(indent+":o "+node.attr.toString()+" ("+node.attr+")");
+				bw.newLine();
+				node.writeSplotModelToFile(bw, indent+"\t");
+			}
+			for(Set<RNode> ors : this.or){
+				bw.write(indent+":g [1, *]");
+				bw.newLine();
+				for(RNode node : ors){
+					bw.write(indent+"\t: "+node.attr.toString()+" ("+node.attr+")");
+					bw.newLine();
+					node.writeSplotModelToFile(bw, indent+"\t\t");
+				}
+			}
+			for(Set<RNode> xors : this.xor){
+				bw.write(indent+":g [1, 1]");
+				bw.newLine();
+				for(RNode node : xors){
+					bw.write(indent+"\t: "+node.attr.toString()+" ("+node.attr+")");
+					bw.newLine();
+					node.writeSplotModelToFile(bw, indent+"\t\t");
+				}
+			}
+		}
+	}
+	@Override
+	public String toString() {
+		StringBuffer sb = new StringBuffer();
+		toString(sb);
+		return sb.toString();
+	}
+	
+	//Recursion to print also the content of the child RNodes
+	private void toString(StringBuffer sb){
+		sb.append("Dieser Knoten ist vom Typ: "+this.type+"\n");
+		if(attr!=null){
+			sb.append("Attribut: "+attr +"\n");
+		}
+		
+		if(or.size()>0){
+			sb.append("Folgende OR-Relationen: \n"); //Set<Set<RNode>> or;
+			for(Set<RNode> orRel : or){
+				sb.append("or of Attributes: ");
+				for(RNode o : orRel){
+					sb.append(o.getFeature()+", ");
+				}
+				sb.append("\n");
+			}
+		}
+		
+		if(xor.size()>0){
+			sb.append("Folgende XOR-Relationen: \n"); //Set<Set<RNode>> or;
+			for(Set<RNode> xorRel : xor){
+				sb.append("xor of Attributes: ");
+				for(RNode x : xorRel){
+					sb.append(x.getFeature()+", ");
+				}
+				sb.append("\n");
+			}
+		}
+		
+		if(optional.size()>0){
+			sb.append("Folgende Optional-Relationen: \n"); //Set<Set<RNode>> or;
+			for(RNode option : optional){
+				sb.append("Option of Attribute: "+option.getFeature()+"\n");
+			}
+		}
+		
+		if(mandatory.size()>0){
+			sb.append("Folgende Mandatory-Relationen: \n"); //Set<Set<RNode>> or;
+			for(RNode mand : mandatory){
+				sb.append("Mandatory Attribute: "+mand.getFeature()+"\n");
+			}
+		}
+		sb.append("\n \n");
+		
+		for(Set<RNode> orRel : or){
+			for(RNode o : orRel){
+				o.toString(sb);
+			}
+		}
+		for(Set<RNode> xorRel : xor){
+			for(RNode x : xorRel){
+				x.toString(sb);
+			}
+		}
+		for(RNode option : optional){
+			option.toString(sb);
+		}
+	}
+	
+	public void writeFamaModelToFile(BufferedWriter bw) throws IOException{
+		if(or.size()>0 || mandatory.size()>0 || xor.size()>0 || optional.size()>0){
+			bw.write(this.attr.toString()+": ");
+			for(RNode node : this.mandatory){
+				bw.write(node.attr.toString()+" ");
+			}
+
+			for(RNode node : this.optional){
+				bw.write("["+node.attr.toString()+"] ");
+			}
+			for(Set<RNode> ors : this.or){
+				bw.write("[1, "+ors.size()+"] {");
+				for(RNode node : ors){
+					bw.write(node.attr.toString()+" ");
+				}
+				bw.write("}");
+			}
+			for(Set<RNode> xors : this.xor){
+				bw.write("[1, 1] {");
+				for(RNode node : xors){
+					bw.write(node.attr.toString()+" ");
+				}
+				bw.write("}");
+			}
+			bw.write("; \r\n");
+			
+			Set<Set<RNode>> toProcess = new HashSet<Set<RNode>>(xor);
+			toProcess.addAll(this.or);
+			toProcess.add(optional);
+			
+			for(Set<RNode> nodes : toProcess){
+				for(RNode node : nodes){
+					node.writeFamaModelToFile(bw);
+				}
+			}
+		}
+	}
+}

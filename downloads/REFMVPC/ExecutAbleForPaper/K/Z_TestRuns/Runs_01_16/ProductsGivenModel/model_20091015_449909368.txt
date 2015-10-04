@@ -1,0 +1,13 @@
+Evaluation_semantics;Optimizer;Short_circuit;SAL;Evaluator;Conditional;Machine_semantics;Simple_Arithmetic;Constant_folding;Language;
+0001101101
+0001111101
+0111111101
+0101101111
+0101111111
+0111111111
+1001100101
+1001110101
+1111110101
+1101100111
+1101110111
+1111110111

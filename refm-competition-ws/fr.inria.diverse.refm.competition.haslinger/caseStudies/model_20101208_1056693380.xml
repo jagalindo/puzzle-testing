@@ -1,0 +1,44 @@
+<!-- This model was created online using SPLOT's Feature Model Editor (http://www.splot-research.org) on Wed, Dec 8, 2010 - 9:44 PM  -->
+<feature_model name="GMF_Eclipse_Reuso_UFRJ">
+<meta>
+<data name="description">Trabalho de reuso</data>
+<data name="creator">Miguel e Marcela</data>
+<data name="address"></data>
+<data name="email">mlf@lannes.com</data>
+<data name="phone"></data>
+<data name="website"></data>
+<data name="organization">UFRJ</data>
+<data name="department"></data>
+<data name="date"></data>
+<data name="reference"></data>
+</meta>
+<feature_tree>
+:r _r(_r)
+	:o _r_1(_r_1)
+		:m _r_1_2(_r_1_2)
+		:m _r_1_3(_r_1_3)
+		:m _r_1_4(_r_1_4)
+	:m _r_5(_r_5)
+		:m _r_5_6(_r_5_6)
+		:m _r_5_7(_r_5_7)
+		:m _r_5_8(_r_5_8)
+	:m _r_9(_r_9)
+		:m _r_9_10(_r_9_10)
+		:m _r_9_11(_r_9_11)
+		:m _r_9_12(_r_9_12)
+	:m _r_13(_r_13)
+		:m _r_13_14(_r_13_14)
+		:m _r_13_16(_r_13_16)
+		:m _r_13_17(_r_13_17)
+	:m _r_18(_r_18)
+		:m _r_18_19(_r_18_19)
+		:m _r_18_21(_r_18_21)
+		:m _r_18_22(_r_18_22)
+	:m _r_23(_r_23)
+		:m _r_23_24(_r_23_24)
+		:m _r_23_25(_r_23_25)
+		:m _r_23_27(_r_23_27)
+</feature_tree>
+<constraints>
+</constraints>
+</feature_model>

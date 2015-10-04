@@ -1,0 +1,435 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature-model xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.tdg-seville.info/benavides/featuremodelling/feature-model.xsd">
+<feature name="his">
+	<binaryRelation name="690">
+	<cardinality max="1" min="1"/>
+	<solitaryFeature name="services">
+		<binaryRelation name="691">
+		<cardinality max="1" min="1"/>
+		<solitaryFeature name="security">
+		</solitaryFeature>
+
+		</binaryRelation>
+
+		<binaryRelation name="692">
+		<cardinality max="1" min="1"/>
+		<solitaryFeature name="intrusion">
+			<binaryRelation name="693">
+			<cardinality max="1" min="1"/>
+			<solitaryFeature name="detection">
+				<binaryRelation name="694">
+				<cardinality max="1" min="1"/>
+				<solitaryFeature name="motion">
+					<binaryRelation name="695">
+					<cardinality max="1" min="1"/>
+					<solitaryFeature name="monitoring_detecting">
+						<setRelation name="696">
+						<cardinality max="1" min="1"/>
+						<groupedFeature name="discrete_value">
+						</groupedFeature>
+						<groupedFeature name="continuous_value">
+						</groupedFeature>
+						</setRelation>
+
+					</solitaryFeature>
+
+					</binaryRelation>
+
+				</solitaryFeature>
+
+				</binaryRelation>
+
+			</solitaryFeature>
+
+			</binaryRelation>
+
+			<binaryRelation name="697">
+			<cardinality max="1" min="1"/>
+			<solitaryFeature name="action">
+				<binaryRelation name="698">
+				<cardinality max="1" min="1"/>
+				<solitaryFeature name="door_operation">
+				</solitaryFeature>
+
+				</binaryRelation>
+
+				<binaryRelation name="699">
+				<cardinality max="1" min="1"/>
+				<solitaryFeature name="alarm">
+				</solitaryFeature>
+
+				</binaryRelation>
+
+				<binaryRelation name="700">
+				<cardinality max="1" min="0"/>
+				<solitaryFeature name="message">
+					<binaryRelation name="701">
+					<cardinality max="1" min="0"/>
+					<solitaryFeature name="data">
+					</solitaryFeature>
+
+					</binaryRelation>
+
+					<binaryRelation name="702">
+					<cardinality max="1" min="1"/>
+					<solitaryFeature name="voice">
+					</solitaryFeature>
+
+					</binaryRelation>
+
+				</solitaryFeature>
+
+				</binaryRelation>
+
+			</solitaryFeature>
+
+			</binaryRelation>
+
+		</solitaryFeature>
+
+		</binaryRelation>
+
+		<binaryRelation name="703">
+		<cardinality max="1" min="1"/>
+		<solitaryFeature name="fire">
+			<binaryRelation name="704">
+			<cardinality max="1" min="1"/>
+			<solitaryFeature name="_detection">
+				<binaryRelation name="705">
+				<cardinality max="1" min="1"/>
+				<solitaryFeature name="smoke">
+					<binaryRelation name="706">
+					<cardinality max="1" min="1"/>
+					<solitaryFeature name="_monitoring_detecting">
+						<setRelation name="707">
+						<cardinality max="1" min="1"/>
+						<groupedFeature name="_discrete_value">
+						</groupedFeature>
+						<groupedFeature name="_continuous_value">
+						</groupedFeature>
+						</setRelation>
+
+					</solitaryFeature>
+
+					</binaryRelation>
+
+				</solitaryFeature>
+
+				</binaryRelation>
+
+			</solitaryFeature>
+
+			</binaryRelation>
+
+			<binaryRelation name="708">
+			<cardinality max="1" min="1"/>
+			<solitaryFeature name="_action">
+				<binaryRelation name="709">
+				<cardinality max="1" min="1"/>
+				<solitaryFeature name="water">
+				</solitaryFeature>
+
+				</binaryRelation>
+
+				<binaryRelation name="710">
+				<cardinality max="1" min="0"/>
+				<solitaryFeature name="gas">
+				</solitaryFeature>
+
+				</binaryRelation>
+
+			</solitaryFeature>
+
+			</binaryRelation>
+
+		</solitaryFeature>
+
+		</binaryRelation>
+
+		<binaryRelation name="711">
+		<cardinality max="1" min="0"/>
+		<solitaryFeature name="flood">
+			<binaryRelation name="712">
+			<cardinality max="1" min="1"/>
+			<solitaryFeature name="__detection">
+				<binaryRelation name="713">
+				<cardinality max="1" min="1"/>
+				<solitaryFeature name="moisture">
+					<binaryRelation name="714">
+					<cardinality max="1" min="1"/>
+					<solitaryFeature name="__monitoring_detecting">
+						<setRelation name="715">
+						<cardinality max="1" min="1"/>
+						<groupedFeature name="__discrete_value">
+						</groupedFeature>
+						<groupedFeature name="__continuous_value">
+						</groupedFeature>
+						</setRelation>
+
+					</solitaryFeature>
+
+					</binaryRelation>
+
+				</solitaryFeature>
+
+				</binaryRelation>
+
+			</solitaryFeature>
+
+			</binaryRelation>
+
+			<binaryRelation name="716">
+			<cardinality max="1" min="1"/>
+			<solitaryFeature name="__action">
+				<binaryRelation name="717">
+				<cardinality max="1" min="1"/>
+				<solitaryFeature name="water_main">
+				</solitaryFeature>
+
+				</binaryRelation>
+
+				<binaryRelation name="718">
+				<cardinality max="1" min="0"/>
+				<solitaryFeature name="pumping">
+				</solitaryFeature>
+
+				</binaryRelation>
+
+			</solitaryFeature>
+
+			</binaryRelation>
+
+		</solitaryFeature>
+
+		</binaryRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="719">
+	<cardinality max="1" min="1"/>
+	<solitaryFeature name="administration">
+		<binaryRelation name="720">
+		<cardinality max="1" min="1"/>
+		<solitaryFeature name="hmi">
+			<setRelation name="721">
+			<cardinality max="1" min="1"/>
+			<groupedFeature name="standard">
+			</groupedFeature>
+			<groupedFeature name="advanced">
+			</groupedFeature>
+			</setRelation>
+
+		</solitaryFeature>
+
+		</binaryRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="722">
+	<cardinality max="1" min="0"/>
+	<solitaryFeature name="communication">
+		<binaryRelation name="723">
+		<cardinality max="1" min="1"/>
+		<solitaryFeature name="telephone">
+		</solitaryFeature>
+
+		</binaryRelation>
+
+		<binaryRelation name="724">
+		<cardinality max="1" min="0"/>
+		<solitaryFeature name="internet">
+			<binaryRelation name="725">
+			<cardinality max="1" min="1"/>
+			<solitaryFeature name="connection">
+				<setRelation name="726">
+				<cardinality max="1" min="1"/>
+				<groupedFeature name="tcp">
+				</groupedFeature>
+				<groupedFeature name="udp">
+				</groupedFeature>
+				</setRelation>
+
+			</solitaryFeature>
+
+			</binaryRelation>
+
+		</solitaryFeature>
+
+		</binaryRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="727">
+	<cardinality max="1" min="1"/>
+	<solitaryFeature name="detection_devices">
+		<binaryRelation name="728">
+		<cardinality max="1" min="1"/>
+		<solitaryFeature name="motion_sensor">
+		</solitaryFeature>
+
+		</binaryRelation>
+
+		<binaryRelation name="729">
+		<cardinality max="1" min="1"/>
+		<solitaryFeature name="skoke_sensor">
+		</solitaryFeature>
+
+		</binaryRelation>
+
+		<binaryRelation name="730">
+		<cardinality max="1" min="0"/>
+		<solitaryFeature name="moisture_sensor">
+		</solitaryFeature>
+
+		</binaryRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="731">
+	<cardinality max="1" min="1"/>
+	<solitaryFeature name="action_devices">
+		<binaryRelation name="732">
+		<cardinality max="1" min="1"/>
+		<solitaryFeature name="sprinkler">
+		</solitaryFeature>
+
+		</binaryRelation>
+
+		<binaryRelation name="733">
+		<cardinality max="1" min="0"/>
+		<solitaryFeature name="sump_pump">
+		</solitaryFeature>
+
+		</binaryRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="734">
+	<cardinality max="1" min="1"/>
+	<solitaryFeature name="monitor_control">
+		<binaryRelation name="735">
+		<cardinality max="1" min="1"/>
+		<solitaryFeature name="direct">
+		</solitaryFeature>
+
+		</binaryRelation>
+
+		<binaryRelation name="736">
+		<cardinality max="1" min="1"/>
+		<solitaryFeature name="scheduled">
+			<binaryRelation name="737">
+			<cardinality max="1" min="1"/>
+			<solitaryFeature name="periodic">
+			</solitaryFeature>
+
+			</binaryRelation>
+
+			<binaryRelation name="738">
+			<cardinality max="1" min="1"/>
+			<solitaryFeature name="one_time">
+			</solitaryFeature>
+
+			</binaryRelation>
+
+		</solitaryFeature>
+
+		</binaryRelation>
+
+		<binaryRelation name="739">
+		<cardinality max="1" min="1"/>
+		<solitaryFeature name="responding_strategy">
+			<binaryRelation name="740">
+			<cardinality max="1" min="0"/>
+			<solitaryFeature name="sequential">
+			</solitaryFeature>
+
+			</binaryRelation>
+
+			<binaryRelation name="741">
+			<cardinality max="1" min="1"/>
+			<solitaryFeature name="priority">
+			</solitaryFeature>
+
+			</binaryRelation>
+
+		</solitaryFeature>
+
+		</binaryRelation>
+
+		<binaryRelation name="742">
+		<cardinality max="1" min="1"/>
+		<solitaryFeature name="event_based">
+		</solitaryFeature>
+
+		</binaryRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="743">
+	<cardinality max="1" min="1"/>
+	<solitaryFeature name="quality_attributes">
+		<binaryRelation name="744">
+		<cardinality max="1" min="1"/>
+		<solitaryFeature name="usability">
+		</solitaryFeature>
+
+		</binaryRelation>
+
+		<binaryRelation name="745">
+		<cardinality max="1" min="1"/>
+		<solitaryFeature name="scalability">
+		</solitaryFeature>
+
+		</binaryRelation>
+
+		<binaryRelation name="746">
+		<cardinality max="1" min="1"/>
+		<solitaryFeature name="reliability">
+			<binaryRelation name="747">
+			<cardinality max="1" min="1"/>
+			<solitaryFeature name="redundancy_control">
+				<setRelation name="748">
+				<cardinality max="1" min="1"/>
+				<groupedFeature name="active">
+				</groupedFeature>
+				<groupedFeature name="standby">
+				</groupedFeature>
+				</setRelation>
+
+			</solitaryFeature>
+
+			</binaryRelation>
+
+		</solitaryFeature>
+
+		</binaryRelation>
+
+		<binaryRelation name="749">
+		<cardinality max="1" min="1"/>
+		<solitaryFeature name="safety">
+		</solitaryFeature>
+
+		</binaryRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+</feature>
+<requires feature="water" name="c1" requires="sprinkler"/>
+<requires feature="pumping" name="c2" requires="sump_pump"/>
+<requires feature="flood" name="c3" requires="moisture_sensor"/>
+<requires feature="message" name="c4" requires="communication"/>
+</feature-model>

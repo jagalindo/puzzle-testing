@@ -1,0 +1,31 @@
+<feature_model name="client_data">
+<feature_tree>
+:r client_data (client_data)
+	:m decision (decision)
+	:m Financials (Financials)
+	:m Reporting (Reporting)
+	:m Data_Capture (Data_Capture)
+	:m LOB (LOB)
+	:m Insurance_Policy (Insurance_Policy)
+	:m UW (UW)
+	:o car_details (car_details)
+	:o Third_Party_Services (Third_Party_Services)
+		:o Credit_Check (Credit_Check)
+			:g [1, 1]
+				: advanced (advanced)
+				: simple (simple)
+		:o Add_Validation (Add_Validation)
+		:o VIN_Validation (VIN_Validation)
+	:o house_details (house_details)
+	:g [1, *]
+		: Home (Home)
+		: Auto (Auto)
+			:g [1, *]
+				: TP (TP)
+				: Comprehensive (Comprehensive)
+		: watercraft (watercraft)
+		: commercial (commercial)
+</feature_tree>
+<constraints>
+</constraints>
+</feature_model>

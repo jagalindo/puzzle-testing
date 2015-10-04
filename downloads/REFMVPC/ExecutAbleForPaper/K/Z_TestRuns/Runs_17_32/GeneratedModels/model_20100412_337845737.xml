@@ -1,0 +1,16 @@
+<feature_model name="CIMS_Product_Line">
+<feature_tree>
+:r CIMS_Product_Line (CIMS_Product_Line)
+	:m Database (Database)
+	:m UserProfile (UserProfile)
+	:m Reports (Reports)
+	:m Client_Assesment (Client_Assesment)
+	:m Inventory (Inventory)
+	:m Client_Payment (Client_Payment)
+	:m Client_Transport (Client_Transport)
+	:m Client (Client)
+	:m Client_Training (Client_Training)
+</feature_tree>
+<constraints>
+</constraints>
+</feature_model>

@@ -1,0 +1,43 @@
+<!-- This model was created online using SPLOT's Feature Model Editor (http://www.splot-research.org) on Sun, Aug 22, 2010 - 6:04 AM  -->
+<feature_model name="Web Content Delivery">
+<meta>
+<data name="description">An attempt to apply FODA principles to the concept of caching in web applications</data>
+<data name="creator">Paul Hudspith</data>
+<data name="address"></data>
+<data name="email">paul.hudspith@new.ox.ac.uk</data>
+<data name="phone"></data>
+<data name="website"></data>
+<data name="organization">University of Oxford</data>
+<data name="department">Software Engineering Programme</data>
+<data name="date">Aug 2010</data>
+<data name="reference"></data>
+</meta>
+<feature_tree>
+:r Web_Content_Delivery(Web_Content_Delivery)
+	:m Check_for_content_updates(Check_for_content_updates)
+		:g (_r_1_2) [1,1] 
+			: Check_after_defined_wait(Check_after_defined_wait)
+			: Check_after_heuristic_wait(Check_after_heuristic_wait)
+			: Always_check_for_updates(Always_check_for_updates)
+	:o Authorise_access_to_content(Authorise_access_to_content)
+	:o Store_in_cache(Store_in_cache)
+		:g (_r_7_8) [1,*] 
+			: Store_in_browser_cache(Store_in_browser_cache)
+				:g (_r_7_8_9_15) [1,1] 
+					: Short_term_cache(Short_term_cache)
+					: Long_term_cache(Long_term_cache)
+			: Store_in_proxy_cache(Store_in_proxy_cache)
+	:o Encrypt_content(Encrypt_content)
+	:o Serve_from_cache(Serve_from_cache)
+		:g (_r_22_23) [1,1] 
+			: Serve_from_browser_cache(Serve_from_browser_cache)
+			: Serve_from_proxy_cache(Serve_from_proxy_cache)
+</feature_tree>
+<constraints>
+constraint_6:~Check_after_heuristic_wait or Store_in_cache
+constraint_7:~Always_check_for_updates or Authorise_access_to_content
+constraint_5:~Check_after_defined_wait or Store_in_cache
+constraint_2:~Store_in_browser_cache or Serve_from_browser_cache
+constraint_3:~Store_in_proxy_cache or Serve_from_proxy_cache
+</constraints>
+</feature_model>

@@ -1,0 +1,44 @@
+<feature_model name="Alarm_No_water">
+<feature_tree>
+:r Alarm_No_water (Alarm_No_water)
+	:m Alarm_No_lights (Alarm_No_lights)
+	:m Generate_Reports (Generate_Reports)
+	:m Notification (Notification)
+	:m On_Off_Light (On_Off_Light)
+	:m Platform (Platform)
+	:m Log (Log)
+	:m Alarms (Alarms)
+	:m UI (UI)
+	:m Control (Control)
+	:m GreenHouse (GreenHouse)
+	:m Consumer_Report (Consumer_Report)
+	:m Monitoring (Monitoring)
+	:m On_Off_Water (On_Off_Water)
+	:m Mode (Mode)
+	:m Temperature (Temperature)
+	:o Graphic (Graphic)
+		:o Mobile_Interface (Mobile_Interface)
+			:o Mobile (Mobile)
+		:o Web_Interface (Web_Interface)
+			:o Web (Web)
+		:o PC_Interface (PC_Interface)
+			:o PC (PC)
+	:o Day (Day)
+	:o Production_Report (Production_Report)
+	:o Night (Night)
+	:o SMS (SMS)
+	:o Others_Alarms (Others_Alarms)
+	:o Console (Console)
+	:o Call_phone (Call_phone)
+	:o e_mail (e_mail)
+</feature_tree>
+<constraints>
+constraint_1:~PC or ~Console
+constraint_2:~Console or ~Mobile
+constraint_3:~Console or ~Web
+constraint_4:~Console or ~PC_Interface
+constraint_5:~Console or ~Web_Interface
+constraint_6:~Console or ~Mobile_Interface
+constraint_7:~Console or ~Graphic
+</constraints>
+</feature_model>

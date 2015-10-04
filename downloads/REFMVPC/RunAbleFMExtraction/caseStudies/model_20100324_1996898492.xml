@@ -1,0 +1,33 @@
+<!-- This model was created online using SPLOT's Feature Model Editor (http://www.splot-research.org) on Thu, Jun 24, 2010 - 11:51 AM  -->
+<feature_model name="VOD feature model">
+<meta>
+<data name="description">video on deman feature diagram</data>
+<data name="creator">Let</data>
+<data name="address"></data>
+<data name="email">let@gmail.com</data>
+<data name="phone"></data>
+<data name="website"></data>
+<data name="organization">none</data>
+<data name="department"></data>
+<data name="date"></data>
+<data name="reference"></data>
+</meta>
+<feature_tree>
+:r VODPlayer(VODPlayer)
+	:m StartPlayer(StartPlayer)
+	:m SelectMovie(SelectMovie)
+		:o ChangeServer(ChangeServer)
+		:o Detail(Detail)
+	:m StartMovie(StartMovie)
+		:o StopMovie(StopMovie)
+	:m VCRInterface(VCRInterface)
+	:m PlayImm(PlayImm)
+	:o Quit(Quit)
+	:o Pause(Pause)
+</feature_tree>
+<constraints>
+constraint_1:StartMovie or ~Pause
+constraint_2:SelectMovie or ~ChangeServer or ~Detail
+constraint_3:StartMovie or ~StopMovie
+</constraints>
+</feature_model>

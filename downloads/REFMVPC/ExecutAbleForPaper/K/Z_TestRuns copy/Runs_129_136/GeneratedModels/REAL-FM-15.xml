@@ -1,0 +1,39 @@
+<feature_model name="circular_shift">
+<feature_tree>
+:r circular_shift (circular_shift)
+	:m kwic (kwic)
+	:m input_output (input_output)
+	:m alpha_sort (alpha_sort)
+	:m shift_data (shift_data)
+	:m arch_style (arch_style)
+	:m order (order)
+	:m case_sensitivity (case_sensitivity)
+	:g [1, *]
+		: console (console)
+		: file (file)
+	:g [1, 1]
+		: adt (adt)
+		: shared_data (shared_data)
+		: pipe_and_filter (pipe_and_filter)
+		: implicit_invocation (implicit_invocation)
+	:g [1, 1]
+		: implicit (implicit)
+		: explicit (explicit)
+			:o shift_processing (shift_processing)
+				:m compression (compression)
+				:o noise_words (noise_words)
+				:g [1, 1]
+					: each_line (each_line)
+					: all_lines (all_lines)
+	:g [1, 1]
+		: ascendant (ascendant)
+		: descendant (descendant)
+	:g [1, 1]
+		: insensitive (insensitive)
+		: sensitive (sensitive)
+</feature_tree>
+<constraints>
+constraint_1:~pipe_and_filter or all_lines
+constraint_2:~implicit or ~pipe_and_filter
+</constraints>
+</feature_model>

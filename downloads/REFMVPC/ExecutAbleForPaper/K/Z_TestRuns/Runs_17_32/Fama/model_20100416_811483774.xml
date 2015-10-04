@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature-model xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.tdg-seville.info/benavides/featuremodelling/feature-model.xsd">
+<feature name="Software">
+	<setRelation name="70">
+	<cardinality max="1" min="1"/>
+	<groupedFeature name="Anwendungssoftware">
+			<setRelation name="71">
+			<cardinality max="1" min="1"/>
+			<groupedFeature name="Individualsoftware">
+			</groupedFeature>
+			<groupedFeature name="Standardsoftware">
+					<setRelation name="72">
+					<cardinality max="1" min="1"/>
+					<groupedFeature name="Basissoftware">
+					</groupedFeature>
+					<groupedFeature name="Officesoftware">
+					</groupedFeature>
+					<groupedFeature name="Funktionsorientierte_Software">
+							<setRelation name="73">
+							<cardinality max="1" min="1"/>
+							<groupedFeature name="Managementsoftware">
+							</groupedFeature>
+							<groupedFeature name="Operative_Software">
+							</groupedFeature>
+							</setRelation>
+
+							<setRelation name="74">
+							<cardinality max="1" min="1"/>
+							<groupedFeature name="Funktionsabhaengige_Software">
+							</groupedFeature>
+							<groupedFeature name="Funktionsuebergreifende_Software">
+							</groupedFeature>
+							</setRelation>
+
+							<setRelation name="75">
+							<cardinality max="1" min="1"/>
+							<groupedFeature name="Branchenspezifische_Software">
+							</groupedFeature>
+							<groupedFeature name="Branchenunabhaengige_Software">
+							</groupedFeature>
+							</setRelation>
+
+							<setRelation name="76">
+							<cardinality max="2" min="1"/>
+							<groupedFeature name="Client_Server_Architektur">
+							</groupedFeature>
+							<groupedFeature name="Service_orientierte_Architektur">
+							</groupedFeature>
+							</setRelation>
+
+					</groupedFeature>
+					</setRelation>
+
+			</groupedFeature>
+			</setRelation>
+
+	</groupedFeature>
+	<groupedFeature name="Systemsoftware">
+	</groupedFeature>
+	</setRelation>
+
+</feature>
+</feature-model>

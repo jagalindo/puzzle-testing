@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature-model xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.tdg-seville.info/benavides/featuremodelling/feature-model.xsd">
+<feature name="_r">
+	<setRelation name="106">
+	<cardinality max="1" min="1"/>
+	<groupedFeature name="_r_35_36">
+			<binaryRelation name="107">
+			<cardinality max="1" min="0"/>
+			<solitaryFeature name="_r_35_36_39">
+			</solitaryFeature>
+
+			</binaryRelation>
+
+			<binaryRelation name="108">
+			<cardinality max="1" min="0"/>
+			<solitaryFeature name="_r_35_36_43">
+			</solitaryFeature>
+
+			</binaryRelation>
+
+	</groupedFeature>
+	</setRelation>
+
+	<binaryRelation name="109">
+	<cardinality max="1" min="1"/>
+	<solitaryFeature name="_r_44">
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="110">
+	<cardinality max="1" min="0"/>
+	<solitaryFeature name="_r_45">
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="111">
+	<cardinality max="1" min="0"/>
+	<solitaryFeature name="_r_46">
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="112">
+	<cardinality max="1" min="0"/>
+	<solitaryFeature name="_r_47">
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="113">
+	<cardinality max="1" min="1"/>
+	<solitaryFeature name="_r_48">
+		<binaryRelation name="114">
+		<cardinality max="1" min="1"/>
+		<solitaryFeature name="_r_48_49">
+		</solitaryFeature>
+
+		</binaryRelation>
+
+		<binaryRelation name="115">
+		<cardinality max="1" min="1"/>
+		<solitaryFeature name="_r_48_51">
+		</solitaryFeature>
+
+		</binaryRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="116">
+	<cardinality max="1" min="0"/>
+	<solitaryFeature name="_r_52">
+		<binaryRelation name="117">
+		<cardinality max="1" min="1"/>
+		<solitaryFeature name="_r_52_54">
+		</solitaryFeature>
+
+		</binaryRelation>
+
+		<binaryRelation name="118">
+		<cardinality max="1" min="1"/>
+		<solitaryFeature name="_r1_52_55">
+		</solitaryFeature>
+
+		</binaryRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="119">
+	<cardinality max="1" min="0"/>
+	<solitaryFeature name="_r_56">
+		<binaryRelation name="120">
+		<cardinality max="1" min="1"/>
+		<solitaryFeature name="_r_56_57">
+		</solitaryFeature>
+
+		</binaryRelation>
+
+		<binaryRelation name="121">
+		<cardinality max="1" min="1"/>
+		<solitaryFeature name="_r_56_58">
+		</solitaryFeature>
+
+		</binaryRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+</feature>
+<requires feature="_r_56" name="constraint_6" requires="_r_48"/>
+<requires feature="_r_52" name="constraint_5" requires="_r_48"/>
+<requires feature="_r_45" name="constraint_2" requires="_r_35_36_39"/>
+</feature-model>

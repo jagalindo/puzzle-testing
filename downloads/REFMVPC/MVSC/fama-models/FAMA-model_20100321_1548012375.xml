@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature-model xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.tdg-seville.info/benavides/featuremodelling/feature-model.xsd">
+<feature name="Project Portal Suite">
+	<binaryRelation name="352">
+	<cardinality max="1" min="1"/>
+	<solitaryFeature name="_r_1">
+		<binaryRelation name="353">
+		<cardinality max="1" min="0"/>
+		<solitaryFeature name="_r_1_9">
+		</solitaryFeature>
+
+		</binaryRelation>
+
+		<binaryRelation name="354">
+		<cardinality max="1" min="0"/>
+		<solitaryFeature name="_r_1_13">
+		</solitaryFeature>
+
+		</binaryRelation>
+
+		<binaryRelation name="355">
+		<cardinality max="1" min="0"/>
+		<solitaryFeature name="_r_1_14">
+		</solitaryFeature>
+
+		</binaryRelation>
+
+		<binaryRelation name="356">
+		<cardinality max="1" min="1"/>
+		<solitaryFeature name="_r_1_15">
+			<binaryRelation name="357">
+			<cardinality max="1" min="1"/>
+			<solitaryFeature name="_r_1_15_16">
+			</solitaryFeature>
+
+			</binaryRelation>
+
+			<binaryRelation name="358">
+			<cardinality max="1" min="0"/>
+			<solitaryFeature name="_r_1_15_17">
+			</solitaryFeature>
+
+			</binaryRelation>
+
+			<binaryRelation name="359">
+			<cardinality max="1" min="0"/>
+			<solitaryFeature name="_r_1_15_18">
+			</solitaryFeature>
+
+			</binaryRelation>
+
+			<binaryRelation name="360">
+			<cardinality max="1" min="0"/>
+			<solitaryFeature name="_r_1_15_20">
+			</solitaryFeature>
+
+			</binaryRelation>
+
+		</solitaryFeature>
+
+		</binaryRelation>
+
+		<binaryRelation name="361">
+		<cardinality max="1" min="0"/>
+		<solitaryFeature name="_r_1_21">
+		</solitaryFeature>
+
+		</binaryRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="362">
+	<cardinality max="1" min="0"/>
+	<solitaryFeature name="_r_2">
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="363">
+	<cardinality max="1" min="0"/>
+	<solitaryFeature name="_r_3">
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="364">
+	<cardinality max="1" min="0"/>
+	<solitaryFeature name="_r_4">
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="365">
+	<cardinality max="1" min="0"/>
+	<solitaryFeature name="_r_5">
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="366">
+	<cardinality max="1" min="0"/>
+	<solitaryFeature name="_r_6">
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="367">
+	<cardinality max="1" min="0"/>
+	<solitaryFeature name="_r_7">
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="368">
+	<cardinality max="1" min="0"/>
+	<solitaryFeature name="_r_8">
+	</solitaryFeature>
+
+	</binaryRelation>
+
+</feature>
+</feature-model>

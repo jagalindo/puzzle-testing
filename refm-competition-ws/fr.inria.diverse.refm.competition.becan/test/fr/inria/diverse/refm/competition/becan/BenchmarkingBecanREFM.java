@@ -33,6 +33,10 @@ public class BenchmarkingBecanREFM {
 		finalInstance = 5;
 	}
 	
+	// ---------------------------------------------------
+	// Test cases
+	// ---------------------------------------------------
+	
 	@Test
 	public void executeBenchmark() throws Exception{
 		for (int i = initialInstance; i <= finalInstance; i++) {
@@ -40,7 +44,4 @@ public class BenchmarkingBecanREFM {
 			(new PrintUtils()).printFitness(result);
 		}
 	}
-
-	
-	
 }

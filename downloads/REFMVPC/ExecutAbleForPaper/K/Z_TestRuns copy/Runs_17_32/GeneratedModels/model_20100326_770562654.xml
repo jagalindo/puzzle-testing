@@ -1,0 +1,45 @@
+<feature_model name="Handle_bars">
+<feature_tree>
+:r Handle_bars (Handle_bars)
+	:m Bicycle (Bicycle)
+	:m Saddle (Saddle)
+	:m Frame (Frame)
+	:m Wheels (Wheels)
+	:m Color (Color)
+	:o Maintenance_plan (Maintenance_plan)
+		:g [1, 1]
+			: lifetime (lifetime)
+			: f2_years (f2_years)
+			: f3_years (f3_years)
+	:o Pedals (Pedals)
+	:o Gears (Gears)
+		:o Rear (Rear)
+			:o Front (Front)
+	:o Warranty (Warranty)
+		:g [1, 1]
+			: d3_years (d3_years)
+			: d2_years (d2_years)
+			: d1_year (d1_year)
+	:g [1, 1]
+		: Carbon (Carbon)
+			:g [1, 1]
+				: White (White)
+				: Black (Black)
+				: Red (Red)
+		: Iron (Iron)
+		: Aluminum (Aluminum)
+	:g [1, 1]
+		: Red2 (Red2)
+		: Blue (Blue)
+		: Green (Green)
+</feature_tree>
+<constraints>
+constraint_1:~Carbon or Red2
+constraint_2:~Green or ~White
+constraint_3:~Green or ~Black
+constraint_4:~Green or ~Red
+constraint_5:~Blue or ~White
+constraint_6:~Blue or ~Black
+constraint_7:~Blue or ~Red
+</constraints>
+</feature_model>

@@ -1,0 +1,29 @@
+<!-- This model was created online using SPLOT's Feature Model Editor (http://www.splot-research.org) on Thu, Oct 27, 2011 - 8:09 AM  -->
+<feature_model name="rtrt">
+<meta>
+<data name="description">rtr</data>
+<data name="creator">tt</data>
+<data name="address"></data>
+<data name="email">yy</data>
+<data name="phone"></data>
+<data name="website"></data>
+<data name="organization">ere</data>
+<data name="department"></data>
+<data name="date"></data>
+<data name="reference"></data>
+</meta>
+<feature_tree>
+:r _r(_r)
+	:m _r_1(_r_1)
+		:o _r_1_2(_r_1_2)
+	:m _r_3(_r_3)
+	:m _r_4(_r_4)
+		:o _r_4_5(_r_4_5)
+			:o _r_4_5_6(_r_4_5_6)
+			:o _r_4_5_7(_r_4_5_7)
+	:m _r_8(_r_8)
+	:o _r_9(_r_9)
+</feature_tree>
+<constraints>
+</constraints>
+</feature_model>

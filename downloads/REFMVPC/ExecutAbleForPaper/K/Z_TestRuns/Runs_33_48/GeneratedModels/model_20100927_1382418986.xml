@@ -1,0 +1,19 @@
+<feature_model name="Phone">
+<feature_tree>
+:r Phone (Phone)
+	:g [1, *]
+		: OS2 (OS2)
+			:m FeaturePhone (FeaturePhone)
+			:g [1, *]
+				: WIPI (WIPI)
+				: Brew (Brew)
+		: OS1 (OS1)
+			:m Smart_Phone (Smart_Phone)
+			:g [1, *]
+				: Mac (Mac)
+				: WindowMobile (WindowMobile)
+				: Android (Android)
+</feature_tree>
+<constraints>
+</constraints>
+</feature_model>

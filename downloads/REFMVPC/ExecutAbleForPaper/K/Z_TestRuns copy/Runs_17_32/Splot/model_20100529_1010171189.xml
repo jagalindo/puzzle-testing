@@ -1,0 +1,44 @@
+<!-- This model was created online using SPLOT's Feature Model Editor (http://www.splot-research.org) on Sat, May 29, 2010 - 12:54 PM  -->
+<feature_model name="JCalc_LPS">
+<meta>
+<data name="description">Feature Model of JCalc</data>
+<data name="creator">Walker</data>
+<data name="address"></data>
+<data name="email">walkerataide@gmail.com</data>
+<data name="phone"></data>
+<data name="website"></data>
+<data name="organization">UFAL</data>
+<data name="department"></data>
+<data name="date"></data>
+<data name="reference"></data>
+</meta>
+<feature_tree>
+:r JCalc(JCalc)
+	:m LANG(LANG)
+		:g (_r_2_3) [1,1] 
+			: PT_BR(PT_BR)
+			: EN(EN)
+	:m MENU(MENU)
+		:m FILE(FILE)
+		:m HELP(HELP)
+		:o EDIT(EDIT)
+		:o SAVE(SAVE)
+	:o LOOKANDFEEL(LOOKANDFEEL)
+		:g (_r_11_12) [1,1] 
+			: Metal(Metal)
+			: System(System)
+			: Motif(Motif)
+			: GTK(GTK)
+			: Windows(Windows)
+	:o ANALYZER(ANALYZER)
+	:o PERFORMANCE(PERFORMANCE)
+	:m DEVICE(DEVICE)
+		:g (_r_18_19) [1,1] 
+			: Z6(Z6)
+			: Milestone(Milestone)
+			: PC(PC)
+	:o COMMA(COMMA)
+</feature_tree>
+<constraints>
+</constraints>
+</feature_model>

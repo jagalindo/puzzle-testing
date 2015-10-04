@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature-model xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.tdg-seville.info/benavides/featuremodelling/feature-model.xsd">
+<feature name="Mobile Games">
+	<binaryRelation name="223">
+	<cardinality max="1" min="1"/>
+	<solitaryFeature name="_r_3">
+		<setRelation name="224">
+		<cardinality max="4" min="1"/>
+		<groupedFeature name="_r_3_29_30">
+		</groupedFeature>
+		<groupedFeature name="_r_3_29_32">
+		</groupedFeature>
+		<groupedFeature name="_r_3_29_33">
+		</groupedFeature>
+		<groupedFeature name="_r_3_29_34">
+		</groupedFeature>
+		</setRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="225">
+	<cardinality max="1" min="0"/>
+	<solitaryFeature name="_r_9">
+		<binaryRelation name="226">
+		<cardinality max="1" min="0"/>
+		<solitaryFeature name="_r_9_10">
+		</solitaryFeature>
+
+		</binaryRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="227">
+	<cardinality max="1" min="0"/>
+	<solitaryFeature name="_r_11">
+		<binaryRelation name="228">
+		<cardinality max="1" min="0"/>
+		<solitaryFeature name="_r_11_13">
+		</solitaryFeature>
+
+		</binaryRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="229">
+	<cardinality max="1" min="0"/>
+	<solitaryFeature name="_r_17">
+		<binaryRelation name="230">
+		<cardinality max="1" min="0"/>
+		<solitaryFeature name="_r_17_19">
+		</solitaryFeature>
+
+		</binaryRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="231">
+	<cardinality max="1" min="0"/>
+	<solitaryFeature name="_r_20">
+		<binaryRelation name="232">
+		<cardinality max="1" min="0"/>
+		<solitaryFeature name="_r_20_22">
+		</solitaryFeature>
+
+		</binaryRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="233">
+	<cardinality max="1" min="0"/>
+	<solitaryFeature name="_r_23">
+		<binaryRelation name="234">
+		<cardinality max="1" min="0"/>
+		<solitaryFeature name="_r_23_24">
+		</solitaryFeature>
+
+		</binaryRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+</feature>
+<!-- constraint_1: _r_3_29_30 or _r_3_29_32 or _r_3_29_33 or _r_3_29_34 or _r_3 or _r_9_10 or _r_9 or _r_11_13 or _r_11 or _r_17_19 or _r_17 or _r_20_22 or _r_20 or _r_23_24 or _r_23 or _r -->
+</feature-model>

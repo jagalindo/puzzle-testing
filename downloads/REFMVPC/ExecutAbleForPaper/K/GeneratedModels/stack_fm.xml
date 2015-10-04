@@ -1,0 +1,27 @@
+<feature_model name="Stack">
+<feature_tree>
+:r Stack (Stack)
+	:m Element_Type (Element_Type)
+	:o Counter (Counter)
+	:o Optimization (Optimization)
+		:g [1, 1]
+			: Speed (Speed)
+			: Memory_Usage (Memory_Usage)
+	:o Size (Size)
+		:g [1, 1]
+			: Fixed (Fixed)
+				:m Value (Value)
+			: Dynamic (Dynamic)
+	:o Additional_Features (Additional_Features)
+		:g [1, *]
+			: Type_Check (Type_Check)
+			: Bounds_Check (Bounds_Check)
+			: Thread_Safety (Thread_Safety)
+	:g [1, 1]
+		: String (String)
+		: Float (Float)
+		: Integer (Integer)
+</feature_tree>
+<constraints>
+</constraints>
+</feature_model>

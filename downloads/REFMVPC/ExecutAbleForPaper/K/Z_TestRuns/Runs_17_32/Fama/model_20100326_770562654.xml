@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature-model xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.tdg-seville.info/benavides/featuremodelling/feature-model.xsd">
+<feature name="Bicycle">
+	<binaryRelation name="45">
+	<cardinality max="1" min="1"/>
+	<solitaryFeature name="Frame">
+		<setRelation name="46">
+		<cardinality max="1" min="1"/>
+		<groupedFeature name="Iron">
+		</groupedFeature>
+		<groupedFeature name="Aluminum">
+		</groupedFeature>
+		<groupedFeature name="Carbon">
+				<setRelation name="47">
+				<cardinality max="1" min="1"/>
+				<groupedFeature name="White">
+				</groupedFeature>
+				<groupedFeature name="Red">
+				</groupedFeature>
+				<groupedFeature name="Black">
+				</groupedFeature>
+				</setRelation>
+
+		</groupedFeature>
+		</setRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="48">
+	<cardinality max="1" min="0"/>
+	<solitaryFeature name="Gears">
+		<binaryRelation name="49">
+		<cardinality max="1" min="0"/>
+		<solitaryFeature name="Front">
+		</solitaryFeature>
+
+		</binaryRelation>
+
+		<binaryRelation name="50">
+		<cardinality max="1" min="0"/>
+		<solitaryFeature name="Rear">
+		</solitaryFeature>
+
+		</binaryRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="51">
+	<cardinality max="1" min="1"/>
+	<solitaryFeature name="Wheels">
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="52">
+	<cardinality max="1" min="1"/>
+	<solitaryFeature name="Saddle">
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="53">
+	<cardinality max="1" min="1"/>
+	<solitaryFeature name="Color">
+		<setRelation name="54">
+		<cardinality max="1" min="1"/>
+		<groupedFeature name="Red2">
+		</groupedFeature>
+		<groupedFeature name="Green">
+		</groupedFeature>
+		<groupedFeature name="Blue">
+		</groupedFeature>
+		</setRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="55">
+	<cardinality max="1" min="1"/>
+	<solitaryFeature name="Handle_bars">
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="56">
+	<cardinality max="1" min="0"/>
+	<solitaryFeature name="Pedals">
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="57">
+	<cardinality max="1" min="0"/>
+	<solitaryFeature name="Warranty">
+		<setRelation name="58">
+		<cardinality max="1" min="1"/>
+		<groupedFeature name="d1_year">
+		</groupedFeature>
+		<groupedFeature name="d2_years">
+		</groupedFeature>
+		<groupedFeature name="d3_years">
+		</groupedFeature>
+		</setRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="59">
+	<cardinality max="1" min="0"/>
+	<solitaryFeature name="Maintenance_plan">
+		<setRelation name="60">
+		<cardinality max="1" min="1"/>
+		<groupedFeature name="f2_years">
+		</groupedFeature>
+		<groupedFeature name="f3_years">
+		</groupedFeature>
+		<groupedFeature name="lifetime">
+		</groupedFeature>
+		</setRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+</feature>
+<requires feature="Front" name="constraint_1" requires="Rear"/>
+<requires feature="Carbon" name="constraint_3" requires="Red2"/>
+</feature-model>

@@ -1,0 +1,43 @@
+<!-- This model was created online using SPLOT's Feature Model Editor (http://www.splot-research.org) on Thu, Apr 19, 2012 - 7:47 PM  -->
+<feature_model name="Jogo de Engenharia de Software">
+<meta>
+<data name="description">Um jogo de cartas</data>
+<data name="creator">Carlos Souza</data>
+<data name="address"></data>
+<data name="email">carlos.garcia@dcc.ufmg.br</data>
+<data name="phone"></data>
+<data name="website"></data>
+<data name="organization">UFMG</data>
+<data name="department"></data>
+<data name="date"></data>
+<data name="reference"></data>
+</meta>
+<feature_tree>
+:r _r(_r)
+	:m _r_1(_r_1)
+	:m _r_2(_r_2)
+	:m _r_3(_r_3)
+	:g (_r_4) [1,1] 
+		: _r_4_5(_r_4_5)
+		: _r_4_6(_r_4_6)
+			:g (_r_4_6_7) [1,1] 
+				: _r_4_6_7_8(_r_4_6_7_8)
+				: _r_4_6_7_10(_r_4_6_7_10)
+	:o _r_12(_r_12)
+	:m _r_13(_r_13)
+		:o _r_13_16(_r_13_16)
+			:g (_r_13_16_17) [1,*] 
+				: _r_13_16_17_18(_r_13_16_17_18)
+				: _r_13_16_17_19(_r_13_16_17_19)
+				: _r_13_16_17_20(_r_13_16_17_20)
+		:m _r_13_21(_r_13_21)
+		:o _r_13_22(_r_13_22)
+		:o _r_13_23(_r_13_23)
+		:o _r_13_24(_r_13_24)
+		:o _r_13_25(_r_13_25)
+		:o _r_13_26(_r_13_26)
+</feature_tree>
+<constraints>
+constraint_3:~_r_4_6 or _r_12
+</constraints>
+</feature_model>

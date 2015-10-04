@@ -1,0 +1,22 @@
+<feature_model name="Aircraft">
+<feature_tree>
+:r Aircraft (Aircraft)
+	:m Materials (Materials)
+	:m Wing (Wing)
+	:o Engine (Engine)
+		:g [1, 1]
+			: Jet (Jet)
+			: Piston (Piston)
+	:g [1, *]
+		: Cloth (Cloth)
+		: Metal (Metal)
+		: Wood (Wood)
+		: Plastic (Plastic)
+	:g [1, *]
+		: Shoulder (Shoulder)
+		: Low (Low)
+		: High (High)
+</feature_tree>
+<constraints>
+</constraints>
+</feature_model>

@@ -1,0 +1,37 @@
+<!-- This model was created online using SPLOT's Feature Model Editor (http://www.splot-research.org) on Tue, Nov 9, 2010 - 11:27 PM  -->
+<feature_model name="Coff Feature Model">
+<meta>
+<data name="description">Feature model for the Coff framework</data>
+<data name="creator">Társis Wanderley Toledo</data>
+<data name="address"></data>
+<data name="email">tarsiswt@gmail.com</data>
+<data name="phone"></data>
+<data name="website"></data>
+<data name="organization">UFAL</data>
+<data name="department"></data>
+<data name="date"></data>
+<data name="reference"></data>
+</meta>
+<feature_tree>
+:r _r(_r)
+	:m _r_6(_r_6)
+		:g (_r_6_12) [1,*] 
+			: _r_6_12_13(_r_6_12_13)
+			: _r_6_12_14(_r_6_12_14)
+		:g (_r_6_16) [1,*] 
+			: _r_6_16_17(_r_6_16_17)
+			: _r_6_16_18(_r_6_16_18)
+			: _r_6_16_19(_r_6_16_19)
+		:o _r_6_20(_r_6_20)
+	:m _r_9(_r_9)
+		:g (_r_9_21) [1,*] 
+			: _r_9_21_22(_r_9_21_22)
+			: _r_9_21_23(_r_9_21_23)
+	:o _r_10(_r_10)
+		:o _r_10_15(_r_10_15)
+	:o _r_11(_r_11)
+	:o _r_24(_r_24)
+</feature_tree>
+<constraints>
+</constraints>
+</feature_model>

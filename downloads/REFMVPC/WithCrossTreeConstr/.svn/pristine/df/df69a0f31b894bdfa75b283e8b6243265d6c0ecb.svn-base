@@ -1,0 +1,100 @@
+1Or_2Attr:
+root: 	-or: A,B
+
+
+2Or_je_2Attr:
+root:	-or: A,B
+	-or: C,D
+
+1_Or_3_Attr_1Or_2Attr:
+root:	-or: A,B,C
+	-or: D,E
+
+1_Or_2Attr_1Opt:
+root:	or: A,B
+	opt: C
+
+test1:
+root:	or: A,B
+A:	or: C,D
+B:	or: E,F
+
+test2:
+root:	or: A,B
+A:	or: C,D
+B:	or: E,F
+	opt: G
+
+test3:
+root:	or: A,B
+A:	opt: C
+C:	or: D,E
+
+test4: 
+root:	or: A,B
+A:	opt: C
+C:	or: D,E
+	opt: F
+
+test5:
+root: 	-or: A,B
+	-mand: D
+A:	-mand: C
+
+test6:
+root:	-or: A,B
+	-or: C,D
+A:	-mand: E
+D:	-mand: F
+
+test7:
+root:	or: A,B
+	opt: C
+	mand: D,E
+B:	mand: I
+C:	mand: F,G,H
+
+test8:
+root:	or: A,B
+	mand: G
+A:	or: C,D
+	mand: H
+B:	or: E,F
+F:	mand: I
+
+test9: 
+rot:	xor: A, B
+
+test10:
+root:	mand: A
+	xor: B, C
+
+test11:
+root:	xor: A, B
+	xor: C, D
+
+
+test12:
+root:	xor: A, B
+	xor: C, D, E
+
+test13:
+root:	xor: A, B
+	xor: C, D
+A:	xor: E, F
+B:	xor: G, H
+
+test14:
+root:	xor: A, B
+	xor: C, D
+A:	xor: E, F
+B:	xor: G, H
+H:	opt: I
+
+
+test15:
+root:	or: A, B
+	xor: C, D
+	opt: E
+
+Consider Special Case if A has two or more children wich are optional!

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Package xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_MzW_lzdhEd-rFIeffqJKIA" name="BFS" visibility="public">
+  <packageImport xmi:id="_MzW_mDdhEd-rFIeffqJKIA">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Class" xmi:id="_MzW_mTdhEd-rFIeffqJKIA" name="GlobalVarsWrapper" visibility="public" isAbstract="false">
+    <ownedAttribute xmi:id="_MzW_mjdhEd-rFIeffqJKIA" name="Queue" visibility="private" type="_MzgwWjdhEd-rFIeffqJKIA" isReadOnly="false"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_MzW_mzdhEd-rFIeffqJKIA" name="Vertex" visibility="public" isAbstract="false">
+    <ownedAttribute xmi:id="_MzW_nDdhEd-rFIeffqJKIA" name="visited" visibility="private" isReadOnly="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+    </ownedAttribute>
+    <ownedBehavior xmi:type="uml:StateMachine" xmi:id="_MzW_nTdhEd-rFIeffqJKIA" name="SMVertex" visibility="public" isAbstract="false">
+      <region xmi:id="_MzW_njdhEd-rFIeffqJKIA" name="Region1">
+        <subvertex xmi:type="uml:Pseudostate" xmi:id="_MzW_nzdhEd-rFIeffqJKIA"/>
+        <subvertex xmi:type="uml:FinalState" xmi:id="_MzW_oDdhEd-rFIeffqJKIA"/>
+        <subvertex xmi:type="uml:State" xmi:id="_MzW_oTdhEd-rFIeffqJKIA" name="Unvisited"/>
+        <subvertex xmi:type="uml:State" xmi:id="_MzW_ojdhEd-rFIeffqJKIA" name="Visited"/>
+        <transition xmi:id="_MzW_ozdhEd-rFIeffqJKIA" name="init_vertex" target="_MzW_oTdhEd-rFIeffqJKIA" source="_MzW_nzdhEd-rFIeffqJKIA"/>
+        <transition xmi:id="_MzW_pDdhEd-rFIeffqJKIA" name="init_vertex" target="_MzW_ojdhEd-rFIeffqJKIA" source="_MzW_oTdhEd-rFIeffqJKIA"/>
+        <transition xmi:id="_MzW_pTdhEd-rFIeffqJKIA" target="_MzW_oDdhEd-rFIeffqJKIA" source="_MzW_ojdhEd-rFIeffqJKIA"/>
+      </region>
+    </ownedBehavior>
+    <ownedOperation xmi:id="_MzW_pjdhEd-rFIeffqJKIA" name="VertexConstructor"/>
+    <ownedOperation xmi:id="_MzW_pzdhEd-rFIeffqJKIA" name="init_vertex">
+      <ownedParameter xmi:id="_MzW_qDdhEd-rFIeffqJKIA" name="v1" type="_MzgwQTdhEd-rFIeffqJKIA"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_MzW_qTdhEd-rFIeffqJKIA" name="nodeSearch">
+      <ownedParameter xmi:id="_MzW_qjdhEd-rFIeffqJKIA" name="w2" type="_MzgwQTdhEd-rFIeffqJKIA"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_MzgwQDdhEd-rFIeffqJKIA" name="display"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_MzgwQTdhEd-rFIeffqJKIA" name="WorkSpace" visibility="public" isAbstract="false">
+    <ownedOperation xmi:id="_MzgwQjdhEd-rFIeffqJKIA" name="init_vertex">
+      <ownedParameter xmi:id="_MzgwQzdhEd-rFIeffqJKIA" name="v1" type="_MzW_mzdhEd-rFIeffqJKIA"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_MzgwRDdhEd-rFIeffqJKIA" name="preVisitAction">
+      <ownedParameter xmi:id="_MzgwRTdhEd-rFIeffqJKIA" name="v2" type="_MzW_mzdhEd-rFIeffqJKIA"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_MzgwRjdhEd-rFIeffqJKIA" name="postVisitAction">
+      <ownedParameter xmi:id="_MzgwRzdhEd-rFIeffqJKIA" name="v3" type="_MzW_mzdhEd-rFIeffqJKIA"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_MzgwSDdhEd-rFIeffqJKIA" name="nextRegionAction">
+      <ownedParameter xmi:id="_MzgwSTdhEd-rFIeffqJKIA" name="v4" type="_MzW_mzdhEd-rFIeffqJKIA"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_MzgwSjdhEd-rFIeffqJKIA" name="checkNeighborAction">
+      <ownedParameter xmi:id="_MzgwSzdhEd-rFIeffqJKIA" name="vsource" type="_MzW_mzdhEd-rFIeffqJKIA"/>
+      <ownedParameter xmi:id="_MzgwTDdhEd-rFIeffqJKIA" name="vtarget" type="_MzW_mzdhEd-rFIeffqJKIA"/>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_MzgwTTdhEd-rFIeffqJKIA" name="Graph" visibility="public" isAbstract="false">
+    <ownedBehavior xmi:type="uml:StateMachine" xmi:id="_MzgwTjdhEd-rFIeffqJKIA" name="SMGraph" visibility="public" isAbstract="false">
+      <region xmi:id="_MzgwTzdhEd-rFIeffqJKIA" name="Region1">
+        <subvertex xmi:type="uml:Pseudostate" xmi:id="_MzgwUDdhEd-rFIeffqJKIA"/>
+        <subvertex xmi:type="uml:State" xmi:id="_MzgwUTdhEd-rFIeffqJKIA" name="init"/>
+        <subvertex xmi:type="uml:State" xmi:id="_MzgwUjdhEd-rFIeffqJKIA" name="BFSearching"/>
+        <subvertex xmi:type="uml:FinalState" xmi:id="_MzgwUzdhEd-rFIeffqJKIA"/>
+        <transition xmi:id="_MzgwVDdhEd-rFIeffqJKIA" target="_MzgwUTdhEd-rFIeffqJKIA" source="_MzgwUDdhEd-rFIeffqJKIA"/>
+        <transition xmi:id="_MzgwVTdhEd-rFIeffqJKIA" target="_MzgwUjdhEd-rFIeffqJKIA" source="_MzgwUTdhEd-rFIeffqJKIA"/>
+        <transition xmi:id="_MzgwVjdhEd-rFIeffqJKIA" target="_MzgwUzdhEd-rFIeffqJKIA" source="_MzgwUjdhEd-rFIeffqJKIA"/>
+      </region>
+    </ownedBehavior>
+    <ownedOperation xmi:id="_MzgwVzdhEd-rFIeffqJKIA" name="GraphSearch">
+      <ownedParameter xmi:id="_MzgwWDdhEd-rFIeffqJKIA" name="w" type="_MzgwQTdhEd-rFIeffqJKIA"/>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_MzgwWTdhEd-rFIeffqJKIA" name="PrimitiveTypes" visibility="public">
+    <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_MzgwWjdhEd-rFIeffqJKIA" name="LinkedList" visibility="public"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Collaboration" xmi:id="_MzgwWzdhEd-rFIeffqJKIA" name="Collaboration1" visibility="public">
+    <ownedBehavior xmi:type="uml:Interaction" xmi:id="_MzgwXDdhEd-rFIeffqJKIA" name="GraphSearchScenario" visibility="public" isAbstract="false">
+      <ownedConnector xmi:id="_MzgwXTdhEd-rFIeffqJKIA">
+        <end xmi:id="_MzgwXjdhEd-rFIeffqJKIA" role="_MzgweTdhEd-rFIeffqJKIA"/>
+        <end xmi:id="_MzgwXzdhEd-rFIeffqJKIA" role="_MzgweTdhEd-rFIeffqJKIA"/>
+      </ownedConnector>
+      <ownedConnector xmi:id="_MzgwYDdhEd-rFIeffqJKIA">
+        <end xmi:id="_MzgwYTdhEd-rFIeffqJKIA" role="_MzgwejdhEd-rFIeffqJKIA"/>
+        <end xmi:id="_MzgwYjdhEd-rFIeffqJKIA" role="_MzgweTdhEd-rFIeffqJKIA"/>
+      </ownedConnector>
+      <lifeline xmi:id="_MzgwYzdhEd-rFIeffqJKIA" name="graph" represents="_MzgweTdhEd-rFIeffqJKIA" coveredBy="_MzgwZTdhEd-rFIeffqJKIA _MzgwZjdhEd-rFIeffqJKIA _MzgwZzdhEd-rFIeffqJKIA _MzgwaDdhEd-rFIeffqJKIA _MzgwaTdhEd-rFIeffqJKIA _MzgwajdhEd-rFIeffqJKIA _MzgwcDdhEd-rFIeffqJKIA _MzgwdDdhEd-rFIeffqJKIA"/>
+      <lifeline xmi:id="_MzgwZDdhEd-rFIeffqJKIA" name="vertexIter" represents="_MzgwejdhEd-rFIeffqJKIA" coveredBy="_MzgwajdhEd-rFIeffqJKIA _MzgwcTdhEd-rFIeffqJKIA _MzgwcjdhEd-rFIeffqJKIA _MzgwczdhEd-rFIeffqJKIA"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_MzgwZTdhEd-rFIeffqJKIA" covered="_MzgwYzdhEd-rFIeffqJKIA" event="_MzgwfTdhEd-rFIeffqJKIA" message="_MzgwdTdhEd-rFIeffqJKIA"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_MzgwZjdhEd-rFIeffqJKIA" covered="_MzgwYzdhEd-rFIeffqJKIA" event="_MzgwfjdhEd-rFIeffqJKIA" message="_MzgwdTdhEd-rFIeffqJKIA"/>
+      <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_MzgwZzdhEd-rFIeffqJKIA" covered="_MzgwYzdhEd-rFIeffqJKIA" start="_MzgwZjdhEd-rFIeffqJKIA" finish="_MzgwaDdhEd-rFIeffqJKIA"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_MzgwaDdhEd-rFIeffqJKIA" covered="_MzgwYzdhEd-rFIeffqJKIA" event="_MzgwfTdhEd-rFIeffqJKIA" message="_MzgwdjdhEd-rFIeffqJKIA"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_MzgwaTdhEd-rFIeffqJKIA" covered="_MzgwYzdhEd-rFIeffqJKIA" event="_MzgwfjdhEd-rFIeffqJKIA" message="_MzgwdjdhEd-rFIeffqJKIA"/>
+      <fragment xmi:type="uml:CombinedFragment" xmi:id="_MzgwajdhEd-rFIeffqJKIA" covered="_MzgwYzdhEd-rFIeffqJKIA _MzgwZDdhEd-rFIeffqJKIA" interactionOperator="loop">
+        <operand xmi:id="_MzgwazdhEd-rFIeffqJKIA">
+          <guard xmi:id="_MzgwbDdhEd-rFIeffqJKIA" visibility="public">
+            <specification xmi:type="uml:OpaqueExpression" xmi:id="_MzgwbTdhEd-rFIeffqJKIA" visibility="public"/>
+            <minint xmi:type="uml:LiteralInteger" xmi:id="_MzgwbjdhEd-rFIeffqJKIA" visibility="public"/>
+            <maxint xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_MzgwbzdhEd-rFIeffqJKIA" visibility="public" value="*"/>
+          </guard>
+          <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_MzgwcDdhEd-rFIeffqJKIA" covered="_MzgwYzdhEd-rFIeffqJKIA" event="_MzgwfzdhEd-rFIeffqJKIA" message="_MzgwdzdhEd-rFIeffqJKIA"/>
+          <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_MzgwcTdhEd-rFIeffqJKIA" covered="_MzgwZDdhEd-rFIeffqJKIA" event="_MzgwgDdhEd-rFIeffqJKIA" message="_MzgwdzdhEd-rFIeffqJKIA"/>
+          <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_MzgwcjdhEd-rFIeffqJKIA" covered="_MzgwZDdhEd-rFIeffqJKIA" start="_MzgwcTdhEd-rFIeffqJKIA" finish="_MzgwczdhEd-rFIeffqJKIA"/>
+          <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_MzgwczdhEd-rFIeffqJKIA" covered="_MzgwZDdhEd-rFIeffqJKIA" event="_MzgwfzdhEd-rFIeffqJKIA" message="_MzgweDdhEd-rFIeffqJKIA"/>
+          <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_MzgwdDdhEd-rFIeffqJKIA" covered="_MzgwYzdhEd-rFIeffqJKIA" event="_MzgwgDdhEd-rFIeffqJKIA" message="_MzgweDdhEd-rFIeffqJKIA"/>
+        </operand>
+      </fragment>
+      <message xmi:id="_MzgwdTdhEd-rFIeffqJKIA" name="getVertices" receiveEvent="_MzgwZjdhEd-rFIeffqJKIA" sendEvent="_MzgwZTdhEd-rFIeffqJKIA" connector="_MzgwXTdhEd-rFIeffqJKIA"/>
+      <message xmi:id="_MzgwdjdhEd-rFIeffqJKIA" name="getVertices" messageSort="reply" receiveEvent="_MzgwaTdhEd-rFIeffqJKIA" sendEvent="_MzgwaDdhEd-rFIeffqJKIA" connector="_MzgwXTdhEd-rFIeffqJKIA"/>
+      <message xmi:id="_MzgwdzdhEd-rFIeffqJKIA" name="hasNext" receiveEvent="_MzgwcTdhEd-rFIeffqJKIA" sendEvent="_MzgwcDdhEd-rFIeffqJKIA" connector="_MzgwYDdhEd-rFIeffqJKIA"/>
+      <message xmi:id="_MzgweDdhEd-rFIeffqJKIA" name="hasNext" messageSort="reply" receiveEvent="_MzgwdDdhEd-rFIeffqJKIA" sendEvent="_MzgwczdhEd-rFIeffqJKIA" connector="_MzgwYDdhEd-rFIeffqJKIA"/>
+    </ownedBehavior>
+    <ownedAttribute xmi:id="_MzgweTdhEd-rFIeffqJKIA" name="graph" type="_MzgwTTdhEd-rFIeffqJKIA" isReadOnly="false"/>
+    <ownedAttribute xmi:id="_MzgwejdhEd-rFIeffqJKIA" name="vertexIter" isReadOnly="false">
+      <type xmi:type="uml:Class" href="Base.uml#_MzgwtjdhEd-rFIeffqJKIA"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_MzgwezdhEd-rFIeffqJKIA" name="SendOperationEvent1" visibility="public"/>
+  <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_MzgwfDdhEd-rFIeffqJKIA" name="ReceiveOperationEvent1" visibility="public"/>
+  <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_MzgwfTdhEd-rFIeffqJKIA" name="SendOperationEvent2" visibility="public"/>
+  <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_MzgwfjdhEd-rFIeffqJKIA" name="ReceiveOperationEvent2" visibility="public"/>
+  <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_MzgwfzdhEd-rFIeffqJKIA" name="SendOperationEvent3" visibility="public">
+    <operation href="Base.uml#_MzgwtzdhEd-rFIeffqJKIA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_MzgwgDdhEd-rFIeffqJKIA" name="ReceiveOperationEvent3" visibility="public">
+    <operation href="Base.uml#_MzgwtzdhEd-rFIeffqJKIA"/>
+  </packagedElement>
+  <profileApplication xmi:id="_MzgwgTdhEd-rFIeffqJKIA">
+    <eAnnotations xmi:id="_MzgwgjdhEd-rFIeffqJKIA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <references xmi:type="ecore:EPackage" href="pathmap://UML_PROFILES/Standard.profile.uml#_yzU58YinEdqtvbnfB2L_5w"/>
+    </eAnnotations>
+    <appliedProfile href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
+  </profileApplication>
+</uml:Package>

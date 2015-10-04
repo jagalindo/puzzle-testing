@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Package xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_LSN-TTpmEd-8T_ltW0W8ew" name="UndirecteWithEdges" visibility="public">
+  <packageImport xmi:id="_LSN-TjpmEd-8T_ltW0W8ew">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Class" xmi:id="_LSN-TzpmEd-8T_ltW0W8ew" name="Edge" visibility="public" isAbstract="false">
+    <ownedAttribute xmi:id="_LSN-UDpmEd-8T_ltW0W8ew" name="vertex" visibility="private" type="_LSN-kzpmEd-8T_ltW0W8ew" isReadOnly="false" association="_LSN-sjpmEd-8T_ltW0W8ew">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_LSN-UTpmEd-8T_ltW0W8ew" visibility="public" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_LSN-UjpmEd-8T_ltW0W8ew" visibility="public"/>
+    </ownedAttribute>
+    <ownedOperation xmi:id="_LSN-UzpmEd-8T_ltW0W8ew" name="EdgeConstructor">
+      <ownedParameter xmi:id="_LSN-VDpmEd-8T_ltW0W8ew" name="the_start" type="_LSN-kzpmEd-8T_ltW0W8ew"/>
+      <ownedParameter xmi:id="_LSN-VTpmEd-8T_ltW0W8ew" name="the_end" type="_LSN-kzpmEd-8T_ltW0W8ew"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_LSN-VjpmEd-8T_ltW0W8ew" name="adjusAdorns">
+      <ownedParameter xmi:id="_LSN-VzpmEd-8T_ltW0W8ew" name="EdgeIfc the_edge"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_LSN-WDpmEd-8T_ltW0W8ew" name="setWeight">
+      <ownedParameter xmi:id="_LSN-WTpmEd-8T_ltW0W8ew" name="weight">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_LSN-WjpmEd-8T_ltW0W8ew" name="getWeight">
+      <ownedParameter xmi:id="_LSN-WzpmEd-8T_ltW0W8ew" name="Parameter1" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_LSN-XDpmEd-8T_ltW0W8ew" name="getOtherVertex">
+      <ownedParameter xmi:id="_LSN-XTpmEd-8T_ltW0W8ew" name="vertex" type="_LSN-kzpmEd-8T_ltW0W8ew"/>
+      <ownedParameter xmi:id="_LSN-XjpmEd-8T_ltW0W8ew" name="Parameter1" type="_LSN-kzpmEd-8T_ltW0W8ew" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_LSN-XzpmEd-8T_ltW0W8ew" name="getStart">
+      <ownedParameter xmi:id="_LSN-YDpmEd-8T_ltW0W8ew" name="Parameter1" type="_LSN-kzpmEd-8T_ltW0W8ew" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_LSN-YTpmEd-8T_ltW0W8ew" name="getEnd">
+      <ownedParameter xmi:id="_LSN-YjpmEd-8T_ltW0W8ew" name="Parameter1" type="_LSN-kzpmEd-8T_ltW0W8ew" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_LSN-YzpmEd-8T_ltW0W8ew" name="display"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_LSN-ZDpmEd-8T_ltW0W8ew" name="Graph" visibility="public" isAbstract="false">
+    <ownedAttribute xmi:id="_LSN-ZTpmEd-8T_ltW0W8ew" name="edge3" visibility="private" type="_LSN-TzpmEd-8T_ltW0W8ew" isReadOnly="false" aggregation="shared" association="_LSN-tjpmEd-8T_ltW0W8ew">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_LSN-ZjpmEd-8T_ltW0W8ew" visibility="public" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_LSN-ZzpmEd-8T_ltW0W8ew" visibility="public"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_LSN-aDpmEd-8T_ltW0W8ew" name="vertex" visibility="private" type="_LSN-kzpmEd-8T_ltW0W8ew" isReadOnly="false" aggregation="shared" association="_LSN-ujpmEd-8T_ltW0W8ew">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_LSN-aTpmEd-8T_ltW0W8ew" visibility="public" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_LSN-ajpmEd-8T_ltW0W8ew" visibility="public"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_LSN-azpmEd-8T_ltW0W8ew" name="isDirected" visibility="private" isStatic="true" isReadOnly="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+      <defaultValue xmi:type="uml:LiteralBoolean" xmi:id="_LSN-bDpmEd-8T_ltW0W8ew" visibility="public">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+      </defaultValue>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_LSN-bTpmEd-8T_ltW0W8ew" name="verticesMap" visibility="private" isReadOnly="false"/>
+    <ownedOperation xmi:id="_LSN-bjpmEd-8T_ltW0W8ew" name="Graph"/>
+    <ownedOperation xmi:id="_LSN-bzpmEd-8T_ltW0W8ew" name="run">
+      <ownedParameter xmi:id="_LSN-cDpmEd-8T_ltW0W8ew" name="s" type="_LSN-kzpmEd-8T_ltW0W8ew"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_LSN-cTpmEd-8T_ltW0W8ew" name="sortEdges">
+      <ownedParameter xmi:id="_LSN-cjpmEd-8T_ltW0W8ew" name="c"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_LSN-czpmEd-8T_ltW0W8ew" name="sortVertices">
+      <ownedParameter xmi:id="_LSN-dDpmEd-8T_ltW0W8ew" name="c"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_LSN-dTpmEd-8T_ltW0W8ew" name="addEdge">
+      <ownedParameter xmi:id="_LSN-djpmEd-8T_ltW0W8ew" name="start" type="_LSN-kzpmEd-8T_ltW0W8ew"/>
+      <ownedParameter xmi:id="_LSN-dzpmEd-8T_ltW0W8ew" name="end" type="_LSN-kzpmEd-8T_ltW0W8ew"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_LSN-eDpmEd-8T_ltW0W8ew" name="addVertex">
+      <ownedParameter xmi:id="_LSN-eTpmEd-8T_ltW0W8ew" name="v" type="_LSN-kzpmEd-8T_ltW0W8ew"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_LSN-ejpmEd-8T_ltW0W8ew" name="findsVertex">
+      <ownedParameter xmi:id="_LSN-ezpmEd-8T_ltW0W8ew" name="the_name" type="_LSN-kzpmEd-8T_ltW0W8ew"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_LSN-fDpmEd-8T_ltW0W8ew" name="getVertices">
+      <ownedParameter xmi:id="_LSN-fTpmEd-8T_ltW0W8ew" name="Parameter1" direction="return">
+        <type xmi:type="uml:Class" href="Base.uml#_LSN9kzpmEd-8T_ltW0W8ew"/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_LSN-fjpmEd-8T_ltW0W8ew" name="getEdges">
+      <ownedParameter xmi:id="_LSN-fzpmEd-8T_ltW0W8ew" name="Parameter1" direction="return">
+        <type xmi:type="uml:Class" href="Base.uml#_LSN9jjpmEd-8T_ltW0W8ew"/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_LSN-gDpmEd-8T_ltW0W8ew" name="findsEdge">
+      <ownedParameter xmi:id="_LSN-gTpmEd-8T_ltW0W8ew" name="theSource" type="_LSN-kzpmEd-8T_ltW0W8ew"/>
+      <ownedParameter xmi:id="_LSN-gjpmEd-8T_ltW0W8ew" name="theTarget" type="_LSN-kzpmEd-8T_ltW0W8ew"/>
+      <ownedParameter xmi:id="_LSN-gzpmEd-8T_ltW0W8ew" name="Parameter1" direction="return">
+        <type xmi:type="uml:Interface" href="Base.uml#_LSN9gDpmEd-8T_ltW0W8ew"/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_LSN-hDpmEd-8T_ltW0W8ew" name="display"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_LSN-hTpmEd-8T_ltW0W8ew" name="Neighbor" visibility="public" isAbstract="false">
+    <ownedAttribute xmi:id="_LSN-hjpmEd-8T_ltW0W8ew" name="vertex" visibility="private" type="_LSN-kzpmEd-8T_ltW0W8ew" isReadOnly="false" association="_LSN-qTpmEd-8T_ltW0W8ew">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_LSN-hzpmEd-8T_ltW0W8ew" visibility="public" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_LSN-iDpmEd-8T_ltW0W8ew" visibility="public"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_LSN-iTpmEd-8T_ltW0W8ew" name="edge" visibility="private" type="_LSN-TzpmEd-8T_ltW0W8ew" isReadOnly="false" association="_LSN-rTpmEd-8T_ltW0W8ew">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_LSN-ijpmEd-8T_ltW0W8ew" visibility="public" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_LSN-izpmEd-8T_ltW0W8ew" visibility="public"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_LSN-jDpmEd-8T_ltW0W8ew" name="vertex2" visibility="private" type="_LSN-kzpmEd-8T_ltW0W8ew" isReadOnly="false" association="_LSN-sTpmEd-8T_ltW0W8ew">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_LSN-jTpmEd-8T_ltW0W8ew" visibility="public" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_LSN-jjpmEd-8T_ltW0W8ew" visibility="public" value="1"/>
+    </ownedAttribute>
+    <ownedOperation xmi:id="_LSN-jzpmEd-8T_ltW0W8ew" name="Neighbor"/>
+    <ownedOperation xmi:id="_LSN-kDpmEd-8T_ltW0W8ew" name="Vertex">
+      <ownedParameter xmi:id="_LSN-kTpmEd-8T_ltW0W8ew" name="v" type="_LSN-kzpmEd-8T_ltW0W8ew"/>
+      <ownedParameter xmi:id="_LSN-kjpmEd-8T_ltW0W8ew" name="e" type="_LSN-TzpmEd-8T_ltW0W8ew"/>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_LSN-kzpmEd-8T_ltW0W8ew" name="Vertex" visibility="public" isAbstract="false">
+    <ownedAttribute xmi:id="_LSN-lDpmEd-8T_ltW0W8ew" name="name" visibility="private" isReadOnly="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_LSN-lTpmEd-8T_ltW0W8ew" name="neighbor" visibility="private" type="_LSN-hTpmEd-8T_ltW0W8ew" isReadOnly="false" aggregation="shared" association="_LSN-sTpmEd-8T_ltW0W8ew">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_LSN-ljpmEd-8T_ltW0W8ew" visibility="public" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_LSN-lzpmEd-8T_ltW0W8ew" visibility="public"/>
+    </ownedAttribute>
+    <ownedOperation xmi:id="_LSN-mDpmEd-8T_ltW0W8ew" name="Vertex"/>
+    <ownedOperation xmi:id="_LSN-mTpmEd-8T_ltW0W8ew" name="VertexConstructor"/>
+    <ownedOperation xmi:id="_LSN-mjpmEd-8T_ltW0W8ew" name="assignName">
+      <ownedParameter xmi:id="_LSN-mzpmEd-8T_ltW0W8ew" name="name">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_LSN-nDpmEd-8T_ltW0W8ew" name="getName">
+      <ownedParameter xmi:id="_LSN-nTpmEd-8T_ltW0W8ew" name="Parameter1" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_LSN-njpmEd-8T_ltW0W8ew" name="getNeighborsObj">
+      <ownedParameter xmi:id="_LSN-nzpmEd-8T_ltW0W8ew" name="Parameter1" type="_LSN-hTpmEd-8T_ltW0W8ew" direction="return">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_LSN-oDpmEd-8T_ltW0W8ew" visibility="public" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_LSN-oTpmEd-8T_ltW0W8ew" visibility="public"/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_LSN-ojpmEd-8T_ltW0W8ew" name="getNeighbors">
+      <ownedParameter xmi:id="_LSN-ozpmEd-8T_ltW0W8ew" name="Parameter1" direction="return">
+        <type xmi:type="uml:Class" href="Base.uml#_LSN9kzpmEd-8T_ltW0W8ew"/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_LSN-pDpmEd-8T_ltW0W8ew" name="display"/>
+    <ownedOperation xmi:id="_LSN-pTpmEd-8T_ltW0W8ew" name="addNeighbor">
+      <ownedParameter xmi:id="_LSN-pjpmEd-8T_ltW0W8ew" name="n" type="_LSN-hTpmEd-8T_ltW0W8ew"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_LSN-pzpmEd-8T_ltW0W8ew" name="getEdges">
+      <ownedParameter xmi:id="_LSN-qDpmEd-8T_ltW0W8ew" name="Parameter1" direction="return">
+        <type xmi:type="uml:Class" href="Base.uml#_LSN9jjpmEd-8T_ltW0W8ew"/>
+      </ownedParameter>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_LSN-qTpmEd-8T_ltW0W8ew" name="end" visibility="public" memberEnd="_LSN-hjpmEd-8T_ltW0W8ew _LSN-qjpmEd-8T_ltW0W8ew">
+    <ownedEnd xmi:id="_LSN-qjpmEd-8T_ltW0W8ew" name="" visibility="private" type="_LSN-hTpmEd-8T_ltW0W8ew" isReadOnly="false" association="_LSN-qTpmEd-8T_ltW0W8ew">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_LSN-qzpmEd-8T_ltW0W8ew" visibility="public" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_LSN-rDpmEd-8T_ltW0W8ew" visibility="public"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_LSN-rTpmEd-8T_ltW0W8ew" name="edge" visibility="public" memberEnd="_LSN-iTpmEd-8T_ltW0W8ew _LSN-rjpmEd-8T_ltW0W8ew">
+    <ownedEnd xmi:id="_LSN-rjpmEd-8T_ltW0W8ew" name="" visibility="private" type="_LSN-hTpmEd-8T_ltW0W8ew" isReadOnly="false" association="_LSN-rTpmEd-8T_ltW0W8ew">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_LSN-rzpmEd-8T_ltW0W8ew" visibility="public" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_LSN-sDpmEd-8T_ltW0W8ew" visibility="public"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_LSN-sTpmEd-8T_ltW0W8ew" name="neighbors" visibility="public" memberEnd="_LSN-lTpmEd-8T_ltW0W8ew _LSN-jDpmEd-8T_ltW0W8ew"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_LSN-sjpmEd-8T_ltW0W8ew" name="start" visibility="public" memberEnd="_LSN-UDpmEd-8T_ltW0W8ew _LSN-szpmEd-8T_ltW0W8ew">
+    <ownedEnd xmi:id="_LSN-szpmEd-8T_ltW0W8ew" name="" visibility="private" type="_LSN-TzpmEd-8T_ltW0W8ew" isReadOnly="false" association="_LSN-sjpmEd-8T_ltW0W8ew">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_LSN-tDpmEd-8T_ltW0W8ew" visibility="public" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_LSN-tTpmEd-8T_ltW0W8ew" visibility="public"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_LSN-tjpmEd-8T_ltW0W8ew" name="edges" visibility="public" memberEnd="_LSN-ZTpmEd-8T_ltW0W8ew _LSN-tzpmEd-8T_ltW0W8ew">
+    <ownedEnd xmi:id="_LSN-tzpmEd-8T_ltW0W8ew" name="" visibility="private" type="_LSN-ZDpmEd-8T_ltW0W8ew" isReadOnly="false" association="_LSN-tjpmEd-8T_ltW0W8ew">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_LSN-uDpmEd-8T_ltW0W8ew" visibility="public" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_LSN-uTpmEd-8T_ltW0W8ew" visibility="public" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_LSN-ujpmEd-8T_ltW0W8ew" name="vertices" visibility="public" memberEnd="_LSN-aDpmEd-8T_ltW0W8ew _LSN-uzpmEd-8T_ltW0W8ew">
+    <ownedEnd xmi:id="_LSN-uzpmEd-8T_ltW0W8ew" name="" visibility="private" type="_LSN-ZDpmEd-8T_ltW0W8ew" isReadOnly="false" association="_LSN-ujpmEd-8T_ltW0W8ew">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_LSN-vDpmEd-8T_ltW0W8ew" visibility="public" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_LSN-vTpmEd-8T_ltW0W8ew" visibility="public" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Collaboration" xmi:id="_LSN-vjpmEd-8T_ltW0W8ew" name="Collaboration1" visibility="public">
+    <ownedBehavior xmi:type="uml:Interaction" xmi:id="_LSN-vzpmEd-8T_ltW0W8ew" name="AddEdge" visibility="public" isAbstract="false">
+      <ownedConnector xmi:id="_LSN-wDpmEd-8T_ltW0W8ew">
+        <end xmi:id="_LSN-wTpmEd-8T_ltW0W8ew" role="_LSN-7zpmEd-8T_ltW0W8ew"/>
+        <end xmi:id="_LSN-wjpmEd-8T_ltW0W8ew" role="_LSN-7zpmEd-8T_ltW0W8ew"/>
+      </ownedConnector>
+      <ownedConnector xmi:id="_LSN-wzpmEd-8T_ltW0W8ew">
+        <end xmi:id="_LSN-xDpmEd-8T_ltW0W8ew" role="_LSN-7zpmEd-8T_ltW0W8ew"/>
+        <end xmi:id="_LSN-xTpmEd-8T_ltW0W8ew" role="_LSN-8DpmEd-8T_ltW0W8ew"/>
+      </ownedConnector>
+      <ownedConnector xmi:id="_LSN-xjpmEd-8T_ltW0W8ew">
+        <end xmi:id="_LSN-xzpmEd-8T_ltW0W8ew" role="_LSN-8TpmEd-8T_ltW0W8ew"/>
+        <end xmi:id="_LSN-yDpmEd-8T_ltW0W8ew" role="_LSN-7zpmEd-8T_ltW0W8ew"/>
+      </ownedConnector>
+      <ownedConnector xmi:id="_LSN-yTpmEd-8T_ltW0W8ew">
+        <end xmi:id="_LSN-yjpmEd-8T_ltW0W8ew" role="_LSN-8jpmEd-8T_ltW0W8ew"/>
+        <end xmi:id="_LSN-yzpmEd-8T_ltW0W8ew" role="_LSN-7zpmEd-8T_ltW0W8ew"/>
+      </ownedConnector>
+      <lifeline xmi:id="_LSN-zDpmEd-8T_ltW0W8ew" name="graph" represents="_LSN-7zpmEd-8T_ltW0W8ew" coveredBy="_LSN-0DpmEd-8T_ltW0W8ew _LSN-0TpmEd-8T_ltW0W8ew _LSN-0jpmEd-8T_ltW0W8ew _LSN-0zpmEd-8T_ltW0W8ew _LSN-1DpmEd-8T_ltW0W8ew _LSN-1TpmEd-8T_ltW0W8ew _LSN-1zpmEd-8T_ltW0W8ew _LSN-2zpmEd-8T_ltW0W8ew _LSN-3DpmEd-8T_ltW0W8ew _LSN-4DpmEd-8T_ltW0W8ew _LSN-4TpmEd-8T_ltW0W8ew _LSN-5TpmEd-8T_ltW0W8ew"/>
+      <lifeline xmi:id="_LSN-zTpmEd-8T_ltW0W8ew" name="edge" represents="_LSN-8DpmEd-8T_ltW0W8ew" coveredBy="_LSN-1jpmEd-8T_ltW0W8ew _LSN-2DpmEd-8T_ltW0W8ew _LSN-2TpmEd-8T_ltW0W8ew _LSN-2jpmEd-8T_ltW0W8ew"/>
+      <lifeline xmi:id="_LSN-zjpmEd-8T_ltW0W8ew" name="start" represents="_LSN-8TpmEd-8T_ltW0W8ew" coveredBy="_LSN-3TpmEd-8T_ltW0W8ew _LSN-3jpmEd-8T_ltW0W8ew _LSN-3zpmEd-8T_ltW0W8ew"/>
+      <lifeline xmi:id="_LSN-zzpmEd-8T_ltW0W8ew" name="end" represents="_LSN-8jpmEd-8T_ltW0W8ew" coveredBy="_LSN-4jpmEd-8T_ltW0W8ew _LSN-4zpmEd-8T_ltW0W8ew _LSN-5DpmEd-8T_ltW0W8ew"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_LSN-0DpmEd-8T_ltW0W8ew" covered="_LSN-zDpmEd-8T_ltW0W8ew" event="_LSN-8zpmEd-8T_ltW0W8ew" message="_LSN-5jpmEd-8T_ltW0W8ew"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_LSN-0TpmEd-8T_ltW0W8ew" covered="_LSN-zDpmEd-8T_ltW0W8ew" event="_LSN-9DpmEd-8T_ltW0W8ew" message="_LSN-5jpmEd-8T_ltW0W8ew"/>
+      <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_LSN-0jpmEd-8T_ltW0W8ew" covered="_LSN-zDpmEd-8T_ltW0W8ew" start="_LSN-0TpmEd-8T_ltW0W8ew" finish="_LSN-0zpmEd-8T_ltW0W8ew"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_LSN-0zpmEd-8T_ltW0W8ew" covered="_LSN-zDpmEd-8T_ltW0W8ew" event="_LSN-8zpmEd-8T_ltW0W8ew" message="_LSN-5zpmEd-8T_ltW0W8ew"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_LSN-1DpmEd-8T_ltW0W8ew" covered="_LSN-zDpmEd-8T_ltW0W8ew" event="_LSN-9DpmEd-8T_ltW0W8ew" message="_LSN-5zpmEd-8T_ltW0W8ew"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_LSN-1TpmEd-8T_ltW0W8ew" covered="_LSN-zDpmEd-8T_ltW0W8ew" event="_LSN-9TpmEd-8T_ltW0W8ew" message="_LSN-6DpmEd-8T_ltW0W8ew"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_LSN-1jpmEd-8T_ltW0W8ew" covered="_LSN-zTpmEd-8T_ltW0W8ew" event="_LSN-9jpmEd-8T_ltW0W8ew" message="_LSN-6DpmEd-8T_ltW0W8ew"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_LSN-1zpmEd-8T_ltW0W8ew" covered="_LSN-zDpmEd-8T_ltW0W8ew" event="_LSN--DpmEd-8T_ltW0W8ew" message="_LSN-6TpmEd-8T_ltW0W8ew"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_LSN-2DpmEd-8T_ltW0W8ew" covered="_LSN-zTpmEd-8T_ltW0W8ew" event="_LSN-9zpmEd-8T_ltW0W8ew" message="_LSN-6TpmEd-8T_ltW0W8ew"/>
+      <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_LSN-2TpmEd-8T_ltW0W8ew" covered="_LSN-zTpmEd-8T_ltW0W8ew" start="_LSN-2DpmEd-8T_ltW0W8ew" finish="_LSN-2jpmEd-8T_ltW0W8ew"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_LSN-2jpmEd-8T_ltW0W8ew" covered="_LSN-zTpmEd-8T_ltW0W8ew" event="_LSN--DpmEd-8T_ltW0W8ew" message="_LSN-6jpmEd-8T_ltW0W8ew"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_LSN-2zpmEd-8T_ltW0W8ew" covered="_LSN-zDpmEd-8T_ltW0W8ew" event="_LSN-9zpmEd-8T_ltW0W8ew" message="_LSN-6jpmEd-8T_ltW0W8ew"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_LSN-3DpmEd-8T_ltW0W8ew" covered="_LSN-zDpmEd-8T_ltW0W8ew" event="_LSN--jpmEd-8T_ltW0W8ew" message="_LSN-6zpmEd-8T_ltW0W8ew"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_LSN-3TpmEd-8T_ltW0W8ew" covered="_LSN-zjpmEd-8T_ltW0W8ew" event="_LSN--zpmEd-8T_ltW0W8ew" message="_LSN-6zpmEd-8T_ltW0W8ew"/>
+      <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_LSN-3jpmEd-8T_ltW0W8ew" covered="_LSN-zjpmEd-8T_ltW0W8ew" start="_LSN-3TpmEd-8T_ltW0W8ew" finish="_LSN-3zpmEd-8T_ltW0W8ew"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_LSN-3zpmEd-8T_ltW0W8ew" covered="_LSN-zjpmEd-8T_ltW0W8ew" event="_LSN--jpmEd-8T_ltW0W8ew" message="_LSN-7DpmEd-8T_ltW0W8ew"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_LSN-4DpmEd-8T_ltW0W8ew" covered="_LSN-zDpmEd-8T_ltW0W8ew" event="_LSN--zpmEd-8T_ltW0W8ew" message="_LSN-7DpmEd-8T_ltW0W8ew"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_LSN-4TpmEd-8T_ltW0W8ew" covered="_LSN-zDpmEd-8T_ltW0W8ew" event="_LSN--jpmEd-8T_ltW0W8ew" message="_LSN-7TpmEd-8T_ltW0W8ew"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_LSN-4jpmEd-8T_ltW0W8ew" covered="_LSN-zzpmEd-8T_ltW0W8ew" event="_LSN--zpmEd-8T_ltW0W8ew" message="_LSN-7TpmEd-8T_ltW0W8ew"/>
+      <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_LSN-4zpmEd-8T_ltW0W8ew" covered="_LSN-zzpmEd-8T_ltW0W8ew" start="_LSN-4jpmEd-8T_ltW0W8ew" finish="_LSN-5DpmEd-8T_ltW0W8ew"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_LSN-5DpmEd-8T_ltW0W8ew" covered="_LSN-zzpmEd-8T_ltW0W8ew" event="_LSN--jpmEd-8T_ltW0W8ew" message="_LSN-7jpmEd-8T_ltW0W8ew"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_LSN-5TpmEd-8T_ltW0W8ew" covered="_LSN-zDpmEd-8T_ltW0W8ew" event="_LSN--zpmEd-8T_ltW0W8ew" message="_LSN-7jpmEd-8T_ltW0W8ew"/>
+      <message xmi:id="_LSN-5jpmEd-8T_ltW0W8ew" name="addEdge" receiveEvent="_LSN-0TpmEd-8T_ltW0W8ew" sendEvent="_LSN-0DpmEd-8T_ltW0W8ew" connector="_LSN-wDpmEd-8T_ltW0W8ew"/>
+      <message xmi:id="_LSN-5zpmEd-8T_ltW0W8ew" name="addEdge" messageSort="reply" receiveEvent="_LSN-1DpmEd-8T_ltW0W8ew" sendEvent="_LSN-0zpmEd-8T_ltW0W8ew" connector="_LSN-wDpmEd-8T_ltW0W8ew"/>
+      <message xmi:id="_LSN-6DpmEd-8T_ltW0W8ew" name="new" messageSort="createMessage" receiveEvent="_LSN-1jpmEd-8T_ltW0W8ew" sendEvent="_LSN-1TpmEd-8T_ltW0W8ew" connector="_LSN-wzpmEd-8T_ltW0W8ew"/>
+      <message xmi:id="_LSN-6TpmEd-8T_ltW0W8ew" name="EdgeConstructor" receiveEvent="_LSN-2DpmEd-8T_ltW0W8ew" sendEvent="_LSN-1zpmEd-8T_ltW0W8ew" connector="_LSN-wzpmEd-8T_ltW0W8ew"/>
+      <message xmi:id="_LSN-6jpmEd-8T_ltW0W8ew" name="EdgeConstructor" messageSort="reply" receiveEvent="_LSN-2zpmEd-8T_ltW0W8ew" sendEvent="_LSN-2jpmEd-8T_ltW0W8ew" connector="_LSN-wzpmEd-8T_ltW0W8ew"/>
+      <message xmi:id="_LSN-6zpmEd-8T_ltW0W8ew" name="addNeighbor" receiveEvent="_LSN-3TpmEd-8T_ltW0W8ew" sendEvent="_LSN-3DpmEd-8T_ltW0W8ew" connector="_LSN-xjpmEd-8T_ltW0W8ew"/>
+      <message xmi:id="_LSN-7DpmEd-8T_ltW0W8ew" name="addNeighbor" messageSort="reply" receiveEvent="_LSN-4DpmEd-8T_ltW0W8ew" sendEvent="_LSN-3zpmEd-8T_ltW0W8ew" connector="_LSN-xjpmEd-8T_ltW0W8ew"/>
+      <message xmi:id="_LSN-7TpmEd-8T_ltW0W8ew" name="addNeighbor" receiveEvent="_LSN-4jpmEd-8T_ltW0W8ew" sendEvent="_LSN-4TpmEd-8T_ltW0W8ew" connector="_LSN-yTpmEd-8T_ltW0W8ew"/>
+      <message xmi:id="_LSN-7jpmEd-8T_ltW0W8ew" name="addNeighbor" messageSort="reply" receiveEvent="_LSN-5TpmEd-8T_ltW0W8ew" sendEvent="_LSN-5DpmEd-8T_ltW0W8ew" connector="_LSN-yTpmEd-8T_ltW0W8ew"/>
+    </ownedBehavior>
+    <ownedAttribute xmi:id="_LSN-7zpmEd-8T_ltW0W8ew" name="graph" type="_LSN-ZDpmEd-8T_ltW0W8ew" isReadOnly="false"/>
+    <ownedAttribute xmi:id="_LSN-8DpmEd-8T_ltW0W8ew" name="edge" type="_LSN-TzpmEd-8T_ltW0W8ew" isReadOnly="false"/>
+    <ownedAttribute xmi:id="_LSN-8TpmEd-8T_ltW0W8ew" name="start" type="_LSN-kzpmEd-8T_ltW0W8ew" isReadOnly="false"/>
+    <ownedAttribute xmi:id="_LSN-8jpmEd-8T_ltW0W8ew" name="end" type="_LSN-kzpmEd-8T_ltW0W8ew" isReadOnly="false"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_LSN-8zpmEd-8T_ltW0W8ew" name="SendOperationEvent1" visibility="public" operation="_LSN-dTpmEd-8T_ltW0W8ew"/>
+  <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_LSN-9DpmEd-8T_ltW0W8ew" name="ReceiveOperationEvent1" visibility="public" operation="_LSN-dTpmEd-8T_ltW0W8ew"/>
+  <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_LSN-9TpmEd-8T_ltW0W8ew" name="SendOperationEvent2" visibility="public"/>
+  <packagedElement xmi:type="uml:CreationEvent" xmi:id="_LSN-9jpmEd-8T_ltW0W8ew" name="CreationEvent1" visibility="public"/>
+  <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_LSN-9zpmEd-8T_ltW0W8ew" name="ReceiveOperationEvent2" visibility="public" operation="_LSN-UzpmEd-8T_ltW0W8ew"/>
+  <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_LSN--DpmEd-8T_ltW0W8ew" name="SendOperationEvent3" visibility="public" operation="_LSN-UzpmEd-8T_ltW0W8ew"/>
+  <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_LSN--TpmEd-8T_ltW0W8ew" name="ReceiveOperationEvent3" visibility="public"/>
+  <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_LSN--jpmEd-8T_ltW0W8ew" name="SendOperationEvent4" visibility="public" operation="_LSN-pTpmEd-8T_ltW0W8ew"/>
+  <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_LSN--zpmEd-8T_ltW0W8ew" name="ReceiveOperationEvent4" visibility="public" operation="_LSN-pTpmEd-8T_ltW0W8ew"/>
+  <profileApplication xmi:id="_LSN-_DpmEd-8T_ltW0W8ew">
+    <eAnnotations xmi:id="_LSN-_TpmEd-8T_ltW0W8ew" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <references xmi:type="ecore:EPackage" href="pathmap://UML_PROFILES/Standard.profile.uml#_yzU58YinEdqtvbnfB2L_5w"/>
+    </eAnnotations>
+    <appliedProfile href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
+  </profileApplication>
+</uml:Package>

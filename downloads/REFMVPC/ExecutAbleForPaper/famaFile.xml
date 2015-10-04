@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature-model xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.tdg-seville.info/benavides/featuremodelling/feature-model.xsd">
+<feature name="vof1">
+	<binaryRelation name="0">
+	<cardinality max="1" min="0"/>
+	<solitaryFeature name="undefined_on_paper2">
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="1">
+	<cardinality max="1" min="1"/>
+	<solitaryFeature name="follow_me3">
+		<binaryRelation name="2">
+		<cardinality max="1" min="0"/>
+		<solitaryFeature name="undefined_on_paper4">
+		</solitaryFeature>
+
+		</binaryRelation>
+
+		<binaryRelation name="3">
+		<cardinality max="1" min="1"/>
+		<solitaryFeature name="user_localiz5">
+			<binaryRelation name="4">
+			<cardinality max="1" min="1"/>
+			<solitaryFeature name="user_pos_metho6">
+				<setRelation name="5">
+				<cardinality max="1" min="1"/>
+				<groupedFeature name="access_point7">
+				</groupedFeature>
+				<groupedFeature name="rfid8">
+				</groupedFeature>
+				</setRelation>
+
+			</solitaryFeature>
+
+			</binaryRelation>
+
+		</solitaryFeature>
+
+		</binaryRelation>
+
+		<binaryRelation name="6">
+		<cardinality max="1" min="1"/>
+		<solitaryFeature name="logon10">
+			<binaryRelation name="7">
+			<cardinality max="1" min="0"/>
+			<solitaryFeature name="undefined_on_paper9">
+			</solitaryFeature>
+
+			</binaryRelation>
+
+		</solitaryFeature>
+
+		</binaryRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="8">
+	<cardinality max="1" min="0"/>
+	<solitaryFeature name="virtual_printer11">
+		<binaryRelation name="9">
+		<cardinality max="1" min="1"/>
+		<solitaryFeature name="printer_register12">
+		</solitaryFeature>
+
+		</binaryRelation>
+
+		<binaryRelation name="10">
+		<cardinality max="1" min="1"/>
+		<solitaryFeature name="file_upload13">
+		</solitaryFeature>
+
+		</binaryRelation>
+
+		<binaryRelation name="11">
+		<cardinality max="1" min="0"/>
+		<solitaryFeature name="file_converter14">
+		</solitaryFeature>
+
+		</binaryRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+</feature>
+</feature-model>

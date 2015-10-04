@@ -1,0 +1,41 @@
+<!-- This model was created online using SPLOT's Feature Model Editor (http://www.splot-research.org) on Mon, Mar 28, 2011 - 3:21 PM  -->
+<feature_model name="Software Engineering Course">
+<meta>
+<data name="description">SE-Course</data>
+<data name="creator">Cecilia Bastarrica</data>
+<data name="address"></data>
+<data name="email">cecilia@dcc.uchile.cl</data>
+<data name="phone"></data>
+<data name="website"></data>
+<data name="organization">DCC-UChile</data>
+<data name="department"></data>
+<data name="date"></data>
+<data name="reference"></data>
+</meta>
+<feature_tree>
+:r _r(_r)
+	:o _r_1(_r_1)
+	:m _r_2(_r_2)
+	:m _r_3(_r_3)
+		:m _r_3_4(_r_3_4)
+		:o _r_3_5(_r_3_5)
+		:m _r_3_6(_r_3_6)
+			:g (_r_3_6_7) [1,1] 
+				: _r_3_6_7_8(_r_3_6_7_8)
+				: _r_3_6_7_9(_r_3_6_7_9)
+	:m _r_10(_r_10)
+		:m _r_10_11(_r_10_11)
+		:m _r_10_12(_r_10_12)
+		:m _r_10_22(_r_10_22)
+	:m _r_14(_r_14)
+		:m _r_14_16(_r_14_16)
+		:m _r_14_17(_r_14_17)
+		:m _r_14_19(_r_14_19)
+		:o _r_14_21(_r_14_21)
+</feature_tree>
+<constraints>
+constraint_1:_r_3_5 or ~_r_3_6_7_8
+constraint_2:~_r_3_6_7_8 or _r_14_21
+constraint_3:_r_3_6_7_8 or ~_r_14_21
+</constraints>
+</feature_model>

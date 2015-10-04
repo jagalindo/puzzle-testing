@@ -1,0 +1,73 @@
+<!-- This model was created online using SPLOT's Feature Model Editor (http://www.splot-research.org) on Mon, Feb 15, 2010 - 1:26 AM  -->
+<feature_model name="Sienna">
+<meta>
+<data name="description">2011 Sienna Van</data>
+<data name="creator">David Ford</data>
+<data name="address"></data>
+<data name="email">dford@smart-soft.com</data>
+<data name="phone"></data>
+<data name="website"></data>
+<data name="organization">Smart Soft</data>
+<data name="department"></data>
+<data name="date"></data>
+<data name="reference"></data>
+</meta>
+<feature_tree>
+:r Sienna(Sienna)
+	:m Trim(Trim)
+		:m Grade(Grade)
+			:g (_r_1_7_8) [1,1] 
+				: Base(Base)
+				: LE(LE)
+				: SE(SE)
+				: XLE(XLE)
+					:o XLE_Navigation_Package(XLE_Navigation_Package)
+					:o XLE_Premium_Package(XLE_Premium_Package)
+				: LTD(LTD)
+		:m Engine(Engine)
+			:g (_r_1_15_17) [1,1] 
+				: L4(L4)
+				: V6(V6)
+		:m Drive(Drive)
+			:g (_r_1_16_20) [1,1] 
+				: TwoWd(TwoWd)
+				: AWD(AWD)
+		:m PsgrCount(PsgrCount)
+			:g (_r_1_23_24) [1,1] 
+				: SevenPSGR(SevenPSGR)
+				: EightPSGR(EightPSGR)
+		:m ModelCode(ModelCode)
+			:g (_r_1_37_40) [1,1] 
+				: Five312(Five312)
+				: Five328(Five328)
+	:m Color(Color)
+		:m ExteriorColor(ExteriorColor)
+			:g (_r_2_27_30) [1,1] 
+				: Silver_Sky_Metallic(Silver_Sky_Metallic)
+				: Super_White(Super_White)
+				: Blizzard_Pearl(Blizzard_Pearl)
+		:m InteriorColor(InteriorColor)
+			:g (_r_2_34_35) [1,1] 
+				: Bisc(Bisc)
+				: Gray(Gray)
+				: Charcoal(Charcoal)
+	:o Accessories(Accessories)
+		:o Floor_Mats(Floor_Mats)
+		:o Mud_Flaps(Mud_Flaps)
+	:m Derived(Derived)
+		:m Antenna(Antenna)
+			:g (_r_30_33_34) [1,1] 
+				: In_Glass(In_Glass)
+				: Pole(Pole)
+</feature_tree>
+<constraints>
+constraint_8:Base or ~Five312
+constraint_10:In_Glass or ~XLE_Premium_Package
+constraint_9:In_Glass or ~XLE_Navigation_Package
+constraint_6:~LTD or In_Glass
+constraint_4:~LE or Pole
+constraint_5:~SE or Pole
+constraint_2:SE or ~Charcoal
+constraint_3:~Base or Pole
+</constraints>
+</feature_model>

@@ -1,0 +1,18 @@
+c
+c CNF-Formula to check equivalence of two feature modelsc
+p cnf 9 15
+-5 9 0
+-3 8 0
+-2 1 0
+-4 1 0
+-1 4 0
+-7 2 0
+-3 2 0
+-8 4 0
+-9 4 0
+-6 7 0
+-5 7 0
+-7 6 5 0
+-6 -5 0
+3 0
+-8 0

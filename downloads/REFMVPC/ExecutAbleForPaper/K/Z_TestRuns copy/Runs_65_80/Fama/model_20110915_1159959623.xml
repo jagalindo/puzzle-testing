@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature-model xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.tdg-seville.info/benavides/featuremodelling/feature-model.xsd">
+<feature name="_r">
+	<binaryRelation name="209">
+	<cardinality max="1" min="1"/>
+	<solitaryFeature name="_r_1">
+		<setRelation name="210">
+		<cardinality max="1" min="1"/>
+		<groupedFeature name="_r_1_3_4">
+		</groupedFeature>
+		<groupedFeature name="_r_1_3_7">
+		</groupedFeature>
+		<groupedFeature name="_r_1_3_19">
+		</groupedFeature>
+		</setRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="211">
+	<cardinality max="1" min="0"/>
+	<solitaryFeature name="_r_2">
+		<setRelation name="212">
+		<cardinality max="1" min="1"/>
+		<groupedFeature name="_r_2_11_15">
+		</groupedFeature>
+		<groupedFeature name="_r_2_11_16">
+		</groupedFeature>
+		<groupedFeature name="_r_2_11_17">
+		</groupedFeature>
+		</setRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="213">
+	<cardinality max="1" min="0"/>
+	<solitaryFeature name="_r_20">
+	</solitaryFeature>
+
+	</binaryRelation>
+
+</feature>
+<requires feature="_r_2_11_16" name="constraint_3" requires="_r_1_3_19"/>
+</feature-model>

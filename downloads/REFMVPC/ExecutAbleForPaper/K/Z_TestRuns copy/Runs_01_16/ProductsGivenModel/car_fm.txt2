@@ -1,0 +1,14 @@
+parallel_parking;Car;Standard_Avoidance;Sensors;enhanced_avoidance;Automated_Driving_Controller;lateral_range_finder;forward_range_finder;Collision_Avoidance_Braking;
+0 1 0 1 0 0 0 0 0 
+0 1 0 1 0 0 1 0 0 
+0 1 0 1 0 0 0 1 0 
+0 1 0 1 0 0 1 1 0 
+0 1 1 1 0 1 0 0 1 
+0 1 1 1 0 1 1 0 1 
+0 1 1 1 0 1 0 1 1 
+0 1 0 1 1 1 0 1 1 
+0 1 1 1 0 1 1 1 1 
+0 1 0 1 1 1 1 1 1 
+1 1 1 1 0 1 1 0 1 
+1 1 1 1 0 1 1 1 1 
+1 1 0 1 1 1 1 1 1 

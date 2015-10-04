@@ -1,0 +1,36 @@
+<!-- This model was created online using SPLOT's Feature Model Editor (http://www.splot-research.org) on Wed, Aug 24, 2011 - 3:57 AM  -->
+<feature_model name="Technical Solution Process">
+<meta>
+<data name="description">Feature model for a software process line</data>
+<data name="creator">Julio Ariel Hurtado</data>
+<data name="address"></data>
+<data name="email">julioarielhurtado@gmail.com</data>
+<data name="phone"></data>
+<data name="website"></data>
+<data name="organization">Universidad de Chile</data>
+<data name="department"></data>
+<data name="date"></data>
+<data name="reference"></data>
+</meta>
+<feature_tree>
+:r _r(_r)
+	:o _r_11(_r_11)
+	:o _r_12(_r_12)
+		:o _r_12_17(_r_12_17)
+			:g (_r_12_17_29) [1,1] 
+				: _r_12_17_29_30(_r_12_17_29_30)
+				: _r_12_17_29_31(_r_12_17_29_31)
+				: _r_12_17_29_32(_r_12_17_29_32)
+		:m _r_12_19(_r_12_19)
+		:o _r_12_20(_r_12_20)
+		:m _r_12_22(_r_12_22)
+		:o _r_12_33(_r_12_33)
+	:m _r_13(_r_13)
+		:m _r_13_14(_r_13_14)
+		:o _r_13_15(_r_13_15)
+		:m _r_13_16(_r_13_16)
+</feature_tree>
+<constraints>
+constraint_1:_r_13_15 or ~_r_12_20
+</constraints>
+</feature_model>

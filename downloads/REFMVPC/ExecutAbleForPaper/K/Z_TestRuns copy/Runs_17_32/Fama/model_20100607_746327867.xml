@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature-model xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.tdg-seville.info/benavides/featuremodelling/feature-model.xsd">
+<feature name="Stacja_pogodowa">
+	<binaryRelation name="91">
+	<cardinality max="1" min="1"/>
+	<solitaryFeature name="Pomiary">
+		<setRelation name="92">
+		<cardinality max="3" min="1"/>
+		<groupedFeature name="Temperatura">
+		</groupedFeature>
+		<groupedFeature name="Wiatr">
+		</groupedFeature>
+		<groupedFeature name="Cisnienie">
+		</groupedFeature>
+		</setRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="93">
+	<cardinality max="1" min="1"/>
+	<solitaryFeature name="Zrodla_danych">
+		<setRelation name="94">
+		<cardinality max="1" min="1"/>
+		<groupedFeature name="Internet">
+		</groupedFeature>
+		<groupedFeature name="Sensory">
+		</groupedFeature>
+		</setRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="95">
+	<cardinality max="1" min="1"/>
+	<solitaryFeature name="Format_wyjsciowy">
+		<binaryRelation name="96">
+		<cardinality max="1" min="1"/>
+		<solitaryFeature name="Jezyk">
+			<setRelation name="97">
+			<cardinality max="1" min="1"/>
+			<groupedFeature name="Polski">
+			</groupedFeature>
+			<groupedFeature name="Angielski">
+			</groupedFeature>
+			</setRelation>
+
+		</solitaryFeature>
+
+		</binaryRelation>
+
+		<setRelation name="98">
+		<cardinality max="1" min="1"/>
+		<groupedFeature name="Plik">
+		</groupedFeature>
+		<groupedFeature name="Tekst">
+		</groupedFeature>
+		<groupedFeature name="Serwer">
+				<setRelation name="99">
+				<cardinality max="1" min="1"/>
+				<groupedFeature name="HTML">
+				</groupedFeature>
+				<groupedFeature name="XML">
+				</groupedFeature>
+				</setRelation>
+
+		</groupedFeature>
+		</setRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="100">
+	<cardinality max="1" min="0"/>
+	<solitaryFeature name="Alarm">
+		<setRelation name="101">
+		<cardinality max="2" min="1"/>
+		<groupedFeature name="Sztorm">
+		</groupedFeature>
+		<groupedFeature name="Zamarzniecie">
+		</groupedFeature>
+		</setRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+</feature>
+</feature-model>

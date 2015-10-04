@@ -1,0 +1,46 @@
+package fma;
+/**
+ * Feature of a Product, each feature has a unique identifier and a name.
+ * To check equality only the identifier is used, not the name of the feature.
+ */
+public class Feature {
+	private static int idCnt=0;
+	private int id;
+	private String name;
+	
+	public Feature(String name){
+		this.name = name;
+		id=idCnt;
+		idCnt++;
+	}
+
+	@Override
+	public boolean equals(Object arg0) {
+		if(this == arg0){
+			return true;
+		}
+		if(! (arg0 instanceof Feature)){
+			return false;
+		}
+		
+		return (id == ((Feature)arg0).id);
+	}
+
+	@Override
+	public int hashCode() {		
+		return id; //?!
+	}
+
+	@Override
+	public String toString() {
+		return name;
+	}
+	
+	public String getName(){
+		return this.name;
+	}
+	
+	public int getId(){
+		return id;
+	}
+}

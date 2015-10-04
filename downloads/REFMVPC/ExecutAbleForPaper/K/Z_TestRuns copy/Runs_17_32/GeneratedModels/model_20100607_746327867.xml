@@ -1,0 +1,32 @@
+<feature_model name="Pomiary">
+<feature_tree>
+:r Pomiary (Pomiary)
+	:m Format_wyjsciowy (Format_wyjsciowy)
+	:m Jezyk (Jezyk)
+	:m Zrodla_danych (Zrodla_danych)
+	:m Stacja_pogodowa (Stacja_pogodowa)
+	:o Alarm (Alarm)
+		:g [1, *]
+			: Zamarzniecie (Zamarzniecie)
+			: Sztorm (Sztorm)
+	:g [1, *]
+		: Cisnienie (Cisnienie)
+		: Wiatr (Wiatr)
+		: Temperatura (Temperatura)
+	:g [1, 1]
+		: Sensory (Sensory)
+		: Internet (Internet)
+	:g [1, 1]
+		: Angielski (Angielski)
+		: Polski (Polski)
+	:g [1, 1]
+		: Tekst (Tekst)
+		: Serwer (Serwer)
+			:g [1, 1]
+				: XML (XML)
+				: HTML (HTML)
+		: Plik (Plik)
+</feature_tree>
+<constraints>
+</constraints>
+</feature_model>

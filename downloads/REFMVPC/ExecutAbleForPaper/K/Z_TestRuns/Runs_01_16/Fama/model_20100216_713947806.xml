@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature-model xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.tdg-seville.info/benavides/featuremodelling/feature-model.xsd">
+<feature name="YM_Test">
+	<binaryRelation name="151">
+	<cardinality max="1" min="1"/>
+	<solitaryFeature name="POWER_SUPPLY">
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="152">
+	<cardinality max="1" min="1"/>
+	<solitaryFeature name="TUNER_and_CHANNEL_DECODING">
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="153">
+	<cardinality max="1" min="1"/>
+	<solitaryFeature name="DEMULTIPLEXER_and_DESCRAMBLING">
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="154">
+	<cardinality max="1" min="1"/>
+	<solitaryFeature name="AUDIO_and_VIDEO_DECODING">
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="155">
+	<cardinality max="1" min="1"/>
+	<solitaryFeature name="CONDITIONAL_ACCESS">
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="156">
+	<cardinality max="1" min="1"/>
+	<solitaryFeature name="SECURITY">
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="157">
+	<cardinality max="1" min="1"/>
+	<solitaryFeature name="PROCESSOR_and_DATA_STORAGE">
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="158">
+	<cardinality max="1" min="1"/>
+	<solitaryFeature name="DATA_INTERFACES">
+		<binaryRelation name="159">
+		<cardinality max="1" min="0"/>
+		<solitaryFeature name="USB">
+		</solitaryFeature>
+
+		</binaryRelation>
+
+		<binaryRelation name="160">
+		<cardinality max="1" min="0"/>
+		<solitaryFeature name="Wifi">
+		</solitaryFeature>
+
+		</binaryRelation>
+
+		<binaryRelation name="161">
+		<cardinality max="1" min="0"/>
+		<solitaryFeature name="Power_Line_Control">
+		</solitaryFeature>
+
+		</binaryRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+</feature>
+</feature-model>

@@ -1,0 +1,70 @@
+<!-- This model was created online using SPLOT's Feature Model Editor (http://www.splot-research.org) on Wed, Feb 1, 2012 - 6:43 PM  -->
+<feature_model name="Sistema de Informes por movil">
+<meta>
+<data name="description">MovilReportes</data>
+<data name="creator">Guillermo Fuentes</data>
+<data name="address"></data>
+<data name="email">alu@ull.es</data>
+<data name="phone"></data>
+<data name="website"></data>
+<data name="organization">ULL</data>
+<data name="department"></data>
+<data name="date"></data>
+<data name="reference"></data>
+</meta>
+<feature_tree>
+:r _r(_r)
+	:m _r_1(_r_1)
+		:g (_r_1_8) [1,1] 
+			: _r_1_8_9(_r_1_8_9)
+			: _r_1_8_10(_r_1_8_10)
+			: _r_1_8_11(_r_1_8_11)
+			: _r_1_8_12(_r_1_8_12)
+	:m _r_2(_r_2)
+		:g (_r_2_18) [1,1] 
+			: _r_2_18_19(_r_2_18_19)
+			: _r_2_18_20(_r_2_18_20)
+			: _r_2_18_21(_r_2_18_21)
+	:m _r_3(_r_3)
+		:g (_r_3_22) [1,1] 
+			: _r_3_22_23(_r_3_22_23)
+			: _r_3_22_24(_r_3_22_24)
+			: _r_3_22_25(_r_3_22_25)
+	:m _r_5(_r_5)
+		:g (_r_5_32) [1,*] 
+			: _r_5_32_33(_r_5_32_33)
+			: _r_5_32_34(_r_5_32_34)
+			: _r_5_32_35(_r_5_32_35)
+	:o _r_6(_r_6)
+	:o _r_7(_r_7)
+	:m _r_13(_r_13)
+		:g (_r_13_14) [1,1] 
+			: _r_13_14_15(_r_13_14_15)
+			: _r_13_14_16(_r_13_14_16)
+			: _r_13_14_17(_r_13_14_17)
+	:m _r_29(_r_29)
+		:g (_r_29_30) [1,*] 
+			: _r_29_30_31(_r_29_30_31)
+			: _r_29_30_32(_r_29_30_32)
+			: _r_29_30_33(_r_29_30_33)
+</feature_tree>
+<constraints>
+constraint_30:~_r_1_8_11 or _r_3_22_24
+constraint_17:~_r_1_8_12 or _r_3_22_25
+constraint_18:_r_2_18_21 or ~_r_13_14_17
+constraint_28:~_r_1_8_10 or _r_3_22_24
+constraint_19:~_r_1_8_9 or ~_r_6
+constraint_22:~_r_1_8_9 or _r_3_22_23
+constraint_23:_r_1_8_9 or ~_r_3_22_23
+constraint_10:~_r_1_8_9 or ~_r_2_18_20
+constraint_20:~_r_1_8_9 or ~_r_7
+constraint_11:~_r_1_8_9 or ~_r_2_18_21
+constraint_21:~_r_6 or ~_r_29_30_33
+constraint_12:~_r_1_8_10 or ~_r_2_18_21
+constraint_13:~_r_1_8_12 or _r_2_18_21
+constraint_14:~_r_1_8_9 or _r_3_22_23
+constraint_27:_r_1_8_12 or ~_r_3_22_25
+constraint_15:~_r_1_8_10 or _r_3_22_24
+constraint_24:_r_13_14_17 or ~_r_5_32_35
+</constraints>
+</feature_model>

@@ -1,0 +1,31 @@
+<!-- This model was created online using SPLOT's Feature Model Editor (http://www.splot-research.org) on Thu, Oct 20, 2011 - 12:54 PM  -->
+<feature_model name="ETRobocon">
+<meta>
+<data name="description">ETRobocon</data>
+<data name="creator">Tsuneo Nakanishi</data>
+<data name="address"></data>
+<data name="email">tsuneo.nakanishi@gmail.com</data>
+<data name="phone"></data>
+<data name="website"></data>
+<data name="organization">Kyushu University</data>
+<data name="department"></data>
+<data name="date"></data>
+<data name="reference"></data>
+</meta>
+<feature_tree>
+:r _r(_r)
+	:m _r_1(_r_1)
+		:g (_r_1_2) [1,*] 
+			: _r_1_2_3(_r_1_2_3)
+			: _r_1_2_4(_r_1_2_4)
+			: _r_1_2_5(_r_1_2_5)
+			: _r_1_2_6(_r_1_2_6)
+	:m _r_7(_r_7)
+		:m _r_7_8(_r_7_8)
+		:o _r_7_9(_r_7_9)
+		:o _r_7_10(_r_7_10)
+		:o _r_7_11(_r_7_11)
+</feature_tree>
+<constraints>
+</constraints>
+</feature_model>

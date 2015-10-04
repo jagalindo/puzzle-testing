@@ -1,0 +1,44 @@
+<!-- This model was created online using SPLOT's Feature Model Editor (http://www.splot-research.org) on Fri, Jul 22, 2011 - 6:19 AM  -->
+<feature_model name="MobileMedia_Conejero">
+<meta>
+<data name="description">Adaptation of the MobileMedia system. MobileMedia is a product line system built to allow the user of a mobile device to perform different operations, such as visualizing photos, playing music or videos and sending photos via SMS</data>
+<data name="creator">Jose M. Conejero</data>
+<data name="address"></data>
+<data name="email">chemacm@unex.es</data>
+<data name="phone"></data>
+<data name="website"></data>
+<data name="organization">University of Extremadura</data>
+<data name="department"></data>
+<data name="date"></data>
+<data name="reference"></data>
+</meta>
+<feature_tree>
+:r _r(_r)
+	:m _r_1(_r_1)
+		:m _r_1_2(_r_1_2)
+		:m _r_1_3(_r_1_3)
+		:m _r_1_4(_r_1_4)
+	:m _r_5(_r_5)
+		:o _r_5_6(_r_5_6)
+			:m _r_5_6_7(_r_5_6_7)
+			:m _r_5_6_8(_r_5_6_8)
+		:o _r_5_9(_r_5_9)
+		:m _r_5_10(_r_5_10)
+			:m _r_5_10_11(_r_5_10_11)
+			:m _r_5_10_12(_r_5_10_12)
+			:o _r_5_10_13(_r_5_10_13)
+		:o _r_5_15(_r_5_15)
+		:o _r_5_16(_r_5_16)
+			:m _r_5_16_17(_r_5_16_17)
+			:m _r_5_16_18(_r_5_16_18)
+	:m _r_19(_r_19)
+		:o _r_19_20(_r_19_20)
+			:m _r_19_20_22(_r_19_20_22)
+		:o _r_19_21(_r_19_21)
+			:m _r_19_21_23(_r_19_21_23)
+		:o _r_19_24(_r_19_24)
+			:m _r_19_24_25(_r_19_24_25)
+</feature_tree>
+<constraints>
+</constraints>
+</feature_model>

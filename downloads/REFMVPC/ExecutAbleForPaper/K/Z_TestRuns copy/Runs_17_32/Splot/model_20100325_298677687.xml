@@ -1,0 +1,31 @@
+<!-- This model was created online using SPLOT's Feature Model Editor (http://www.splot-research.org) on Thu, Jun 24, 2010 - 11:50 AM  -->
+<feature_model name="VODPlayer">
+<meta>
+<data name="description">feature diagran</data>
+<data name="creator">leticia</data>
+<data name="address"></data>
+<data name="email">leti@gmail.com</data>
+<data name="phone"></data>
+<data name="website"></data>
+<data name="organization">none</data>
+<data name="department"></data>
+<data name="date"></data>
+<data name="reference"></data>
+</meta>
+<feature_tree>
+:r VODPlayer(VODPlayer)
+	:m StartPlayer(StartPlayer)
+	:o Pause1(Pause1)
+	:g (_r_3) [1,1] 
+		: PlayImm(PlayImm)
+		: StartMovie(StartMovie)
+			:o Pause2(Pause2)
+	:m VCRInterf(VCRInterf)
+	:o Quit(Quit)
+	:m SelectMovie(SelectMovie)
+		:o ChangeServer(ChangeServer)
+		:o Detail(Detail)
+</feature_tree>
+<constraints>
+</constraints>
+</feature_model>

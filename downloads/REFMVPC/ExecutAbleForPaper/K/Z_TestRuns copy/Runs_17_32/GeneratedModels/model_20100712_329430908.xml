@@ -1,0 +1,26 @@
+<feature_model name="Credit">
+<feature_tree>
+:r Credit (Credit)
+	:m Rewards (Rewards)
+	:m Fees_and_Charges (Fees_and_Charges)
+	:m Minimum_Credit_Limit (Minimum_Credit_Limit)
+	:m Interest_Rates (Interest_Rates)
+	:m Maximum_Credit_Limit (Maximum_Credit_Limit)
+	:m Interest_Rate (Interest_Rate)
+	:m Payments (Payments)
+	:m Variable_Interest_Rate (Variable_Interest_Rate)
+	:m card_product (card_product)
+	:o Card (Card)
+		:o Name_on_Card (Name_on_Card)
+		:o Multiple_Cards (Multiple_Cards)
+	:o Fuel_Savings (Fuel_Savings)
+	:o GO_Business_Rewards (GO_Business_Rewards)
+	:o Interest_Free_Days (Interest_Free_Days)
+	:o Cash_Advance_Rate (Cash_Advance_Rate)
+	:o Fly_by_Points (Fly_by_Points)
+	:o Balance_Transfer_Rate (Balance_Transfer_Rate)
+	:o Deferred (Deferred)
+</feature_tree>
+<constraints>
+</constraints>
+</feature_model>

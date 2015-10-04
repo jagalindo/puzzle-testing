@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature-model xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.tdg-seville.info/benavides/featuremodelling/feature-model.xsd">
+<feature name="Mobile_Game">
+	<binaryRelation name="90">
+	<cardinality max="1" min="1"/>
+	<solitaryFeature name="Input">
+		<setRelation name="91">
+		<cardinality max="4" min="1"/>
+		<groupedFeature name="Movement_Detection">
+		</groupedFeature>
+		<groupedFeature name="Speech_Input">
+		</groupedFeature>
+		<groupedFeature name="Keypad">
+		</groupedFeature>
+		<groupedFeature name="Touchscreen">
+		</groupedFeature>
+		</setRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="92">
+	<cardinality max="1" min="0"/>
+	<solitaryFeature name="Output">
+		<binaryRelation name="93">
+		<cardinality max="1" min="0"/>
+		<solitaryFeature name="Force_Feedback">
+		</solitaryFeature>
+
+		</binaryRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="94">
+	<cardinality max="1" min="0"/>
+	<solitaryFeature name="Network_Support">
+		<binaryRelation name="95">
+		<cardinality max="1" min="0"/>
+		<solitaryFeature name="Online_Multiplayer">
+		</solitaryFeature>
+
+		</binaryRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+</feature>
+</feature-model>

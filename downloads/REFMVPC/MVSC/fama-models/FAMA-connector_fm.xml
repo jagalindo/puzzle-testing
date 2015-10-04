@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature-model xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.tdg-seville.info/benavides/featuremodelling/feature-model.xsd">
+<feature name="Connector">
+	<binaryRelation name="54">
+	<cardinality max="1" min="1"/>
+	<solitaryFeature name="Paradigm">
+		<setRelation name="55">
+		<cardinality max="1" min="1"/>
+		<groupedFeature name="Client/Server">
+				<setRelation name="56">
+				<cardinality max="1" min="1"/>
+				<groupedFeature name="Synchronous">
+						<binaryRelation name="57">
+						<cardinality max="1" min="0"/>
+						<solitaryFeature name="Timeout">
+						</solitaryFeature>
+
+						</binaryRelation>
+
+				</groupedFeature>
+				<groupedFeature name="Asynchronous">
+						<setRelation name="58">
+						<cardinality max="1" min="1"/>
+						<groupedFeature name="Polling">
+								<setRelation name="59">
+								<cardinality max="1" min="1"/>
+								<groupedFeature name="Blocking">
+								</groupedFeature>
+								<groupedFeature name="Non-blocking">
+								</groupedFeature>
+								</setRelation>
+
+						</groupedFeature>
+						<groupedFeature name="Callback">
+						</groupedFeature>
+						</setRelation>
+
+				</groupedFeature>
+				</setRelation>
+
+		</groupedFeature>
+		<groupedFeature name="Message-Based">
+				<binaryRelation name="60">
+				<cardinality max="1" min="1"/>
+				<solitaryFeature name="Sender">
+				</solitaryFeature>
+
+				</binaryRelation>
+
+				<binaryRelation name="61">
+				<cardinality max="1" min="1"/>
+				<solitaryFeature name="Receiver">
+					<setRelation name="62">
+					<cardinality max="1" min="1"/>
+					<groupedFeature name="Pull">
+							<setRelation name="63">
+							<cardinality max="2" min="1"/>
+							<groupedFeature name="Queued">
+							</groupedFeature>
+							<groupedFeature name="Non-Queued">
+							</groupedFeature>
+							</setRelation>
+
+					</groupedFeature>
+					<groupedFeature name="Push">
+					</groupedFeature>
+					</setRelation>
+
+				</solitaryFeature>
+
+				</binaryRelation>
+
+		</groupedFeature>
+		</setRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="64">
+	<cardinality max="1" min="1"/>
+	<solitaryFeature name="Technology">
+		<setRelation name="65">
+		<cardinality max="1" min="1"/>
+		<groupedFeature name="CAN">
+		</groupedFeature>
+		<groupedFeature name="Local">
+		</groupedFeature>
+		</setRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+</feature>
+</feature-model>

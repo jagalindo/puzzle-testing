@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature-model xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.tdg-seville.info/benavides/featuremodelling/feature-model.xsd">
+<feature name="_r">
+	<binaryRelation name="138">
+	<cardinality max="1" min="1"/>
+	<solitaryFeature name="_r_48">
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="139">
+	<cardinality max="1" min="1"/>
+	<solitaryFeature name="_r_18">
+		<setRelation name="140">
+		<cardinality max="3" min="1"/>
+		<groupedFeature name="_r_18_44_45">
+		</groupedFeature>
+		<groupedFeature name="_r_18_44_46">
+		</groupedFeature>
+		<groupedFeature name="_r_18_44_47">
+		</groupedFeature>
+		</setRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="141">
+	<cardinality max="1" min="0"/>
+	<solitaryFeature name="_r_19">
+		<setRelation name="142">
+		<cardinality max="2" min="1"/>
+		<groupedFeature name="_r_19_41_42">
+		</groupedFeature>
+		<groupedFeature name="_r_19_41_43">
+		</groupedFeature>
+		</setRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="143">
+	<cardinality max="1" min="1"/>
+	<solitaryFeature name="_r_20">
+		<setRelation name="144">
+		<cardinality max="2" min="1"/>
+		<groupedFeature name="_r_20_38_39">
+		</groupedFeature>
+		<groupedFeature name="_r_20_38_40">
+		</groupedFeature>
+		</setRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="145">
+	<cardinality max="1" min="0"/>
+	<solitaryFeature name="_r_21">
+		<setRelation name="146">
+		<cardinality max="1" min="1"/>
+		<groupedFeature name="_r_21_36_37">
+		</groupedFeature>
+		</setRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="147">
+	<cardinality max="1" min="0"/>
+	<solitaryFeature name="_r_22">
+		<setRelation name="148">
+		<cardinality max="2" min="1"/>
+		<groupedFeature name="_r_22_33_34">
+		</groupedFeature>
+		<groupedFeature name="_r_22_33_35">
+		</groupedFeature>
+		</setRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="149">
+	<cardinality max="1" min="1"/>
+	<solitaryFeature name="_r_23">
+		<binaryRelation name="150">
+		<cardinality max="1" min="1"/>
+		<solitaryFeature name="_r_23_24">
+			<setRelation name="151">
+			<cardinality max="2" min="1"/>
+			<groupedFeature name="_r_23_24_30_31">
+			</groupedFeature>
+			<groupedFeature name="_r_23_24_30_32">
+			</groupedFeature>
+			</setRelation>
+
+		</solitaryFeature>
+
+		</binaryRelation>
+
+		<binaryRelation name="152">
+		<cardinality max="1" min="1"/>
+		<solitaryFeature name="_r_23_25">
+			<setRelation name="153">
+			<cardinality max="3" min="1"/>
+			<groupedFeature name="_r_23_25_26_27">
+			</groupedFeature>
+			<groupedFeature name="_r_23_25_26_28">
+			</groupedFeature>
+			<groupedFeature name="_r_23_25_26_29">
+			</groupedFeature>
+			</setRelation>
+
+		</solitaryFeature>
+
+		</binaryRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+</feature>
+<requires feature="_r_18_44_45" name="constraint_1" requires="_r_22_33_34"/>
+<requires feature="_r_22" name="constraint_2" requires="_r_21"/>
+</feature-model>

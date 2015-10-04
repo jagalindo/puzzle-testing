@@ -1,0 +1,19 @@
+<feature_model name="Language">
+<feature_tree>
+:r Language (Language)
+	:m SAL (SAL)
+	:m Evaluator (Evaluator)
+	:m Simple_Arithmetic (Simple_Arithmetic)
+	:o Optimizer (Optimizer)
+		:g [1, *]
+			: Constant_folding (Constant_folding)
+			: Short_circuit (Short_circuit)
+	:o Conditional (Conditional)
+	:g [1, 1]
+		: Evaluation_semantics (Evaluation_semantics)
+		: Machine_semantics (Machine_semantics)
+</feature_tree>
+<constraints>
+constraint_1:~Short_circuit or Conditional
+</constraints>
+</feature_model>

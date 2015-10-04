@@ -1,0 +1,22 @@
+<feature_model name="Network">
+<feature_tree>
+:r Network (Network)
+	:m DB (DB)
+	:m GUI (GUI)
+	:m MoviesApp (MoviesApp)
+	:o GPS (GPS)
+		:o BuiltIn (BuiltIn)
+	:g [1, 1]
+		: Rich (Rich)
+		: Thin (Thin)
+	:g [1, 1]
+		: Bluetooth (Bluetooth)
+		: Wifi (Wifi)
+	:g [1, 1]
+		: Local (Local)
+		: CachePolicy (CachePolicy)
+			:m Remote (Remote)
+</feature_tree>
+<constraints>
+</constraints>
+</feature_model>

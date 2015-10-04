@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature-model xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.tdg-seville.info/benavides/featuremodelling/feature-model.xsd">
+<feature name="ServicioRespaldo1">
+	<binaryRelation name="5">
+	<cardinality max="1" min="1"/>
+	<solitaryFeature name="a4gl2">
+		<binaryRelation name="6">
+		<cardinality max="1" min="1"/>
+		<solitaryFeature name="Nombre_archivo3">
+		</solitaryFeature>
+
+		</binaryRelation>
+
+		<binaryRelation name="7">
+		<cardinality max="1" min="1"/>
+		<solitaryFeature name="Usuario14">
+		</solitaryFeature>
+
+		</binaryRelation>
+
+		<binaryRelation name="8">
+		<cardinality max="1" min="1"/>
+		<solitaryFeature name="Fecha5">
+		</solitaryFeature>
+
+		</binaryRelation>
+
+		<binaryRelation name="9">
+		<cardinality max="1" min="0"/>
+		<solitaryFeature name="Variable_ruta_respaldo6">
+			<binaryRelation name="10">
+			<cardinality max="1" min="1"/>
+			<solitaryFeature name="Valor_ruta_respaldo7">
+			</solitaryFeature>
+
+			</binaryRelation>
+
+			<binaryRelation name="11">
+			<cardinality max="1" min="1"/>
+			<solitaryFeature name="Actualizacion_post_respaldo8">
+			</solitaryFeature>
+
+			</binaryRelation>
+
+			<binaryRelation name="12">
+			<cardinality max="1" min="1"/>
+			<solitaryFeature name="SQL_count9">
+			</solitaryFeature>
+
+			</binaryRelation>
+
+			<binaryRelation name="13">
+			<cardinality max="1" min="1"/>
+			<solitaryFeature name="SQL_update0">
+			</solitaryFeature>
+
+			</binaryRelation>
+
+			<binaryRelation name="14">
+			<cardinality max="1" min="1"/>
+			<solitaryFeature name="SQL_unload10">
+			</solitaryFeature>
+
+			</binaryRelation>
+
+			<binaryRelation name="15">
+			<cardinality max="1" min="1"/>
+			<solitaryFeature name="Funcion_respaldo11">
+			</solitaryFeature>
+
+			</binaryRelation>
+
+		</solitaryFeature>
+
+		</binaryRelation>
+
+		<binaryRelation name="16">
+		<cardinality max="1" min="1"/>
+		<solitaryFeature name="Valor_ruta_log12">
+		</solitaryFeature>
+
+		</binaryRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="17">
+	<cardinality max="1" min="1"/>
+	<solitaryFeature name="com13">
+		<binaryRelation name="18">
+		<cardinality max="1" min="1"/>
+		<solitaryFeature name="Nombre_archivo14">
+		</solitaryFeature>
+
+		</binaryRelation>
+
+		<binaryRelation name="19">
+		<cardinality max="1" min="1"/>
+		<solitaryFeature name="Usuario215">
+		</solitaryFeature>
+
+		</binaryRelation>
+
+		<binaryRelation name="20">
+		<cardinality max="1" min="1"/>
+		<solitaryFeature name="Ruta_ejecutable16">
+		</solitaryFeature>
+
+		</binaryRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+	<binaryRelation name="21">
+	<cardinality max="1" min="1"/>
+	<solitaryFeature name="Makefile17">
+		<binaryRelation name="22">
+		<cardinality max="1" min="1"/>
+		<solitaryFeature name="Nombre_archivo_fuente18">
+		</solitaryFeature>
+
+		</binaryRelation>
+
+		<binaryRelation name="23">
+		<cardinality max="1" min="1"/>
+		<solitaryFeature name="Nombre_archivo_ejecutable19">
+		</solitaryFeature>
+
+		</binaryRelation>
+
+	</solitaryFeature>
+
+	</binaryRelation>
+
+</feature>
+</feature-model>

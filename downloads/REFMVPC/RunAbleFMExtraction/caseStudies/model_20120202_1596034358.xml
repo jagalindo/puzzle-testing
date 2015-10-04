@@ -1,0 +1,31 @@
+<!-- This model was created online using SPLOT's Feature Model Editor (http://www.splot-research.org) on Thu, Feb 2, 2012 - 2:59 PM  -->
+<feature_model name="MobileMedia">
+<meta>
+<data name="description">SPL</data>
+<data name="creator">Eduardo</data>
+<data name="address"></data>
+<data name="email">emagno@gmail.com</data>
+<data name="phone"></data>
+<data name="website"></data>
+<data name="organization">UFMG</data>
+<data name="department"></data>
+<data name="date"></data>
+<data name="reference"></data>
+</meta>
+<feature_tree>
+:r _r(_r)
+	:o _r_1(_r_1)
+	:m _r_2(_r_2)
+		:m _r_2_3(_r_2_3)
+		:m _r_2_4(_r_2_4)
+	:m _r_5(_r_5)
+		:g (_r_5_6) [1,*] 
+			: _r_5_6_7(_r_5_6_7)
+			: _r_5_6_8(_r_5_6_8)
+			: _r_5_6_9(_r_5_6_9)
+	:o _r_10(_r_10)
+</feature_tree>
+<constraints>
+constraint_2:~_r_1 or _r_5
+</constraints>
+</feature_model>

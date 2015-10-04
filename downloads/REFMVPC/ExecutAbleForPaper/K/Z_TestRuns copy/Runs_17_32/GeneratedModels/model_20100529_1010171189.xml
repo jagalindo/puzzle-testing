@@ -1,0 +1,31 @@
+<feature_model name="DEVICE">
+<feature_tree>
+:r DEVICE (DEVICE)
+	:m JCalc (JCalc)
+	:m FILE (FILE)
+	:m MENU (MENU)
+	:m HELP (HELP)
+	:m LANG (LANG)
+	:o ANALYZER (ANALYZER)
+	:o EDIT (EDIT)
+	:o LOOKANDFEEL (LOOKANDFEEL)
+		:g [1, 1]
+			: GTK (GTK)
+			: Motif (Motif)
+			: Windows (Windows)
+			: System (System)
+			: Metal (Metal)
+	:o SAVE (SAVE)
+	:o COMMA (COMMA)
+	:o PERFORMANCE (PERFORMANCE)
+	:g [1, 1]
+		: EN (EN)
+		: PT_BR (PT_BR)
+	:g [1, 1]
+		: PC (PC)
+		: Milestone (Milestone)
+		: Z6 (Z6)
+</feature_tree>
+<constraints>
+</constraints>
+</feature_model>
