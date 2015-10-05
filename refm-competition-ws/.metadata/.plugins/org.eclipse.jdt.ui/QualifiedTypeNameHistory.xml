@@ -47,7 +47,6 @@
 <fullyQualifiedTypeName name="es.us.isa.ChocoReasoner.attributed.questions.ChocoProductsQuestion"/>
 <fullyQualifiedTypeName name="fr.inria.diverse.refm.competition.common.utils.PCMQueryServices"/>
 <fullyQualifiedTypeName name="java.util.ArrayList"/>
-<fullyQualifiedTypeName name="es.us.isa.FAMA.models.featureModel.GenericFeature"/>
 <fullyQualifiedTypeName name="fr.inria.diverse.refm.competition.common.utils.PrintUtils"/>
 <fullyQualifiedTypeName name="fr.inria.diverse.refm.competition.common.utils.fitness.FitnessMetrics"/>
 <fullyQualifiedTypeName name="fr.inria.diverse.refm.competition.common.utils.fitness.FitnessMetricsVO"/>
@@ -60,4 +59,5 @@
 <fullyQualifiedTypeName name="es.us.isa.FAMA.models.variabilityModel.VariabilityModel"/>
 <fullyQualifiedTypeName name="es.us.isa.FAMA.models.FAMAfeatureModel.FAMAFeatureModel"/>
 <fullyQualifiedTypeName name="fr.inria.diverse.puzzle.vmsynthesis.impl.FromPFeatureModelToFAMA"/>
+<fullyQualifiedTypeName name="es.us.isa.FAMA.models.featureModel.GenericFeature"/>
 </qualifiedTypeNameHistroy>
