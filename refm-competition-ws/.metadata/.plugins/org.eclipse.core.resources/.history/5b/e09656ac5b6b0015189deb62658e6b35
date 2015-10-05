@@ -41,11 +41,11 @@ public class FitnessMetrics {
 		
 		// Computing precision
 		double intersection = computeIntersectionPCMFM(fm, PCM);
-		double precision = (double)intersection / (double)numberOfFMProducts;
+		double precision = intersection / numberOfFMProducts;
 		metrics.setPrecision(precision);
 		
 		// Computing recall
-		double recall = (double)intersection / (double)numberOfPCMProducts;
+		double recall = intersection / numberOfPCMProducts;
 		metrics.setRecall(recall);
 		
 		// Computing safety
@@ -64,7 +64,7 @@ public class FitnessMetrics {
 		}
 	}
 	
-	public double computeNumberOfProducts(VariabilityModel fm) {
+	public int computeNumberOfProducts(VariabilityModel fm) {
 		this.computeProducts(fm);
 		return FMProducts.size();
 	}
@@ -78,7 +78,7 @@ public class FitnessMetrics {
 		return pq.getAllProducts();
 	}
 
-	public double computeNumberOfProducts(String PCM) {
+	public int computeNumberOfProducts(String PCM) {
 		return PCM.split("\n").length - 1;
 	}
 
@@ -90,8 +90,7 @@ public class FitnessMetrics {
 		for (Product currentProduct : FMProducts) {
 			ArrayList<String> productString = new ArrayList<String>();
 			for (GenericFeature feature : currentProduct.getFeatures()) {
-				if(!feature.getName().equals("_1000"))
-					productString.add(feature.getName());
+				productString.add(feature.getName());
 			}
 			if(pcmQueries.productExists(productString)){
 				intersection++;

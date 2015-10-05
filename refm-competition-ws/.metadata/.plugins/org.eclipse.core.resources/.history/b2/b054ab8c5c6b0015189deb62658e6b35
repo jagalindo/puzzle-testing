@@ -36,7 +36,7 @@ public class BenchmarkingMendezREFM {
 	public void loadScenarios(){
 		synthesizer = new MendezREFM();
 		initialInstance = 1;
-		finalInstance = 18;
+		finalInstance = 3;
 	}
 	
 	// ---------------------------------------------------
