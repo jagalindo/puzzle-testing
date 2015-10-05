@@ -12,6 +12,7 @@
 		<item value="false" key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID"/>
 		<item value="false" key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED"/>
 		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="/home/malawito/Documents/Repositories/puzzle-testing/refm-competition-ws"/>
 			<item value="/Users/dmendeza/workspaces/puzzle-testing/downloads/REFMVPC"/>
 			<item value="/Users/dmendeza/workspaces/puzzle-testing/downloads/REFMVPC/ExecutAbleForPaper"/>
 			<item value="/Users/dmendeza/workspaces/puzzle-testing/downloads/FOReverSE-AFMSynthesis/AFMSynthesis"/>

@@ -11,12 +11,12 @@ import java.util.StringTokenizer;
 
 public class printRCFTInfo {
 
-	public void printRCFT() throws IOException {
+	public void printRCFT(String path) throws IOException {
 
 //		String path="ProdConf\\PFs.csv";
 //		String path="ProdConf\\wiki.csv";
 //		String path="ProdConf\\clock.csv";
-		String path="./ProdConf/m.csv";
+		//String path="./ProdConf/m.csv";
 //		String path="ProdConf\\Product 100 Feature 27.csv";
 		int columns = 0;
 		int rows = 0;
