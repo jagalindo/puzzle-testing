@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><testrun name="BenchmarkingHaslingerREFM" project="fr.inria.diverse.refm.competition.haslinger" tests="1" started="1" failures="0" errors="0" ignored="0">
-  <testsuite name="fr.inria.diverse.refm.competition.haslinger.BenchmarkingHaslingerREFM" time="0.213">
-    <testcase name="executeBenchmark" classname="fr.inria.diverse.refm.competition.haslinger.BenchmarkingHaslingerREFM" time="0.213"/>
-  </testsuite>
-</testrun>

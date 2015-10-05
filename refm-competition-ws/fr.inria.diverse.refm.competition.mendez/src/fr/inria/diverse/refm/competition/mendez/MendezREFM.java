@@ -4,6 +4,7 @@ import java.io.File;
 
 import vm.PFeatureModel;
 import es.us.isa.FAMA.models.FAMAfeatureModel.FAMAFeatureModel;
+import es.us.isa.FAMA.models.variabilityModel.VariabilityModel;
 import fr.inria.diverse.graph.Arc;
 import fr.inria.diverse.graph.Graph;
 import fr.inria.diverse.graph.Vertex;
@@ -13,7 +14,7 @@ import fr.inria.diverse.refm.competition.common.utils.FileUtils;
 
 public class MendezREFM {
 	
-	public FAMAFeatureModel execute(Graph<Vertex, Arc> dependenciesGraph, String PCMFile) throws Exception {
+	public VariabilityModel execute(Graph<Vertex, Arc> dependenciesGraph, String PCMFile) throws Exception {
 		PFeatureModel openFM = VmSynthesis.getInstance().synthesizeOpenFeatureModel(dependenciesGraph);
 		String PCM = FileUtils.readFileContent(new File(PCMFile));
 		PFeatureModel closedFM = VmSynthesis.getInstance().synthesizeClosedFeatureModel(PCM, openFM);

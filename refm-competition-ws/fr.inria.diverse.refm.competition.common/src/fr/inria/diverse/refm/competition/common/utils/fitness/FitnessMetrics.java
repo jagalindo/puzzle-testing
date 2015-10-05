@@ -21,20 +21,13 @@ public class FitnessMetrics {
 	
 	private Collection<Product> FMProducts = null;
 	private PCMQueryServices pcmQueries = null;
-	private static FitnessMetrics instance;
 
 	// -------------------------------------------------------
-	// Constructor and singleton
+	// Constructor
 	// -------------------------------------------------------
 	
-	private FitnessMetrics(){
+	public FitnessMetrics(){
 		pcmQueries = PCMQueryServices.getInstance(); 
-	}
-	
-	public static FitnessMetrics getInstance() {
-		if(instance == null)
-			instance = new FitnessMetrics();
-		return instance;
 	}
 	
 	// -------------------------------------------------------
@@ -61,7 +54,7 @@ public class FitnessMetrics {
 			int productsRespectingDependency = getNumberOfRespectfulProducts(arc, fm);
 			safety += (productsRespectingDependency/numberOfFMProducts);
 		}
-		metrics.setSafety(safety);
+		metrics.setSafety(safety/dependenciesGraph.getArcs().size());
 		return metrics;
 	}
 	
@@ -108,10 +101,54 @@ public class FitnessMetrics {
 	}
 
 	
+	/**
+	 * Returns the number of products that respect the dependency expressed in the arc.
+	 * In other words, returns the number of products in the fm such that there is not a product such that arc.from and not arc.to.
+	 * @param arc
+	 * @param fm
+	 * @return
+	 */
+	private int getNumberOfRespectfulProducts(Arc dependency, VariabilityModel fm) {
+		int respectfulProducts = 0;
+		
+		for (Product product : FMProducts) {
+			if(this.respectDependency(dependency.getFrom().getIdentifier(), dependency.getTo().getIdentifier(), product))
+				respectfulProducts ++;
+		}
+		
+		return respectfulProducts;
+	}
 
-	private int getNumberOfRespectfulProducts(Arc arc, VariabilityModel fm) {
-		// TODO Auto-generated method stub
-		return 0;
+	/**
+	 * Returns true if the product respects the dependency. That is from => to. 
+	 * @param from
+	 * @param to
+	 * @param product
+	 * @return
+	 */
+	private boolean respectDependency(String from, String to,
+			Product product) {
+		boolean containsFrom = false;
+		for (GenericFeature feature : product.getFeatures()) {
+			if(feature.getName().equals(from)){
+				containsFrom = true;
+				break;
+			}
+				
+		}
+		
+		boolean containsTo = false;
+		for (GenericFeature feature : product.getFeatures()) {
+			if(feature.getName().equals(to)){
+				containsTo = true;
+				break;
+			}
+		}
+		
+		if(containsFrom)
+			return containsTo;
+		else
+			return true;
 	}
 
 }

@@ -39,7 +39,7 @@ public class PrintUtils {
 		System.out.println("***");
 		System.out.println("******");
 		System.out.println("Printing the evaluation metrics for the resulting feature model");
-		FitnessMetrics metrics = FitnessMetrics.getInstance();
+		FitnessMetrics metrics = new FitnessMetrics();
 		FitnessMetricsVO vo = metrics.compute(fm, dependenciesGraph, PCM);
 		System.out.println(" - Precision: " + vo.getPrecision());
 		System.out.println(" - Recall: " + vo.getRecall());

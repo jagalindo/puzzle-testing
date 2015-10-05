@@ -5,7 +5,7 @@ import java.io.File;
 import org.junit.Before;
 import org.junit.Test;
 
-import es.us.isa.FAMA.models.FAMAfeatureModel.FAMAFeatureModel;
+import es.us.isa.FAMA.models.variabilityModel.VariabilityModel;
 import fr.inria.diverse.graph.Arc;
 import fr.inria.diverse.graph.Graph;
 import fr.inria.diverse.graph.Vertex;
@@ -36,7 +36,7 @@ public class BenchmarkingMendezREFM {
 	public void loadScenarios(){
 		synthesizer = new MendezREFM();
 		initialInstance = 1;
-		finalInstance = 1;
+		finalInstance = 3;
 	}
 	
 	// ---------------------------------------------------
@@ -48,7 +48,7 @@ public class BenchmarkingMendezREFM {
 		for (int i = initialInstance; i <= finalInstance; i++) {
 			String matrix = FileUtils.readFileContent(new File("testdata/" + i + "_1_dependencies_graph.txt"));
 			Graph<Vertex, Arc> graph = new Graph<Vertex, Arc>(matrix);
-			FAMAFeatureModel result = synthesizer.execute(graph, "testdata/" + i + "_3_closed_pcm.txt");
+			VariabilityModel result = synthesizer.execute(graph, "testdata/" + i + "_3_closed_pcm.txt");
 			String originalPCM = FileUtils.readFileContent(new File("testdata/" + i + "_3_closed_pcm.txt"));
 			(new PrintUtils()).printFitness(result, graph, originalPCM);
 			(new PrintUtils()).printTopologyMetrics(result);
