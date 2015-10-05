@@ -10,6 +10,17 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.*;
 
+import javax.sql.rowset.spi.XmlWriter;
+
+import es.us.isa.FAMA.models.FAMAfeatureModel.Dependency;
+import es.us.isa.FAMA.models.FAMAfeatureModel.ExcludesDependency;
+import es.us.isa.FAMA.models.FAMAfeatureModel.FAMAFeatureModel;
+import es.us.isa.FAMA.models.FAMAfeatureModel.Feature;
+import es.us.isa.FAMA.models.FAMAfeatureModel.Relation;
+import es.us.isa.FAMA.models.FAMAfeatureModel.RequiresDependency;
+import es.us.isa.FAMA.models.FAMAfeatureModel.fileformats.XMLWriter;
+import es.us.isa.FAMA.models.featureModel.Cardinality;
+
 
 public class ReadDotFile {
 	
@@ -638,6 +649,8 @@ public class ReadDotFile {
 //	=============================================================		
 	
 	public void FM() throws IOException {
+		FAMAFeatureModel fm = new FAMAFeatureModel();
+		
 		
 		int clusterNumber=1;
 		int AR_counter = 1;
@@ -657,7 +670,8 @@ public class ReadDotFile {
 		bw.write("subgraph cluster_"+clusterNumber+"{"+ "\n");
 	 	++clusterNumber;
 //	     ============================================================================================================= "root"
-		
+		Feature root = new Feature(root1);
+		fm.setRoot(root);
 		bw.write("node [shape=box, width=0.7, height=0.3,style=filled, color=blue, fillcolor=yellow1];"+ "\n"); // abstract
 		
 		bw.write("subgraph cluster_"+clusterNumber+"{"+ "\n");
@@ -673,12 +687,23 @@ public class ReadDotFile {
 		
 		for(int i =0; i<1;i++){
 		bw.write("\"" + root1 + "\"" + "->" + "\"" + MR + "\""+ ":n[arrowhead=\"dot\"];");
+			Relation r = new Relation();
+			r.addCardinality(new Cardinality(1, 1));
+			r.addDestination(new Feature(MR));
+			root.addRelation(r);
 		}
 		
 		bw.write("node [shape=box, width=0.7, height=0.3,style=filled, color=blue, fillcolor=yellow1];"+ "\n"); // concreate
-		
+		Relation r = new Relation();
+    	r.addCardinality(new Cardinality(mandatory.size(), mandatory.size()));
 	    for (int jj =0; jj<mandatory.size(); jj++) {
-	    bw.write("\"" + MR + "\"" + "->" + "\"" + mandatory.get(jj) + "\""+ ":n[arrowhead=\"box\"];");}
+	    bw.write("\"" + MR + "\"" + "->" + "\"" + mandatory.get(jj) + "\""+ ":n[arrowhead=\"box\"];");
+	    	
+	    	r.addDestination(new Feature(mandatory.get(jj)));
+	    }
+    	fm.searchFeatureByName(MR).addRelation(r);
+
+	  
 		}
 		
 		bw.write("node [shape=box, width=0.7, height=0.3,style=filled, color=blue, fillcolor=yellow1];"+ "\n"); // concreate
@@ -707,7 +732,7 @@ public class ReadDotFile {
 			atomicSetFeature.clear();
 		 }
 		}
-		
+		 
 //	     ============================================================================================================= " * Xor "
 		
 	    List<List<String>> lists = new ArrayList<List<String>>();
@@ -751,15 +776,26 @@ public class ReadDotFile {
 		if(alternative.size()>1 && numofPaths.size()>1){
 //			bw.write("\"" + root1 + "\"" + "->" + "\"" + "Exclusive-or" + "_"+ xorCunter + "\"" + ":n[arrowhead=\"odot\"];" + "\n");
 			bw.write("\"" + root1 + "\"" + "->" + "\"" + "XOR" + "\"" + ":n[arrowhead=\"dot\"];" + "\n");
+			//creo una feature que cuelga de toor y es mandatory
+			Relation r = new Relation();
+			r.addCardinality(new Cardinality(1, 1));
+			r.addDestination(new Feature("XOR"));
+			fm.searchFeatureByName(root1).addRelation(r);
+			
+			r = new Relation();
+			r.addCardinality(new Cardinality(1, 1));
+
 			bw.write("node [shape=box, width=0.7, height=0.3,style=filled, color=blue, fillcolor=yellow1];"+ "\n"); // concreate
 			for(int i=0; i<alternative.size(); i++){
 				Xor.add(alternative.get(i));
 //				bw.write("\"" + "Exclusive-or" + "_" + xorCunter + "\"" + "->" + "\""+ alternative.get(i) + "\""+ ":n[arrowhead=\"invodot\"];" + "\n");
 				bw.write("\"" + "XOR" + "\"" + "->" + "\""+ alternative.get(i) + "\""+ ":n[arrowhead=\"invodot\"];" + "\n");
-
+				r.addDestination(new Feature(alternative.get(i)));
 			}
-		}
+			fm.searchFeatureByName("XOR").addRelation(r);
 
+		}
+		
 //            ==================================================================== The XOR Concept Number
 		Concept a;
 		
@@ -820,7 +856,14 @@ public class ReadDotFile {
 			System.err.println("The Optional Features :" + Optional2 );
 		    bw.write("node [shape=box, width=0.7, height=0.3,style=filled, color=red, fillcolor=yellow1];"+ "\n"); // abstract
 //			bw.write("\"" + root1 + "\"" + "->" + "\"" + "Optional_Features" + "_"+ Optional_Features + "\"" + ":n[arrowhead=\"odot\"];" + "\n");
-			bw.write("\"" + root1 + "\"" + "->" + "\"" + "OR" + "\"" + ":n[arrowhead=\"odot\"];" + "\n");
+			
+		    bw.write("\"" + root1 + "\"" + "->" + "\"" + "OR" + "\"" + ":n[arrowhead=\"odot\"];" + "\n");
+			Relation r = new Relation();
+			r.addCardinality(new Cardinality(1, 1));
+			r.addDestination(new Feature("OR"));
+			fm.searchFeatureByName(root1).addRelation(r);
+			
+
 		    bw.write("node [shape=box, width=0.7, height=0.3,style=filled, color=blue, fillcolor=yellow1];"+ "\n"); // concreate
 			
 			for (int in = 0; in < Optional2.size(); in++){
@@ -828,6 +871,11 @@ public class ReadDotFile {
 //				bw.write("\"" + root1 + "\"" + "->" + "\""+ Optional2.get(in) + "\""+ ":n[arrowhead=\"odiamond\"];" + "\n");
 //				System.err.println(Optional2.get(in));
 				bw.write("\"" + "OR"  + "\"" + "->" + "\""+ Optional2.get(in) + "\""+ ":n[arrowhead=\"odiamond\"];" + "\n");
+				r = new Relation();
+				r.addCardinality(new Cardinality(0, 1));
+				r.addDestination(new Feature(Optional2.get(in)));
+				fm.searchFeatureByName("OR").addRelation(r);
+				
 				}
 			}
 		}
@@ -879,12 +927,15 @@ public class ReadDotFile {
 		    			rightofRe.replace("[", "").replace("]", ""));
 		    	
 		    	bw.write("\"" + leftofRe.replace("[", "").replace("]", "") + "\"" + "->" + "\""+ rightofRe.replace("[", "").replace("]", "") + "\""+ ":n[color=\"red\",label=\"Requires\"];" + "\n");
+		    	Dependency dep = new RequiresDependency(fm.searchFeatureByName(leftofRe.replace("[", "").replace("]", "")), fm.searchFeatureByName( rightofRe.replace("[", "").replace("]", "")));
+		    	fm.addDependency(dep);
 		    	}
 		    	
 		        }
 
 		    }
 
+		    
 //	     ============================================================================================================= " * Excludes "
 		  
 		List<Set<String>> keyExclude = null;
@@ -923,6 +974,8 @@ public class ReadDotFile {
 					for(int yy=0; yy < left.size(); yy++){
 						System.err.println("The excludes CTC : " + left.get(yy) +" < === > "+ right.get(z)); 
 						bw.write("\"" + left.get(yy)+ "\"" + "->" + "\""+  right.get(z) + "\""+ ":n[style=\"dashed\", color=\"blue\",label=\" Excludes\", dir=\"both\"];" + "\n");
+						Dependency dep = new ExcludesDependency(fm.searchFeatureByName(left.get(yy)), fm.searchFeatureByName(right.get(z) ));
+				    	fm.addDependency(dep);
 					}
 
 			}
@@ -980,7 +1033,14 @@ public class ReadDotFile {
 		bw.write("}"+"\n");
 		bw.write("}");
 	    bw.close();
-	   
+	 
+	    XMLWriter w = new XMLWriter();
+	    try {
+			w.writeFile("./out.xml", fm);
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 //	     ============================================================================================================= "Legend"
 	}
 

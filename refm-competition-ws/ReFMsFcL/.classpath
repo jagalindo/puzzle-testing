@@ -9,5 +9,6 @@
 	<classpathentry kind="lib" path="lib/org.eclipse.emf.ecore.jar"/>
 	<classpathentry kind="lib" path="lib/org.eclipse.emf.ecore.xmi.jar"/>
 	<classpathentry kind="lib" path="lib/erca_1.6.1.jar"/>
+	<classpathentry kind="lib" path="lib/FaMaFeatureModel-0.9.1.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
