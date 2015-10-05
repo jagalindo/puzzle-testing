@@ -1,6 +1,102 @@
 digraph G { 
 	rankdir=BT;
-1484594489 [shape=record,style=filled,fillcolor=red,label="{Concept_0||Product1Bank;x;x;x;x;x;x;x;x;x;x;x;x;x;x;x;x;x;x;x;x;x;x;;x;x\nProduct2Bank;x;x;x;x;x;x;x;x;x;x;x;x;x;;;;;;;;;;x;;\nProduct3Bank;x;x;x;x;x;x;x;x;x;x;x;x;x;x;x;x;x;x;;;;;x;x;x\nProduct4Bank;x;x;x;x;x;x;x;x;x;x;x;x;x;x;x;x;x;x;x;x;x;x;;;\nProduct5Bank;x;x;x;x;x;x;x;x;x;x;x;x;x;;;;;;;;;;x;x;x\nProduct6Bank;x;x;x;x;x;x;x;x;x;x;x;x;x;;;;;;x;x;x;x;;;\nProduct7Bank;x;x;x;x;x;x;x;x;x;x;x;x;x;;;;;;x;x;x;x;;x;x\nProduct8Bank;x;x;x;x;x;x;x;x;x;x;x;x;x;x;x;x;x;x;;;;;x;;\n}"];
-1489069835 [shape=record,style=filled,fillcolor=blue,label="{Concept_1|bs);createAttribute(accounts\nBank);createOperation(depositOnAccount\nBank);createOperation(withdrawFromAccount\nBank);CreateClass(Account\nbs);CreateAttribute(id\nAccount);CreateAttribute(amount\nAccount);CreateOperation(deposit\nAccount);CreateOperation(getAmount\nAccount);CreateClass(Client\nbs);CreateAttribute(name\nClient);CreateAttribute(id\nClient);CreateAttribute(currency\nAccount);CreateClass(Converter\nbs);CreateOperation(conv\nConverter);CreateAttribute(converter\nBank);CreateOperation(convert\nBank);CreateAttribute(limit\nAccount);CreateOperation(withdrawWithLimit\nAccount);CreateOperation(getLimit\nAccount);CreateOperation(setLimit\nAccount);CreateOperation(withdrawWithoutLimit\nAccount);CreateClass(Consortium\nbs);CreateAttribute(cons\nBank)\n|}"];
-	1489069835 -> 1484594489
+885851948 [shape=record,style=filled,fillcolor=red,label="{Concept_0|D\n|P865\nP76\nP570\nP492\nP85\nP761\nP891\nP128\nP605\nP388\nP726\nP648\nP284\nP778\nP544\nP631\nP18\nP59\nP518\nP475\nP345\nP414\nP579\nP466\nP163\nP293\nP960\nP683\nP622\nP310\nP969\nP241\nP943\nP804\nP102\nP189\nP215\nP657\nP440\nP267\nP735\nP206\nP882\nP830\nP362\nP501\nP839\nP527\nP154\nP1\nP423\nP596\nP449\nP336\nP917\nP700\nP232\nP371\nP50\nP397\nP137\nP180\nP553\nP709\nP111\nP674\nP752\nP319\nP813\nP787\nP934\nP258\nP986\nP856\nP33\nP908\n}"];
+1605283233 [shape=record,style=filled,fillcolor=red,label="{Concept_1||P493\nP762\nP86\nP346\nP60\nP892\nP441\nP814\nP337\nP424\nP571\nP467\nP883\nP103\nP701\nP242\nP935\nP311\nP649\nP285\nP138\nP77\nP788\nP181\nP476\nP294\nP389\nP736\nP805\nP580\nP268\nP216\nP2\nP207\nP727\nP866\nP545\nP320\nP684\nP398\nP632\nP415\nP779\nP840\nP710\nP519\nP597\nP944\nP19\nP658\nP164\nP528\nP909\nP233\nP363\nP753\nP259\nP961\nP502\nP606\nP857\nP970\nP34\nP190\nP554\nP675\nP918\nP372\nP129\nP450\nP831\nP155\nP112\nP51\nP623\nP987\n}"];
+2054574951 [shape=record,style=filled,fillcolor=red,label="{Concept_2|G\n|P208\nP416\nP832\nP702\nP234\nP139\nP650\nP893\nP555\nP763\nP191\nP156\nP633\nP451\nP373\nP659\nP737\nP711\nP269\nP806\nP468\nP3\nP494\nP685\nP78\nP789\nP994\nP529\nP581\nP754\nP503\nP546\nP217\nP52\nP945\nP520\nP364\nP728\nP130\nP971\nP338\nP884\nP20\nP347\nP477\nP182\nP399\nP867\nP35\nP286\nP676\nP962\nP243\nP598\nP61\nP113\nP572\nP910\nP936\nP815\nP425\nP87\nP260\nP295\nP858\nP312\nP390\nP104\nP607\nP919\nP165\nP780\nP624\nP988\nP321\nP841\nP442\n}"];
+399931359 [shape=record,style=filled,fillcolor=red,label="{Concept_3|O\n|P995\nP677\nP192\nP417\nP894\nP582\nP764\nP348\nP972\nP521\nP660\nP842\nP36\nP547\nP573\nP469\nP166\nP599\nP114\nP105\nP790\nP911\nP157\nP88\nP504\nP816\nP209\nP426\nP963\nP807\nP62\nP686\nP322\nP79\nP755\nP738\nP140\nP703\nP4\nP530\nP781\nP365\nP729\nP218\nP313\nP495\nP989\nP235\nP868\nP443\nP244\nP261\nP287\nP296\nP920\nP859\nP391\nP556\nP712\nP478\nP937\nP53\nP885\nP374\nP270\nP183\nP452\nP634\nP833\nP339\nP131\nP608\nP21\nP946\nP400\nP651\nP625\n}"];
+198761306 [shape=record,style=filled,fillcolor=red,label="{Concept_4||P938\nP730\nP288\nP375\nP366\nP973\nP444\nP418\nP860\nP427\nP496\nP245\nP756\nP912\nP106\nP219\nP54\nP479\nP713\nP869\nP323\nP349\nP89\nP531\nP158\nP947\nP609\nP167\nP661\nP990\nP392\nP704\nP22\nP808\nP921\nP262\nP470\nP678\nP505\nP557\nP210\nP817\nP297\nP115\nP548\nP37\nP739\nP834\nP765\nP271\nP895\nP574\nP401\nP80\nP141\nP63\nP193\nP635\nP184\nP843\nP791\nP964\nP583\nP453\nP600\nP340\nP522\nP626\nP652\nP314\nP996\nP5\nP782\nP236\nP687\nP132\nP886\n}"];
+525571 [shape=record,style=filled,fillcolor=red,label="{Concept_5||P740\nP662\nP965\nP350\nP445\nP558\nP81\nP705\nP757\nP289\nP298\nP913\nP948\nP376\nP263\nP610\nP315\nP575\nP809\nP636\nP497\nP922\nP237\nP627\nP870\nP64\nP116\nP653\nP939\nP90\nP679\nP714\nP38\nP549\nP272\nP835\nP367\nP393\nP55\nP133\nP887\nP818\nP974\nP428\nP480\nP783\nP454\nP766\nP194\nP584\nP506\nP220\nP792\nP324\nP402\nP185\nP532\nP107\nP896\nP23\nP246\nP142\nP419\nP168\nP341\nP601\nP991\nP861\nP159\nP688\nP523\nP471\nP6\nP731\nP997\nP211\nP844\n}"];
+1208736537 [shape=record,style=filled,fillcolor=red,label="{Concept_6|V\n|P654\nP56\nP715\nP706\nP24\nP429\nP784\nP82\nP810\nP611\nP195\nP836\nP117\nP689\nP923\nP481\nP741\nP65\nP524\nP992\nP247\nP169\nP637\nP446\nP845\nP238\nP273\nP108\nP975\nP325\nP940\nP550\nP862\nP914\nP394\nP888\nP342\nP966\nP472\nP290\nP680\nP533\nP420\nP663\nP767\nP507\nP143\nP221\nP212\nP7\nP368\nP455\nP793\nP871\nP732\nP559\nP628\nP585\nP377\nP498\nP186\nP91\nP134\nP897\nP998\nP819\nP949\nP160\nP316\nP351\nP299\nP39\nP264\nP576\nP602\nP403\nP758\n}"];
+710239027 [shape=record,style=filled,fillcolor=red,label="{Concept_7||P846\nP8\nP196\nP785\nP161\nP430\nP577\nP872\nP170\nP395\nP976\nP92\nP144\nP742\nP924\nP534\nP999\nP66\nP187\nP820\nP300\nP655\nP404\nP794\nP629\nP40\nP499\nP586\nP343\nP57\nP456\nP560\nP664\nP447\nP352\nP118\nP222\nP369\nP950\nP707\nP551\nP967\nP716\nP690\nP811\nP378\nP213\nP248\nP482\nP603\nP837\nP889\nP993\nP941\nP473\nP239\nP733\nP326\nP612\nP525\nP83\nP25\nP863\nP265\nP421\nP638\nP109\nP898\nP291\nP759\nP508\nP768\nP317\nP681\nP135\nP274\nP915\n}"];
+1018298342 [shape=record,style=filled,fillcolor=red,label="{Concept_8||P604\nP916\nP630\nP656\nP379\nP951\nP448\nP925\nP110\nP734\nP717\nP977\nP474\nP613\nP795\nP743\nP873\nP890\nP1000\nP552\nP197\nP41\nP847\nP240\nP786\nP691\nP942\nP292\nP587\nP396\nP249\nP500\nP968\nP344\nP526\nP535\nP682\nP561\nP58\nP171\nP275\nP838\nP301\nP162\nP431\nP769\nP67\nP136\nP9\nP483\nP812\nP578\nP864\nP821\nP457\nP899\nP405\nP145\nP509\nP370\nP93\nP266\nP223\nP327\nP84\nP214\nP188\nP665\nP353\nP422\nP639\nP119\nP26\nP318\nP760\nP708\n}"];
+1039949752 [shape=record,style=filled,fillcolor=red,label="{Concept_9||P198\nP42\nP770\nP328\nP666\nP900\nP10\nP692\nP510\nP458\nP94\nP952\nP744\nP562\nP718\nP640\nP146\nP120\nP978\nP484\nP432\nP796\nP926\nP614\nP68\nP406\nP874\nP536\nP822\nP380\nP27\nP588\nP302\nP354\nP224\nP250\nP276\nP848\nP172\n}"];
+1182461167 [shape=record,style=filled,fillcolor=red,label="{Concept_10||P875\nP511\nP381\nP28\nP251\nP147\nP199\nP11\nP745\nP277\nP225\nP43\nP303\nP433\nP693\nP849\nP953\nP537\nP95\nP355\nP927\nP615\nP121\nP485\nP901\nP641\nP667\nP823\nP563\nP329\nP69\nP407\nP719\nP979\nP797\nP459\nP589\nP771\nP173\n}"];
+2116908859 [shape=record,style=filled,fillcolor=red,label="{Concept_11||P226\nP148\nP330\nP408\nP876\nP29\nP902\nP122\nP746\nP12\nP356\nP382\nP96\nP590\nP824\nP642\nP564\nP512\nP70\nP200\nP434\nP304\nP278\nP44\nP850\nP616\nP694\nP252\nP798\nP928\nP980\nP668\nP460\nP720\nP772\nP954\nP174\nP538\nP486\n}"];
+561247961 [shape=record,style=filled,fillcolor=red,label="{Concept_12|K\nX\n|P201\nP773\nP305\nP227\nP149\nP71\nP721\nP617\nP513\nP591\nP45\nP175\nP123\nP487\nP929\nP30\nP747\nP825\nP253\nP877\nP903\nP383\nP695\nP97\nP331\nP357\nP539\nP13\nP643\nP565\nP851\nP955\nP669\nP461\nP435\nP279\nP981\nP799\nP409\n}"];
+813656972 [shape=record,style=filled,fillcolor=red,label="{Concept_13||P176\nP150\nP774\nP332\nP748\nP358\nP14\nP124\nP696\nP670\nP800\nP462\nP982\nP254\nP826\nP98\nP31\nP514\nP644\nP72\nP46\nP384\nP852\nP956\nP202\nP306\nP618\nP280\nP436\nP410\nP904\nP878\nP566\nP592\nP722\nP930\nP488\nP540\nP228\n}"];
+2048425748 [shape=record,style=filled,fillcolor=red,label="{Concept_14||P983\nP281\nP229\nP359\nP125\nP697\nP333\nP541\nP307\nP489\nP47\nP775\nP593\nP99\nP853\nP879\nP567\nP827\nP411\nP931\nP255\nP32\nP15\nP749\nP723\nP463\nP801\nP515\nP177\nP645\nP73\nP385\nP619\nP151\nP671\nP905\nP437\nP957\nP203\n}"];
+1263877414 [shape=record,style=filled,fillcolor=red,label="{Concept_15|J\n|P74\nP542\nP438\nP126\nP204\nP802\nP828\nP334\nP854\nP750\nP256\nP594\nP620\nP776\nP568\nP360\nP932\nP100\nP958\nP724\nP308\nP152\nP516\nP16\nP464\nP646\nP178\nP880\nP698\nP490\nP984\nP906\nP282\nP230\nP672\nP48\nP386\nP412\n}"];
+1863932867 [shape=record,style=filled,fillcolor=red,label="{Concept_16||P803\nP387\nP17\nP49\nP101\nP283\nP335\nP933\nP153\nP543\nP517\nP205\nP231\nP127\nP829\nP569\nP413\nP985\nP647\nP725\nP621\nP751\nP881\nP595\nP361\nP257\nP465\nP179\nP959\nP907\nP777\nP75\nP699\nP855\nP673\nP491\nP309\nP439\n}"];
+2048834776 [shape=record,style=filled,fillcolor=blue,label="{Concept_17|Matrix.\nA\nB\n|}"];
+1384722895 [shape=record,style=filled,fillcolor=blue,label="{Concept_18|C\n|}"];
+2104545713 [shape=record,style=filled,fillcolor=blue,label="{Concept_19|E\n|}"];
+798244209 [shape=record,style=filled,fillcolor=blue,label="{Concept_20|F\n|}"];
+1297149880 [shape=record,style=filled,fillcolor=blue,label="{Concept_21|H\n|}"];
+809762318 [shape=record,style=filled,fillcolor=blue,label="{Concept_22|I\n|}"];
+245475541 [shape=record,style=filled,fillcolor=blue,label="{Concept_23|L\n|}"];
+22429093 [shape=record,style=filled,fillcolor=blue,label="{Concept_24|M\n|}"];
+110771485 [shape=record,style=filled,fillcolor=blue,label="{Concept_25|N\n|}"];
+733957003 [shape=record,style=filled,fillcolor=blue,label="{Concept_26|P\n|}"];
+141289226 [shape=record,style=filled,fillcolor=blue,label="{Concept_27|Q\n|}"];
+2028371466 [shape=record,style=filled,fillcolor=blue,label="{Concept_28|R\n|}"];
+712256162 [shape=record,style=filled,fillcolor=blue,label="{Concept_29|S\n|}"];
+815992954 [shape=record,style=filled,fillcolor=blue,label="{Concept_30|T\n|}"];
+868737467 [shape=record,style=filled,fillcolor=blue,label="{Concept_31|U\n|}"];
+55331187 [shape=record,style=filled,fillcolor=blue,label="{Concept_32|X\n|}"];
+1991294891 [shape=record,style=filled,fillcolor=blue,label="{Concept_33|Y\n|}"];
+1392425346 [shape=record,style=filled,fillcolor=blue,label="{Concept_34|Z\n|}"];
+	885851948 -> 2048834776
+	1605283233 -> 1384722895
+	1605283233 -> 245475541
+	1605283233 -> 733957003
+	1605283233 -> 815992954
+	1605283233 -> 868737467
+	1605283233 -> 1392425346
+	2054574951 -> 885851948
+	2054574951 -> 1991294891
+	399931359 -> 1384722895
+	399931359 -> 809762318
+	399931359 -> 2028371466
+	198761306 -> 885851948
+	198761306 -> 798244209
+	525571 -> 885851948
+	525571 -> 1263877414
+	525571 -> 110771485
+	525571 -> 141289226
+	525571 -> 1392425346
+	1208736537 -> 245475541
+	710239027 -> 1384722895
+	710239027 -> 2104545713
+	710239027 -> 712256162
+	710239027 -> 868737467
+	1018298342 -> 885851948
+	1018298342 -> 809762318
+	1018298342 -> 22429093
+	1039949752 -> 1384722895
+	1039949752 -> 110771485
+	1039949752 -> 1392425346
+	1182461167 -> 1297149880
+	1182461167 -> 141289226
+	2116908859 -> 798244209
+	2116908859 -> 868737467
+	561247961 -> 1392425346
+	813656972 -> 1297149880
+	813656972 -> 712256162
+	813656972 -> 815992954
+	2048425748 -> 2104545713
+	2048425748 -> 809762318
+	2048425748 -> 110771485
+	1263877414 -> 2048834776
+	1863932867 -> 2028371466
+	1863932867 -> 55331187
+	1863932867 -> 1392425346
+	1384722895 -> 2048834776
+	2104545713 -> 2048834776
+	798244209 -> 1991294891
+	1297149880 -> 733957003
+	809762318 -> 2048834776
+	245475541 -> 885851948
+	245475541 -> 55331187
+	22429093 -> 2048834776
+	110771485 -> 2048834776
+	733957003 -> 2048834776
+	141289226 -> 2048834776
+	2028371466 -> 2048834776
+	712256162 -> 2048834776
+	815992954 -> 22429093
+	815992954 -> 733957003
+	868737467 -> 2048834776
+	55331187 -> 2048834776
+	1991294891 -> 2048834776
+	1392425346 -> 2048834776
 }

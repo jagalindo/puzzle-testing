@@ -1,0 +1,16 @@
+digraph G { 
+	rankdir=BT;
+31667671 [shape=record,style=filled,label="{Concept_0|Camera\n|P1\n}"];
+31709196 [shape=record,style=filled,label="{Concept_1||P2\n}"];
+23206137 [shape=record,style=filled,label="{Concept_2|Bluetooth\n|P3\n}"];
+24973910 [shape=record,style=filled,label="{Concept_3|WI-FI\n|P4\n}"];
+4131696 [shape=record,style=filled,label="{Concept_4||P5\n}"];
+22391321 [shape=record,style=filled,fillcolor=lightblue,label="{Concept_5|Phone.\nConnectivity\n|}"];
+	31667671 -> 23206137
+	31709196 -> 31667671
+	31709196 -> 4131696
+	23206137 -> 22391321
+	24973910 -> 22391321
+	4131696 -> 23206137
+	4131696 -> 24973910
+}

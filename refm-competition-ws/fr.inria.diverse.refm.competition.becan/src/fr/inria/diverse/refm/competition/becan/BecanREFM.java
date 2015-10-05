@@ -2,7 +2,6 @@ package fr.inria.diverse.refm.competition.becan;
 
 import java.io.File;
 
-import es.us.isa.FAMA.models.FAMAAttributedfeatureModel.fileformats.AttributedReader;
 import es.us.isa.FAMA.models.FAMAfeatureModel.fileformats.FMPlainTextReader;
 import es.us.isa.FAMA.models.variabilityModel.VariabilityModel;
 import foreverse.afmsynthesis.AFMSynthesis;

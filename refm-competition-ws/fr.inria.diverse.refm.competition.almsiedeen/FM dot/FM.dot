@@ -1,0 +1,75 @@
+digraph G  { 
+graph [bgcolor=gray97];
+subgraph cluster_1{
+node [shape=box, width=0.7, height=0.3,style=filled, color=blue, fillcolor=yellow1];
+subgraph cluster_2{
+node [shape=box, width=0.7, height=0.3,style=filled, color=red, fillcolor=yellow1];
+"MobileMedia";
+node [shape=box, width=0.7, height=0.3,style=filled, color=red, fillcolor=yellow1];
+"MobileMedia"->"Base":n[arrowhead="dot"];node [shape=box, width=0.7, height=0.3,style=filled, color=blue, fillcolor=yellow1];
+"Base"->"CreateAlbum":n[arrowhead="box"];"Base"->"DeleteAlbum":n[arrowhead="box"];"Base"->"CreateMedia":n[arrowhead="box"];"Base"->"DeleteMedia":n[arrowhead="box"];"Base"->"ViewPhoto":n[arrowhead="box"];node [shape=box, width=0.7, height=0.3,style=filled, color=blue, fillcolor=yellow1];
+node [shape=box, width=0.7, height=0.3,style=filled, color=red, fillcolor=yellow1];
+"MobileMedia"->"AND_1":n[arrowhead="odot"];
+node [shape=box, width=0.7, height=0.3,style=filled, color=blue, fillcolor=yellow1];
+"AND_1"->"EditMediaLabel":n[arrowhead="box"];
+node [shape=box, width=0.7, height=0.3,style=filled, color=blue, fillcolor=yellow1];
+"AND_1"->"Sorting":n[arrowhead="box"];
+node [shape=box, width=0.7, height=0.3,style=filled, color=red, fillcolor=yellow1];
+"MobileMedia"->"AND_2":n[arrowhead="odot"];
+node [shape=box, width=0.7, height=0.3,style=filled, color=blue, fillcolor=yellow1];
+"AND_2"->"SetFavourites":n[arrowhead="box"];
+node [shape=box, width=0.7, height=0.3,style=filled, color=blue, fillcolor=yellow1];
+"AND_2"->"ViewFavourites":n[arrowhead="box"];
+node [shape=box, width=0.7, height=0.3,style=filled, color=red, fillcolor=yellow1];
+"MobileMedia"->"AND_3":n[arrowhead="odot"];
+node [shape=box, width=0.7, height=0.3,style=filled, color=blue, fillcolor=yellow1];
+"AND_3"->"ReceivePhoto":n[arrowhead="box"];
+node [shape=box, width=0.7, height=0.3,style=filled, color=blue, fillcolor=yellow1];
+"AND_3"->"SendPhoto":n[arrowhead="box"];
+node [shape=box, width=0.7, height=0.3,style=filled, color=red, fillcolor=yellow1];
+"MobileMedia"->"AND_4":n[arrowhead="odot"];
+node [shape=box, width=0.7, height=0.3,style=filled, color=blue, fillcolor=yellow1];
+"AND_4"->"PlayMusic/Song":n[arrowhead="box"];
+node [shape=box, width=0.7, height=0.3,style=filled, color=blue, fillcolor=yellow1];
+"AND_4"->"CapturePhoto":n[arrowhead="box"];
+node [shape=box, width=0.7, height=0.3,style=filled, color=blue, fillcolor=yellow1];
+"AND_4"->"PlayVideo":n[arrowhead="box"];
+node [shape=box, width=0.7, height=0.3,style=filled, color=blue, fillcolor=yellow1];
+"AND_4"->"CaptureVideo":n[arrowhead="box"];
+node [shape=box, width=0.7, height=0.3,style=filled, color=red, fillcolor=yellow1];
+"MobileMedia"->"XOR":n[arrowhead="dot"];
+node [shape=box, width=0.7, height=0.3,style=filled, color=blue, fillcolor=yellow1];
+"XOR"->"CopyMedia":n[arrowhead="invodot"];
+"XOR"->"ExceptionHandling":n[arrowhead="invodot"];
+"XOR"->"CopyMedia":n[arrowhead="invodot"];
+"XOR"->"ExceptionHandling":n[arrowhead="invodot"];
+	label = "Feature Model";
+	color=green3;	}
+subgraph cluster_3{
+
+	subgraph cluster_4{
+	"Abstract":n[fillcolor="yellow1", color="red"];
+	"Concrete":n[fillcolor="yellow1", color="blue"];
+	"                "->"Mandatory":n[arrowhead="dot"];
+	"             "->"Optional":n[arrowhead="odot"];
+	label = "Features:";
+	color=blue;
+	}
+	subgraph cluster_5{
+	edge [dir=none]"F1 "->"F2 "[style="dashed", color="blue",label=" Excludes", dir="both"];
+	 edge [dir=forward]"F1"->"F2"[color="red",label=" Requires"];
+	label = "Cross-tree Constraints:";	color=blue;	}	subgraph cluster_6{
+	"Or" ->"   ":n[arrowhead="odiamond"];
+	"Or" ->"     ":n[arrowhead="odiamond"];
+	"Xor"->"      ":n[arrowhead="invodot"];
+	"Xor"->"       ":n[arrowhead="invodot"];
+	"And"->"        ":n[arrowhead="box"];
+	"And"->"         ":n[arrowhead="box"];
+	label = "Group of Features:";
+	color=blue;
+	}
+	label = "Legend:";
+	color=red
+}
+}
+}

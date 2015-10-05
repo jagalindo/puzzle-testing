@@ -1,0 +1,85 @@
+digraph G  { 
+subgraph cluster_1{
+node [shape=box, width=0.7, height=0.3,style=filled, color=blue, fillcolor=yellow1];
+subgraph cluster_2{
+node [shape=box, width=0.7, height=0.3,style=filled, color=red, fillcolor=yellow1];
+"A";
+node [shape=box, width=0.7, height=0.3,style=filled, color=red, fillcolor=yellow1];
+"A"->"Core Features":n[arrowhead="dot"];node [shape=box, width=0.7, height=0.3,style=filled, color=blue, fillcolor=yellow1];
+"Core Features"->"C":n[arrowhead="box"];"Core Features"->"B":n[arrowhead="box"];"Core Features"->"E":n[arrowhead="box"];"Core Features"->"F":n[arrowhead="box"];"Core Features"->"D":n[arrowhead="box"];node [shape=box, width=0.7, height=0.3,style=filled, color=blue, fillcolor=yellow1];
+node [shape=box, width=0.7, height=0.3,style=filled, color=red, fillcolor=yellow1];
+"A"->"Atomic Features_1":n[arrowhead="odot"];
+node [shape=box, width=0.7, height=0.3,style=filled, color=blue, fillcolor=yellow1];
+"Atomic Features_1"->"H":n[arrowhead="box"];
+"Atomic Features_1"->"G":n[arrowhead="box"];
+node [shape=box, width=0.7, height=0.3,style=filled, color=red, fillcolor=yellow1];
+"A"->"Atomic Features_2":n[arrowhead="odot"];
+node [shape=box, width=0.7, height=0.3,style=filled, color=blue, fillcolor=yellow1];
+"Atomic Features_2"->"L":n[arrowhead="box"];
+"Atomic Features_2"->"N":n[arrowhead="box"];
+"Atomic Features_2"->"M":n[arrowhead="box"];
+node [shape=box, width=0.7, height=0.3,style=filled, color=red, fillcolor=yellow1];
+"A"->"Exclusive-or":n[arrowhead="odot"];
+node [shape=box, width=0.7, height=0.3,style=filled, color=blue, fillcolor=yellow1];
+"Exclusive-or"->"W":n[arrowhead="invodot"];
+"Exclusive-or"->"X":n[arrowhead="invodot"];
+node [shape=box, width=0.7, height=0.3,style=filled, color=red, fillcolor=yellow1];
+"A"->"Optional_Features":n[arrowhead="odot"];
+node [shape=box, width=0.7, height=0.3,style=filled, color=blue, fillcolor=yellow1];
+"Optional_Features"->"S":n[arrowhead="odiamond"];
+"Optional_Features"->"V":n[arrowhead="odiamond"];
+"Optional_Features"->"O":n[arrowhead="odiamond"];
+"Optional_Features"->"I":n[arrowhead="odiamond"];
+"Optional_Features"->"P":n[arrowhead="odiamond"];
+"Optional_Features"->"Q":n[arrowhead="odiamond"];
+"Optional_Features"->"R":n[arrowhead="odiamond"];
+"Optional_Features"->"K":n[arrowhead="odiamond"];
+"Optional_Features"->"J":n[arrowhead="odiamond"];
+"Optional_Features"->"T":n[arrowhead="odiamond"];
+"W"->"J":n[color="red",label="Requires"];
+"X"->"K":n[color="red",label="Requires"];
+"S"->"V":n[color="red",label="Requires"];
+"S"->"W":n[style="dashed", color="blue",label=" Excludes", dir="both"];
+"V"->"W":n[style="dashed", color="blue",label=" Excludes", dir="both"];
+"I"->"W":n[style="dashed", color="blue",label=" Excludes", dir="both"];
+"P"->"W":n[style="dashed", color="blue",label=" Excludes", dir="both"];
+"Q"->"W":n[style="dashed", color="blue",label=" Excludes", dir="both"];
+"R"->"W":n[style="dashed", color="blue",label=" Excludes", dir="both"];
+"K"->"W":n[style="dashed", color="blue",label=" Excludes", dir="both"];
+"T"->"W":n[style="dashed", color="blue",label=" Excludes", dir="both"];
+"S"->"X":n[style="dashed", color="blue",label=" Excludes", dir="both"];
+"V"->"X":n[style="dashed", color="blue",label=" Excludes", dir="both"];
+"O"->"X":n[style="dashed", color="blue",label=" Excludes", dir="both"];
+"I"->"X":n[style="dashed", color="blue",label=" Excludes", dir="both"];
+"J"->"X":n[style="dashed", color="blue",label=" Excludes", dir="both"];
+"T"->"X":n[style="dashed", color="blue",label=" Excludes", dir="both"];
+	label = "Feature Model";
+	color=green3;	}
+subgraph cluster_3{
+
+	subgraph cluster_4{
+	"Abstract":n[fillcolor="yellow1", color="red"];
+	"Concrete":n[fillcolor="yellow1", color="blue"];
+	"                "->"Mandatory":n[arrowhead="dot"];
+	"             "->"Optional":n[arrowhead="odot"];
+	label = "Features:";
+	color=blue;
+	}
+	subgraph cluster_5{
+	edge [dir=none]"F1 "->"F2 "[style="dashed", color="deeppink1",label=" Excludes", dir="both"];
+	 edge [dir=forward]"F1"->"F2"[color="red",label=" Requires"];
+	label = "Cross-tree Constraints:";	color=blue;	}	subgraph cluster_6{
+	"Or" ->"   ":n[arrowhead="odiamond"];
+	"Or" ->"     ":n[arrowhead="odiamond"];
+	"Xor"->"      ":n[arrowhead="invodot"];
+	"Xor"->"       ":n[arrowhead="invodot"];
+	"And"->"        ":n[arrowhead="box"];
+	"And"->"         ":n[arrowhead="box"];
+	label = "Group of Features:";
+	color=blue;
+	}
+	label = "Legend:";
+	color=red
+}
+}
+}

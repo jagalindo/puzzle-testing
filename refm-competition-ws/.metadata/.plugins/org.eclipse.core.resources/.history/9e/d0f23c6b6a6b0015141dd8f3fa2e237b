@@ -1,0 +1,12 @@
+package fr.inria.diverse.refm.competition.almsiedeen;
+
+import es.us.isa.FAMA.models.variabilityModel.VariabilityModel;
+
+public class AlmsiedeenREFM {
+
+	public VariabilityModel execute(String PCMFile) throws Exception {
+		
+		
+		return null;
+	}
+}

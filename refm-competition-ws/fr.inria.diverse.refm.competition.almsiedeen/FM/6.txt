@@ -1,0 +1,30 @@
+digraph G { 
+	rankdir=BT;
+9530040 [shape=record,style=filled,label="{Concept_0||P1\n}"];
+16078681 [shape=record,style=filled,label="{Concept_1|C\nD\nE\n|P2\n}"];
+20553948 [shape=record,style=filled,label="{Concept_2||P3\n}"];
+27701288 [shape=record,style=filled,fillcolor=orange,label="{Concept_3|F.\nK\nKK\n|P7\nP6\nP4\n}"];
+7807046 [shape=record,style=filled,label="{Concept_4|I\nJ\n|P5\n}"];
+2205802 [shape=record,style=filled,label="{Concept_5||P8\n}"];
+28834171 [shape=record,style=filled,label="{Concept_6|G\nH\n|P9\n}"];
+22807116 [shape=record,style=filled,label="{Concept_7|R\n|P10\n}"];
+26937548 [shape=record,style=filled,fillcolor=orange,label="{Concept_8|CC\nDD\nEE\n|P12\nP11\n}"];
+7329120 [shape=record,style=filled,fillcolor=lightblue,label="{Concept_9|B\nA\n|}"];
+15205143 [shape=record,style=filled,fillcolor=lightblue,label="{Concept_10|M\nL\n|}"];
+	9530040 -> 7807046
+	9530040 -> 15205143
+	16078681 -> 27701288
+	20553948 -> 7329120
+	20553948 -> 15205143
+	7807046 -> 27701288
+	2205802 -> 16078681
+	2205802 -> 28834171
+	2205802 -> 15205143
+	28834171 -> 27701288
+	22807116 -> 7807046
+	22807116 -> 28834171
+	22807116 -> 7329120
+	26937548 -> 27701288
+	7329120 -> 27701288
+	15205143 -> 27701288
+}

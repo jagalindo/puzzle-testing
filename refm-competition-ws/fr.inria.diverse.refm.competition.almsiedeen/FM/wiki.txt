@@ -1,0 +1,35 @@
+digraph G { 
+	rankdir=BT;
+16145637 [shape=record,style=filled,label="{Concept_0|License_Commercial\nLanguage_Java\nLicenseCostFree_US10\n|Confluence\n}"];
+5031964 [shape=record,style=filled,label="{Concept_1|License_NoLimit\nLicenseCostFree\n|Pbwiki\n}"];
+15064528 [shape=record,style=filled,label="{Concept_2|Language_Python\n|MoinMoin\n}"];
+24256034 [shape=record,style=filled,fillcolor=orange,label="{Concept_3||DokuWiki\nPmWiki\n}"];
+23899357 [shape=record,style=filled,label="{Concept_4|LicenseCostFree_DifferentLicenses\n|DrupalWiki\n}"];
+29943821 [shape=record,style=filled,label="{Concept_5|Language_Perl\nStorage_FilesRCS\nLicenseCostFree_Community\n|Twiki\n}"];
+16440200 [shape=record,style=filled,label="{Concept_6||MediaWiki\n}"];
+29427764 [shape=record,style=filled,fillcolor=lightblue,label="{Concept_7|Wiki_Matrix.\nLicense\nRSS\n|}"];
+21337500 [shape=record,style=filled,fillcolor=lightblue,label="{Concept_8|License_GPL\n|}"];
+18382127 [shape=record,style=filled,fillcolor=lightblue,label="{Concept_9|License_GPL2\n|}"];
+104199 [shape=record,style=filled,fillcolor=lightblue,label="{Concept_10|Language\nStorage\nUnicode\n|}"];
+12764763 [shape=record,style=filled,fillcolor=lightblue,label="{Concept_11|Language_PHP\n|}"];
+6445281 [shape=record,style=filled,fillcolor=lightblue,label="{Concept_12|Storage_DB\n|}"];
+23162326 [shape=record,style=filled,fillcolor=lightblue,label="{Concept_13|Storage_Files\n|}"];
+	16145637 -> 6445281
+	5031964 -> 29427764
+	15064528 -> 21337500
+	15064528 -> 23162326
+	24256034 -> 18382127
+	24256034 -> 23162326
+	23899357 -> 18382127
+	23899357 -> 6445281
+	29943821 -> 21337500
+	16440200 -> 21337500
+	16440200 -> 12764763
+	16440200 -> 6445281
+	21337500 -> 104199
+	18382127 -> 12764763
+	104199 -> 29427764
+	12764763 -> 104199
+	6445281 -> 104199
+	23162326 -> 104199
+}

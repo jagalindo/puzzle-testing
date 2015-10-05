@@ -1,0 +1,79 @@
+digraph G { 
+	rankdir=BT;
+514941 [shape=record,style=filled,label="{Concept_0|SynchronizedIO\n|Product_1\n}"];
+31137760 [shape=record,style=filled,label="{Concept_1||Product_2\n}"];
+5276870 [shape=record,style=filled,label="{Concept_2|ChunkedNIO\nCritical_Eviction\n|Product_3\n}"];
+15500446 [shape=record,style=filled,label="{Concept_3|TruncateOp\n|Product_4\n}"];
+11625839 [shape=record,style=filled,label="{Concept_4|Logging_DbLogHandler\n|Product_5\n}"];
+3304600 [shape=record,style=filled,fillcolor=lightblue,label="{Concept_5|Berkeley_DB.\nLogging_Base\nCleaner\n|}"];
+7828053 [shape=record,style=filled,fillcolor=lightblue,label="{Concept_6|CP_Time\nLogging_Finer\n|}"];
+17412667 [shape=record,style=filled,fillcolor=lightblue,label="{Concept_7|Logging_Config\nLogging_Severe\n|}"];
+32724947 [shape=record,style=filled,fillcolor=lightblue,label="{Concept_8|CP_Bytes\nEnvironment_Locking\nLogging_Evictor\nIO\n|}"];
+26498710 [shape=record,style=filled,fillcolor=lightblue,label="{Concept_9|Logging_Cleaner\nLogging_ConsoleHandler\nChecksum\n|}"];
+29408965 [shape=record,style=filled,fillcolor=lightblue,label="{Concept_10|Logging_Recovery\n|}"];
+17490623 [shape=record,style=filled,fillcolor=lightblue,label="{Concept_11|Logging_Info\nCheckLeaks\nLogging_Finest\n|}"];
+28085769 [shape=record,style=filled,fillcolor=lightblue,label="{Concept_12|Logging_FileHandler\n|}"];
+3998758 [shape=record,style=filled,fillcolor=lightblue,label="{Concept_13|Logging_Fine\nDeleteOp\n|}"];
+27328272 [shape=record,style=filled,fillcolor=lightblue,label="{Concept_14|Evictor\nLatches\nMemory_Budget\n|}"];
+13214581 [shape=record,style=filled,fillcolor=lightblue,label="{Concept_15|Transactions\n|}"];
+692793 [shape=record,style=filled,fillcolor=lightblue,label="{Concept_16|FileHandleCache\nFSync\n|}"];
+19701341 [shape=record,style=filled,fillcolor=lightblue,label="{Concept_17|NIO\n|}"];
+31166266 [shape=record,style=filled,fillcolor=lightblue,label="{Concept_18|CleanerDaemon\nDirectNIO\n|}"];
+26755425 [shape=record,style=filled,fillcolor=lightblue,label="{Concept_19|DiskFullErro\n|}"];
+5315182 [shape=record,style=filled,fillcolor=lightblue,label="{Concept_20|Checkpointer_Daemon\nStatistics\n|}"];
+32946204 [shape=record,style=filled,fillcolor=lightblue,label="{Concept_21|EvictorDaemon\nLookAHEADCache\n|}"];
+10376173 [shape=record,style=filled,fillcolor=lightblue,label="{Concept_22|INCompressor\n|}"];
+9962628 [shape=record,style=filled,fillcolor=lightblue,label="{Concept_23|Verifier\n|}"];
+396920 [shape=record,style=filled,fillcolor=lightblue,label="{Concept_24|RenameOp\n|}"];
+	514941 -> 32724947
+	514941 -> 28085769
+	514941 -> 692793
+	31137760 -> 17412667
+	31137760 -> 19701341
+	31137760 -> 9962628
+	5276870 -> 17412667
+	5276870 -> 3998758
+	5276870 -> 692793
+	5276870 -> 31166266
+	15500446 -> 32724947
+	15500446 -> 3998758
+	15500446 -> 32946204
+	15500446 -> 9962628
+	11625839 -> 28085769
+	11625839 -> 19701341
+	11625839 -> 31166266
+	11625839 -> 32946204
+	7828053 -> 27328272
+	17412667 -> 29408965
+	17412667 -> 10376173
+	32724947 -> 7828053
+	32724947 -> 17490623
+	26498710 -> 5315182
+	29408965 -> 13214581
+	29408965 -> 5315182
+	17490623 -> 3304600
+	28085769 -> 27328272
+	28085769 -> 396920
+	3998758 -> 7828053
+	3998758 -> 26755425
+	3998758 -> 10376173
+	27328272 -> 3304600
+	13214581 -> 3304600
+	692793 -> 7828053
+	692793 -> 13214581
+	19701341 -> 26498710
+	19701341 -> 29408965
+	19701341 -> 396920
+	31166266 -> 29408965
+	31166266 -> 26755425
+	26755425 -> 27328272
+	26755425 -> 5315182
+	5315182 -> 3304600
+	32946204 -> 26498710
+	32946204 -> 26755425
+	10376173 -> 5315182
+	9962628 -> 26498710
+	9962628 -> 17490623
+	9962628 -> 10376173
+	396920 -> 13214581
+}

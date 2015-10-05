@@ -20,11 +20,11 @@ public class printRCFTInfo {
 //		String path="ProdConf\\Product 100 Feature 27.csv";
 		int columns = 0;
 		int rows = 0;
-		File rcftFile = new File("rcft\\FC.rcft");
+		File rcftFile = new File("rcft/FC.rcft");
 		if (!rcftFile.exists()) {
 			rcftFile.createNewFile();}
 
-		FileWriter rcft = new FileWriter("rcft\\FC.rcft");
+		FileWriter rcft = new FileWriter("rcft/FC.rcft");
 		PrintWriter prcft = new PrintWriter(rcft);
 		
 		prcft.write("FormalContext Products_Configurations" + "\n");

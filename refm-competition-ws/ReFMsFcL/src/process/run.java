@@ -18,7 +18,7 @@ public class run {
 		
 //	    convert product configurations to formal context
 		printRCFTInfo rcft = new printRCFTInfo();  
-		rcft.printRCFT("./ProdConf/m.csv");
+		rcft.printRCFT(args[0]);
 		
 		
 //	    Generate AOC-poset from the rcft formal context	
@@ -53,10 +53,10 @@ public class run {
 		
 		long time2 = System.currentTimeMillis();
 		
-//		Visualization of the extracted feature model
+//		Visualization of the extracted feature model. Hoping that this is not needed for the REFM process. 
 		
-		FMViz p = new FMViz();
-		p.start2();
+//		FMViz p = new FMViz();
+//		p.start2();
 		
 //		Time needed to extract the FM (in ms)	
         System.out.println("Time needed to extract the FM (in ms):" + time2 + "-" + time1 + "=" + (time2 - time1));
