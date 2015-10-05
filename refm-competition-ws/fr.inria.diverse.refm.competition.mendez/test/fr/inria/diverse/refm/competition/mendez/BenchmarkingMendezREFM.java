@@ -36,7 +36,7 @@ public class BenchmarkingMendezREFM {
 	public void loadScenarios(){
 		synthesizer = new MendezREFM();
 		initialInstance = 1;
-		finalInstance = 5;
+		finalInstance = 1;
 	}
 	
 	// ---------------------------------------------------
@@ -47,9 +47,11 @@ public class BenchmarkingMendezREFM {
 	public void executeBenchmark() throws Exception{
 		for (int i = initialInstance; i <= finalInstance; i++) {
 			String matrix = FileUtils.readFileContent(new File("testdata/" + i + "_1_dependencies_graph.txt"));
-			Graph<Vertex, Arc> graph = new Graph<>(matrix);
+			Graph<Vertex, Arc> graph = new Graph<Vertex, Arc>(matrix);
 			FAMAFeatureModel result = synthesizer.execute(graph, "testdata/" + i + "_3_closed_pcm.txt");
-			(new PrintUtils()).printFitness(result);
+			String originalPCM = FileUtils.readFileContent(new File("testdata/" + i + "_3_closed_pcm.txt"));
+			(new PrintUtils()).printFitness(result, graph, originalPCM);
+			(new PrintUtils()).printTopologyMetrics(result);
 		}
 	}
 }

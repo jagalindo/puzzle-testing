@@ -24,7 +24,6 @@
 	<classpathentry kind="lib" path="lib/fmextractor.jar"/>
 	<classpathentry kind="lib" path="lib/fr.inria.diverse.generator.dag.jar"/>
 	<classpathentry kind="lib" path="lib/fr.inria.diverse.generator.pcm.jar"/>
-	<classpathentry kind="lib" path="lib/fr.inria.diverse.graph.jar"/>
 	<classpathentry kind="lib" path="lib/fr.inria.diverse.vmsynthesis.jar"/>
 	<classpathentry kind="lib" path="lib/JaCoPReasoner-1.0.1-sources.jar"/>
 	<classpathentry kind="lib" path="lib/JavaBDDReasoner-1.0.0-sources.jar"/>
@@ -64,6 +63,7 @@
 	<classpathentry kind="lib" path="lib/sat4j-maxsat.jar"/>
 	<classpathentry kind="lib" path="lib/Sat4jReasoner-1.0.0-sources.jar"/>
 	<classpathentry kind="lib" path="lib/Sat4jReasoner-1.0.1.jar"/>
+	<classpathentry kind="lib" path="lib/fr.inria.diverse.graph.jar"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/fr.inria.diverse.refm.competition.common"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

@@ -1,0 +1,11 @@
+package fr.inria.diverse.refm.competition.common.utils.fitness;
+
+import es.us.isa.FAMA.models.variabilityModel.VariabilityModel;
+import es.us.isa.utils.FMStatistics;
+
+public class TopologyMetrics {
+
+	public FMStatistics computeTopologyMetrics(VariabilityModel fm){
+		
+	}
+}

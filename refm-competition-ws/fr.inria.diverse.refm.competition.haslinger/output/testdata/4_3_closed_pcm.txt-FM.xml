@@ -1,0 +1,20 @@
+<feature_model name="root">
+<feature_tree>
+:r root (root)
+	:m F2 (F2)
+	:o F9 (F9)
+		:o F3 (F3)
+			:o F5 (F5)
+				:o F8 (F8)
+					:o F7 (F7)
+					:o F6 (F6)
+		:o F1 (F1)
+			:o F4 (F4)
+			:o F10 (F10)
+</feature_tree>
+<constraints>
+constraint_1:~F5 or F4
+constraint_2:~F8 or F10
+constraint_3:~F7 or ~F6
+</constraints>
+</feature_model>

@@ -19,5 +19,6 @@
 	<classpathentry kind="lib" path="lib/FaMaFeatureModel-0.9.1-sources.jar"/>
 	<classpathentry kind="lib" path="lib/FaMaFeatureModel-0.9.1.jar"/>
 	<classpathentry kind="lib" path="lib/AttributedModel.jar"/>
+	<classpathentry kind="lib" path="lib/fr.inria.diverse.graph.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

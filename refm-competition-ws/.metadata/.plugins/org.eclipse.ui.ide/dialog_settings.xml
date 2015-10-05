@@ -12,9 +12,11 @@
 		<item value="false" key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID"/>
 		<item value="false" key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED"/>
 		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="/Users/dmendeza/workspaces/puzzle-testing/downloads/REFMVPC"/>
+			<item value="/Users/dmendeza/workspaces/puzzle-testing/downloads/REFMVPC/ExecutAbleForPaper"/>
+			<item value="/Users/dmendeza/workspaces/puzzle-testing/downloads/FOReverSE-AFMSynthesis/AFMSynthesis"/>
 			<item value="/Users/dmendeza/workspaces/puzzle-testing/downloads/FOReverSE-AFMSynthesis"/>
 			<item value="/Users/dmendeza/workspaces/puzzle/plugins/es.us.isa.fama"/>
-			<item value="/Users/dmendeza/workspaces/puzzle/plugins"/>
 		</list>
 		<list key="WizardProjectsImportPage.STORE_ARCHIVES">
 			<item value=""/>

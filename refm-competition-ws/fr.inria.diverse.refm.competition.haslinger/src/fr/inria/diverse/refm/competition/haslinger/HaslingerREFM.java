@@ -1,15 +1,33 @@
 package fr.inria.diverse.refm.competition.haslinger;
 
+import java.io.File;
+
+import es.us.isa.FAMA.models.FAMAfeatureModel.fileformats.SPLXReader;
 import es.us.isa.FAMA.models.variabilityModel.VariabilityModel;
+import fm.FeatureModelException;
 import fma.test.TestApplication;
+import fr.inria.diverse.refm.competition.common.utils.FileUtils;
 
 public class HaslingerREFM {
 
 	public VariabilityModel execute(String PCMFile) throws Exception {
-		String[] args = new String[1];
-		args[0] = "testDirectory/REAL-FM-10.xml";
-		TestApplication.main(args);
+		String originalPCM = FileUtils.readFileContent(new File(PCMFile));
+		PCMFormatTranslator translator = new PCMFormatTranslator();
+		translator.loadPCM(originalPCM);
+		String adaptedPCM = translator.fromPuzzleToBecanFormat(originalPCM);
+		FileUtils.saveFile(adaptedPCM, "input/" + PCMFile + "-PCM.txt");
 		
-		return null;
+		TestApplication.callAnalyzer("input/" + PCMFile + "-PCM.txt", "output/" + PCMFile + "-FM.xml");
+		
+		SPLXReader reader = new SPLXReader();
+		VariabilityModel model = null;
+		
+		try{
+			model = reader.parseFile("output/" + PCMFile + "-FM.xml");
+		}catch(FeatureModelException e){
+			System.out.println("Errors parsing the model " + e.getMessage());
+		}
+		
+		return model;
 	}
 }

@@ -1,11 +1,12 @@
 package fr.inria.diverse.refm.competition.common.utils;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import es.us.isa.FAMA.models.variabilityModel.VariabilityModel;
-import fr.inria.diverse.refm.competition.common.utils.fitness.Fitness;
-import fr.inria.diverse.refm.competition.common.utils.fitness.Precision;
+import fr.inria.diverse.graph.Arc;
+import fr.inria.diverse.graph.Graph;
+import fr.inria.diverse.graph.Vertex;
+import fr.inria.diverse.refm.competition.common.utils.fitness.FitnessMetrics;
+import fr.inria.diverse.refm.competition.common.utils.fitness.FitnessMetricsVO;
+import fr.inria.diverse.refm.competition.common.utils.fitness.TopologyMetrics;
 
 /**
  * Utility for printing the fitness functions of a given feature model.
@@ -19,15 +20,11 @@ public class PrintUtils {
 	// Attributes
 	// -------------------------------------------------
 	
-	private List<Fitness> fitnessFunctions;
-	
 	// -------------------------------------------------
 	// Constructor
 	// -------------------------------------------------
 	
 	public PrintUtils(){
-		fitnessFunctions = new ArrayList<Fitness>();
-		fitnessFunctions.add(new Precision());
 	}
 	
 	// -------------------------------------------------
@@ -38,12 +35,19 @@ public class PrintUtils {
 	 * Prints the value of all the registered fitness functions on the given feature model.
 	 * @param fm
 	 */
-	public void printFitness(VariabilityModel fm) {
+	public void printFitness(VariabilityModel fm, Graph<Vertex, Arc> dependenciesGraph, String PCM) {
 		System.out.println("***");
 		System.out.println("******");
 		System.out.println("Printing the evaluation metrics for the resulting feature model");
-		for (Fitness fitness : fitnessFunctions) {
-			System.out.println("  - " + fitness.getName() + ": " + fitness.compute(fm));
-		}
+		FitnessMetrics metrics = FitnessMetrics.getInstance();
+		FitnessMetricsVO vo = metrics.compute(fm, dependenciesGraph, PCM);
+		System.out.println(" - Precision: " + vo.getPrecision());
+		System.out.println(" - Recall: " + vo.getRecall());
+		System.out.println(" - Safety: " + vo.getSafety());
+	}
+	
+	public void printTopologyMetrics(VariabilityModel fm){
+		TopologyMetrics tp = new TopologyMetrics();
+		tp.computeTopologyMetrics(fm);
 	}
 }

@@ -1,0 +1,13 @@
+package fr.inria.diverse.refm.competition.common.utils.fitness;
+
+import es.us.isa.FAMA.models.variabilityModel.VariabilityModel;
+
+public class FitnessMetrics {
+
+	
+	public double compute(VariabilityModel fm, Graph) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}

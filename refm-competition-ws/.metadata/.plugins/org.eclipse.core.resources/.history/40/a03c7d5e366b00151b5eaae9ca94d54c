@@ -1,0 +1,23 @@
+package fr.inria.diverse.refm.competition.haslinger;
+
+import java.io.File;
+
+import es.us.isa.FAMA.models.variabilityModel.VariabilityModel;
+import fma.test.TestApplication;
+import fr.inria.diverse.refm.competition.becan.PCMFormatTranslator;
+import fr.inria.diverse.refm.competition.common.utils.FileUtils;
+
+public class HaslingerREFM {
+
+	public VariabilityModel execute(String PCMFile) throws Exception {
+		String originalPCM = FileUtils.readFileContent(new File(PCMFile));
+		PCMFormatTranslator translator = new PCMFormatTranslator();
+		translator.loadPCM(originalPCM);
+		String adaptedPCM = translator.fromPuzzleToBecanFormat(originalPCM);
+		FileUtils.saveFile(adaptedPCM, "input/products.txt");
+		
+		TestApplication.callAnalyzer("input/products.txt", "output/ExtractedFM2.xml");
+		
+		return null;
+	}
+}

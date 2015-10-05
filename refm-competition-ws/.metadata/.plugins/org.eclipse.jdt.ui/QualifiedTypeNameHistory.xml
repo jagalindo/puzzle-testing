@@ -32,7 +32,6 @@
 <fullyQualifiedTypeName name="fr.inria.diverse.graph.Graph"/>
 <fullyQualifiedTypeName name="fr.inria.diverse.graph.Vertex"/>
 <fullyQualifiedTypeName name="fr.inria.diverse.graph.Arc"/>
-<fullyQualifiedTypeName name="es.us.isa.FAMA.models.FAMAfeatureModel.FAMAFeatureModel"/>
 <fullyQualifiedTypeName name="es.us.isa.FAMA.models.FAMAfeatureModel.Feature"/>
 <fullyQualifiedTypeName name="es.us.isa.FAMA.models.FAMAfeatureModel.Dependency"/>
 <fullyQualifiedTypeName name="es.us.isa.FAMA.models.FAMAfeatureModel.RequiresDependency"/>
@@ -49,6 +48,12 @@
 <fullyQualifiedTypeName name="javax.xml.transform.stream.StreamResult"/>
 <fullyQualifiedTypeName name="org.w3c.dom.Attr"/>
 <fullyQualifiedTypeName name="fr.inria.diverse.refm.competition.common.utils.FileUtils"/>
-<fullyQualifiedTypeName name="foreverse.afmsynthesis.AFMSynthesis"/>
 <fullyQualifiedTypeName name="fr.inria.diverse.refm.competition.becan.BecanREFM"/>
+<fullyQualifiedTypeName name="foreverse.afmsynthesis.AFMSynthesis"/>
+<fullyQualifiedTypeName name="es.us.isa.FAMA.models.FAMAAttributedfeatureModel.fileformats.AttributedReader"/>
+<fullyQualifiedTypeName name="foreverse.afmsynthesis.afm.AttributedFeatureModel"/>
+<fullyQualifiedTypeName name="es.us.isa.FAMA.models.variabilityModel.VariabilityModel"/>
+<fullyQualifiedTypeName name="es.us.isa.FAMA.models.FAMAfeatureModel.FAMAFeatureModel"/>
+<fullyQualifiedTypeName name="fma.test.TestApplication"/>
+<fullyQualifiedTypeName name="fr.inria.diverse.refm.competition.haslinger.HaslingerREFM"/>
 </qualifiedTypeNameHistroy>

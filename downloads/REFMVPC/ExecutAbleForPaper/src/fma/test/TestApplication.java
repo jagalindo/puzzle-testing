@@ -161,7 +161,7 @@ public class TestApplication {
 		long time1 = System.currentTimeMillis();
 		System.out.println("Starting the algorithm to reverse engineer the FM...");
 		os.analyse(products, attributes, root);
-		long time2 = System.currentTimeMillis();
+		long time2 = System.currentTimeMillis(); 
 		System.out.println("Time needed to extract the model (in ms):"+time2+"-"+time1+"="+(time2-time1));
 
 		os.getFm().writeSplotModelToFile(genModelPath);

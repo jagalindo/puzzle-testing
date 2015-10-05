@@ -32,6 +32,7 @@
 	<classpathentry kind="lib" path="lib/sat4j-maxsat.jar"/>
 	<classpathentry kind="lib" path="lib/Sat4jReasoner-1.0.0-sources.jar"/>
 	<classpathentry kind="lib" path="lib/Sat4jReasoner-1.0.1.jar"/>
+	<classpathentry kind="lib" path="lib/fr.inria.diverse.graph.jar"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/fr.inria.diverse.refm.competition.common"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
 	<classpathentry kind="lib" path="/fr.inria.diverse.refm.competition.common/lib/FaMaAttributedModel-1.0.2.jar"/>
