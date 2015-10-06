@@ -5,7 +5,6 @@ import java.io.File;
 import process.run;
 import es.us.isa.FAMA.models.variabilityModel.VariabilityModel;
 import fr.inria.diverse.refm.competition.common.utils.FileUtils;
-import fr.inria.diverse.refm.competition.common.utils.XMLReader;
 
 public class AlmsiedeenREFM {
 

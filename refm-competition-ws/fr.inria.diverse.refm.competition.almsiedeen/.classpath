@@ -6,7 +6,7 @@
 	<classpathentry kind="lib" path="lib/almsiedeen_lib/com.googlecode.erca.jar"/>
 	<classpathentry kind="lib" path="lib/almsiedeen_lib/com.googlecode.exputils.jar"/>
 	<classpathentry kind="lib" path="lib/almsiedeen_lib/erca_1.6.1.jar"/>
-	<classpathentry kind="lib" path="lib/almsiedeen_lib/FaMaFeatureModel-0.9.1.jar"/>
+	<classpathentry kind="lib" path="lib/almsiedeen_lib/FaMaFeatureModel-0.9.1.jar" sourcepath="/FaMaFeatureModel"/>
 	<classpathentry kind="lib" path="lib/almsiedeen_lib/org.apache.commons.logging.jar"/>
 	<classpathentry kind="lib" path="lib/almsiedeen_lib/org.eclipse.emf.common.jar"/>
 	<classpathentry kind="lib" path="lib/almsiedeen_lib/org.eclipse.emf.ecore.jar"/>
