@@ -4,15 +4,16 @@
 	:m F1 (F1)
 	:o F10 (F10)
 		:m F6 (F6)
-		:g [1, 1]
-			: F4 (F4)
+		:o F4 (F4)
+			:o F8 (F8)
 				:o F9 (F9)
 					:m F3 (F3)
 					:m F7 (F7)
-					:m F8 (F8)
 					:o F5 (F5)
-			: F2 (F2)
+				:o F2 (F2)
 </feature_tree>
 <constraints>
+constraint_1:~F5 or ~F2
+constraint_2:~F9 or ~F2
 </constraints>
 </feature_model>

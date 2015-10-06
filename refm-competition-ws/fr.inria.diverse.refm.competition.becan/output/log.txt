@@ -12,6 +12,7 @@ Synthesis
     Xor
     Group processing
 Feature groups
+Mutex group : Feature(F15) <- {Feature(F3),Feature(F11)}
   Cross tree constraints
     Binary implies
     Binary excludes

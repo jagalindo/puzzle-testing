@@ -8,7 +8,7 @@
 	<classpathentry kind="lib" path="lib/antlr.jar"/>
 	<classpathentry kind="lib" path="lib/ChocoReasoner-1.1.1.jar"/>
 	<classpathentry kind="lib" path="lib/FaMaAttributedModel-1.0.2.jar"/>
-	<classpathentry kind="lib" path="lib/FaMaFeatureModel-0.9.1.jar"/>
+	<classpathentry kind="lib" path="lib/FaMaFeatureModel-0.9.1.jar" sourcepath="/FaMaFeatureModel"/>
 	<classpathentry kind="lib" path="lib/FaMaSDK-1.1.1.jar"/>
 	<classpathentry kind="lib" path="lib/FaMaShell-0.1.1.jar"/>
 	<classpathentry kind="lib" path="lib/JaCoPReasoner-1.0.1.jar"/>

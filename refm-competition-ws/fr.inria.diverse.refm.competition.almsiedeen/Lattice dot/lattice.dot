@@ -1,14 +1,45 @@
 digraph G { 
 	rankdir=BT;
-1464642111 [shape=record,style=filled,label="{Concept_0|root.\nF7\n|P0\n}"];
-105704967 [shape=record,style=filled,label="{Concept_1|F6\nF3\n|P1\n}"];
-392292416 [shape=record,style=filled,label="{Concept_2|F9\n|P2\n}"];
-1818402158 [shape=record,style=filled,label="{Concept_3|F4\n|P3\n}"];
-1590550415 [shape=record,style=filled,label="{Concept_4|F8\nF10\nF2\nF5\n|P4\n}"];
-1058025095 [shape=record,style=filled,fillcolor=blue,label="{Concept_5|F1\n|}"];
-	105704967 -> 1464642111
-	392292416 -> 105704967
-	1818402158 -> 392292416
-	1590550415 -> 1818402158
-	1058025095 -> 1590550415
+578866604 [shape=record,style=filled,label="{Concept_0|root.\nF2\n|P0\n}"];
+353842779 [shape=record,style=filled,label="{Concept_1|F9\n|P1\n}"];
+1338823963 [shape=record,style=filled,label="{Concept_2|F3\n|P2\n}"];
+1156060786 [shape=record,style=filled,label="{Concept_3|F1\n|P3\n}"];
+1612799726 [shape=record,style=filled,label="{Concept_4||P4\n}"];
+1286084959 [shape=record,style=filled,label="{Concept_5|F10\n|P5\n}"];
+1709537756 [shape=record,style=filled,label="{Concept_6||P6\n}"];
+1639622804 [shape=record,style=filled,label="{Concept_7|F4\n|P7\n}"];
+184966243 [shape=record,style=filled,label="{Concept_8||P8\n}"];
+124313277 [shape=record,style=filled,label="{Concept_9||P9\n}"];
+1225616405 [shape=record,style=filled,label="{Concept_10||P10\n}"];
+2101842856 [shape=record,style=filled,label="{Concept_11|F5\n|P11\n}"];
+1151020327 [shape=record,style=filled,label="{Concept_12||P12\n}"];
+88579647 [shape=record,style=filled,label="{Concept_13|F8\n|P13\n}"];
+654845766 [shape=record,style=filled,label="{Concept_14|F6\n|P14\n}"];
+1712536284 [shape=record,style=filled,label="{Concept_15|F7\n|P15\n}"];
+	353842779 -> 578866604
+	1338823963 -> 353842779
+	1156060786 -> 353842779
+	1612799726 -> 1338823963
+	1612799726 -> 1156060786
+	1286084959 -> 1156060786
+	1709537756 -> 1612799726
+	1709537756 -> 1286084959
+	1639622804 -> 1156060786
+	184966243 -> 1612799726
+	184966243 -> 1639622804
+	124313277 -> 1286084959
+	124313277 -> 1639622804
+	1225616405 -> 1709537756
+	1225616405 -> 184966243
+	1225616405 -> 124313277
+	2101842856 -> 184966243
+	1151020327 -> 124313277
+	1151020327 -> 1225616405
+	1151020327 -> 2101842856
+	88579647 -> 2101842856
+	88579647 -> 1151020327
+	654845766 -> 2101842856
+	654845766 -> 88579647
+	1712536284 -> 2101842856
+	1712536284 -> 88579647
 }

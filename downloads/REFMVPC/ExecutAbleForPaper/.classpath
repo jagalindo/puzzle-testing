@@ -6,7 +6,7 @@
 	<classpathentry kind="lib" path="lib/FaMaFeatureModel-0.9.1.jar"/>
 	<classpathentry kind="lib" path="lib/FaMaAttributedModel-1.0.2.jar"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/WithCrossTreeConstr"/>
-	<classpathentry combineaccessrules="false" kind="src" path="/MVSC"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/EquCheck_Biere"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/MVSC"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
