@@ -89,11 +89,14 @@ public class FitnessMetrics {
 		
 		for (Product currentProduct : FMProducts) {
 			ArrayList<String> productString = new ArrayList<String>();
+			int noiseFeatures = 1;
 			for (GenericFeature feature : currentProduct.getFeatures()) {
-				if(!feature.getName().equals("_1000"))
+				if(!feature.getName().equals("_1000") && !feature.getName().equals("Base")
+						&& !feature.getName().equals("OR") && !feature.getName().equals("AND") && 
+						!feature.getName().equals("XOR"))
 					productString.add(feature.getName());
 			}
-			if(pcmQueries.productExists(productString)){
+			if(pcmQueries.productExists(productString, noiseFeatures)){
 				intersection++;
 			}
 		}

@@ -379,19 +379,19 @@ public class PCMQueryServices {
 		return max;
 	}
 
-	public boolean productExists(ArrayList<String> product) {
+	public boolean productExists(ArrayList<String> product, int noiseFeatures) {
 		for (int i = 1; i < PCM.length; i++) {
 			boolean match = true;
 			String currentProduct = PCM[i][0];
 			
 			for (String feature : product) {
-				if(!feature.equalsIgnoreCase("root") && !this.productContainsFeature(currentProduct, feature)){
+				if(!feature.equalsIgnoreCase("root") && !feature.equalsIgnoreCase("root.") && !this.productContainsFeature(currentProduct, feature)){
 					match = false;
 					break;
 				}
 			}
 			
-			if(match && (product.size() - 1) == this.countFeatures(currentProduct))
+			if(match && (product.size() - noiseFeatures) == this.countFeatures(currentProduct))
 				return true;
 		}
 		return false;

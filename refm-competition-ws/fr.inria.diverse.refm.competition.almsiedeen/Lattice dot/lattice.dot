@@ -1,16 +1,14 @@
 digraph G { 
 	rankdir=BT;
-764372388 [shape=record,style=filled,label="{Concept_0|MobileMedia.\nCreateAlbum\nDeleteAlbum\nCreateMedia\nDeleteMedia\nViewPhoto\n|P1\n}"];
-459857341 [shape=record,style=filled,label="{Concept_1|ExceptionHandling\n|P2\n}"];
-1684890795 [shape=record,style=filled,label="{Concept_2|EditMediaLabel\nSorting\n|P3\n}"];
-94264799 [shape=record,style=filled,label="{Concept_3|SetFavourites\nViewFavourites\n|P4\n}"];
-1399499405 [shape=record,style=filled,label="{Concept_4|CopyMedia\n|P5\n}"];
-238157928 [shape=record,style=filled,fillcolor=red,label="{Concept_5|ReceivePhoto\nSendPhoto\n|P7\nP6\n}"];
-32863545 [shape=record,style=filled,label="{Concept_6|PlayMusic/Song\nCapturePhoto\nPlayVideo\nCaptureVideo\n|P8\n}"];
-	459857341 -> 764372388
-	1684890795 -> 459857341
-	94264799 -> 1684890795
-	1399499405 -> 94264799
-	238157928 -> 1399499405
-	32863545 -> 238157928
+1464642111 [shape=record,style=filled,label="{Concept_0|root.\nF7\n|P0\n}"];
+105704967 [shape=record,style=filled,label="{Concept_1|F6\nF3\n|P1\n}"];
+392292416 [shape=record,style=filled,label="{Concept_2|F9\n|P2\n}"];
+1818402158 [shape=record,style=filled,label="{Concept_3|F4\n|P3\n}"];
+1590550415 [shape=record,style=filled,label="{Concept_4|F8\nF10\nF2\nF5\n|P4\n}"];
+1058025095 [shape=record,style=filled,fillcolor=blue,label="{Concept_5|F1\n|}"];
+	105704967 -> 1464642111
+	392292416 -> 105704967
+	1818402158 -> 392292416
+	1590550415 -> 1818402158
+	1058025095 -> 1590550415
 }

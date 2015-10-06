@@ -27,7 +27,7 @@ public class PCMFormatTranslator {
 	}
 	
 	public String fromPuzzleToAlmsiedeenFormat(String originalPCM){
-		String newPCM = ",root,";
+		String newPCM = ",root.,";
 		
 		for (int i = 1; i < PCM[0].length; i++) {
 			newPCM += PCM[0][i].replace("\"", "");

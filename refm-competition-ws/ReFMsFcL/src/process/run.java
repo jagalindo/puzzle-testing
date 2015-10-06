@@ -49,7 +49,7 @@ public class run {
 		
 //		reverse engineering feature models as dot file
 		
-		rd.FM();
+		rd.FM(args[1]);
 		
 		long time2 = System.currentTimeMillis();
 		

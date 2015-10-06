@@ -648,7 +648,7 @@ public class ReadDotFile {
 
 //	=============================================================		
 	
-	public void FM() throws IOException {
+	public void FM(String outputFile) throws IOException {
 		FAMAFeatureModel fm = new FAMAFeatureModel();
 		
 		
@@ -918,17 +918,22 @@ public class ReadDotFile {
 //		    	System.out.println();
 		    	
 		    	for(int iii = 0; iii < rrrr.size(); iii++) {
-		    	String numberConcept3333 = rrrr.get(iii);
-		    	int iiii = Integer.parseInt(numberConcept3333);
-		    	String leftofRe=FeatureConceptList.get(i).getIntent().toString();
-		    	String rightofRe=FeatureConceptList.get(iiii).getIntent().toString();
-		    	
-		    	System.out.println("The requires CTC : " + leftofRe.replace("[", "").replace("]", "")  + "  " + " ==== " + 
-		    			rightofRe.replace("[", "").replace("]", ""));
-		    	
-		    	bw.write("\"" + leftofRe.replace("[", "").replace("]", "") + "\"" + "->" + "\""+ rightofRe.replace("[", "").replace("]", "") + "\""+ ":n[color=\"red\",label=\"Requires\"];" + "\n");
-		    	Dependency dep = new RequiresDependency(fm.searchFeatureByName(leftofRe.replace("[", "").replace("]", "")), fm.searchFeatureByName( rightofRe.replace("[", "").replace("]", "")));
-		    	fm.addDependency(dep);
+			    	String numberConcept3333 = rrrr.get(iii);
+			    	int iiii = Integer.parseInt(numberConcept3333);
+			    	String leftofRe=FeatureConceptList.get(i).getIntent().toString();
+			    	String rightofRe=FeatureConceptList.get(iiii).getIntent().toString();
+			    	
+			    	System.out.println("The requires CTC : " + leftofRe.replace("[", "").replace("]", "")  + "  " + " ==== " + 
+			    			rightofRe.replace("[", "").replace("]", ""));
+			    	
+			    	bw.write("\"" + leftofRe.replace("[", "").replace("]", "") + "\"" + "->" + "\""+ rightofRe.replace("[", "").replace("]", "") + "\""+ ":n[color=\"red\",label=\"Requires\"];" + "\n");
+			    	
+			    	Feature leftFeature = fm.searchFeatureByName(leftofRe.replace("[", "").replace("]", ""));
+			    	Feature rightFeature = fm.searchFeatureByName( rightofRe.replace("[", "").replace("]", ""));
+			    	if(leftFeature != null && rightFeature != null){
+			    		Dependency dep = new RequiresDependency(leftFeature, rightFeature);
+			    		fm.addDependency(dep);
+			    	}
 		    	}
 		    	
 		        }
@@ -1036,7 +1041,7 @@ public class ReadDotFile {
 	 
 	    XMLWriter w = new XMLWriter();
 	    try {
-			w.writeFile("./out.xml", fm);
+			w.writeFile(outputFile, fm);
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
