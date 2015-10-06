@@ -2,7 +2,7 @@ package fr.inria.diverse.refm.competition.common.utils.fitness;
 
 import es.us.isa.FAMA.models.FAMAfeatureModel.FAMAFeatureModel;
 import es.us.isa.FAMA.models.variabilityModel.VariabilityModel;
-import es.us.isa.utils.FMStatistics;
+import fr.inria.diverse.refm.competition.common.utils.FMStatistics;
 
 public class TopologyMetrics {
 

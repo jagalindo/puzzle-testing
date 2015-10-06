@@ -3,17 +3,17 @@
 :r F8 (F8)
 	:m root (root)
 	:o F10 (F10)
+		:o F5 (F5)
+			:o F4 (F4)
+				:o F3 (F3)
+					:o F6 (F6)
+						:o F1 (F1)
 		:o F2 (F2)
 			:o F9 (F9)
-				:o F4 (F4)
-					:o F3 (F3)
-						:o F6 (F6)
-							:o F1 (F1)
 			:o F7 (F7)
-		:o F5 (F5)
 </feature_tree>
 <constraints>
 constraint_1:~F3 or F7
-constraint_2:~F4 or F5
+constraint_2:~F4 or F9
 </constraints>
 </feature_model>

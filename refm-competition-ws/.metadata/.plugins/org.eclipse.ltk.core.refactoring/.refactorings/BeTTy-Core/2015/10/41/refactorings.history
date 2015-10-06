@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;FMStatistics.java&apos; to &apos;fr.inria.diverse.refm.competition.common/src/fr.inria.diverse.refm.competition.common.utils&apos;&#x0A;- Original project: &apos;BeTTy-Core&apos;&#x0A;- Destination element: &apos;fr.inria.diverse.refm.competition.common/src/fr.inria.diverse.refm.competition.common.utils&apos;&#x0A;- Original element: &apos;es.us.isa.utils.FMStatistics.java&apos;" description="Copy compilation unit" destination="=fr.inria.diverse.refm.competition.common/src&lt;fr.inria.diverse.refm.competition.common.utils" element1="/src&lt;es.us.isa.utils{FMStatistics.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1444136052174" units="1" version="1.0"/>
+</session>

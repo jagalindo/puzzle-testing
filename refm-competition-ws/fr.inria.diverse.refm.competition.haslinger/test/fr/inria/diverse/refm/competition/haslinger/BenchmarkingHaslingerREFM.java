@@ -30,7 +30,7 @@ public class BenchmarkingHaslingerREFM {
 	public void loadScenarios(){
 		synthesizer = new HaslingerREFM();
 		initialInstance = 1;
-		finalInstance = 1;
+		finalInstance = 18;
 	}
 	
 	// ---------------------------------------------------
@@ -44,6 +44,7 @@ public class BenchmarkingHaslingerREFM {
 			String originalPCM = FileUtils.readFileContent(new File("testdata/" + i + "_3_closed_pcm.txt"));
 			Graph<Vertex, Arc> dependenciesGraph = new Graph<Vertex, Arc>(FileUtils.readFileContent(new File("testdata/" + i + "_1_dependencies_graph.txt")));
 			(new PrintUtils()).printFitness(result, dependenciesGraph, originalPCM);
+			(new PrintUtils()).printTopologyMetrics(result);;
 		}
 	}
 }

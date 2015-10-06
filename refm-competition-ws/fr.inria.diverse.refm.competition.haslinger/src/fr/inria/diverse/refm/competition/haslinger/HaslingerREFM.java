@@ -2,11 +2,11 @@ package fr.inria.diverse.refm.competition.haslinger;
 
 import java.io.File;
 
-import es.us.isa.FAMA.models.FAMAfeatureModel.fileformats.SPLXReader;
 import es.us.isa.FAMA.models.variabilityModel.VariabilityModel;
 import fm.FeatureModelException;
 import fma.test.TestApplication;
 import fr.inria.diverse.refm.competition.common.utils.FileUtils;
+import fr.inria.diverse.refm.competition.common.utils.SPLXReader;
 
 public class HaslingerREFM {
 
@@ -23,7 +23,8 @@ public class HaslingerREFM {
 		VariabilityModel model = null;
 		
 		try{
-			model = reader.parseFile("output/" + PCMFile + "-FM.xml");
+			String modelPath = "output/" + PCMFile + "-FM.xml";
+			model = reader.parseFile(modelPath);
 		}catch(FeatureModelException e){
 			System.out.println("Errors parsing the model " + e.getMessage());
 		}
