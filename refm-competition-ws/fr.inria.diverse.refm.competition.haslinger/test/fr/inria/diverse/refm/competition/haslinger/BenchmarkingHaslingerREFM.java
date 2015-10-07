@@ -29,8 +29,8 @@ public class BenchmarkingHaslingerREFM {
 	@Before
 	public void loadScenarios(){
 		synthesizer = new HaslingerREFM();
-		initialInstance = 1;
-		finalInstance = 18;
+		initialInstance = 19;
+		finalInstance = 27;
 	}
 	
 	// ---------------------------------------------------
