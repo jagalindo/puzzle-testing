@@ -19,10 +19,6 @@ import fr.inria.diverse.refm.competition.common.utils.fitness.TopologyMetrics;
 public class PrintUtils {
 
 	// -------------------------------------------------
-	// Attributes
-	// -------------------------------------------------
-	
-	// -------------------------------------------------
 	// Constructor
 	// -------------------------------------------------
 	
@@ -45,6 +41,7 @@ public class PrintUtils {
 		FitnessMetricsVO vo = metrics.compute(fm, dependenciesGraph, PCM);
 		System.out.println(" - Precision: " + vo.getPrecision());
 		System.out.println(" - Recall: " + vo.getRecall());
+		System.out.println(" - F-Measure: " + vo.getSafety());
 		System.out.println(" - Safety: " + vo.getSafety());
 	}
 	
@@ -63,10 +60,15 @@ public class PrintUtils {
 		FMStatistics statistics = tp.computeTopologyMetrics(fm);
 		
 		String metricsLabel = "No. " + instanceId + ", Precision: " +
-				vo.getPrecision() + ", Recall: " + vo.getRecall() + ", Safety: " + vo.getSafety() +
+				vo.getPrecision() + ", Recall: " + vo.getRecall() + ", F-Measure: " + vo.getfMeasure() +
+				", Safety: " + vo.getSafety() +
 				", Mandatory: " + statistics.getNoMandatory() + ", Optional: " + statistics.getNoOptional() +
 				", XORs: " + statistics.getNoAlternative() + ", ORs: " + statistics.getNoOr() + ", Requires: " + 
-				statistics.getNoRequires() + ", Excludes: " + statistics.getNoExcludes();
+				statistics.getNoRequires() + ", Excludes: " + statistics.getNoExcludes() + 
+				", LeafFeatures: " + statistics.getNoLeafFeatures() + 
+				", TopFeatures: " + statistics.getNoTopFeatures() +
+				", FoC: " + statistics.getFoC() + 
+				", Deep: " + statistics.getDeepTree();
 		
 		System.out.println(metricsLabel);
 	}
@@ -80,16 +82,21 @@ public class PrintUtils {
 		TopologyMetrics tp = new TopologyMetrics();
 		FMStatistics statistics = tp.computeTopologyMetrics(fm);
 		
-		String metricsLabel = instanceId + "," + vo.getPrecision() + "," + vo.getRecall() + "," + vo.getSafety() +
+		String metricsLabel = instanceId + "," + vo.getPrecision() + "," + vo.getRecall() + "," + vo.getfMeasure() +
+				"," + vo.getSafety() +
 				"," + statistics.getNoMandatory() + "," + statistics.getNoOptional() +
 				"," + statistics.getNoAlternative() + "," + statistics.getNoOr() + "," + 
-				statistics.getNoRequires() + "," + statistics.getNoExcludes() + "\n";
+				statistics.getNoRequires() + "," + statistics.getNoExcludes() + "," + 
+				statistics.getNoLeafFeatures() + "," +
+				statistics.getNoTopFeatures() + "," +
+				statistics.getFoC() + "," +
+				statistics.getDeepTree() + "\n";
 		
 		return metricsLabel;
 	}
 	
 	public void exportToCVS(String metrics, String filePath) throws IOException{
-		String content = "No,Precision,Recall,Safety,Mandatory,Optional,XORs,ORs,Requires,Excludes\n";
+		String content = "No,Precision,Recall,F-Measure,Safety,Mandatory,Optional,XORs,ORs,Requires,Excludes,NLeaf,NTop,FoC,Deep\n";
 		content += metrics;
 		FileUtils.saveFile(content, filePath);
 	}

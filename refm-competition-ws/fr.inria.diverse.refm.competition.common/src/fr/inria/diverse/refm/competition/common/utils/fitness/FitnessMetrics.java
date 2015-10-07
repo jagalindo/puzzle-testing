@@ -55,6 +55,11 @@ public class FitnessMetrics {
 			safety += (productsRespectingDependency/numberOfFMProducts);
 		}
 		metrics.setSafety(safety/dependenciesGraph.getArcs().size());
+		
+		// Computing f-measure
+		double fMeasure = (2*precision*recall)/(precision+recall);
+		metrics.setfMeasure(fMeasure);
+		
 		return metrics;
 	}
 	

@@ -30,7 +30,7 @@ public class BenchmarkingHaslingerREFM {
 	public void loadScenarios(){
 		synthesizer = new HaslingerREFM();
 		initialInstance = 1;
-		finalInstance = 18;
+		finalInstance = 27;
 	}
 	
 	// ---------------------------------------------------
