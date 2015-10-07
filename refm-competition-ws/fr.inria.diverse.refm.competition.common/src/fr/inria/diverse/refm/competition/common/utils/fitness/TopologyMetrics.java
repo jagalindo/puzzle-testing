@@ -8,7 +8,6 @@ public class TopologyMetrics {
 
 	public FMStatistics computeTopologyMetrics(VariabilityModel fm){
 		FMStatistics statistics = new FMStatistics((FAMAFeatureModel) fm);
-		System.out.println("statistics: " + statistics);
 		return statistics;
 	}
 }

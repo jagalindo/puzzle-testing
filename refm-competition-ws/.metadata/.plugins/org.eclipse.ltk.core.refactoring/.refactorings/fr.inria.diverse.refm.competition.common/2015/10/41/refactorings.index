@@ -3,3 +3,4 @@
 1444037867396	Rename type 'FintessMetricsVO'
 1444038154603	Rename local variable 'numberOfProducts'
 1444041956716	Copy source folder
+1444209916768	Rename method 'exportMetrics'

@@ -35,8 +35,8 @@ public class BenchmarkingAlmsiedeenREFM {
 	@Before
 	public void loadScenarios(){
 		synthesizer = new AlmsiedeenREFM();
-		initialInstance = 2;
-		finalInstance = 3;
+		initialInstance = 1;
+		finalInstance = 18;
 	}
 	
 	// ---------------------------------------------------
@@ -45,12 +45,20 @@ public class BenchmarkingAlmsiedeenREFM {
 	
 	@Test
 	public void executeBenchmark() throws Exception{
+		String resultString = "";
+		PrintUtils utils = new PrintUtils();
 		for (int i = initialInstance; i <= finalInstance; i++) {
-			VariabilityModel result = synthesizer.execute("testdata/" + i + "_3_closed_pcm.txt", i);
-			String originalPCM = FileUtils.readFileContent(new File("testdata/" + i + "_3_closed_pcm.txt"));
-			Graph<Vertex, Arc> dependenciesGraph = new Graph<Vertex, Arc>(FileUtils.readFileContent(new File("testdata/" + i + "_1_dependencies_graph.txt")));
-			(new PrintUtils()).printFitness(result, dependenciesGraph, originalPCM);
-			(new PrintUtils()).printTopologyMetrics(result);
+			String matrix = FileUtils.readFileContent(new File("testdata/" + i + "_1_dependencies_graph.txt"));
+			Graph<Vertex, Arc> dependenciesGraph = new Graph<Vertex, Arc>(matrix);
+			VariabilityModel result = synthesizer.execute("testdata/" + i + "_3_closed_pcm.txt", 1);
+			
+			if(result != null){
+				String originalPCM = FileUtils.readFileContent(new File("testdata/" + i + "_3_closed_pcm.txt"));
+				resultString += utils.exportMetrics(i, result, dependenciesGraph, originalPCM);
+				utils.printMetrics(i, result, dependenciesGraph, originalPCM);
+			
+			}
 		}
+		utils.exportToCVS(resultString, "results-" + initialInstance + "-" + finalInstance + ".csv");
 	}
 }

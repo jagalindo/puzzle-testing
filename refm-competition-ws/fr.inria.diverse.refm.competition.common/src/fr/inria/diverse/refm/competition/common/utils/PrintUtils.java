@@ -1,5 +1,7 @@
 package fr.inria.diverse.refm.competition.common.utils;
 
+import java.io.IOException;
+
 import es.us.isa.FAMA.models.variabilityModel.VariabilityModel;
 import fr.inria.diverse.graph.Arc;
 import fr.inria.diverse.graph.Graph;
@@ -49,5 +51,46 @@ public class PrintUtils {
 	public void printTopologyMetrics(VariabilityModel fm){
 		TopologyMetrics tp = new TopologyMetrics();
 		tp.computeTopologyMetrics(fm);
+	}
+	
+	public void printMetrics(int instanceId,
+			VariabilityModel fm, Graph<Vertex, Arc> dependenciesGraph, String PCM){
+		
+		FitnessMetrics metrics = new FitnessMetrics();
+		FitnessMetricsVO vo = metrics.compute(fm, dependenciesGraph, PCM);
+		
+		TopologyMetrics tp = new TopologyMetrics();
+		FMStatistics statistics = tp.computeTopologyMetrics(fm);
+		
+		String metricsLabel = "No. " + instanceId + ", Precision: " +
+				vo.getPrecision() + ", Recall: " + vo.getRecall() + ", Safety: " + vo.getSafety() +
+				", Mandatory: " + statistics.getNoMandatory() + ", Optional: " + statistics.getNoOptional() +
+				", XORs: " + statistics.getNoAlternative() + ", ORs: " + statistics.getNoOr() + ", Requires: " + 
+				statistics.getNoRequires() + ", Excludes: " + statistics.getNoExcludes();
+		
+		System.out.println(metricsLabel);
+	}
+	
+	public String exportMetrics(int instanceId,
+			VariabilityModel fm, Graph<Vertex, Arc> dependenciesGraph, String PCM){
+		
+		FitnessMetrics metrics = new FitnessMetrics();
+		FitnessMetricsVO vo = metrics.compute(fm, dependenciesGraph, PCM);
+		
+		TopologyMetrics tp = new TopologyMetrics();
+		FMStatistics statistics = tp.computeTopologyMetrics(fm);
+		
+		String metricsLabel = instanceId + "," + vo.getPrecision() + "," + vo.getRecall() + "," + vo.getSafety() +
+				"," + statistics.getNoMandatory() + "," + statistics.getNoOptional() +
+				"," + statistics.getNoAlternative() + "," + statistics.getNoOr() + "," + 
+				statistics.getNoRequires() + "," + statistics.getNoExcludes() + "\n";
+		
+		return metricsLabel;
+	}
+	
+	public void exportToCVS(String metrics, String filePath) throws IOException{
+		String content = "No,Precision,Recall,Safety,Mandatory,Optional,XORs,ORs,Requires,Excludes\n";
+		content += metrics;
+		FileUtils.saveFile(content, filePath);
 	}
 }

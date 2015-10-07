@@ -45,13 +45,16 @@ public class BenchmarkingMendezREFM {
 	
 	@Test
 	public void executeBenchmark() throws Exception{
+		String resultString = "";
+		PrintUtils utils = new PrintUtils();
 		for (int i = initialInstance; i <= finalInstance; i++) {
 			String matrix = FileUtils.readFileContent(new File("testdata/" + i + "_1_dependencies_graph.txt"));
-			Graph<Vertex, Arc> graph = new Graph<Vertex, Arc>(matrix);
-			VariabilityModel result = synthesizer.execute(graph, "testdata/" + i + "_3_closed_pcm.txt");
+			Graph<Vertex, Arc> dependenciesGraph = new Graph<Vertex, Arc>(matrix);
+			VariabilityModel result = synthesizer.execute(dependenciesGraph, "testdata/" + i + "_3_closed_pcm.txt");
 			String originalPCM = FileUtils.readFileContent(new File("testdata/" + i + "_3_closed_pcm.txt"));
-			(new PrintUtils()).printFitness(result, graph, originalPCM);
-			(new PrintUtils()).printTopologyMetrics(result);
+			resultString += utils.exportMetrics(i, result, dependenciesGraph, originalPCM);
+			utils.printMetrics(i, result, dependenciesGraph, originalPCM);
 		}
+		utils.exportToCVS(resultString, "results-" + initialInstance + "-" + finalInstance + ".csv");
 	}
 }

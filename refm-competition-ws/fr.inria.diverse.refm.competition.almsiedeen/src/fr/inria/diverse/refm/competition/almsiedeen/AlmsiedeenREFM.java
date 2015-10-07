@@ -19,12 +19,18 @@ public class AlmsiedeenREFM {
 		String[] args = new String[2];
 		args[0] = "input/input_matrix.txt";
 		args[1] = "out-" + executionIndex + ".xml";
-		run.main(args);
 		
 		XMLReader reader = new XMLReader();
 		VariabilityModel model = null;
-		model = reader.parseFile(args[1]);
 		
+		try{
+			run.main(args);
+			model = reader.parseFile(args[1]);
+		}catch(Exception e){
+			// Some error occurred.
+			System.out.println("Some error occurred");
+		}
+
 		return model;
 	}
 }

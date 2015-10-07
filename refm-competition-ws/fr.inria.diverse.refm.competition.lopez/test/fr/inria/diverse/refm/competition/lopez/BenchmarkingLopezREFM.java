@@ -6,6 +6,7 @@ import org.junit.Before;
 import org.junit.Test;
 
 import es.us.isa.FAMA.models.FAMAfeatureModel.FAMAFeatureModel;
+import es.us.isa.FAMA.models.variabilityModel.VariabilityModel;
 import fr.inria.diverse.graph.Arc;
 import fr.inria.diverse.graph.Graph;
 import fr.inria.diverse.graph.Vertex;
@@ -41,12 +42,17 @@ public class BenchmarkingLopezREFM {
 	
 	@Test
 	public void executeBenchmark() throws Exception{
+		String resultString = "";
+		PrintUtils utils = new PrintUtils();
 		for (int i = initialInstance; i <= finalInstance; i++) {
-			FAMAFeatureModel result = synthesizer.execute("testdata/" + i + "_3_closed_pcm.txt");
+			String matrix = FileUtils.readFileContent(new File("testdata/" + i + "_1_dependencies_graph.txt"));
+			Graph<Vertex, Arc> dependenciesGraph = new Graph<Vertex, Arc>(matrix);
+			VariabilityModel result = synthesizer.execute("testdata/" + i + "_3_closed_pcm.txt");
 			String originalPCM = FileUtils.readFileContent(new File("testdata/" + i + "_3_closed_pcm.txt"));
-			Graph<Vertex, Arc> dependenciesGraph = new Graph<Vertex, Arc>(FileUtils.readFileContent(new File("testdata/" + i + "_1_dependencies_graph.txt")));
-			(new PrintUtils()).printFitness(result, dependenciesGraph, originalPCM);
+			resultString += utils.exportMetrics(i, result, dependenciesGraph, originalPCM);
+			utils.printMetrics(i, result, dependenciesGraph, originalPCM);
 		}
+		utils.exportToCVS(resultString, "results-" + initialInstance + "-" + finalInstance + ".csv");
 	}
 
 	

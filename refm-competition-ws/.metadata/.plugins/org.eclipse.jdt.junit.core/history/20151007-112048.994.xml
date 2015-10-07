@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="BenchmarkingMendezREFM" project="fr.inria.diverse.refm.competition.mendez" tests="1" started="1" failures="0" errors="0" ignored="0">
+  <testsuite name="fr.inria.diverse.refm.competition.mendez.BenchmarkingMendezREFM" time="5.508">
+    <testcase name="executeBenchmark" classname="fr.inria.diverse.refm.competition.mendez.BenchmarkingMendezREFM" time="5.508"/>
+  </testsuite>
+</testrun>
