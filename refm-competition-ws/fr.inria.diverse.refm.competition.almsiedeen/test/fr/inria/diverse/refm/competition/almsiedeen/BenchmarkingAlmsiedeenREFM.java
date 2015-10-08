@@ -35,7 +35,7 @@ public class BenchmarkingAlmsiedeenREFM {
 	@Before
 	public void loadScenarios(){
 		synthesizer = new AlmsiedeenREFM();
-		initialInstance = 19;
+		initialInstance = 22;
 		finalInstance = 27;
 	}
 	

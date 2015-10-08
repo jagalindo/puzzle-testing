@@ -1,6 +1,2 @@
 #features,#attributes,#trivial binary constraints,#binary constraints,#edges in BIG,#edges in Mutex graph,#mandatory relations,#mutex groups,#or groups,#xor groups,#implies,#excludes,#complex constraints,#cross tree constraints,#variables,#configurations,#distinct configurations,max domain size,real max domain size,enable or groups,Synthesis,Domain extraction,Feature and attribute extraction,Binary implications,Implication and Mutex graph,Hierarchy,Place attributes,Mandatory features,Feature groups,Mutex,Or,Xor,Group processing,Cross tree constraints,Binary implies,Binary excludes,Complex constraints,AFM construction
-<<<<<<< HEAD
-52,0,2553,2598,1302,0,2,0,0,0,1079,0,0,1079,52,78,78,2,2,true,35,1,0,15,1,2,1,0,14,0,14,0,0,1,1,0,0,0
-=======
-52,0,2553,2598,1302,0,2,0,0,0,1045,0,0,1045,52,78,78,2,2,true,33,0,1,17,1,2,0,0,11,0,11,0,0,1,1,0,0,0
->>>>>>> ab59506ef0797f0cb466ad222a4f361bc2504430
+52,0,2553,2598,1302,0,2,0,0,0,1033,0,0,1033,52,78,78,2,2,true,64,0,0,35,1,4,1,0,21,1,19,0,0,2,2,0,0,0

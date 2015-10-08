@@ -22,33 +22,13 @@
 																			:o F2 (F2)
 																				:o F11 (F11)
 																					:o F47 (F47)
-<<<<<<< HEAD
-																						:o F28 (F28)
-=======
 																						:o F35 (F35)
->>>>>>> ab59506ef0797f0cb466ad222a4f361bc2504430
 																							:o F7 (F7)
 																								:o F31 (F31)
 																									:o F8 (F8)
 																										:o F13 (F13)
 																											:o F15 (F15)
 																												:o F37 (F37)
-<<<<<<< HEAD
-																													:o F48 (F48)
-																														:o F29 (F29)
-																															:o F12 (F12)
-																																:o F6 (F6)
-																																	:o F20 (F20)
-																																		:o F43 (F43)
-																																			:o F30 (F30)
-																																		:o F14 (F14)
-																																			:o F17 (F17)
-																															:o F1 (F1)
-																																:o F50 (F50)
-																													:o F39 (F39)
-																								:o F45 (F45)
-																						:o F35 (F35)
-=======
 																													:o F39 (F39)
 																														:o F1 (F1)
 																															:o F50 (F50)
@@ -63,7 +43,6 @@
 																															:o F12 (F12)
 																								:o F45 (F45)
 																						:o F28 (F28)
->>>>>>> ab59506ef0797f0cb466ad222a4f361bc2504430
 														:o F27 (F27)
 															:o F5 (F5)
 																:o F32 (F32)
@@ -74,19 +53,6 @@
 	:o F22 (F22)
 </feature_tree>
 <constraints>
-<<<<<<< HEAD
-constraint_1:~F6 or F50
-constraint_2:~F18 or F22
-constraint_3:~F30 or F14
-constraint_4:~F15 or F45
-constraint_5:~F23 or F16
-constraint_6:~F7 or F35
-constraint_7:~F27 or F10
-constraint_8:~F38 or F9
-constraint_9:~F24 or F26
-constraint_10:~F25 or F32
-constraint_11:~F1 or F39
-=======
 constraint_1:~F18 or F22
 constraint_2:~F30 or F43
 constraint_3:~F15 or F45
@@ -98,7 +64,6 @@ constraint_8:~F24 or F26
 constraint_9:~F25 or F32
 constraint_10:~F1 or F29
 constraint_11:~F6 or F12
->>>>>>> ab59506ef0797f0cb466ad222a4f361bc2504430
 constraint_12:~F17 or ~F30
 constraint_13:~F17 or ~F43
 </constraints>

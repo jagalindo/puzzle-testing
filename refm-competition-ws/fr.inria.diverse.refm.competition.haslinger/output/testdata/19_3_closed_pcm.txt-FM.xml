@@ -3,17 +3,10 @@
 :r root (root)
 	:m F17 (F17)
 	:o F27 (F27)
-<<<<<<< HEAD
-		:m F36 (F36)
-		:m F47 (F47)
-		:m F4 (F4)
-		:m F23 (F23)
-=======
 		:m F23 (F23)
 		:m F36 (F36)
 		:m F47 (F47)
 		:m F4 (F4)
->>>>>>> ab59506ef0797f0cb466ad222a4f361bc2504430
 		:o F22 (F22)
 			:o F15 (F15)
 				:o F1 (F1)
@@ -45,21 +38,12 @@
 																	:m F32 (F32)
 																	:m F30 (F30)
 																	:o F12 (F12)
-<<<<<<< HEAD
-																		:o F45 (F45)
-																			:o F28 (F28)
-																				:o F21 (F21)
-																					:m F16 (F16)
-																		:o F33 (F33)
-																			:o F18 (F18)
-=======
 																		:o F33 (F33)
 																			:o F18 (F18)
 																				:o F28 (F28)
 																					:o F21 (F21)
 																						:m F16 (F16)
 																		:o F45 (F45)
->>>>>>> ab59506ef0797f0cb466ad222a4f361bc2504430
 																	:o F2 (F2)
 																		:m F35 (F35)
 											:o F14 (F14)
@@ -70,11 +54,7 @@
 </feature_tree>
 <constraints>
 constraint_1:~F33 or F2
-<<<<<<< HEAD
-constraint_2:~F28 or F18
-=======
 constraint_2:~F28 or F45
->>>>>>> ab59506ef0797f0cb466ad222a4f361bc2504430
 constraint_3:~F6 or F37
 constraint_4:~F9 or F7
 </constraints>
