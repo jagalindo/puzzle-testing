@@ -33,8 +33,18 @@ import es.us.isa.FAMA.models.featureModel.Cardinality;
 
 /**
  * This class represents the statistics of a model
+ * 
+ * References: 
+ * 
+ * [1] Bagheri, E., Gasevic, D.: Assessing the maintainability of software product line 
+ * feature models using structural metrics. Software Quality Journal, 579–612 (2011)
  */
 public class FMStatistics {
+	
+	// -------------------------------------------------------
+	// Attributes
+	// -------------------------------------------------------
+	
 	private int NoFeatures = 0; 				// Number of features
 	private int NoCrossTree = 0; 				// Number of CTC
 	private int NoMandatory = 0; 				// Number of mandatory features
@@ -48,19 +58,28 @@ public class FMStatistics {
 	private int MaxBranchingFactor =0 ;			// Maximum branching factor
 	private int MaxSetChildren = 0;				// Maximum number of children in a set relationship
 	private float CTCR = 0; 					// CTC Ratio
+	private int NoLeafFeatures = 0; 			// Number of leaf features [1]
+	private int NoTopFeatures = 0; 				// Number of top features [1]
+	private double FoC;							// Flexibility of Configuration [1]
+	private int deepTree;						// Deep tree [1]
 
+	// -------------------------------------------------------
+	// Constructor
+	// ------------------------------------------------------
+	
 	public FMStatistics() {
 
 	}
 
-	// Get the statistics of a given model
+	// -------------------------------------------------------
+	// Methods
+	// -------------------------------------------------------
+	
 	public FMStatistics(FAMAFeatureModel fm) {
-
 		this.extractStatistics(fm);
 	}
 
 	public String toString() {
-
 		String res = "";
 		res += ("==================== STATISTICS OF THE FEATURE MODEL GENERATED ============================\n");
 		res += ("== TREE STATISTICS ==\n");
@@ -83,7 +102,6 @@ public class FMStatistics {
 
 	public Map<String, String> getStatisticsMap() {
 		Map<String, String> statistics = new HashMap<String, String>();
-
 		statistics.put("Features", Integer.toString(NoFeatures));
 		statistics.put("Mandatory", Integer.toString(NoMandatory));
 		statistics.put("Optional", Integer.toString(NoOptional));
@@ -97,10 +115,8 @@ public class FMStatistics {
 		statistics.put("CTC Ratio", Float.toString(CTCR));
 		statistics.put("Requires", Integer.toString(NoRequires));
 		statistics.put("Excludes", Integer.toString(NoExcludes));
-
 		return statistics;
 	}
-
 
 	public void extractStatistics(FAMAFeatureModel fm) {
 		
@@ -157,7 +173,80 @@ public class FMStatistics {
 		}
 		
 		CTCR = (float) (featuresCTC.size() ) / NoFeatures;
+		NoLeafFeatures = this.computeNoLeafFeatures(fm);
+		NoTopFeatures = this.computeNumberOfTopFeatures(fm);
+		FoC = this.computeFoC(fm);
+		deepTree = this.computeDeepTree(fm);
+	}
+
+	private int computeNoLeafFeatures(FAMAFeatureModel fm){
+		return this.computeNoLeafFeaturesRecursive(fm.getRoot());
+	}
+
+	private int computeNoLeafFeaturesRecursive(Feature root) {
+		if(this.countChilds(root) == 0)
+			return 1;
+		else{
+			int childs = 0;
+			Iterator<Relation> itRelations = root.getRelations();
+			while (itRelations.hasNext()) {
+				Relation relation = (Relation) itRelations.next();
+				Iterator<Feature> itDestination = relation.getDestination();
+				while (itDestination.hasNext()) {
+					Feature child = (Feature) itDestination.next();
+					childs+= this.computeNoLeafFeaturesRecursive(child) ;
+				}
+			}
+			return childs;
+		}
+	}
+	
+	private int countChilds(Feature root){
+		int childs = 0;
+		Iterator<Relation> itRelations = root.getRelations();
+		while (itRelations.hasNext()) {
+			Relation relation = (Relation) itRelations.next();
+			
+			Iterator<Feature> itDestination = relation.getDestination();
+			while (itDestination.hasNext()) {
+				itDestination.next();
+				childs++;
+			}
+		}
 		
+		return childs;
+	}
+	
+	private int computeNumberOfTopFeatures(FAMAFeatureModel fm){
+		return this.countChilds(fm.getRoot());
+	}
+	
+	private double computeFoC(FAMAFeatureModel fm) {
+		return (double)this.getNoOptional() / (double) this.getNoFeatures();
+	}
+	
+	private int computeDeepTree(FAMAFeatureModel fm) {
+		return this.computeDeepTreeRecusively(fm.getRoot());
+	}
+
+	private int computeDeepTreeRecusively(Feature root) {
+		if(this.countChilds(root) == 0)
+			return 1;
+		else{
+			int deep = -1;
+			Iterator<Relation> itRelations = root.getRelations();
+			while (itRelations.hasNext()) {
+				Relation relation = (Relation) itRelations.next();
+				Iterator<Feature> itDestination = relation.getDestination();
+				while (itDestination.hasNext()) {
+					Feature child = (Feature) itDestination.next();
+					int currentDeep = this.computeDeepTreeRecusively(child);
+					if(currentDeep > deep)
+						deep = currentDeep;
+				}
+			}
+			return deep + 1;
+		}
 	}
 
 	public int getNoFeatures() {
@@ -300,6 +389,22 @@ public class FMStatistics {
 		CTCR = cTCR;
 	}
 	
+	public int getNoLeafFeatures() {
+		return NoLeafFeatures;
+	}
+	
+	public int getNoTopFeatures() {
+		return NoTopFeatures;
+	}
+
+	public double getFoC() {
+		return FoC;
+	}
+
+	public int getDeepTree() {
+		return deepTree;
+	}
+
 	private boolean isOr(Relation r){
 		boolean res = false;
 

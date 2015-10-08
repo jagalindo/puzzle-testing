@@ -35,7 +35,7 @@ public class BenchmarkingBecanREFM {
 	@Before
 	public void loadScenarios(){
 		synthesizer = new BecanREFM();
-		initialInstance = 19;
+		initialInstance = 1;
 		finalInstance = 27;
 	}
 	

@@ -4,8 +4,9 @@
 <fullyQualifiedTypeName name="es.us.isa.FAMA.models.FAMAfeatureModel.fileformats.XMLReader"/>
 <fullyQualifiedTypeName name="fr.inria.diverse.refm.competition.common.utils.SPLXReader"/>
 <fullyQualifiedTypeName name="fr.inria.diverse.refm.competition.common.utils.FMStatistics"/>
-<fullyQualifiedTypeName name="java.util.Iterator"/>
 <fullyQualifiedTypeName name="es.us.isa.FAMA.models.featureModel.Cardinality"/>
 <fullyQualifiedTypeName name="fr.inria.diverse.refm.competition.common.utils.XMLReader"/>
 <fullyQualifiedTypeName name="fr.inria.diverse.refm.competition.common.utils.FileUtils"/>
+<fullyQualifiedTypeName name="java.util.Iterator"/>
+<fullyQualifiedTypeName name="es.us.isa.FAMA.models.FAMAfeatureModel.Relation"/>
 </qualifiedTypeNameHistroy>

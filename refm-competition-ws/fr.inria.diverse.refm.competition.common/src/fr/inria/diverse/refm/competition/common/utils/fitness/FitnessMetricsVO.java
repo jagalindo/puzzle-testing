@@ -1,13 +1,35 @@
 package fr.inria.diverse.refm.competition.common.utils.fitness;
 
+/**
+ * Value object encapsulating the information of the fitness metrics for
+ * a given features model. 
+ * 
+ * @author David Mendez-Acuna
+ *
+ */
 public class FitnessMetricsVO {
 
+	// ------------------------------------------------
+	// Attributes
+	// ------------------------------------------------
+	
 	private double precision;
-	
 	private double recall;
-	
 	private double safety;
-
+	private double fMeasure;
+	
+	// ------------------------------------------------
+	// Constructor
+	// ------------------------------------------------
+	
+	public FitnessMetricsVO(){
+		
+	}
+	
+	// ------------------------------------------------
+	// Getters and setters
+	// ------------------------------------------------
+	
 	public double getPrecision() {
 		return precision;
 	}
@@ -30,5 +52,13 @@ public class FitnessMetricsVO {
 
 	public void setSafety(double safety) {
 		this.safety = safety;
+	}
+
+	public double getfMeasure() {
+		return fMeasure;
+	}
+
+	public void setfMeasure(double fMeasure) {
+		this.fMeasure = fMeasure;
 	}
 }

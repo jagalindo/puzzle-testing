@@ -14,5 +14,20 @@
 			<type>2</type>
 			<location>/ExecutAbleForPaper</location>
 		</link>
+		<link>
+			<name>.link1</name>
+			<type>2</type>
+			<location>/FaMaFeatureModel</location>
+		</link>
+		<link>
+			<name>.link2</name>
+			<type>2</type>
+			<location>/ReFMsFcL</location>
+		</link>
+		<link>
+			<name>.link3</name>
+			<type>2</type>
+			<location>/BeTTy-Core</location>
+		</link>
 	</linkedResources>
 </projectDescription>

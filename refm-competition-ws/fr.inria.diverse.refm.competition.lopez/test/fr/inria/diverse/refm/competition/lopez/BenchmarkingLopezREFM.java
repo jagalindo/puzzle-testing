@@ -36,8 +36,8 @@ public class BenchmarkingLopezREFM {
 	@Before
 	public void loadScenarios(){
 		synthesizer = new LopezREFM();
-		initialInstance = 10;
-		finalInstance = 18;
+		initialInstance = 19;
+		finalInstance = 27;
 	}
 	
 	@Test
